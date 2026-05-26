@@ -1,0 +1,12 @@
+{
+  "name": "spanishnova-theme",
+  "version": "1.0.0",
+  "description": "Tema WordPress 'Spanishnova' — estructura inicial",
+  "main": "index.php",
+  "scripts": {
+    "build": "echo \"No build configured\"",
+    "start": "echo \"No start script\""
+  },
+  "license": "MIT",
+  "devDependencies": {}
+}

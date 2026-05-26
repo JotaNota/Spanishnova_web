@@ -1,0 +1,1 @@
+<?php get_header(); ?><main><section class="panel"><h1>SpanishNova</h1></section></main><?php get_footer(); ?>
