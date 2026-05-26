@@ -1,0 +1,11 @@
+id,title,category,level,priority,status
+hotel-room,La habitación del hotel – Hotel room,travel,beginner,1,planned
+body-parts,Partes del cuerpo – Parts of the Body,health,beginner,2,planned
+cafe,En la cafetería – At the Café,food,beginner,3,planned
+house,La casa,home,beginner,4,planned
+taxi-uber,Tomar un taxi o Uber,transportation,beginner,5,planned
+sleeping-time,La hora de dormir – Sleeping time,daily-life,beginner,6,planned
+connectors,Conectores – Connectors,communication,beginner,7,planned
+studies,Los estudios – Studies,education,beginner,8,planned
+office,En la oficina – At the office,work,beginner,9,planned
+supermarket,El supermercado,shopping,beginner,10,planned

@@ -1,0 +1,11 @@
+id,title,category,level,priority,status
+hedy-lamarr,"Hedy Lamarr, la actriz que inventó el wifi",technology,intermediate,1,planned
+new-neighborhood,Mi nuevo barrio,daily-life,beginner,2,planned
+airport-trip,Mi viaje al aeropuerto,travel,beginner,3,planned
+first-job,Mi primer trabajo,work,beginner,4,planned
+coffee-shop,Una tarde en la cafetería,food,beginner,5,planned
+doctor-visit,Una visita al médico,health,beginner,6,planned
+lost-phone,Perdí mi teléfono,daily-life,beginner,7,planned
+beach-vacation,Vacaciones en la playa,travel,beginner,8,planned
+first-class,Mi primera clase de español,education,beginner,9,planned
+moving-house,Mudanza a una nueva casa,home,beginner,10,planned

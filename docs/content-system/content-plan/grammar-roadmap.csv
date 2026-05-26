@@ -1,0 +1,10 @@
+id,title,category,lesson_type,level,priority,status,topics
+ser,Ser in the Present Tense,Basics,verb-usage,beginner,1,planned,ser|identity|verbs
+estar,Estar in the Present Tense,Basics,verb-usage,beginner,2,planned,estar|location|states
+hay,Hay,Basics,structure,beginner,3,planned,hay|existence
+hay-algo,Hay + Algo,Basics,structure,beginner,4,planned,hay|objects
+tener,Tener,Basics,verb-usage,beginner,5,planned,tener|possession
+ir,Ir,Basics,verb-usage,beginner,6,planned,ir|movement
+querer,Querer,Basics,verb-usage,beginner,7,planned,querer|desire
+necesitar,Necesitar,Basics,verb-usage,beginner,8,planned,necesitar|needs
+tener-que,Tener que,Basics,structure,beginner,9,planned,tener-que|obligation
