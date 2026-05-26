@@ -1,1 +1,674 @@
-<!-- Vocabulary Template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New vocabulary: the supermarket – El supermercado | SpanishNova</title>
+  <style>
+    :root {
+      --bg: #fff8ef;
+      --paper: #ffffff;
+      --ink: #211d19;
+      --muted: #6e665e;
+      --border: #eadfce;
+      --orange: #ff762c;
+      --orange-soft: #fff0e6;
+      --shadow: 0 10px 28px rgba(62, 41, 20, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .top-header {
+      background: var(--paper);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .top-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 22px 24px 16px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      grid-template-areas:
+        "brand empty actions"
+        "nav nav nav";
+      align-items: center;
+      gap: 12px 18px;
+    }
+
+    .brand {
+      grid-area: brand;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: #d99a5e;
+      border: 2px solid #1f1d1a;
+      display: grid;
+      place-items: center;
+    }
+
+    .brand-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 3px;
+      background: #ff675c;
+      border: 1px solid #1f1d1a;
+    }
+
+    .top-actions {
+      grid-area: actions;
+      display: flex;
+      justify-content: flex-end;
+      gap: 18px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .donate { color: var(--orange); }
+
+    .center-nav {
+      grid-area: nav;
+      display: flex;
+      justify-content: center;
+      gap: 34px;
+      padding-top: 14px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .center-nav a::after {
+      content: "⌄";
+      color: var(--orange);
+      font-size: 11px;
+      margin-left: 6px;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 38px 24px 80px;
+    }
+
+    .lesson-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 290px;
+      gap: 22px;
+      align-items: start;
+    }
+
+    article { min-width: 0; }
+
+    .lesson-hero,
+    .panel,
+    .side-panel {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .lesson-hero {
+      border-radius: 28px;
+      padding: 26px;
+      margin-bottom: 20px;
+    }
+
+    .breadcrumb {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: var(--orange-soft);
+      color: var(--orange);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .lesson-hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      letter-spacing: -0.04em;
+      margin-bottom: 14px;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 760px;
+      margin: 0;
+    }
+
+    .panel {
+      border-radius: 24px;
+      padding: 24px;
+      margin-bottom: 18px;
+      scroll-margin-top: 24px;
+    }
+
+    .panel h2 {
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    .panel h3 {
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 16px;
+      margin: 20px 0 10px;
+    }
+
+    .panel p { margin: 0 0 12px; }
+
+    .section-note {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 16px;
+    }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .vocab-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, .9fr);
+      gap: 10px;
+      align-items: baseline;
+      border-bottom: 1px solid #f0e5d8;
+      padding-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .vocab-es { font-weight: 900; }
+    .vocab-arrow { color: var(--orange); font-weight: 900; }
+    .vocab-en { color: var(--muted); }
+
+    .phrase-list,
+    .exercise-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    .phrase-item,
+    .exercise-list li {
+      border-bottom: 1px solid #f0e5d8;
+      padding-bottom: 10px;
+    }
+
+    .phrase-item:last-child,
+    .exercise-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .spanish-line { font-weight: 900; }
+    .english-line { color: var(--muted); margin-top: 3px; }
+    .arrow-line { color: var(--orange); font-weight: 900; margin-right: 5px; }
+
+    .exercise-block {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      background: #fffdf9;
+      margin-top: 14px;
+    }
+
+    .exercise-block h3 {
+      margin: 0 0 14px;
+      color: var(--orange);
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .exercise-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 26px;
+      margin-top: 0;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      list-style: none;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .translation-toggle summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .translation-toggle summary::before {
+      content: "▸";
+      color: var(--orange);
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    .translation-toggle[open] summary::before {
+      content: "▾";
+    }
+
+    .exercise-answer {
+      color: var(--ink);
+      margin: 5px 0 0 20px;
+      font-weight: 900;
+    }
+
+    .exercise-answer strong { color: var(--ink); }
+
+    .dialogue-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .dialogue-card {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      background: #fffdf9;
+    }
+
+    .dialogue-card h3 {
+      margin-top: 0;
+    }
+
+    .dialogue-line {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .dialogue-line:last-child { margin-bottom: 0; }
+    .speaker { color: var(--orange); font-weight: 900; }
+
+    .sidebar {
+      position: sticky;
+      top: 26px;
+      align-self: start;
+      display: block;
+      height: auto;
+    }
+
+    .side-panel {
+      border-radius: 24px;
+      padding: 22px;
+      height: auto;
+      min-height: 0;
+      align-self: start;
+    }
+
+    .side-panel h2 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .side-panel ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .side-panel a { color: var(--muted); }
+
+    .site-footer {
+      max-width: 1180px;
+      margin: 28px auto 0;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .top-inner {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "brand"
+          "actions"
+          "nav";
+      }
+
+      .top-actions { justify-content: flex-start; }
+
+      .center-nav {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+
+      .lesson-layout,
+      .vocab-grid,
+      .exercise-list {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar { position: static; }
+
+      .vocab-item {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .vocab-arrow { display: none; }
+      .site-footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top-header">
+    <div class="top-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark"><span class="brand-dot"></span></span>
+        <span>SpanishNova</span>
+      </a>
+
+      <nav class="center-nav">
+        <a href="#grammar">Grammar</a>
+        <a href="#vocabulary">Vocabulary</a>
+        <a href="#readings">Readings</a>
+        <a href="#conversations">Conversations</a>
+        <a href="#practice">Practice</a>
+        <a href="#resources">Resources</a>
+      </nav>
+
+      <div class="top-actions">
+        <a href="#classes">Classes</a>
+        <a class="donate" href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="lesson-layout">
+      <article>
+        <section class="lesson-hero">
+          <div class="breadcrumb">Vocabulary / Shopping / Supermarket</div>
+
+          <div class="meta-row">
+            <span class="pill">Vocabulary</span>
+            <span class="pill">Beginner</span>
+            <span class="pill">Supermarket</span>
+          </div>
+
+          <h1>New vocabulary: the supermarket – El supermercado</h1>
+
+          <p class="intro">
+            Vocabulario del supermercado. Learn essential Spanish words for shopping: fruits, vegetables, canned goods, dairy, and more. Practice with examples and improve your fluency when making your supermarket list.
+          </p>
+        </section>
+
+        <section class="panel" id="supermarket-basics">
+          <h2>Supermarket basics</h2>
+          <ul class="vocab-grid">
+            <li class="vocab-item"><span class="vocab-es">Carrito</span><span class="vocab-arrow">→</span><span class="vocab-en">Shopping cart</span></li>
+            <li class="vocab-item"><span class="vocab-es">Canasta</span><span class="vocab-arrow">→</span><span class="vocab-en">Basket</span></li>
+            <li class="vocab-item"><span class="vocab-es">Lista de compras</span><span class="vocab-arrow">→</span><span class="vocab-en">Shopping list</span></li>
+            <li class="vocab-item"><span class="vocab-es">Bolsas</span><span class="vocab-arrow">→</span><span class="vocab-en">Bags</span></li>
+            <li class="vocab-item"><span class="vocab-es">Cajero / cajera</span><span class="vocab-arrow">→</span><span class="vocab-en">Cashier</span></li>
+            <li class="vocab-item"><span class="vocab-es">Caja registradora</span><span class="vocab-arrow">→</span><span class="vocab-en">Cash register</span></li>
+            <li class="vocab-item"><span class="vocab-es">Recibo</span><span class="vocab-arrow">→</span><span class="vocab-en">Receipt</span></li>
+            <li class="vocab-item"><span class="vocab-es">Ticket</span><span class="vocab-arrow">→</span><span class="vocab-en">Receipt</span></li>
+            <li class="vocab-item"><span class="vocab-es">Pasillo</span><span class="vocab-arrow">→</span><span class="vocab-en">Aisle</span></li>
+            <li class="vocab-item"><span class="vocab-es">Estante</span><span class="vocab-arrow">→</span><span class="vocab-en">Shelves</span></li>
+            <li class="vocab-item"><span class="vocab-es">Ofertas / Promociones</span><span class="vocab-arrow">→</span><span class="vocab-en">Offers / Sales</span></li>
+            <li class="vocab-item"><span class="vocab-es">Atención al cliente</span><span class="vocab-arrow">→</span><span class="vocab-en">Customer service</span></li>
+          </ul>
+        </section>
+
+        <section class="panel" id="sections">
+          <h2>Secciones del supermercado</h2>
+          <ul class="vocab-grid">
+            <li class="vocab-item"><span class="vocab-es">Carnicería</span><span class="vocab-arrow">→</span><span class="vocab-en">Butcher / meat section</span></li>
+            <li class="vocab-item"><span class="vocab-es">Pescadería</span><span class="vocab-arrow">→</span><span class="vocab-en">Fish market / fish section</span></li>
+            <li class="vocab-item"><span class="vocab-es">Panadería</span><span class="vocab-arrow">→</span><span class="vocab-en">Bakery</span></li>
+            <li class="vocab-item"><span class="vocab-es">Verdulería</span><span class="vocab-arrow">→</span><span class="vocab-en">Produce section</span></li>
+            <li class="vocab-item"><span class="vocab-es">Fiambrería</span><span class="vocab-arrow">→</span><span class="vocab-en">Deli / cold cuts</span></li>
+            <li class="vocab-item"><span class="vocab-es">Charcutería</span><span class="vocab-arrow">→</span><span class="vocab-en">Deli / cold cuts</span></li>
+            <li class="vocab-item"><span class="vocab-es">Lácteos</span><span class="vocab-arrow">→</span><span class="vocab-en">Dairy</span></li>
+            <li class="vocab-item"><span class="vocab-es">Almacén</span><span class="vocab-arrow">→</span><span class="vocab-en">Dry goods / pantry</span></li>
+            <li class="vocab-item"><span class="vocab-es">Higiene personal</span><span class="vocab-arrow">→</span><span class="vocab-en">Personal care</span></li>
+            <li class="vocab-item"><span class="vocab-es">Productos de limpieza</span><span class="vocab-arrow">→</span><span class="vocab-en">Cleaning supplies</span></li>
+            <li class="vocab-item"><span class="vocab-es">Congelados</span><span class="vocab-arrow">→</span><span class="vocab-en">Frozen foods</span></li>
+            <li class="vocab-item"><span class="vocab-es">Muestra gratis</span><span class="vocab-arrow">→</span><span class="vocab-en">Free sample</span></li>
+          </ul>
+        </section>
+
+        <section class="panel" id="products">
+          <h2>Productos</h2>
+          <ul class="vocab-grid">
+            <li class="vocab-item"><span class="vocab-es">Papel higiénico</span><span class="vocab-arrow">→</span><span class="vocab-en">Toilet paper</span></li>
+            <li class="vocab-item"><span class="vocab-es">Rollo de cocina</span><span class="vocab-arrow">→</span><span class="vocab-en">Paper towels</span></li>
+            <li class="vocab-item"><span class="vocab-es">Pañuelos descartables</span><span class="vocab-arrow">→</span><span class="vocab-en">Tissues</span></li>
+            <li class="vocab-item"><span class="vocab-es">Aceite</span><span class="vocab-arrow">→</span><span class="vocab-en">Cooking oil</span></li>
+            <li class="vocab-item"><span class="vocab-es">Fideos</span><span class="vocab-arrow">→</span><span class="vocab-en">Noodles</span></li>
+            <li class="vocab-item"><span class="vocab-es">Harina</span><span class="vocab-arrow">→</span><span class="vocab-en">Flour</span></li>
+            <li class="vocab-item"><span class="vocab-es">Mermelada</span><span class="vocab-arrow">→</span><span class="vocab-en">Jam</span></li>
+            <li class="vocab-item"><span class="vocab-es">Bocadillos / Snacks</span><span class="vocab-arrow">→</span><span class="vocab-en">Snacks</span></li>
+            <li class="vocab-item"><span class="vocab-es">Cereal</span><span class="vocab-arrow">→</span><span class="vocab-en">Cereal</span></li>
+            <li class="vocab-item"><span class="vocab-es">Salsa de tomate</span><span class="vocab-arrow">→</span><span class="vocab-en">Tomato sauce</span></li>
+            <li class="vocab-item"><span class="vocab-es">Mayonesa</span><span class="vocab-arrow">→</span><span class="vocab-en">Mayonnaise</span></li>
+            <li class="vocab-item"><span class="vocab-es">Atún en lata</span><span class="vocab-arrow">→</span><span class="vocab-en">Canned tuna</span></li>
+          </ul>
+        </section>
+
+        <section class="panel" id="actions">
+          <h2>Acciones</h2>
+          <ul class="vocab-grid">
+            <li class="vocab-item"><span class="vocab-es">Hacer la lista</span><span class="vocab-arrow">→</span><span class="vocab-en">Make the list</span></li>
+            <li class="vocab-item"><span class="vocab-es">Ir al supermercado</span><span class="vocab-arrow">→</span><span class="vocab-en">Go to the supermarket</span></li>
+            <li class="vocab-item"><span class="vocab-es">Tomar un carrito</span><span class="vocab-arrow">→</span><span class="vocab-en">Grab a cart</span></li>
+            <li class="vocab-item"><span class="vocab-es">Buscar los productos</span><span class="vocab-arrow">→</span><span class="vocab-en">Look for the products</span></li>
+            <li class="vocab-item"><span class="vocab-es">Comparar precios</span><span class="vocab-arrow">→</span><span class="vocab-en">Compare prices</span></li>
+            <li class="vocab-item"><span class="vocab-es">Revisar la fecha de vencimiento</span><span class="vocab-arrow">→</span><span class="vocab-en">Check expiration date</span></li>
+            <li class="vocab-item"><span class="vocab-es">Pesar la fruta</span><span class="vocab-arrow">→</span><span class="vocab-en">Weigh the fruit</span></li>
+            <li class="vocab-item"><span class="vocab-es">Pagar en la caja</span><span class="vocab-arrow">→</span><span class="vocab-en">Pay at the register</span></li>
+            <li class="vocab-item"><span class="vocab-es">Empacar las compras</span><span class="vocab-arrow">→</span><span class="vocab-en">Pack the groceries</span></li>
+            <li class="vocab-item"><span class="vocab-es">Cargar las bolsas</span><span class="vocab-arrow">→</span><span class="vocab-en">Carry the bags</span></li>
+            <li class="vocab-item"><span class="vocab-es">Guardar el ticket</span><span class="vocab-arrow">→</span><span class="vocab-en">Keep the receipt</span></li>
+          </ul>
+        </section>
+
+        <section class="panel" id="useful-terms">
+          <h2>Términos útiles</h2>
+          <ul class="vocab-grid">
+            <li class="vocab-item"><span class="vocab-es">Oferta</span><span class="vocab-arrow">→</span><span class="vocab-en">Offer / sale</span></li>
+            <li class="vocab-item"><span class="vocab-es">Descuento</span><span class="vocab-arrow">→</span><span class="vocab-en">Discount</span></li>
+            <li class="vocab-item"><span class="vocab-es">Precio por kilo</span><span class="vocab-arrow">→</span><span class="vocab-en">Price per kilo</span></li>
+            <li class="vocab-item"><span class="vocab-es">Producto agotado</span><span class="vocab-arrow">→</span><span class="vocab-en">Out of stock</span></li>
+            <li class="vocab-item"><span class="vocab-es">Precio rebajado</span><span class="vocab-arrow">→</span><span class="vocab-en">Discounted price</span></li>
+            <li class="vocab-item"><span class="vocab-es">Marca propia</span><span class="vocab-arrow">→</span><span class="vocab-en">Store brand</span></li>
+            <li class="vocab-item"><span class="vocab-es">Marca reconocida</span><span class="vocab-arrow">→</span><span class="vocab-en">Name brand</span></li>
+            <li class="vocab-item"><span class="vocab-es">Compra grande</span><span class="vocab-arrow">→</span><span class="vocab-en">Big grocery trip</span></li>
+            <li class="vocab-item"><span class="vocab-es">Compras del mes</span><span class="vocab-arrow">→</span><span class="vocab-en">Monthly groceries</span></li>
+            <li class="vocab-item"><span class="vocab-es">Compras rápidas</span><span class="vocab-arrow">→</span><span class="vocab-en">Quick run</span></li>
+            <li class="vocab-item"><span class="vocab-es">Productos básicos</span><span class="vocab-arrow">→</span><span class="vocab-en">Staples</span></li>
+          </ul>
+        </section>
+
+        <section class="panel" id="phrases">
+          <h2>Frases comunes</h2>
+          <ul class="phrase-list">
+            <li class="phrase-item"><div class="spanish-line">Hice la lista para no olvidar nada.</div><div class="english-line"><span class="arrow-line">→</span>I made the list so I wouldn’t forget anything.</div></li>
+            <li class="phrase-item"><div class="spanish-line">Siempre compro en oferta.</div><div class="english-line"><span class="arrow-line">→</span>I always buy on sale.</div></li>
+            <li class="phrase-item"><div class="spanish-line">No olvides llevar las bolsas.</div><div class="english-line"><span class="arrow-line">→</span>Don’t forget to bring the bags.</div></li>
+            <li class="phrase-item"><div class="spanish-line">Voy al súper cada fin de semana.</div><div class="english-line"><span class="arrow-line">→</span>I go to the supermarket every weekend.</div></li>
+            <li class="phrase-item"><div class="spanish-line">Siempre reviso la fecha de vencimiento.</div><div class="english-line"><span class="arrow-line">→</span>I always check the expiration date.</div></li>
+            <li class="phrase-item"><div class="spanish-line">¡Qué caro está todo hoy!</div><div class="english-line"><span class="arrow-line">→</span>Everything is so expensive today!</div></li>
+            <li class="phrase-item"><div class="spanish-line">Esa marca es más barata.</div><div class="english-line"><span class="arrow-line">→</span>That brand is cheaper.</div></li>
+            <li class="phrase-item"><div class="spanish-line">Hay mucha fila en la caja.</div><div class="english-line"><span class="arrow-line">→</span>There’s a long line at the register.</div></li>
+            <li class="phrase-item"><div class="spanish-line">¡Olvidé lo más importante!</div><div class="english-line"><span class="arrow-line">→</span>I forgot the most important thing!</div></li>
+            <li class="phrase-item"><div class="spanish-line">Traje todo menos el pan.</div><div class="english-line"><span class="arrow-line">→</span>I brought everything except the bread.</div></li>
+            <li class="phrase-item"><div class="spanish-line">Me gusta ir temprano, hay menos gente.</div><div class="english-line"><span class="arrow-line">→</span>I like going early, there are fewer people.</div></li>
+          </ul>
+        </section>
+
+        <section class="panel" id="translate">
+          <h2>Traducir</h2>
+
+          <div class="exercise-block">
+            <h3>Mostrar respuestas</h3>
+            <ol class="exercise-list">
+              <li><details class="translation-toggle"><summary>Shopping cart</summary><div class="exercise-answer"><strong>Carrito</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Basket</summary><div class="exercise-answer"><strong>Canasta</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Shopping list</summary><div class="exercise-answer"><strong>Lista de compras</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Cashier</summary><div class="exercise-answer"><strong>Cajero / cajera</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Butcher section</summary><div class="exercise-answer"><strong>Carnicería</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Bakery</summary><div class="exercise-answer"><strong>Panadería</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Produce section</summary><div class="exercise-answer"><strong>Verdulería</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Dairy</summary><div class="exercise-answer"><strong>Lácteos</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Toilet paper</summary><div class="exercise-answer"><strong>Papel higiénico</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Canned tuna</summary><div class="exercise-answer"><strong>Atún en lata</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Compare prices</summary><div class="exercise-answer"><strong>Comparar precios</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Pay at the register</summary><div class="exercise-answer"><strong>Pagar en la caja</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Out of stock</summary><div class="exercise-answer"><strong>Producto agotado</strong></div></details></li>
+              <li><details class="translation-toggle"><summary>Monthly groceries</summary><div class="exercise-answer"><strong>Compras del mes</strong></div></details></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="panel" id="dialogues">
+          <h2>Diálogo: En el supermercado</h2>
+          <div class="dialogue-list">
+            <div class="dialogue-card">
+              <h3>Parte 1: Al llegar</h3>
+              <div class="dialogue-line"><span class="speaker">Cliente:</span> Hola, no encuentro las canastas. ¿Dónde están?</div>
+              <div class="dialogue-line"><span class="speaker">Empleado:</span> Están a la entrada, al lado de los carritos.</div>
+              <div class="dialogue-line"><span class="speaker">Cliente:</span> ¡Gracias!</div>
+              <div class="dialogue-line"><span class="speaker">Empleado:</span> Perfecto. No olvide que hoy tenemos muchas ofertas y promociones.</div>
+            </div>
+
+            <div class="dialogue-card">
+              <h3>Parte 2: Buscando productos</h3>
+              <div class="dialogue-line"><span class="speaker">Compradora:</span> Disculpe, ¿en qué pasillo están los fideos y el aceite?</div>
+              <div class="dialogue-line"><span class="speaker">Empleado:</span> Están en la sección de almacén, en el tercer pasillo a la izquierda.</div>
+              <div class="dialogue-line"><span class="speaker">Compradora:</span> Gracias. También busco atún en lata, ¿tienen de la marca propia?</div>
+              <div class="dialogue-line"><span class="speaker">Empleado:</span> Sí, en el pasillo 5.</div>
+            </div>
+
+            <div class="dialogue-card">
+              <h3>Parte 3: En los frescos</h3>
+              <div class="dialogue-line"><span class="speaker">Esposo:</span> ¿Vamos a la carnicería o a la pescadería?</div>
+              <div class="dialogue-line"><span class="speaker">Esposa:</span> Primero vamos a la verdulería, tenemos que pesar la fruta.</div>
+              <div class="dialogue-line"><span class="speaker">Esposo:</span> Bien, luego vamos a la fiambrería por unos bocadillos y un poco de queso.</div>
+            </div>
+
+            <div class="dialogue-card">
+              <h3>Parte 4: Limpieza e higiene</h3>
+              <div class="dialogue-line"><span class="speaker">Hijo:</span> Mamá, en la lista de compras dice: papel higiénico y jabón.</div>
+              <div class="dialogue-line"><span class="speaker">Madre:</span> Tienes razón, vamos a la sección de higiene personal.</div>
+              <div class="dialogue-line"><span class="speaker">Hijo:</span> ¿También tenemos que comprar productos de limpieza?</div>
+              <div class="dialogue-line"><span class="speaker">Madre:</span> Sí, tenemos que comprar un rollo de cocina y detergente, que están en oferta.</div>
+            </div>
+
+            <div class="dialogue-card">
+              <h3>Parte 5: En la caja</h3>
+              <div class="dialogue-line"><span class="speaker">Cliente:</span> Hay mucha fila hoy.</div>
+              <div class="dialogue-line"><span class="speaker">Cajero:</span> Es que es fin de semana. ¿Quiere pagar con tarjeta o efectivo?</div>
+              <div class="dialogue-line"><span class="speaker">Cliente:</span> Aquí tiene mi tarjeta.</div>
+            </div>
+
+            <div class="dialogue-card">
+              <h3>Parte 6: Al terminar</h3>
+              <div class="dialogue-line"><span class="speaker">Amigo:</span> ¡Qué pesadas están las bolsas!</div>
+              <div class="dialogue-line"><span class="speaker">Amiga:</span> Sí. ¿Tienes el recibo?</div>
+              <div class="dialogue-line"><span class="speaker">Amigo:</span> Sí, aquí está el ticket, dentro de esta bolsa.</div>
+              <div class="dialogue-line"><span class="speaker">Amiga:</span> ¡Uy! Olvidé lo más importante… ¡no compramos el pan!</div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <aside class="sidebar">
+        <div class="side-panel">
+          <h2>On this page</h2>
+          <ul>
+            <li><a href="#supermarket-basics">Supermarket basics</a></li>
+            <li><a href="#sections">Sections</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#actions">Actions</a></li>
+            <li><a href="#useful-terms">Useful terms</a></li>
+            <li><a href="#phrases">Common phrases</a></li>
+            <li><a href="#translate">Translate</a></li>
+            <li><a href="#dialogues">Dialogue</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="#privacy">Privacy policy and cookies</a>
+      <a href="#terms">Terms and conditions</a>
+    </div>
+    <div>© 2025 Spanish Nova – All rights reserved</div>
+  </footer>
+</body>
+</html>

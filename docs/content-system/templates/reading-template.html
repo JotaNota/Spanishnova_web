@@ -1,1 +1,596 @@
-<!-- Reading Template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New: Hedy Lamarr, la actriz que inventó el wifi | SpanishNova</title>
+  <style>
+    :root {
+      --bg: #fff8ef;
+      --paper: #ffffff;
+      --ink: #211d19;
+      --muted: #6e665e;
+      --border: #eadfce;
+      --orange: #ff762c;
+      --orange-soft: #fff0e6;
+      --shadow: 0 10px 28px rgba(62, 41, 20, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .top-header {
+      background: var(--paper);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .top-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 22px 24px 16px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      grid-template-areas:
+        "brand empty actions"
+        "nav nav nav";
+      align-items: center;
+      gap: 12px 18px;
+    }
+
+    .brand {
+      grid-area: brand;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: #d99a5e;
+      border: 2px solid #1f1d1a;
+      display: grid;
+      place-items: center;
+    }
+
+    .brand-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 3px;
+      background: #ff675c;
+      border: 1px solid #1f1d1a;
+    }
+
+    .top-actions {
+      grid-area: actions;
+      display: flex;
+      justify-content: flex-end;
+      gap: 18px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .donate { color: var(--orange); }
+
+    .center-nav {
+      grid-area: nav;
+      display: flex;
+      justify-content: center;
+      gap: 34px;
+      padding-top: 14px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .center-nav a::after {
+      content: "⌄";
+      color: var(--orange);
+      font-size: 11px;
+      margin-left: 6px;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 38px 24px 80px;
+    }
+
+    .lesson-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 290px;
+      gap: 22px;
+      align-items: start;
+    }
+
+    article { min-width: 0; }
+
+    .lesson-hero,
+    .panel,
+    .side-panel {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .lesson-hero {
+      border-radius: 28px;
+      padding: 26px;
+      margin-bottom: 20px;
+    }
+
+    .breadcrumb {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: var(--orange-soft);
+      color: var(--orange);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .lesson-hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      letter-spacing: -0.04em;
+      margin-bottom: 14px;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 760px;
+      margin: 0;
+    }
+
+    .panel {
+      border-radius: 24px;
+      padding: 24px;
+      margin-bottom: 18px;
+      scroll-margin-top: 24px;
+    }
+
+    .panel h2 {
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .vocab-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, .9fr);
+      gap: 10px;
+      align-items: baseline;
+      border-bottom: 1px solid #f0e5d8;
+      padding-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .vocab-es { font-weight: 900; }
+    .vocab-arrow { color: var(--orange); font-weight: 900; }
+    .vocab-en { color: var(--muted); }
+
+    .reading-body h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 23px;
+      margin: 26px 0 10px;
+    }
+
+    .reading-body h3:first-child { margin-top: 0; }
+
+    .reading-body p {
+      color: var(--ink);
+      font-size: 16px;
+      margin: 0 0 14px;
+    }
+
+    .reading-body ul {
+      margin: 0 0 16px 20px;
+      padding: 0;
+      display: grid;
+      gap: 7px;
+      font-size: 15px;
+    }
+
+    .true-false-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .true-false-list li {
+      border-bottom: 1px solid #f0e5d8;
+      padding-bottom: 10px;
+    }
+
+    .true-false-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .tf-toggle summary {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      list-style: none;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .tf-toggle summary::-webkit-details-marker { display: none; }
+
+    .tf-toggle summary::before {
+      content: "▸";
+      color: var(--orange);
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    .tf-toggle[open] summary::before { content: "▾"; }
+
+    .tf-answer {
+      margin: 6px 0 0 20px;
+      color: var(--muted);
+    }
+
+    .tf-answer strong { color: var(--orange); }
+
+    .simple-list,
+    .question-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .simple-list li,
+    .question-list li {
+      border-bottom: 1px solid #f0e5d8;
+      padding-bottom: 9px;
+    }
+
+    .simple-list li:last-child,
+    .question-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .question-group {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      background: #fffdf9;
+      margin-bottom: 14px;
+    }
+
+    .question-group h3 {
+      font-family: Inter, system-ui, sans-serif;
+      color: var(--orange);
+      font-size: 15px;
+      margin: 0 0 12px;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 26px;
+      align-self: start;
+      display: block;
+      height: auto;
+    }
+
+    .side-panel {
+      border-radius: 24px;
+      padding: 22px;
+      height: auto;
+      min-height: 0;
+      align-self: start;
+    }
+
+    .side-panel h2 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .side-panel ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .side-panel a { color: var(--muted); }
+
+    .site-footer {
+      max-width: 1180px;
+      margin: 28px auto 0;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .top-inner {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "brand"
+          "actions"
+          "nav";
+      }
+
+      .top-actions { justify-content: flex-start; }
+
+      .center-nav {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+
+      .lesson-layout,
+      .vocab-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar { position: static; }
+
+      .vocab-item {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .vocab-arrow { display: none; }
+      .site-footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top-header">
+    <div class="top-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark"><span class="brand-dot"></span></span>
+        <span>SpanishNova</span>
+      </a>
+
+      <nav class="center-nav">
+        <a href="#grammar">Grammar</a>
+        <a href="#vocabulary">Vocabulary</a>
+        <a href="#readings">Readings</a>
+        <a href="#conversations">Conversations</a>
+        <a href="#practice">Practice</a>
+        <a href="#resources">Resources</a>
+      </nav>
+
+      <div class="top-actions">
+        <a href="#classes">Classes</a>
+        <a class="donate" href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="lesson-layout">
+      <article>
+        <section class="lesson-hero">
+          <div class="breadcrumb">Readings / Biography</div>
+
+          <div class="meta-row">
+            <span class="pill">Reading</span>
+            <span class="pill">Intermediate</span>
+            <span class="pill">Biography</span>
+          </div>
+
+          <h1>New: Hedy Lamarr, la actriz que inventó el wifi</h1>
+
+          <p class="intro">
+            Hedy Lamarr rose to fame in Hollywood as an actress. But besides shining on the big screen, she was also an inventor: her ideas helped create technologies we use today in Wi-Fi and Bluetooth.
+          </p>
+        </section>
+
+        <section class="panel" id="vocabulary">
+          <h2>Vocabulario clave</h2>
+          <ul class="vocab-grid">
+            <li class="vocab-item"><span class="vocab-es">Actriz</span><span class="vocab-arrow">→</span><span class="vocab-en">Actress</span></li>
+            <li class="vocab-item"><span class="vocab-es">Inventora</span><span class="vocab-arrow">→</span><span class="vocab-en">Inventor</span></li>
+            <li class="vocab-item"><span class="vocab-es">Frecuencia</span><span class="vocab-arrow">→</span><span class="vocab-en">Frequency</span></li>
+            <li class="vocab-item"><span class="vocab-es">Transmisor</span><span class="vocab-arrow">→</span><span class="vocab-en">Transmitter</span></li>
+            <li class="vocab-item"><span class="vocab-es">Receptor</span><span class="vocab-arrow">→</span><span class="vocab-en">Receiver</span></li>
+            <li class="vocab-item"><span class="vocab-es">Interferencia</span><span class="vocab-arrow">→</span><span class="vocab-en">Interference</span></li>
+            <li class="vocab-item"><span class="vocab-es">Inalámbrico</span><span class="vocab-arrow">→</span><span class="vocab-en">Wireless</span></li>
+            <li class="vocab-item"><span class="vocab-es">Ingeniería</span><span class="vocab-arrow">→</span><span class="vocab-en">Engineering</span></li>
+          </ul>
+        </section>
+
+        <section class="panel" id="reading">
+          <h2>Lectura</h2>
+
+          <div class="reading-body">
+            <h3>¿Quién fue Hedy Lamarr?</h3>
+            <p>Hedy Lamarr fue una actriz famosa de Hollywood, pero también fue inventora. Aunque muchas personas la recuerdan por su belleza y sus películas, sus ideas ayudaron a desarrollar tecnologías que usamos hoy, como el Wi-Fi y el Bluetooth.</p>
+
+            <h3>De Austria a Hollywood</h3>
+            <p>Hedwig Eva Maria Kiesler, su verdadero nombre, nació en 1914 en Viena. Desde pequeña mostró una inteligencia especial y soñaba con ser ingeniera. Sin embargo, eligió el camino del cine.</p>
+            <p>En los años 30 y 40 conquistó Hollywood, apareciendo en numerosas películas que la hicieron famosa. Más tarde cambió su nombre artístico y empezó a ser conocida como Hedy Lamarr.</p>
+
+            <h3>El escándalo de Éxtasis</h3>
+            <p>En 1932 protagonizó la película <em>Éxtasis</em>, una película que causó gran escándalo en su época. La sociedad de entonces tenía normas mucho más puritanas, y por eso la película terminó prohibida en varios países.</p>
+            <p>Sus padres se alarmaron por la reputación de su hija y decidieron intervenir. En lugar de apoyarla, la presionaron para casarse con Fritz Mandl, un comerciante de armas mucho mayor que ella.</p>
+
+            <h3>Un matrimonio difícil y una huida peligrosa</h3>
+            <p>Mandl era extremadamente celoso. Controlaba la vida de Hedwig, no la dejaba salir sola y le prohibió seguir actuando. También la obligaba a asistir a reuniones con altos mandos nazis y empresarios relacionados con armas.</p>
+            <p>Cansada de esa vida, en 1937 decidió escapar. Algunas versiones dicen que se disfrazó de mucama; otras dicen que saltó por una ventana. Lo importante es que logró huir y llegó a Londres.</p>
+            <p>Allí conoció al productor Louis B. Mayer, de Metro-Goldwyn-Mayer, quien le ofreció un contrato para trabajar en Estados Unidos. Así comenzó una nueva etapa en Hollywood.</p>
+
+            <h3>La inventora en tiempos de guerra</h3>
+            <p>Durante la Segunda Guerra Mundial, Hedy Lamarr quería ayudar contra el nazismo. Como tenía conocimientos de ingeniería y había escuchado conversaciones sobre armamento durante su matrimonio, empezó a pensar en sistemas de comunicación más seguros.</p>
+            <p>Junto con su amigo George Antheil, compositor, diseñó un sistema de “salto de frecuencias”. La idea era que una señal de radio cambiara de frecuencia muchas veces siguiendo una secuencia sincronizada entre transmisor y receptor.</p>
+
+            <h3>¿Qué significa salto de frecuencias?</h3>
+            <p>En una comunicación normal de radio se usa una frecuencia fija. Eso puede ser fácil de interceptar o bloquear. En cambio, con el salto de frecuencias, la señal cambia muchas veces por segundo.</p>
+            <ul>
+              <li>El transmisor y el receptor cambian de frecuencia al mismo tiempo.</li>
+              <li>Ambos siguen una secuencia acordada.</li>
+              <li>Un enemigo no puede adivinar fácilmente la secuencia.</li>
+              <li>La señal es más difícil de bloquear o interferir.</li>
+            </ul>
+
+            <h3>¿Por qué no se usó en la guerra?</h3>
+            <p>El invento era demasiado avanzado para la tecnología de la época. Además, Hedy Lamarr era vista principalmente como actriz, y muchas personas no tomaron en serio que una mujer famosa del cine pudiera crear una idea técnica importante.</p>
+            <p>En lugar de apoyar su invento, le sugirieron que ayudara vendiendo bonos de guerra usando su fama.</p>
+
+            <h3>Reconocimiento tardío</h3>
+            <p>Décadas después, el principio del salto de frecuencias empezó a aplicarse en comunicaciones seguras, satélites y telefonía. Más tarde, esa misma idea ayudó al desarrollo de tecnologías inalámbricas como el Wi-Fi, el GPS y el Bluetooth.</p>
+            <p>Durante años, el mundo solo la vio como actriz. No fue hasta mucho después cuando recibió reconocimiento por su invención. Hoy se la recuerda como una pionera de la tecnología.</p>
+          </div>
+        </section>
+
+        <section class="panel" id="key-ideas">
+          <h2>Ideas clave</h2>
+          <ul class="simple-list">
+            <li>Hedy Lamarr fue actriz e inventora.</li>
+            <li>Nació en Viena y luego trabajó en Hollywood.</li>
+            <li>Diseñó un sistema de salto de frecuencias.</li>
+            <li>Su invento ayudó al desarrollo de tecnologías inalámbricas.</li>
+            <li>Recibió reconocimiento muchos años después.</li>
+          </ul>
+        </section>
+
+        <section class="panel" id="questions">
+          <h2>Preguntas</h2>
+
+          <div class="question-group">
+            <h3>Verdadero o falso</h3>
+            <ul class="true-false-list">
+              <li>
+                <details class="tf-toggle">
+                  <summary>Hedy Lamarr nació en Viena.</summary>
+                  <div class="tf-answer"><strong>Verdadero.</strong> Nació como Hedwig Eva Maria Kiesler en Viena, en 1914.</div>
+                </details>
+              </li>
+              <li>
+                <details class="tf-toggle">
+                  <summary>Hedy Lamarr solo fue actriz y nunca trabajó como inventora.</summary>
+                  <div class="tf-answer"><strong>Falso.</strong> Además de actriz, diseñó junto con George Antheil un sistema de salto de frecuencias.</div>
+                </details>
+              </li>
+              <li>
+                <details class="tf-toggle">
+                  <summary>El salto de frecuencias buscaba evitar interferencias en las comunicaciones.</summary>
+                  <div class="tf-answer"><strong>Verdadero.</strong> La señal cambiaba de frecuencia para que fuera más difícil bloquearla o interceptarla.</div>
+                </details>
+              </li>
+              <li>
+                <details class="tf-toggle">
+                  <summary>El invento de Hedy Lamarr fue reconocido inmediatamente durante la guerra.</summary>
+                  <div class="tf-answer"><strong>Falso.</strong> El invento era muy avanzado para su época y no fue tomado en serio de inmediato.</div>
+                </details>
+              </li>
+            </ul>
+          </div>
+
+          <div class="question-group">
+            <h3>Sobre la lectura</h3>
+            <ul class="question-list">
+              <li>¿Por qué Hedy Lamarr escapó de su matrimonio?</li>
+              <li>¿Qué problema intentaba resolver el salto de frecuencias?</li>
+              <li>¿Qué tecnologías modernas se relacionan con esa idea?</li>
+              <li>¿Por qué su reconocimiento llegó tarde?</li>
+            </ul>
+          </div>
+
+          <div class="question-group">
+            <h3>Para ti</h3>
+            <ul class="question-list">
+              <li>¿Qué parte de la historia de Hedy Lamarr te sorprendió más?</li>
+              <li>¿Crees que una persona puede ser reconocida tarde por su talento?</li>
+              <li>¿Qué invento moderno usas más: Wi-Fi, GPS o Bluetooth?</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <aside class="sidebar">
+        <div class="side-panel">
+          <h2>On this page</h2>
+          <ul>
+            <li><a href="#vocabulary">Vocabulario clave</a></li>
+            <li><a href="#reading">Lectura</a></li>
+            <li><a href="#key-ideas">Ideas clave</a></li>
+            <li><a href="#questions">Preguntas</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="#privacy">Privacy policy and cookies</a>
+      <a href="#terms">Terms and conditions</a>
+    </div>
+    <div>© 2025 Spanish Nova – All rights reserved</div>
+  </footer>
+</body>
+</html>

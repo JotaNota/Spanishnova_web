@@ -1,1 +1,648 @@
-<!-- Grammar Template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Grammar: Ser in the Present Tense | SpanishNova</title>
+  <style>
+    :root {
+      --bg: #fff8ef;
+      --paper: #ffffff;
+      --ink: #211d19;
+      --muted: #6e665e;
+      --border: #eadfce;
+      --orange: #ff762c;
+      --orange-soft: #fff0e6;
+      --shadow: 0 10px 28px rgba(62, 41, 20, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .top-header { background: var(--paper); border-bottom: 1px solid var(--border); }
+
+    .top-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 22px 24px 16px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      grid-template-areas: "brand empty actions" "nav nav nav";
+      align-items: center;
+      gap: 12px 18px;
+    }
+
+    .brand { grid-area: brand; display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 900; }
+    .brand-mark { width: 44px; height: 44px; border-radius: 14px; background: #d99a5e; border: 2px solid #1f1d1a; display: grid; place-items: center; }
+    .brand-dot { width: 15px; height: 15px; border-radius: 3px; background: #ff675c; border: 1px solid #1f1d1a; }
+    .top-actions { grid-area: actions; display: flex; justify-content: flex-end; gap: 18px; align-items: center; font-size: 14px; font-weight: 800; }
+    .donate { color: var(--orange); }
+
+    .center-nav {
+      grid-area: nav;
+      display: flex;
+      justify-content: center;
+      gap: 34px;
+      padding-top: 14px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .center-nav a::after { content: "⌄"; color: var(--orange); font-size: 11px; margin-left: 6px; }
+
+    main { max-width: 1180px; margin: 0 auto; padding: 38px 24px 80px; }
+
+    .lesson-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 290px;
+      gap: 22px;
+      align-items: start;
+    }
+
+    article { min-width: 0; }
+
+    .lesson-hero,
+    .panel,
+    .side-panel {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .lesson-hero {
+      border-radius: 28px;
+      padding: 26px;
+      margin-bottom: 20px;
+    }
+
+    .breadcrumb { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+    .meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+    .pill { display: inline-flex; align-items: center; border-radius: 999px; padding: 6px 10px; background: var(--orange-soft); color: var(--orange); font-size: 11px; font-weight: 900; text-transform: uppercase; }
+    .lesson-hero h1 { font-size: clamp(28px, 4vw, 44px); letter-spacing: -0.04em; margin-bottom: 14px; }
+    .intro { color: var(--muted); font-size: 15px; max-width: 760px; margin: 0; }
+
+    .panel {
+      border-radius: 24px;
+      padding: 24px;
+      margin-bottom: 18px;
+      scroll-margin-top: 24px;
+    }
+
+    .panel h2 { font-size: 24px; margin-bottom: 14px; }
+    .panel h3 { font-family: Inter, system-ui, sans-serif; font-size: 16px; margin: 20px 0 10px; }
+    .panel p { margin: 0 0 12px; }
+
+    .simple-example {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+    .example-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .example-line strong { font-weight: 900; }
+    .example-arrow { color: var(--orange); font-weight: 900; }
+    .example-line em { color: var(--muted); }
+
+    .use-line {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--ink);
+      margin-top: 6px;
+    }
+
+    .use-label {
+      color: var(--orange);
+      font-weight: 900;
+    }
+
+    .grammar-block {
+      margin-bottom: 24px;
+    }
+
+    .grammar-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .grammar-block h2 {
+      margin-bottom: 10px;
+    }
+
+    .example-bubble {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      background: #fffdf9;
+      margin-top: 12px;
+    }
+
+    .compact-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      background: white;
+      font-size: 14px;
+    }
+
+    .compact-table th,
+    .compact-table td { padding: 12px 14px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+    .compact-table th { background: #fff3e8; color: var(--orange); text-transform: uppercase; font-size: 12px; }
+    .compact-table tr:last-child td { border-bottom: none; }
+    .verb-form { font-weight: 900; }
+    .translation { color: var(--muted); }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .example-group,
+    .grammar-note,
+    .dialogue-card {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      background: #fffdf9;
+    }
+
+    .example-group h3 { margin-top: 0; }
+
+    .sentence-list,
+    .summary-list,
+    .question-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 9px;
+      font-size: 14px;
+    }
+
+    .sentence-list li,
+    .summary-list li,
+    .question-list li {
+      border-bottom: 1px solid #f0e5d8;
+      padding-bottom: 9px;
+    }
+
+    .sentence-list li:last-child,
+    .summary-list li:last-child,
+    .question-list li:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .exercise-block {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      background: #fffdf9;
+      margin-top: 14px;
+    }
+
+    .exercise-title {
+      font-family: Inter, system-ui, sans-serif;
+      color: var(--orange);
+      font-size: 14px;
+      font-weight: 900;
+      margin: 0 0 14px;
+    }
+
+    .exercise-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px 30px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 14px;
+    }
+
+    .exercise-item {
+      display: block;
+      border-bottom: 1px solid #f0e5d8;
+      padding-bottom: 8px;
+    }
+
+    .exercise-item summary {
+      cursor: pointer;
+      list-style: none;
+      color: var(--ink);
+    }
+
+    .exercise-item summary::-webkit-details-marker { display: none; }
+    .exercise-item summary::before { content: "▸"; color: var(--orange); font-size: 13px; margin-right: 7px; }
+    .exercise-item[open] summary::before { content: "▾"; }
+
+    .exercise-answer {
+      display: block;
+      margin: 4px 0 0 20px;
+      color: var(--muted);
+    }
+
+    .exercise-answer strong { color: var(--ink); font-weight: 900; }
+
+    .sidebar {
+      position: sticky;
+      top: 26px;
+      align-self: start;
+      display: block;
+      height: auto;
+    }
+
+    .side-panel {
+      border-radius: 24px;
+      padding: 22px;
+      height: auto;
+      min-height: 0;
+      align-self: start;
+      margin-bottom: 16px;
+    }
+
+    .side-panel h2 { font-size: 20px; margin-bottom: 12px; }
+    .side-panel ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; color: var(--muted); font-size: 14px; }
+    .side-panel a { color: var(--muted); }
+
+    .btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; padding: 12px 18px; font-size: 14px; font-weight: 900; border: none; cursor: pointer; }
+    .btn-primary { background: var(--orange); color: white; box-shadow: 0 8px 18px rgba(255, 118, 44, 0.22); }
+
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .related-card { border: 1px solid var(--border); border-radius: 18px; padding: 16px; background: #fffdf9; }
+    .related-card h3 { font-family: Georgia, "Times New Roman", serif; font-size: 21px; margin: 0 0 8px; }
+    .related-card p { color: var(--muted); font-size: 13px; margin: 0; }
+
+    .site-footer { max-width: 1180px; margin: 28px auto 0; padding: 24px; color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; gap: 18px; border-top: 1px solid var(--border); }
+    .footer-links { display: flex; gap: 18px; flex-wrap: wrap; font-weight: 700; }
+
+    @media (max-width: 900px) {
+      .top-inner { grid-template-columns: 1fr; grid-template-areas: "brand" "actions" "nav"; }
+      .top-actions { justify-content: flex-start; }
+      .center-nav { justify-content: flex-start; flex-wrap: wrap; gap: 18px; }
+      .lesson-layout, .two-column, .exercise-list, .related-grid { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .site-footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top-header">
+    <div class="top-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark"><span class="brand-dot"></span></span>
+        <span>SpanishNova</span>
+      </a>
+      <nav class="center-nav">
+        <a href="#grammar">Grammar</a>
+        <a href="#vocabulary">Vocabulary</a>
+        <a href="#readings">Readings</a>
+        <a href="#conversations">Conversations</a>
+        <a href="#practice">Practice</a>
+        <a href="#resources">Resources</a>
+      </nav>
+      <div class="top-actions">
+        <a href="#classes">Classes</a>
+        <a class="donate" href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="lesson-layout">
+      <article>
+        <section class="lesson-hero">
+          <div class="breadcrumb">Grammar / Verbs / Ser</div>
+          <div class="meta-row">
+            <span class="pill">Grammar</span>
+            <span class="pill">Beginner</span>
+            <span class="pill">Verb</span>
+          </div>
+          <h1>Easy Grammar: Ser in the Present Tense</h1>
+          <p class="intro">The verb <strong>ser</strong> is essential in Spanish. Use it to talk about identity, names, origin, professions, relationships, physical descriptions, and personality traits.</p>
+        </section>
+
+        <section class="panel" id="overview">
+          <h2>How do we use ser?</h2>
+          <p>Let’s start with a simple idea:</p>
+          <div class="simple-example">
+            <div class="example-line">
+              <strong>Yo soy Steve Rogers.</strong>
+              <span class="example-arrow">→</span>
+              <em>I am Steve Rogers.</em>
+            </div>
+            <div class="use-line"><span class="use-label">Use:</span> identity and names</div>
+          </div>
+          <p style="margin-top: 14px;">Spanish verbs are conjugated. That means the form changes depending on the subject.</p>
+        </section>
+
+        <section class="panel" id="conjugation">
+          <h2>Conjugation of ser</h2>
+          <table class="compact-table">
+            <thead><tr><th>Subject</th><th>Ser</th><th>Example</th><th>Translation</th></tr></thead>
+            <tbody>
+              <tr><td>Yo</td><td class="verb-form">soy</td><td>Yo soy Steve.</td><td class="translation">I am Steve.</td></tr>
+              <tr><td>Tú</td><td class="verb-form">eres</td><td>Tú eres Tony.</td><td class="translation">You are Tony.</td></tr>
+              <tr><td>Él / Ella / Usted</td><td class="verb-form">es</td><td>Ella es Natalia.</td><td class="translation">She is Natalia.</td></tr>
+              <tr><td>Nosotros / Nosotras</td><td class="verb-form">somos</td><td>Nosotros somos Steve y Natalia.</td><td class="translation">We are Steve and Natalia.</td></tr>
+              <tr><td>Ellos / Ellas</td><td class="verb-form">son</td><td>Ellos son Natalia y Tony.</td><td class="translation">They are Natalia and Tony.</td></tr>
+              <tr><td>Ustedes</td><td class="verb-form">son</td><td>Ustedes son Natalia y Tony.</td><td class="translation">You all are Natalia and Tony.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="panel" id="sentence-patterns">
+          <div class="grammar-block">
+            <h2>Negative sentences</h2>
+            <p>Add <strong>no</strong> before the verb.</p>
+
+            <div class="example-bubble">
+              <ul class="sentence-list">
+                <li>
+                  <strong>Ella no es Verónica.</strong><br>
+                  <span class="translation">She is not Verónica.</span>
+                </li>
+                <li>
+                  <strong>Él no es Carlos.</strong><br>
+                  <span class="translation">He is not Carlos.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="grammar-block">
+            <h2>Yes/no questions</h2>
+            <p>Use question marks and change the intonation.</p>
+
+            <div class="example-bubble">
+              <ul class="sentence-list">
+                <li>
+                  <strong>¿Ella es Verónica?</strong><br>
+                  <span class="translation">Is she Verónica?</span>
+                </li>
+                <li>
+                  <strong>¿Él es Carlos?</strong><br>
+                  <span class="translation">Is he Carlos?</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="practice-names">
+          <h2>Practice with names</h2>
+          <div class="two-column">
+            <div class="example-group">
+              <h3>Affirmative sentences</h3>
+              <ul class="sentence-list">
+                <li><strong>Él es Steve Rogers.</strong> <span class="translation">He is Steve Rogers.</span></li>
+                <li><strong>Ella es Wanda Maximoff.</strong> <span class="translation">She is Wanda Maximoff.</span></li>
+                <li><strong>Él es Tony Stark.</strong> <span class="translation">He is Tony Stark.</span></li>
+                <li><strong>Ella es Natalia.</strong> <span class="translation">She is Natalia.</span></li>
+              </ul>
+            </div>
+            <div class="example-group">
+              <h3>Negative sentences</h3>
+              <ul class="sentence-list">
+                <li><strong>Él no es Loki.</strong> <span class="translation">He isn’t Loki.</span></li>
+                <li><strong>Ella no es Black Widow.</strong> <span class="translation">She isn’t Black Widow.</span></li>
+                <li><strong>Él no es Batman.</strong> <span class="translation">He isn’t Batman.</span></li>
+                <li><strong>Ella no es Daenerys.</strong> <span class="translation">She isn’t Daenerys.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="exercise-block">
+            <h3 class="exercise-title">Completar</h3>
+            <ol class="exercise-list">
+              <li><details class="exercise-item"><summary>Ella ___ Wanda Maximoff.</summary><span class="exercise-answer">Ella <strong>es</strong> Wanda Maximoff.</span></details></li>
+              <li><details class="exercise-item"><summary>Él ___ Spider-Man.</summary><span class="exercise-answer">Él <strong>es</strong> Spider-Man.</span></details></li>
+              <li><details class="exercise-item"><summary>Yo ___ Iron Man.</summary><span class="exercise-answer">Yo <strong>soy</strong> Iron Man.</span></details></li>
+              <li><details class="exercise-item"><summary>Ellos ___ los Vengadores.</summary><span class="exercise-answer">Ellos <strong>son</strong> los Vengadores.</span></details></li>
+              <li><details class="exercise-item"><summary>Tú ___ Doctor Strange.</summary><span class="exercise-answer">Tú <strong>eres</strong> Doctor Strange.</span></details></li>
+              <li><details class="exercise-item"><summary>Nosotros ___ los Guardianes de la Galaxia.</summary><span class="exercise-answer">Nosotros <strong>somos</strong> los Guardianes de la Galaxia.</span></details></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="panel" id="practice-nationalities">
+          <h2>Practice with nationalities</h2>
+          <div class="two-column">
+            <div class="example-group">
+              <h3>Affirmative sentences</h3>
+              <ul class="sentence-list">
+                <li><strong>Él es mexicano.</strong> <span class="translation">He is Mexican.</span></li>
+                <li><strong>Ella es canadiense.</strong> <span class="translation">She is Canadian.</span></li>
+                <li><strong>Él es japonés.</strong> <span class="translation">He is Japanese.</span></li>
+                <li><strong>Ella es brasileña.</strong> <span class="translation">She is Brazilian.</span></li>
+              </ul>
+            </div>
+            <div class="example-group">
+              <h3>Negative sentences</h3>
+              <ul class="sentence-list">
+                <li><strong>Él no es italiano.</strong> <span class="translation">He isn’t Italian.</span></li>
+                <li><strong>Ella no es alemana.</strong> <span class="translation">She isn’t German.</span></li>
+                <li><strong>Él no es argentino.</strong> <span class="translation">He isn’t Argentinian.</span></li>
+                <li><strong>Ella no es francesa.</strong> <span class="translation">She isn’t French.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="exercise-block">
+            <h3 class="exercise-title">Completar</h3>
+            <ol class="exercise-list">
+              <li><details class="exercise-item"><summary>Ella ___ mexicana.</summary><span class="exercise-answer">Ella <strong>es</strong> mexicana.</span></details></li>
+              <li><details class="exercise-item"><summary>Él ___ francés.</summary><span class="exercise-answer">Él <strong>es</strong> francés.</span></details></li>
+              <li><details class="exercise-item"><summary>Yo ___ peruano.</summary><span class="exercise-answer">Yo <strong>soy</strong> peruano.</span></details></li>
+              <li><details class="exercise-item"><summary>Ellos ___ italianos.</summary><span class="exercise-answer">Ellos <strong>son</strong> italianos.</span></details></li>
+              <li><details class="exercise-item"><summary>Tú ___ canadiense.</summary><span class="exercise-answer">Tú <strong>eres</strong> canadiense.</span></details></li>
+              <li><details class="exercise-item"><summary>Nosotros ___ chilenos.</summary><span class="exercise-answer">Nosotros <strong>somos</strong> chilenos.</span></details></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="panel" id="practice-professions">
+          <h2>Practice with professions</h2>
+          <div class="two-column">
+            <div class="example-group">
+              <h3>Affirmative sentences</h3>
+              <ul class="sentence-list">
+                <li><strong>Él es médico.</strong> <span class="translation">He is a doctor.</span></li>
+                <li><strong>Ella es ingeniera.</strong> <span class="translation">She is an engineer.</span></li>
+                <li><strong>Él es profesor.</strong> <span class="translation">He is a teacher.</span></li>
+                <li><strong>Ella es cantante.</strong> <span class="translation">She is a singer.</span></li>
+              </ul>
+            </div>
+            <div class="example-group">
+              <h3>Negative sentences</h3>
+              <ul class="sentence-list">
+                <li><strong>Él no es abogado.</strong> <span class="translation">He isn’t a lawyer.</span></li>
+                <li><strong>Ella no es doctora.</strong> <span class="translation">She isn’t a doctor.</span></li>
+                <li><strong>Él no es chef.</strong> <span class="translation">He isn’t a chef.</span></li>
+                <li><strong>Ella no es arquitecta.</strong> <span class="translation">She isn’t an architect.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="exercise-block">
+            <h3 class="exercise-title">Completar</h3>
+            <ol class="exercise-list">
+              <li><details class="exercise-item"><summary>Ella ___ doctora.</summary><span class="exercise-answer">Ella <strong>es</strong> doctora.</span></details></li>
+              <li><details class="exercise-item"><summary>Él ___ policía.</summary><span class="exercise-answer">Él <strong>es</strong> policía.</span></details></li>
+              <li><details class="exercise-item"><summary>Yo ___ profesor.</summary><span class="exercise-answer">Yo <strong>soy</strong> profesor.</span></details></li>
+              <li><details class="exercise-item"><summary>Ellos ___ músicos.</summary><span class="exercise-answer">Ellos <strong>son</strong> músicos.</span></details></li>
+              <li><details class="exercise-item"><summary>Tú ___ enfermero.</summary><span class="exercise-answer">Tú <strong>eres</strong> enfermero.</span></details></li>
+              <li><details class="exercise-item"><summary>Nosotros ___ dentistas.</summary><span class="exercise-answer">Nosotros <strong>somos</strong> dentistas.</span></details></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="panel" id="practice-relationships">
+          <h2>Practice with relationships</h2>
+          <div class="two-column">
+            <div class="example-group">
+              <h3>Affirmative sentences</h3>
+              <ul class="sentence-list">
+                <li><strong>Él es mi hermano.</strong> <span class="translation">He is my brother.</span></li>
+                <li><strong>Ella es mi hermana.</strong> <span class="translation">She is my sister.</span></li>
+                <li><strong>Él es mi primo.</strong> <span class="translation">He is my cousin.</span></li>
+                <li><strong>Ella es mi amiga.</strong> <span class="translation">She is my friend.</span></li>
+              </ul>
+            </div>
+            <div class="example-group">
+              <h3>Negative sentences</h3>
+              <ul class="sentence-list">
+                <li><strong>Él no es mi padre.</strong> <span class="translation">He isn’t my father.</span></li>
+                <li><strong>Ella no es mi hermana.</strong> <span class="translation">She isn’t my sister.</span></li>
+                <li><strong>Él no es mi tío.</strong> <span class="translation">He isn’t my uncle.</span></li>
+                <li><strong>Ella no es mi prima.</strong> <span class="translation">She isn’t my cousin.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="exercise-block">
+            <h3 class="exercise-title">Completar</h3>
+            <ol class="exercise-list">
+              <li><details class="exercise-item"><summary>Ella ___ mi madre.</summary><span class="exercise-answer">Ella <strong>es</strong> mi madre.</span></details></li>
+              <li><details class="exercise-item"><summary>Él ___ mi primo.</summary><span class="exercise-answer">Él <strong>es</strong> mi primo.</span></details></li>
+              <li><details class="exercise-item"><summary>Yo ___ su amigo.</summary><span class="exercise-answer">Yo <strong>soy</strong> su amigo.</span></details></li>
+              <li><details class="exercise-item"><summary>Ellos ___ mis tíos.</summary><span class="exercise-answer">Ellos <strong>son</strong> mis tíos.</span></details></li>
+              <li><details class="exercise-item"><summary>Tú ___ mi hermano.</summary><span class="exercise-answer">Tú <strong>eres</strong> mi hermano.</span></details></li>
+              <li><details class="exercise-item"><summary>Nosotros ___ sus padres.</summary><span class="exercise-answer">Nosotros <strong>somos</strong> sus padres.</span></details></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="panel" id="practice-descriptions">
+          <h2>Practice with descriptions and personality</h2>
+          <div class="two-column">
+            <div class="example-group">
+              <h3>Affirmative sentences</h3>
+              <ul class="sentence-list">
+                <li><strong>Él es alto.</strong> <span class="translation">He is tall.</span></li>
+                <li><strong>Yo soy baja.</strong> <span class="translation">I am short.</span></li>
+                <li><strong>Él es fuerte.</strong> <span class="translation">He is strong.</span></li>
+                <li><strong>Ella es inteligente.</strong> <span class="translation">She is intelligent.</span></li>
+                <li><strong>Nosotros somos amables.</strong> <span class="translation">We are kind.</span></li>
+              </ul>
+            </div>
+            <div class="example-group">
+              <h3>Negative sentences</h3>
+              <ul class="sentence-list">
+                <li><strong>Él no es débil.</strong> <span class="translation">He isn’t weak.</span></li>
+                <li><strong>Ella no es perezosa.</strong> <span class="translation">She isn’t lazy.</span></li>
+                <li><strong>Él no es serio.</strong> <span class="translation">He isn’t serious.</span></li>
+                <li><strong>Ella no es grosera.</strong> <span class="translation">She isn’t rude.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="exercise-block">
+            <h3 class="exercise-title">Completar</h3>
+            <ol class="exercise-list">
+              <li><details class="exercise-item"><summary>Ella ___ alta.</summary><span class="exercise-answer">Ella <strong>es</strong> alta.</span></details></li>
+              <li><details class="exercise-item"><summary>Él ___ educado.</summary><span class="exercise-answer">Él <strong>es</strong> educado.</span></details></li>
+              <li><details class="exercise-item"><summary>Yo ___ inteligente.</summary><span class="exercise-answer">Yo <strong>soy</strong> inteligente.</span></details></li>
+              <li><details class="exercise-item"><summary>Ellos ___ groseros.</summary><span class="exercise-answer">Ellos <strong>son</strong> groseros.</span></details></li>
+              <li><details class="exercise-item"><summary>Tú ___ fuerte.</summary><span class="exercise-answer">Tú <strong>eres</strong> fuerte.</span></details></li>
+              <li><details class="exercise-item"><summary>Ustedes ___ amables.</summary><span class="exercise-answer">Ustedes <strong>son</strong> amables.</span></details></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="panel" id="wrap-up">
+          <h2>Wrap up</h2>
+          <table class="compact-table">
+            <thead><tr><th>Use</th><th>Example</th><th>Translation</th></tr></thead>
+            <tbody>
+              <tr><td>Identity</td><td>Tú eres Francisco.</td><td class="translation">You are Francisco.</td></tr>
+              <tr><td>Origin</td><td>Tú eres uruguayo.</td><td class="translation">You are Uruguayan.</td></tr>
+              <tr><td>Profession</td><td>Tú eres estudiante.</td><td class="translation">You are a student.</td></tr>
+              <tr><td>Relationships</td><td>Ellos son amigos.</td><td class="translation">They are friends.</td></tr>
+              <tr><td>Physical description</td><td>Ella es alta.</td><td class="translation">She is tall.</td></tr>
+              <tr><td>Personality traits</td><td>Él es amable.</td><td class="translation">He is kind.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="panel" id="related">
+          <h2>Keep practicing</h2>
+          <div class="related-grid">
+            <a class="related-card" href="#"><h3>Ser Practice</h3><p>Clickable exercises with answers.</p></a>
+            <a class="related-card" href="#"><h3>Ser vs Estar</h3><p>Learn when to use each verb.</p></a>
+            <a class="related-card" href="#"><h3>Basic Descriptions</h3><p>Practice sentences with adjectives.</p></a>
+          </div>
+        </section>
+      </article>
+
+      <aside class="sidebar">
+        <div class="side-panel">
+          <h2>On this page</h2>
+          <ul>
+            <li><a href="#overview">How to use ser</a></li>
+            <li><a href="#conjugation">Conjugation</a></li>
+            <li><a href="#sentence-patterns">Negative sentences and yes/no questions</a></li>
+            <li><a href="#practice-names">Names</a></li>
+            <li><a href="#practice-nationalities">Nationalities</a></li>
+            <li><a href="#practice-professions">Professions</a></li>
+            <li><a href="#practice-relationships">Relationships</a></li>
+            <li><a href="#practice-descriptions">Descriptions</a></li>
+            <li><a href="#wrap-up">Wrap up</a></li>
+          </ul>
+        </div>
+        <div class="side-panel">
+          <h2>Download</h2>
+          <p style="color: var(--muted); margin-top: 0;">Printable worksheet for this lesson.</p>
+          <a class="btn btn-primary" href="#">Download PDF</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="#privacy">Privacy policy and cookies</a>
+      <a href="#terms">Terms and conditions</a>
+    </div>
+    <div>© 2025 Spanish Nova – All rights reserved</div>
+  </footer>
+</body>
+</html>
