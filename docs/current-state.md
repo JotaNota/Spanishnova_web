@@ -10,7 +10,6 @@ Track what exists, what is in progress, and what still needs work.
 ## Repository
 
 - Repository: `https://github.com/JotaNota/Spanishnova_web.git`
-- Current working branch: `codex/docs-agent-governance`
 - Local scope: custom WordPress theme
 - Theme name: `SpanishNova`
 - Theme text domain: `spanishnova`

@@ -41,6 +41,8 @@ Recommended future agents:
 - `practice-agent`
 - `resource-agent`
 
+Prompt files for these agents should be added to `docs/agent-system/agents/` when the work begins.
+
 ## Roadmap format
 
 Content agents use `.csv` roadmaps from `docs/content-system/content-plan/`.

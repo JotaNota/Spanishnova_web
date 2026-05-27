@@ -4,6 +4,8 @@
 
 ## Related issue
 
+Link the primary GitHub issue addressed by this PR.
+
 Closes #
 
 ## Changed areas
