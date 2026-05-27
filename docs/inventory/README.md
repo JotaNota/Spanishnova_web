@@ -1,6 +1,6 @@
 # Inventory
 
-Status: Draft scaffold
+Status: Draft
 
 This folder tracks current site inventory and audits.
 

@@ -1,6 +1,6 @@
 # Delivery Phases
 
-Status: Draft scaffold
+Status: Draft
 
 ## Phase 0 - Setup
 

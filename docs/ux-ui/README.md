@@ -1,6 +1,6 @@
 # UX and UI
 
-Status: Draft scaffold
+Status: Draft
 
 This folder documents SpanishNova user experience, templates, accessibility, responsive behavior, and interface patterns.
 

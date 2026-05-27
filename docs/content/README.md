@@ -1,6 +1,6 @@
 # Content Documentation
 
-Status: Draft scaffold
+Status: Draft
 
 This folder documents SpanishNova content strategy, editorial rules, page briefs, and content operations.
 

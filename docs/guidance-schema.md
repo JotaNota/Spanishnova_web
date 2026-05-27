@@ -1,6 +1,6 @@
 # Guidance Schema
 
-Status: Draft scaffold
+Status: Draft
 
 Project guidance should define how humans and AI agents work on SpanishNova.
 

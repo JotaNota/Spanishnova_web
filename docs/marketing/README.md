@@ -1,6 +1,6 @@
 # Marketing
 
-Status: Draft scaffold
+Status: Draft
 
 This folder documents SEO, analytics, conversion tracking, newsletter/signups, and future monetization readiness.
 

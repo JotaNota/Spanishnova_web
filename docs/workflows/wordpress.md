@@ -1,6 +1,6 @@
 # WordPress Development and Editorial Workflow
 
-Status: Draft scaffold
+Status: Draft
 
 ## Before changes
 

@@ -1,6 +1,6 @@
 # Project Charter
 
-Status: Draft scaffold
+Status: Draft
 Date created: 2026-05-27
 
 ## Purpose
