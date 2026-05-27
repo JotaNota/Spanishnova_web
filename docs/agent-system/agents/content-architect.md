@@ -15,7 +15,8 @@ Own SpanishNova content architecture.
 ## Rules
 
 - Treat current CPTs as definitive and scalable.
-- Treat `level` and `topic` as definitive and scalable.
+- Treat `level` and `topic` as currently registered.
+- Resolve the taxonomy model mismatch before changing navigation or taxonomy behavior.
 - Keep AI-assisted content work in `docs/content-system/`.
 - Mark unknowns as `TBD`.
 

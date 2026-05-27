@@ -7,7 +7,7 @@ Status: Draft
 | ID | Requirement | Priority | Status | Notes |
 |---|---|---:|---|---|
 | FR-001 | Register structured content types for grammar, vocabulary, readings, conversations, practice, and resources. | High | Draft | Current CPTs are definitive and scalable. |
-| FR-002 | Register `level` and `topic` taxonomies across structured content types. | High | Draft | Current taxonomies are definitive and scalable. |
+| FR-002 | Register shared taxonomies across structured content types. | High | Draft | Code currently registers `level` and `topic`; taxonomy model mismatch must be resolved. |
 | FR-003 | Provide archive and single templates for each structured content type. | High | Draft | Implemented in theme templates. |
 | FR-004 | Support AI-assisted editorial production through existing `docs/content-system/`. | High | Draft | Keep current content system intact. |
 | FR-005 | Support SEO-first publishing workflows. | High | Draft | Editorial rules TBD. |

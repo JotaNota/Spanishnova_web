@@ -26,22 +26,10 @@ The repo already has content-specific agent prompts:
 - `docs/content-system/agents/vocabulary-agent.md`
 - `docs/content-system/agents/reading-agent.md`
 - `docs/content-system/agents/conversation-agent.md`
+- `docs/content-system/agents/practice-agent.md`
+- `docs/content-system/agents/resource-agent.md`
 
 These are draft generators. They must not edit PHP, CSS, templates, or publish to WordPress.
-
-## Missing content agents
-
-Current CPTs also include:
-
-- `practice`
-- `resources`
-
-Recommended future agents:
-
-- `practice-agent`
-- `resource-agent`
-
-Prompt files for these agents should be added to `docs/agent-system/agents/` when the work begins.
 
 ## Roadmap format
 

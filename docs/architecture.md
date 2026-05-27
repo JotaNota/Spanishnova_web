@@ -32,12 +32,22 @@ These post types are considered definitive and scalable.
 
 ## Taxonomies
 
-Current taxonomies:
+Current registered taxonomies:
 
 - `level`
 - `topic`
 
-These taxonomies are considered definitive and scalable.
+These are the taxonomies currently registered in theme code.
+
+## Taxonomy mismatch to resolve
+
+Current code and documentation do not fully agree:
+
+- `inc/taxonomies.php` registers `level` and `topic`.
+- `header.php` references `grammar_tax`.
+- `docs/content/content_clasification.md` describes `level_tax`, `grammar_tax`, `vocabulary_tax`, and `reading_tax`.
+
+Resolve this before implementing taxonomy navigation or SEO topic clusters.
 
 ## Theme responsibilities
 

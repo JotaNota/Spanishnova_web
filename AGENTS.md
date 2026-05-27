@@ -33,9 +33,10 @@ Agents must treat SpanishNova as a content-led WordPress product with:
   - `conversations`
   - `practice`
   - `resources`
-- Current taxonomies are definitive and scalable:
+- Current registered taxonomies:
   - `level`
   - `topic`
+- Taxonomy architecture has an open mismatch: `header.php` and `docs/content/content_clasification.md` reference content-specific taxonomies. Do not change taxonomy behavior without resolving the taxonomy model issue.
 - Use WordPress escaping helpers for frontend output.
 - Use nonces and capability checks for admin, form, or AJAX behavior.
 - Preserve URL structure unless a redirect plan exists.
@@ -73,6 +74,8 @@ Existing content agents live in:
 - `docs/content-system/agents/vocabulary-agent.md`
 - `docs/content-system/agents/reading-agent.md`
 - `docs/content-system/agents/conversation-agent.md`
+- `docs/content-system/agents/practice-agent.md`
+- `docs/content-system/agents/resource-agent.md`
 
 These agents create drafts only. They must not publish to WordPress.
 

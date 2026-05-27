@@ -10,6 +10,7 @@ This folder documents SpanishNova as a WordPress site with structured editorial 
 - `backlog.md` - planning view backed by GitHub Issues.
 - `roadmap.md` - phased route from setup to growth.
 - `current-state.md` - what exists, what is in progress, and what remains.
+- `github-issues-seed.md` - initial Issues to create manually if API or CLI access is unavailable.
 - `architecture.md` - WordPress site architecture, content model, theme boundary.
 - `agents.md` - agent roles, workflow, and development coordination.
 - `workflows/wordpress.md` - WordPress development and editorial workflow.
