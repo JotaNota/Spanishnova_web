@@ -1,6 +1,6 @@
 # QA Checklist
 
-Status: Draft scaffold
+Status: Draft
 
 ## WordPress
 

@@ -6,7 +6,7 @@ Use the SpanishNova reading template.
 
 Read:
 - `docs/content-system/templates/reading-template.html`
-- `docs/content-system/content-plan/reading-topics.yml`
+- `docs/content-system/content-plan/reading-roadmap.csv`
 
 Write drafts to:
 - `docs/content-system/content/readings/`

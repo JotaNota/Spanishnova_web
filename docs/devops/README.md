@@ -1,6 +1,6 @@
 # DevOps
 
-Status: Draft scaffold
+Status: Draft
 
 This folder documents environments, hosting, backups, deployment, observability, and recovery.
 

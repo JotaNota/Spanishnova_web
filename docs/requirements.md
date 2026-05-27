@@ -1,6 +1,6 @@
 # Requirements
 
-Status: Draft scaffold
+Status: Draft
 
 ## Functional requirements
 

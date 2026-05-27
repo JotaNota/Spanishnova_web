@@ -6,7 +6,7 @@ Use the SpanishNova conversation template.
 
 Read:
 - `docs/content-system/templates/conversation-template.html`
-- `docs/content-system/content-plan/conversation-topics.yml`
+- `docs/content-system/content-plan/conversation-roadmap.csv`
 
 Write drafts to:
 - `docs/content-system/content/conversations/`

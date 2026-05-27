@@ -6,7 +6,7 @@ Use the SpanishNova grammar template.
 
 Read:
 - `docs/content-system/templates/grammar-template.html`
-- `docs/content-system/content-plan/grammar-topics.yml`
+- `docs/content-system/content-plan/grammar-roadmap.csv`
 
 Write drafts to:
 - `docs/content-system/content/grammar/`

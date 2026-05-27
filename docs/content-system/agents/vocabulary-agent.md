@@ -6,7 +6,7 @@ Use the SpanishNova vocabulary template.
 
 Read:
 - `docs/content-system/templates/vocabulary-template.html`
-- `docs/content-system/content-plan/vocabulary-topics.yml`
+- `docs/content-system/content-plan/vocabulary-roadmap.csv`
 
 Write drafts to:
 - `docs/content-system/content/vocabulary/`

@@ -1,6 +1,6 @@
 # SpanishNova WordPress Architecture
 
-Status: Draft scaffold
+Status: Draft
 
 ## Repository boundary
 

@@ -1,6 +1,6 @@
 # Launch Checklist
 
-Status: Draft scaffold
+Status: Draft
 
 ## Before launch
 

@@ -1,6 +1,6 @@
 # Security and Maintenance Checklist
 
-Status: Draft scaffold
+Status: Draft
 
 ## Security
 
