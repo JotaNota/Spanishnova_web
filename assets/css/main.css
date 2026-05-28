@@ -545,6 +545,16 @@ body:has(.sn-lesson-wrap) .wp-block-post-content {
   transform: translateX(-50%) translateY(0);
 }
 
+.sn-main-menu > .has-submenu::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 12px;
+  z-index: 9998;
+}
+
 /* ---------- Mobile ---------- */
 
 @media (max-width: 900px) {
@@ -645,6 +655,15 @@ body:has(.sn-lesson-wrap) .wp-block-post-content {
   position: relative;
 }
 
+.sn-main-menu .submenu .has-submenu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 12px;
+  height: 100%;
+}
+
 /* Add right arrow to dropdown items with children */
 .sn-main-menu .submenu .has-submenu > a {
   position: relative;
@@ -663,9 +682,9 @@ body:has(.sn-lesson-wrap) .wp-block-post-content {
 /* Second-level dropdown */
 .sn-main-menu .submenu .submenu {
   top: -10px;
-  left: 100%;
+  left: calc(100% - 2px);
   min-width: 210px;
-  transform: translateX(8px) translateY(0);
+  transform: translateX(0) translateY(0);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -677,7 +696,7 @@ body:has(.sn-lesson-wrap) .wp-block-post-content {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateX(8px) translateY(0);
+  transform: translateX(0) translateY(0);
 }
 
 /* Keep first-level dropdown behavior clean */
@@ -713,6 +732,13 @@ body:has(.sn-lesson-wrap) .wp-block-post-content {
    Homepage/header visual audit pass
    Scope: homepage + header only
    ========================================================= */
+
+@media (max-width: 900px) {
+  .sn-main-menu > .has-submenu::before,
+  .sn-main-menu .submenu .has-submenu::before {
+    content: none;
+  }
+}
 
 .top-inner {
   padding: 28px 24px 22px;
@@ -769,6 +795,21 @@ main {
 .activity-row {
   grid-template-columns: 96px 1fr auto;
   padding: 16px 18px;
+  cursor: pointer;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease, background 0.18s ease;
+}
+
+.activity-row:hover,
+.activity-row:focus-visible {
+  border-color: var(--orange);
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(62, 41, 20, 0.1);
+  transform: translateY(-1px);
+}
+
+.activity-row:focus-visible {
+  outline: 3px solid var(--orange-soft);
+  outline-offset: 3px;
 }
 
 .activity-row h3 {
