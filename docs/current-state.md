@@ -1,7 +1,7 @@
 # Current State
 
 Status: Draft
-Date updated: 2026-05-27
+Date updated: 2026-05-28
 
 ## Purpose
 
@@ -30,8 +30,8 @@ Track what exists, what is in progress, and what still needs work.
   - `archive.php`
   - `single.php`
   - `search.php`
-  - `taxonomy-level.php`
-  - `taxonomy-topic.php`
+  - `taxonomy-level_tax.php`
+  - `taxonomy-topic_tax.php`
 
 ### Content types
 
@@ -108,18 +108,13 @@ Roadmaps exist for:
 
 ## In progress
 
-- Documentation scaffold
-- Agent workflow definition
 - Editorial system alignment
 - Current state inventory
-- Taxonomy model alignment
 
 ## Not started
 
 - GitHub Issues backlog population
 - GitHub branch protection for `main`
-- Practice content agent
-- Resources content agent
 - Analytics setup documentation
 - Newsletter/signup integration documentation
 - Internal linking rules
@@ -135,8 +130,7 @@ Roadmaps exist for:
 - Existing page/content count is not documented.
 - Production hosting and deployment process are `TBD`.
 - Monetization model is `TBD`.
-- `inc/taxonomies.php` still needs validation against the official taxonomy model.
-- Existing taxonomy template filenames may still reflect legacy names.
+- Active WordPress validation is pending because WP-CLI availability depends on the local environment.
 
 ## Next validation
 
@@ -144,8 +138,7 @@ Roadmaps exist for:
 - Confirm active plugins.
 - Populate GitHub Issues as user stories.
 - Link issues from `docs/backlog.md`.
-- Validate taxonomy registration names.
-- Validate taxonomy archive templates.
+- Confirm official taxonomies in wp-admin or WP-CLI.
 - Update this file after each completed issue.
 
 ## Source of truth

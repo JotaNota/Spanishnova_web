@@ -1,7 +1,7 @@
 # Backlog
 
 Status: Draft
-Date updated: 2026-05-27
+Date updated: 2026-05-28
 
 ## Purpose
 
@@ -71,6 +71,7 @@ Recommended labels:
 | BL-009 | TBD | Define newsletter/signup integration | marketing | Medium | Backlog | seo-editorial-agent | Integration TBD. |
 | BL-010 | TBD | Audit archive and single templates | ux-ui | High | Backlog | ux-ui-agent | Reading experience and responsive QA. |
 | BL-011 | TBD | Run WordPress theme QA checklist | qa | High | Backlog | qa-verifier | Before launch readiness. |
+| BL-012 | TBD | Align WordPress taxonomies with content model | theme/content | High | In progress | content-architect | Code updated; wp-admin validation pending. |
 
 ## Maintenance
 
@@ -103,16 +104,17 @@ Important:
 
 Tasks:
 
-- [ ] Replace `level` with `level_tax`.
-- [ ] Replace `topic` with `topic_tax`.
-- [ ] Register `grammar_tax`.
-- [ ] Register `topic_tax`.
-- [ ] Register `level_tax`.
-- [ ] Confirm native WordPress tags (`post_tag`) are available for all relevant CPTs.
-- [ ] Do not create a custom taxonomy named `post_tag`.
-- [ ] Remove references to `vocabulary_tax`.
-- [ ] Remove references to `reading_tax`.
-- [ ] Update `header.php` only if needed after taxonomy registration.
+- [x] Replace `level` with `level_tax`.
+- [x] Replace `topic` with `topic_tax`.
+- [x] Register `grammar_tax`.
+- [x] Register `topic_tax`.
+- [x] Register `level_tax`.
+- [x] Associate native WordPress tags (`post_tag`) with all relevant CPTs.
+- [x] Do not create a custom taxonomy named `post_tag`.
+- [x] Confirm no code registers `vocabulary_tax`.
+- [x] Confirm no code registers `reading_tax`.
+- [x] Confirm `header.php` already resolves grammar links against `grammar_tax`.
+- [x] Rename taxonomy templates for `level_tax` and `topic_tax`.
 - [ ] Confirm taxonomy archive URLs.
 - [ ] Flush rewrite rules after taxonomy changes.
 - [ ] Validate WP admin taxonomy boxes for each CPT.
