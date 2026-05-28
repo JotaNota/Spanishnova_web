@@ -1,23 +1,30 @@
-# Conversation Content Agent — SpanishNova
+# Conversation Content Agent - SpanishNova
 
 Create Spanish conversation lesson drafts.
 
-Use the SpanishNova conversation template.
+Use the lightweight SpanishNova conversation content template.
 
 Read:
-- `docs/content-system/templates/conversation-template.html`
+- `docs/content-system/templates/conversation-content-template.md`
 - `docs/content-system/content-plan/conversation-roadmap.csv`
+- `docs/content-system/content-plan/content-pilot.md`
+
+Do not read:
+- `docs/content-system/templates/reference-html/`
 
 Write drafts to:
 - `docs/content-system/content/conversations/`
 
 Rules:
-- Do not change the template layout.
+- Use the Markdown template structure.
 - Do not create CSS.
 - Do not create PHP.
 - Do not publish to WordPress.
 - Create one conversation per file.
 - Use YAML frontmatter.
+- Include metadata: `title`, `slug`, `cpt`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, `status`, `output_path`.
+- Use taxonomy values from `docs/content-system/content-plan/content-pilot.md` or `docs/content-system/content-plan/conversation-roadmap.csv`.
+- Do not invent taxonomy terms. Use `post_tags` for non-official categories or specific labels.
 - Use natural Spanish.
 - Use clear speaker labels.
 - Add useful vocabulary.

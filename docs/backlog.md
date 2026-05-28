@@ -72,6 +72,7 @@ Recommended labels:
 | BL-010 | TBD | Audit archive and single templates | ux-ui | High | Backlog | ux-ui-agent | Reading experience and responsive QA. |
 | BL-011 | TBD | Run WordPress theme QA checklist | qa | High | Backlog | qa-verifier | Before launch readiness. |
 | BL-012 | TBD | Align WordPress taxonomies with content model | theme/content | High | In progress | content-architect | Code updated; wp-admin validation pending. |
+| BL-013 | TBD | Clean up content pilot production docs | docs/content | Medium | Done | project-coordinator | Lightweight templates, pilot queue, log, and agent instructions aligned on `feature/content-pilot`. |
 
 ## Maintenance
 
