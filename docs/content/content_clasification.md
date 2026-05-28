@@ -127,7 +127,6 @@ Verbs
 - Gustar-Type Verbs
 - Reflexive Verbs
 - Irregular Verbs
-- Meaning-Changing Verbs
 
 Moods
 - Indicative

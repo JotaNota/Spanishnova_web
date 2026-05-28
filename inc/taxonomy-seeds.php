@@ -40,7 +40,6 @@ function spanishnova_seed_taxonomy_terms() {
                 ['name' => 'Gustar-Type Verbs', 'slug' => 'gustar-type-verbs'],
                 ['name' => 'Reflexive Verbs', 'slug' => 'reflexive-verbs'],
                 ['name' => 'Irregular Verbs', 'slug' => 'irregular-verbs'],
-                ['name' => 'Meaning-Changing Verbs', 'slug' => 'meaning-changing-verbs'],
             ],
         ],
         [
