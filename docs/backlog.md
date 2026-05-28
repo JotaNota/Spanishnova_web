@@ -78,3 +78,60 @@ Recommended labels:
 - Update this file when issues are created, reprioritized, started, or completed.
 - Update `docs/current-state.md` when work lands.
 - Update `docs/roadmap.md` when sequence changes.
+
+## Taxonomy cleanup
+
+Goal: align WordPress taxonomy registration with the official content model.
+
+Official custom taxonomy names:
+
+```txt
+level_tax
+grammar_tax
+topic_tax
+```
+
+Native WordPress tags:
+
+```txt
+post_tag
+```
+
+Important:
+
+`post_tag` is the native WordPress tag taxonomy. Do not register a new custom taxonomy named `post_tag`.
+
+Tasks:
+
+- [ ] Replace `level` with `level_tax`.
+- [ ] Replace `topic` with `topic_tax`.
+- [ ] Register `grammar_tax`.
+- [ ] Register `topic_tax`.
+- [ ] Register `level_tax`.
+- [ ] Confirm native WordPress tags (`post_tag`) are available for all relevant CPTs.
+- [ ] Do not create a custom taxonomy named `post_tag`.
+- [ ] Remove references to `vocabulary_tax`.
+- [ ] Remove references to `reading_tax`.
+- [ ] Update `header.php` only if needed after taxonomy registration.
+- [ ] Confirm taxonomy archive URLs.
+- [ ] Flush rewrite rules after taxonomy changes.
+- [ ] Validate WP admin taxonomy boxes for each CPT.
+
+Acceptance criteria:
+
+- `grammar_tax` exists and works in the WordPress admin.
+- `topic_tax` exists and works in the WordPress admin.
+- `level_tax` exists and works in the WordPress admin.
+- Native WordPress tags are available for relevant CPTs.
+- No custom taxonomy named `post_tag` is registered.
+- `header.php` links do not fall back to `/grammar/` because of missing taxonomy registration.
+- No documentation recommends `vocabulary_tax` or `reading_tax`.
+- No code registers generic `level` or `topic` taxonomies.
+
+## Suggested GitHub issues
+docs/backlog.md
+docs/current-state.md
+docs/README.md
+docs/roadmap.md
+docs/agents.md
+AGENTS.md
