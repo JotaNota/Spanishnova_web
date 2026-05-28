@@ -2,6 +2,8 @@
 title: "TBD"
 slug: "TBD"
 cpt: "grammar"
+focus: "TBD"
+variant: ""
 level_tax: "beginner"
 grammar_tax:
   - "TBD"
@@ -12,6 +14,11 @@ status: "draft"
 output_path: "docs/content-system/content/grammar/TBD.md"
 ---
 
+<!-- This template creates Markdown source, not Gutenberg output. -->
+<!-- Markdown source must stay editable for future PDF or WordPress/Gutenberg export. -->
+<!-- focus and variant are editorial guidance, not taxonomy terms. -->
+<!-- Spanish text must preserve accents and punctuation, including opening question and exclamation marks where needed. -->
+
 # Title
 
 Brief English intro that explains the grammar point and when learners use it.
@@ -19,6 +26,8 @@ Brief English intro that explains the grammar point and when learners use it.
 ## Overview
 
 - Core idea:
+- Focus:
+- Variant:
 - Simple example:
   - Spanish:
   - English:
