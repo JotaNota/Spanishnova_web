@@ -1,3 +1,5 @@
+
+
 # Current State
 
 Status: Draft
@@ -126,3 +128,53 @@ Roadmaps exist for:
 - Populate GitHub Issues as user stories.
 - Link issues from `docs/backlog.md`.
 - Update this file after each completed issue.
+
+## Content model decision
+
+The official custom taxonomy model is:
+
+```txt
+level_tax
+grammar_tax
+topic_tax
+```
+
+The project also uses native WordPress tags:
+
+```txt
+post_tag
+```
+
+Important:
+
+`post_tag` is the native WordPress tag taxonomy. Do not register a new custom taxonomy named `post_tag`.
+
+The project should not use these deprecated taxonomy names:
+
+```txt
+level
+topic
+vocabulary_tax
+reading_tax
+```
+
+## Current implementation gap
+
+The documentation defines `grammar_tax`, `topic_tax`, and `level_tax` as the official custom taxonomy names.
+
+The current implementation may still be partially out of sync.
+
+Known gap:
+
+- `header.php` references `grammar_tax`.
+- `inc/taxonomies.php` must register `grammar_tax`.
+- `inc/taxonomies.php` must use `level_tax`, not `level`.
+- `inc/taxonomies.php` must use `topic_tax`, not `topic`.
+- `vocabulary_tax` and `reading_tax` should not be registered unless the content model changes later.
+- Native WordPress tags should be enabled through CPT support/taxonomy association, not by creating a new custom taxonomy named `post_tag`.
+
+## Source of truth
+
+Use this file for current project state.
+
+Use `docs/content/content_clasification.md` as the source of truth for the content model.
