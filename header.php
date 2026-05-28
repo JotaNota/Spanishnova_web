@@ -42,10 +42,6 @@ if (is_wp_error($parts_of_speech_link)) {
   $parts_of_speech_link = home_url('/grammar/');
 }
 
-$structures_link = get_term_link('structures', 'grammar_tax');
-if (is_wp_error($structures_link)) {
-  $structures_link = home_url('/grammar/');
-}
 ?>
 
 <?php
@@ -112,17 +108,6 @@ $sn_grammar_term_link = function ($slug) {
       </ul>
     </li>
 
-    <li class="menu-item has-submenu">
-      <a href="<?php echo esc_url($sn_grammar_term_link('structures')); ?>">Structures</a>
-      <ul class="submenu">
-        <li><a href="<?php echo esc_url($sn_grammar_term_link('hay')); ?>">Hay</a></li>
-        <li><a href="<?php echo esc_url($sn_grammar_term_link('hay-object')); ?>">Hay + Object</a></li>
-        <li><a href="<?php echo esc_url($sn_grammar_term_link('tener-que')); ?>">Tener que</a></li>
-        <li><a href="<?php echo esc_url($sn_grammar_term_link('ir-a-infinitive')); ?>">Ir a + Infinitive</a></li>
-        <li><a href="<?php echo esc_url($sn_grammar_term_link('comparatives')); ?>">Comparatives</a></li>
-        <li><a href="<?php echo esc_url($sn_grammar_term_link('tan-vs-tanto')); ?>">Tan vs Tanto</a></li>
-      </ul>
-    </li>
   </ul>
 </li>
 
@@ -192,7 +177,6 @@ $sn_grammar_term_link = function ($slug) {
         <li><a href="<?php echo esc_url($sn_grammar_term_link('moods')); ?>">Moods</a></li>
         <li><a href="<?php echo esc_url($sn_grammar_term_link('verbs')); ?>">Verbs</a></li>
         <li><a href="<?php echo esc_url($sn_grammar_term_link('parts-of-speech')); ?>">Parts of Speech</a></li>
-        <li><a href="<?php echo esc_url($sn_grammar_term_link('structures')); ?>">Structures</a></li>
       </ul>
     </li>
 
