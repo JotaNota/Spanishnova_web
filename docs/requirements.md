@@ -7,12 +7,13 @@ Status: Draft
 | ID | Requirement | Priority | Status | Notes |
 |---|---|---:|---|---|
 | FR-001 | Register structured content types for grammar, vocabulary, readings, conversations, practice, and resources. | High | Draft | Current CPTs are definitive and scalable. |
-| FR-002 | Register `level` and `topic` taxonomies across structured content types. | High | Draft | Current taxonomies are definitive and scalable. |
-| FR-003 | Provide archive and single templates for each structured content type. | High | Draft | Implemented in theme templates. |
-| FR-004 | Support AI-assisted editorial production through existing `docs/content-system/`. | High | Draft | Keep current content system intact. |
-| FR-005 | Support SEO-first publishing workflows. | High | Draft | Editorial rules TBD. |
-| FR-006 | Support newsletter/signups. | Medium | Draft | Integration TBD. |
-| FR-007 | Support future monetization readiness. | Medium | Draft | Model TBD. |
+| FR-002 | Register official custom taxonomies: `level_tax`, `grammar_tax`, and `topic_tax`. | High | Draft | See `docs/content/content_clasification.md` for taxonomy rules. |
+| FR-003 | Support native WordPress tags (`post_tag`) for relevant structured content types. | High | Draft | `post_tag` means regular WordPress tags. Do not register a custom taxonomy named `post_tag`. |
+| FR-004 | Provide archive and single templates for each structured content type. | High | Draft | Implemented in theme templates. |
+| FR-005 | Support AI-assisted editorial production through existing `docs/content-system/`. | High | Draft | Keep current content system intact. |
+| FR-006 | Support SEO-first publishing workflows. | High | Draft | Editorial rules TBD. |
+| FR-007 | Support newsletter/signups. | Medium | Draft | Integration TBD. |
+| FR-008 | Support future monetization readiness. | Medium | Draft | Model TBD. |
 
 ## Non-functional requirements
 

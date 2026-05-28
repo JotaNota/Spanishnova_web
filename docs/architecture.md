@@ -32,12 +32,35 @@ These post types are considered definitive and scalable.
 
 ## Taxonomies
 
-Current taxonomies:
+Official custom taxonomies:
+
+- `level_tax`
+- `grammar_tax`
+- `topic_tax`
+
+Native WordPress tags:
+
+- `post_tag`
+
+`post_tag` means regular WordPress tags. Do not register a new custom taxonomy named `post_tag`.
+
+Deprecated taxonomy names that must not be used:
 
 - `level`
 - `topic`
+- `vocabulary_tax`
+- `reading_tax`
 
-These taxonomies are considered definitive and scalable.
+The detailed content model is documented in `docs/content/content_clasification.md`.
+
+Use that file as the source of truth for:
+
+- taxonomy meaning
+- taxonomy hierarchy
+- classification rules
+- navigation logic
+- content examples
+- CPT relationships
 
 ## Theme responsibilities
 
