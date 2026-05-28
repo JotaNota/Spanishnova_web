@@ -6,7 +6,7 @@ SpanishNova uses:
 
 - Custom Post Types to define content type.
 - Custom taxonomies to classify content in a controlled way.
-- Native WordPress tags for free labels, search, and related content.
+- Native WordPress tags for free labels, search, related content, and specific cases.
 
 ---
 
@@ -23,20 +23,9 @@ resources
 
 CPTs define what the content is.
 
-Examples:
-
-```txt
-grammar       → grammar lesson
-vocabulary    → vocabulary lesson
-readings      → reading content
-conversations → dialogue or conversation content
-practice      → exercise or practice item
-resources     → downloadable or support resource
-```
-
 ---
 
-# Official classification system
+# Official Classification System
 
 SpanishNova uses three custom taxonomies:
 
@@ -54,9 +43,11 @@ post_tag
 
 Important:
 
-`post_tag` is the native WordPress tag taxonomy. Do not register a new custom taxonomy named `post_tag`.
+- `post_tag` is the native WordPress tag taxonomy.
+- Do not register a custom taxonomy named `post_tag`.
+- Do not seed `post_tag` terms in the theme.
 
-Do not use these deprecated taxonomy names:
+Deprecated taxonomy names:
 
 ```txt
 level
@@ -65,16 +56,18 @@ vocabulary_tax
 reading_tax
 ```
 
+Do not reintroduce deprecated taxonomy names.
+
 ---
 
-# Classification usage matrix
+# Classification Usage Matrix
 
 | System | Type | Main purpose | Used by |
 |---|---|---|---|
 | `level_tax` | custom hierarchical taxonomy | learning difficulty | all learning CPTs |
-| `grammar_tax` | custom hierarchical taxonomy | grammar points and grammar navigation | `grammar`, optional in `readings`, `practice`, `conversations` |
-| `topic_tax` | custom hierarchical taxonomy | semantic topics | `vocabulary`, `readings`, `conversations`, `practice`, `resources` |
-| WordPress native tags (`post_tag`) | native non-hierarchical taxonomy | free labels, search, related content | all CPTs |
+| `grammar_tax` | custom hierarchical taxonomy | grammar navigation and grammar points | `grammar`, optional in `readings`, `practice`, `conversations` |
+| `topic_tax` | custom hierarchical taxonomy | broad semantic contexts | `vocabulary`, `readings`, `conversations`, `practice`, `resources` |
+| WordPress native tags (`post_tag`) | native non-hierarchical taxonomy | free labels, specific terms, concrete words, contrasts, dialects, expressions, and cross-cutting cases | all CPTs |
 
 ---
 
@@ -82,22 +75,16 @@ reading_tax
 
 Used for learning difficulty.
 
-Recommended initial structure:
+Architecture rule:
+
+- `level_tax` stays flat.
+
+Initial seeded structure:
 
 ```txt
 beginner
 intermediate
 advanced
-```
-
-Possible future structure:
-
-```txt
-A1
-A2
-B1
-B2
-C1
 ```
 
 Rules:
@@ -108,242 +95,116 @@ Rules:
 - It should not be used for grammar points.
 - It should not be replaced with native WordPress tags.
 
-Examples:
-
-```txt
-Futuro simple
-→ CPT: grammar
-→ level_tax: beginner
-
-Airport interview
-→ CPT: readings
-→ level_tax: beginner
-```
-
 ---
 
 # grammar_tax
 
-Used to organize grammar lessons and grammar points.
+Used for grammar navigation and grammar points.
 
-Supports hierarchy.
+Architecture rule:
 
-`grammar_tax` is not a general topic taxonomy. It is only for grammar.
+- `grammar_tax` may use 3 levels.
 
-A single post can use more than one `grammar_tax` term.
-
-Example:
-
-```txt
-Tener que + presente
-→ grammar_tax: Verbs > Tener que
-→ grammar_tax: Tenses > Present
-```
-
-Initial structure:
+Initial seeded structure:
 
 ```txt
 Tenses
-├─ Present
-├─ Past
-├─ Future
-├─ Conditional
-├─ Progressive Tenses
-└─ Perfect Tenses
-
-Moods
-├─ Subjunctive
-└─ Imperative
+- Present
+- Past
+  - Preterite
+  - Imperfect
+- Future
+- Conditional
+- Progressive
+- Perfect Tenses
 
 Verbs
-├─ Ser
-├─ Estar
-├─ Tener
-├─ Ir
-├─ Querer
-├─ Necesitar
-├─ Gustar
-├─ Tener que
-├─ Ir a + Infinitive
-└─ Reflexive Verbs
+- Ser
+- Estar
+- Tener
+- Ir
+- Haber
+- Gustar-Type Verbs
+- Reflexive Verbs
+- Irregular Verbs
+- Meaning-Changing Verbs
+
+Moods
+- Indicative
+- Subjunctive
+- Imperative
 
 Parts of Speech
-├─ Pronouns
-├─ Adjectives
-├─ Adverbs
-├─ Prepositions
-├─ Connectors
-└─ Articles
-```
+- Articles
+- Nouns
+- Adjectives
+- Pronouns
+- Adverbs
+- Prepositions
+- Conjunctions
 
-Examples:
-
-```txt
-Presente
-→ CPT: grammar
-→ grammar_tax: Tenses > Present
-
-Pretérito
-→ CPT: grammar
-→ grammar_tax: Tenses > Past
-
-Ser
-→ CPT: grammar
-→ grammar_tax: Verbs > Ser
-
-Tener que
-→ CPT: grammar
-→ grammar_tax: Verbs > Tener que
-
-Tener que + presente
-→ CPT: grammar
-→ grammar_tax: Verbs > Tener que
-→ grammar_tax: Tenses > Present
-
-Ir a + infinitive
-→ CPT: grammar
-→ grammar_tax: Verbs > Ir a + Infinitive
-
-Subjuntivo imperfecto
-→ CPT: grammar
-→ grammar_tax: Moods > Subjunctive
-
-Imperativo irregular
-→ CPT: grammar
-→ grammar_tax: Moods > Imperative
-
-Adjetivos posesivos
-→ CPT: grammar
-→ grammar_tax: Parts of Speech > Adjectives
-```
-
-Cross-use examples:
-
-```txt
-Airport interview
-→ CPT: readings
-→ grammar_tax: Tenses > Present
-→ topic_tax: Travel > Airport
-
-Practice with tener que
-→ CPT: practice
-→ grammar_tax: Verbs > Tener que
-→ grammar_tax: Tenses > Present
+Sentence Structure
+- Questions
+- Negation
+- Comparisons
+- Word Order
+- Direct and Indirect Speech
 ```
 
 Rules:
 
 - Use `grammar_tax` when the term is a grammar point.
-- Do not use `grammar_tax` for semantic topics such as airport, food, family, cinema, or Machu Picchu.
+- Use `grammar_tax` for grammar navigation.
+- Do not use `grammar_tax` for broad semantic contexts such as airport, food, family, culture, or entertainment.
 - Do not use native WordPress tags as the primary place for grammar navigation.
 - It is valid to assign multiple `grammar_tax` terms to the same post.
+- Do not turn every future post title into a taxonomy term.
+- A taxonomy term should exist when it can group multiple posts.
+- Do not seed post-level terms such as `Regular Preterite`, `Irregular Preterite`, `Regular Reflexive Verbs`, or `Irregular Reflexive Verbs`.
 
 ---
 
 # topic_tax
 
-Used to organize content by semantic topic.
+Used for broad semantic contexts.
 
-Supports hierarchy.
+Architecture rule:
 
-`topic_tax` replaces the older planned taxonomies:
+- `topic_tax` uses max 2 levels.
 
-```txt
-vocabulary_tax
-reading_tax
-```
-
-Those taxonomies should not be used.
-
-`topic_tax` can be used across multiple CPTs.
-
-Initial structure:
+Initial seeded structure:
 
 ```txt
 Daily Life
-├─ Home
-├─ Sleep
-├─ Family
-├─ Routine
-└─ Entertainment
+- Home
+- Routine
+- Relationships
+- Health
+- Hobbies
+- Leisure
 
 Travel
-├─ Hotel
-├─ Airport
-├─ Taxi
-└─ Vacation
-
-Work
-├─ Office
-├─ Meetings
-├─ Jobs
-└─ Business
-
 Food
-├─ Restaurant
-├─ Supermarket
-├─ Café
-└─ Cooking
-
+Work
 Culture
-├─ Traditions
-├─ Cities
-└─ Latin America
-
+Entertainment
 Education
-├─ History
-├─ Science
-├─ Technology
-└─ Famous People
+Society
 ```
-
-Examples:
-
-```txt
-Airport
-→ topic_tax: Travel > Airport
-
-Hotel room
-→ CPT: vocabulary
-→ topic_tax: Travel > Hotel
-
-At the café
-→ CPT: vocabulary
-→ topic_tax: Food > Café
-
-Airport interview
-→ CPT: readings
-→ topic_tax: Travel > Airport
-
-Restaurant dialogue
-→ CPT: conversations
-→ topic_tax: Food > Restaurant
-
-Ir al cine
-→ CPT: readings or vocabulary
-→ topic_tax: Daily Life > Entertainment
-```
-
-Purpose:
-
-- topic navigation
-- lesson grouping
-- SEO structure
-- archive filtering
-- related content
-- content discovery
 
 Rules:
 
-- Use `topic_tax` for broad semantic areas.
+- Use `topic_tax` for broad semantic contexts.
 - Use `topic_tax` across CPTs when the same topic applies to vocabulary, readings, conversations, practice, or resources.
-- Do not use `topic_tax` for grammar points such as present, preterite, tener que, ser, estar, or subjunctive.
-- Do not create separate `reading_tax` or `vocabulary_tax` unless the content model is formally changed later.
+- Do not use `topic_tax` for grammar points such as present, preterite, ser, estar, subjunctive, or imperative.
+- Do not create separate `reading_tax` or `vocabulary_tax`.
 - Do not create very specific proper nouns as `topic_tax` terms too early. Use native WordPress tags for those.
+- Do not turn every future post title into a taxonomy term.
+- A taxonomy term should exist when it can group multiple posts.
 
 ---
 
-# Native WordPress tags
+# Native WordPress Tags
 
 Use native WordPress tags: `post_tag`.
 
@@ -351,310 +212,115 @@ These are regular WordPress tags.
 
 Do not create a custom taxonomy for tags.
 
-Tags are free labels.
+Do not seed `post_tag` terms in the theme.
 
-They do not need a fixed hierarchy.
+Tags are free labels. They do not need a fixed hierarchy.
 
-They can be broad, specific, temporary, or content-specific.
+Use `post_tag` for:
+
+- free labels
+- specific terms
+- concrete words
+- contrasts
+- dialects
+- expressions
+- cross-cutting cases
+- specific entities
+- variants
+- loose keywords
 
 Examples:
 
 ```txt
-restaurant
-airport
-common phrases
-travel
-food
-doctor
-family
-shopping
-preterite
-future tense
-regular verbs
-conjugation
-cinema
-plans
-free time
+regular preterite
+irregular preterite
+regular reflexive verbs
+irregular reflexive verbs
+airport phrases
+common verbs
 Machu Picchu
 Peru
 tourism
-```
-
-Example:
-
-```txt
-Post:
-Futuro simple
-
-CPT:
-grammar
-
-level_tax:
-beginner
-
-grammar_tax:
-Tenses > Future
-
-WordPress native tags (`post_tag`):
-future tense, regular verbs, conjugation
-```
-
-Example:
-
-```txt
-Post:
-Reading about Machu Picchu
-
-CPT:
-readings
-
-topic_tax:
-Culture > Latin America
-
-WordPress native tags (`post_tag`):
-Machu Picchu, Peru, tourism
+cinema
+plans
+free time
 ```
 
 Rules:
 
-- Do not register a new custom taxonomy named `post_tag`.
+- Do not register a custom taxonomy named `post_tag`.
 - Do not use tags as the main navigation.
 - Do not use tags to replace `topic_tax`.
 - Do not use tags to replace `grammar_tax`.
 - Tags can be assigned freely when they help search, filtering, or related content.
-- Tags are the right place for specific entities, names, variants, and loose keywords.
 
 ---
 
-# Classification decision rules
+# Classification Decision Rules
 
-Use these rules when assigning taxonomy terms.
+## Grammar points go to `grammar_tax`
 
-## 1. Grammar points go to `grammar_tax`
-
-Use `grammar_tax` when the term is a grammar point someone may search as a lesson.
+Use `grammar_tax` when the term is a grammar point someone may search as a lesson or use for grammar navigation.
 
 Examples:
 
 ```txt
 present
 preterite
+imperfect
 future
 subjunctive
 imperative
-tener que
-hay
 ser
 estar
-gustar
-comparatives
+haber
 pronouns
-adjectives
+questions
+negation
 ```
 
-Correct classification:
+## Semantic contexts go to `topic_tax`
 
-```txt
-presente
-→ grammar_tax: Tenses > Present
-
-pretérito
-→ grammar_tax: Tenses > Past
-
-tener que
-→ grammar_tax: Verbs > Tener que
-
-ser
-→ grammar_tax: Verbs > Ser
-```
-
-Do not classify these as `topic_tax`.
-
-Do not rely only on tags for these terms.
-
----
-
-## 2. Semantic content areas go to `topic_tax`
-
-Use `topic_tax` when the term describes what the content is about.
+Use `topic_tax` when the term describes what the content is broadly about.
 
 Examples:
 
 ```txt
-airport
-restaurant
-family
-hotel
+home
+routine
+relationships
+health
+hobbies
+leisure
+travel
+food
 work
-shopping
-cinema
-daily routine
-Latin America
+culture
+entertainment
+education
+society
 ```
 
-Correct classification:
+## Specific cases go to native WordPress tags
 
-```txt
-aeropuerto
-→ topic_tax: Travel > Airport
-
-restaurante
-→ topic_tax: Food > Restaurant
-
-familia
-→ topic_tax: Daily Life > Family
-
-ir al cine
-→ topic_tax: Daily Life > Entertainment
-```
-
-Use `topic_tax` for broad topic navigation and archive filtering.
-
----
-
-## 3. Specific entities and loose keywords go to native WordPress tags
-
-Use native WordPress tags (`post_tag`) for loose labels, entities, variations, and search helpers.
-
-Important:
-
-`post_tag` is the native WordPress tag taxonomy. Do not register a new custom taxonomy named `post_tag`.
+Use native WordPress tags for specific cases, loose labels, entities, variations, dialects, and expressions.
 
 Examples:
 
 ```txt
+regular preterite
+irregular preterite
+regular reflexive verbs
+irregular reflexive verbs
+airport phrases
+movie night
 Machu Picchu
 Peru
-tourism
-movie night
-airport phrases
-common verbs
-regular verbs
-irregular verbs
-```
-
-Correct classification:
-
-```txt
-machu pichu
-→ WordPress native tags (`post_tag`): Machu Picchu, Peru, tourism
-```
-
-Tags can overlap with taxonomy terms when useful for search.
-
----
-
-## 4. When a term can fit more than one system
-
-Some terms can appear in more than one place, depending on the content.
-
-Example:
-
-```txt
-presente
-```
-
-If the content teaches the present tense:
-
-```txt
-grammar_tax:
-Tenses > Present
-```
-
-If the phrase is only a loose search keyword:
-
-```txt
-WordPress native tags (`post_tag`):
-present tense
-```
-
-Example:
-
-```txt
-tener que + presente
-```
-
-If the content teaches both the verb phrase and the tense:
-
-```txt
-grammar_tax:
-Verbs > Tener que
-Tenses > Present
-```
-
-Example:
-
-```txt
-ir al cine
-```
-
-If the content is about leisure, plans, or going to the movies:
-
-```txt
-topic_tax:
-Daily Life > Entertainment
-
-WordPress native tags (`post_tag`):
-cinema, plans, free time
-```
-
-If the content teaches a grammar point with `ir`:
-
-```txt
-grammar_tax:
-Verbs > Ir
-
-topic_tax:
-Daily Life > Entertainment
-```
-
-Example:
-
-```txt
-Machu Picchu
-```
-
-If the content is a cultural reading:
-
-```txt
-topic_tax:
-Culture > Latin America
-
-WordPress native tags (`post_tag`):
-Machu Picchu, Peru, tourism
-```
-
-Do not create new taxonomy terms for every proper noun too early.
-
----
-
-# Practical classification examples
-
-```txt
-"presente"
-→ grammar_tax: Tenses > Present
-
-"tener que" + "presente"
-→ grammar_tax: Verbs > Tener que
-→ grammar_tax: Tenses > Present
-
-"pretérito"
-→ grammar_tax: Tenses > Past
-
-"aeropuerto"
-→ topic_tax: Travel > Airport
-
-"ir al cine"
-→ topic_tax: Daily Life > Entertainment
-→ WordPress native tags (`post_tag`): cinema, plans, free time
-
-"machu pichu"
-→ WordPress native tags (`post_tag`): Machu Picchu, Peru, tourism
 ```
 
 ---
 
-# Navigation logic
+# Navigation Logic
 
 The frontend navigation should primarily use:
 
@@ -670,27 +336,27 @@ Recommended navigation model:
 
 ```txt
 Grammar
-→ grammar_tax
+-> grammar_tax
 
 Vocabulary
-→ topic_tax filtered by CPT vocabulary
+-> topic_tax filtered by CPT vocabulary
 
 Readings
-→ topic_tax filtered by CPT readings
+-> topic_tax filtered by CPT readings
 
 Conversations
-→ topic_tax filtered by CPT conversations
+-> topic_tax filtered by CPT conversations
 
 Practice
-→ grammar_tax and/or topic_tax depending on the exercise type
+-> grammar_tax and/or topic_tax depending on the exercise type
 
 Resources
-→ topic_tax
+-> topic_tax
 ```
 
 ---
 
-# Main rule
+# Main Rule
 
 Do not mix these dimensions:
 
@@ -698,27 +364,6 @@ Do not mix these dimensions:
 CPT                            = content type
 level_tax                      = difficulty
 grammar_tax                    = grammar point
-topic_tax                      = semantic topic
-WordPress native tags/post_tag = loose search labels
-```
-
-Example:
-
-```txt
-Airport interview
-
-CPT:
-readings
-
-level_tax:
-beginner
-
-topic_tax:
-Travel > Airport
-
-grammar_tax:
-Tenses > Present
-
-WordPress native tags (`post_tag`):
-airport, travel, common phrases
+topic_tax                      = broad semantic context
+WordPress native tags/post_tag = loose search labels and specific cases
 ```
