@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <section class="panel">
-    <h1><?php post_type_archive_title(); ?></h1>
+    <h1><?php single_term_title(); ?></h1>
     <?php if (have_posts()) : ?>
       <div class="activity-list">
       <?php while (have_posts()) : the_post(); ?>

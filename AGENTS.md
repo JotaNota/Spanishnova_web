@@ -33,9 +33,11 @@ Agents must treat SpanishNova as a content-led WordPress product with:
   - `conversations`
   - `practice`
   - `resources`
-- Current taxonomies are definitive and scalable:
-  - `level`
-  - `topic`
+- Official custom taxonomies:
+  - `level_tax`
+  - `grammar_tax`
+  - `topic_tax`
+- Native WordPress tags use `post_tag`. Do not register a custom taxonomy named `post_tag`.
 - Use WordPress escaping helpers for frontend output.
 - Use nonces and capability checks for admin, form, or AJAX behavior.
 - Preserve URL structure unless a redirect plan exists.

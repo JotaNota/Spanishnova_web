@@ -19,7 +19,7 @@ Status: Draft
 ## Editorial rules
 
 - Treat grammar, vocabulary, readings, conversations, practice, and resources as primary content channels.
-- Use `level` and `topic` consistently.
+- Use `level_tax`, `grammar_tax`, `topic_tax`, and native WordPress tags consistently.
 - Track missing editorial decisions as `TBD`.
 - Keep AI-assisted content workflows documented in `docs/content-system/`.
 

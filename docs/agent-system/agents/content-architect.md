@@ -15,7 +15,8 @@ Own SpanishNova content architecture.
 ## Rules
 
 - Treat current CPTs as definitive and scalable.
-- Treat `level` and `topic` as definitive and scalable.
+- Treat `level_tax`, `grammar_tax`, and `topic_tax` as the official custom taxonomies.
+- Treat `post_tag` as native WordPress tags. Do not define it as a custom taxonomy.
 - Keep AI-assisted content work in `docs/content-system/`.
 - Mark unknowns as `TBD`.
 
