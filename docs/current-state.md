@@ -92,12 +92,14 @@ Content draft agents exist under `docs/content-system/agents/`.
 
 ### Content system
 
-Templates exist for:
+Lightweight Markdown content templates exist for:
 
 - Grammar
 - Vocabulary
 - Reading
 - Conversation
+
+Original HTML templates are preserved as reference files under `docs/content-system/templates/reference-html/`.
 
 Roadmaps exist for:
 
@@ -105,6 +107,10 @@ Roadmaps exist for:
 - Vocabulary
 - Reading
 - Conversation
+
+The content pilot queue exists at `docs/content-system/content-plan/content-pilot.md`.
+
+The content production log exists at `docs/content-system/content-log.md`.
 
 ## In progress
 

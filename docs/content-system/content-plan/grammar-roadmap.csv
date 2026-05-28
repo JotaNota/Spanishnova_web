@@ -1,10 +1,10 @@
-id,title,category,lesson_type,level,priority,status,topics
-ser,Ser in the Present Tense,Basics,verb-usage,beginner,1,planned,ser|identity|verbs
-estar,Estar in the Present Tense,Basics,verb-usage,beginner,2,planned,estar|location|states
-hay,Hay,Basics,structure,beginner,3,planned,hay|existence
-hay-algo,Hay + Algo,Basics,structure,beginner,4,planned,hay|objects
-tener,Tener,Basics,verb-usage,beginner,5,planned,tener|possession
-ir,Ir,Basics,verb-usage,beginner,6,planned,ir|movement
-querer,Querer,Basics,verb-usage,beginner,7,planned,querer|desire
-necesitar,Necesitar,Basics,verb-usage,beginner,8,planned,necesitar|needs
-tener-que,Tener que,Basics,structure,beginner,9,planned,tener-que|obligation
+slug,title,cpt,lesson_type,level_tax,grammar_tax,topic_tax,post_tags,priority,status,output_path
+ser,Ser in the Present Tense,grammar,verb-usage,beginner,Ser,,identity|verbs,1,planned,docs/content-system/content/grammar/ser.md
+estar,Estar in the Present Tense,grammar,verb-usage,beginner,Estar,,location|states|verbs,2,planned,docs/content-system/content/grammar/estar.md
+hay,Hay,grammar,structure,beginner,Haber,,hay|existence,3,planned,docs/content-system/content/grammar/hay.md
+hay-algo,Hay + Algo,grammar,structure,beginner,Haber,,hay|objects,4,planned,docs/content-system/content/grammar/hay-algo.md
+tener,Tener,grammar,verb-usage,beginner,Tener,,possession|verbs,5,planned,docs/content-system/content/grammar/tener.md
+ir,Ir,grammar,verb-usage,beginner,Ir,,movement|verbs,6,planned,docs/content-system/content/grammar/ir.md
+querer,Querer,grammar,verb-usage,beginner,Verbs,,querer|desire,7,planned,docs/content-system/content/grammar/querer.md
+necesitar,Necesitar,grammar,verb-usage,beginner,Verbs,,necesitar|needs,8,planned,docs/content-system/content/grammar/necesitar.md
+tener-que,Tener que,grammar,structure,beginner,Tener,,tener-que|obligation,9,planned,docs/content-system/content/grammar/tener-que.md

@@ -1,25 +1,32 @@
-# Vocabulary Content Agent — SpanishNova
+# Vocabulary Content Agent - SpanishNova
 
 Create Spanish vocabulary lesson drafts.
 
-Use the SpanishNova vocabulary template.
+Use the lightweight SpanishNova vocabulary content template.
 
 Read:
-- `docs/content-system/templates/vocabulary-template.html`
+- `docs/content-system/templates/vocabulary-content-template.md`
 - `docs/content-system/content-plan/vocabulary-roadmap.csv`
+- `docs/content-system/content-plan/content-pilot.md`
+
+Do not read:
+- `docs/content-system/templates/reference-html/`
 
 Write drafts to:
 - `docs/content-system/content/vocabulary/`
 
 Rules:
-- Do not change the template layout.
+- Use the Markdown template structure.
 - Do not create CSS.
 - Do not create PHP.
 - Do not publish to WordPress.
 - Create one lesson per file.
 - Use YAML frontmatter.
+- Include metadata: `title`, `slug`, `cpt`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, `status`, `output_path`.
+- Use taxonomy values from `docs/content-system/content-plan/content-pilot.md` or `docs/content-system/content-plan/vocabulary-roadmap.csv`.
+- Do not invent taxonomy terms. Use `post_tags` for non-official categories or specific labels.
 - Group vocabulary by clear categories.
-- Use Spanish → English.
+- Use Spanish -> English.
 - Add common phrases.
 - Add translation practice.
 - Add dialogues.

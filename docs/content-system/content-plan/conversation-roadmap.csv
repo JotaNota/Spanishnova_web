@@ -1,7 +1,6 @@
-slug,title,level,topic,status,notes
-basic-greetings,Basic Greetings,A1,conversation,planned,TBD
-ordering-coffee,Ordering Coffee,A1,food,planned,TBD
-asking-for-directions,Asking for Directions,A1,travel,planned,TBD
-making-plans,Making Plans,A2,social,planned,TBD
-at-the-doctor,At the Doctor,A2,health,planned,TBD
-job-interview,Job Interview,B1,work,planned,TBD
+slug,title,cpt,level_tax,grammar_tax,topic_tax,post_tags,priority,status,output_path,notes
+basic-greetings,Basic Greetings,conversations,beginner,,Relationships,greetings|introductions,1,planned,docs/content-system/content/conversations/basic-greetings.md,TBD
+ordering-coffee,Ordering Coffee,conversations,beginner,,Food,coffee|cafe|ordering,2,planned,docs/content-system/content/conversations/ordering-coffee.md,TBD
+asking-for-directions,Asking for Directions,conversations,beginner,,Travel,directions|city,3,planned,docs/content-system/content/conversations/asking-for-directions.md,TBD
+making-plans,Making Plans,conversations,beginner,,Leisure,plans|social,4,planned,docs/content-system/content/conversations/making-plans.md,TBD
+at-the-doctor,At the Doctor,conversations,beginner,,Health,doctor|appointment,5,planned,docs/content-system/content/conversations/at-the-doctor.md,TBD
