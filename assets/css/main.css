@@ -708,3 +708,271 @@ body:has(.sn-lesson-wrap) .wp-block-post-content {
     content: "⌄" !important;
   }
 }
+
+/* =========================================================
+   Homepage/header visual audit pass
+   Scope: homepage + header only
+   ========================================================= */
+
+.top-inner {
+  padding: 28px 24px 22px;
+}
+
+.brand {
+  font-size: 20px;
+}
+
+.brand-logo {
+  width: 46px;
+  height: auto;
+}
+
+.center-nav {
+  padding-top: 18px;
+  font-size: 14px;
+  gap: 38px;
+}
+
+.top-actions {
+  font-size: 14px;
+  gap: 20px;
+}
+
+main {
+  padding-top: 54px;
+}
+
+.hero {
+  max-width: 820px;
+  margin-bottom: 54px;
+}
+
+.search-bar {
+  max-width: 640px;
+  margin-bottom: 26px;
+}
+
+.hero h1 {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: clamp(38px, 5vw, 58px);
+}
+
+.content-layout {
+  gap: 28px;
+}
+
+.panel {
+  padding: 28px;
+}
+
+.activity-row {
+  grid-template-columns: 96px 1fr auto;
+  padding: 16px 18px;
+}
+
+.activity-row h3 {
+  font-size: 15px;
+}
+
+.activity-row p {
+  font-size: 13px;
+}
+
+.category-card {
+  min-height: 154px;
+  padding: 22px;
+}
+
+.category-card h3 {
+  font-size: 24px;
+}
+
+.audience-box {
+  padding: 28px 32px;
+}
+
+.support {
+  padding: 38px;
+}
+
+/* Mobile containment: avoid huge open dropdowns breaking the page */
+@media (max-width: 900px) {
+  .top-inner {
+    padding: 22px 18px;
+    gap: 18px;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  .brand-logo {
+    width: 42px;
+  }
+
+  .top-actions {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .center-nav {
+    display: block;
+    overflow-x: auto;
+    padding-top: 6px;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .sn-main-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    padding: 0 0 8px;
+    margin: 0;
+    list-style: none;
+    width: max-content;
+  }
+
+  .sn-main-menu > .menu-item {
+    position: relative;
+    flex: 0 0 auto;
+  }
+
+  .sn-main-menu .submenu {
+    display: none;
+  }
+
+  .sn-main-menu > .menu-item:hover > .submenu,
+  .sn-main-menu > .menu-item:focus-within > .submenu {
+    display: none;
+  }
+
+  main {
+    padding: 34px 18px 64px;
+  }
+
+  .hero {
+    margin-bottom: 36px;
+    text-align: left;
+  }
+
+  .search-bar {
+    max-width: none;
+  }
+
+  .hero h1 {
+    font-size: clamp(32px, 10vw, 44px);
+    text-align: left;
+  }
+
+  .eyebrow {
+    text-align: left;
+  }
+
+  .panel {
+    padding: 22px;
+  }
+
+  .activity-row {
+    grid-template-columns: 1fr auto;
+  }
+
+  .activity-row .label {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .category-card {
+    min-height: auto;
+  }
+}
+
+.hero-intro {
+  max-width: 680px;
+  margin: 16px auto 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.btn-secondary {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+.empty-state {
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .hero-intro {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-actions {
+    justify-content: flex-start;
+  }
+}
+
+/* Hero search fix */
+.hero .search-bar {
+  max-width: 560px;
+  margin: 0 auto 24px;
+}
+
+.hero .search-bar input {
+  height: 52px;
+  font-size: 14px;
+}
+
+.hero .search-icon {
+  width: 42px;
+  height: 42px;
+}
+
+@media (max-width: 900px) {
+  .hero .search-bar {
+    max-width: none;
+    margin-bottom: 22px;
+  }
+}
+
+
+/* Homepage section alignment */
+.content-layout {
+  align-items: stretch;
+}
+
+.content-layout > .panel,
+.content-layout > aside {
+  height: 100%;
+}
+
+.content-layout > aside {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 18px;
+}
+
+.content-layout > aside .panel {
+  margin-bottom: 0;
+}
+
+.category-strip {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.category-card {
+  width: 100%;
+}

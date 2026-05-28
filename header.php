@@ -126,23 +126,49 @@ $sn_grammar_term_link = function ($slug) {
   </ul>
 </li>
 
+    <?php
+    $sn_topic_term_link = function ($slug) {
+      $term_link = get_term_link($slug, 'topic_tax');
+
+      if (is_wp_error($term_link)) {
+        return home_url('/');
+      }
+
+      return $term_link;
+    };
+
+    $sn_level_term_link = function ($slug) {
+      $term_link = get_term_link($slug, 'level_tax');
+
+      if (is_wp_error($term_link)) {
+        return home_url('/');
+      }
+
+      return $term_link;
+    };
+    ?>
+
     <li class="menu-item has-submenu">
       <a href="<?php echo esc_url(home_url('/vocabulary/')); ?>">Vocabulary</a>
       <ul class="submenu">
         <li><a href="<?php echo esc_url(home_url('/vocabulary/')); ?>">All vocabulary</a></li>
-        <li><a href="<?php echo esc_url(home_url('/vocabulary/food/')); ?>">Food</a></li>
-        <li><a href="<?php echo esc_url(home_url('/vocabulary/travel/')); ?>">Travel</a></li>
-        <li><a href="<?php echo esc_url(home_url('/vocabulary/daily-life/')); ?>">Daily life</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('daily-life')); ?>">Daily Life</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('travel')); ?>">Travel</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('food')); ?>">Food</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('work')); ?>">Work</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('culture')); ?>">Culture</a></li>
       </ul>
     </li>
-
+    
     <li class="menu-item has-submenu">
       <a href="<?php echo esc_url(home_url('/readings/')); ?>">Readings</a>
       <ul class="submenu">
         <li><a href="<?php echo esc_url(home_url('/readings/')); ?>">All readings</a></li>
-        <li><a href="<?php echo esc_url(home_url('/readings/beginner/')); ?>">Beginner</a></li>
-        <li><a href="<?php echo esc_url(home_url('/readings/intermediate/')); ?>">Intermediate</a></li>
-        <li><a href="<?php echo esc_url(home_url('/readings/biographies/')); ?>">Biographies</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('daily-life')); ?>">Daily Life</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('travel')); ?>">Travel</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('food')); ?>">Food</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('work')); ?>">Work</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('culture')); ?>">Culture</a></li>
       </ul>
     </li>
 
@@ -150,9 +176,11 @@ $sn_grammar_term_link = function ($slug) {
       <a href="<?php echo esc_url(home_url('/conversations/')); ?>">Conversations</a>
       <ul class="submenu">
         <li><a href="<?php echo esc_url(home_url('/conversations/')); ?>">All conversations</a></li>
-        <li><a href="<?php echo esc_url(home_url('/conversations/everyday/')); ?>">Everyday</a></li>
-        <li><a href="<?php echo esc_url(home_url('/conversations/travel/')); ?>">Travel</a></li>
-        <li><a href="<?php echo esc_url(home_url('/conversations/restaurants/')); ?>">Restaurants</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('daily-life')); ?>">Daily Life</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('travel')); ?>">Travel</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('food')); ?>">Food</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('work')); ?>">Work</a></li>
+        <li><a href="<?php echo esc_url($sn_topic_term_link('culture')); ?>">Culture</a></li>
       </ul>
     </li>
 
@@ -160,9 +188,11 @@ $sn_grammar_term_link = function ($slug) {
       <a href="<?php echo esc_url(home_url('/practice/')); ?>">Practice</a>
       <ul class="submenu">
         <li><a href="<?php echo esc_url(home_url('/practice/')); ?>">All practice</a></li>
-        <li><a href="<?php echo esc_url(home_url('/practice/exercises/')); ?>">Exercises</a></li>
-        <li><a href="<?php echo esc_url(home_url('/practice/translation/')); ?>">Translation</a></li>
-        <li><a href="<?php echo esc_url(home_url('/practice/quizzes/')); ?>">Quizzes</a></li>
+        <li><a href="<?php echo esc_url($sn_grammar_term_link('tenses')); ?>">Tenses</a></li>
+        <li><a href="<?php echo esc_url($sn_grammar_term_link('moods')); ?>">Moods</a></li>
+        <li><a href="<?php echo esc_url($sn_grammar_term_link('verbs')); ?>">Verbs</a></li>
+        <li><a href="<?php echo esc_url($sn_grammar_term_link('parts-of-speech')); ?>">Parts of Speech</a></li>
+        <li><a href="<?php echo esc_url($sn_grammar_term_link('structures')); ?>">Structures</a></li>
       </ul>
     </li>
 
