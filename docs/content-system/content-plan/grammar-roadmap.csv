@@ -1,10 +1,10 @@
 base_slug,title_base,cpt,lesson_type,level_tax,grammar_tax,topic_tax,default_focus,default_variant,post_tags,priority,status,output_folder
-ser,Ser,grammar,verb-usage,beginner,Ser,,present tense,,ser,1,planned,docs/content-system/content/grammar/
-estar,Estar,grammar,verb-usage,beginner,Estar,,present tense,,estar,2,planned,docs/content-system/content/grammar/
-hay,Hay,grammar,structure,beginner,Haber,,overview,,hay,3,planned,docs/content-system/content/grammar/
-hay-algo,Hay + Algo,grammar,structure,beginner,Haber,,overview,,hay,4,planned,docs/content-system/content/grammar/
-tener,Tener,grammar,verb-usage,beginner,Tener,,present tense,,tener,5,planned,docs/content-system/content/grammar/
-ir,Ir,grammar,verb-usage,beginner,Ir,,present tense,,ir,6,planned,docs/content-system/content/grammar/
-querer,Querer,grammar,verb-usage,beginner,Verbs,,present tense,,querer,7,planned,docs/content-system/content/grammar/
-necesitar,Necesitar,grammar,verb-usage,beginner,Verbs,,present tense,,necesitar,8,planned,docs/content-system/content/grammar/
-tener-que,Tener que,grammar,structure,beginner,Tener,,overview,,tener que,9,planned,docs/content-system/content/grammar/
+ser,Ser,grammar,verb-usage,beginner,Ser,,present tense,,ser,1,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+estar,Estar,grammar,verb-usage,beginner,Estar,,present tense,,estar,2,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+hay,Hay,grammar,structure,beginner,Haber,,overview,,hay,3,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+hay-algo,Hay + Algo,grammar,structure,beginner,Haber,,overview,,hay,4,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+tener,Tener,grammar,verb-usage,beginner,Tener,,present tense,,tener,5,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+ir,Ir,grammar,verb-usage,beginner,Ir,,present tense,,ir,6,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+querer,Querer,grammar,verb-usage,beginner,Verbs,,present tense,,querer,7,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+necesitar,Necesitar,grammar,verb-usage,beginner,Verbs,,present tense,,necesitar,8,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+tener-que,Tener que,grammar,structure,beginner,Tener,,overview,,tener que,9,planned,docs/content-system/generated/generated-markdown-posts/grammar/

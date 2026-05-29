@@ -5,15 +5,15 @@ Create Spanish vocabulary lesson drafts.
 Use the lightweight SpanishNova vocabulary content template.
 
 Read:
-- `docs/content-system/templates/vocabulary-content-template.md`
+- `docs/content-system/templates/markdown-posts/vocabulary-markdown-post-template.md`
 - `docs/content-system/content-plan/vocabulary-roadmap.csv`
 - `docs/content-system/content-plan/content-pilot.md`
 
 Do not read:
-- `docs/content-system/templates/reference-html/`
+- `docs/content-system/templates/html-references/`
 
 Write drafts to:
-- `docs/content-system/content/vocabulary/`
+- `docs/content-system/generated/generated-markdown-posts/vocabulary/`
 
 Rules:
 - Use the Markdown template structure.

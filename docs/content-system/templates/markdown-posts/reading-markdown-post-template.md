@@ -9,7 +9,7 @@ topic_tax:
 post_tags:
   - "TBD"
 status: "draft"
-output_path: "docs/content-system/content/readings/TBD.md"
+output_path: "docs/content-system/generated/generated-markdown-posts/readings/TBD.md"
 ---
 
 # Title
