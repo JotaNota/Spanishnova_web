@@ -24,23 +24,25 @@
           <?php endforeach; ?>
         </div>
         <div class="sn-meta-row">
-          <a class="sn-pill" href="<?php echo esc_url($vocabulary_url); ?>">Vocabulary</a>
+          <span class="sn-pill"><a href="<?php echo esc_url($vocabulary_url); ?>">Vocabulary</a></span>
           <?php foreach ($level_terms as $term) : ?>
             <?php $term_link = get_term_link($term); ?>
             <?php if (!is_wp_error($term_link)) : ?>
-              <a class="sn-pill" href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a>
+              <span class="sn-pill"><a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a></span>
             <?php endif; ?>
           <?php endforeach; ?>
           <?php foreach ($topic_terms as $term) : ?>
             <?php $term_link = get_term_link($term); ?>
             <?php if (!is_wp_error($term_link)) : ?>
-              <a class="sn-pill" href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a>
+              <span class="sn-pill"><a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a></span>
             <?php endif; ?>
           <?php endforeach; ?>
         </div>
       <?php
       $metadata_html = ob_get_clean();
       $content = apply_filters('the_content', get_the_content());
+      $content = preg_replace('/<div\s+class="sn-breadcrumb">.*?<\/div>\s*/s', '', $content, 1);
+      $content = preg_replace('/<div\s+class="sn-meta-row">.*?<\/div>\s*/s', '', $content, 1);
       echo preg_replace('/<h1\b/', $metadata_html . '<h1', $content, 1);
     ?>
   <?php endwhile; ?>
