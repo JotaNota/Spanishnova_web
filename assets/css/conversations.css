@@ -108,18 +108,21 @@ body.single-conversation {
 }
 
 .sn-conversation-note {
-  padding: 10px 14px;
-  border-left: 3px solid var(--sn-orange);
-  background: var(--sn-orange-soft);
+  margin-left: 24px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
   color: var(--sn-muted);
 }
 
+.sn-conversation-vocab-list,
 .sn-conversation-list {
   margin-left: 24px;
   display: grid;
   gap: 10px;
 }
 
+.sn-conversation-vocab-list li,
 .sn-conversation-list li {
   font-size: 15px;
   line-height: 1.65;
@@ -128,6 +131,12 @@ body.single-conversation {
 .sn-conversation-list span,
 .sn-conversation-section details p {
   color: var(--sn-muted);
+}
+
+.sn-conversation-instruction {
+  margin: 0 0 14px;
+  color: var(--sn-muted);
+  line-height: 1.65;
 }
 
 @media (max-width: 700px) {
