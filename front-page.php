@@ -64,7 +64,7 @@ $post_type_labels = [
       </div>
     </div>
 
-    <aside>
+    <div class="homepage-sidebar">
       <div class="panel side-card">
         <h2>Explore</h2>
         <ul>
@@ -74,7 +74,7 @@ $post_type_labels = [
           <li>Worksheets</li>
         </ul>
       </div>
-    </aside>
+    </div>
   </section>
 
   <section class="category-strip">
