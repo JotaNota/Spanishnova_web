@@ -2,13 +2,13 @@
 
 Brief English intro that names the format, situation, and listening goal.
 
-## Useful Vocabulary
+## Vocabulario
 
-| Spanish | English |
-| --- | --- |
-| TBD | TBD |
+- **TBD** – TBD
+- **TBD** – TBD
+- **TBD** – TBD
 
-## Conversation
+## Conversación
 
 Write the main conversation using the selected `conversation_variant` from `conversation-structure-variants.md`.
 
@@ -16,9 +16,9 @@ For `podcast_style`, use two named speakers throughout the episode.
 
 For `street_interview`, use one interviewer and several interview blocks with headings.
 
-Add selected English support only where it helps comprehension. Do not translate every line.
+Add selected English support only where it helps comprehension. Do not translate every line. Use a short indented italic note, not a speaker line.
 
-## Useful Phrases
+## Frases útiles
 
 1. Spanish: TBD
    English: TBD
@@ -27,9 +27,9 @@ Add selected English support only where it helps comprehension. Do not translate
 3. Spanish: TBD
    English: TBD
 
-## Practice
+## Práctica
 
-### Translate
+### Traduce
 
 1. Prompt: TBD
    Answer: TBD
@@ -37,19 +37,20 @@ Add selected English support only where it helps comprehension. Do not translate
    Answer: TBD
 3. Prompt: TBD
    Answer: TBD
+4. Prompt: TBD
+   Answer: TBD
+5. Prompt: TBD
+   Answer: TBD
+6. Prompt: TBD
+   Answer: TBD
 
-### Complete the Conversation
-
-1. TBD
-2. TBD
-
-## Roleplay
+## Actúa
 
 1. TBD
 2. TBD
 3. TBD
 
-## Discussion
+## Para conversar
 
 1. TBD
 2. TBD
