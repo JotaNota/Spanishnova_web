@@ -47,28 +47,89 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 
 ## Metadata Flow
 
-- Match the user request to `base_slug` or `title_base` in `reading-roadmap.csv`.
-- Use the roadmap row for base metadata: `cpt`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, and `output_folder`.
-- Use the user request for `focus` and `variant`.
-- If the user request omits `focus` or `variant`, use `default_focus` and `default_variant` from the roadmap row.
-- If both the user request and roadmap row omit `focus` and `variant`, create a broad overview.
-- Keep the reading inside the selected `focus` and `variant` scope.
-- Build `slug` from `base_slug` plus `variant` plus `focus` when needed.
-- Build `title` from `title_base` plus `focus` and `variant` when needed.
+- Match the user request to `slug` or `title` in `reading-roadmap.csv`.
+- Use the roadmap row for base metadata: `cpt`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, `reading_variant`, and `output_path`.
+- Use `reading_variant` to choose the lesson structure.
+- Do not print `reading_variant` in the lesson body.
+- Keep the reading inside the selected `reading_variant` scope.
 - Do not include level labels in titles.
 - Keep level information in `level_tax`, not in the visible title.
-- Do not turn `focus` or `variant` into `grammar_tax` or `topic_tax`.
+- Do not turn `reading_variant` into `grammar_tax` or `topic_tax`.
 - Do not invent taxonomy terms. Use `post_tags` for non-official categories or specific labels.
+
+## Reading Variants
+
+### `narrative_profile`
+
+Use for biographies, historical figures, discoveries, and stories about one person or group.
+
+Structure:
+- Brief English intro.
+- Key vocabulary before the reading.
+- Four narrative sections.
+- Each section should have two short paragraphs.
+- Each paragraph should have two to four sentences.
+- A short final section may use one paragraph when needed.
+- Key ideas.
+- Activities.
+
+Use section headings that move the story forward. Do not create small headings for isolated explanatory questions.
+
+### `practical_situation`
+
+Use for daily-life readings, travel scenes, work situations, food places, neighborhoods, and simple personal experiences.
+
+Structure:
+- Brief English intro.
+- Key vocabulary before the reading.
+- Three or four scene sections.
+- Each section should have one or two short paragraphs.
+- Include useful phrases inside the scene, not as disconnected notes.
+- Key ideas.
+- Activities.
+
+Keep the language concrete and useful for learners.
+
+### `procedural_set`
+
+Use for recipes, routines, instructions, comparisons of similar processes, and grouped how-to lessons.
+
+Structure:
+- Brief English intro.
+- Key vocabulary or ingredients before the main content.
+- Three or four grouped items.
+- Each item should include a short ingredient/material list and a preparation/process section.
+- Add a verb list only when the lesson depends on repeated actions.
+- Key ideas.
+- Activities.
+
+Keep each grouped item parallel in length and shape.
+
+### `curiosity_article`
+
+Use for animal facts, culture notes, science curiosities, expressions, and informative articles.
+
+Structure:
+- Brief English intro.
+- Key vocabulary before the reading.
+- Four or five thematic sections.
+- Each section should have one or two short paragraphs.
+- Use bullets only for lists of facts or examples.
+- Key ideas.
+- Activities.
+
+Do not repeat headings. Do not include an index inside the lesson body.
 
 ## Content Structure
 
-- Use the Markdown template structure.
 - Create one reading per file.
 - Write natural Spanish.
 - Match the selected level.
 - Use short paragraphs.
-- Add key vocabulary.
+- Keep section rhythm consistent inside each reading.
+- Add key vocabulary before the reading.
+- Use vocabulary, phrases, and facts already introduced before asking exercises about them.
 - Add true/false questions.
-- Add reading questions.
+- Add reading comprehension questions.
 - Add personal opinion questions.
 - Avoid long academic text.
