@@ -9,12 +9,11 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
 ## Fragment
 
 ```html
-<div class="sn-conversation-lesson">
-  <section class="sn-conversation-paper">
-    <header class="sn-conversation-header">
+<div class="sn-lesson-wrap sn-conversation-lesson">
+  <div class="sn-lesson-layout">
+    <article class="sn-lesson-hero sn-conversation-paper">
       <h1>{{title}}</h1>
-      <p>{{intro}}</p>
-    </header>
+      <p class="sn-intro">{{intro}}</p>
 
     <section class="sn-conversation-section" id="useful-vocabulary">
       <h2>Useful Vocabulary</h2>
@@ -95,7 +94,8 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
         </ul>
       </div>
     </section>
-  </section>
+      </article>
+  </div>
 </div>
 ```
 

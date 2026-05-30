@@ -1568,20 +1568,6 @@ main {
   width: 100%;
 }
 
-.sn-conversation-header {
-  margin-bottom: 34px;
-}
-
-.sn-conversation-header h1 {
-  margin-bottom: 14px;
-}
-
-.sn-conversation-header p {
-  margin: 0;
-  color: var(--sn-muted);
-  line-height: 1.7;
-}
-
 .sn-conversation-section {
   margin-bottom: 34px;
 }
@@ -1692,4 +1678,22 @@ main {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+/* =========================================================
+   Conversation lesson paper alignment
+   ========================================================= */
+
+.sn-conversation-lesson .sn-lesson-layout {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sn-conversation-paper {
+  width: 100%;
+}
+
+.sn-conversation-note {
+  color: var(--sn-muted);
 }
