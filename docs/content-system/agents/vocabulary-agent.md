@@ -43,6 +43,12 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 - Do not create PHP.
 - Do not publish to WordPress.
 - Do not include `<!DOCTYPE html>`, `<html>`, `<head>`, or `<body>`.
+- Do not include `sn-breadcrumb`, `sn-meta-row`, or `sn-pill`.
+- Breadcrumbs and pills are rendered by `single-vocabulary.php` from `topic_tax` and `level_tax`.
+- Use one central sheet with `div.sn-lesson-wrap.sn-vocab-lesson`, `div.sn-lesson-layout`, and `article.sn-lesson-hero.sn-vocab-paper`.
+- Do not wrap each section in `sn-panel`.
+- Use `<hr>` between major content blocks.
+- Visible headings should be in Spanish, with English translation only when it helps learners.
 - Use the HTML fragment template as the structural target.
 
 ## Metadata Flow
@@ -65,10 +71,14 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 - Use the Markdown template structure.
 - Create one lesson per file.
 - Group vocabulary by clear categories.
+- Categories can have 4–10 terms depending on the topic.
 - Use Spanish -> English.
+- Use bulleted vocabulary lists with indentation, not vocabulary tables.
 - Add common phrases.
+- Add one fun phrase with the Spanish in bold and English on the same line.
 - Add translation practice.
 - Add dialogues.
+- Use natural scene titles, not `Scene 1`, `Scene 2`, or `Scene 3`.
 - Add questions.
-- Add write/speak prompts.
+- Include `Ejercicios`, `Traducir`, and `Vocabulario por categoría`.
 - Avoid dictionary-only pages.
