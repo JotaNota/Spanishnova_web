@@ -23,9 +23,7 @@ $post_type_labels = [
       <button class="search-icon" type="submit" aria-label="Search">⌕</button>
     </form>
 
-    <div class="eyebrow">Simple Spanish.</div>
-    <h1>Practice Spanish with useful lessons, readings, and examples.</h1>
-    <p class="hero-intro">Start with grammar, vocabulary, short readings, and practice content organized by level and topic.</p>
+    <h1>Spanish practice.</h1>
 
     <div class="hero-actions">
       <a class="btn btn-primary" href="<?php echo esc_url(home_url('/grammar/')); ?>">Start with grammar</a>
@@ -68,21 +66,12 @@ $post_type_labels = [
 
     <aside>
       <div class="panel side-card">
-        <h2>Resources</h2>
-        <ul>
-          <li>Beginner grammar checklist</li>
-          <li>Vocabulary PDFs</li>
-          <li>Reading PDFs</li>
-          <li>Worksheets</li>
-        </ul>
-      </div>
-
-      <div class="panel side-card">
-        <h2>Level</h2>
+        <h2>Explore</h2>
         <ul>
           <li>Beginner</li>
           <li>Intermediate</li>
           <li>Advanced</li>
+          <li>Worksheets</li>
         </ul>
       </div>
     </aside>
