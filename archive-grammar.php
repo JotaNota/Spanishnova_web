@@ -8,10 +8,29 @@ $grammar_terms = get_terms([
   'orderby'    => 'name',
   'order'      => 'ASC',
 ]);
+
+function spanishnova_get_grammar_lessons_by_term($term_id) {
+  return new WP_Query([
+    'post_type'           => 'grammar',
+    'post_status'         => 'publish',
+    'posts_per_page'      => -1,
+    'ignore_sticky_posts' => true,
+    'orderby'             => 'title',
+    'order'               => 'ASC',
+    'tax_query'           => [
+      [
+        'taxonomy'         => 'grammar_tax',
+        'field'            => 'term_id',
+        'terms'            => $term_id,
+        'include_children' => false,
+      ],
+    ],
+  ]);
+}
 ?>
 
 <main>
-  <section class="panel">
+  <section class="panel grammar-archive-panel">
     <h1>Grammar</h1>
 
     <?php if (!empty($grammar_terms) && !is_wp_error($grammar_terms)) : ?>
@@ -26,82 +45,41 @@ $grammar_terms = get_terms([
             'order'      => 'ASC',
           ]);
 
-          $parent_lessons = new WP_Query([
-            'post_type'              => 'grammar',
-            'post_status'            => 'publish',
-            'posts_per_page'         => -1,
-            'ignore_sticky_posts'    => true,
-            'tax_query'              => [
-              [
-                'taxonomy'         => 'grammar_tax',
-                'field'            => 'term_id',
-                'terms'            => $parent_term->term_id,
-                'include_children' => false,
-              ],
-            ],
-          ]);
+          $has_child_terms = !empty($child_terms) && !is_wp_error($child_terms);
+          $parent_lessons = spanishnova_get_grammar_lessons_by_term($parent_term->term_id);
           ?>
 
           <details class="grammar-accordion-item">
-            <summary><?php echo esc_html($parent_term->name); ?></summary>
+            <summary class="grammar-parent-summary"><?php echo esc_html($parent_term->name); ?></summary>
 
-            <?php if ($parent_lessons->have_posts()) : ?>
-              <div class="activity-list">
-                <?php while ($parent_lessons->have_posts()) : $parent_lessons->the_post(); ?>
-                  <a class="activity-row" href="<?php echo esc_url(get_permalink()); ?>">
-                    <span class="label">Grammar</span>
-                    <div>
-                      <h3><?php echo esc_html(get_the_title()); ?></h3>
-                      <p><?php echo esc_html(get_the_excerpt()); ?></p>
-                    </div>
-                    <span class="arrow">→</span>
-                  </a>
-                <?php endwhile; ?>
+            <?php if ($has_child_terms) : ?>
+              <div class="grammar-child-list">
+                <?php foreach ($child_terms as $child_term) : ?>
+                  <?php $child_lessons = spanishnova_get_grammar_lessons_by_term($child_term->term_id); ?>
+
+                  <?php if ($child_lessons->have_posts()) : ?>
+                    <details class="grammar-child-item" open>
+                      <summary class="grammar-child-summary"><?php echo esc_html($child_term->name); ?></summary>
+                      <ul class="grammar-lesson-list">
+                        <?php while ($child_lessons->have_posts()) : $child_lessons->the_post(); ?>
+                          <li><a href="<?php echo esc_url(get_permalink()); ?>"><?php echo esc_html(get_the_title()); ?></a></li>
+                        <?php endwhile; ?>
+                      </ul>
+                    </details>
+                  <?php endif; ?>
+
+                  <?php wp_reset_postdata(); ?>
+                <?php endforeach; ?>
               </div>
+            <?php elseif ($parent_lessons->have_posts()) : ?>
+              <ul class="grammar-lesson-list grammar-lesson-list-parent">
+                <?php while ($parent_lessons->have_posts()) : $parent_lessons->the_post(); ?>
+                  <li><a href="<?php echo esc_url(get_permalink()); ?>"><?php echo esc_html(get_the_title()); ?></a></li>
+                <?php endwhile; ?>
+              </ul>
             <?php endif; ?>
 
             <?php wp_reset_postdata(); ?>
-
-            <?php if (!empty($child_terms) && !is_wp_error($child_terms)) : ?>
-              <?php foreach ($child_terms as $child_term) : ?>
-                <?php
-                $child_lessons = new WP_Query([
-                  'post_type'              => 'grammar',
-                  'post_status'            => 'publish',
-                  'posts_per_page'         => -1,
-                  'ignore_sticky_posts'    => true,
-                  'tax_query'              => [
-                    [
-                      'taxonomy'         => 'grammar_tax',
-                      'field'            => 'term_id',
-                      'terms'            => $child_term->term_id,
-                      'include_children' => false,
-                    ],
-                  ],
-                ]);
-                ?>
-
-                <?php if ($child_lessons->have_posts()) : ?>
-                  <div class="grammar-child-group">
-                    <h2><?php echo esc_html($child_term->name); ?></h2>
-                    <div class="activity-list">
-                      <?php while ($child_lessons->have_posts()) : $child_lessons->the_post(); ?>
-                        <a class="activity-row" href="<?php echo esc_url(get_permalink()); ?>">
-                          <span class="label">Grammar</span>
-                          <div>
-                            <h3><?php echo esc_html(get_the_title()); ?></h3>
-                            <p><?php echo esc_html(get_the_excerpt()); ?></p>
-                          </div>
-                          <span class="arrow">→</span>
-                        </a>
-                      <?php endwhile; ?>
-                    </div>
-                  </div>
-                <?php endif; ?>
-
-                <?php wp_reset_postdata(); ?>
-              <?php endforeach; ?>
-            <?php endif; ?>
           </details>
         <?php endforeach; ?>
       </div>
