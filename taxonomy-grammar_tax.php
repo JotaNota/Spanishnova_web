@@ -77,14 +77,14 @@ $child_terms = spanishnova_sort_grammar_terms_logically($child_terms, $current_t
           <?php $child_posts = spanishnova_get_taxonomy_posts_by_grammar_term($child_term->term_id); ?>
 
           <details class="grammar-taxonomy-item">
-            <summary class="grammar-taxonomy-summary">
+            <summary class="grammar-taxonomy-summary grammar-child-summary">
               <?php echo esc_html($child_term->name); ?>
             </summary>
 
             <?php if ($child_posts->have_posts()) : ?>
-              <ul class="taxonomy-post-list">
+              <ul class="grammar-lesson-list grammar-taxonomy-lesson-list">
                 <?php while ($child_posts->have_posts()) : $child_posts->the_post(); ?>
-                  <li><a href="<?php echo esc_url(get_permalink()); ?>"><?php echo esc_html(get_the_title()); ?></a></li>
+                  <li><a class="sn-use-line" href="<?php echo esc_url(get_permalink()); ?>"><?php echo esc_html(get_the_title()); ?></a></li>
                 <?php endwhile; ?>
               </ul>
             <?php endif; ?>
@@ -97,9 +97,9 @@ $child_terms = spanishnova_sort_grammar_terms_logically($child_terms, $current_t
       <?php $term_posts = spanishnova_get_taxonomy_posts_by_grammar_term($current_term->term_id); ?>
 
       <?php if ($term_posts->have_posts()) : ?>
-        <ul class="taxonomy-post-list">
+        <ul class="grammar-lesson-list grammar-taxonomy-lesson-list">
           <?php while ($term_posts->have_posts()) : $term_posts->the_post(); ?>
-            <li><a href="<?php echo esc_url(get_permalink()); ?>"><?php echo esc_html(get_the_title()); ?></a></li>
+            <li><a class="sn-use-line" href="<?php echo esc_url(get_permalink()); ?>"><?php echo esc_html(get_the_title()); ?></a></li>
           <?php endwhile; ?>
         </ul>
       <?php else : ?>
