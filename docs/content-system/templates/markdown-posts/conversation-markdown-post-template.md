@@ -1,6 +1,6 @@
 # Title
 
-Brief English intro that names the situation and conversation goal.
+Brief English intro that names the format, situation, and listening goal.
 
 ## Useful Vocabulary
 
@@ -8,26 +8,26 @@ Brief English intro that names the situation and conversation goal.
 | --- | --- |
 | TBD | TBD |
 
-## Common Phrases
+## Conversation
+
+Write the main conversation using the selected `conversation_variant` from `conversation-structure-variants.md`.
+
+For `podcast_style`, use two named speakers throughout the episode.
+
+For `street_interview`, use one interviewer and several interview blocks with headings.
+
+Add selected English support only where it helps comprehension. Do not translate every line.
+
+## Useful Phrases
 
 1. Spanish: TBD
    English: TBD
 2. Spanish: TBD
    English: TBD
+3. Spanish: TBD
+   English: TBD
 
-## Conversation
-
-### Scene 1
-
-- Speaker 1: TBD
-- Speaker 2: TBD
-
-### Scene 2
-
-- Speaker 1: TBD
-- Speaker 2: TBD
-
-## Exercises
+## Practice
 
 ### Translate
 
@@ -35,20 +35,22 @@ Brief English intro that names the situation and conversation goal.
    Answer: TBD
 2. Prompt: TBD
    Answer: TBD
+3. Prompt: TBD
+   Answer: TBD
+
+### Complete the Conversation
+
+1. TBD
+2. TBD
 
 ## Roleplay
 
 1. TBD
 2. TBD
+3. TBD
 
 ## Discussion
 
 1. TBD
 2. TBD
-
-## Wrap Up
-
-| Goal | Example | Translation |
-| --- | --- | --- |
-| TBD | TBD | TBD |
-| TBD | TBD | TBD |
+3. TBD
