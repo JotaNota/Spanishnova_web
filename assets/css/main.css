@@ -258,7 +258,6 @@ body:has(.sn-lesson-wrap) .wp-block-post-content {
   font-size: 14px;
 }
 
-.sn-compact-table th,
 .sn-compact-table td {
   padding: 12px 14px;
   border-bottom: 1px solid var(--sn-border);
@@ -1377,4 +1376,85 @@ main {
   content: "▸";
   margin-right: 6px;
   color: #c75d2c;
+}
+
+/* Grammar archive accordion */
+.grammar-archive-panel h1 {
+  margin-bottom: 20px;
+}
+
+.grammar-accordion {
+  display: grid;
+  gap: 12px;
+}
+
+.grammar-accordion-item,
+.grammar-child-item {
+  border: 0;
+  background: transparent;
+}
+
+.grammar-parent-summary,
+.grammar-child-summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.grammar-parent-summary::-webkit-details-marker,
+.grammar-child-summary::-webkit-details-marker {
+  display: none;
+}
+
+.grammar-parent-summary::before,
+.grammar-child-summary::before {
+  content: "▸";
+  color: var(--orange);
+  margin-right: 8px;
+}
+
+.grammar-accordion-item[open] > .grammar-parent-summary::before,
+.grammar-child-item[open] > .grammar-child-summary::before {
+  content: "▾";
+}
+
+.grammar-parent-summary {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.grammar-child-list {
+  margin: 10px 0 4px 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.grammar-child-summary {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.grammar-lesson-list {
+  margin: 8px 0 2px 28px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 7px;
+}
+
+.grammar-lesson-list a {
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.grammar-lesson-list a:hover,
+.grammar-lesson-list a:focus {
+  color: var(--orange);
+}
+
+.grammar-lesson-list-parent {
+  margin-left: 28px;
 }

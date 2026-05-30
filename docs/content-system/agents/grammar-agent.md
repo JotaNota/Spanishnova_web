@@ -55,6 +55,13 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 - Keep the lesson inside the selected `focus` and `variant` scope.
 - Build `slug` from `base_slug` plus `variant` plus `focus` when needed.
 - Build `title` from `title_base` plus `focus` and `variant` when needed.
+- For verb grammar lessons, build the visible H1 title as `{{Verb}} in the {{tense_or_mood}}`.
+- Use English tense and mood names in titles.
+- Use the Spanish infinitive with initial capital in titles, such as `Necesitar`, `Ser`, or `Ir`.
+- Include mood when needed to avoid ambiguity, such as `present indicative`, `present subjunctive`, or `imperfect subjunctive`.
+- Do not include level labels in titles.
+- Do not use title phrases such as `for Beginners`, `Easy Grammar`, `Beginner Spanish`, `Complete Guide`, or `Mastering`.
+- Keep level information in `level_tax`, not in the visible title.
 - Do not turn `focus` or `variant` into `grammar_tax` or `topic_tax`.
 - Do not invent taxonomy terms.
 - Use `post_tags` only for specific labels, non-official categories, proper nouns, or search labels.

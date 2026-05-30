@@ -1,10 +1,29 @@
 base_slug,title_base,cpt,lesson_type,level_tax,grammar_tax,topic_tax,default_focus,default_variant,post_tags,priority,status,output_folder
-ser,Ser,grammar,verb-usage,beginner,Ser,,present tense,,ser,1,planned,docs/content-system/generated/generated-markdown-posts/grammar/
-estar,Estar,grammar,verb-usage,beginner,Estar,,present tense,,estar,2,planned,docs/content-system/generated/generated-markdown-posts/grammar/
-hay,Hay,grammar,structure,beginner,Haber,,overview,,hay,3,planned,docs/content-system/generated/generated-markdown-posts/grammar/
-hay-algo,Hay + Algo,grammar,structure,beginner,Haber,,overview,,hay,4,planned,docs/content-system/generated/generated-markdown-posts/grammar/
-tener,Tener,grammar,verb-usage,beginner,Tener,,present tense,,tener,5,planned,docs/content-system/generated/generated-markdown-posts/grammar/
-ir,Ir,grammar,verb-usage,beginner,Ir,,present tense,,ir,6,planned,docs/content-system/generated/generated-markdown-posts/grammar/
-querer,Querer,grammar,verb-usage,beginner,Verbs,,present tense,,querer,7,planned,docs/content-system/generated/generated-markdown-posts/grammar/
-necesitar,Necesitar,grammar,verb-usage,beginner,Verbs,,present tense,,necesitar,8,planned,docs/content-system/generated/generated-markdown-posts/grammar/
-tener-que,Tener que,grammar,structure,beginner,Tener,,overview,,tener que,9,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+ser,Ser,grammar,verb-usage,beginner,Present,,present indicative,,ser,1,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+estar,Estar,grammar,verb-usage,beginner,Present,,present indicative,,estar,2,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+ir,Ir,grammar,verb-usage,beginner,Present,,present indicative,,ir,3,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+hacer,Hacer,grammar,verb-usage,beginner,Present,,present indicative,,hacer,4,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+tener,Tener,grammar,verb-usage,beginner,Present,,present indicative,,tener,5,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+tener-que-deber,Tener que / Deber,grammar,structure,beginner,Present,,present indicative,,tener que; deber; obligation,6,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+poder,Poder,grammar,verb-usage,beginner,Present,,present indicative,,poder,7,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+querer-preferir-necesitar,Querer / Preferir / Necesitar,grammar,structure,beginner,Present,,present indicative,,querer; preferir; necesitar; infinitive,8,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+gustar-encantar-interesar,Gustar / Encantar / Interesar,grammar,structure,intermediate,Present,,present indicative,,gustar; encantar; interesar,9,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+hay,Hay,grammar,structure,beginner,Present,,overview,,hay,10,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+present-progressive,Present progressive,grammar,tense,beginner,Present,,present progressive,,present progressive; estar; gerund,11,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+present-indicative,Present indicative,grammar,tense,beginner,Present,,present indicative,,present indicative,12,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+preterite,Preterite,grammar,tense,intermediate,Past,,preterite,,preterite,13,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+regular-preterite,Regular preterite,grammar,tense,intermediate,Past,,regular preterite,,regular preterite,14,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+irregular-preterite,Irregular preterite,grammar,tense,advanced,Past,,irregular preterite,,irregular preterite,15,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+imperfect,Imperfect,grammar,tense,intermediate,Past,,imperfect,,imperfect,16,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+regular-imperfect,Regular imperfect,grammar,tense,intermediate,Past,,regular imperfect,,regular imperfect,17,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+ser-ir-ver-imperfect,Ser / Ir / Ver in the imperfect,grammar,structure,intermediate,Past,,imperfect,,ser; ir; ver; imperfect,18,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+imperfect-habits-descriptions,Imperfect for habits and descriptions,grammar,structure,intermediate,Past,,imperfect,,imperfect; habits; descriptions,19,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+ir-a-infinitive,Ir a + infinitive,grammar,structure,beginner,Future,,near future,,ir a; infinitive; future,20,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+simple-future,Simple future,grammar,tense,intermediate,Future,,simple future,,simple future,21,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+conditional,Conditional,grammar,tense,intermediate,Conditional,,conditional,,conditional,22,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+regular-reflexive-verbs,Regular reflexive verbs,grammar,structure,intermediate,Reflexives,,reflexive verbs,,reflexive verbs; regular reflexives,23,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+irregular-reflexive-verbs,Irregular reflexive verbs,grammar,structure,intermediate,Reflexives,,reflexive verbs,,reflexive verbs; irregular reflexives,24,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+reflexive-verbs-change-meaning,Reflexive verbs that change meaning,grammar,structure,advanced,Reflexives,,reflexive meaning change,,reflexive verbs; meaning change,25,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+reflexives-daily-routine,Reflexives with daily routine,grammar,structure,intermediate,Reflexives,,daily routine,,reflexive verbs; daily routine,26,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+non-obvious-reflexives,Non-obvious reflexives,grammar,structure,advanced,Reflexives,,non-obvious reflexives,,reflexive verbs; non-obvious reflexives,27,planned,docs/content-system/generated/generated-markdown-posts/grammar/
+reflexives-consumption-personal-involvement,Reflexives for consumption / personal involvement,grammar,structure,advanced,Reflexives,,personal involvement,,reflexive verbs; consumption; personal involvement,28,planned,docs/content-system/generated/generated-markdown-posts/grammar/
