@@ -1,6 +1,6 @@
-# Watching Movies at Home
+# Ver películas en casa
 
-Listen to a short Spanish podcast-style conversation about watching movies at home and talking about the kinds of movies people prefer.
+Escucha una conversación tipo podcast sobre ver películas en casa y hablar de qué tipo de películas prefieren las personas.
 
 ## Vocabulario
 
@@ -85,9 +85,11 @@ María: Gracias por escuchar. Nos vemos en el próximo episodio.
 6. Prompt: We watch movies at home.
    Answer: Vemos películas en casa.
 
-## Actúa
+## Situación
 
-1. You and a friend are choosing a movie at home. Ask what movie you should watch.
+Practica con otra persona. Imagina que están en casa y deben decidir qué película ver.
+
+1. Ask what movie you should watch.
 2. Say what kind of movie you prefer and explain why.
 3. Suggest watching with Spanish subtitles.
 
