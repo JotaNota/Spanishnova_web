@@ -1,71 +1,79 @@
----
-title: "TBD"
-slug: "TBD"
-cpt: "vocabulary"
-level_tax: "beginner"
-grammar_tax: []
-topic_tax:
-  - "TBD"
-post_tags:
-  - "TBD"
-status: "draft"
-output_path: "docs/content-system/generated/generated-markdown-posts/vocabulary/TBD.md"
----
-
 # Title
 
-Brief English intro that names the vocabulary topic and learner situation.
+Brief intro that names the vocabulary topic and learner situation.
 
-## Vocabulary
+## Vocabulario
 
-### Category 1
+### Category Name – English Label
 
-| Spanish | English |
-| --- | --- |
-| TBD | TBD |
+- **Spanish term** – English term
+- **Spanish term** – English term
+- **Spanish term** – English term
 
-### Category 2
+### Category Name – English Label
 
-| Spanish | English |
-| --- | --- |
-| TBD | TBD |
+- **Spanish term** – English term
+- **Spanish term** – English term
+- **Spanish term** – English term
 
-## Common Phrases
+### Category Name – English Label
 
-1. Spanish: TBD
-   English: TBD
-2. Spanish: TBD
-   English: TBD
+- **Spanish term** – English term
+- **Spanish term** – English term
+- **Spanish term** – English term
 
-## Dialogue
+## Frases comunes
 
-### Scene
+- **Spanish sentence.** – English sentence.
+- **Spanish sentence.** – English sentence.
+- **Spanish sentence.** – English sentence.
 
-- Speaker 1: TBD
-- Speaker 2: TBD
+## Frase divertida
 
-## Exercises
+**Spanish sentence.** – English sentence.
 
-### Translate
+## Ejercicios
 
-1. Prompt: TBD
-   Answer: TBD
-2. Prompt: TBD
-   Answer: TBD
+### Traducir
 
-### Write Or Speak
+1. English prompt.
 
-1. TBD
-2. TBD
+   Spanish answer.
 
-## Questions
+2. English prompt.
 
-1. TBD
-2. TBD
+   Spanish answer.
 
-## WP Metadata
+### Vocabulario por categoría
 
-- seo_title: "TBD"
-- meta_description: "TBD"
-- internal_links:
-  - "TBD"
+Instruction for sorting or writing vocabulary by category.
+
+- **Category name:** example words or learner task.
+- **Category name:** example words or learner task.
+- **Category name:** example words or learner task.
+
+## Escenas
+
+### Natural Scene Title
+
+- Speaker: Spanish line.
+- Speaker: Spanish line.
+- Speaker: Spanish line.
+
+### Natural Scene Title
+
+- Speaker: Spanish line.
+- Speaker: Spanish line.
+- Speaker: Spanish line.
+
+### Natural Scene Title
+
+- Speaker: Spanish line.
+- Speaker: Spanish line.
+- Speaker: Spanish line.
+
+## Preguntas – Questions
+
+1. Spanish question?
+2. Spanish question?
+3. Spanish question?

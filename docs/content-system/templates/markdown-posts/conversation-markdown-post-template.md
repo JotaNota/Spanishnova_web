@@ -1,68 +1,59 @@
----
-title: "TBD"
-slug: "TBD"
-cpt: "conversations"
-level_tax: "beginner"
-grammar_tax: []
-topic_tax:
-  - "TBD"
-post_tags:
-  - "TBD"
-status: "draft"
-output_path: "docs/content-system/generated/generated-markdown-posts/conversations/TBD.md"
----
-
 # Title
 
-Brief English intro that names the situation and conversation goal.
+Brief English intro that names the format, situation, and listening goal.
 
-## Useful Vocabulary
+## Vocabulario
 
-| Spanish | English |
-| --- | --- |
-| TBD | TBD |
+- **TBD** – TBD
+- **TBD** – TBD
+- **TBD** – TBD
 
-## Common Phrases
+## Conversación
+
+Write the main conversation using the selected `conversation_variant` from `conversation-structure-variants.md`.
+
+For `podcast_style`, use two named speakers throughout the episode.
+
+For `street_interview`, use one interviewer and several interview blocks with headings.
+
+Add selected English support only where it helps comprehension. Do not translate every line. Use a short indented italic note, not a speaker line.
+
+## Frases útiles
 
 1. Spanish: TBD
    English: TBD
 2. Spanish: TBD
    English: TBD
+3. Spanish: TBD
+   English: TBD
 
-## Conversation
+## Práctica
 
-### Scene 1
-
-- Speaker 1: TBD
-- Speaker 2: TBD
-
-### Scene 2
-
-- Speaker 1: TBD
-- Speaker 2: TBD
-
-## Exercises
-
-### Translate
+### Traduce
 
 1. Prompt: TBD
    Answer: TBD
 2. Prompt: TBD
    Answer: TBD
+3. Prompt: TBD
+   Answer: TBD
+4. Prompt: TBD
+   Answer: TBD
+5. Prompt: TBD
+   Answer: TBD
+6. Prompt: TBD
+   Answer: TBD
 
-### Roleplay
+## Situación
+
+Use this section to describe a speaking practice situation. Include a short instruction before the prompts.
 
 1. TBD
 2. TBD
+3. TBD
 
-### Discussion
+## Para conversar
 
 1. TBD
 2. TBD
-
-## WP Metadata
-
-- seo_title: "TBD"
-- meta_description: "TBD"
-- internal_links:
-  - "TBD"
+3. TBD
