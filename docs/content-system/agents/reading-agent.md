@@ -5,6 +5,7 @@ Create Spanish reading lesson source files and clean HTML fragments.
 ## Read
 
 - `docs/content-system/content-plan/reading-roadmap.csv`
+- `docs/content-system/templates/reading-structures/reading-structure-variants.md`
 - `docs/content-system/templates/markdown-posts/reading-markdown-post-template.md`
 - `docs/content-system/templates/html-posts/reading-html-post-template.md`
 - `docs/content-system/content-plan/content-pilot.md` only when the user explicitly selects an item from the manual queue.
@@ -15,11 +16,12 @@ Do not read:
 ## Official Flow
 
 1. Consult `docs/content-system/content-plan/reading-roadmap.csv` for editorial metadata.
-2. Generate Markdown source using `docs/content-system/templates/markdown-posts/reading-markdown-post-template.md`.
-3. Save Markdown source in `docs/content-system/generated/generated-markdown-posts/readings/`.
-4. Read the generated Markdown source.
-5. Generate a clean HTML fragment using `docs/content-system/templates/html-posts/reading-html-post-template.md`.
-6. Save the HTML fragment in `docs/content-system/generated/generated-html-posts/readings/`.
+2. Use `reading_variant` to select the matching skeleton from `docs/content-system/templates/reading-structures/reading-structure-variants.md`.
+3. Generate Markdown source using `docs/content-system/templates/markdown-posts/reading-markdown-post-template.md`.
+4. Save Markdown source in `docs/content-system/generated/generated-markdown-posts/readings/`.
+5. Read the generated Markdown source.
+6. Generate a clean HTML fragment using `docs/content-system/templates/html-posts/reading-html-post-template.md`.
+7. Save the HTML fragment in `docs/content-system/generated/generated-html-posts/readings/`.
 
 The HTML output is a fragment ready to paste or import as the body content of a `readings` post.
 
@@ -49,76 +51,13 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 
 - Match the user request to `slug` or `title` in `reading-roadmap.csv`.
 - Use the roadmap row for base metadata: `cpt`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, `reading_variant`, and `output_path`.
-- Use `reading_variant` to choose the lesson structure.
+- Use `reading_variant` only to choose the lesson structure from `reading-structure-variants.md`.
 - Do not print `reading_variant` in the lesson body.
 - Keep the reading inside the selected `reading_variant` scope.
 - Do not include level labels in titles.
 - Keep level information in `level_tax`, not in the visible title.
 - Do not turn `reading_variant` into `grammar_tax` or `topic_tax`.
 - Do not invent taxonomy terms. Use `post_tags` for non-official categories or specific labels.
-
-## Reading Variants
-
-### `narrative_profile`
-
-Use for biographies, historical figures, discoveries, and stories about one person or group.
-
-Structure:
-- Brief English intro.
-- Key vocabulary before the reading.
-- Four narrative sections.
-- Each section should have two short paragraphs.
-- Each paragraph should have two to four sentences.
-- A short final section may use one paragraph when needed.
-- Key ideas.
-- Activities.
-
-Use section headings that move the story forward. Do not create small headings for isolated explanatory questions.
-
-### `practical_situation`
-
-Use for daily-life readings, travel scenes, work situations, food places, neighborhoods, and simple personal experiences.
-
-Structure:
-- Brief English intro.
-- Key vocabulary before the reading.
-- Three or four scene sections.
-- Each section should have one or two short paragraphs.
-- Include useful phrases inside the scene, not as disconnected notes.
-- Key ideas.
-- Activities.
-
-Keep the language concrete and useful for learners.
-
-### `procedural_set`
-
-Use for recipes, routines, instructions, comparisons of similar processes, and grouped how-to lessons.
-
-Structure:
-- Brief English intro.
-- Key vocabulary or ingredients before the main content.
-- Three or four grouped items.
-- Each item should include a short ingredient/material list and a preparation/process section.
-- Add a verb list only when the lesson depends on repeated actions.
-- Key ideas.
-- Activities.
-
-Keep each grouped item parallel in length and shape.
-
-### `curiosity_article`
-
-Use for animal facts, culture notes, science curiosities, expressions, and informative articles.
-
-Structure:
-- Brief English intro.
-- Key vocabulary before the reading.
-- Four or five thematic sections.
-- Each section should have one or two short paragraphs.
-- Use bullets only for lists of facts or examples.
-- Key ideas.
-- Activities.
-
-Do not repeat headings. Do not include an index inside the lesson body.
 
 ## Content Structure
 
