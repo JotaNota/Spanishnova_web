@@ -9,18 +9,21 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
 ## Fragment
 
 ```html
-<section class="lesson-hero">
-  <div class="breadcrumb">Grammar / {{grammar_tax}} / {{title_base}}</div>
-  <div class="meta-row">
-    <span class="pill">Grammar</span>
-    <span class="pill">{{level_tax}}</span>
-    <span class="pill">{{grammar_tax}}</span>
+<div class="sn-lesson-wrap">
+  <div class="sn-lesson-layout">
+    <article class="sn-lesson-article">
+<section class="sn-lesson-hero">
+  <div class="sn-breadcrumb">Grammar / {{grammar_tax}} / {{title_base}}</div>
+  <div class="sn-meta-row">
+    <span class="sn-pill">Grammar</span>
+    <span class="sn-pill">{{level_tax}}</span>
+    <span class="sn-pill">{{grammar_tax}}</span>
   </div>
   <h1>{{title}}</h1>
-  <p class="intro">{{intro}}</p>
+  <p class="sn-intro">{{intro}}</p>
 </section>
 
-<section class="panel" id="overview">
+<section class="sn-panel" id="overview">
   <h2>Overview</h2>
   <p>{{overview}}</p>
   <div class="simple-example">
@@ -33,7 +36,7 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
   </div>
 </section>
 
-<section class="panel" id="structure">
+<section class="sn-panel" id="structure">
   <h2>Structure</h2>
   <table class="compact-table">
     <thead>
@@ -63,7 +66,7 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
   </table>
 </section>
 
-<section class="panel" id="conjugation">
+<section class="sn-panel" id="conjugation">
   <h2>Conjugation</h2>
   <table class="compact-table">
     <thead>
@@ -118,7 +121,7 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
   </div>
 </section>
 
-<section class="panel" id="uses">
+<section class="sn-panel" id="uses">
   <h2>Uses</h2>
   <div class="two-column">
     <div class="example-group">
@@ -140,7 +143,7 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
   </div>
 </section>
 
-<section class="panel" id="oraciones">
+<section class="sn-panel" id="oraciones">
   <h2>Oraciones</h2>
   <div class="two-column">
     <div class="example-group">
@@ -173,50 +176,114 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
   </div>
 </section>
 
-<section class="panel" id="ejercicios">
+<section class="sn-panel" id="ejercicios">
   <h2>Ejercicios</h2>
   <div class="exercise-block">
     <h3 class="exercise-title">Seleccionar</h3>
     <ol class="exercise-list">
-      <li>{{select_prompt_1}}<br>{{select_options_1}}</li>
-      <li>{{select_prompt_2}}<br>{{select_options_2}}</li>
-      <li>{{select_prompt_3}}<br>{{select_options_3}}</li>
-      <li>{{select_prompt_4}}<br>{{select_options_4}}</li>
-      <li>{{select_prompt_5}}<br>{{select_options_5}}</li>
-      <li>{{select_prompt_6}}<br>{{select_options_6}}</li>
-      <li>{{select_prompt_7}}<br>{{select_options_7}}</li>
-      <li>{{select_prompt_8}}<br>{{select_options_8}}</li>
+      <li>
+        <p>{{select_prompt_1}}</p>
+        <ol type="a">
+          <li>{{select_option_1_a}}</li>
+          <li>{{select_option_1_b}}</li>
+          <li>{{select_option_1_c}}</li>
+        </ol>
+        <details><summary>Mostrar respuesta</summary><p>{{select_answer_1_before}}<strong>{{select_answer_1_key}}</strong>{{select_answer_1_after}}</p></details>
+      </li>
+      <li>
+        <p>{{select_prompt_2}}</p>
+        <ol type="a">
+          <li>{{select_option_2_a}}</li>
+          <li>{{select_option_2_b}}</li>
+          <li>{{select_option_2_c}}</li>
+        </ol>
+        <details><summary>Mostrar respuesta</summary><p>{{select_answer_2_before}}<strong>{{select_answer_2_key}}</strong>{{select_answer_2_after}}</p></details>
+      </li>
+      <li>
+        <p>{{select_prompt_3}}</p>
+        <ol type="a">
+          <li>{{select_option_3_a}}</li>
+          <li>{{select_option_3_b}}</li>
+          <li>{{select_option_3_c}}</li>
+        </ol>
+        <details><summary>Mostrar respuesta</summary><p>{{select_answer_3_before}}<strong>{{select_answer_3_key}}</strong>{{select_answer_3_after}}</p></details>
+      </li>
+      <li>
+        <p>{{select_prompt_4}}</p>
+        <ol type="a">
+          <li>{{select_option_4_a}}</li>
+          <li>{{select_option_4_b}}</li>
+          <li>{{select_option_4_c}}</li>
+        </ol>
+        <details><summary>Mostrar respuesta</summary><p>{{select_answer_4_before}}<strong>{{select_answer_4_key}}</strong>{{select_answer_4_after}}</p></details>
+      </li>
+      <li>
+        <p>{{select_prompt_5}}</p>
+        <ol type="a">
+          <li>{{select_option_5_a}}</li>
+          <li>{{select_option_5_b}}</li>
+          <li>{{select_option_5_c}}</li>
+        </ol>
+        <details><summary>Mostrar respuesta</summary><p>{{select_answer_5_before}}<strong>{{select_answer_5_key}}</strong>{{select_answer_5_after}}</p></details>
+      </li>
+      <li>
+        <p>{{select_prompt_6}}</p>
+        <ol type="a">
+          <li>{{select_option_6_a}}</li>
+          <li>{{select_option_6_b}}</li>
+          <li>{{select_option_6_c}}</li>
+        </ol>
+        <details><summary>Mostrar respuesta</summary><p>{{select_answer_6_before}}<strong>{{select_answer_6_key}}</strong>{{select_answer_6_after}}</p></details>
+      </li>
+      <li>
+        <p>{{select_prompt_7}}</p>
+        <ol type="a">
+          <li>{{select_option_7_a}}</li>
+          <li>{{select_option_7_b}}</li>
+          <li>{{select_option_7_c}}</li>
+        </ol>
+        <details><summary>Mostrar respuesta</summary><p>{{select_answer_7_before}}<strong>{{select_answer_7_key}}</strong>{{select_answer_7_after}}</p></details>
+      </li>
+      <li>
+        <p>{{select_prompt_8}}</p>
+        <ol type="a">
+          <li>{{select_option_8_a}}</li>
+          <li>{{select_option_8_b}}</li>
+          <li>{{select_option_8_c}}</li>
+        </ol>
+        <details><summary>Mostrar respuesta</summary><p>{{select_answer_8_before}}<strong>{{select_answer_8_key}}</strong>{{select_answer_8_after}}</p></details>
+      </li>
     </ol>
   </div>
   <div class="exercise-block">
     <h3 class="exercise-title">Completar</h3>
     <ol class="exercise-list">
-      <li><details class="exercise-item"><summary>{{complete_prompt_1}}</summary><span class="exercise-answer">{{complete_answer_1}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{complete_prompt_2}}</summary><span class="exercise-answer">{{complete_answer_2}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{complete_prompt_3}}</summary><span class="exercise-answer">{{complete_answer_3}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{complete_prompt_4}}</summary><span class="exercise-answer">{{complete_answer_4}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{complete_prompt_5}}</summary><span class="exercise-answer">{{complete_answer_5}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{complete_prompt_6}}</summary><span class="exercise-answer">{{complete_answer_6}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{complete_prompt_7}}</summary><span class="exercise-answer">{{complete_answer_7}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{complete_prompt_8}}</summary><span class="exercise-answer">{{complete_answer_8}}</span></details></li>
+      <li><details><summary>{{complete_prompt_1}}</summary><p>{{complete_answer_1_before}}<strong>{{complete_answer_1_key}}</strong>{{complete_answer_1_after}}</p></details></li>
+      <li><details><summary>{{complete_prompt_2}}</summary><p>{{complete_answer_2_before}}<strong>{{complete_answer_2_key}}</strong>{{complete_answer_2_after}}</p></details></li>
+      <li><details><summary>{{complete_prompt_3}}</summary><p>{{complete_answer_3_before}}<strong>{{complete_answer_3_key}}</strong>{{complete_answer_3_after}}</p></details></li>
+      <li><details><summary>{{complete_prompt_4}}</summary><p>{{complete_answer_4_before}}<strong>{{complete_answer_4_key}}</strong>{{complete_answer_4_after}}</p></details></li>
+      <li><details><summary>{{complete_prompt_5}}</summary><p>{{complete_answer_5_before}}<strong>{{complete_answer_5_key}}</strong>{{complete_answer_5_after}}</p></details></li>
+      <li><details><summary>{{complete_prompt_6}}</summary><p>{{complete_answer_6_before}}<strong>{{complete_answer_6_key}}</strong>{{complete_answer_6_after}}</p></details></li>
+      <li><details><summary>{{complete_prompt_7}}</summary><p>{{complete_answer_7_before}}<strong>{{complete_answer_7_key}}</strong>{{complete_answer_7_after}}</p></details></li>
+      <li><details><summary>{{complete_prompt_8}}</summary><p>{{complete_answer_8_before}}<strong>{{complete_answer_8_key}}</strong>{{complete_answer_8_after}}</p></details></li>
     </ol>
   </div>
   <div class="exercise-block">
     <h3 class="exercise-title">Traducir</h3>
     <ol class="exercise-list">
-      <li><details class="exercise-item"><summary>{{translate_prompt_1}}</summary><span class="exercise-answer">{{translate_answer_1}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{translate_prompt_2}}</summary><span class="exercise-answer">{{translate_answer_2}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{translate_prompt_3}}</summary><span class="exercise-answer">{{translate_answer_3}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{translate_prompt_4}}</summary><span class="exercise-answer">{{translate_answer_4}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{translate_prompt_5}}</summary><span class="exercise-answer">{{translate_answer_5}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{translate_prompt_6}}</summary><span class="exercise-answer">{{translate_answer_6}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{translate_prompt_7}}</summary><span class="exercise-answer">{{translate_answer_7}}</span></details></li>
-      <li><details class="exercise-item"><summary>{{translate_prompt_8}}</summary><span class="exercise-answer">{{translate_answer_8}}</span></details></li>
+      <li><details><summary>{{translate_prompt_1}}</summary><p>{{translate_answer_1_before}}<strong>{{translate_answer_1_key}}</strong>{{translate_answer_1_after}}</p></details></li>
+      <li><details><summary>{{translate_prompt_2}}</summary><p>{{translate_answer_2_before}}<strong>{{translate_answer_2_key}}</strong>{{translate_answer_2_after}}</p></details></li>
+      <li><details><summary>{{translate_prompt_3}}</summary><p>{{translate_answer_3_before}}<strong>{{translate_answer_3_key}}</strong>{{translate_answer_3_after}}</p></details></li>
+      <li><details><summary>{{translate_prompt_4}}</summary><p>{{translate_answer_4_before}}<strong>{{translate_answer_4_key}}</strong>{{translate_answer_4_after}}</p></details></li>
+      <li><details><summary>{{translate_prompt_5}}</summary><p>{{translate_answer_5_before}}<strong>{{translate_answer_5_key}}</strong>{{translate_answer_5_after}}</p></details></li>
+      <li><details><summary>{{translate_prompt_6}}</summary><p>{{translate_answer_6_before}}<strong>{{translate_answer_6_key}}</strong>{{translate_answer_6_after}}</p></details></li>
+      <li><details><summary>{{translate_prompt_7}}</summary><p>{{translate_answer_7_before}}<strong>{{translate_answer_7_key}}</strong>{{translate_answer_7_after}}</p></details></li>
+      <li><details><summary>{{translate_prompt_8}}</summary><p>{{translate_answer_8_before}}<strong>{{translate_answer_8_key}}</strong>{{translate_answer_8_after}}</p></details></li>
     </ol>
   </div>
 </section>
 
-<section class="panel" id="wrap-up">
+<section class="sn-panel" id="wrap-up">
   <h2>Wrap Up</h2>
   <table class="compact-table">
     <thead>
@@ -234,6 +301,9 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
     </tbody>
   </table>
 </section>
+    </article>
+  </div>
+</div>
 ```
 
 ## Conjugation Practice Marker

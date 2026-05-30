@@ -1,10 +1,10 @@
-# Ir in the Present Tense
+# Ir Present Tense
 
-Use **ir** in the present tense to say where someone goes or is going. It is an irregular verb, so learners need to memorize each form.
+Use **ir** to say where someone goes or is going. It is an irregular verb, so the present forms must be memorized.
 
 ## Overview
 
-**Ir** means **to go**. In the present tense, it is often followed by **a** plus a place.
+**Ir** means **to go**. In the present tense, Spanish often uses it for both simple habits and near-future movement.
 
 - Yo voy a la escuela. — I go to school.
 
@@ -12,62 +12,66 @@ Use **ir** in the present tense to say where someone goes or is going. It is an 
 
 | Structure | Example | Translation |
 | --- | --- | --- |
-| subject + ir + a + place | Ella va al parque. | She goes to the park. |
-| subject + no + ir + a + place | Nosotros no vamos al banco. | We do not go to the bank. |
-| ¿subject + ir + a + place? | ¿Tú vas a la tienda? | Do you go to the store? |
+| subject + ir + a + place | Nosotros vamos a casa. | We go home. |
+| subject + no + ir + a + place | Ella no va al parque. | She does not go to the park. |
+| question word + ir + subject | ¿Adónde vas tú? | Where are you going? |
 
 ## Conjugation
 
 | Subject | Form | Example | Translation |
 | --- | --- | --- | --- |
-| Yo | voy | Yo voy a casa. | I go home. |
-| Tú | vas | Tú vas al trabajo. | You go to work. |
-| Él / Ella / Usted | va | Ella va a la escuela. | She goes to school. |
-| Nosotros / Nosotras | vamos | Nosotros vamos al mercado. | We go to the market. |
-| Ellos / Ellas / Ustedes | van | Ellos van al parque. | They go to the park. |
+| Yo | voy | Yo voy al mercado. | I go to the market. |
+| Tú | vas | Tú vas a clase. | You go to class. |
+| Él / Ella / Usted | va | Ella va al trabajo. | She goes to work. |
+| Nosotros / Nosotras | vamos | Nosotros vamos al cine. | We go to the movies. |
+| Ellos / Ellas / Ustedes | van | Ellos van a la playa. | They go to the beach. |
 
 ## Conjugation Practice Source Marker
 
 `sn-conjugation-practice`
 
+Use this marker only when `lesson_type=verb-usage` and the target is one simple isolated verb.
+
+Do not use `sn-conjugation-practice` for structures, compound phrases, periphrases, or expressions such as `tener que`, `hay algo`, or `he tenido problemas`.
+
 ## Uses
 
-### Places People Go
+### Talk about destinations
 
-Use **ir** with **a** to talk about destinations.
+Use **ir a** with a place to say where someone goes.
 
-- Voy al supermercado. — I go to the supermarket.
-- Mis amigos van a la playa. — My friends go to the beach.
+- Voy a la biblioteca. — I go to the library.
+- Ustedes van al restaurante. — You all go to the restaurant.
 
-### Plans With Ir A
+### Talk about plans with movement
 
-Use **ir a** plus an infinitive to talk about near future plans. Keep this lesson focused on the present-tense forms of **ir**.
+Use the present tense of **ir** to describe where someone is going now or soon.
 
-- Voy a estudiar hoy. — I am going to study today.
-- Vamos a comer en casa. — We are going to eat at home.
+- ¿Vas al gimnasio hoy? — Are you going to the gym today?
+- Mi hermano va a casa después de clase. — My brother is going home after class.
 
 ## Oraciones
 
 ### Afirmativa
 
-- Yo voy al gimnasio. — I go to the gym.
-- Tú vas a la biblioteca. — You go to the library.
-- Mi hermana va al centro. — My sister goes downtown.
-- Nosotros vamos a clase. — We go to class.
+- Yo voy al centro. — I go downtown.
+- Tú vas a la escuela. — You go to school.
+- Ella va al supermercado. — She goes to the supermarket.
+- Nosotros vamos al museo. — We go to the museum.
 
 ### Negativa
 
-- Yo no voy al cine hoy. — I am not going to the movies today.
-- Tú no vas a la oficina. — You do not go to the office.
-- Él no va al restaurante. — He does not go to the restaurant.
-- Ellas no van al museo. — They do not go to the museum.
+- Yo no voy al banco. — I am not going to the bank.
+- Tú no vas al parque hoy. — You are not going to the park today.
+- Él no va a la oficina. — He does not go to the office.
+- Ellas no van al concierto. — They are not going to the concert.
 
 ### Preguntas
 
-- ¿Vas a casa ahora? — Are you going home now?
-- ¿Ella va al trabajo? — Does she go to work?
-- ¿Vamos al parque? — Are we going to the park?
-- ¿Ustedes van a la playa? — Are you all going to the beach?
+- ¿Adónde vas? — Where are you going?
+- ¿Va usted al hotel? — Are you going to the hotel?
+- ¿Vamos a la playa mañana? — Are we going to the beach tomorrow?
+- ¿Ellos van a clase? — Are they going to class?
 
 ## Ejercicios
 
@@ -76,116 +80,116 @@ Use **ir a** plus an infinitive to talk about near future plans. Keep this lesso
 1. Yo _____ al mercado.
    - a) vas
    - b) voy
-   - c) va
+   - c) van
 
-2. Tú _____ a la escuela.
-   - a) vas
+2. Tú _____ a clase.
+   - a) va
+   - b) voy
+   - c) vas
+
+3. Ella _____ al trabajo.
+   - a) va
    - b) vamos
    - c) van
 
-3. Ella _____ al parque.
+4. Nosotros _____ al cine.
    - a) voy
-   - b) van
+   - b) vamos
    - c) va
 
-4. Nosotros _____ a casa.
-   - a) vamos
-   - b) va
-   - c) vas
-
-5. Ellos _____ al cine.
-   - a) voy
-   - b) van
-   - c) vamos
-
-6. Usted no _____ al banco hoy.
-   - a) va
+5. Ellos _____ a la playa.
+   - a) van
    - b) vas
    - c) voy
 
-7. ¿_____ tú a la tienda?
-   - a) Va
-   - b) Vas
-   - c) Van
-
-8. Mis padres _____ al restaurante.
+6. Usted no _____ al banco.
    - a) van
    - b) va
-   - c) voy
+   - c) vamos
+
+7. ¿Adónde _____ tú?
+   - a) vas
+   - b) va
+   - c) van
+
+8. Mis amigas _____ al restaurante.
+   - a) voy
+   - b) va
+   - c) van
 
 ### Completar
 
-1. Yo ___ al trabajo.
+1. Yo ___ al mercado.
 
-   Yo **voy** al trabajo.
+   Yo **voy** al mercado.
 
-2. Tú ___ a la clase de español.
+2. Tú ___ a clase.
 
-   Tú **vas** a la clase de español.
+   Tú **vas** a clase.
 
-3. Mi hermano ___ al gimnasio.
+3. Ella ___ al trabajo.
 
-   Mi hermano **va** al gimnasio.
+   Ella **va** al trabajo.
 
-4. Nosotros ___ al supermercado.
+4. Nosotros ___ al cine.
 
-   Nosotros **vamos** al supermercado.
+   Nosotros **vamos** al cine.
 
-5. Ellas ___ al concierto.
+5. Ellos ___ a la playa.
 
-   Ellas **van** al concierto.
+   Ellos **van** a la playa.
 
-6. Usted no ___ a la reunión.
+6. Usted no ___ al banco.
 
-   Usted no **va** a la reunión.
+   Usted no **va** al banco.
 
-7. ¿Tú ___ al parque?
+7. ¿Adónde ___ tú?
 
-   ¿Tú **vas** al parque?
+   ¿Adónde **vas** tú?
 
-8. ¿Ustedes ___ a la playa?
+8. Mis amigas ___ al restaurante.
 
-   ¿Ustedes **van** a la playa?
+   Mis amigas **van** al restaurante.
 
 ### Traducir
 
-1. I go to school.
+1. I go to the market.
 
-   Yo **voy** a la escuela.
+   Yo **voy** al mercado.
 
-2. You go to the store.
+2. You go to class.
 
-   Tú **vas** a la tienda.
+   Tú **vas** a clase.
 
 3. She goes to work.
 
    Ella **va** al trabajo.
 
-4. We go home.
+4. We go to the movies.
 
-   Nosotros **vamos** a casa.
+   Nosotros **vamos** al cine.
 
-5. They go to the museum.
+5. They go to the beach.
 
-   Ellos **van** al museo.
+   Ellos **van** a la playa.
 
-6. I do not go to the bank.
+6. I am not going to the bank.
 
    Yo no **voy** al banco.
 
-7. Do you go to the park?
+7. Where are you going?
 
-   ¿Tú **vas** al parque?
+   ¿Adónde **vas**?
 
-8. Are you all going to the restaurant?
+8. Are they going to class?
 
-   ¿Ustedes **van** al restaurante?
+   ¿Ellos **van** a clase?
 
 ## Wrap Up
 
 | Use | Example | Translation |
 | --- | --- | --- |
-| Say where I go | Yo voy a casa. | I go home. |
+| Say where I go | Yo voy al mercado. | I go to the market. |
+| Say where you go | Tú vas a clase. | You go to class. |
 | Say where someone goes | Ella va al trabajo. | She goes to work. |
-| Say where we go | Nosotros vamos al parque. | We go to the park. |
-| Ask where someone goes | ¿Vas a la tienda? | Do you go to the store? |
+| Ask where someone is going | ¿Adónde vas? | Where are you going? |
