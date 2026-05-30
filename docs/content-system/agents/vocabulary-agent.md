@@ -77,6 +77,7 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 - Add common phrases.
 - Add one fun phrase with the Spanish in bold and English on the same line.
 - Add translation practice.
+- Translation exercises must reuse vocabulary, phrases, and structures already introduced earlier in the same lesson. Do not introduce new vocabulary or new situations in `Traducir`; for example, if a body-parts lesson has not introduced `doctor`, do not use `I need a doctor`.
 - Add dialogues.
 - Use natural scene titles, not `Scene 1`, `Scene 2`, or `Scene 3`.
 - Add questions.
