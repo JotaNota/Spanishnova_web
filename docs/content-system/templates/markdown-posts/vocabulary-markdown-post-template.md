@@ -1,20 +1,12 @@
----
-title: "TBD"
-slug: "TBD"
-cpt: "vocabulary"
-level_tax: "beginner"
-grammar_tax: []
-topic_tax:
-  - "TBD"
-post_tags:
-  - "TBD"
-status: "draft"
-output_path: "docs/content-system/generated/generated-markdown-posts/vocabulary/TBD.md"
----
-
 # Title
 
 Brief English intro that names the vocabulary topic and learner situation.
+
+## Overview
+
+Short English overview of the vocabulary set, when learners use it, and what situation it supports.
+
+- TBD. — TBD.
 
 ## Vocabulary
 
@@ -63,9 +55,9 @@ Brief English intro that names the vocabulary topic and learner situation.
 1. TBD
 2. TBD
 
-## WP Metadata
+## Wrap Up
 
-- seo_title: "TBD"
-- meta_description: "TBD"
-- internal_links:
-  - "TBD"
+| Use | Example | Translation |
+| --- | --- | --- |
+| TBD | TBD | TBD |
+| TBD | TBD | TBD |

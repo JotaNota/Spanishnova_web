@@ -1,17 +1,3 @@
----
-title: "TBD"
-slug: "TBD"
-cpt: "readings"
-level_tax: "beginner"
-grammar_tax: []
-topic_tax:
-  - "TBD"
-post_tags:
-  - "TBD"
-status: "draft"
-output_path: "docs/content-system/generated/generated-markdown-posts/readings/TBD.md"
----
-
 # Title
 
 Brief English intro that previews the reading topic and level.
@@ -57,9 +43,14 @@ Spanish paragraph.
 1. TBD
 2. TBD
 
-## WP Metadata
+## Questions
 
-- seo_title: "TBD"
-- meta_description: "TBD"
-- internal_links:
-  - "TBD"
+1. TBD
+2. TBD
+
+## Wrap Up
+
+| Idea | Example | Translation |
+| --- | --- | --- |
+| TBD | TBD | TBD |
+| TBD | TBD | TBD |

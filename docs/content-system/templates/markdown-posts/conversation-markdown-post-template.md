@@ -1,17 +1,3 @@
----
-title: "TBD"
-slug: "TBD"
-cpt: "conversations"
-level_tax: "beginner"
-grammar_tax: []
-topic_tax:
-  - "TBD"
-post_tags:
-  - "TBD"
-status: "draft"
-output_path: "docs/content-system/generated/generated-markdown-posts/conversations/TBD.md"
----
-
 # Title
 
 Brief English intro that names the situation and conversation goal.
@@ -50,19 +36,19 @@ Brief English intro that names the situation and conversation goal.
 2. Prompt: TBD
    Answer: TBD
 
-### Roleplay
+## Roleplay
 
 1. TBD
 2. TBD
 
-### Discussion
+## Discussion
 
 1. TBD
 2. TBD
 
-## WP Metadata
+## Wrap Up
 
-- seo_title: "TBD"
-- meta_description: "TBD"
-- internal_links:
-  - "TBD"
+| Goal | Example | Translation |
+| --- | --- | --- |
+| TBD | TBD | TBD |
+| TBD | TBD | TBD |
