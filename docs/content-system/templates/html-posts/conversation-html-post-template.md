@@ -61,9 +61,10 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
         </div>
       </section>
 
-      <section class="sn-conversation-section" id="actua">
-        <h2>Actúa</h2>
+      <section class="sn-conversation-section" id="situacion">
+        <h2>Situación</h2>
         <div class="sn-conversation-block">
+          <p class="sn-conversation-instruction">Usa esta situación para practicar la conversación con otra persona. Cambia los detalles según tus gustos.</p>
           <ol class="sn-conversation-list">
             <li>{{roleplay_1}}</li>
             <li>{{roleplay_2}}</li>
