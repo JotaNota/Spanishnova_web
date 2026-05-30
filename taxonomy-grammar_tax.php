@@ -72,19 +72,17 @@ $child_terms = spanishnova_sort_grammar_terms_logically($child_terms, $current_t
     <h1><?php echo esc_html($current_term->name); ?></h1>
 
     <?php if (!is_wp_error($child_terms) && !empty($child_terms)) : ?>
-      <div class="activity-list grammar-taxonomy-accordion">
+      <div class="grammar-taxonomy-accordion">
         <?php foreach ($child_terms as $child_term) : ?>
           <?php $child_posts = spanishnova_get_taxonomy_posts_by_grammar_term($child_term->term_id); ?>
 
           <details class="grammar-taxonomy-item">
-            <summary class="activity-row grammar-taxonomy-summary">
-              <span class="label">Grammar</span>
-              <div><h3><?php echo esc_html($child_term->name); ?></h3></div>
-              <span class="arrow">→</span>
+            <summary class="grammar-taxonomy-summary">
+              <?php echo esc_html($child_term->name); ?>
             </summary>
 
             <?php if ($child_posts->have_posts()) : ?>
-              <ul class="grammar-lesson-list grammar-taxonomy-lesson-list">
+              <ul class="taxonomy-post-list">
                 <?php while ($child_posts->have_posts()) : $child_posts->the_post(); ?>
                   <li><a href="<?php echo esc_url(get_permalink()); ?>"><?php echo esc_html(get_the_title()); ?></a></li>
                 <?php endwhile; ?>
@@ -99,7 +97,7 @@ $child_terms = spanishnova_sort_grammar_terms_logically($child_terms, $current_t
       <?php $term_posts = spanishnova_get_taxonomy_posts_by_grammar_term($current_term->term_id); ?>
 
       <?php if ($term_posts->have_posts()) : ?>
-        <ul class="grammar-lesson-list grammar-lesson-list-parent">
+        <ul class="taxonomy-post-list">
           <?php while ($term_posts->have_posts()) : $term_posts->the_post(); ?>
             <li><a href="<?php echo esc_url(get_permalink()); ?>"><?php echo esc_html(get_the_title()); ?></a></li>
           <?php endwhile; ?>
