@@ -1,30 +1,52 @@
 # Grammar Content Agent - SpanishNova
 
-Create Spanish grammar lesson drafts.
+Create Spanish grammar lesson source files and clean HTML fragments.
 
-Use the lightweight SpanishNova grammar content template.
+## Read
 
-Read:
-- `docs/content-system/templates/grammar-content-template.md`
 - `docs/content-system/content-plan/grammar-roadmap.csv`
+- `docs/content-system/templates/markdown-posts/grammar-markdown-post-template.md`
+- `docs/content-system/templates/html-posts/grammar-html-post-template.md`
 - `docs/content-system/content-plan/content-pilot.md` only when the user explicitly selects an item from the manual queue.
 
 Do not read:
-- `docs/content-system/templates/reference-html/`
+- `docs/content-system/templates/html-references/`
 
-Write drafts to:
-- The `output_folder` from the matching `grammar-roadmap.csv` row.
+## Official Flow
 
-Output flow:
-- Markdown is the source format.
-- Markdown drafts must be preserved as editable source.
-- Markdown can later be used for PDF or WordPress/Gutenberg export.
-- WordPress/Gutenberg is a publication output, not the source.
-- If the user asks only to create content, create Markdown only.
-- If the user asks to create and publish/export, create Markdown first, then produce the requested publication output.
-- Do not overwrite or skip the Markdown source.
+1. Consult `docs/content-system/content-plan/grammar-roadmap.csv` for editorial metadata.
+2. Generate Markdown source using `docs/content-system/templates/markdown-posts/grammar-markdown-post-template.md`.
+3. Save Markdown source in `docs/content-system/generated/generated-markdown-posts/grammar/`.
+4. Read the generated Markdown source.
+5. Generate a clean HTML fragment using `docs/content-system/templates/html-posts/grammar-html-post-template.md`.
+6. Save the HTML fragment in `docs/content-system/generated/generated-html-posts/grammar/`.
 
-Flow:
+The HTML output is a fragment ready to paste or import as the body content of a `grammar` post.
+
+## Markdown Source
+
+- Markdown is the editable source format.
+- Markdown source must be preserved.
+- Do not use YAML frontmatter.
+- Do not use internal HTML comments.
+- Do not include internal metadata inside the lesson body.
+- Start the file with the H1 title.
+- Keep metadata in `grammar-roadmap.csv`, content logs, PR notes, or publishing checklists, not in the lesson body.
+
+## HTML Fragment
+
+- Generate HTML fragments only, not complete HTML documents.
+- Do not generate Gutenberg.
+- Do not generate `wp:` blocks.
+- Do not generate CSS.
+- Do not generate JS.
+- Do not generate PHP.
+- Do not publish in WordPress.
+- Do not include `<!DOCTYPE html>`, `<html>`, `<head>`, or `<body>`.
+- Use the HTML fragment template as the structural target.
+
+## Metadata Flow
+
 - Match the user request to `base_slug` or `title_base` in `grammar-roadmap.csv`.
 - Use the roadmap row for base metadata: `cpt`, `lesson_type`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, and `output_folder`.
 - Use the user request for `focus` and `variant`.
@@ -34,28 +56,51 @@ Flow:
 - Build `slug` from `base_slug` plus `variant` plus `focus` when needed.
 - Build `title` from `title_base` plus `focus` and `variant` when needed.
 - Do not turn `focus` or `variant` into `grammar_tax` or `topic_tax`.
-
-Rules:
-- Use the Markdown template structure.
-- Do not create CSS.
-- Do not create PHP.
-- Do not publish to WordPress.
-- Create one lesson per file.
-- Use YAML frontmatter.
-- Include metadata: `title`, `slug`, `cpt`, `focus`, `variant`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, `status`, `output_path`.
-- Use taxonomy values from `docs/content-system/content-plan/grammar-roadmap.csv`, or from `content-pilot.md` only when the user explicitly selects a manual queue item.
 - Do not invent taxonomy terms.
 - Use `post_tags` only for specific labels, non-official categories, proper nouns, or search labels.
+
+## Practice Structure
+
+- Use Spanish section headings for practice areas: `Oraciones`, `Afirmativa`, `Negativa`, `Preguntas`, `Ejercicios`, `Seleccionar`, `Completar`, `Traducir`.
+- Do not use English headings for practice sections such as `Affirmative`, `Negative`, `Questions`, `Exercises`, `Multiple Choice`, or `Translation`.
+- `Oraciones` uses bullets.
+- `Afirmativa` uses bullets.
+- `Negativa` uses bullets.
+- `Preguntas` uses bullets.
+- `Ejercicios` keeps numbering.
+- `Seleccionar` keeps numbering.
+- `Completar` keeps numbering.
+- `Traducir` keeps numbering.
+- Use `Completar`, not `Fill in the blank`.
+- Add 8 multiple-choice exercises with varied answer positions.
+- Add 8 completar exercises.
+- Add 8 translation exercises.
+
+## Conjugation Practice
+
+- Use `sn-conjugation-practice` only for `lesson_type=verb-usage` with one simple isolated verb.
+- In generated HTML, `sn-conjugation-practice` must be the real HTML block from `docs/content-system/templates/html-posts/grammar-html-post-template.md`.
+- The generated HTML must include:
+  - `<div class="sn-conjugation-practice">`
+  - `<table class="sn-conj-table">`
+  - `<button type="button" class="sn-conj-check">Check answers</button>`
+- Never generate `sn-conjugation-practice` as plain text.
+- Never generate `<p class="sn-conjugation-practice">`.
+- Never generate `{{sn_conjugation_practice_marker}}`.
+- Do not use `sn-conjugation-practice` in structures, compound phrases, periphrases, or expressions such as `tener que`, `hay algo`, or `he tenido problemas`.
+
+## Language Quality
+
 - Keep explanations short.
 - Use English explanations.
 - Use Spanish examples.
+- Use English translations.
 - Spanish examples, questions, exercises, and titles must use correct accents and Spanish punctuation.
 - Use opening question marks and exclamation marks where needed.
-- Add English translations.
-- Use collapsible exercises.
-- Use `Completar`, not `Fill in the blank`.
+- In `Overview`, use a bullet example instead of a labeled `Example:` line.
 
-Lesson types:
+## Lesson Types
+
 - `tense`
 - `verb-usage`
 - `comparison`

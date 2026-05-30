@@ -5,15 +5,15 @@ Create Spanish reading lesson drafts.
 Use the lightweight SpanishNova reading content template.
 
 Read:
-- `docs/content-system/templates/reading-content-template.md`
+- `docs/content-system/templates/markdown-posts/reading-markdown-post-template.md`
 - `docs/content-system/content-plan/reading-roadmap.csv`
 - `docs/content-system/content-plan/content-pilot.md`
 
 Do not read:
-- `docs/content-system/templates/reference-html/`
+- `docs/content-system/templates/html-references/`
 
 Write drafts to:
-- `docs/content-system/content/readings/`
+- `docs/content-system/generated/generated-markdown-posts/readings/`
 
 Rules:
 - Use the Markdown template structure.

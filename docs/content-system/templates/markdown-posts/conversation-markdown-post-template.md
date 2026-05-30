@@ -1,7 +1,7 @@
 ---
 title: "TBD"
 slug: "TBD"
-cpt: "vocabulary"
+cpt: "conversations"
 level_tax: "beginner"
 grammar_tax: []
 topic_tax:
@@ -9,22 +9,14 @@ topic_tax:
 post_tags:
   - "TBD"
 status: "draft"
-output_path: "docs/content-system/content/vocabulary/TBD.md"
+output_path: "docs/content-system/generated/generated-markdown-posts/conversations/TBD.md"
 ---
 
 # Title
 
-Brief English intro that names the vocabulary topic and learner situation.
+Brief English intro that names the situation and conversation goal.
 
-## Vocabulary
-
-### Category 1
-
-| Spanish | English |
-| --- | --- |
-| TBD | TBD |
-
-### Category 2
+## Useful Vocabulary
 
 | Spanish | English |
 | --- | --- |
@@ -37,9 +29,14 @@ Brief English intro that names the vocabulary topic and learner situation.
 2. Spanish: TBD
    English: TBD
 
-## Dialogue
+## Conversation
 
-### Scene
+### Scene 1
+
+- Speaker 1: TBD
+- Speaker 2: TBD
+
+### Scene 2
 
 - Speaker 1: TBD
 - Speaker 2: TBD
@@ -53,12 +50,12 @@ Brief English intro that names the vocabulary topic and learner situation.
 2. Prompt: TBD
    Answer: TBD
 
-### Write Or Speak
+### Roleplay
 
 1. TBD
 2. TBD
 
-## Questions
+### Discussion
 
 1. TBD
 2. TBD

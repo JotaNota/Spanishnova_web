@@ -1017,3 +1017,364 @@ main {
 .category-card {
   width: 100%;
 }
+
+.sn-grammar-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.sn-grammar-content {
+  background: #fff;
+  border: 1px solid #eadfce;
+  border-radius: 18px;
+  padding: 36px;
+}
+
+.sn-grammar-content h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  line-height: 1.1;
+}
+
+.sn-grammar-content h2 {
+  margin-top: 36px;
+  margin-bottom: 14px;
+  font-size: 1.45rem;
+}
+
+.sn-grammar-content h3 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.sn-grammar-content p,
+.sn-grammar-content li {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.sn-grammar-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0 28px;
+  font-size: 0.95rem;
+}
+
+.sn-grammar-content th,
+.sn-grammar-content td {
+  border-bottom: 1px solid #eadfce;
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.sn-grammar-content th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.sn-grammar-content .post-index {
+  margin: 20px 0 28px;
+  padding: 16px 18px;
+  border: 1px solid #eadfce;
+  border-radius: 14px;
+  background: #fffaf4;
+}
+
+.sn-grammar-content .post-index ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.sn-grammar-content details {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border: 1px solid #eadfce;
+  border-radius: 10px;
+  background: #fffaf4;
+}
+
+.sn-grammar-content summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sn-grammar-content .exercise-list > li {
+  margin-bottom: 22px;
+}
+
+@media (max-width: 700px) {
+  .sn-grammar-page {
+    padding: 24px 14px;
+  }
+
+  .sn-grammar-content {
+    padding: 22px;
+  }
+
+  .sn-grammar-content table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+.sn-grammar-breadcrumb {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: #6f6256;
+}
+
+.sn-grammar-pills {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.sn-grammar-pills span {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #fff0e6;
+  color: #c75d2c;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sn-grammar-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0 28px;
+}
+
+.sn-grammar-content th {
+  background: #f7eadc;
+  color: #1f1a16;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sn-grammar-content th,
+.sn-grammar-content td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eadfce;
+  text-align: left;
+  vertical-align: top;
+}
+
+.sn-grammar-content h1 {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.sn-grammar-content h2 {
+  margin-top: 38px;
+  margin-bottom: 14px;
+}
+
+.sn-grammar-content h3 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.sn-grammar-content .post-index {
+  margin: 22px 0 32px;
+  padding: 18px 22px;
+  border: 1px solid #eadfce;
+  border-radius: 12px;
+  background: #fffaf4;
+}
+
+.sn-grammar-content {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 36px;
+  background: #fff;
+  border: 1px solid #eadfce;
+  border-radius: 16px;
+}
+
+.sn-grammar-content h2 {
+  margin-top: 42px;
+  padding-top: 22px;
+  border-top: 1px solid #eadfce;
+}
+
+.sn-grammar-content h2:first-of-type {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid #eadfce;
+}
+
+.sn-grammar-content h3 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.sn-grammar-content p,
+.sn-grammar-content li {
+  line-height: 1.7;
+}
+
+.sn-grammar-content ul,
+.sn-grammar-content ol {
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+
+.sn-grammar-content li {
+  margin-bottom: 8px;
+}
+
+.sn-grammar-content table {
+  width: 100%;
+  margin: 16px 0 30px;
+  border-collapse: collapse;
+}
+
+.sn-grammar-content th {
+  background: #f6eadc;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sn-grammar-content th,
+.sn-grammar-content td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eadfce;
+  text-align: left;
+  vertical-align: top;
+}
+
+.sn-grammar-content .post-index {
+  margin: 22px 0 34px;
+  padding: 16px 20px;
+  border: 1px solid #eadfce;
+  border-radius: 12px;
+  background: transparent;
+}
+
+.sn-grammar-content details {
+  margin-top: 8px;
+}
+
+.sn-grammar-content summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sn-grammar-content .exercise-list > li {
+  margin-bottom: 24px;
+}
+
+.sn-grammar-content h3 {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: #fff0e6;
+  color: #1f1a16;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sn-grammar-content h2 + h3 {
+  margin-top: 12px;
+}
+
+.sn-conjugation-practice {
+  margin: 8px 0 22px;
+  padding: 10px 12px 8px;
+  max-width: 560px;
+  border: 1px solid #eadfce;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.sn-conj-table {
+  width: auto;
+  margin: 0 0 4px;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.sn-conj-table th,
+.sn-conj-table td {
+  padding: 3px 6px;
+  border: 0;
+  vertical-align: middle;
+}
+
+.sn-conj-table th {
+  width: 210px;
+  background: transparent;
+  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.sn-conj-table input {
+  width: 125px;
+  padding: 4px 7px;
+  border: 1px solid #d8c8b8;
+  border-radius: 6px;
+  background: #fff;
+  font: inherit;
+}
+
+.sn-conj-feedback {
+  min-width: 120px;
+  color: #1f1a16;
+}
+
+.sn-feedback-symbol {
+  font-weight: 800;
+}
+
+.sn-feedback-symbol.is-correct {
+  color: #238636;
+}
+
+.sn-feedback-symbol.is-wrong {
+  color: #c62828;
+}
+
+.sn-conj-feedback strong {
+  color: #1f1a16;
+  font-weight: 700;
+}
+
+.sn-conj-check {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 2px;
+  margin-left: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #1f1a16;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sn-conj-check::before {
+  content: "▸";
+  margin-right: 6px;
+  color: #c75d2c;
+}

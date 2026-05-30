@@ -5,15 +5,15 @@ Create Spanish conversation lesson drafts.
 Use the lightweight SpanishNova conversation content template.
 
 Read:
-- `docs/content-system/templates/conversation-content-template.md`
+- `docs/content-system/templates/markdown-posts/conversation-markdown-post-template.md`
 - `docs/content-system/content-plan/conversation-roadmap.csv`
 - `docs/content-system/content-plan/content-pilot.md`
 
 Do not read:
-- `docs/content-system/templates/reference-html/`
+- `docs/content-system/templates/html-references/`
 
 Write drafts to:
-- `docs/content-system/content/conversations/`
+- `docs/content-system/generated/generated-markdown-posts/conversations/`
 
 Rules:
 - Use the Markdown template structure.

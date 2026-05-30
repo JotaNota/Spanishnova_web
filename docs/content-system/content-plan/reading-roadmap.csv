@@ -1,6 +1,6 @@
 slug,title,cpt,level_tax,grammar_tax,topic_tax,post_tags,priority,status,output_path
-hedy-lamarr,"Hedy Lamarr, la actriz que invento el wifi",readings,intermediate,,Culture,technology|biography|Hedy Lamarr|wifi,1,planned,docs/content-system/content/readings/hedy-lamarr.md
-new-neighborhood,Mi nuevo barrio,readings,beginner,,Daily Life,neighborhood|city,2,planned,docs/content-system/content/readings/new-neighborhood.md
-airport-trip,Mi viaje al aeropuerto,readings,beginner,,Travel,airport|trip,3,planned,docs/content-system/content/readings/airport-trip.md
-first-job,Mi primer trabajo,readings,beginner,,Work,first-job|employment,4,planned,docs/content-system/content/readings/first-job.md
-coffee-shop,Una tarde en la cafeteria,readings,beginner,,Food,cafe|coffee,5,planned,docs/content-system/content/readings/coffee-shop.md
+hedy-lamarr,"Hedy Lamarr, la actriz que invento el wifi",readings,intermediate,,Culture,technology|biography|Hedy Lamarr|wifi,1,planned,docs/content-system/generated/generated-markdown-posts/readings/hedy-lamarr.md
+new-neighborhood,Mi nuevo barrio,readings,beginner,,Daily Life,neighborhood|city,2,planned,docs/content-system/generated/generated-markdown-posts/readings/new-neighborhood.md
+airport-trip,Mi viaje al aeropuerto,readings,beginner,,Travel,airport|trip,3,planned,docs/content-system/generated/generated-markdown-posts/readings/airport-trip.md
+first-job,Mi primer trabajo,readings,beginner,,Work,first-job|employment,4,planned,docs/content-system/generated/generated-markdown-posts/readings/first-job.md
+coffee-shop,Una tarde en la cafeteria,readings,beginner,,Food,cafe|coffee,5,planned,docs/content-system/generated/generated-markdown-posts/readings/coffee-shop.md
