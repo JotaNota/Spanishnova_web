@@ -2,20 +2,18 @@
 
 Listen to a short Spanish podcast-style conversation about watching movies at home and talking about the kinds of movies people prefer.
 
-## Useful Vocabulary
+## Vocabulario
 
-| Spanish | English |
-| --- | --- |
-| la película | the movie |
-| el sofá | the sofa |
-| las palomitas | popcorn |
-| la comedia | comedy |
-| la película de acción | action movie |
-| la película de miedo | horror movie |
-| el subtítulo | subtitle |
-| la pantalla | the screen |
+- **la película** – the movie
+- **el sofá** – the sofa
+- **las palomitas** – popcorn
+- **la comedia** – comedy
+- **la película de acción** – action movie
+- **la película de miedo** – horror movie
+- **el subtítulo** – subtitle
+- **la pantalla** – the screen
 
-## Conversation
+## Conversación
 
 María: Hola a todos. Hoy vamos a hablar de una de mis actividades favoritas: ver películas en casa.
 
@@ -37,7 +35,7 @@ María: Bueno, depende. Si veo una película de miedo, necesito verla con otra p
 
 Diego: Buena regla. Yo casi siempre pongo subtítulos en español. Me ayudan a escuchar y leer al mismo tiempo.
 
-Note: Pongo subtítulos en español. — I turn on Spanish subtitles.
+  *Pongo subtítulos en español. — I turn on Spanish subtitles.*
 
 Diego: También me gusta elegir la película antes de preparar la comida.
 
@@ -59,7 +57,7 @@ Diego: ¿Comedia, acción, misterio, miedo o algo romántico?
 
 María: Gracias por escuchar. Nos vemos en el próximo episodio.
 
-## Useful Phrases
+## Frases útiles
 
 1. Spanish: ¿Qué película vemos?
    English: What movie are we watching?
@@ -70,9 +68,9 @@ María: Gracias por escuchar. Nos vemos en el próximo episodio.
 4. Spanish: Tú eliges la película.
    English: You choose the movie.
 
-## Practice
+## Práctica
 
-### Translate
+### Traduce
 
 1. Prompt: I prefer a comedy.
    Answer: Prefiero una comedia.
@@ -80,19 +78,20 @@ María: Gracias por escuchar. Nos vemos en el próximo episodio.
    Answer: ¿Qué película vemos?
 3. Prompt: I turn on Spanish subtitles.
    Answer: Pongo subtítulos en español.
+4. Prompt: You choose the movie.
+   Answer: Tú eliges la película.
+5. Prompt: I like mystery movies.
+   Answer: Me gustan las películas de misterio.
+6. Prompt: We watch movies at home.
+   Answer: Vemos películas en casa.
 
-### Complete the Conversation
-
-1. María: ¿Qué película vemos? Diego: Prefiero _____.
-2. Diego: Pongo subtítulos _____. María: Buena idea.
-
-## Roleplay
+## Actúa
 
 1. You and a friend are choosing a movie at home. Ask what movie you should watch.
 2. Say what kind of movie you prefer and explain why.
 3. Suggest watching with Spanish subtitles.
 
-## Discussion
+## Para conversar
 
 1. ¿Qué tipo de película prefieres ver en casa?
 2. ¿Te gusta ver películas con subtítulos?
