@@ -1554,3 +1554,142 @@ main {
     margin-left: 24px;
   }
 }
+
+/* =========================================================
+   Conversation lesson flat layout
+   ========================================================= */
+
+.sn-conversation-lesson {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sn-conversation-paper {
+  width: 100%;
+}
+
+.sn-conversation-header {
+  margin-bottom: 34px;
+}
+
+.sn-conversation-header h1 {
+  margin-bottom: 14px;
+}
+
+.sn-conversation-header p {
+  margin: 0;
+  color: var(--sn-muted);
+  line-height: 1.7;
+}
+
+.sn-conversation-section {
+  margin-bottom: 34px;
+}
+
+.sn-conversation-section h2 {
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+}
+
+.sn-conversation-block {
+  margin: 0 0 30px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.sn-conversation-block:last-child {
+  margin-bottom: 0;
+}
+
+.sn-conversation-block h3,
+.sn-conversation-section > h3 {
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+}
+
+.sn-conversation-dialogue {
+  display: grid;
+  gap: 14px;
+  margin-left: 24px;
+}
+
+.sn-conversation-dialogue p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.sn-conversation-dialogue h3 {
+  margin: 22px 0 4px;
+  font-size: 1.2rem;
+}
+
+.sn-conversation-dialogue h3:first-child {
+  margin-top: 0;
+}
+
+.sn-conversation-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sn-conversation-table th,
+.sn-conversation-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--sn-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.sn-conversation-table th {
+  font-weight: 800;
+}
+
+.sn-conversation-list {
+  margin: 0 0 0 42px;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.sn-conversation-list li {
+  line-height: 1.65;
+}
+
+.sn-conversation-list span,
+.sn-conversation-section details p {
+  color: var(--sn-muted);
+}
+
+.sn-conversation-section details {
+  margin-top: 6px;
+}
+
+.sn-conversation-section summary {
+  cursor: pointer;
+  color: var(--sn-ink);
+}
+
+.sn-conversation-section summary::marker {
+  color: var(--sn-orange);
+}
+
+.sn-conversation-section details p {
+  margin: 8px 0 0 22px;
+}
+
+@media (max-width: 700px) {
+  .sn-conversation-dialogue {
+    margin-left: 0;
+  }
+
+  .sn-conversation-list {
+    margin-left: 24px;
+  }
+
+  .sn-conversation-table th,
+  .sn-conversation-table td {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
