@@ -8,23 +8,34 @@
 
       $topic_terms = (!is_wp_error($topic_terms) && $topic_terms) ? $topic_terms : array();
       $level_terms = (!is_wp_error($level_terms) && $level_terms) ? $level_terms : array();
-
-      $breadcrumb_parts = array('Vocabulary');
-
-      foreach ($topic_terms as $term) {
-        $breadcrumb_parts[] = $term->name;
-      }
+      $vocabulary_url = get_post_type_archive_link('vocabulary');
+      $vocabulary_url = $vocabulary_url ? $vocabulary_url : home_url('/vocabulary/');
 
       ob_start();
       ?>
-        <div class="sn-breadcrumb"><?php echo esc_html(implode(' / ', $breadcrumb_parts)); ?></div>
+        <div class="sn-breadcrumb">
+          <a href="<?php echo esc_url($vocabulary_url); ?>">Vocabulary</a>
+          <?php foreach ($topic_terms as $term) : ?>
+            <?php $term_link = get_term_link($term); ?>
+            <?php if (!is_wp_error($term_link)) : ?>
+              <span>/</span>
+              <a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a>
+            <?php endif; ?>
+          <?php endforeach; ?>
+        </div>
         <div class="sn-meta-row">
-          <span class="sn-pill">Vocabulary</span>
+          <a class="sn-pill" href="<?php echo esc_url($vocabulary_url); ?>">Vocabulary</a>
           <?php foreach ($level_terms as $term) : ?>
-            <span class="sn-pill"><?php echo esc_html($term->name); ?></span>
+            <?php $term_link = get_term_link($term); ?>
+            <?php if (!is_wp_error($term_link)) : ?>
+              <a class="sn-pill" href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a>
+            <?php endif; ?>
           <?php endforeach; ?>
           <?php foreach ($topic_terms as $term) : ?>
-            <span class="sn-pill"><?php echo esc_html($term->name); ?></span>
+            <?php $term_link = get_term_link($term); ?>
+            <?php if (!is_wp_error($term_link)) : ?>
+              <a class="sn-pill" href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a>
+            <?php endif; ?>
           <?php endforeach; ?>
         </div>
       <?php
