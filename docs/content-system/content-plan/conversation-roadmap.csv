@@ -1,6 +1,6 @@
 slug,title,conversation_variant,cpt,level_tax,grammar_tax,topic_tax,post_tags,priority,status,output_path,notes
-watching-movies-at-home,Watching Movies at Home,podcast_style,conversations,beginner,,Leisure,movies|home|preferences,1,planned,docs/content-system/generated/generated-markdown-posts/conversations/watching-movies-at-home.md,TBD
-favorite-coffee,Your Favorite Coffee,street_interview,conversations,beginner,,Food,coffee|preferences|interview,2,planned,docs/content-system/generated/generated-markdown-posts/conversations/favorite-coffee.md,TBD
-asking-for-directions,Asking for Directions,street_interview,conversations,beginner,,Travel,directions|city,3,planned,docs/content-system/generated/generated-markdown-posts/conversations/asking-for-directions.md,TBD
-making-plans,Making Plans,podcast_style,conversations,beginner,,Leisure,plans|social,4,planned,docs/content-system/generated/generated-markdown-posts/conversations/making-plans.md,TBD
-at-the-doctor,At the Doctor,podcast_style,conversations,beginner,,Health,doctor|appointment,5,planned,docs/content-system/generated/generated-markdown-posts/conversations/at-the-doctor.md,TBD
+watching-movies-at-home,Ver películas en casa,podcast_style,conversations,beginner,,Leisure,movies|home|preferences,1,planned,docs/content-system/generated/generated-markdown-posts/conversations/watching-movies-at-home.md,TBD
+favorite-coffee,Tu café favorito,street_interview,conversations,beginner,,Food,coffee|preferences|interview,2,planned,docs/content-system/generated/generated-markdown-posts/conversations/favorite-coffee.md,TBD
+asking-for-directions,Pedir direcciones,street_interview,conversations,beginner,,Travel,directions|city,3,planned,docs/content-system/generated/generated-markdown-posts/conversations/asking-for-directions.md,TBD
+making-plans,Hacer planes,podcast_style,conversations,beginner,,Leisure,plans|social,4,planned,docs/content-system/generated/generated-markdown-posts/conversations/making-plans.md,TBD
+at-the-doctor,En el médico,podcast_style,conversations,beginner,,Health,doctor|appointment,5,planned,docs/content-system/generated/generated-markdown-posts/conversations/at-the-doctor.md,TBD
