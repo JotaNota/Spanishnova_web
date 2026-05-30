@@ -44,7 +44,9 @@ Add selected English support only where it helps comprehension. Do not translate
 6. Prompt: TBD
    Answer: TBD
 
-## Actúa
+## Situación
+
+Use this section to describe a speaking practice situation. Include a short instruction before the prompts.
 
 1. TBD
 2. TBD
