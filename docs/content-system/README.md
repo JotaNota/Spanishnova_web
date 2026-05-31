@@ -15,6 +15,8 @@ SpanishNova content production docs live here.
 - `decisions/` - content-system decisions and future workflow notes.
 - `content-log.md` - tracking for created, reviewed, and published items.
 
-Roadmap CSV files use `status` to track production state. Current planned states are `planned`, `markdown_ready`, `html_ready`, and `published`. Status updates should be handled by a future Python sync script, not by content agents. See `decisions/script-futuro.md`.
+Roadmap CSV files use `status` to track production state. Current planned states are `planned`, `markdown_ready`, `html_ready`, `published`, and `deleted`. Use `deleted` when a generated file was removed after publication. Status updates should be handled by a future Python sync script, not by content agents. See `decisions/script-futuro.md`.
+
+Grammar, vocabulary, reading, and conversation roadmaps share one schema. Use `content-plan/README.md` as the roadmap field reference and `content-plan/grammar-roadmap.csv` as the reference column order.
 
 Grammar flow uses Markdown source and clean HTML fragments. Gutenberg is outside the grammar flow. Generated HTML is a post-body fragment for WordPress paste/import.

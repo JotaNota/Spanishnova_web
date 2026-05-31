@@ -90,7 +90,7 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
 
 ## Conversation body rules
 
-Generate `{{conversation_html}}` from the selected `conversation_variant`.
+Generate `{{conversation_html}}` from the selected `default_variant`.
 
 For `podcast_style`, use dialogue lines inside one continuous dialogue block.
 

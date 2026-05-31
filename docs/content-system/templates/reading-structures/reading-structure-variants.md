@@ -2,9 +2,9 @@
 
 Use this file to select the content skeleton for readings.
 
-`reading_variant` comes from `docs/content-system/content-plan/reading-roadmap.csv`.
+`default_variant` comes from `docs/content-system/content-plan/reading-roadmap.csv`.
 
-Do not print `reading_variant` in the lesson body.
+Do not print `default_variant` in the lesson body.
 
 ## `narrative_profile`
 

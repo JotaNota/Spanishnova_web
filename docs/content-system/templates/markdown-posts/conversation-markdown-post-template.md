@@ -10,7 +10,7 @@ Brief English intro that names the format, situation, and listening goal.
 
 ## Conversación
 
-Write the main conversation using the selected `conversation_variant` from `conversation-structure-variants.md`.
+Write the main conversation using the selected `default_variant` from `conversation-structure-variants.md`.
 
 For `podcast_style`, use two named speakers throughout the episode.
 

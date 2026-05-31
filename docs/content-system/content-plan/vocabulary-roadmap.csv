@@ -1,52 +1,52 @@
-slug,title,cpt,level_tax,grammar_tax,topic_tax,post_tags,priority,status,output_path
-hotel-room,La habitación del hotel - Hotel Room,vocabulary,beginner,,Travel,hotel|hotel-room,1,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/hotel-room.md
-body-parts,Partes del cuerpo - Parts of the Body,vocabulary,beginner,,Health,body|body-parts,2,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/body-parts.md
-cafe,En la cafetería - At the Cafe,vocabulary,beginner,,Food,cafe|coffee,3,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/cafe.md
-house,La casa - The House,vocabulary,beginner,,Home,house|rooms|furniture,4,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/house.md
-taxi-uber,Tomar un taxi o Uber - Taking a Taxi or Uber,vocabulary,beginner,,Travel,taxi|uber|transportation,5,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/taxi-uber.md
-mountains,En la montaña - In the Mountains,vocabulary,beginner,,Travel,mountain|nature|travel,6,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/mountains.md
-city,La ciudad - The City,vocabulary,beginner,,Daily Life,city|places,7,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/city.md
-vacations,Vacaciones - Vacations,vocabulary,beginner,,Travel,vacations|travel,8,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/vacations.md
-beach,La playa - The Beach,vocabulary,beginner,,Travel,beach|vacation,9,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/beach.md
-exercise-types,Tipos de ejercicio - Types of Exercise,vocabulary,beginner,,Health,exercise|training,10,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/exercise-types.md
-gym,En el gimnasio - At the Gym,vocabulary,beginner,,Health,gym|exercise,11,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/gym.md
-cleaning-the-house,Limpiar la casa - Cleaning the House,vocabulary,beginner,,Home,cleaning|house,12,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/cleaning-the-house.md
-working-from-home,Trabajar desde casa - Working from Home,vocabulary,beginner,,Work,home-office|remote-work,13,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/working-from-home.md
-painting-workshop,Taller de pintura - Painting Workshop,vocabulary,beginner,,Leisure,painting|workshop,14,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/painting-workshop.md
-cinema,Ir al cine - Going to the Cinema,vocabulary,beginner,,Leisure,cinema|movies,15,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/cinema.md
-laundry,La lavandería - The Laundry,vocabulary,beginner,,Daily Life,laundry|clothes,16,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/laundry.md
-doctor-visit,Ir al doctor - Going to the Doctor,vocabulary,beginner,,Health,doctor|health,17,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/doctor-visit.md
-supermarket,El supermercado - The Supermarket,vocabulary,beginner,,Food,supermarket|shopping|food,18,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/supermarket.md
-restaurant,En el restaurante - At the Restaurant,vocabulary,beginner,,Food,restaurant|ordering,19,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/restaurant.md
-airport,En el aeropuerto - At the Airport,vocabulary,beginner,,Travel,airport|travel,20,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/airport.md
-doctor-office,La consulta médica - The Doctor Office,vocabulary,intermediate,,Health,doctor-office|health,21,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/doctor-office.md
-medical-exams,Exámenes médicos - Medical Exams,vocabulary,intermediate,,Health,medical-exams|health,22,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/medical-exams.md
-pharmacy,La farmacia - The Pharmacy,vocabulary,beginner,,Health,pharmacy|medicine,23,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/pharmacy.md
-bedtime,La hora de dormir - Sleeping Time,vocabulary,beginner,,Daily Life,bedtime|sleep,24,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/bedtime.md
-connectors,Conectores - Connectors,vocabulary,intermediate,,Education,connectors|linking-words|grammar-support,25,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/connectors.md
-studies,Los estudios - Studies,vocabulary,beginner,,Education,studies|school,26,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/studies.md
-office,En la oficina - At the Office,vocabulary,beginner,,Work,office|work,27,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/office.md
-salad-ingredients,Comida para preparar ensaladas - Food for Making Salads,vocabulary,beginner,,Food,salad|ingredients,28,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/salad-ingredients.md
-clothes-accessories,Ropa y accesorios - Clothes and Accessories,vocabulary,beginner,,Daily Life,clothes|accessories,29,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/clothes-accessories.md
-celebrations,Fiestas y celebraciones - Parties and Celebrations,vocabulary,beginner,,Culture,celebrations|parties,30,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/celebrations.md
-barbecue,El asado - Barbecue,vocabulary,beginner,,Food,barbecue|asado,31,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/barbecue.md
-holidays,Días festivos - Holidays,vocabulary,beginner,,Culture,holidays|celebrations,32,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/holidays.md
-shipping-store,La agencia de envíos - The Shipping Store,vocabulary,intermediate,,Daily Life,shipping|mail,33,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/shipping-store.md
-asking-for-directions,Pedir direcciones - Asking for Directions,vocabulary,beginner,,Travel,directions|city,34,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/asking-for-directions.md
-weather,El clima - Weather,vocabulary,beginner,,Daily Life,weather|seasons,35,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/weather.md
-daily-routine,La rutina diaria - Daily Routine,vocabulary,beginner,,Daily Life,routine|daily-life,36,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/daily-routine.md
-family,La familia - Family,vocabulary,beginner,,Relationships,family|relationships,37,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/family.md
-friends,Los amigos - Friends,vocabulary,beginner,,Relationships,friends|relationships,38,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/friends.md
-feelings,Sentimientos - Feelings,vocabulary,beginner,,Relationships,feelings|emotions,39,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/feelings.md
-symptoms,Síntomas comunes - Common Symptoms,vocabulary,intermediate,,Health,symptoms|health,40,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/symptoms.md
-school,En la escuela - At School,vocabulary,beginner,,Education,school|classroom,41,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/school.md
-job-interview,Entrevista de trabajo - Job Interview,vocabulary,intermediate,,Work,job-interview|work,42,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/job-interview.md
-phone-call,Una llamada telefónica - Phone Call,vocabulary,beginner,,Daily Life,phone|communication,43,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/phone-call.md
-messages,Mensajes y chats - Messages and Chats,vocabulary,beginner,,Daily Life,messages|communication,44,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/messages.md
-bank,En el banco - At the Bank,vocabulary,intermediate,,Daily Life,bank|money,45,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/bank.md
-post-office,En el correo - At the Post Office,vocabulary,beginner,,Daily Life,post-office|mail,46,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/post-office.md
-hobbies,Pasatiempos - Hobbies,vocabulary,beginner,,Leisure,hobbies|free-time,47,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/hobbies.md
-movies,Películas - Movies,vocabulary,beginner,,Leisure,movies|entertainment,48,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/movies.md
-music,Música - Music,vocabulary,beginner,,Leisure,music|entertainment,49,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/music.md
-concert,El concierto - The Concert,vocabulary,beginner,,Leisure,concert|music|events,50,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/concert.md
-watching-movies-at-home,Ver películas en casa - Watching Movies at Home,vocabulary,beginner,,Leisure,movies|home|entertainment,51,planned,docs/content-system/generated/generated-markdown-posts/vocabulary/watching-movies-at-home.md
+base_slug,topic_base,public_title,status,cpt,lesson_type,level_tax,grammar_tax,topic_tax,default_focus,default_variant,post_tags,priority,output_folder
+hotel-room,Hotel Room,Spanish Hotel Room Vocabulary,planned,vocabulary,vocabulary,beginner,,Travel,Hotel Room,,hotel; hotel-room,1,docs/content-system/generated/generated-markdown-posts/vocabulary/
+body-parts,Parts of the Body,Spanish Parts of the Body Vocabulary,planned,vocabulary,vocabulary,beginner,,Health,Parts of the Body,,body; body-parts,2,docs/content-system/generated/generated-markdown-posts/vocabulary/
+cafe,At the Cafe,Spanish At the Cafe Vocabulary,planned,vocabulary,vocabulary,beginner,,Food,At the Cafe,,cafe; coffee,3,docs/content-system/generated/generated-markdown-posts/vocabulary/
+house,The House,Spanish The House Vocabulary,planned,vocabulary,vocabulary,beginner,,Home,The House,,house; rooms; furniture,4,docs/content-system/generated/generated-markdown-posts/vocabulary/
+taxi-uber,Taking a Taxi or Uber,Spanish Taking a Taxi or Uber Vocabulary,planned,vocabulary,vocabulary,beginner,,Travel,Taking a Taxi or Uber,,taxi; uber; transportation,5,docs/content-system/generated/generated-markdown-posts/vocabulary/
+mountains,In the Mountains,Spanish In the Mountains Vocabulary,planned,vocabulary,vocabulary,beginner,,Travel,In the Mountains,,mountain; nature; travel,6,docs/content-system/generated/generated-markdown-posts/vocabulary/
+city,The City,Spanish The City Vocabulary,planned,vocabulary,vocabulary,beginner,,Daily Life,The City,,city; places,7,docs/content-system/generated/generated-markdown-posts/vocabulary/
+vacations,Vacations,Spanish Vacations Vocabulary,planned,vocabulary,vocabulary,beginner,,Travel,Vacations,,vacations; travel,8,docs/content-system/generated/generated-markdown-posts/vocabulary/
+beach,The Beach,Spanish The Beach Vocabulary,planned,vocabulary,vocabulary,beginner,,Travel,The Beach,,beach; vacation,9,docs/content-system/generated/generated-markdown-posts/vocabulary/
+exercise-types,Types of Exercise,Spanish Types of Exercise Vocabulary,planned,vocabulary,vocabulary,beginner,,Health,Types of Exercise,,exercise; training,10,docs/content-system/generated/generated-markdown-posts/vocabulary/
+gym,At the Gym,Spanish At the Gym Vocabulary,planned,vocabulary,vocabulary,beginner,,Health,At the Gym,,gym; exercise,11,docs/content-system/generated/generated-markdown-posts/vocabulary/
+cleaning-the-house,Cleaning the House,Spanish Cleaning the House Vocabulary,planned,vocabulary,vocabulary,beginner,,Home,Cleaning the House,,cleaning; house,12,docs/content-system/generated/generated-markdown-posts/vocabulary/
+working-from-home,Working from Home,Spanish Working from Home Vocabulary,planned,vocabulary,vocabulary,beginner,,Work,Working from Home,,home-office; remote-work,13,docs/content-system/generated/generated-markdown-posts/vocabulary/
+painting-workshop,Painting Workshop,Spanish Painting Workshop Vocabulary,planned,vocabulary,vocabulary,beginner,,Leisure,Painting Workshop,,painting; workshop,14,docs/content-system/generated/generated-markdown-posts/vocabulary/
+cinema,Going to the Cinema,Spanish Going to the Cinema Vocabulary,planned,vocabulary,vocabulary,beginner,,Leisure,Going to the Cinema,,cinema; movies,15,docs/content-system/generated/generated-markdown-posts/vocabulary/
+laundry,The Laundry,Spanish The Laundry Vocabulary,planned,vocabulary,vocabulary,beginner,,Daily Life,The Laundry,,laundry; clothes,16,docs/content-system/generated/generated-markdown-posts/vocabulary/
+doctor-visit,Going to the Doctor,Spanish Going to the Doctor Vocabulary,planned,vocabulary,vocabulary,beginner,,Health,Going to the Doctor,,doctor; health,17,docs/content-system/generated/generated-markdown-posts/vocabulary/
+supermarket,The Supermarket,Spanish The Supermarket Vocabulary,planned,vocabulary,vocabulary,beginner,,Food,The Supermarket,,supermarket; shopping; food,18,docs/content-system/generated/generated-markdown-posts/vocabulary/
+restaurant,At the Restaurant,Spanish At the Restaurant Vocabulary,planned,vocabulary,vocabulary,beginner,,Food,At the Restaurant,,restaurant; ordering,19,docs/content-system/generated/generated-markdown-posts/vocabulary/
+airport,At the Airport,Spanish At the Airport Vocabulary,planned,vocabulary,vocabulary,beginner,,Travel,At the Airport,,airport; travel,20,docs/content-system/generated/generated-markdown-posts/vocabulary/
+doctor-office,The Doctor Office,Spanish The Doctor Office Vocabulary,planned,vocabulary,vocabulary,intermediate,,Health,The Doctor Office,,doctor-office; health,21,docs/content-system/generated/generated-markdown-posts/vocabulary/
+medical-exams,Medical Exams,Spanish Medical Exams Vocabulary,planned,vocabulary,vocabulary,intermediate,,Health,Medical Exams,,medical-exams; health,22,docs/content-system/generated/generated-markdown-posts/vocabulary/
+pharmacy,The Pharmacy,Spanish The Pharmacy Vocabulary,planned,vocabulary,vocabulary,beginner,,Health,The Pharmacy,,pharmacy; medicine,23,docs/content-system/generated/generated-markdown-posts/vocabulary/
+bedtime,Sleeping Time,Spanish Sleeping Time Vocabulary,planned,vocabulary,vocabulary,beginner,,Daily Life,Sleeping Time,,bedtime; sleep,24,docs/content-system/generated/generated-markdown-posts/vocabulary/
+connectors,Connectors,Spanish Connectors Vocabulary,planned,vocabulary,vocabulary,intermediate,,Education,Connectors,,connectors; linking-words; grammar-support,25,docs/content-system/generated/generated-markdown-posts/vocabulary/
+studies,Studies,Spanish Studies Vocabulary,planned,vocabulary,vocabulary,beginner,,Education,Studies,,studies; school,26,docs/content-system/generated/generated-markdown-posts/vocabulary/
+office,At the Office,Spanish At the Office Vocabulary,planned,vocabulary,vocabulary,beginner,,Work,At the Office,,office; work,27,docs/content-system/generated/generated-markdown-posts/vocabulary/
+salad-ingredients,Food for Making Salads,Spanish Food for Making Salads Vocabulary,planned,vocabulary,vocabulary,beginner,,Food,Food for Making Salads,,salad; ingredients,28,docs/content-system/generated/generated-markdown-posts/vocabulary/
+clothes-accessories,Clothes and Accessories,Spanish Clothes and Accessories Vocabulary,planned,vocabulary,vocabulary,beginner,,Daily Life,Clothes and Accessories,,clothes; accessories,29,docs/content-system/generated/generated-markdown-posts/vocabulary/
+celebrations,Parties and Celebrations,Spanish Parties and Celebrations Vocabulary,planned,vocabulary,vocabulary,beginner,,Culture,Parties and Celebrations,,celebrations; parties,30,docs/content-system/generated/generated-markdown-posts/vocabulary/
+barbecue,Barbecue,Spanish Barbecue Vocabulary,planned,vocabulary,vocabulary,beginner,,Food,Barbecue,,barbecue; asado,31,docs/content-system/generated/generated-markdown-posts/vocabulary/
+holidays,Holidays,Spanish Holidays Vocabulary,planned,vocabulary,vocabulary,beginner,,Culture,Holidays,,holidays; celebrations,32,docs/content-system/generated/generated-markdown-posts/vocabulary/
+shipping-store,The Shipping Store,Spanish The Shipping Store Vocabulary,planned,vocabulary,vocabulary,intermediate,,Daily Life,The Shipping Store,,shipping; mail,33,docs/content-system/generated/generated-markdown-posts/vocabulary/
+asking-for-directions,Asking for Directions,Spanish Asking for Directions Vocabulary,planned,vocabulary,vocabulary,beginner,,Travel,Asking for Directions,,directions; city,34,docs/content-system/generated/generated-markdown-posts/vocabulary/
+weather,Weather,Spanish Weather Vocabulary,planned,vocabulary,vocabulary,beginner,,Daily Life,Weather,,weather; seasons,35,docs/content-system/generated/generated-markdown-posts/vocabulary/
+daily-routine,Daily Routine,Spanish Daily Routine Vocabulary,planned,vocabulary,vocabulary,beginner,,Daily Life,Daily Routine,,routine; daily-life,36,docs/content-system/generated/generated-markdown-posts/vocabulary/
+family,Family,Spanish Family Vocabulary,planned,vocabulary,vocabulary,beginner,,Relationships,Family,,family; relationships,37,docs/content-system/generated/generated-markdown-posts/vocabulary/
+friends,Friends,Spanish Friends Vocabulary,planned,vocabulary,vocabulary,beginner,,Relationships,Friends,,friends; relationships,38,docs/content-system/generated/generated-markdown-posts/vocabulary/
+feelings,Feelings,Spanish Feelings Vocabulary,planned,vocabulary,vocabulary,beginner,,Relationships,Feelings,,feelings; emotions,39,docs/content-system/generated/generated-markdown-posts/vocabulary/
+symptoms,Common Symptoms,Spanish Common Symptoms Vocabulary,planned,vocabulary,vocabulary,intermediate,,Health,Common Symptoms,,symptoms; health,40,docs/content-system/generated/generated-markdown-posts/vocabulary/
+school,At School,Spanish At School Vocabulary,planned,vocabulary,vocabulary,beginner,,Education,At School,,school; classroom,41,docs/content-system/generated/generated-markdown-posts/vocabulary/
+job-interview,Job Interview,Spanish Job Interview Vocabulary,planned,vocabulary,vocabulary,intermediate,,Work,Job Interview,,job-interview; work,42,docs/content-system/generated/generated-markdown-posts/vocabulary/
+phone-call,Phone Call,Spanish Phone Call Vocabulary,planned,vocabulary,vocabulary,beginner,,Daily Life,Phone Call,,phone; communication,43,docs/content-system/generated/generated-markdown-posts/vocabulary/
+messages,Messages and Chats,Spanish Messages and Chats Vocabulary,planned,vocabulary,vocabulary,beginner,,Daily Life,Messages and Chats,,messages; communication,44,docs/content-system/generated/generated-markdown-posts/vocabulary/
+bank,At the Bank,Spanish At the Bank Vocabulary,planned,vocabulary,vocabulary,intermediate,,Daily Life,At the Bank,,bank; money,45,docs/content-system/generated/generated-markdown-posts/vocabulary/
+post-office,At the Post Office,Spanish At the Post Office Vocabulary,planned,vocabulary,vocabulary,beginner,,Daily Life,At the Post Office,,post-office; mail,46,docs/content-system/generated/generated-markdown-posts/vocabulary/
+hobbies,Hobbies,Spanish Hobbies Vocabulary,planned,vocabulary,vocabulary,beginner,,Leisure,Hobbies,,hobbies; free-time,47,docs/content-system/generated/generated-markdown-posts/vocabulary/
+movies,Movies,Spanish Movies Vocabulary,planned,vocabulary,vocabulary,beginner,,Leisure,Movies,,movies; entertainment,48,docs/content-system/generated/generated-markdown-posts/vocabulary/
+music,Music,Spanish Music Vocabulary,planned,vocabulary,vocabulary,beginner,,Leisure,Music,,music; entertainment,49,docs/content-system/generated/generated-markdown-posts/vocabulary/
+concert,The Concert,Spanish The Concert Vocabulary,planned,vocabulary,vocabulary,beginner,,Leisure,The Concert,,concert; music; events,50,docs/content-system/generated/generated-markdown-posts/vocabulary/
+watching-movies-at-home,Watching Movies at Home,Spanish Watching Movies at Home Vocabulary,planned,vocabulary,vocabulary,beginner,,Leisure,Watching Movies at Home,,movies; home; entertainment,51,docs/content-system/generated/generated-markdown-posts/vocabulary/
