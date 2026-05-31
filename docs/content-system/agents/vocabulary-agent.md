@@ -53,19 +53,16 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 
 ## Metadata Flow
 
-- Match the user request to `base_slug`, `topic_base`, or `public_title` in `vocabulary-roadmap.csv`.
-- Use the roadmap row for base metadata: `cpt`, `lesson_type`, `level_tax`, `grammar_tax`, `topic_tax`, `default_focus`, `default_variant`, `post_tags`, and `output_folder`.
+- Match the user request to `base_slug` or `public_title` in `vocabulary-roadmap.csv`.
+- Use the roadmap row for external metadata: `cpt`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, and `output_folder`.
 - Use `public_title` as the visible generated title.
-- Use `topic_base` as the internal topic label.
-- Use the user request for `focus` and `variant`.
-- If the user request omits `focus` or `variant`, use `default_focus` and `default_variant` from the roadmap row.
-- If both the user request and roadmap row omit `focus` and `variant`, create a broad overview.
-- Keep the lesson inside the selected `focus` and `variant` scope.
-- Build `slug` from `base_slug` plus `variant` plus `focus` when needed.
-- Do not rebuild `public_title` from `topic_base` unless no `public_title` exists.
+- Use `vocabulary_variant` as an optional editorial structure variant when it is present.
+- Do not print external metadata or `vocabulary_variant` in the lesson body.
+- Build the Markdown filename as `output_folder + base_slug + .md`.
+- Build the HTML filename by mirroring `base_slug` in `docs/content-system/generated/generated-html-posts/vocabulary/`.
 - Do not include level labels in titles.
 - Keep level information in `level_tax`, not in the visible title.
-- Do not turn `focus` or `variant` into `grammar_tax` or `topic_tax`.
+- Do not turn `vocabulary_variant` into `grammar_tax` or `topic_tax`.
 - Do not invent taxonomy terms. Use `post_tags` for non-official categories or specific labels.
 
 ## Content Structure

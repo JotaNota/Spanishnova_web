@@ -49,11 +49,12 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 
 ## Metadata Flow
 
-- Match the user request to `base_slug`, `topic_base`, or `public_title` in `conversation-roadmap.csv`.
-- Use the roadmap row for base metadata: `cpt`, `lesson_type`, `level_tax`, `grammar_tax`, `topic_tax`, `default_focus`, `default_variant`, `post_tags`, and `output_folder`.
-- Use `public_title` as the visible generated title and `topic_base` as the internal topic label.
+- Match the user request to `base_slug` or `public_title` in `conversation-roadmap.csv`.
+- Use the roadmap row for external metadata: `cpt`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, and `output_folder`.
+- Use `public_title` as the visible generated title.
 - Use `default_variant` to select the matching structure in `conversation-structure-variants.md`.
 - Do not print `default_variant` in the lesson body.
+- Do not print external metadata in the lesson body.
 - Keep the conversation inside the selected topic and variant.
 - Build the Markdown filename as `output_folder + base_slug + .md`.
 - Build the HTML filename by mirroring `base_slug` in `docs/content-system/generated/generated-html-posts/conversations/`.
