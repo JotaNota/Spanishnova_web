@@ -15,7 +15,7 @@ Do not read:
 
 ## Official Flow
 
-1. Consult `docs/content-system/content-plan/conversation-roadmap.csv` for editorial metadata and `conversation_variant`.
+1. Consult `docs/content-system/content-plan/conversation-roadmap.csv` for editorial metadata and `default_variant`.
 2. Read the matching variant in `docs/content-system/templates/conversation-structures/conversation-structure-variants.md`.
 3. Generate Markdown source using `docs/content-system/templates/markdown-posts/conversation-markdown-post-template.md`.
 4. Save Markdown source in `docs/content-system/generated/generated-markdown-posts/conversations/`.
@@ -49,15 +49,18 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 
 ## Metadata Flow
 
-- Match the user request to `slug` or `title` in `conversation-roadmap.csv`.
-- Use the roadmap row for base metadata: `cpt`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, `conversation_variant`, and `output_path`.
-- Use `conversation_variant` to select the matching structure in `conversation-structure-variants.md`.
+- Match the user request to `base_slug` or `public_title` in `conversation-roadmap.csv`.
+- Use the roadmap row for external metadata: `cpt`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, and `output_folder`.
+- Use `public_title` as the visible generated title.
+- Use `default_variant` to select the matching structure in `conversation-structure-variants.md`.
+- Do not print `default_variant` in the lesson body.
+- Do not print external metadata in the lesson body.
 - Keep the conversation inside the selected topic and variant.
-- Build the Markdown output path from `output_path`.
-- Build the HTML output path by mirroring the Markdown filename in `docs/content-system/generated/generated-html-posts/conversations/`.
+- Build the Markdown filename as `output_folder + base_slug + .md`.
+- Build the HTML filename by mirroring `base_slug` in `docs/content-system/generated/generated-html-posts/conversations/`.
 - Do not include level labels in titles.
 - Keep level information in `level_tax`, not in the visible title.
-- Do not turn `conversation_variant` into `grammar_tax` or `topic_tax`.
+- Do not turn `default_variant` into `grammar_tax` or `topic_tax`.
 - Do not invent taxonomy terms. Use `post_tags` for non-official categories or specific labels.
 
 ## Content Structure

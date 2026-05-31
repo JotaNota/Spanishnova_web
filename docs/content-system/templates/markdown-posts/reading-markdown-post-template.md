@@ -15,9 +15,9 @@
 
 ## Lectura
 
-Use the selected `reading_variant` from `docs/content-system/content-plan/reading-roadmap.csv` and the matching skeleton from `docs/content-system/templates/reading-structures/reading-structure-variants.md`.
+Use the selected `default_variant` from `docs/content-system/content-plan/reading-roadmap.csv` and the matching skeleton from `docs/content-system/templates/reading-structures/reading-structure-variants.md`.
 
-Do not print `reading_variant` in the lesson body.
+Do not print `default_variant` in the lesson body.
 
 ### {{section_1_heading}}
 

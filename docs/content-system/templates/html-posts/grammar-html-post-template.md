@@ -13,13 +13,13 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
   <div class="sn-lesson-layout">
     <article class="sn-lesson-article">
 <section class="sn-lesson-hero">
-  <div class="sn-breadcrumb">Grammar / {{grammar_tax}} / {{title_base}}</div>
+  <div class="sn-breadcrumb">Grammar / {{grammar_tax}} / {{topic_base}}</div>
   <div class="sn-meta-row">
     <span class="sn-pill">Grammar</span>
     <span class="sn-pill">{{level_tax}}</span>
     <span class="sn-pill">{{grammar_tax}}</span>
   </div>
-  <h1>{{title}}</h1>
+  <h1>{{public_title}}</h1>
   <p class="sn-intro">{{intro}}</p>
 </section>
 

@@ -8,7 +8,7 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
 
 Breadcrumbs and pills are rendered by the readings single template from `topic_tax` and `level_tax`.
 
-Use `reading_variant` only to shape the content before HTML generation. Do not print `reading_variant` in the HTML.
+Use `default_variant` only to shape the content before HTML generation. Do not print `default_variant` in the HTML.
 
 The HTML must follow the generated Markdown source and the selected structure in `docs/content-system/templates/reading-structures/reading-structure-variants.md`.
 

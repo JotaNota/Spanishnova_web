@@ -15,6 +15,7 @@ planned
 markdown_ready
 html_ready
 published
+deleted
 ```
 
 ## Regla inicial
@@ -25,8 +26,8 @@ El script no debe generar contenido. Solo debe revisar archivos existentes y act
 
 ```txt
 roadmap CSV
-├─ revisa output_path del Markdown
-├─ revisa HTML correspondiente si aplica
+├─ construye la ruta Markdown esperada: output_folder + base_slug + .md
+├─ construye la ruta HTML esperada: reemplaza generated-markdown-posts por generated-html-posts y usa base_slug + .html
 └─ actualiza status
 ```
 
@@ -44,6 +45,9 @@ status = html_ready
 
 Si WordPress confirma publicación:
 status = published
+
+Si status es published y se eliminó el archivo fuente generado:
+status = deleted
 ```
 
 ## Alcance futuro
@@ -52,3 +56,4 @@ status = published
 - Evitar que los agentes gasten tokens editando CSV.
 - Mantener la base de datos limpia.
 - No mezclar creación de contenido con sincronización de estados.
+- Los agentes de contenido no deben actualizar estados en los CSV.

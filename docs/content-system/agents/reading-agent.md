@@ -16,7 +16,7 @@ Do not read:
 ## Official Flow
 
 1. Consult `docs/content-system/content-plan/reading-roadmap.csv` for editorial metadata.
-2. Use `reading_variant` to select the matching skeleton from `docs/content-system/templates/reading-structures/reading-structure-variants.md`.
+2. Use `default_variant` to select the matching skeleton from `docs/content-system/templates/reading-structures/reading-structure-variants.md`.
 3. Generate Markdown source using `docs/content-system/templates/markdown-posts/reading-markdown-post-template.md`.
 4. Save Markdown source in `docs/content-system/generated/generated-markdown-posts/readings/`.
 5. Read the generated Markdown source.
@@ -49,14 +49,18 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 
 ## Metadata Flow
 
-- Match the user request to `slug` or `title` in `reading-roadmap.csv`.
-- Use the roadmap row for base metadata: `cpt`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, `reading_variant`, and `output_path`.
-- Use `reading_variant` only to choose the lesson structure from `reading-structure-variants.md`.
-- Do not print `reading_variant` in the lesson body.
-- Keep the reading inside the selected `reading_variant` scope.
+- Match the user request to `base_slug` or `public_title` in `reading-roadmap.csv`.
+- Use the roadmap row for external metadata: `cpt`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, and `output_folder`.
+- Use `public_title` as the visible generated title.
+- Use `default_variant` only to choose the lesson structure from `reading-structure-variants.md`.
+- Do not print `default_variant` in the lesson body.
+- Do not print external metadata in the lesson body.
+- Keep the reading inside the selected `default_variant` scope.
+- Build the Markdown filename as `output_folder + base_slug + .md`.
+- Build the HTML filename by mirroring `base_slug` in `docs/content-system/generated/generated-html-posts/readings/`.
 - Do not include level labels in titles.
 - Keep level information in `level_tax`, not in the visible title.
-- Do not turn `reading_variant` into `grammar_tax` or `topic_tax`.
+- Do not turn `default_variant` into `grammar_tax` or `topic_tax`.
 - Do not invent taxonomy terms. Use `post_tags` for non-official categories or specific labels.
 
 ## Content Structure

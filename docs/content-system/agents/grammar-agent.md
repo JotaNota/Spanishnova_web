@@ -47,15 +47,21 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 
 ## Metadata Flow
 
-- Match the user request to `base_slug` or `title_base` in `grammar-roadmap.csv`.
-- Use the roadmap row for base metadata: `cpt`, `lesson_type`, `level_tax`, `grammar_tax`, `topic_tax`, `post_tags`, and `output_folder`.
+- Match the user request to `base_slug`, `topic_base`, or `public_title` in `grammar-roadmap.csv`.
+- Use the roadmap row for external metadata and generation defaults: `cpt`, `lesson_type`, `level_tax`, `grammar_tax`, `topic_tax`, `default_focus`, `default_variant`, `post_tags`, and `output_folder`.
+- Use `public_title` as the visible generated title.
+- Use `topic_base` for internal labels and breadcrumbs.
+- Do not rebuild `public_title` from `topic_base` unless no `public_title` exists.
 - Use the user request for `focus` and `variant`.
 - If the user request omits `focus` or `variant`, use `default_focus` and `default_variant` from the roadmap row.
 - If both the user request and roadmap row omit `focus` and `variant`, create a broad overview.
 - Keep the lesson inside the selected `focus` and `variant` scope.
-- Build `slug` from `base_slug` plus `variant` plus `focus` when needed.
-- Build `title` from `title_base` plus `focus` and `variant` when needed.
-- For verb grammar lessons, build the visible H1 title as `{{Verb}} in the {{tense_or_mood}}`.
+- Build the Markdown filename as `output_folder + base_slug + .md`.
+- Build the HTML filename by mirroring `base_slug` in `docs/content-system/generated/generated-html-posts/grammar/`.
+- Do not print external metadata in the lesson body.
+- Use the roadmap `public_title` for the visible H1 title.
+- Only when `public_title` is missing, build a fallback visible title from `topic_base`, `focus`, and `variant` as needed.
+- For verb grammar lessons without `public_title`, use the fallback H1 pattern `{{Verb}} in the {{tense_or_mood}}`.
 - Use English tense and mood names in titles.
 - Use the Spanish infinitive with initial capital in titles, such as `Necesitar`, `Ser`, or `Ir`.
 - Include mood when needed to avoid ambiguity, such as `present indicative`, `present subjunctive`, or `imperfect subjunctive`.
