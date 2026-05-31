@@ -1,4 +1,4 @@
-base_slug,public_title,default_variant,status,cpt,level_tax,grammar_tax,topic_tax,post_tags,priority,output_folder
+base_slug,public_title,vocabulary_variant,status,cpt,level_tax,grammar_tax,topic_tax,post_tags,priority,output_folder
 hotel-room,Spanish Hotel Room Vocabulary,,planned,vocabulary,beginner,,Travel,hotel; hotel-room,1,docs/content-system/generated/generated-markdown-posts/vocabulary/
 body-parts,Spanish Parts of the Body Vocabulary,,planned,vocabulary,beginner,,Health,body; body-parts,2,docs/content-system/generated/generated-markdown-posts/vocabulary/
 cafe,Spanish At the Cafe Vocabulary,,planned,vocabulary,beginner,,Food,cafe; coffee,3,docs/content-system/generated/generated-markdown-posts/vocabulary/
