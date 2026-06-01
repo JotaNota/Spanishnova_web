@@ -184,7 +184,6 @@ $sn_render_topic_links = function () use ($sn_topic_items, $sn_term_link) {
             ?>
           </ul>
         </li>
-
         <li class="menu-item header-search-item">
           <form class="header-search-form" role="search" method="get" action="<?php echo $sn_home_link('/'); ?>">
             <label class="screen-reader-text" for="header-search-field">Search SpanishNova</label>
@@ -205,10 +204,6 @@ $sn_render_topic_links = function () use ($sn_topic_items, $sn_term_link) {
       <a href="<?php echo $sn_home_link('/classes/'); ?>">Classes</a>
       <a class="donate" href="<?php echo $sn_home_link('/donate/'); ?>">Donate</a>
       <a href="<?php echo $sn_home_link('/contact/'); ?>">Contact</a>
-
-      <a class="header-search-icon" href="<?php echo $sn_home_link('/?s='); ?>" aria-label="Search SpanishNova">
-        ⌕
-      </a>
   </div>
 </header>
 
