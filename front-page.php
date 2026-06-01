@@ -17,21 +17,37 @@ $post_type_labels = [
 ?>
 
 <main>
-  <section class="hero">
+  <section class="home-practice-layout">
+    <section class="hero practice-hero">
+    <h1>Practice Spanish</h1>
+
     <form class="search-bar" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
       <input type="search" name="s" placeholder="Search lessons, readings, vocabulary..." value="<?php echo get_search_query(); ?>">
       <button class="search-icon" type="submit" aria-label="Search">⌕</button>
     </form>
 
-    <h1>Spanish practice.</h1>
-
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="<?php echo esc_url(home_url('/grammar/')); ?>">Start with grammar</a>
-      <a class="btn btn-secondary" href="<?php echo esc_url(home_url('/readings/')); ?>">Browse readings</a>
+    <div class="practice-paths" aria-label="Practice paths">
+      <a href="<?php echo esc_url(home_url('/grammar/')); ?>">Learn more grammar</a>
+      <a href="<?php echo esc_url(home_url('/vocabulary/')); ?>">Expand vocabulary</a>
+      <a href="<?php echo esc_url(home_url('/readings/')); ?>">Read interesting stories</a>
+      <a href="<?php echo esc_url(home_url('/practice/')); ?>">Practice with exercises</a>
     </div>
   </section>
 
-  <section class="content-layout">
+    <aside class="homepage-sidebar">
+      <div class="panel side-card">
+        <h2>Explore by level</h2>
+        <ul>
+          <li><a href="<?php echo esc_url(home_url('/level/beginner/')); ?>">Beginner</a></li>
+          <li><a href="<?php echo esc_url(home_url('/level/intermediate/')); ?>">Intermediate</a></li>
+          <li><a href="<?php echo esc_url(home_url('/level/advanced/')); ?>">Advanced</a></li>
+          <li><a href="<?php echo esc_url(home_url('/resources/worksheets/')); ?>">Worksheets</a></li>
+        </ul>
+      </div>
+    </aside>
+  </section>
+
+  <section class="content-layout latest-layout">
     <div class="panel">
       <h2>Latest lessons and activities</h2>
 
@@ -41,18 +57,14 @@ $post_type_labels = [
             <?php
             $post_type = get_post_type();
             $label = $post_type_labels[$post_type] ?? ucfirst($post_type);
-            $excerpt = get_the_excerpt();
-
-            if (!$excerpt) {
-              $excerpt = wp_trim_words(wp_strip_all_tags(get_the_content()), 18);
-            }
+            $excerpt = spanishnova_get_card_excerpt(get_the_ID());
             ?>
 
             <a class="activity-row" href="<?php the_permalink(); ?>">
               <span class="label"><?php echo esc_html($label); ?></span>
               <div>
                 <h3><?php the_title(); ?></h3>
-                <p><?php echo esc_html(wp_trim_words($excerpt, 18)); ?></p>
+                <p><?php echo esc_html(wp_trim_words($excerpt, 22)); ?></p>
               </div>
               <span class="arrow">→</span>
             </a>
@@ -62,41 +74,8 @@ $post_type_labels = [
           <p class="empty-state">No lessons published yet.</p>
         <?php endif; ?>
       </div>
+    
     </div>
-
-    <div class="homepage-sidebar">
-      <div class="panel side-card">
-        <h2>Explore</h2>
-        <ul>
-          <li>Beginner</li>
-          <li>Intermediate</li>
-          <li>Advanced</li>
-          <li>Worksheets</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="category-strip">
-    <a class="category-card" href="<?php echo esc_url(home_url('/grammar/')); ?>">
-      <h3>Grammar</h3>
-      <p>Verb tenses, pronouns, adjectives, and sentence structure.</p>
-    </a>
-
-    <a class="category-card" href="<?php echo esc_url(home_url('/vocabulary/')); ?>">
-      <h3>Vocabulary</h3>
-      <p>Useful words and phrases organized by topic.</p>
-    </a>
-
-    <a class="category-card" href="<?php echo esc_url(home_url('/readings/')); ?>">
-      <h3>Readings</h3>
-      <p>Short texts for practice and comprehension.</p>
-    </a>
-
-    <a class="category-card" href="<?php echo esc_url(home_url('/practice/')); ?>">
-      <h3>Practice</h3>
-      <p>Exercises, answer reveals, and worksheets.</p>
-    </a>
   </section>
 
   <section class="audience-box">
