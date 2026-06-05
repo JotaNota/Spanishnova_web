@@ -152,3 +152,4 @@ Columns:
 * `base_slug` should stay stable once content is generated.
 * `topic_tax`, `grammar_tax`, `level_tax`, and `post_tags` should match the editorial model used by WordPress.
 * `output_folder` points to the expected Markdown output folder, not the HTML output folder.
+* Grammar exercise sets should vary sentence content and subject order across `Seleccionar`, `Completar`, and `Traducir`.

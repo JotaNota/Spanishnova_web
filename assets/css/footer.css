@@ -1,0 +1,31 @@
+/* =========================================================
+   05. Footer
+   ========================================================= */
+
+.site-footer {
+  max-width: 1180px;
+  margin: 28px auto 0;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  background: var(--dark);
+  color: #eadfd4;
+  border-top: 2px solid var(--orange);
+  font-size: 13px;
+  box-shadow: 0 0 0 100vmax var(--dark);
+  clip-path: inset(0 -100vmax);
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .site-footer {
+    flex-direction: column;
+  }
+}

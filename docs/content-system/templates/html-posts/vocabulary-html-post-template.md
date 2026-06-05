@@ -13,10 +13,6 @@ Each vocabulary category can have 4–10 terms depending on the topic. Expand or
 ## Fragment
 
 ```html
-<div class="sn-lesson-wrap sn-vocab-lesson">
-  <div class="sn-lesson-layout">
-    <article class="sn-lesson-hero sn-vocab-paper">
-      <h1>{{title}}</h1>
       <p class="sn-intro">{{intro}}</p>
 
       <hr style="margin: 28px 0 24px; border: 0; border-top: 1px solid var(--sn-border);">
@@ -151,7 +147,5 @@ Each vocabulary category can have 4–10 terms depending on the topic. Expand or
           <li>{{question_4}}</li>
         </ol>
       </section>
-    </article>
-  </div>
-</div>
+
 ```
