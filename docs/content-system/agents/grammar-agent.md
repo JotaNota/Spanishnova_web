@@ -84,10 +84,36 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 - `Seleccionar` keeps numbering.
 - `Completar` keeps numbering.
 - `Traducir` keeps numbering.
+- Exercise subsection headings must always use `<h3 class="exercise-title">Seleccionar</h3>`, `<h3 class="exercise-title">Completar</h3>`, and `<h3 class="exercise-title">Traducir</h3>`.
 - Use `Completar`, not `Fill in the blank`.
 - Add 8 multiple-choice exercises with varied answer positions.
 - Add 8 completar exercises.
 - Add 8 translation exercises.
+- Do not repeat the same sentences or the same subject order across `Seleccionar`, `Completar`, and `Traducir`.
+- Vary subject order instead of following the conjugation table from `Yo` to `Ellos`.
+- Mix `yo`, `tú`, `él/ella/usted`, `nosotros`, and `ellos/ustedes` across each exercise set.
+- Use different sentences in each exercise section.
+- Avoid repeating exact examples already used in `Overview`, `Conjugation`, `Uses`, or `Oraciones`.
+- Include affirmative, negative, and question prompts when the structure allows it.
+- Keep vocabulary and difficulty aligned with the lesson level.
+- In `Oraciones`, `Afirmativa`, `Negativa`, `Preguntas`, and verb examples, keep Spanish and English on the same line as `Spanish - English`.
+- Do not put translations under the Spanish with line breaks.
+- Do not wrap same-line list translations in `<span class="translation">`; reserve translation cells for tables when needed.
+- Every exercise item in `Seleccionar`, `Completar`, and `Traducir` must include a `<details>` answer block.
+- Exercise answer toggles must use `<summary>Respuesta</summary>`.
+- Do not use the old longer answer label.
+- For completar and traducir exercises, put the prompt before the details block, then use the details block only for the answer.
+- Use this exercise pattern:
+  `<li><p>{{prompt}}</p><details><summary>Respuesta</summary><p>{{answer}}</p></details></li>`
+
+## Regular Verb Tables
+
+- For regular verb tense lessons, do not create a separate `Structure` table when it only repeats endings.
+- Move regular endings into each verb table.
+- Use separate tables for `Regular -ar Verbs`, `Regular -er Verbs`, and `Regular -ir Verbs` when the lesson teaches all three regular verb groups.
+- Each regular verb table must include these columns: `Subject`, `Ending`, the model verb such as `Hablar`, `Comer`, or `Vivir`, `Example`, and `Translation`.
+- Do not use a redundant table that only lists verb type, infinitive ending, tense ending, and one example.
+- For a single irregular verb lesson, use one conjugation table with `Subject`, `Form`, `Example`, and `Translation`.
 
 ## Conjugation Practice
 
@@ -96,7 +122,8 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 - The generated HTML must include:
   - `<div class="sn-conjugation-practice">`
   - `<table class="sn-conj-table">`
-  - `<button type="button" class="sn-conj-check">Check answers</button>`
+  - `<button type="button" class="sn-conj-check">Respuestas</button>`
+  - `<button type="button" class="sn-conj-reset">Reiniciar</button>`
 - Never generate `sn-conjugation-practice` as plain text.
 - Never generate `<p class="sn-conjugation-practice">`.
 - Never generate `{{sn_conjugation_practice_marker}}`.

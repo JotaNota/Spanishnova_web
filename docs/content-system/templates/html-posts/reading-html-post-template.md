@@ -4,7 +4,7 @@ Use this template to generate clean HTML fragment files for reading posts in:
 
 `docs/content-system/generated/generated-html-posts/readings/`
 
-This is post-body HTML only. Do not include document wrappers, embedded styles, scripts, block comments, editor-specific block syntax, breadcrumbs, meta rows, taxonomy pills, or `sn-panel` section cards.
+This is post-body HTML only. Do not include document wrappers, embedded styles, scripts, block comments, editor-specific block syntax, breadcrumbs, meta rows, taxonomy pills, or `` section cards.
 
 Breadcrumbs and pills are rendered by the readings single template from `topic_tax` and `level_tax`.
 
@@ -15,10 +15,6 @@ The HTML must follow the generated Markdown source and the selected structure in
 ## Fragment Pattern
 
 ```html
-<div class="sn-lesson-wrap sn-reading-lesson">
-  <div class="sn-lesson-layout">
-    <article class="sn-lesson-hero sn-reading-paper">
-      <h1>{{title}}</h1>
       <p class="sn-intro">{{brief_english_intro}}</p>
 
       <hr>
@@ -77,19 +73,17 @@ The HTML must follow the generated Markdown source and the selected structure in
           <li>{{personal_question}}</li>
         </ol>
       </section>
-    </article>
-  </div>
-</div>
+
 ```
 
 ## Generation Rules
 
 - Repeat list items, reading blocks, paragraphs, grouped items, and exercises according to the generated Markdown source.
-- Keep the outer wrapper exactly as shown.
+- Keep the post body linear and free of layout wrappers.
 - Use `<hr>` between major blocks.
 - Use `<details>` only when the generated Markdown includes answers to reveal.
 - Use visible headings in Spanish.
 - For `procedural_set`, render each grouped item as a repeated `sn-reading-block` with parallel subheadings.
 - For `curiosity_article`, render thematic sections as repeated `sn-reading-block` sections.
 - Do not include inline `style` attributes.
-- Do not include `sn-breadcrumb`, `sn-meta-row`, `sn-pill`, or `sn-panel`.
+- Do not include `sn-breadcrumb`, `sn-meta-row`, or `sn-pill`.
