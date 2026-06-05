@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="sn-lesson-page sn-conversations-page">
+<main class="sn-single-page sn-conversations-page">
   <?php while (have_posts()) : the_post(); ?>
     <?php
       $topic_terms = get_the_terms(get_the_ID(), 'topic_tax');
@@ -11,8 +11,7 @@
       $conversations_url = get_post_type_archive_link('conversations');
       $conversations_url = $conversations_url ? $conversations_url : home_url('/conversations/');
 
-      ob_start();
-      ?>
+    ?>
         <div class="sn-breadcrumb">
           <a href="<?php echo esc_url($conversations_url); ?>">Conversations</a>
           <?php foreach ($topic_terms as $term) : ?>
@@ -38,17 +37,10 @@
             <?php endif; ?>
           <?php endforeach; ?>
         </div>
-      <?php
-      $metadata_html = ob_get_clean();
-      $content = apply_filters('the_content', get_the_content());
-      $h1_position = strpos($content, '<h1');
-
-      if ($h1_position !== false) {
-        echo substr($content, 0, $h1_position) . $metadata_html . substr($content, $h1_position);
-      } else {
-        echo $metadata_html . $content;
-      }
-    ?>
+        <h1 class="sn-post-title"><?php the_title(); ?></h1>
+        <div class="sn-post-content">
+          <?php the_content(); ?>
+        </div>
   <?php endwhile; ?>
 </main>
 

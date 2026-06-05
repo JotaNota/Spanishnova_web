@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="sn-lesson-page sn-vocabulary-page">
+<main class="sn-single-page sn-vocabulary-page">
   <?php while (have_posts()) : the_post(); ?>
     <?php
       $topic_terms = get_the_terms(get_the_ID(), 'topic_tax');
@@ -11,8 +11,7 @@
       $vocabulary_url = get_post_type_archive_link('vocabulary');
       $vocabulary_url = $vocabulary_url ? $vocabulary_url : home_url('/vocabulary/');
 
-      ob_start();
-      ?>
+    ?>
         <div class="sn-breadcrumb">
           <a href="<?php echo esc_url($vocabulary_url); ?>">Vocabulary</a>
           <?php foreach ($topic_terms as $term) : ?>
@@ -38,13 +37,10 @@
             <?php endif; ?>
           <?php endforeach; ?>
         </div>
-      <?php
-      $metadata_html = ob_get_clean();
-      $content = apply_filters('the_content', get_the_content());
-      $content = preg_replace('/<div\s+class="sn-breadcrumb">.*?<\/div>\s*/s', '', $content, 1);
-      $content = preg_replace('/<div\s+class="sn-meta-row">.*?<\/div>\s*/s', '', $content, 1);
-      echo preg_replace('/<h1\b/', $metadata_html . '<h1', $content, 1);
-    ?>
+        <h1 class="sn-post-title"><?php the_title(); ?></h1>
+        <div class="sn-post-content">
+          <?php the_content(); ?>
+        </div>
   <?php endwhile; ?>
 </main>
 
