@@ -33,3 +33,9 @@ wp-content/uploads/
 # Logs
 debug.log
 *.log
+
+.env.local
+
+# Python cache
+__pycache__/
+*.py[cod]
