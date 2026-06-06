@@ -1,0 +1,314 @@
+{
+  "intro": "The verb poder means to be able to or can. In the present tense, use it to talk about ability, permission, and things that are possible.",
+  "overview": {
+    "body": "Poder is an irregular verb in the present tense. The stem changes from o to ue in puedo, puedes, puede, and pueden, but nosotros keeps the regular stem: podemos.",
+    "use_note": "ability, permission, and possibility"
+  },
+  "examples": [
+    {
+      "spanish": "Yo puedo estudiar hoy.",
+      "english": "I can study today."
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "subject + poder + infinitive",
+      "example": "Ella puede hablar espanol.",
+      "translation": "She can speak Spanish."
+    },
+    {
+      "pattern": "subject + no + poder + infinitive",
+      "example": "Nosotros no podemos salir ahora.",
+      "translation": "We cannot leave now."
+    },
+    {
+      "pattern": "Poder + subject + infinitive?",
+      "example": "Puedes venir manana?",
+      "translation": "Can you come tomorrow?"
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Yo",
+      "form": "puedo",
+      "example": "Yo puedo ayudar.",
+      "translation": "I can help."
+    },
+    {
+      "subject": "Tu",
+      "form": "puedes",
+      "example": "Tu puedes leer este libro.",
+      "translation": "You can read this book."
+    },
+    {
+      "subject": "El / Ella / Usted",
+      "form": "puede",
+      "example": "Ella puede trabajar hoy.",
+      "translation": "She can work today."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "podemos",
+      "example": "Nosotros podemos practicar.",
+      "translation": "We can practice."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "pueden",
+      "example": "Ellos pueden esperar.",
+      "translation": "They can wait."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Ability",
+      "body": "Use poder with an infinitive to say that someone can do something.",
+      "examples": [
+        {
+          "spanish": "Puedo cocinar arroz.",
+          "english": "I can cook rice."
+        },
+        {
+          "spanish": "Mi hermano puede nadar.",
+          "english": "My brother can swim."
+        }
+      ]
+    },
+    {
+      "heading": "Permission And Possibility",
+      "body": "Use poder to ask permission or to say that something is possible.",
+      "examples": [
+        {
+          "spanish": "Puedes usar mi telefono.",
+          "english": "You can use my phone."
+        },
+        {
+          "spanish": "Podemos estudiar despues.",
+          "english": "We can study later."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Yo puedo hablar con la maestra.",
+        "english": "I can speak with the teacher."
+      },
+      {
+        "spanish": "Tu puedes abrir la ventana.",
+        "english": "You can open the window."
+      },
+      {
+        "spanish": "Ella puede preparar cafe.",
+        "english": "She can make coffee."
+      },
+      {
+        "spanish": "Nosotros podemos caminar al parque.",
+        "english": "We can walk to the park."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "Yo no puedo manejar hoy.",
+        "english": "I cannot drive today."
+      },
+      {
+        "spanish": "Tu no puedes entrar ahora.",
+        "english": "You cannot enter now."
+      },
+      {
+        "spanish": "El no puede llamar esta noche.",
+        "english": "He cannot call tonight."
+      },
+      {
+        "spanish": "Ellas no pueden viajar manana.",
+        "english": "They cannot travel tomorrow."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "Puedes repetir, por favor?",
+        "english": "Can you repeat, please?"
+      },
+      {
+        "spanish": "Ella puede venir a clase?",
+        "english": "Can she come to class?"
+      },
+      {
+        "spanish": "Ustedes pueden esperar aqui?",
+        "english": "Can you all wait here?"
+      },
+      {
+        "spanish": "Podemos empezar ahora?",
+        "english": "Can we start now?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ ayudar.",
+        "options": ["puede", "puedo", "podemos"],
+        "answer": "Yo puedo ayudar."
+      },
+      {
+        "prompt": "Tu _____ leer este libro.",
+        "options": ["puedes", "puedo", "pueden"],
+        "answer": "Tu puedes leer este libro."
+      },
+      {
+        "prompt": "Ella _____ trabajar hoy.",
+        "options": ["podemos", "pueden", "puede"],
+        "answer": "Ella puede trabajar hoy."
+      },
+      {
+        "prompt": "Nosotros _____ practicar.",
+        "options": ["podemos", "puedo", "puedes"],
+        "answer": "Nosotros podemos practicar."
+      },
+      {
+        "prompt": "Ellos _____ esperar.",
+        "options": ["puede", "pueden", "puedes"],
+        "answer": "Ellos pueden esperar."
+      },
+      {
+        "prompt": "Usted _____ hablar conmigo.",
+        "options": ["puedo", "podemos", "puede"],
+        "answer": "Usted puede hablar conmigo."
+      },
+      {
+        "prompt": "Ustedes no _____ salir ahora.",
+        "options": ["pueden", "puedo", "puede"],
+        "answer": "Ustedes no pueden salir ahora."
+      },
+      {
+        "prompt": "_____ tu venir manana?",
+        "options": ["Puede", "Puedes", "Podemos"],
+        "answer": "Puedes tu venir manana?"
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ estudiar esta noche.",
+        "answer": "Yo puedo estudiar esta noche."
+      },
+      {
+        "prompt": "Tu ___ usar mi lapiz.",
+        "answer": "Tu puedes usar mi lapiz."
+      },
+      {
+        "prompt": "Ella ___ correr rapido.",
+        "answer": "Ella puede correr rapido."
+      },
+      {
+        "prompt": "Nosotros ___ escuchar musica.",
+        "answer": "Nosotros podemos escuchar musica."
+      },
+      {
+        "prompt": "Ellos ___ comprar comida.",
+        "answer": "Ellos pueden comprar comida."
+      },
+      {
+        "prompt": "Ustedes no ___ abrir la puerta.",
+        "answer": "Ustedes no pueden abrir la puerta."
+      },
+      {
+        "prompt": "___ tu esperar cinco minutos?",
+        "answer": "Puedes tu esperar cinco minutos?"
+      },
+      {
+        "prompt": "El ___ descansar ahora?",
+        "answer": "El puede descansar ahora?"
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I can help.",
+        "answer": "Yo puedo ayudar."
+      },
+      {
+        "prompt": "You can read this book.",
+        "answer": "Tu puedes leer este libro."
+      },
+      {
+        "prompt": "She can work today.",
+        "answer": "Ella puede trabajar hoy."
+      },
+      {
+        "prompt": "We can practice.",
+        "answer": "Nosotros podemos practicar."
+      },
+      {
+        "prompt": "They can wait.",
+        "answer": "Ellos pueden esperar."
+      },
+      {
+        "prompt": "I cannot drive today.",
+        "answer": "Yo no puedo manejar hoy."
+      },
+      {
+        "prompt": "Can you repeat, please?",
+        "answer": "Puedes repetir, por favor?"
+      },
+      {
+        "prompt": "Can they travel tomorrow?",
+        "answer": "Ellos pueden viajar manana?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo puedo ayudar.",
+      "Tu puedes leer este libro.",
+      "Ella puede trabajar hoy.",
+      "Nosotros podemos practicar.",
+      "Ellos pueden esperar.",
+      "Usted puede hablar conmigo.",
+      "Ustedes no pueden salir ahora.",
+      "Puedes tu venir manana?"
+    ],
+    "complete": [
+      "Yo puedo estudiar esta noche.",
+      "Tu puedes usar mi lapiz.",
+      "Ella puede correr rapido.",
+      "Nosotros podemos escuchar musica.",
+      "Ellos pueden comprar comida.",
+      "Ustedes no pueden abrir la puerta.",
+      "Puedes tu esperar cinco minutos?",
+      "El puede descansar ahora?"
+    ],
+    "translate": [
+      "Yo puedo ayudar.",
+      "Tu puedes leer este libro.",
+      "Ella puede trabajar hoy.",
+      "Nosotros podemos practicar.",
+      "Ellos pueden esperar.",
+      "Yo no puedo manejar hoy.",
+      "Puedes repetir, por favor?",
+      "Ellos pueden viajar manana?"
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Ability",
+      "example": "Yo puedo ayudar.",
+      "translation": "I can help."
+    },
+    {
+      "use": "Permission",
+      "example": "Puedes usar mi telefono.",
+      "translation": "You can use my phone."
+    },
+    {
+      "use": "Possibility",
+      "example": "Podemos estudiar despues.",
+      "translation": "We can study later."
+    },
+    {
+      "use": "Negative ability",
+      "example": "No puedo manejar hoy.",
+      "translation": "I cannot drive today."
+    }
+  ]
+}

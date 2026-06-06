@@ -1,5 +1,40 @@
 # SpanishNova Upload Script
 
+## Flujo lineal de grammar
+
+```text
+roadmap CSV -> content-data JSON -> render -> generated Markdown/HTML -> upload -> WordPress draft
+```
+
+1. Elegir una fila en `docs/content-system/content-plan/grammar-roadmap.csv`.
+2. Crear o editar `docs/content-system/content-data/grammar/[slug].json`.
+3. Renderizar con `python scripts/render_content.py --type grammar --slug [slug]`.
+4. Revisar `docs/content-system/generated/generated-markdown-posts/grammar/[slug].md`.
+5. Subir el HTML generado con `python scripts/upload_posts.py --upload-one --slug [slug]`.
+
+El render genera un fragmento HTML compatible con el upload existente en
+`docs/content-system/generated/generated-html-posts/grammar/[slug].html`.
+
+## Render de contenido estructurado
+
+Ruta del script:
+
+`scripts/render_content.py`
+
+Ejemplo piloto:
+
+```bash
+python scripts/render_content.py --type grammar --slug poder-presente
+```
+
+El render lee el roadmap, el JSON de content-data y el renderer interno de
+`scripts/spanishnova_render/`. Valida que el slug exista, que el JSON exista, que
+la fila use `cpt=grammar`, que los campos requeridos existan, y crea las carpetas
+de salida si hacen falta.
+
+El HTML generado es solo un fragmento para el cuerpo del post de WordPress. No
+incluye `html`, `head`, `body`, `style`, `script` ni comentarios Gutenberg.
+
 Este script sirve para subir posts generados desde el repositorio local a WordPress Local.
 
 El script se corre desde la terminal.

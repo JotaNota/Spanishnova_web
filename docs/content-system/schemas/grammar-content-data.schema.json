@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spanishnova.local/schemas/grammar-content-data.schema.json",
+  "title": "SpanishNova Grammar Content Data",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "intro",
+    "overview",
+    "examples",
+    "conjugation",
+    "uses",
+    "sentences",
+    "exercises",
+    "answers"
+  ],
+  "properties": {
+    "intro": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Short learner-facing introduction for the grammar lesson."
+    },
+    "overview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["body", "use_note"],
+      "properties": {
+        "body": {
+          "type": "string",
+          "minLength": 1
+        },
+        "use_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "examples": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/example"
+      },
+      "description": "Lead examples that introduce the lesson before detailed sections."
+    },
+    "structure": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["pattern", "example", "translation"],
+        "properties": {
+          "pattern": { "type": "string", "minLength": 1 },
+          "example": { "type": "string", "minLength": 1 },
+          "translation": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "conjugation": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["subject", "form", "example", "translation"],
+        "properties": {
+          "subject": { "type": "string", "minLength": 1 },
+          "form": { "type": "string", "minLength": 1 },
+          "example": { "type": "string", "minLength": 1 },
+          "translation": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "uses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["heading", "body", "examples"],
+        "properties": {
+          "heading": { "type": "string", "minLength": 1 },
+          "body": { "type": "string", "minLength": 1 },
+          "examples": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/example" }
+          }
+        }
+      }
+    },
+    "sentences": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["affirmative", "negative", "questions"],
+      "properties": {
+        "affirmative": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/example" }
+        },
+        "negative": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/example" }
+        },
+        "questions": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/example" }
+        }
+      }
+    },
+    "exercises": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["select", "complete", "translate"],
+      "properties": {
+        "select": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/multiple_choice_exercise" }
+        },
+        "complete": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/free_response_exercise" }
+        },
+        "translate": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/free_response_exercise" }
+        }
+      }
+    },
+    "answers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["select", "complete", "translate"],
+      "properties": {
+        "select": { "type": "array", "items": { "type": "string" } },
+        "complete": { "type": "array", "items": { "type": "string" } },
+        "translate": { "type": "array", "items": { "type": "string" } }
+      },
+      "description": "Review answer key for editorial checks. Exercise items also carry their rendered answers."
+    },
+    "wrap_up": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["use", "example", "translation"],
+        "properties": {
+          "use": { "type": "string", "minLength": 1 },
+          "example": { "type": "string", "minLength": 1 },
+          "translation": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["spanish", "english"],
+      "properties": {
+        "spanish": { "type": "string", "minLength": 1 },
+        "english": { "type": "string", "minLength": 1 }
+      }
+    },
+    "multiple_choice_exercise": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prompt", "options", "answer"],
+      "properties": {
+        "prompt": { "type": "string", "minLength": 1 },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "answer": { "type": "string", "minLength": 1 }
+      }
+    },
+    "free_response_exercise": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prompt", "answer"],
+      "properties": {
+        "prompt": { "type": "string", "minLength": 1 },
+        "answer": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
