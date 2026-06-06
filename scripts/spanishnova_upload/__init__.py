@@ -1,0 +1,1 @@
+"""SpanishNova post upload helpers."""
