@@ -44,6 +44,9 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 - Do not publish in WordPress.
 - Do not include `<!DOCTYPE html>`, `<html>`, `<head>`, or `<body>`.
 - Use the HTML fragment template as the structural target.
+- Keep generated editorial HTML simple: `section`, `h2`, `h3`, `p`, `ul`, `ol`, `li`, `table`, `details`, `summary`, `strong`, and `em`.
+- Do not use layout or presentation wrappers such as `two-column`, `example-group`, `example-bubble`, or `exercise-block`.
+- The only functional exception to simple editorial HTML is the real `sn-conjugation-practice` block for isolated verb lessons.
 
 ## Metadata Flow
 
@@ -93,7 +96,11 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 - Vary subject order instead of following the conjugation table from `Yo` to `Ellos`.
 - Mix `yo`, `tú`, `él/ella/usted`, `nosotros`, and `ellos/ustedes` across each exercise set.
 - Use different sentences in each exercise section.
+- Use genuinely different sentence sets for `Seleccionar`, `Completar`, and `Traducir`.
+- Mix subjects inside each exercise set.
+- Do not follow conjugational order inside any exercise set.
 - Avoid repeating exact examples already used in `Overview`, `Conjugation`, `Uses`, or `Oraciones`.
+- Do not recycle examples from `Overview`, `Conjugation`, `Uses`, or `Oraciones` unless necessary for didactic control.
 - Include affirmative, negative, and question prompts when the structure allows it.
 - Keep vocabulary and difficulty aligned with the lesson level.
 - In `Oraciones`, `Afirmativa`, `Negativa`, `Preguntas`, and verb examples, keep Spanish and English on the same line as `Spanish - English`.
@@ -109,11 +116,13 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 ## Regular Verb Tables
 
 - For regular verb tense lessons, do not create a separate `Structure` table when it only repeats endings.
+- For common-verb lessons, do not create a separate `Structure` table when it only repeats a pattern, endings, or information already covered by `Conjugation`.
 - Move regular endings into each verb table.
 - Use separate tables for `Regular -ar Verbs`, `Regular -er Verbs`, and `Regular -ir Verbs` when the lesson teaches all three regular verb groups.
 - Each regular verb table must include these columns: `Subject`, `Ending`, the model verb such as `Hablar`, `Comer`, or `Vivir`, `Example`, and `Translation`.
 - Do not use a redundant table that only lists verb type, infinitive ending, tense ending, and one example.
-- For a single irregular verb lesson, use one conjugation table with `Subject`, `Form`, `Example`, and `Translation`.
+- For regular or irregular verbs of common use, use `Conjugation` as the main table.
+- For one isolated verb lesson, use one conjugation table with `Subject`, `Form`, `Example`, and `Translation`.
 
 ## Conjugation Practice
 
@@ -128,6 +137,28 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 - Never generate `<p class="sn-conjugation-practice">`.
 - Never generate `{{sn_conjugation_practice_marker}}`.
 - Do not use `sn-conjugation-practice` in structures, compound phrases, periphrases, or expressions such as `tener que`, `hay algo`, or `he tenido problemas`.
+
+## Uses
+
+- In common-verb lessons, separate the real basic uses of the verb.
+- Do not impose a fixed number of uses.
+- Repeat the use block pattern only for uses that apply.
+- Omit unused use blocks completely.
+- For polysemous verbs, separate the main senses.
+- For example, `hacer` can separate doing activities, making/preparing things, and weather.
+
+## Wrap Up
+
+- Summarize the central uses taught in the lesson.
+- Do not enumerate every detail from the lesson.
+- Use natural purpose phrases such as:
+  - `To talk about destinations`
+  - `To talk about movement`
+  - `To talk about plans`
+  - `To do an activity`
+  - `To make something`
+  - `To talk about weather`
+- Do not use unnatural metalinguistic phrases such as `Say where I go`.
 
 ## Language Quality
 
@@ -157,10 +188,12 @@ For `tense`, use:
 - wrap up
 
 For `verb-usage`, use:
+- brief intro
 - overview
 - conjugation
+- conjugation practice when the target is one isolated verb
 - uses
-- examples
+- oraciones
 - exercises
 - wrap up
 

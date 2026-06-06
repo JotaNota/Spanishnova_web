@@ -14,14 +14,8 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
 <section id="overview">
   <h2>Overview</h2>
   <p>{{overview}}</p>
-  <div class="simple-example">
-    <div class="example-line">
-      <strong>{{example_es}}</strong>
-      <span class="example-arrow">→</span>
-      <em>{{example_en}}</em>
-    </div>
-    <div class="use-line"><span class="use-label">Use:</span> {{use_note}}</div>
-  </div>
+  <p><strong>{{example_es}}</strong> - <em>{{example_en}}</em></p>
+  <p><strong>Use:</strong> {{use_note}}</p>
 </section>
 
 <section id="conjugation">
@@ -125,64 +119,45 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
 
 <section id="uses">
   <h2>Uses</h2>
-  <div class="two-column">
-    <div class="example-group">
-      <h3>{{use_1_heading}}</h3>
-      <p>{{use_1_explanation}}</p>
-      <ul class="sentence-list">
-        <li><strong>{{use_1_example_1}}</strong> - {{use_1_translation_1}}</li>
-        <li><strong>{{use_1_example_2}}</strong> - {{use_1_translation_2}}</li>
-      </ul>
-    </div>
-    <div class="example-group">
-      <h3>{{use_2_heading}}</h3>
-      <p>{{use_2_explanation}}</p>
-      <ul class="sentence-list">
-        <li><strong>{{use_2_example_1}}</strong> - {{use_2_translation_1}}</li>
-        <li><strong>{{use_2_example_2}}</strong> - {{use_2_translation_2}}</li>
-      </ul>
-    </div>
-  </div>
+  <h3>{{use_heading}}</h3>
+  <p>{{use_explanation}}</p>
+  <ul class="sentence-list">
+    <li><strong>{{use_example_1}}</strong> - {{use_translation_1}}</li>
+    <li><strong>{{use_example_2}}</strong> - {{use_translation_2}}</li>
+  </ul>
 </section>
 
 <section id="oraciones">
   <h2>Oraciones</h2>
-  <div class="two-column">
-    <div class="example-group">
-      <h3>Afirmativa</h3>
-      <ul class="sentence-list">
-        <li><strong>{{affirmative_1}}</strong> - {{affirmative_translation_1}}</li>
-        <li><strong>{{affirmative_2}}</strong> - {{affirmative_translation_2}}</li>
-        <li><strong>{{affirmative_3}}</strong> - {{affirmative_translation_3}}</li>
-        <li><strong>{{affirmative_4}}</strong> - {{affirmative_translation_4}}</li>
-      </ul>
-    </div>
-    <div class="example-group">
-      <h3>Negativa</h3>
-      <ul class="sentence-list">
-        <li><strong>{{negative_1}}</strong> - {{negative_translation_1}}</li>
-        <li><strong>{{negative_2}}</strong> - {{negative_translation_2}}</li>
-        <li><strong>{{negative_3}}</strong> - {{negative_translation_3}}</li>
-        <li><strong>{{negative_4}}</strong> - {{negative_translation_4}}</li>
-      </ul>
-    </div>
-  </div>
-  <div class="example-bubble">
-    <h3>Preguntas</h3>
-    <ul class="question-list">
-      <li><strong>{{question_1}}</strong> - {{question_translation_1}}</li>
-      <li><strong>{{question_2}}</strong> - {{question_translation_2}}</li>
-      <li><strong>{{question_3}}</strong> - {{question_translation_3}}</li>
-      <li><strong>{{question_4}}</strong> - {{question_translation_4}}</li>
-    </ul>
-  </div>
+  <h3>Afirmativa</h3>
+  <ul class="sentence-list">
+    <li><strong>{{affirmative_1}}</strong> - {{affirmative_translation_1}}</li>
+    <li><strong>{{affirmative_2}}</strong> - {{affirmative_translation_2}}</li>
+    <li><strong>{{affirmative_3}}</strong> - {{affirmative_translation_3}}</li>
+    <li><strong>{{affirmative_4}}</strong> - {{affirmative_translation_4}}</li>
+  </ul>
+
+  <h3>Negativa</h3>
+  <ul class="sentence-list">
+    <li><strong>{{negative_1}}</strong> - {{negative_translation_1}}</li>
+    <li><strong>{{negative_2}}</strong> - {{negative_translation_2}}</li>
+    <li><strong>{{negative_3}}</strong> - {{negative_translation_3}}</li>
+    <li><strong>{{negative_4}}</strong> - {{negative_translation_4}}</li>
+  </ul>
+
+  <h3>Preguntas</h3>
+  <ul class="question-list">
+    <li><strong>{{question_1}}</strong> - {{question_translation_1}}</li>
+    <li><strong>{{question_2}}</strong> - {{question_translation_2}}</li>
+    <li><strong>{{question_3}}</strong> - {{question_translation_3}}</li>
+    <li><strong>{{question_4}}</strong> - {{question_translation_4}}</li>
+  </ul>
 </section>
 
 <section id="ejercicios">
   <h2>Ejercicios</h2>
-  <div class="exercise-block">
-    <h3 class="exercise-title">Seleccionar</h3>
-    <ol class="exercise-list">
+  <h3 class="exercise-title">Seleccionar</h3>
+  <ol class="exercise-list">
       <li>
         <p>{{select_prompt_1}}</p>
         <ol type="a">
@@ -255,11 +230,10 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
         </ol>
         <details><summary>Respuesta</summary><p>{{select_answer_8_before}}<strong>{{select_answer_8_key}}</strong>{{select_answer_8_after}}</p></details>
       </li>
-    </ol>
-  </div>
-  <div class="exercise-block">
-    <h3 class="exercise-title">Completar</h3>
-    <ol class="exercise-list">
+  </ol>
+
+  <h3 class="exercise-title">Completar</h3>
+  <ol class="exercise-list">
       <li><p>{{complete_prompt_1}}</p><details><summary>Respuesta</summary><p>{{complete_answer_1_before}}<strong>{{complete_answer_1_key}}</strong>{{complete_answer_1_after}}</p></details></li>
       <li><p>{{complete_prompt_2}}</p><details><summary>Respuesta</summary><p>{{complete_answer_2_before}}<strong>{{complete_answer_2_key}}</strong>{{complete_answer_2_after}}</p></details></li>
       <li><p>{{complete_prompt_3}}</p><details><summary>Respuesta</summary><p>{{complete_answer_3_before}}<strong>{{complete_answer_3_key}}</strong>{{complete_answer_3_after}}</p></details></li>
@@ -268,11 +242,10 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
       <li><p>{{complete_prompt_6}}</p><details><summary>Respuesta</summary><p>{{complete_answer_6_before}}<strong>{{complete_answer_6_key}}</strong>{{complete_answer_6_after}}</p></details></li>
       <li><p>{{complete_prompt_7}}</p><details><summary>Respuesta</summary><p>{{complete_answer_7_before}}<strong>{{complete_answer_7_key}}</strong>{{complete_answer_7_after}}</p></details></li>
       <li><p>{{complete_prompt_8}}</p><details><summary>Respuesta</summary><p>{{complete_answer_8_before}}<strong>{{complete_answer_8_key}}</strong>{{complete_answer_8_after}}</p></details></li>
-    </ol>
-  </div>
-  <div class="exercise-block">
-    <h3 class="exercise-title">Traducir</h3>
-    <ol class="exercise-list">
+  </ol>
+
+  <h3 class="exercise-title">Traducir</h3>
+  <ol class="exercise-list">
       <li><p>{{translate_prompt_1}}</p><details><summary>Respuesta</summary><p>{{translate_answer_1_before}}<strong>{{translate_answer_1_key}}</strong>{{translate_answer_1_after}}</p></details></li>
       <li><p>{{translate_prompt_2}}</p><details><summary>Respuesta</summary><p>{{translate_answer_2_before}}<strong>{{translate_answer_2_key}}</strong>{{translate_answer_2_after}}</p></details></li>
       <li><p>{{translate_prompt_3}}</p><details><summary>Respuesta</summary><p>{{translate_answer_3_before}}<strong>{{translate_answer_3_key}}</strong>{{translate_answer_3_after}}</p></details></li>
@@ -281,8 +254,7 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
       <li><p>{{translate_prompt_6}}</p><details><summary>Respuesta</summary><p>{{translate_answer_6_before}}<strong>{{translate_answer_6_key}}</strong>{{translate_answer_6_after}}</p></details></li>
       <li><p>{{translate_prompt_7}}</p><details><summary>Respuesta</summary><p>{{translate_answer_7_before}}<strong>{{translate_answer_7_key}}</strong>{{translate_answer_7_after}}</p></details></li>
       <li><p>{{translate_prompt_8}}</p><details><summary>Respuesta</summary><p>{{translate_answer_8_before}}<strong>{{translate_answer_8_key}}</strong>{{translate_answer_8_after}}</p></details></li>
-    </ol>
-  </div>
+  </ol>
 </section>
 
 <section id="wrap-up">
@@ -312,6 +284,31 @@ Use `sn-conjugation-practice` only when the lesson is `lesson_type=verb-usage` a
 
 Do not use `sn-conjugation-practice` for structures, compound phrases, periphrases, or expressions such as `tener que`, `hay algo`, or `he tenido problemas`.
 
+Do not generate `sn-conjugation-practice` as plain text, a placeholder, a marker, or a paragraph. The generated HTML must include the real block with the conjugation table, the `Respuestas` button, and the `Reiniciar` button.
+
+## Common Verb Lesson Rules
+
+For common-verb `lesson_type=verb-usage` lessons, use this section order:
+
+- intro
+- overview
+- conjugation
+- conjugation practice when the target is one isolated verb
+- uses
+- oraciones
+- ejercicios
+- wrap up
+
+Do not generate a `Structure` table for verb lessons when it only repeats the pattern, endings, or information already covered by `Conjugation`.
+
+For regular or irregular common verbs, use `Conjugation` as the main table. For one isolated verb, the table must use `Subject`, `Form`, `Example`, and `Translation`.
+
+Use plain editorial HTML: `section`, `h2`, `h3`, `p`, `ul`, `ol`, `li`, `table`, `details`, `summary`, `strong`, and `em`. The only functional exception is the real `sn-conjugation-practice` block.
+
+In `Uses`, separate the real basic uses of the verb. Do not force a fixed number of use blocks. Repeat the same `h3` + `p` + `ul` pattern only for uses that apply, and omit unused use blocks completely. For polysemous verbs, separate the main senses.
+
+In `Wrap Up`, summarize only the central uses taught in the lesson. Use natural purpose phrases such as `To talk about destinations`, `To talk about movement`, `To talk about plans`, `To do an activity`, `To make something`, and `To talk about weather`. Do not use unnatural metalinguistic phrases such as `Say where I go`.
+
 ## Exercise Variation Rules
 
 Exercise subsection headings must always stay:
@@ -325,6 +322,9 @@ For grammar exercises, do not reuse the same sentences or the same subject order
 - Vary subject order instead of following the conjugation table from `Yo` to `Ellos`.
 - Mix `yo`, `tú`, `él/ella/usted`, `nosotros`, and `ellos/ustedes`.
 - Use different sentences in each exercise section.
+- Use distinct sentence sets for `Seleccionar`, `Completar`, and `Traducir`.
+- Mix subjects inside each set and avoid conjugational order.
 - Avoid repeating exact examples already used in `Overview`, `Conjugation`, `Uses`, or `Oraciones`.
+- Do not recycle examples from `Overview`, `Conjugation`, `Uses`, or `Oraciones` unless necessary for didactic control.
 - Include affirmative, negative, and question prompts when the structure allows it.
 - Keep the current `<details><summary>Respuesta</summary>...</details>` answer format.
