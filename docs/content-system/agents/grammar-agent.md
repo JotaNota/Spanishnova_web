@@ -103,12 +103,14 @@ The editable source of a grammar lesson is the content-data JSON. Markdown and H
 - `Seleccionar` keeps numbering.
 - `Completar` keeps numbering.
 - `Traducir` keeps numbering.
-- Exercise subsection headings must always use `<h3 class="exercise-title">Seleccionar</h3>`, `<h3 class="exercise-title">Completar</h3>`, and `<h3 class="exercise-title">Traducir</h3>`.
+- Use `<h3 class="exercise-title">Seleccionar</h3>`, `<h3 class="exercise-title">Completar</h3>`, `<h3 class="exercise-title">Preguntas de si/no</h3>`, and `<h3 class="exercise-title">Traducir</h3>` when those exercise types are present.
 - Use `Completar`, not `Fill in the blank`.
-- Add 8 multiple-choice exercises with varied answer positions.
+- Selection exercises are allowed but not required for every grammar lesson.
+- Do not force `Seleccionar` into manual or simple lessons when `Completar`, `Preguntas de si/no`, and `Traducir` better fit the approved format.
+- When using `Seleccionar`, add up to 8 multiple-choice exercises with varied answer positions.
 - Add 8 completar exercises.
-- Add 8 translation exercises.
-- Do not repeat the same sentences or the same subject order across `Seleccionar`, `Completar`, and `Traducir`.
+- Add translation exercises when they fit the lesson.
+- Do not repeat the same sentences or the same subject order across `Seleccionar`, `Completar`, `Preguntas de si/no`, and `Traducir`.
 - Vary subject order instead of following the conjugation table from `Yo` to `Ellos`.
 - Mix `yo`, `tú`, `él/ella/usted`, `nosotros`, and `ellos/ustedes` across each exercise set.
 - Use different sentences in each exercise section.
@@ -118,12 +120,28 @@ The editable source of a grammar lesson is the content-data JSON. Markdown and H
 - In `Oraciones`, `Afirmativa`, `Negativa`, `Preguntas`, and verb examples, keep Spanish and English on the same line as `Spanish - English`.
 - Do not put translations under the Spanish with line breaks.
 - Do not wrap same-line list translations in `<span class="translation">`; reserve translation cells for tables when needed.
-- Every exercise item in `Seleccionar`, `Completar`, and `Traducir` must include a `<details>` answer block.
+- Every exercise item in `Seleccionar`, `Completar`, `Preguntas de si/no`, and `Traducir` must include a `<details>` answer block.
 - Exercise answer toggles must use `<summary>Respuesta</summary>`.
 - Do not use the old longer answer label.
 - For completar and traducir exercises, put the prompt before the details block, then use the details block only for the answer.
 - Use this exercise pattern:
   `<li><p>{{prompt}}</p><details><summary>Respuesta</summary><p>{{answer}}</p></details></li>`
+- When the lesson includes yes/no questions, add a `Preguntas de si/no` subsection with 1 visible example and 5 numbered exercises.
+- In yes/no question exercises, put the prompt outside the details block and the answer inside the details block.
+- Yes/no question exercise details must use the exact summary text `Respuesta`.
+- Yes/no question exercise answers should include both an affirmative and negative answer when useful.
+- Use this yes/no question HTML pattern:
+  `<li><p>¿Ella es brasileña?</p><details class="sn-exercise-item"><summary>Respuesta</summary><p>Sí, ella es brasileña.<br>No, ella no es brasileña.</p></details></li>`
+
+## Uses And Examples
+
+- Adapt `Uses` sections to the nature of the verb or structure.
+- For `ser`, useful sections may include `Names`, `Nationalities`, `Professions`, `Relationships`, and `Physical descriptions and personality`.
+- For `estar`, useful sections may include `Location`, `Temporary states`, `Emotions`, and `Conditions`.
+- For `tener`, useful sections may include `Possession`, `Age`, `Hunger/thirst`, and `Common expressions`.
+- Do not force every lesson into the same `Uses` or `Oraciones` structure.
+- Do not force a `two-column` layout when a vertical sequence is clearer for the lesson.
+- Keep Spanish and English examples on the same line as `Spanish - English`.
 
 ## Regular Verb Tables
 
@@ -139,6 +157,9 @@ The editable source of a grammar lesson is the content-data JSON. Markdown and H
 - Use `sn-conjugation-practice` only for `lesson_type=verb-usage` with one simple isolated verb.
 - For `lesson_type=verb-usage`, include enough conjugation data in JSON for the renderer to create the practice output.
 - The Python renderer owns the generated HTML implementation of `sn-conjugation-practice`.
+- The generated conjugation practice block must always include a `Respuestas` button and a `Reiniciar` reset button.
+- Do not use `Check answers`.
+- Do not omit the reset button.
 - Do not manually patch generated Markdown or HTML to add, remove, or reshape `sn-conjugation-practice` unless the user explicitly asks for generated-file edits.
 - Do not put `sn-conjugation-practice` inside the JSON lesson body as prose.
 - Do not use `sn-conjugation-practice` in structures, compound phrases, periphrases, or expressions such as `tener que`, `hay algo`, or `he tenido problemas`.

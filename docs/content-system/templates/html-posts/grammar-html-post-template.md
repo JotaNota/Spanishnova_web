@@ -123,8 +123,16 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
   </div>
 </section>
 
+For `lesson_type=verb-usage` with one isolated verb, always include both conjugation buttons:
+
+- `Respuestas`
+- `Reiniciar`
+
+Do not use `Check answers`. Do not omit the reset button.
+
 <section id="uses">
   <h2>Uses</h2>
+  <!-- Choose vertical sections or grouped columns based on the lesson. Do not force two-column. -->
   <div class="two-column">
     <div class="example-group">
       <h3>{{use_1_heading}}</h3>
@@ -145,8 +153,17 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
   </div>
 </section>
 
+Use sections should adapt to the verb or structure. Examples:
+
+- `ser`: Names, Nationalities, Professions, Relationships, Physical descriptions and personality.
+- `estar`: Location, Temporary states, Emotions, Conditions.
+- `tener`: Possession, Age, Hunger/thirst, Common expressions.
+
+Keep Spanish and English examples on the same line as `Spanish - English`.
+
 <section id="oraciones">
   <h2>Oraciones</h2>
+  <!-- Choose vertical sections or grouped columns based on the lesson. Do not force two-column. -->
   <div class="two-column">
     <div class="example-group">
       <h3>Afirmativa</h3>
@@ -257,6 +274,48 @@ This is post-body HTML only. Do not include document wrappers, embedded styles, 
       </li>
     </ol>
   </div>
+  <!-- Seleccionar is optional. Manual or simple lessons may use only Completar, Preguntas de si/no, and Traducir when that fits better. -->
+  <div class="exercise-block">
+    <h3 class="exercise-title">Preguntas de si/no</h3>
+    <p><strong>{{yes_no_visible_example_question}}</strong> - {{yes_no_visible_example_answer}}</p>
+    <ol class="exercise-list">
+      <li>
+        <p>{{yes_no_prompt_1}}</p>
+        <details class="sn-exercise-item">
+          <summary>Respuesta</summary>
+          <p>{{yes_no_answer_1_affirmative}}<br>{{yes_no_answer_1_negative}}</p>
+        </details>
+      </li>
+      <li>
+        <p>{{yes_no_prompt_2}}</p>
+        <details class="sn-exercise-item">
+          <summary>Respuesta</summary>
+          <p>{{yes_no_answer_2_affirmative}}<br>{{yes_no_answer_2_negative}}</p>
+        </details>
+      </li>
+      <li>
+        <p>{{yes_no_prompt_3}}</p>
+        <details class="sn-exercise-item">
+          <summary>Respuesta</summary>
+          <p>{{yes_no_answer_3_affirmative}}<br>{{yes_no_answer_3_negative}}</p>
+        </details>
+      </li>
+      <li>
+        <p>{{yes_no_prompt_4}}</p>
+        <details class="sn-exercise-item">
+          <summary>Respuesta</summary>
+          <p>{{yes_no_answer_4_affirmative}}<br>{{yes_no_answer_4_negative}}</p>
+        </details>
+      </li>
+      <li>
+        <p>{{yes_no_prompt_5}}</p>
+        <details class="sn-exercise-item">
+          <summary>Respuesta</summary>
+          <p>{{yes_no_answer_5_affirmative}}<br>{{yes_no_answer_5_negative}}</p>
+        </details>
+      </li>
+    </ol>
+  </div>
   <div class="exercise-block">
     <h3 class="exercise-title">Completar</h3>
     <ol class="exercise-list">
@@ -314,13 +373,16 @@ Do not use `sn-conjugation-practice` for structures, compound phrases, periphras
 
 ## Exercise Variation Rules
 
-Exercise subsection headings must always stay:
+Use these exercise subsection headings when the exercise type is present:
 
 - `<h3 class="exercise-title">Seleccionar</h3>`
 - `<h3 class="exercise-title">Completar</h3>`
+- `<h3 class="exercise-title">Preguntas de si/no</h3>`
 - `<h3 class="exercise-title">Traducir</h3>`
 
-For grammar exercises, do not reuse the same sentences or the same subject order across `Seleccionar`, `Completar`, and `Traducir`.
+`Seleccionar` is optional. Manual or simple lessons may use only `Completar`, `Preguntas de si/no`, and `Traducir` when that better fits the lesson.
+
+For grammar exercises, do not reuse the same sentences or the same subject order across `Seleccionar`, `Completar`, `Preguntas de si/no`, and `Traducir`.
 
 - Vary subject order instead of following the conjugation table from `Yo` to `Ellos`.
 - Mix `yo`, `tú`, `él/ella/usted`, `nosotros`, and `ellos/ustedes`.
@@ -328,3 +390,4 @@ For grammar exercises, do not reuse the same sentences or the same subject order
 - Avoid repeating exact examples already used in `Overview`, `Conjugation`, `Uses`, or `Oraciones`.
 - Include affirmative, negative, and question prompts when the structure allows it.
 - Keep the current `<details><summary>Respuesta</summary>...</details>` answer format.
+- For yes/no question exercises, include 1 visible example and 5 numbered exercises. Each exercise prompt stays outside `<details>`, each answer stays inside `<details class="sn-exercise-item">`, and the summary text must be exactly `Respuesta`.

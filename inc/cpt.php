@@ -12,6 +12,12 @@ function spanishnova_register_cpts() {
     ];
 
     foreach ($post_types as $slug => $labels) {
+        $supports = ['title', 'editor', 'excerpt', 'thumbnail', 'revisions'];
+
+        if ($slug === 'grammar') {
+            $supports[] = 'page-attributes';
+        }
+
         register_post_type($slug, [
             'labels' => [
                 'name' => __($labels[0], 'spanishnova'),
@@ -21,7 +27,7 @@ function spanishnova_register_cpts() {
             'has_archive' => true,
             'show_in_rest' => true,
             'menu_position' => 20,
-            'supports' => ['title', 'editor', 'excerpt', 'thumbnail', 'revisions'],
+            'supports' => $supports,
             'rewrite' => ['slug' => $slug],
         ]);
     }
