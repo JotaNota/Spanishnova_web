@@ -1,5 +1,40 @@
 # SpanishNova Upload Script
 
+## Flujo lineal de grammar
+
+```text
+roadmap CSV -> content-data JSON -> render -> generated Markdown/HTML -> upload -> WordPress draft
+```
+
+1. Elegir una fila en `docs/content-system/content-plan/grammar-roadmap.csv`.
+2. Crear o editar `docs/content-system/content-data/grammar/[slug].json`.
+3. Renderizar con `python scripts/render_content.py --type grammar --slug [slug]`.
+4. Revisar `docs/content-system/generated/generated-markdown-posts/grammar/[slug].md`.
+5. Subir el HTML generado con `python scripts/upload_posts.py --upload-one --slug [slug]`.
+
+El render genera un fragmento HTML compatible con el upload existente en
+`docs/content-system/generated/generated-html-posts/grammar/[slug].html`.
+
+## Render de contenido estructurado
+
+Ruta del script:
+
+`scripts/render_content.py`
+
+Ejemplo piloto:
+
+```bash
+python scripts/render_content.py --type grammar --slug poder-presente
+```
+
+El render lee el roadmap, el JSON de content-data y el renderer interno de
+`scripts/spanishnova_render/`. Valida que el slug exista, que el JSON exista, que
+la fila use `cpt=grammar`, que los campos requeridos existan, y crea las carpetas
+de salida si hacen falta.
+
+El HTML generado es solo un fragmento para el cuerpo del post de WordPress. No
+incluye `html`, `head`, `body`, `style`, `script` ni comentarios Gutenberg.
+
 Este script sirve para subir posts generados desde el repositorio local a WordPress Local.
 
 El script se corre desde la terminal.
@@ -181,16 +216,100 @@ python scripts/upload_posts.py --sync-status
 
 Compara el roadmap con WordPress y con los HTML generados.
 
+WordPress Local es la fuente principal para saber si un post ya existe. El
+script consulta primero por `slug` con `status=any`. Si WordPress devuelve un
+post, usa ese status aunque no exista HTML generado local.
+
 Actualiza:
 
 ```txt
-sin HTML → not-created
-con HTML pero sin post → planned
 post draft → draft
 post published → published
+otro status de WordPress → ese status
+sin post en WordPress y con HTML → planned
+sin post en WordPress y sin HTML → not-created
 ```
 
 Este comando es útil, pero debe usarse con cuidado.
+
+---
+
+## Auditar grammar sin modificar nada
+
+```bash
+python scripts/upload_posts.py --audit-grammar
+```
+
+Genera un reporte de solo lectura para reconciliar:
+
+- `docs/content-system/content-plan/grammar-roadmap.csv`
+- `docs/content-system/generated/generated-html-posts/grammar/`
+- WordPress Local, CPT `grammar`
+
+El reporte muestra:
+
+- En roadmap pero no en WordPress
+- En WordPress pero no en roadmap
+- En generated HTML pero no en roadmap
+- En roadmap sin generated HTML pero sí en WordPress
+- Duplicados o slugs sospechosos, si se detectan
+
+No modifica el CSV y no crea ni actualiza posts en WordPress.
+
+---
+
+## Ver cambios de orden de grammar sin aplicarlos
+
+```bash
+python scripts/upload_posts.py --dry-run-grammar-order
+```
+
+Lee `docs/content-system/content-plan/grammar-roadmap.csv` y compara la columna
+`priority` con el `menu_order` actual de cada post del CPT `grammar` en
+WordPress Local.
+
+`priority` mantiene el orden pedagogico del roadmap. WordPress Local recibe el
+orden invertido para que los posts mas nuevos o ultimos del roadmap aparezcan
+arriba en el admin.
+
+El reporte muestra los posts que cambiarian con:
+
+```txt
+slug=ser-presente priority=1 current_menu_order=0 target_menu_order=22
+```
+
+Tambien reporta filas `missing` cuando el slug no existe en WordPress e
+`invalid` cuando `priority` esta vacio o no es numerico.
+
+Las filas con `status=not-created` se ignoran.
+
+No modifica WordPress y no modifica archivos.
+
+---
+
+## Sincronizar orden de grammar
+
+```bash
+python scripts/upload_posts.py --sync-grammar-order
+```
+
+Lee `docs/content-system/content-plan/grammar-roadmap.csv` y actualiza
+`menu_order` de los posts existentes del CPT `grammar` usando el orden invertido:
+
+```txt
+menu_order = max_priority + 1 - priority
+```
+
+`priority` mantiene el orden pedagogico del roadmap. WordPress Local se ordena
+invertido para que los posts mas nuevos o ultimos del roadmap aparezcan arriba
+en el admin.
+
+Este comando busca cada post por `slug` con `status=any`, no crea posts, no
+cambia titulo, slug, contenido, status ni taxonomias. Si un post no existe, lo
+reporta como `missing` y sigue. Si `priority` esta vacio o no es numerico, lo
+reporta como `invalid` y sigue.
+
+Las filas con `status=not-created` se ignoran.
 
 ---
 

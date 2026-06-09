@@ -36,6 +36,8 @@ Do not use `sn-conjugation-practice` for structures, compound phrases, periphras
 
 ## Uses
 
+Adapt the use sections to the verb or structure. Do not force every lesson into the same pattern.
+
 ### Use 1
 
 TBD.
@@ -74,6 +76,8 @@ TBD.
 - ¿TBD? — TBD?
 
 ## Ejercicios
+
+Use the exercise blocks that fit the lesson. `Seleccionar` is allowed but not required for every lesson.
 
 ### Seleccionar
 
@@ -150,6 +154,42 @@ TBD.
 8. ¿Ella ___ descansar?
 
    ¿Ella **necesita** descansar?
+
+### Preguntas de si/no
+
+Visible example:
+
+- ¿Ella es brasileña? - Sí, ella es brasileña. / No, ella no es brasileña.
+
+1. ¿TBD?
+
+   Sí, TBD.
+
+   No, TBD.
+
+2. ¿TBD?
+
+   Sí, TBD.
+
+   No, TBD.
+
+3. ¿TBD?
+
+   Sí, TBD.
+
+   No, TBD.
+
+4. ¿TBD?
+
+   Sí, TBD.
+
+   No, TBD.
+
+5. ¿TBD?
+
+   Sí, TBD.
+
+   No, TBD.
 
 ### Traducir
 

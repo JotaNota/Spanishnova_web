@@ -153,3 +153,4 @@ Columns:
 * `topic_tax`, `grammar_tax`, `level_tax`, and `post_tags` should match the editorial model used by WordPress.
 * `output_folder` points to the expected Markdown output folder, not the HTML output folder.
 * Grammar exercise sets should vary sentence content and subject order across `Seleccionar`, `Completar`, and `Traducir`.
+* Structured grammar lessons pair the roadmap row with `docs/content-system/content-data/grammar/[base_slug].json` and render with `python scripts/render_content.py --type grammar --slug [base_slug]`.
