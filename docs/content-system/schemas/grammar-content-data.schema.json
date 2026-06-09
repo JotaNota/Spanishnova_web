@@ -114,12 +114,17 @@
     "exercises": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["select", "complete", "translate"],
+      "required": ["complete", "translate"],
       "properties": {
         "select": {
           "type": "array",
           "minItems": 1,
           "items": { "$ref": "#/$defs/multiple_choice_exercise" }
+        },
+        "yes_no": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/free_response_exercise" }
         },
         "complete": {
           "type": "array",
@@ -136,9 +141,10 @@
     "answers": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["select", "complete", "translate"],
+      "required": ["complete", "translate"],
       "properties": {
         "select": { "type": "array", "items": { "type": "string" } },
+        "yes_no": { "type": "array", "items": { "type": "string" } },
         "complete": { "type": "array", "items": { "type": "string" } },
         "translate": { "type": "array", "items": { "type": "string" } }
       },

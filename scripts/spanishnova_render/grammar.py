@@ -9,6 +9,13 @@ SUBJECT_ORDER = [
     "Ellos / Ellas / Ustedes",
 ]
 
+ANSWER_GROUP_LABELS = {
+    "select": "Seleccionar",
+    "complete": "Completar",
+    "yes_no": "Preguntas de si/no",
+    "translate": "Traducir",
+}
+
 
 def md_pair(item):
     return f"{item['spanish']} - {item['english']}"
@@ -79,24 +86,34 @@ def render_markdown(row, data):
     for example in data["sentences"]["questions"]:
         lines.append(f"- {md_pair(example)}")
 
-    lines += ["", "## Ejercicios", "", "### Seleccionar", ""]
-    for index, item in enumerate(data["exercises"]["select"], start=1):
-        lines.append(f"{index}. {item['prompt']}")
-        for option_index, option in zip(["a", "b", "c", "d"], item["options"]):
-            lines.append(f"   - {option_index}) {option}")
-        lines += ["", f"   {item['answer']}", ""]
+    lines += ["", "## Ejercicios", ""]
+
+    if data["exercises"].get("select"):
+        lines += ["### Seleccionar", ""]
+        for index, item in enumerate(data["exercises"]["select"], start=1):
+            lines.append(f"{index}. {item['prompt']}")
+            for option_index, option in zip(["a", "b", "c", "d"], item["options"]):
+                lines.append(f"   - {option_index}) {option}")
+            lines += ["", f"   {item['answer']}", ""]
 
     lines += ["### Completar", ""]
     for index, item in enumerate(data["exercises"]["complete"], start=1):
         lines += [f"{index}. {item['prompt']}", "", f"   {item['answer']}", ""]
+
+    if data["exercises"].get("yes_no"):
+        lines += ["### Preguntas de si/no", ""]
+        for index, item in enumerate(data["exercises"]["yes_no"], start=1):
+            lines += [f"{index}. {item['prompt']}", "", f"   {item['answer']}", ""]
 
     lines += ["### Traducir", ""]
     for index, item in enumerate(data["exercises"]["translate"], start=1):
         lines += [f"{index}. {item['prompt']}", "", f"   {item['answer']}", ""]
 
     lines += ["## Answer Key", ""]
-    for group in ["select", "complete", "translate"]:
-        lines += [f"### {group.title()}", ""]
+    for group in ["select", "complete", "yes_no", "translate"]:
+        if group not in data["answers"]:
+            continue
+        lines += [f"### {ANSWER_GROUP_LABELS[group]}", ""]
         for index, answer in enumerate(data["answers"][group], start=1):
             lines.append(f"{index}. {answer}")
         lines.append("")
@@ -248,18 +265,23 @@ def render_html(row, data):
         "",
         '<section class="panel" id="ejercicios">',
         "  <h2>Ejercicios</h2>",
-        '  <div class="exercise-block">',
-        '    <h3 class="exercise-title">Seleccionar</h3>',
-        '    <ol class="exercise-list">',
     ]
-    for item in data["exercises"]["select"]:
-        parts.append(f"      <li><p>{escape(item['prompt'])}</p><ol type=\"a\">")
-        for option in item["options"]:
-            parts.append(f"        <li>{escape(option)}</li>")
-        parts.append(f"      </ol>{render_exercise_details(item)}</li>")
+    if data["exercises"].get("select"):
+        parts += [
+            '  <div class="exercise-block">',
+            '    <h3 class="exercise-title">Seleccionar</h3>',
+            '    <ol class="exercise-list">',
+        ]
+        for item in data["exercises"]["select"]:
+            parts.append(f"      <li><p>{escape(item['prompt'])}</p><ol type=\"a\">")
+            for option in item["options"]:
+                parts.append(f"        <li>{escape(option)}</li>")
+            parts.append(f"      </ol>{render_exercise_details(item)}</li>")
+        parts += [
+            "    </ol>",
+            "  </div>",
+        ]
     parts += [
-        "    </ol>",
-        "  </div>",
         '  <div class="exercise-block">',
         '    <h3 class="exercise-title">Completar</h3>',
         '    <ol class="exercise-list">',
@@ -269,6 +291,20 @@ def render_html(row, data):
     parts += [
         "    </ol>",
         "  </div>",
+    ]
+    if data["exercises"].get("yes_no"):
+        parts += [
+            '  <div class="exercise-block">',
+            '    <h3 class="exercise-title">Preguntas de si/no</h3>',
+            '    <ol class="exercise-list">',
+        ]
+        for item in data["exercises"]["yes_no"]:
+            parts.append(f"      <li><p>{escape(item['prompt'])}</p>{render_exercise_details(item)}</li>")
+        parts += [
+            "    </ol>",
+            "  </div>",
+        ]
+    parts += [
         '  <div class="exercise-block">',
         '    <h3 class="exercise-title">Traducir</h3>',
         '    <ol class="exercise-list">',

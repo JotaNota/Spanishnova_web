@@ -47,8 +47,10 @@ def validate_grammar_data(data):
         require_list(sentences, group, "grammar sentences")
 
     exercises = require_dict(data, "exercises", "grammar content-data")
-    require_fields(exercises, ["select", "complete", "translate"], "grammar exercises")
-    for group in ["select", "complete", "translate"]:
+    require_fields(exercises, ["complete", "translate"], "grammar exercises")
+    for group in ["select", "yes_no", "complete", "translate"]:
+        if group not in exercises:
+            continue
         items = require_list(exercises, group, "grammar exercises")
         for index, item in enumerate(items, start=1):
             require_fields(item, ["prompt", "answer"], f"grammar exercises.{group}[{index}]")
@@ -56,4 +58,7 @@ def validate_grammar_data(data):
                 require_list(item, "options", f"grammar exercises.{group}[{index}]")
 
     answers = require_dict(data, "answers", "grammar content-data")
-    require_fields(answers, ["select", "complete", "translate"], "grammar answers")
+    require_fields(answers, ["complete", "translate"], "grammar answers")
+    for group in ["select", "yes_no"]:
+        if group in exercises:
+            require_fields(answers, [group], "grammar answers")
