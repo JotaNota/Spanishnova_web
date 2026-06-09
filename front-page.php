@@ -1,10 +1,13 @@
 <?php get_header(); ?>
 
 <?php
+$latest_page = max(1, absint(get_query_var('paged')), absint(get_query_var('page')));
+
 $featured_query = new WP_Query([
   'post_type'      => ['grammar', 'vocabulary', 'reading'],
   'post_status'    => 'publish',
   'posts_per_page' => 6,
+  'paged'          => $latest_page,
   'orderby'        => 'date',
   'order'          => 'DESC',
 ]);
@@ -74,6 +77,21 @@ $post_type_labels = [
           <p class="empty-state">No lessons published yet.</p>
         <?php endif; ?>
       </div>
+
+      <?php if ($featured_query->max_num_pages > 1) : ?>
+        <nav class="home-pagination" aria-label="<?php esc_attr_e('Latest lessons pagination', 'spanishnova'); ?>">
+          <?php
+          echo wp_kses_post(
+            paginate_links([
+              'total'     => $featured_query->max_num_pages,
+              'current'   => $latest_page,
+              'prev_text' => esc_html__('Previous', 'spanishnova'),
+              'next_text' => esc_html__('Next', 'spanishnova'),
+            ])
+          );
+          ?>
+        </nav>
+      <?php endif; ?>
     
     </div>
   </section>

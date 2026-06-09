@@ -172,6 +172,43 @@
   font-size: 13px;
 }
 
+.home-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.home-pagination .page-numbers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  min-height: 34px;
+  padding: 7px 11px;
+  border: 1px solid #e2d3c1;
+  border-radius: 999px;
+  background: #fffaf3;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.home-pagination a.page-numbers:hover,
+.home-pagination a.page-numbers:focus {
+  border-color: var(--orange);
+  background: var(--orange-soft);
+  color: var(--orange);
+}
+
+.home-pagination .page-numbers.current {
+  border-color: var(--orange);
+  background: var(--orange);
+  color: #ffffff;
+}
+
 .label {
   display: inline-flex;
   justify-content: center;
