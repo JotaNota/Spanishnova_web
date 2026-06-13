@@ -71,15 +71,11 @@ main {
   grid-template-columns: minmax(0, 1fr) 300px;
   gap: 36px;
   align-items: start;
-  margin-bottom: 72px;
-}
-
-.home .top-header .donate {
-  display: none;
+  margin-bottom: 56px;
 }
 
 .practice-hero {
-  padding: 58px 0 18px;
+  padding: 32px 0 12px;
 }
 
 .practice-hero h1 {
@@ -137,7 +133,7 @@ main {
 }
 
 .homepage-sidebar {
-  padding-top: 68px;
+  padding-top: 0;
 }
 
 .homepage-sidebar .panel,
