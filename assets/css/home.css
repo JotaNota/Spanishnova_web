@@ -281,11 +281,15 @@
    Homepage practice entry
    ========================================================= */
 
+/* =========================================================
+   Homepage practice entry
+   ========================================================= */
+
 .home-practice-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.75fr);
-  gap: 28px;
-  align-items: stretch;
+  gap: 22px;
+  align-items: start;
   margin-bottom: 28px;
 }
 
@@ -293,7 +297,7 @@
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 26px 28px;
+  padding: 22px 22px 18px;
   text-align: left;
   background: #fffaf3;
   border: 1px solid #e2d3c1;
@@ -302,48 +306,49 @@
 }
 
 .practice-hero h1 {
-  margin-bottom: 18px;
-  font-size: clamp(30px, 4vw, 46px);
+  margin-bottom: 14px;
+  font-size: clamp(30px, 4vw, 44px);
   letter-spacing: -0.04em;
 }
 
 .practice-hero .search-bar {
-  max-width: 460px;
-  margin: 0 0 22px;
+  max-width: 430px;
+  margin: 0 0 16px;
 }
 
 .practice-hero .search-bar input {
-  height: 44px;
-  padding-left: 18px;
-  padding-right: 48px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 46px;
   font-size: 13px;
 }
 
 .practice-hero .search-icon {
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   right: 5px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .practice-paths {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(2, 120px);
+  gap: 8px;
 }
 
 .practice-paths a {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 42px;
-  padding: 10px 12px;
+  min-height: 38px;
+  padding: 8px 10px;
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 12px;
   background: #fffaf5;
   color: var(--ink);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 900;
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -356,18 +361,34 @@
 
 .home-practice-layout .homepage-sidebar,
 .home-practice-layout .side-card {
-  height: 100%;
+  height: auto;
 }
 
 .home-practice-layout .side-card {
   margin-bottom: 0;
+  padding: 14px 22px 12px;
 }
 
-.side-card a {
+.home-practice-layout .side-card h2 {
+  margin-bottom: 4px;
+  font-size: 24px;
+}
+
+.home-practice-layout .section-note {
+  margin: 0 0 6px;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.home-practice-layout .side-card ul {
+  gap: 0;
+}
+
+.home-practice-layout .side-card a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 10px;
+  padding: 3px 8px;
   border: 1px solid transparent;
   border-radius: 10px;
   color: var(--muted);

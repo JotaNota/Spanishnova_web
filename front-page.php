@@ -19,25 +19,23 @@ $post_type_labels = [
 <main>
   <section class="home-practice-layout">
     <section class="hero practice-hero">
-    <h1>Practice Spanish</h1>
+      <h1>Practice Spanish</h1>
 
-    <form class="search-bar" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>" onsubmit="if (!this.s.value.trim()) { window.location.href='<?php echo esc_url(home_url('/explore/')); ?>'; return false; }">
-      <input type="search" name="s" placeholder="Search lessons, readings, vocabulary..." value="<?php echo get_search_query(); ?>">
-      <button class="search-icon" type="submit" aria-label="Search">⌕</button>
-    </form>
+      <form class="search-bar" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>" onsubmit="if (!this.s.value.trim()) { window.location.href='<?php echo esc_url(home_url('/explore/')); ?>'; return false; }">
+        <input type="search" name="s" placeholder="Search lessons, readings, vocabulary..." value="<?php echo get_search_query(); ?>">
+        <button class="search-icon" type="submit" aria-label="Search">⌕</button>
+      </form>
 
-    <div class="practice-paths" aria-label="Practice paths">
-      <a href="<?php echo esc_url(home_url('/grammar/')); ?>">Learn more grammar</a>
-      <a href="<?php echo esc_url(home_url('/vocabulary/')); ?>">Expand vocabulary</a>
-      <a href="<?php echo esc_url(home_url('/readings/')); ?>">Read interesting stories</a>
-      <a href="<?php echo esc_url(home_url('/practice/')); ?>">Practice with exercises</a>
-      <a href="<?php echo esc_url(home_url('/explore/')); ?>">Explore all content</a>
-    </div>
-  </section>
+      <div class="practice-paths" aria-label="Practice paths">
+        <a href="<?php echo esc_url(home_url('/explore/')); ?>">Explore all content</a>
+        <a href="<?php echo esc_url(home_url('/grammar/')); ?>">Learn more grammar</a>
+      </div>
+    </section>
 
     <aside class="homepage-sidebar">
       <div class="panel side-card">
         <h2>Explore by level</h2>
+        <p class="section-note">Choose content based on your current Spanish level.</p>
         <ul>
           <li><a href="<?php echo esc_url(home_url('/level/beginner/')); ?>">Beginner</a></li>
           <li><a href="<?php echo esc_url(home_url('/level/intermediate/')); ?>">Intermediate</a></li>
@@ -75,7 +73,6 @@ $post_type_labels = [
           <p class="empty-state">No lessons published yet.</p>
         <?php endif; ?>
       </div>
-    
     </div>
   </section>
 
@@ -89,14 +86,6 @@ $post_type_labels = [
       <h2>For teachers</h2>
       <p>Use readings, worksheets, and examples as classroom support.</p>
     </div>
-  </section>
-
-  <section class="support" id="donate">
-    <div>
-      <h2>Support SpanishNova.</h2>
-      <p>Help support lessons, readings, worksheets, audio, and future learning content.</p>
-    </div>
-    <a class="btn btn-primary" href="<?php echo esc_url(home_url('/donate/')); ?>">Donate</a>
   </section>
 </main>
 
