@@ -15,11 +15,9 @@
         <div class="sn-breadcrumb">
           <a href="<?php echo esc_url($readings_url); ?>">Readings</a>
           <?php foreach ($topic_terms as $term) : ?>
-            <?php $term_link = get_term_link($term); ?>
-            <?php if (!is_wp_error($term_link)) : ?>
-              <span>/</span>
-              <a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a>
-            <?php endif; ?>
+            <?php $term_link = add_query_arg(array('type' => 'readings', 'topic' => $term->slug), home_url('/explore/')); ?>
+            <span>/</span>
+            <a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a>
           <?php endforeach; ?>
         </div>
         <div class="sn-meta-row">
@@ -31,10 +29,8 @@
             <?php endif; ?>
           <?php endforeach; ?>
           <?php foreach ($topic_terms as $term) : ?>
-            <?php $term_link = get_term_link($term); ?>
-            <?php if (!is_wp_error($term_link)) : ?>
-              <span class="sn-pill"><a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a></span>
-            <?php endif; ?>
+            <?php $term_link = add_query_arg(array('type' => 'readings', 'topic' => $term->slug), home_url('/explore/')); ?>
+            <span class="sn-pill"><a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a></span>
           <?php endforeach; ?>
         </div>
         <h1 class="sn-post-title"><?php the_title(); ?></h1>

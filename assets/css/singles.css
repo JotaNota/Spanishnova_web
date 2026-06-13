@@ -266,9 +266,8 @@ body.single-conversations {
 }
 
 /* Conversation post content */
+/* Conversation post content */
 .sn-conversations-page {
-  max-width: none;
-  padding: 0 24px 80px;
   background: var(--sn-bg);
 }
 

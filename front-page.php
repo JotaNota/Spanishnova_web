@@ -21,7 +21,7 @@ $post_type_labels = [
     <section class="hero practice-hero">
     <h1>Practice Spanish</h1>
 
-    <form class="search-bar" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+    <form class="search-bar" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>" onsubmit="if (!this.s.value.trim()) { window.location.href='<?php echo esc_url(home_url('/explore/')); ?>'; return false; }">
       <input type="search" name="s" placeholder="Search lessons, readings, vocabulary..." value="<?php echo get_search_query(); ?>">
       <button class="search-icon" type="submit" aria-label="Search">⌕</button>
     </form>
@@ -31,6 +31,7 @@ $post_type_labels = [
       <a href="<?php echo esc_url(home_url('/vocabulary/')); ?>">Expand vocabulary</a>
       <a href="<?php echo esc_url(home_url('/readings/')); ?>">Read interesting stories</a>
       <a href="<?php echo esc_url(home_url('/practice/')); ?>">Practice with exercises</a>
+      <a href="<?php echo esc_url(home_url('/explore/')); ?>">Explore all content</a>
     </div>
   </section>
 
