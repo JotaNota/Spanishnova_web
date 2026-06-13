@@ -27,16 +27,15 @@ $post_type_labels = [
     </form>
 
     <div class="practice-paths" aria-label="Practice paths">
+      <a href="<?php echo esc_url(home_url('/explore/')); ?>">Explore all content</a>
       <a href="<?php echo esc_url(home_url('/grammar/')); ?>">Learn more grammar</a>
-      <a href="<?php echo esc_url(home_url('/vocabulary/')); ?>">Expand vocabulary</a>
-      <a href="<?php echo esc_url(home_url('/readings/')); ?>">Read interesting stories</a>
-      <a href="<?php echo esc_url(home_url('/practice/')); ?>">Practice with exercises</a>
     </div>
   </section>
 
     <aside class="homepage-sidebar">
       <div class="panel side-card">
         <h2>Explore by level</h2>
+        <p class="section-note">Choose content based on your current Spanish level.</p>
         <ul>
           <li><a href="<?php echo esc_url(home_url('/level/beginner/')); ?>">Beginner</a></li>
           <li><a href="<?php echo esc_url(home_url('/level/intermediate/')); ?>">Intermediate</a></li>
@@ -88,14 +87,6 @@ $post_type_labels = [
       <h2>For teachers</h2>
       <p>Use readings, worksheets, and examples as classroom support.</p>
     </div>
-  </section>
-
-  <section class="support" id="donate">
-    <div>
-      <h2>Support SpanishNova.</h2>
-      <p>Help support lessons, readings, worksheets, audio, and future learning content.</p>
-    </div>
-    <a class="btn btn-primary" href="<?php echo esc_url(home_url('/donate/')); ?>">Donate</a>
   </section>
 </main>
 
