@@ -269,3 +269,188 @@
     justify-self: start;
   }
 }
+
+/* =========================================================
+   Grammar hub cards
+   ========================================================= */
+
+.grammar-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.grammar-hub-card {
+  display: grid;
+  gap: 8px;
+  min-height: 118px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fffaf5;
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.grammar-hub-card:hover,
+.grammar-hub-card:focus {
+  border-color: var(--orange);
+  background: #ffffff;
+}
+
+.grammar-hub-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.grammar-hub-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.grammar-hub-action {
+  align-self: end;
+  color: var(--orange);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.grammar-term-lessons {
+  margin-top: 18px;
+}
+
+.grammar-pagination ul {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.grammar-pagination a,
+.grammar-pagination span {
+  min-width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.grammar-pagination .current {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #ffffff;
+}
+
+/* =========================================================
+   Grammar explore filters
+   ========================================================= */
+
+.grammar-explore-panel h1 {
+  margin-bottom: 18px;
+}
+
+.grammar-filter-block {
+  margin-bottom: 22px;
+}
+
+.grammar-filter-block h2,
+.grammar-results-heading h2 {
+  margin-bottom: 10px;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.grammar-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.grammar-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.grammar-filter-chip:hover,
+.grammar-filter-chip:focus,
+.grammar-filter-chip.is-active {
+  border-color: var(--orange);
+  color: var(--orange);
+  background: var(--orange-soft);
+}
+
+.grammar-subfilter-block {
+  padding-top: 4px;
+  border-top: 1px solid var(--border);
+}
+
+.grammar-results-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 28px 0 14px;
+}
+
+.grammar-results-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.grammar-term-lessons {
+  margin-top: 0;
+}
+
+.grammar-pagination ul {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.grammar-pagination a,
+.grammar-pagination span {
+  min-width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.grammar-pagination .current {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #ffffff;
+}

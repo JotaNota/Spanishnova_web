@@ -28,16 +28,13 @@ $post_type_labels = [
 
     <div class="practice-paths" aria-label="Practice paths">
       <a href="<?php echo esc_url(home_url('/grammar/')); ?>">Learn more grammar</a>
-      <a href="<?php echo esc_url(home_url('/vocabulary/')); ?>">Expand vocabulary</a>
-      <a href="<?php echo esc_url(home_url('/readings/')); ?>">Read interesting stories</a>
-      <a href="<?php echo esc_url(home_url('/practice/')); ?>">Practice with exercises</a>
       <a href="<?php echo esc_url(home_url('/explore/')); ?>">Explore all content</a>
     </div>
   </section>
 
     <aside class="homepage-sidebar">
       <div class="panel side-card">
-        <h2>Explore by level</h2>
+        <h2>By level</h2>
         <ul>
           <li><a href="<?php echo esc_url(home_url('/level/beginner/')); ?>">Beginner</a></li>
           <li><a href="<?php echo esc_url(home_url('/level/intermediate/')); ?>">Intermediate</a></li>
@@ -91,13 +88,6 @@ $post_type_labels = [
     </div>
   </section>
 
-  <section class="support" id="donate">
-    <div>
-      <h2>Support SpanishNova.</h2>
-      <p>Help support lessons, readings, worksheets, audio, and future learning content.</p>
-    </div>
-    <a class="btn btn-primary" href="<?php echo esc_url(home_url('/donate/')); ?>">Donate</a>
-  </section>
 </main>
 
 <?php get_footer(); ?>

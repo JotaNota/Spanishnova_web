@@ -40,10 +40,10 @@ $sn_topic_items = [
   'culture'    => 'Culture',
 ];
 
-$sn_render_topic_links = function () use ($sn_topic_items, $sn_term_link) {
+$sn_render_topic_links = function ($base_path = '/') use ($sn_topic_items) {
   foreach ($sn_topic_items as $slug => $label) {
-    $url = $sn_term_link($slug, 'topic_tax', '/');
-    printf('<li><a href="%s">%s</a></li>', $url, esc_html($label));
+    $url = add_query_arg('topic_tax', $slug, home_url($base_path));
+    printf('<li><a href="%s">%s</a></li>', esc_url($url), esc_html($label));
   }
 };
 ?>
@@ -148,7 +148,7 @@ $sn_render_topic_links = function () use ($sn_topic_items, $sn_term_link) {
           <a href="<?php echo $sn_home_link('/vocabulary/'); ?>">Vocabulary</a>
           <ul class="submenu">
             <li><a href="<?php echo $sn_home_link('/vocabulary/'); ?>">All vocabulary</a></li>
-            <?php $sn_render_topic_links(); ?>
+            <?php $sn_render_topic_links('/vocabulary/'); ?>
           </ul>
         </li>
 
@@ -156,7 +156,7 @@ $sn_render_topic_links = function () use ($sn_topic_items, $sn_term_link) {
           <a href="<?php echo $sn_home_link('/readings/'); ?>">Readings</a>
           <ul class="submenu">
             <li><a href="<?php echo $sn_home_link('/readings/'); ?>">All readings</a></li>
-            <?php $sn_render_topic_links(); ?>
+            <?php $sn_render_topic_links('/readings/'); ?>
           </ul>
         </li>
 
@@ -164,7 +164,7 @@ $sn_render_topic_links = function () use ($sn_topic_items, $sn_term_link) {
           <a href="<?php echo $sn_home_link('/conversations/'); ?>">Conversations</a>
           <ul class="submenu">
             <li><a href="<?php echo $sn_home_link('/conversations/'); ?>">All conversations</a></li>
-            <?php $sn_render_topic_links(); ?>
+            <?php $sn_render_topic_links('/conversations/'); ?>
           </ul>
         </li>
 

@@ -203,9 +203,10 @@
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 8px;
-  color: var(--muted);
-  font-size: 14px;
+  gap: 10px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 800;
 }
 
 .category-strip {
