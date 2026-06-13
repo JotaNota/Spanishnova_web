@@ -4,13 +4,18 @@
 $selected_slug = isset($_GET['grammar_tax']) ? sanitize_title(wp_unslash($_GET['grammar_tax'])) : '';
 $selected_term = $selected_slug ? get_term_by('slug', $selected_slug, 'grammar_tax') : null;
 
-$parent_terms = get_terms([
-  'taxonomy'   => 'grammar_tax',
-  'hide_empty' => true,
-  'parent'     => 0,
-  'orderby'    => 'name',
-  'order'      => 'ASC',
-]);
+$main_filter_slugs = [
+  'tenses',
+  'verbs',
+  'moods',
+  'parts-of-speech',
+];
+
+$parent_terms = array_filter(array_map(function ($slug) {
+  $term = get_term_by('slug', $slug, 'grammar_tax');
+
+  return ($term && !is_wp_error($term)) ? $term : null;
+}, $main_filter_slugs));
 
 function spanishnova_get_grammar_filter_url($slug = '') {
   $base_url = get_post_type_archive_link('grammar');

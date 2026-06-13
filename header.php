@@ -24,6 +24,16 @@ $sn_term_link = function ($slug, $taxonomy, $fallback = '/') {
   return esc_url($term_link);
 };
 
+$sn_grammar_filter_link = function ($slug = '') {
+  $base_url = home_url('/grammar/');
+
+  if (!$slug) {
+    return esc_url($base_url);
+  }
+
+  return esc_url(add_query_arg('grammar_tax', $slug, $base_url));
+};
+
 $sn_render_menu_link = function ($label, $url) {
   printf(
     '<li><a href="%s">%s</a></li>',
@@ -68,7 +78,7 @@ $sn_render_topic_links = function ($base_path = '/') use ($sn_topic_items) {
             <li><a href="<?php echo $sn_home_link('/grammar/'); ?>">All grammar</a></li>
 
             <li class="menu-item has-submenu">
-              <a href="<?php echo $sn_term_link('tenses', 'grammar_tax', '/grammar/'); ?>">Tenses</a>
+              <a href="<?php echo $sn_grammar_filter_link('tenses'); ?>">Tenses</a>
               <ul class="submenu">
                 <?php
                 foreach ([
@@ -76,31 +86,31 @@ $sn_render_topic_links = function ($base_path = '/') use ($sn_topic_items) {
                   'past'               => 'Past',
                   'future'             => 'Future',
                   'conditional'        => 'Conditional',
-                  'progressive-tenses' => 'Progressive Tenses',
+                  'progressive'        => 'Progressive Tenses',
                   'perfect-tenses'     => 'Perfect Tenses',
                 ] as $slug => $label) {
-                  $sn_render_menu_link($label, $sn_term_link($slug, 'grammar_tax', '/grammar/'));
+                  $sn_render_menu_link($label, $sn_grammar_filter_link($slug));
                 }
                 ?>
               </ul>
             </li>
 
             <li class="menu-item has-submenu">
-              <a href="<?php echo $sn_term_link('moods', 'grammar_tax', '/grammar/'); ?>">Moods</a>
+              <a href="<?php echo $sn_grammar_filter_link('moods'); ?>">Moods</a>
               <ul class="submenu">
                 <?php
                 foreach ([
                   'subjunctive' => 'Subjunctive',
                   'imperative'  => 'Imperative',
                 ] as $slug => $label) {
-                  $sn_render_menu_link($label, $sn_term_link($slug, 'grammar_tax', '/grammar/'));
+                  $sn_render_menu_link($label, $sn_grammar_filter_link($slug));
                 }
                 ?>
               </ul>
             </li>
 
             <li class="menu-item has-submenu">
-              <a href="<?php echo $sn_term_link('verbs', 'grammar_tax', '/grammar/'); ?>">Verbs</a>
+              <a href="<?php echo $sn_grammar_filter_link('verbs'); ?>">Verbs</a>
               <ul class="submenu">
                 <?php
                 $sn_verbs_parent = get_term_by('slug', 'verbs', 'grammar_tax');
@@ -116,7 +126,7 @@ $sn_render_topic_links = function ($base_path = '/') use ($sn_topic_items) {
 
                   if (!is_wp_error($sn_verb_terms)) {
                     foreach ($sn_verb_terms as $sn_verb_term) {
-                      $sn_render_menu_link($sn_verb_term->name, get_term_link($sn_verb_term));
+                      $sn_render_menu_link($sn_verb_term->name, $sn_grammar_filter_link($sn_verb_term->slug));
                     }
                   }
                 }
@@ -125,7 +135,7 @@ $sn_render_topic_links = function ($base_path = '/') use ($sn_topic_items) {
             </li>
 
             <li class="menu-item has-submenu">
-              <a href="<?php echo $sn_term_link('parts-of-speech', 'grammar_tax', '/grammar/'); ?>">Parts of Speech</a>
+              <a href="<?php echo $sn_grammar_filter_link('parts-of-speech'); ?>">Parts of Speech</a>
               <ul class="submenu">
                 <?php
                 foreach ([
@@ -136,7 +146,7 @@ $sn_render_topic_links = function ($base_path = '/') use ($sn_topic_items) {
                   'connectors'   => 'Connectors',
                   'articles'     => 'Articles',
                 ] as $slug => $label) {
-                  $sn_render_menu_link($label, $sn_term_link($slug, 'grammar_tax', '/grammar/'));
+                  $sn_render_menu_link($label, $sn_grammar_filter_link($slug));
                 }
                 ?>
               </ul>
