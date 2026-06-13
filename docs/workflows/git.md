@@ -38,7 +38,17 @@ Status: Draft
 
 ## Main branch protection
 
-Recommended GitHub settings for `main`:
+Branch protection is the preferred setup for `main`.
+
+If branch protection is unavailable on the current GitHub plan, use manual PR discipline:
+
+- Do not commit directly to `main`.
+- Do not push direct changes to `main`.
+- Open a PR for every branch.
+- Review the diff before merge.
+- Confirm the PR references an Issue or backlog row.
+
+Recommended GitHub settings when available:
 
 - Require pull request before merging.
 - Require at least one approval.

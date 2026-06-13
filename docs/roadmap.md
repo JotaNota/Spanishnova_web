@@ -32,7 +32,8 @@ Acceptance gate:
 - GitHub Issues workflow is defined.
 - Git branch and PR workflow is defined.
 - GitHub PR template exists.
-- Branch protection for `main` is planned.
+- Branch protection for `main` is deferred until available.
+- Manual PR discipline is documented.
 
 ## Phase 1 - Discovery
 
@@ -46,6 +47,7 @@ User stories:
 - Confirm active plugins.
 - Inventory content counts by CPT.
 - Inventory taxonomy terms.
+- Resolve taxonomy model mismatch across code, navigation, and content docs.
 - Inventory menus and key pages.
 - Confirm analytics and SEO plugin state.
 
@@ -109,8 +111,8 @@ User stories:
 - Generate vocabulary drafts.
 - Generate reading drafts.
 - Generate conversation drafts.
-- Create practice agent.
-- Create resources agent.
+- Generate practice drafts.
+- Generate resource drafts.
 - Review and approve draft batches.
 
 Acceptance gate:
