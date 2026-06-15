@@ -93,45 +93,43 @@ The editable source of a grammar lesson is the content-data JSON. Markdown and H
 
 ## Practice Structure
 
-- Use Spanish section headings for practice areas: `Oraciones`, `Afirmativa`, `Negativa`, `Preguntas`, `Ejercicios`, `Seleccionar`, `Completar`, `Traducir`.
+- Use consistent visible headings for standard grammar posts: `Overview`, `Oraciones.`, `Afirmativas`, `Negativas`, `Forma de pregunta`, `Ejercicios`, `Selección simple`, `Completar`, `Traducción`.
+- For comparison posts, use these visible headings: `Overview`, `Cómo/cuándo lo usamos`, `Comparación`, `Afirmativas`, `Negativas`, `Preguntas`, `Ejercicios`.
+- Do not use old visible heading labels from earlier grammar formats.
 - Do not use English headings for practice sections such as `Affirmative`, `Negative`, `Questions`, `Exercises`, `Multiple Choice`, or `Translation`.
-- `Oraciones` uses bullets.
-- `Afirmativa` uses bullets.
-- `Negativa` uses bullets.
-- `Preguntas` uses bullets.
+- `Oraciones.` uses bullets.
+- `Afirmativas` uses bullets.
+- `Negativas` uses bullets.
+- `Forma de pregunta` uses bullets for standard grammar posts.
+- `Preguntas` uses bullets for comparison posts.
 - `Ejercicios` keeps numbering.
-- `Seleccionar` keeps numbering.
+- `Selección simple` keeps numbering.
 - `Completar` keeps numbering.
-- `Traducir` keeps numbering.
-- Use `<h3 class="exercise-title">Seleccionar</h3>`, `<h3 class="exercise-title">Completar</h3>`, `<h3 class="exercise-title">Preguntas de si/no</h3>`, and `<h3 class="exercise-title">Traducir</h3>` when those exercise types are present.
+- `Traducción` keeps numbering.
+- Use only the `select`, `complete`, and `translate` exercise groups.
+- Use `<h3 class="exercise-title">Selección simple</h3>`, `<h3 class="exercise-title">Completar</h3>`, and `<h3 class="exercise-title">Traducción</h3>` when those exercise types are present.
 - Use `Completar`, not `Fill in the blank`.
 - Selection exercises are allowed but not required for every grammar lesson.
-- Do not force `Seleccionar` into manual or simple lessons when `Completar`, `Preguntas de si/no`, and `Traducir` better fit the approved format.
-- When using `Seleccionar`, add up to 8 multiple-choice exercises with varied answer positions.
+- Do not force `Selección simple` into manual or simple lessons when `Completar` and `Traducción` better fit the approved format.
+- When using `Selección simple`, add up to 8 multiple-choice exercises with varied answer positions.
 - Add 8 completar exercises.
 - Add translation exercises when they fit the lesson.
-- Do not repeat the same sentences or the same subject order across `Seleccionar`, `Completar`, `Preguntas de si/no`, and `Traducir`.
+- Do not repeat the same sentences or the same subject order across `Selección simple`, `Completar`, and `Traducción`.
 - Vary subject order instead of following the conjugation table from `Yo` to `Ellos`.
 - Mix `yo`, `tú`, `él/ella/usted`, `nosotros`, and `ellos/ustedes` across each exercise set.
 - Use different sentences in each exercise section.
-- Avoid repeating exact examples already used in `Overview`, `Conjugation`, `Uses`, or `Oraciones`.
+- Avoid repeating exact examples already used in `Overview`, `Conjugation`, `Uses`, or `Oraciones.`.
 - Include affirmative, negative, and question prompts when the structure allows it.
 - Keep vocabulary and difficulty aligned with the lesson level.
-- In `Oraciones`, `Afirmativa`, `Negativa`, `Preguntas`, and verb examples, keep Spanish and English on the same line as `Spanish - English`.
+- In `Oraciones.`, `Afirmativas`, `Negativas`, `Forma de pregunta`, `Preguntas`, and verb examples, keep Spanish and English on the same line as `Spanish - English`.
 - Do not put translations under the Spanish with line breaks.
 - Do not wrap same-line list translations in `<span class="translation">`; reserve translation cells for tables when needed.
-- Every exercise item in `Seleccionar`, `Completar`, `Preguntas de si/no`, and `Traducir` must include a `<details>` answer block.
+- Every exercise item in `Selección simple`, `Completar`, and `Traducción` must include a `<details>` answer block.
 - Exercise answer toggles must use `<summary>Respuesta</summary>`.
 - Do not use the old longer answer label.
-- For completar and traducir exercises, put the prompt before the details block, then use the details block only for the answer.
+- For completar and translation exercises, put the prompt before the details block, then use the details block only for the answer.
 - Use this exercise pattern:
   `<li><p>{{prompt}}</p><details><summary>Respuesta</summary><p>{{answer}}</p></details></li>`
-- When the lesson includes yes/no questions, add a `Preguntas de si/no` subsection with 1 visible example and 5 numbered exercises.
-- In yes/no question exercises, put the prompt outside the details block and the answer inside the details block.
-- Yes/no question exercise details must use the exact summary text `Respuesta`.
-- Yes/no question exercise answers should include both an affirmative and negative answer when useful.
-- Use this yes/no question HTML pattern:
-  `<li><p>¿Ella es brasileña?</p><details class="sn-exercise-item"><summary>Respuesta</summary><p>Sí, ella es brasileña.<br>No, ella no es brasileña.</p></details></li>`
 
 ## Uses And Examples
 
@@ -185,8 +183,8 @@ For `tense`, use:
 - overview
 - structure
 - conjugation
-- affirmative examples
-- negative examples
+- affirmative sentences
+- negative sentences
 - questions
 - exercises
 - wrap up
@@ -200,9 +198,12 @@ For `verb-usage`, use:
 - wrap up
 
 For `comparison`, use:
+- overview
+- uses
 - comparison
-- rules
-- contrast examples
+- affirmative sentences
+- negative sentences
+- questions
 - exercises
 - wrap up
 
@@ -210,7 +211,7 @@ For `structure`, use:
 - overview
 - pattern
 - examples
-- negative examples where useful
+- negative sentences where useful
 - questions where useful
 - exercises
 - wrap up

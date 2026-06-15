@@ -161,12 +161,22 @@ Use sections should adapt to the verb or structure. Examples:
 
 Keep Spanish and English examples on the same line as `Spanish - English`.
 
+For `lesson_type=comparison`, use this visible section order:
+
+- `Overview`
+- `Cómo/cuándo lo usamos`
+- `Comparación`
+- `Afirmativas`
+- `Negativas`
+- `Preguntas`
+- `Ejercicios`
+
 <section id="oraciones">
-  <h2>Oraciones</h2>
+  <h2>Oraciones.</h2>
   <!-- Choose vertical sections or grouped columns based on the lesson. Do not force two-column. -->
   <div class="two-column">
     <div class="example-group">
-      <h3>Afirmativa</h3>
+      <h3>Afirmativas</h3>
       <ul class="sentence-list">
         <li><strong>{{affirmative_1}}</strong> - {{affirmative_translation_1}}</li>
         <li><strong>{{affirmative_2}}</strong> - {{affirmative_translation_2}}</li>
@@ -175,7 +185,7 @@ Keep Spanish and English examples on the same line as `Spanish - English`.
       </ul>
     </div>
     <div class="example-group">
-      <h3>Negativa</h3>
+      <h3>Negativas</h3>
       <ul class="sentence-list">
         <li><strong>{{negative_1}}</strong> - {{negative_translation_1}}</li>
         <li><strong>{{negative_2}}</strong> - {{negative_translation_2}}</li>
@@ -185,7 +195,7 @@ Keep Spanish and English examples on the same line as `Spanish - English`.
     </div>
   </div>
   <div class="example-bubble">
-    <h3>Preguntas</h3>
+    <h3>Forma de pregunta</h3>
     <ul class="question-list">
       <li><strong>{{question_1}}</strong> - {{question_translation_1}}</li>
       <li><strong>{{question_2}}</strong> - {{question_translation_2}}</li>
@@ -198,7 +208,7 @@ Keep Spanish and English examples on the same line as `Spanish - English`.
 <section id="ejercicios">
   <h2>Ejercicios</h2>
   <div class="exercise-block">
-    <h3 class="exercise-title">Seleccionar</h3>
+    <h3 class="exercise-title">Selección simple</h3>
     <ol class="exercise-list">
       <li>
         <p>{{select_prompt_1}}</p>
@@ -274,48 +284,6 @@ Keep Spanish and English examples on the same line as `Spanish - English`.
       </li>
     </ol>
   </div>
-  <!-- Seleccionar is optional. Manual or simple lessons may use only Completar, Preguntas de si/no, and Traducir when that fits better. -->
-  <div class="exercise-block">
-    <h3 class="exercise-title">Preguntas de si/no</h3>
-    <p><strong>{{yes_no_visible_example_question}}</strong> - {{yes_no_visible_example_answer}}</p>
-    <ol class="exercise-list">
-      <li>
-        <p>{{yes_no_prompt_1}}</p>
-        <details class="sn-exercise-item">
-          <summary>Respuesta</summary>
-          <p>{{yes_no_answer_1_affirmative}}<br>{{yes_no_answer_1_negative}}</p>
-        </details>
-      </li>
-      <li>
-        <p>{{yes_no_prompt_2}}</p>
-        <details class="sn-exercise-item">
-          <summary>Respuesta</summary>
-          <p>{{yes_no_answer_2_affirmative}}<br>{{yes_no_answer_2_negative}}</p>
-        </details>
-      </li>
-      <li>
-        <p>{{yes_no_prompt_3}}</p>
-        <details class="sn-exercise-item">
-          <summary>Respuesta</summary>
-          <p>{{yes_no_answer_3_affirmative}}<br>{{yes_no_answer_3_negative}}</p>
-        </details>
-      </li>
-      <li>
-        <p>{{yes_no_prompt_4}}</p>
-        <details class="sn-exercise-item">
-          <summary>Respuesta</summary>
-          <p>{{yes_no_answer_4_affirmative}}<br>{{yes_no_answer_4_negative}}</p>
-        </details>
-      </li>
-      <li>
-        <p>{{yes_no_prompt_5}}</p>
-        <details class="sn-exercise-item">
-          <summary>Respuesta</summary>
-          <p>{{yes_no_answer_5_affirmative}}<br>{{yes_no_answer_5_negative}}</p>
-        </details>
-      </li>
-    </ol>
-  </div>
   <div class="exercise-block">
     <h3 class="exercise-title">Completar</h3>
     <ol class="exercise-list">
@@ -330,7 +298,7 @@ Keep Spanish and English examples on the same line as `Spanish - English`.
     </ol>
   </div>
   <div class="exercise-block">
-    <h3 class="exercise-title">Traducir</h3>
+    <h3 class="exercise-title">Traducción</h3>
     <ol class="exercise-list">
       <li><p>{{translate_prompt_1}}</p><details><summary>Respuesta</summary><p>{{translate_answer_1_before}}<strong>{{translate_answer_1_key}}</strong>{{translate_answer_1_after}}</p></details></li>
       <li><p>{{translate_prompt_2}}</p><details><summary>Respuesta</summary><p>{{translate_answer_2_before}}<strong>{{translate_answer_2_key}}</strong>{{translate_answer_2_after}}</p></details></li>
@@ -375,14 +343,13 @@ Do not use `sn-conjugation-practice` for structures, compound phrases, periphras
 
 Use these exercise subsection headings when the exercise type is present:
 
-- `<h3 class="exercise-title">Seleccionar</h3>`
+- `<h3 class="exercise-title">Selección simple</h3>`
 - `<h3 class="exercise-title">Completar</h3>`
-- `<h3 class="exercise-title">Preguntas de si/no</h3>`
-- `<h3 class="exercise-title">Traducir</h3>`
+- `<h3 class="exercise-title">Traducción</h3>`
 
-`Seleccionar` is optional. Manual or simple lessons may use only `Completar`, `Preguntas de si/no`, and `Traducir` when that better fits the lesson.
+`Selección simple` is optional. Use only `select`, `complete`, and `translate` exercise groups.
 
-For grammar exercises, do not reuse the same sentences or the same subject order across `Seleccionar`, `Completar`, `Preguntas de si/no`, and `Traducir`.
+For grammar exercises, do not reuse the same sentences or the same subject order across `Selección simple`, `Completar`, and `Traducción`.
 
 - Vary subject order instead of following the conjugation table from `Yo` to `Ellos`.
 - Mix `yo`, `tú`, `él/ella/usted`, `nosotros`, and `ellos/ustedes`.
@@ -390,4 +357,3 @@ For grammar exercises, do not reuse the same sentences or the same subject order
 - Avoid repeating exact examples already used in `Overview`, `Conjugation`, `Uses`, or `Oraciones`.
 - Include affirmative, negative, and question prompts when the structure allows it.
 - Keep the current `<details><summary>Respuesta</summary>...</details>` answer format.
-- For yes/no question exercises, include 1 visible example and 5 numbered exercises. Each exercise prompt stays outside `<details>`, each answer stays inside `<details class="sn-exercise-item">`, and the summary text must be exactly `Respuesta`.

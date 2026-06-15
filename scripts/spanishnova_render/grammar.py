@@ -10,10 +10,9 @@ SUBJECT_ORDER = [
 ]
 
 ANSWER_GROUP_LABELS = {
-    "select": "Seleccionar",
+    "select": "Selección simple",
     "complete": "Completar",
-    "yes_no": "Preguntas de si/no",
-    "translate": "Traducir",
+    "translate": "Traducción",
 }
 
 
@@ -40,10 +39,21 @@ def render_markdown(row, data):
     for example in data["examples"]:
         lines.append(f"- {md_pair(example)}")
 
+    is_comparison = row.get("lesson_type") == "comparison"
+
+    if is_comparison:
+        lines += ["", "## Cómo/cuándo lo usamos", ""]
+        for use in data["uses"]:
+            lines += [f"### {use['heading']}", "", use["body"], ""]
+            for example in use["examples"]:
+                lines.append(f"- {md_pair(example)}")
+            lines.append("")
+
     if data.get("structure"):
+        structure_heading = "Comparación" if is_comparison else "Structure"
         lines += [
             "",
-            "## Structure",
+            f"## {structure_heading}",
             "",
             "| Structure | Example | Translation |",
             "| --- | --- | --- |",
@@ -51,45 +61,50 @@ def render_markdown(row, data):
         for item in data["structure"]:
             lines.append(f"| {item['pattern']} | {item['example']} | {item['translation']} |")
 
-    lines += [
-        "",
-        "## Conjugation",
-        "",
-        "| Subject | Form | Example | Translation |",
-        "| --- | --- | --- | --- |",
-    ]
-    for item in data["conjugation"]:
-        lines.append(f"| {item['subject']} | {item['form']} | {item['example']} | {item['translation']} |")
-
-    if row.get("lesson_type") == "verb-usage":
+    if not is_comparison:
         lines += [
             "",
-            "## Conjugation Practice Source Marker",
+            "## Conjugation",
             "",
-            "`sn-conjugation-practice`",
+            "| Subject | Form | Example | Translation |",
+            "| --- | --- | --- | --- |",
         ]
+        for item in data["conjugation"]:
+            lines.append(f"| {item['subject']} | {item['form']} | {item['example']} | {item['translation']} |")
 
-    lines += ["", "## Uses", ""]
-    for use in data["uses"]:
-        lines += [f"### {use['heading']}", "", use["body"], ""]
-        for example in use["examples"]:
-            lines.append(f"- {md_pair(example)}")
-        lines.append("")
+        if row.get("lesson_type") == "verb-usage":
+            lines += [
+                "",
+                "## Conjugation Practice Source Marker",
+                "",
+                "`sn-conjugation-practice`",
+            ]
 
-    lines += ["## Oraciones", "", "### Afirmativa", ""]
+        lines += ["", "## Uses", ""]
+        for use in data["uses"]:
+            lines += [f"### {use['heading']}", "", use["body"], ""]
+            for example in use["examples"]:
+                lines.append(f"- {md_pair(example)}")
+            lines.append("")
+
+    question_heading = "Preguntas" if is_comparison else "Forma de pregunta"
+    question_level = "##" if is_comparison else "###"
+    lines += ["## Afirmativas" if is_comparison else "## Oraciones.", ""]
+    if not is_comparison:
+        lines += ["### Afirmativas", ""]
     for example in data["sentences"]["affirmative"]:
         lines.append(f"- {md_pair(example)}")
-    lines += ["", "### Negativa", ""]
+    lines += ["", "## Negativas" if is_comparison else "### Negativas", ""]
     for example in data["sentences"]["negative"]:
         lines.append(f"- {md_pair(example)}")
-    lines += ["", "### Preguntas", ""]
+    lines += ["", f"{question_level} {question_heading}", ""]
     for example in data["sentences"]["questions"]:
         lines.append(f"- {md_pair(example)}")
 
     lines += ["", "## Ejercicios", ""]
 
     if data["exercises"].get("select"):
-        lines += ["### Seleccionar", ""]
+        lines += ["### Selección simple", ""]
         for index, item in enumerate(data["exercises"]["select"], start=1):
             lines.append(f"{index}. {item['prompt']}")
             for option_index, option in zip(["a", "b", "c", "d"], item["options"]):
@@ -100,17 +115,12 @@ def render_markdown(row, data):
     for index, item in enumerate(data["exercises"]["complete"], start=1):
         lines += [f"{index}. {item['prompt']}", "", f"   {item['answer']}", ""]
 
-    if data["exercises"].get("yes_no"):
-        lines += ["### Preguntas de si/no", ""]
-        for index, item in enumerate(data["exercises"]["yes_no"], start=1):
-            lines += [f"{index}. {item['prompt']}", "", f"   {item['answer']}", ""]
-
-    lines += ["### Traducir", ""]
+    lines += ["### Traducción", ""]
     for index, item in enumerate(data["exercises"]["translate"], start=1):
         lines += [f"{index}. {item['prompt']}", "", f"   {item['answer']}", ""]
 
     lines += ["## Answer Key", ""]
-    for group in ["select", "complete", "yes_no", "translate"]:
+    for group in ["select", "complete", "translate"]:
         if group not in data["answers"]:
             continue
         lines += [f"### {ANSWER_GROUP_LABELS[group]}", ""]
@@ -173,6 +183,7 @@ def render_exercise_details(item):
 def render_html(row, data):
     lead_example = data["examples"][0]
     breadcrumb = f"Grammar / {row.get('grammar_tax', '').strip() or row['topic_base']} / {row['topic_base']}"
+    is_comparison = row.get("lesson_type") == "comparison"
     parts = [
         '<section class="lesson-hero">',
         f'  <div class="breadcrumb">{escape(breadcrumb)}</div>',
@@ -199,11 +210,29 @@ def render_html(row, data):
         "</section>",
     ]
 
+    if is_comparison:
+        parts += [
+            "",
+            '<section class="panel" id="uses">',
+            "  <h2>Cómo/cuándo lo usamos</h2>",
+            '  <div class="two-column">',
+        ]
+        for use in data["uses"]:
+            parts += [
+                '    <div class="example-group">',
+                f"      <h3>{escape(use['heading'])}</h3>",
+                f"      <p>{escape(use['body'])}</p>",
+                render_example_list(use["examples"], "sentence-list"),
+                "    </div>",
+            ]
+        parts += ["  </div>", "</section>"]
+
     if data.get("structure"):
+        structure_heading = "Comparación" if is_comparison else "Structure"
         parts += [
             "",
             '<section class="panel" id="structure">',
-            "  <h2>Structure</h2>",
+            f"  <h2>{structure_heading}</h2>",
             render_table(
                 ["Structure", "Example", "Translation"],
                 [[item["pattern"], item["example"], item["translation"]] for item in data["structure"]],
@@ -211,55 +240,75 @@ def render_html(row, data):
             "</section>",
         ]
 
-    parts += [
-        "",
-        '<section class="panel" id="conjugation">',
-        "  <h2>Conjugation</h2>",
-        render_table(
-            ["Subject", "Form", "Example", "Translation"],
-            [[item["subject"], item["form"], item["example"], item["translation"]] for item in data["conjugation"]],
-        ),
-    ]
-    if row.get("lesson_type") == "verb-usage":
-        parts.append('  <p class="sn-conjugation-practice">sn-conjugation-practice</p>')
-    parts.append("</section>")
-
-    parts += [
-        "",
-        '<section class="panel" id="uses">',
-        "  <h2>Uses</h2>",
-        '  <div class="two-column">',
-    ]
-    for use in data["uses"]:
+    if not is_comparison:
         parts += [
-            '    <div class="example-group">',
-            f"      <h3>{escape(use['heading'])}</h3>",
-            f"      <p>{escape(use['body'])}</p>",
-            render_example_list(use["examples"], "sentence-list"),
-            "    </div>",
+            "",
+            '<section class="panel" id="conjugation">',
+            "  <h2>Conjugation</h2>",
+            render_table(
+                ["Subject", "Form", "Example", "Translation"],
+                [[item["subject"], item["form"], item["example"], item["translation"]] for item in data["conjugation"]],
+            ),
         ]
-    parts += ["  </div>", "</section>"]
+        if row.get("lesson_type") == "verb-usage":
+            parts.append('  <p class="sn-conjugation-practice">sn-conjugation-practice</p>')
+        parts.append("</section>")
 
-    parts += [
-        "",
-        '<section class="panel" id="oraciones">',
-        "  <h2>Oraciones</h2>",
-        '  <div class="two-column">',
-        '    <div class="example-group">',
-        "      <h3>Afirmativa</h3>",
-        render_example_list(data["sentences"]["affirmative"], "sentence-list"),
-        "    </div>",
-        '    <div class="example-group">',
-        "      <h3>Negativa</h3>",
-        render_example_list(data["sentences"]["negative"], "sentence-list"),
-        "    </div>",
-        "  </div>",
-        '  <div class="example-bubble">',
-        "    <h3>Preguntas</h3>",
-        render_example_list(data["sentences"]["questions"], "question-list"),
-        "  </div>",
-        "</section>",
-    ]
+        parts += [
+            "",
+            '<section class="panel" id="uses">',
+            "  <h2>Uses</h2>",
+            '  <div class="two-column">',
+        ]
+        for use in data["uses"]:
+            parts += [
+                '    <div class="example-group">',
+                f"      <h3>{escape(use['heading'])}</h3>",
+                f"      <p>{escape(use['body'])}</p>",
+                render_example_list(use["examples"], "sentence-list"),
+                "    </div>",
+            ]
+        parts += ["  </div>", "</section>"]
+
+    if is_comparison:
+        parts += [
+            "",
+            '<section class="panel" id="afirmativas">',
+            "  <h2>Afirmativas</h2>",
+            render_example_list(data["sentences"]["affirmative"], "sentence-list"),
+            "</section>",
+            "",
+            '<section class="panel" id="negativas">',
+            "  <h2>Negativas</h2>",
+            render_example_list(data["sentences"]["negative"], "sentence-list"),
+            "</section>",
+            "",
+            '<section class="panel" id="preguntas">',
+            "  <h2>Preguntas</h2>",
+            render_example_list(data["sentences"]["questions"], "question-list"),
+            "</section>",
+        ]
+    else:
+        parts += [
+            "",
+            '<section class="panel" id="oraciones">',
+            "  <h2>Oraciones.</h2>",
+            '  <div class="two-column">',
+            '    <div class="example-group">',
+            "      <h3>Afirmativas</h3>",
+            render_example_list(data["sentences"]["affirmative"], "sentence-list"),
+            "    </div>",
+            '    <div class="example-group">',
+            "      <h3>Negativas</h3>",
+            render_example_list(data["sentences"]["negative"], "sentence-list"),
+            "    </div>",
+            "  </div>",
+            '  <div class="example-bubble">',
+            "    <h3>Forma de pregunta</h3>",
+            render_example_list(data["sentences"]["questions"], "question-list"),
+            "  </div>",
+            "</section>",
+        ]
 
     parts += [
         "",
@@ -269,7 +318,7 @@ def render_html(row, data):
     if data["exercises"].get("select"):
         parts += [
             '  <div class="exercise-block">',
-            '    <h3 class="exercise-title">Seleccionar</h3>',
+            '    <h3 class="exercise-title">Selección simple</h3>',
             '    <ol class="exercise-list">',
         ]
         for item in data["exercises"]["select"]:
@@ -292,21 +341,9 @@ def render_html(row, data):
         "    </ol>",
         "  </div>",
     ]
-    if data["exercises"].get("yes_no"):
-        parts += [
-            '  <div class="exercise-block">',
-            '    <h3 class="exercise-title">Preguntas de si/no</h3>',
-            '    <ol class="exercise-list">',
-        ]
-        for item in data["exercises"]["yes_no"]:
-            parts.append(f"      <li><p>{escape(item['prompt'])}</p>{render_exercise_details(item)}</li>")
-        parts += [
-            "    </ol>",
-            "  </div>",
-        ]
     parts += [
         '  <div class="exercise-block">',
-        '    <h3 class="exercise-title">Traducir</h3>',
+        '    <h3 class="exercise-title">Traducción</h3>',
         '    <ol class="exercise-list">',
     ]
     for item in data["exercises"]["translate"]:

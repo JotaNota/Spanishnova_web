@@ -22,7 +22,7 @@ def render_content(content_type, slug):
         raise SystemExit(f"Unsupported content type: {content_type}")
     if row.get("cpt", "").strip() != "grammar":
         raise SystemExit(f"Roadmap row cpt must be grammar for {slug}")
-    supported_grammar_lesson_types = {"verb-usage", "structure"}
+    supported_grammar_lesson_types = {"tense", "verb-usage", "structure", "comparison"}
     if row.get("lesson_type", "").strip() not in supported_grammar_lesson_types:
         raise SystemExit(f"Unsupported grammar lesson_type for {slug}: {row.get('lesson_type', '').strip()}")
 

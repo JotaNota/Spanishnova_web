@@ -48,7 +48,7 @@ def validate_grammar_data(data):
 
     exercises = require_dict(data, "exercises", "grammar content-data")
     require_fields(exercises, ["complete", "translate"], "grammar exercises")
-    for group in ["select", "yes_no", "complete", "translate"]:
+    for group in ["select", "complete", "translate"]:
         if group not in exercises:
             continue
         items = require_list(exercises, group, "grammar exercises")
@@ -59,6 +59,6 @@ def validate_grammar_data(data):
 
     answers = require_dict(data, "answers", "grammar content-data")
     require_fields(answers, ["complete", "translate"], "grammar answers")
-    for group in ["select", "yes_no"]:
+    for group in ["select"]:
         if group in exercises:
             require_fields(answers, [group], "grammar answers")

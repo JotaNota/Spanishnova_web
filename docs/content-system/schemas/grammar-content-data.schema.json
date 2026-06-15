@@ -121,11 +121,6 @@
           "minItems": 1,
           "items": { "$ref": "#/$defs/multiple_choice_exercise" }
         },
-        "yes_no": {
-          "type": "array",
-          "minItems": 1,
-          "items": { "$ref": "#/$defs/free_response_exercise" }
-        },
         "complete": {
           "type": "array",
           "minItems": 1,
@@ -144,7 +139,6 @@
       "required": ["complete", "translate"],
       "properties": {
         "select": { "type": "array", "items": { "type": "string" } },
-        "yes_no": { "type": "array", "items": { "type": "string" } },
         "complete": { "type": "array", "items": { "type": "string" } },
         "translate": { "type": "array", "items": { "type": "string" } }
       },
