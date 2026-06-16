@@ -46,6 +46,19 @@ Columns:
 | `priority`        | Production order. Lower numbers come first.                                              |
 | `output_folder`   | Folder where generated Markdown files are expected.                                      |
 
+### Grammar public title rules
+
+* `public_title` is the visible post title and generated H1.
+* Use SEO-readable titles, but do not force English grammar categories when they distort the Spanish grammar concept.
+* Keep valid learner-search terms when they match Spanish-learning usage, such as `preterite`, `imperfect`, `subjunctive`, `conditional`, `imperative`, `reflexive verbs`, and `object pronouns`.
+* Avoid public titles centered on English-only labels such as `present perfect`, `present progressive`, or `simple future`.
+* For those cases, prefer functional or Spanish-structure titles, such as:
+  * How to Talk About What You Have Done in Spanish
+  * How to Use “Haber + Participio” in Spanish
+  * How to Talk About What Is Happening Now in Spanish
+  * How to Use “Estar + Gerundio” in Spanish
+* English search labels may remain in `default_focus` or `post_tags`.
+
 ## Vocabulary roadmap
 
 File:
