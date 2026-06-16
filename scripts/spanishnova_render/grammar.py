@@ -24,7 +24,99 @@ def html_pair(item):
     return f"<strong>{escape(item['spanish'])}</strong> - {escape(item['english'])}"
 
 
+def md_arrow_pair(item):
+    return f"{item['spanish']} -> {item['english']}"
+
+
+def html_arrow_pair(item):
+    return f"<strong>{escape(item['spanish'])}</strong> &#8594; <em>{escape(item['english'])}</em>"
+
+
+def render_markdown_particle_set(row, data):
+    lines = [
+        data["intro"],
+        "",
+        "## Overview",
+        "",
+        data["overview"]["body"],
+        "",
+    ]
+
+    for example in data["examples"]:
+        lines.append(f"- {md_arrow_pair(example)}")
+
+    lines += ["", "## Formas", ""]
+    for item in data["forms"]:
+        lines.append(f"- {item['label']} -> {item['meaning']}")
+
+    if data.get("notes"):
+        lines += ["", "### Notas", ""]
+        for note in data["notes"]:
+            lines.append(f"- {note}")
+
+    lines += ["", "## Cómo/cuándo lo usamos", ""]
+    for use in data["uses"]:
+        lines += [f"### {use['heading']}", "", use["body"], ""]
+        for example in use["examples"]:
+            lines.append(f"- {md_arrow_pair(example)}")
+        lines.append("")
+
+    if data.get("forms_table"):
+        headers = data["forms_table"]["headers"]
+        lines += [
+            "| " + " | ".join(headers) + " |",
+            "| " + " | ".join(["---"] * len(headers)) + " |",
+        ]
+        for item in data["forms_table"]["rows"]:
+            lines.append("| " + " | ".join(item) + " |")
+        lines.append("")
+
+    lines += ["## Oraciones.", "", "### Afirmativas", ""]
+    for example in data["sentences"]["affirmative"]:
+        lines.append(f"- {md_arrow_pair(example)}")
+    lines += ["", "### Negativas", ""]
+    for example in data["sentences"]["negative"]:
+        lines.append(f"- {md_arrow_pair(example)}")
+    lines += ["", "### Forma de pregunta", ""]
+    for example in data["sentences"]["questions"]:
+        lines.append(f"- {md_arrow_pair(example)}")
+
+    lines += ["", "## Ejercicios", ""]
+
+    if data["exercises"].get("select"):
+        lines += ["### Selección simple", ""]
+        for index, item in enumerate(data["exercises"]["select"], start=1):
+            lines.append(f"{index}. {item['prompt']}")
+            for option_index, option in zip(["a", "b", "c", "d"], item["options"]):
+                lines.append(f"   - {option_index}) {option}")
+            lines += ["", f"   {item['answer']}", ""]
+
+    lines += ["### Completar", ""]
+    for index, item in enumerate(data["exercises"]["complete"], start=1):
+        lines += [f"{index}. {item['prompt']}", "", f"   {item['answer']}", ""]
+
+    lines += ["### Traducción", ""]
+    for index, item in enumerate(data["exercises"]["translate"], start=1):
+        lines += [f"{index}. {item['prompt']}", "", f"   {item['answer']}", ""]
+
+    wrap_up = data.get("wrap_up", [])
+    if wrap_up:
+        lines += [
+            "## Wrap Up",
+            "",
+            "| " + " | ".join(data.get("wrap_up_headers", ["Use", "Example", "Translation"])) + " |",
+            "| --- | --- | --- |",
+        ]
+        for item in wrap_up:
+            lines.append(f"| {item['use']} | {item['example']} | {item['translation']} |")
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def render_markdown(row, data):
+    if row.get("lesson_type") == "particle-set":
+        return render_markdown_particle_set(row, data)
+
     lines = [
         f"# {row['public_title']}",
         "",
@@ -142,7 +234,7 @@ def render_markdown(row, data):
     return "\n".join(lines).rstrip() + "\n"
 
 
-def render_table(headers, rows):
+def render_table(headers, rows, mark_last_column_as_translation=True):
     lines = [
         '  <table class="compact-table">',
         "    <thead>",
@@ -158,7 +250,7 @@ def render_table(headers, rows):
     for row in rows:
         lines.append("      <tr>")
         for index, cell in enumerate(row):
-            class_attr = ' class="translation"' if index == len(row) - 1 else ""
+            class_attr = ' class="translation"' if mark_last_column_as_translation and index == len(row) - 1 else ""
             lines.append(f"        <td{class_attr}>{escape(cell)}</td>")
         lines.append("      </tr>")
     lines += [
@@ -180,7 +272,140 @@ def render_exercise_details(item):
     return f"<details><summary>Respuesta</summary><p>{escape(item['answer'])}</p></details>"
 
 
+def render_particle_forms(items):
+    lines = ['  <ul class="forms-list">']
+    for item in items:
+        lines.append(f"    <li><strong>{escape(item['label'])}</strong> &#8594; {escape(item['meaning'])}</li>")
+    lines.append("  </ul>")
+    return "\n".join(lines)
+
+
+def render_particle_notes(items):
+    if not items:
+        return ""
+    lines = ["  <h3>Notas</h3>"]
+    for item in items:
+        lines.append(f"  <p>{escape(item)}</p>")
+    return "\n".join(lines)
+
+
+def render_particle_examples(items):
+    lines = ['  <ul class="sentence-list">']
+    for item in items:
+        lines.append(f"    <li>{html_arrow_pair(item)}</li>")
+    lines.append("  </ul>")
+    return "\n".join(lines)
+
+
+def render_html_particle_set(row, data):
+    parts = [
+        f'<p class="intro">{escape(data["intro"])}</p>',
+        "",
+        '<section id="overview">',
+        "  <h2>Overview</h2>",
+        f"  <p>{escape(data['overview']['body'])}</p>",
+        render_particle_examples(data["examples"]),
+        "</section>",
+        "",
+        '<section id="formas">',
+        "  <h2>Formas</h2>",
+        render_particle_forms(data["forms"]),
+    ]
+    notes = render_particle_notes(data.get("notes", []))
+    if notes:
+        parts.append(notes)
+    parts += [
+        "</section>",
+        "",
+        '<section id="usos">',
+        "  <h2>Cómo/cuándo lo usamos</h2>",
+    ]
+    for use in data["uses"]:
+        parts += [
+            f"  <h3>{escape(use['heading'])}</h3>",
+            f"  <p>{escape(use['body'])}</p>",
+            render_particle_examples(use["examples"]),
+        ]
+    if data.get("forms_table"):
+        parts.append(
+            render_table(
+                data["forms_table"]["headers"],
+                data["forms_table"]["rows"],
+                mark_last_column_as_translation=False,
+            )
+        )
+    parts += [
+        "</section>",
+        "",
+        '<section id="oraciones">',
+        "  <h2>Oraciones.</h2>",
+        "  <h3>Afirmativas</h3>",
+        render_particle_examples(data["sentences"]["affirmative"]),
+        "  <h3>Negativas</h3>",
+        render_particle_examples(data["sentences"]["negative"]),
+        "  <h3>Forma de pregunta</h3>",
+        render_particle_examples(data["sentences"]["questions"]),
+        "</section>",
+        "",
+        '<section id="ejercicios">',
+        "  <h2>Ejercicios</h2>",
+    ]
+    if data["exercises"].get("select"):
+        parts += [
+            '  <div class="exercise-block">',
+            '    <h3 class="exercise-title">Selección simple</h3>',
+            '    <ol class="exercise-list">',
+        ]
+        for item in data["exercises"]["select"]:
+            parts.append(f"      <li><p>{escape(item['prompt'])}</p><ol type=\"a\">")
+            for option in item["options"]:
+                parts.append(f"        <li>{escape(option)}</li>")
+            parts.append(f"      </ol>{render_exercise_details(item)}</li>")
+        parts += [
+            "    </ol>",
+            "  </div>",
+        ]
+    parts += [
+        '  <div class="exercise-block">',
+        '    <h3 class="exercise-title">Completar</h3>',
+        '    <ol class="exercise-list">',
+    ]
+    for item in data["exercises"]["complete"]:
+        parts.append(f"      <li><p>{escape(item['prompt'])}</p>{render_exercise_details(item)}</li>")
+    parts += [
+        "    </ol>",
+        "  </div>",
+        '  <div class="exercise-block">',
+        '    <h3 class="exercise-title">Traducción</h3>',
+        '    <ol class="exercise-list">',
+    ]
+    for item in data["exercises"]["translate"]:
+        parts.append(f"      <li><p>{escape(item['prompt'])}</p>{render_exercise_details(item)}</li>")
+    parts += [
+        "    </ol>",
+        "  </div>",
+        "</section>",
+    ]
+
+    if data.get("wrap_up"):
+        parts += [
+            "",
+            '<section id="wrap-up">',
+            "  <h2>Wrap Up</h2>",
+            render_table(
+                data.get("wrap_up_headers", ["Use", "Example", "Translation"]),
+                [[item["use"], item["example"], item["translation"]] for item in data["wrap_up"]],
+            ),
+            "</section>",
+        ]
+
+    return "\n".join(parts).rstrip() + "\n"
+
+
 def render_html(row, data):
+    if row.get("lesson_type") == "particle-set":
+        return render_html_particle_set(row, data)
+
     lead_example = data["examples"][0]
     breadcrumb = f"Grammar / {row.get('grammar_tax', '').strip() or row['topic_base']} / {row['topic_base']}"
     is_comparison = row.get("lesson_type") == "comparison"

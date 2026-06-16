@@ -9,6 +9,17 @@ REQUIRED_GRAMMAR_FIELDS = [
     "answers",
 ]
 
+REQUIRED_PARTICLE_SET_FIELDS = [
+    "intro",
+    "overview",
+    "examples",
+    "forms",
+    "uses",
+    "sentences",
+    "exercises",
+    "answers",
+]
+
 
 def require_fields(data, fields, context):
     missing = [field for field in fields if field not in data]
@@ -30,15 +41,20 @@ def require_dict(data, field, context):
     return value
 
 
-def validate_grammar_data(data):
-    require_fields(data, REQUIRED_GRAMMAR_FIELDS, "grammar content-data")
+def validate_grammar_data(data, lesson_type=None):
+    is_particle_set = lesson_type == "particle-set"
+    required_fields = REQUIRED_PARTICLE_SET_FIELDS if is_particle_set else REQUIRED_GRAMMAR_FIELDS
+    require_fields(data, required_fields, "grammar content-data")
     if not isinstance(data.get("intro"), str) or not data["intro"].strip():
         raise SystemExit("grammar content-data intro must be a non-empty string")
 
     overview = require_dict(data, "overview", "grammar content-data")
     require_fields(overview, ["body", "use_note"], "grammar overview")
     require_list(data, "examples", "grammar content-data")
-    require_list(data, "conjugation", "grammar content-data")
+    if is_particle_set:
+        require_list(data, "forms", "grammar content-data")
+    else:
+        require_list(data, "conjugation", "grammar content-data")
     require_list(data, "uses", "grammar content-data")
 
     sentences = require_dict(data, "sentences", "grammar content-data")

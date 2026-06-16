@@ -22,12 +22,12 @@ def render_content(content_type, slug):
         raise SystemExit(f"Unsupported content type: {content_type}")
     if row.get("cpt", "").strip() != "grammar":
         raise SystemExit(f"Roadmap row cpt must be grammar for {slug}")
-    supported_grammar_lesson_types = {"tense", "verb-usage", "structure", "comparison"}
+    supported_grammar_lesson_types = {"tense", "verb-usage", "structure", "comparison", "particle-set"}
     if row.get("lesson_type", "").strip() not in supported_grammar_lesson_types:
         raise SystemExit(f"Unsupported grammar lesson_type for {slug}: {row.get('lesson_type', '').strip()}")
 
     data = load_content_data(content_type, slug)
-    validate_grammar_data(data)
+    validate_grammar_data(data, row.get("lesson_type", "").strip())
 
     markdown_dir = GENERATED_MARKDOWN / content_type
     html_dir = GENERATED_HTML / content_type

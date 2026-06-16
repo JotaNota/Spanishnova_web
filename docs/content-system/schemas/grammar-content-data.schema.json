@@ -8,11 +8,14 @@
     "intro",
     "overview",
     "examples",
-    "conjugation",
     "uses",
     "sentences",
     "exercises",
     "answers"
+  ],
+  "anyOf": [
+    { "required": ["conjugation"] },
+    { "required": ["forms"] }
   ],
   "properties": {
     "intro": {
@@ -55,6 +58,47 @@
           "translation": { "type": "string", "minLength": 1 }
         }
       }
+    },
+    "forms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "meaning"],
+        "properties": {
+          "label": { "type": "string", "minLength": 1 },
+          "meaning": { "type": "string", "minLength": 1 }
+        }
+      },
+      "description": "Particle-set forms such as mi / mis -> my."
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Short notes for particle-set form behavior."
+    },
+    "forms_table": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["headers", "rows"],
+      "properties": {
+        "headers": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      },
+      "description": "Optional particle-set usage table. Do not use a generic Form column for particle sets."
     },
     "conjugation": {
       "type": "array",
@@ -156,6 +200,13 @@
           "translation": { "type": "string", "minLength": 1 }
         }
       }
+    },
+    "wrap_up_headers": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Optional table headers for generated Wrap Up tables."
     }
   },
   "$defs": {

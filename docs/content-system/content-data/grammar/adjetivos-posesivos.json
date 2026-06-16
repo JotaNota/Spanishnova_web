@@ -1,0 +1,229 @@
+{
+  "intro": "Possessive adjectives show who owns something. In Spanish, mi, tu, su, and nuestro go before the noun they describe.",
+  "overview": {
+    "body": "Possessive adjectives agree with the thing possessed.",
+    "use_note": "possessive adjectives before nouns"
+  },
+  "examples": [
+    {
+      "spanish": "Mi libro está en la mesa.",
+      "english": "My book is on the table."
+    },
+    {
+      "spanish": "Mis libros están en la mesa.",
+      "english": "My books are on the table."
+    }
+  ],
+  "forms": [
+    {
+      "label": "mi / mis",
+      "meaning": "my"
+    },
+    {
+      "label": "tu / tus",
+      "meaning": "your"
+    },
+    {
+      "label": "su / sus",
+      "meaning": "his, her, your formal, their"
+    },
+    {
+      "label": "nuestro / nuestra / nuestros / nuestras",
+      "meaning": "our"
+    }
+  ],
+  "notes": [
+    "Mi, tu, and su only change between singular and plural.",
+    "Nuestro changes for masculine, feminine, singular, and plural nouns."
+  ],
+  "uses": [
+    {
+      "heading": "Possessive Adjectives Before Nouns",
+      "body": "Possessive adjectives go before the noun.",
+      "examples": [
+        {
+          "spanish": "Mi teléfono está aquí.",
+          "english": "My phone is here."
+        },
+        {
+          "spanish": "Nuestra clase empieza ahora.",
+          "english": "Our class starts now."
+        }
+      ]
+    }
+  ],
+  "forms_table": {
+    "headers": ["Pronombre", "Adjetivo posesivo", "Singular", "Plural"],
+    "rows": [
+      ["Yo", "mi / mis", "mi libro", "mis libros"],
+      ["Tú", "tu / tus", "tu casa", "tus casas"],
+      ["Él / Ella / Usted", "su / sus", "su teléfono", "sus teléfonos"],
+      ["Nosotros / Nosotras", "nuestro / nuestra / nuestros / nuestras", "nuestro libro / nuestra casa", "nuestros libros / nuestras casas"],
+      ["Ellos / Ellas / Ustedes", "su / sus", "su profesor", "sus profesores"]
+    ]
+  },
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Mi libro está en la mesa.",
+        "english": "My book is on the table."
+      },
+      {
+        "spanish": "Tus amigos son amables.",
+        "english": "Your friends are kind."
+      },
+      {
+        "spanish": "Su teléfono está aquí.",
+        "english": "His, her, your formal, or their phone is here."
+      },
+      {
+        "spanish": "Nuestras clases son útiles.",
+        "english": "Our classes are useful."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "Mi teléfono no funciona.",
+        "english": "My phone does not work."
+      },
+      {
+        "spanish": "Tus respuestas no son correctas.",
+        "english": "Your answers are not correct."
+      },
+      {
+        "spanish": "Su oficina no está abierta.",
+        "english": "His, her, your formal, or their office is not open."
+      },
+      {
+        "spanish": "Nuestros libros no están aquí.",
+        "english": "Our books are not here."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Es tu mochila?",
+        "english": "Is it your backpack?"
+      },
+      {
+        "spanish": "¿Son sus hijos?",
+        "english": "Are they his, her, your formal, or their children?"
+      },
+      {
+        "spanish": "¿Nuestra clase empieza ahora?",
+        "english": "Does our class start now?"
+      },
+      {
+        "spanish": "¿Dónde están mis llaves?",
+        "english": "Where are my keys?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "_____ libro está en la mesa.",
+        "options": ["Mi", "Mis", "Nuestra"],
+        "answer": "Mi libro está en la mesa."
+      },
+      {
+        "prompt": "_____ libros están en la mesa.",
+        "options": ["Mi", "Mis", "Nuestro"],
+        "answer": "Mis libros están en la mesa."
+      },
+      {
+        "prompt": "_____ casa es grande.",
+        "options": ["Nuestros", "Nuestra", "Nuestras"],
+        "answer": "Nuestra casa es grande."
+      },
+      {
+        "prompt": "_____ preguntas son buenas.",
+        "options": ["Su", "Sus", "Mi"],
+        "answer": "Sus preguntas son buenas."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "___ teléfono está aquí.",
+        "answer": "Mi teléfono está aquí."
+      },
+      {
+        "prompt": "___ libros son nuevos.",
+        "answer": "Tus libros son nuevos."
+      },
+      {
+        "prompt": "___ profesor es amable.",
+        "answer": "Nuestro profesor es amable."
+      },
+      {
+        "prompt": "___ clases son útiles.",
+        "answer": "Nuestras clases son útiles."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "My book is on the table.",
+        "answer": "Mi libro está en la mesa."
+      },
+      {
+        "prompt": "My books are on the table.",
+        "answer": "Mis libros están en la mesa."
+      },
+      {
+        "prompt": "Your house is big.",
+        "answer": "Tu casa es grande."
+      },
+      {
+        "prompt": "Our classes are useful.",
+        "answer": "Nuestras clases son útiles."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Mi libro está en la mesa.",
+      "Mis libros están en la mesa.",
+      "Nuestra casa es grande.",
+      "Sus preguntas son buenas."
+    ],
+    "complete": [
+      "Mi teléfono está aquí.",
+      "Tus libros son nuevos.",
+      "Nuestro profesor es amable.",
+      "Nuestras clases son útiles."
+    ],
+    "translate": [
+      "Mi libro está en la mesa.",
+      "Mis libros están en la mesa.",
+      "Tu casa es grande.",
+      "Nuestras clases son útiles."
+    ]
+  },
+  "wrap_up_headers": ["Pronombre", "Example", "Translation"],
+  "wrap_up": [
+    {
+      "use": "Yo",
+      "example": "mi libro / mis libros",
+      "translation": "my book / my books"
+    },
+    {
+      "use": "Tú",
+      "example": "tu casa / tus casas",
+      "translation": "your house / your houses"
+    },
+    {
+      "use": "Él / Ella / Usted",
+      "example": "su teléfono / sus teléfonos",
+      "translation": "his, her, or your formal phone / phones"
+    },
+    {
+      "use": "Nosotros / Nosotras",
+      "example": "nuestro libro / nuestra casa / nuestros libros / nuestras casas",
+      "translation": "our book / our house / our books / our houses"
+    },
+    {
+      "use": "Ellos / Ellas / Ustedes",
+      "example": "su profesor / sus profesores",
+      "translation": "their or your plural teacher / teachers"
+    }
+  ]
+}
