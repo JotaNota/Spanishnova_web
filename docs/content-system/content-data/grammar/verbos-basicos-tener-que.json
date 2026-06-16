@@ -1,0 +1,253 @@
+{
+  "intro": "Tener que plus an infinitive is the most common way to say that someone has to do something in Spanish. The second verb stays in the infinitive form.",
+  "overview": {
+    "body": "Conjugate tener for the subject, add que, and then use an infinitive such as estudiar, trabajar, comer, or salir.",
+    "use_note": "basic infinitives with tener que"
+  },
+  "examples": [
+    {
+      "spanish": "Tengo que estudiar.",
+      "english": "I have to study."
+    },
+    {
+      "spanish": "Ella tiene que trabajar.",
+      "english": "She has to work."
+    },
+    {
+      "spanish": "Tenemos que salir ahora.",
+      "english": "We have to leave now."
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "subject + tener + que + infinitive",
+      "example": "Yo tengo que practicar.",
+      "translation": "I have to practice."
+    },
+    {
+      "pattern": "subject + no + tener + que + infinitive",
+      "example": "Tu no tienes que esperar.",
+      "translation": "You do not have to wait."
+    },
+    {
+      "pattern": "tener + subject + que + infinitive?",
+      "example": "Tienes que trabajar hoy?",
+      "translation": "Do you have to work today?"
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Yo",
+      "form": "tengo que + infinitive",
+      "example": "Yo tengo que leer.",
+      "translation": "I have to read."
+    },
+    {
+      "subject": "Tu",
+      "form": "tienes que + infinitive",
+      "example": "Tu tienes que escuchar.",
+      "translation": "You have to listen."
+    },
+    {
+      "subject": "El / Ella / Usted",
+      "form": "tiene que + infinitive",
+      "example": "Ella tiene que estudiar.",
+      "translation": "She has to study."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "tenemos que + infinitive",
+      "example": "Nosotros tenemos que practicar.",
+      "translation": "We have to practice."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "tienen que + infinitive",
+      "example": "Ellos tienen que trabajar.",
+      "translation": "They have to work."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Obligation",
+      "body": "Use tener que to talk about a specific obligation for a person or group.",
+      "examples": [
+        {
+          "spanish": "Tengo que hacer la tarea.",
+          "english": "I have to do the homework."
+        },
+        {
+          "spanish": "Ustedes tienen que llegar temprano.",
+          "english": "You all have to arrive early."
+        }
+      ]
+    },
+    {
+      "heading": "Simple Daily Tasks",
+      "body": "Use tener que with common infinitives to describe what people need to do.",
+      "examples": [
+        {
+          "spanish": "Mi hermano tiene que limpiar su cuarto.",
+          "english": "My brother has to clean his room."
+        },
+        {
+          "spanish": "Tenemos que comprar comida.",
+          "english": "We have to buy food."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Yo tengo que estudiar espanol.",
+        "english": "I have to study Spanish."
+      },
+      {
+        "spanish": "Tu tienes que llamar a tu madre.",
+        "english": "You have to call your mother."
+      },
+      {
+        "spanish": "Ella tiene que preparar la cena.",
+        "english": "She has to prepare dinner."
+      },
+      {
+        "spanish": "Nosotros tenemos que salir temprano.",
+        "english": "We have to leave early."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No tengo que trabajar manana.",
+        "english": "I do not have to work tomorrow."
+      },
+      {
+        "spanish": "Tu no tienes que pagar ahora.",
+        "english": "You do not have to pay now."
+      },
+      {
+        "spanish": "El no tiene que conducir hoy.",
+        "english": "He does not have to drive today."
+      },
+      {
+        "spanish": "Ellos no tienen que esperar.",
+        "english": "They do not have to wait."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "Tienes que estudiar esta noche?",
+        "english": "Do you have to study tonight?"
+      },
+      {
+        "spanish": "Ella tiene que venir a clase?",
+        "english": "Does she have to come to class?"
+      },
+      {
+        "spanish": "Tenemos que usar este libro?",
+        "english": "Do we have to use this book?"
+      },
+      {
+        "spanish": "Ustedes tienen que practicar?",
+        "english": "Do you all have to practice?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ que estudiar.",
+        "options": ["tengo", "tiene", "tienen"],
+        "answer": "Yo tengo que estudiar."
+      },
+      {
+        "prompt": "Tu _____ que escuchar.",
+        "options": ["tiene", "tienes", "tenemos"],
+        "answer": "Tu tienes que escuchar."
+      },
+      {
+        "prompt": "Ella tiene que _____.",
+        "options": ["trabaja", "trabajar", "trabajo"],
+        "answer": "Ella tiene que trabajar."
+      },
+      {
+        "prompt": "Nosotros _____ que practicar.",
+        "options": ["tenemos", "tienen", "tengo"],
+        "answer": "Nosotros tenemos que practicar."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ que leer.",
+        "answer": "Yo tengo que leer."
+      },
+      {
+        "prompt": "Tu tienes que ___.",
+        "answer": "Tu tienes que estudiar."
+      },
+      {
+        "prompt": "Ella ___ que trabajar.",
+        "answer": "Ella tiene que trabajar."
+      },
+      {
+        "prompt": "Ellos ___ que salir.",
+        "answer": "Ellos tienen que salir."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I have to study.",
+        "answer": "Tengo que estudiar."
+      },
+      {
+        "prompt": "You have to listen.",
+        "answer": "Tu tienes que escuchar."
+      },
+      {
+        "prompt": "She has to work.",
+        "answer": "Ella tiene que trabajar."
+      },
+      {
+        "prompt": "We have to leave now.",
+        "answer": "Tenemos que salir ahora."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo tengo que estudiar.",
+      "Tu tienes que escuchar.",
+      "Ella tiene que trabajar.",
+      "Nosotros tenemos que practicar."
+    ],
+    "complete": [
+      "Yo tengo que leer.",
+      "Tu tienes que estudiar.",
+      "Ella tiene que trabajar.",
+      "Ellos tienen que salir."
+    ],
+    "translate": [
+      "Tengo que estudiar.",
+      "Tu tienes que escuchar.",
+      "Ella tiene que trabajar.",
+      "Tenemos que salir ahora."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Obligation",
+      "example": "Tengo que estudiar.",
+      "translation": "I have to study."
+    },
+    {
+      "use": "Negative obligation",
+      "example": "No tienes que pagar.",
+      "translation": "You do not have to pay."
+    },
+    {
+      "use": "Question",
+      "example": "Tienes que trabajar hoy?",
+      "translation": "Do you have to work today?"
+    }
+  ]
+}
