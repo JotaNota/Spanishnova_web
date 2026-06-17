@@ -1,0 +1,201 @@
+{
+  "intro": "Reflexive verbs are very common when you describe a daily routine. They show that the person doing the action also receives the action.",
+  "overview": {
+    "body": "In daily routine phrases, the reflexive pronoun changes with the subject: me, te, se, nos, se. The verb also changes normally for the tense you are using.",
+    "use_note": "reflexive verbs for daily routines"
+  },
+  "examples": [
+    {
+      "spanish": "Me levanto a las siete.",
+      "english": "I get up at seven."
+    },
+    {
+      "spanish": "Ella se ducha por la mañana.",
+      "english": "She showers in the morning."
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "subject + reflexive pronoun + verb",
+      "example": "Yo me despierto temprano.",
+      "translation": "I wake up early."
+    },
+    {
+      "pattern": "no + reflexive pronoun + verb",
+      "example": "No me afeito los domingos.",
+      "translation": "I do not shave on Sundays."
+    },
+    {
+      "pattern": "question + reflexive pronoun + verb",
+      "example": "¿Te bañas por la noche?",
+      "translation": "Do you bathe at night?"
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Morning routines",
+      "body": "Use reflexive verbs for actions people usually do to themselves in the morning.",
+      "examples": [
+        {
+          "spanish": "Me lavo la cara.",
+          "english": "I wash my face."
+        },
+        {
+          "spanish": "Nos vestimos rápido.",
+          "english": "We get dressed quickly."
+        }
+      ]
+    },
+    {
+      "heading": "Evening routines",
+      "body": "Reflexive verbs also describe routines before sleeping or resting.",
+      "examples": [
+        {
+          "spanish": "Los niños se acuestan temprano.",
+          "english": "The children go to bed early."
+        },
+        {
+          "spanish": "Tú te cepillas los dientes.",
+          "english": "You brush your teeth."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Me despierto a las seis.",
+        "english": "I wake up at six."
+      },
+      {
+        "spanish": "Tú te duchas después de correr.",
+        "english": "You shower after running."
+      },
+      {
+        "spanish": "Él se viste para la clase.",
+        "english": "He gets dressed for class."
+      },
+      {
+        "spanish": "Nosotros nos acostamos tarde.",
+        "english": "We go to bed late."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No me levanto tarde.",
+        "english": "I do not get up late."
+      },
+      {
+        "spanish": "Ella no se maquilla hoy.",
+        "english": "She is not putting on makeup today."
+      },
+      {
+        "spanish": "Ustedes no se bañan por la mañana.",
+        "english": "You all do not bathe in the morning."
+      },
+      {
+        "spanish": "Nosotros no nos afeitamos todos los días.",
+        "english": "We do not shave every day."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Te despiertas temprano?",
+        "english": "Do you wake up early?"
+      },
+      {
+        "spanish": "¿Ella se ducha ahora?",
+        "english": "Is she showering now?"
+      },
+      {
+        "spanish": "¿Nos lavamos las manos?",
+        "english": "Do we wash our hands?"
+      },
+      {
+        "spanish": "¿Ellos se acuestan a las diez?",
+        "english": "Do they go to bed at ten?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ levanto temprano.",
+        "options": ["me", "te", "se"],
+        "answer": "Yo me levanto temprano."
+      },
+      {
+        "prompt": "Tú _____ duchas después.",
+        "options": ["me", "te", "nos"],
+        "answer": "Tú te duchas después."
+      },
+      {
+        "prompt": "Ellas _____ acuestan tarde.",
+        "options": ["se", "te", "me"],
+        "answer": "Ellas se acuestan tarde."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ lavo la cara.",
+        "answer": "Yo me lavo la cara."
+      },
+      {
+        "prompt": "Nosotros ___ vestimos rápido.",
+        "answer": "Nosotros nos vestimos rápido."
+      },
+      {
+        "prompt": "Ella ___ cepilla los dientes.",
+        "answer": "Ella se cepilla los dientes."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I get up at seven.",
+        "answer": "Me levanto a las siete."
+      },
+      {
+        "prompt": "She showers in the morning.",
+        "answer": "Ella se ducha por la mañana."
+      },
+      {
+        "prompt": "Do you brush your teeth?",
+        "answer": "¿Te cepillas los dientes?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo me levanto temprano.",
+      "Tú te duchas después.",
+      "Ellas se acuestan tarde."
+    ],
+    "complete": [
+      "Yo me lavo la cara.",
+      "Nosotros nos vestimos rápido.",
+      "Ella se cepilla los dientes."
+    ],
+    "translate": [
+      "Me levanto a las siete.",
+      "Ella se ducha por la mañana.",
+      "¿Te cepillas los dientes?"
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "First person",
+      "example": "Me levanto temprano.",
+      "translation": "I get up early."
+    },
+    {
+      "use": "Third person",
+      "example": "Ella se ducha por la mañana.",
+      "translation": "She showers in the morning."
+    },
+    {
+      "use": "Question",
+      "example": "¿Te cepillas los dientes?",
+      "translation": "Do you brush your teeth?"
+    }
+  ]
+}

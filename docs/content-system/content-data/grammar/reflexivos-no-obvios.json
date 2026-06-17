@@ -1,0 +1,201 @@
+{
+  "intro": "Some Spanish reflexive verbs do not translate naturally with myself, yourself, or himself. They are reflexive in Spanish because the action or change centers on the subject.",
+  "overview": {
+    "body": "Non-obvious reflexives often describe emotion, movement, change, or personal involvement. In English, they may translate as to leave, to stay, to realize, or to remember.",
+    "use_note": "reflexives that do not sound reflexive in English"
+  },
+  "examples": [
+    {
+      "spanish": "Me quedo en casa.",
+      "english": "I stay at home."
+    },
+    {
+      "spanish": "Ella se acuerda de la fecha.",
+      "english": "She remembers the date."
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "reflexive pronoun + verb with non-literal meaning",
+      "example": "Nos damos cuenta del problema.",
+      "translation": "We realize the problem."
+    },
+    {
+      "pattern": "reflexive verb + de",
+      "example": "Me acuerdo de tu dirección.",
+      "translation": "I remember your address."
+    },
+    {
+      "pattern": "reflexive verb + place",
+      "example": "Ellos se quedan aquí.",
+      "translation": "They stay here."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Mental actions",
+      "body": "Some reflexives describe noticing, realizing, forgetting, or remembering.",
+      "examples": [
+        {
+          "spanish": "Tú te das cuenta muy rápido.",
+          "english": "You realize it very quickly."
+        },
+        {
+          "spanish": "No me olvido de la reunión.",
+          "english": "I do not forget the meeting."
+        }
+      ]
+    },
+    {
+      "heading": "Personal movement or staying",
+      "body": "Other reflexives describe what happens with the subject's own movement or location.",
+      "examples": [
+        {
+          "spanish": "Ana se va después de la clase.",
+          "english": "Ana leaves after class."
+        },
+        {
+          "spanish": "Nos quedamos en el hotel.",
+          "english": "We stay at the hotel."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Me acuerdo de tu nombre.",
+        "english": "I remember your name."
+      },
+      {
+        "spanish": "Tú te das cuenta del cambio.",
+        "english": "You realize the change."
+      },
+      {
+        "spanish": "Ella se va temprano.",
+        "english": "She leaves early."
+      },
+      {
+        "spanish": "Nosotros nos quedamos aquí.",
+        "english": "We stay here."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No me olvido de la tarea.",
+        "english": "I do not forget the homework."
+      },
+      {
+        "spanish": "Él no se acuerda del número.",
+        "english": "He does not remember the number."
+      },
+      {
+        "spanish": "Nosotros no nos vamos ahora.",
+        "english": "We are not leaving now."
+      },
+      {
+        "spanish": "Ustedes no se quedan en la oficina.",
+        "english": "You all do not stay in the office."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Te acuerdas de mí?",
+        "english": "Do you remember me?"
+      },
+      {
+        "spanish": "¿Ella se da cuenta?",
+        "english": "Does she realize?"
+      },
+      {
+        "spanish": "¿Nos vamos después?",
+        "english": "Are we leaving later?"
+      },
+      {
+        "spanish": "¿Ellos se quedan aquí?",
+        "english": "Are they staying here?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ acuerdo de la fecha.",
+        "options": ["me", "te", "se"],
+        "answer": "Yo me acuerdo de la fecha."
+      },
+      {
+        "prompt": "Nosotros _____ quedamos aquí.",
+        "options": ["nos", "se", "me"],
+        "answer": "Nosotros nos quedamos aquí."
+      },
+      {
+        "prompt": "Ella _____ va temprano.",
+        "options": ["se", "te", "nos"],
+        "answer": "Ella se va temprano."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Tú ___ das cuenta.",
+        "answer": "Tú te das cuenta."
+      },
+      {
+        "prompt": "Yo no ___ olvido de la clase.",
+        "answer": "Yo no me olvido de la clase."
+      },
+      {
+        "prompt": "Ellos ___ quedan en casa.",
+        "answer": "Ellos se quedan en casa."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I remember your name.",
+        "answer": "Me acuerdo de tu nombre."
+      },
+      {
+        "prompt": "She leaves early.",
+        "answer": "Ella se va temprano."
+      },
+      {
+        "prompt": "Do you realize?",
+        "answer": "¿Te das cuenta?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo me acuerdo de la fecha.",
+      "Nosotros nos quedamos aquí.",
+      "Ella se va temprano."
+    ],
+    "complete": [
+      "Tú te das cuenta.",
+      "Yo no me olvido de la clase.",
+      "Ellos se quedan en casa."
+    ],
+    "translate": [
+      "Me acuerdo de tu nombre.",
+      "Ella se va temprano.",
+      "¿Te das cuenta?"
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Remember",
+      "example": "Me acuerdo de tu nombre.",
+      "translation": "I remember your name."
+    },
+    {
+      "use": "Realize",
+      "example": "Nos damos cuenta del problema.",
+      "translation": "We realize the problem."
+    },
+    {
+      "use": "Stay or leave",
+      "example": "Ella se queda aquí.",
+      "translation": "She stays here."
+    }
+  ]
+}

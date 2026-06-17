@@ -1,0 +1,211 @@
+{
+  "intro": "Place adverbs tell us where something is or where something happens. In Spanish, aquí, ahí, and allí help you point to places with different levels of distance.",
+  "overview": {
+    "body": "Aquí means here, ahí means there near the listener or a place already mentioned, and allí means over there or there farther away.",
+    "use_note": "place adverbs for here and there"
+  },
+  "examples": [
+    {
+      "spanish": "Estoy aquí.",
+      "english": "I am here."
+    },
+    {
+      "spanish": "El libro está allí.",
+      "english": "The book is over there."
+    }
+  ],
+  "forms": [
+    {
+      "label": "aquí",
+      "meaning": "here"
+    },
+    {
+      "label": "ahí",
+      "meaning": "there"
+    },
+    {
+      "label": "allí",
+      "meaning": "over there"
+    }
+  ],
+  "notes": [
+    "Aquí is close to the speaker.",
+    "Ahí is often close to the listener or easy to identify from context.",
+    "Allí usually points to a place farther away."
+  ],
+  "uses": [
+    {
+      "heading": "Pointing to a place",
+      "body": "Use these adverbs after verbs like estar, vivir, trabajar, and esperar.",
+      "examples": [
+        {
+          "spanish": "Mi mochila está ahí.",
+          "english": "My backpack is there."
+        },
+        {
+          "spanish": "Mis amigos viven allí.",
+          "english": "My friends live over there."
+        }
+      ]
+    },
+    {
+      "heading": "Answering where questions",
+      "body": "These words are common short answers to questions with dónde.",
+      "examples": [
+        {
+          "spanish": "¿Dónde está Ana? Está aquí.",
+          "english": "Where is Ana? She is here."
+        },
+        {
+          "spanish": "¿Dónde esperamos? Esperamos ahí.",
+          "english": "Where do we wait? We wait there."
+        }
+      ]
+    }
+  ],
+  "forms_table": {
+    "headers": ["Adverbio", "Meaning", "Distance"],
+    "rows": [
+      ["aquí", "here", "close to the speaker"],
+      ["ahí", "there", "near the listener or already identified"],
+      ["allí", "over there", "farther away"]
+    ]
+  },
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "La clase empieza aquí.",
+        "english": "The class starts here."
+      },
+      {
+        "spanish": "Tu teléfono está ahí.",
+        "english": "Your phone is there."
+      },
+      {
+        "spanish": "La farmacia está allí.",
+        "english": "The pharmacy is over there."
+      },
+      {
+        "spanish": "Nosotros trabajamos aquí.",
+        "english": "We work here."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No vivo aquí.",
+        "english": "I do not live here."
+      },
+      {
+        "spanish": "La llave no está ahí.",
+        "english": "The key is not there."
+      },
+      {
+        "spanish": "Ellos no esperan allí.",
+        "english": "They do not wait over there."
+      },
+      {
+        "spanish": "La oficina no está aquí.",
+        "english": "The office is not here."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Estás aquí?",
+        "english": "Are you here?"
+      },
+      {
+        "spanish": "¿El café está ahí?",
+        "english": "Is the coffee there?"
+      },
+      {
+        "spanish": "¿Tus amigos viven allí?",
+        "english": "Do your friends live over there?"
+      },
+      {
+        "spanish": "¿Nos sentamos aquí?",
+        "english": "Do we sit here?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Estoy _____.",
+        "options": ["aquí", "alto", "bueno"],
+        "answer": "Estoy aquí."
+      },
+      {
+        "prompt": "Tu mochila está _____.",
+        "options": ["ahí", "muy", "dos"],
+        "answer": "Tu mochila está ahí."
+      },
+      {
+        "prompt": "La estación está _____.",
+        "options": ["allí", "azul", "nunca"],
+        "answer": "La estación está allí."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "La clase empieza ___.",
+        "answer": "La clase empieza aquí."
+      },
+      {
+        "prompt": "El libro está ___.",
+        "answer": "El libro está ahí."
+      },
+      {
+        "prompt": "Mis primos viven ___.",
+        "answer": "Mis primos viven allí."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I am here.",
+        "answer": "Estoy aquí."
+      },
+      {
+        "prompt": "The phone is there.",
+        "answer": "El teléfono está ahí."
+      },
+      {
+        "prompt": "The school is over there.",
+        "answer": "La escuela está allí."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Estoy aquí.",
+      "Tu mochila está ahí.",
+      "La estación está allí."
+    ],
+    "complete": [
+      "La clase empieza aquí.",
+      "El libro está ahí.",
+      "Mis primos viven allí."
+    ],
+    "translate": [
+      "Estoy aquí.",
+      "El teléfono está ahí.",
+      "La escuela está allí."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "aquí",
+      "example": "Estoy aquí.",
+      "translation": "I am here."
+    },
+    {
+      "use": "ahí",
+      "example": "Tu mochila está ahí.",
+      "translation": "Your backpack is there."
+    },
+    {
+      "use": "allí",
+      "example": "La estación está allí.",
+      "translation": "The station is over there."
+    }
+  ]
+}

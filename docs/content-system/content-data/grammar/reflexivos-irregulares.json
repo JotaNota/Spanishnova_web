@@ -1,0 +1,201 @@
+{
+  "intro": "Some reflexive verbs are irregular in the present tense. The reflexive pronoun still matches the subject, but the verb stem may also change.",
+  "overview": {
+    "body": "Common irregular reflexive verbs include despertarse, acostarse, vestirse, sentirse, divertirse, and ponerse. Learn the pronoun and the irregular verb form together.",
+    "use_note": "irregular reflexive verbs in everyday Spanish"
+  },
+  "examples": [
+    {
+      "spanish": "Me despierto temprano.",
+      "english": "I wake up early."
+    },
+    {
+      "spanish": "Nos vestimos para la fiesta.",
+      "english": "We get dressed for the party."
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "reflexive pronoun + stem-changing verb",
+      "example": "Ella se siente cansada.",
+      "translation": "She feels tired."
+    },
+    {
+      "pattern": "reflexive pronoun + irregular yo form",
+      "example": "Me pongo la chaqueta.",
+      "translation": "I put on the jacket."
+    },
+    {
+      "pattern": "no + reflexive pronoun + irregular verb",
+      "example": "No nos divertimos en esa clase.",
+      "translation": "We do not have fun in that class."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Stem changes with reflexive pronouns",
+      "body": "Many irregular reflexive verbs change the stem in the same forms as non-reflexive stem-changing verbs.",
+      "examples": [
+        {
+          "spanish": "Tú te acuestas tarde.",
+          "english": "You go to bed late."
+        },
+        {
+          "spanish": "Ellos se despiertan a las ocho.",
+          "english": "They wake up at eight."
+        }
+      ]
+    },
+    {
+      "heading": "Meaning stays reflexive",
+      "body": "The irregular form changes the verb shape, but the reflexive pronoun still shows who receives the action.",
+      "examples": [
+        {
+          "spanish": "Me siento mejor hoy.",
+          "english": "I feel better today."
+        },
+        {
+          "spanish": "Ustedes se divierten mucho.",
+          "english": "You all have a lot of fun."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Me pongo los zapatos.",
+        "english": "I put on my shoes."
+      },
+      {
+        "spanish": "Tú te sientes bien.",
+        "english": "You feel well."
+      },
+      {
+        "spanish": "Ella se despierta temprano.",
+        "english": "She wakes up early."
+      },
+      {
+        "spanish": "Nosotros nos vestimos rápido.",
+        "english": "We get dressed quickly."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No me acuesto tarde.",
+        "english": "I do not go to bed late."
+      },
+      {
+        "spanish": "Él no se siente enfermo.",
+        "english": "He does not feel sick."
+      },
+      {
+        "spanish": "Nosotros no nos divertimos aquí.",
+        "english": "We do not have fun here."
+      },
+      {
+        "spanish": "Ellas no se visten para la reunión.",
+        "english": "They do not get dressed for the meeting."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Te despiertas a las siete?",
+        "english": "Do you wake up at seven?"
+      },
+      {
+        "spanish": "¿Se siente mejor Ana?",
+        "english": "Does Ana feel better?"
+      },
+      {
+        "spanish": "¿Nos ponemos los abrigos?",
+        "english": "Do we put on our coats?"
+      },
+      {
+        "spanish": "¿Ustedes se divierten en clase?",
+        "english": "Do you all have fun in class?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ pongo la camisa.",
+        "options": ["me", "te", "se"],
+        "answer": "Yo me pongo la camisa."
+      },
+      {
+        "prompt": "Ella se _____ cansada.",
+        "options": ["siente", "siento", "sentimos"],
+        "answer": "Ella se siente cansada."
+      },
+      {
+        "prompt": "Nosotros nos _____.",
+        "options": ["vestimos", "visten", "visto"],
+        "answer": "Nosotros nos vestimos."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Tú ___ despiertas temprano.",
+        "answer": "Tú te despiertas temprano."
+      },
+      {
+        "prompt": "Ellos se ___ en la fiesta.",
+        "answer": "Ellos se divierten en la fiesta."
+      },
+      {
+        "prompt": "Yo me ___ mejor.",
+        "answer": "Yo me siento mejor."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I put on the jacket.",
+        "answer": "Me pongo la chaqueta."
+      },
+      {
+        "prompt": "She feels tired.",
+        "answer": "Ella se siente cansada."
+      },
+      {
+        "prompt": "Do you wake up early?",
+        "answer": "¿Te despiertas temprano?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo me pongo la camisa.",
+      "Ella se siente cansada.",
+      "Nosotros nos vestimos."
+    ],
+    "complete": [
+      "Tú te despiertas temprano.",
+      "Ellos se divierten en la fiesta.",
+      "Yo me siento mejor."
+    ],
+    "translate": [
+      "Me pongo la chaqueta.",
+      "Ella se siente cansada.",
+      "¿Te despiertas temprano?"
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Stem change",
+      "example": "Ella se despierta temprano.",
+      "translation": "She wakes up early."
+    },
+    {
+      "use": "Irregular yo",
+      "example": "Me pongo la chaqueta.",
+      "translation": "I put on the jacket."
+    },
+    {
+      "use": "Question",
+      "example": "¿Te sientes bien?",
+      "translation": "Do you feel well?"
+    }
+  ]
+}
