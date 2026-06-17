@@ -146,6 +146,29 @@ Use cuánto forms to ask about quantity.
 
    ¿Por qué estudias español?
 
+## Answer Key
+
+### Selección simple
+
+1. ¿Qué estudias?
+2. ¿Dónde vive Ana?
+3. ¿Quién es tu profesor?
+4. ¿Cuánto cuesta?
+
+### Completar
+
+1. ¿Qué necesitas?
+2. ¿Cuándo trabajas?
+3. ¿Por qué estudias español?
+4. ¿Cuántas clases tienes?
+
+### Traducción
+
+1. ¿Qué estudias?
+2. ¿Dónde vives?
+3. ¿Quién es tu profesor?
+4. ¿Por qué estudias español?
+
 ## Wrap Up
 
 | Use | Example | Translation |

@@ -19,6 +19,16 @@ Spanish demonstratives agree with the noun in gender and number. Este is close t
 - Demonstratives agree with the noun in gender and number.
 - Este points to something close, ese points to something farther away, and aquel points to something more distant.
 
+## Conjugación
+
+| Subject | Forma | Example | Translation |
+| --- | --- | --- | --- |
+| Close masculine | este / estos | este libro / estos libros | this book / these books |
+| Close feminine | esta / estas | esta mesa / estas mesas | this table / these tables |
+| Farther masculine | ese / esos | ese coche / esos coches | that car / those cars |
+| Farther feminine | esa / esas | esa casa / esas casas | that house / those houses |
+| Distant | aquel / aquella / aquellos / aquellas | aquellos edificios | those buildings over there |
+
 ## Cómo/cuándo lo usamos
 
 ### Close Things
@@ -41,6 +51,14 @@ Use aquel forms for things that feel farther away in space, time, or context.
 
 - Aquel edificio es antiguo. -> That building over there is old.
 - Aquellas vacaciones fueron perfectas. -> Those vacations back then were perfect.
+
+## Formas
+
+| Patrón | Example | Translation |
+| --- | --- | --- |
+| este / esta + singular noun | esta mesa | this table |
+| ese / esa + singular noun | ese coche | that car |
+| aquel / aquella + singular noun | aquella escuela | that school over there |
 
 ## Oraciones.
 
@@ -132,6 +150,29 @@ Use aquel forms for things that feel farther away in space, time, or context.
 4. That building over there is old.
 
    Aquel edificio es antiguo.
+
+## Answer Key
+
+### Selección simple
+
+1. Este libro es interesante.
+2. Esa casa es grande.
+3. Aquellos estudiantes son nuevos.
+4. Estas preguntas son fáciles.
+
+### Completar
+
+1. Este libro es mío.
+2. Esta mesa está limpia.
+3. Esas casas son bonitas.
+4. Aquel edificio es antiguo.
+
+### Traducción
+
+1. Este libro es mío.
+2. Esa casa es bonita.
+3. Estas preguntas son fáciles.
+4. Aquel edificio es antiguo.
 
 ## Wrap Up
 

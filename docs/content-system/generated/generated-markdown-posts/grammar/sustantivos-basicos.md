@@ -1,26 +1,16 @@
-# Sustantivos básicos for ser, tener and hay
-
 Spanish nouns name people, places, things, and ideas. In beginner Spanish, nouns work closely with ser, tener, and hay because they help you identify things, say what someone has, and say what exists.
 
 ## Overview
 
 Most Spanish nouns are masculine or feminine, and they can be singular or plural. Articles like el, la, un, and una usually show the gender and number of the noun.
 
-- El libro es importante. - The book is important.
-- Tengo una pregunta. - I have a question.
-- Hay dos estudiantes en la clase. - There are two students in the class.
+- El libro es importante. -> The book is important.
+- Tengo una pregunta. -> I have a question.
+- Hay dos estudiantes en la clase. -> There are two students in the class.
 
-## Structure
+## Conjugación
 
-| Structure | Example | Translation |
-| --- | --- | --- |
-| el / la + noun | la clase | the class |
-| un / una + noun | un profesor | a teacher |
-| hay + noun | Hay una mesa. | There is a table. |
-
-## Conjugation
-
-| Subject | Form | Example | Translation |
+| Subject | Forma | Example | Translation |
 | --- | --- | --- | --- |
 | Masculine singular | el / un | el libro / un libro | the book / a book |
 | Feminine singular | la / una | la mesa / una mesa | the table / a table |
@@ -28,51 +18,59 @@ Most Spanish nouns are masculine or feminine, and they can be singular or plural
 | Feminine plural | las / unas | las mesas / unas mesas | the tables / some tables |
 | With hay | hay + noun | Hay una ventana. | There is a window. |
 
-## Uses
+## Cómo/cuándo lo usamos
 
 ### Identify With Ser
 
 Use ser with a noun to identify a person or thing.
 
-- Ella es doctora. - She is a doctor.
-- Esto es un telefono. - This is a phone.
+- Ella es doctora. -> She is a doctor.
+- Esto es un telefono. -> This is a phone.
 
 ### Possession With Tener
 
 Use tener with nouns to say what someone has.
 
-- Tengo una computadora. - I have a computer.
-- Ellos tienen dos perros. - They have two dogs.
+- Tengo una computadora. -> I have a computer.
+- Ellos tienen dos perros. -> They have two dogs.
 
 ### Existence With Hay
 
 Use hay before nouns to say that something exists or is present.
 
-- Hay una silla aqui. - There is a chair here.
-- Hay estudiantes en la escuela. - There are students in the school.
+- Hay una silla aqui. -> There is a chair here.
+- Hay estudiantes en la escuela. -> There are students in the school.
+
+## Formas
+
+| Patrón | Example | Translation |
+| --- | --- | --- |
+| el / la + noun | la clase | the class |
+| un / una + noun | un profesor | a teacher |
+| hay + noun | Hay una mesa. | There is a table. |
 
 ## Oraciones.
 
 ### Afirmativas
 
-- El profesor es amable. - The teacher is kind.
-- Tengo una mochila azul. - I have a blue backpack.
-- Hay un libro en la mesa. - There is a book on the table.
-- Las clases son interesantes. - The classes are interesting.
+- El profesor es amable. -> The teacher is kind.
+- Tengo una mochila azul. -> I have a blue backpack.
+- Hay un libro en la mesa. -> There is a book on the table.
+- Las clases son interesantes. -> The classes are interesting.
 
 ### Negativas
 
-- No tengo un lapiz. - I do not have a pencil.
-- No hay estudiantes aqui. - There are no students here.
-- La pregunta no es dificil. - The question is not difficult.
-- Los libros no son nuevos. - The books are not new.
+- No tengo un lapiz. -> I do not have a pencil.
+- No hay estudiantes aqui. -> There are no students here.
+- La pregunta no es dificil. -> The question is not difficult.
+- Los libros no son nuevos. -> The books are not new.
 
 ### Forma de pregunta
 
-- Es una escuela? - Is it a school?
-- Tienes una pregunta? - Do you have a question?
-- Hay una farmacia cerca? - Is there a pharmacy nearby?
-- Son tus amigos? - Are they your friends?
+- Es una escuela? -> Is it a school?
+- Tienes una pregunta? -> Do you have a question?
+- Hay una farmacia cerca? -> Is there a pharmacy nearby?
+- Son tus amigos? -> Are they your friends?
 
 ## Ejercicios
 

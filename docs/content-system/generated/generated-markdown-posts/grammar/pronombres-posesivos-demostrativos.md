@@ -1,13 +1,11 @@
-# Pronombres posesivos and demostrativos: mine, this one, that one
-
 Possessive pronouns and demonstratives both replace or point to nouns. Use them together to contrast ownership and distance: mine, yours, this one, that one.
 
 ## Overview
 
 Possessive pronouns show ownership, while demonstratives point to which person or thing you mean. Both agree with the noun in gender and number.
 
-- Este libro es mío; ese es tuyo. - This book is mine; that one is yours.
-- Estas llaves son nuestras; aquellas son suyas. - These keys are ours; those over there are theirs.
+- Este libro es mío; ese es tuyo. -> This book is mine; that one is yours.
+- Estas llaves son nuestras; aquellas son suyas. -> These keys are ours; those over there are theirs.
 
 ## Cómo/cuándo lo usamos
 
@@ -15,51 +13,53 @@ Possessive pronouns show ownership, while demonstratives point to which person o
 
 Use possessive pronouns to replace a noun and show who owns it.
 
-- El rojo es mío. - The red one is mine.
-- La grande es tuya. - The big one is yours.
+- El rojo es mío. -> The red one is mine.
+- La grande es tuya. -> The big one is yours.
 
 ### Demonstratives
 
 Use demonstratives to point to this one, that one, or that one over there.
 
-- Este es nuevo. - This one is new.
-- Aquel es antiguo. - That one over there is old.
+- Este es nuevo. -> This one is new.
+- Aquel es antiguo. -> That one over there is old.
 
 ### Using Both Together
 
 Use both forms when you want to compare distance and ownership in the same sentence.
 
-- Esta mochila es mía; esa es tuya. - This backpack is mine; that one is yours.
-- Estos vasos son nuestros; aquellos son suyos. - These glasses are ours; those over there are theirs.
-
+- Esta mochila es mía; esa es tuya. -> This backpack is mine; that one is yours.
+- Estos vasos son nuestros; aquellos son suyos. -> These glasses are ours; those over there are theirs.
 
 ## Comparación
 
-| Structure | Example | Translation |
+| Patrón | Example | Translation |
 | --- | --- | --- |
 | demonstrative + noun + ser + possessive pronoun | Este cuaderno es mío. | This notebook is mine. |
 | demonstrative pronoun + ser + possessive pronoun | Ese es tuyo. | That one is yours. |
 | demonstrative plural + ser + possessive plural | Aquellas son nuestras. | Those over there are ours. |
-## Afirmativas
 
-- Este lápiz es mío. - This pencil is mine.
-- Esa silla es tuya. - That chair is yours.
-- Aquellos libros son suyos. - Those books over there are his, hers, yours formal, or theirs.
-- Estas mesas son nuestras. - These tables are ours.
+## Oraciones.
 
-## Negativas
+### Afirmativas
 
-- Este teléfono no es mío. - This phone is not mine.
-- Esa mochila no es tuya. - That backpack is not yours.
-- Aquellas llaves no son nuestras. - Those keys over there are not ours.
-- Estos documentos no son suyos. - These documents are not his, hers, yours formal, or theirs.
+- Este lápiz es mío. -> This pencil is mine.
+- Esa silla es tuya. -> That chair is yours.
+- Aquellos libros son suyos. -> Those books over there are his, hers, yours formal, or theirs.
+- Estas mesas son nuestras. -> These tables are ours.
 
-## Preguntas
+### Negativas
 
-- ¿Este cuaderno es tuyo? - Is this notebook yours?
-- ¿Esa casa es suya? - Is that house his, hers, yours formal, or theirs?
-- ¿Aquellos coches son nuestros? - Are those cars over there ours?
-- ¿Estas fotos son mías? - Are these photos mine?
+- Este teléfono no es mío. -> This phone is not mine.
+- Esa mochila no es tuya. -> That backpack is not yours.
+- Aquellas llaves no son nuestras. -> Those keys over there are not ours.
+- Estos documentos no son suyos. -> These documents are not his, hers, yours formal, or theirs.
+
+### Forma de pregunta
+
+- ¿Este cuaderno es tuyo? -> Is this notebook yours?
+- ¿Esa casa es suya? -> Is that house his, hers, yours formal, or theirs?
+- ¿Aquellos coches son nuestros? -> Are those cars over there ours?
+- ¿Estas fotos son mías? -> Are these photos mine?
 
 ## Ejercicios
 

@@ -1,235 +1,69 @@
-# Title
+# Grammar Markdown Review Template
 
-Brief English intro that explains the grammar point and when learners use it.
+Markdown is a generated review artifact. It should mirror the clean body structure without frontmatter, title metadata, navigation-trail text, or layout instructions.
+
+## Shape
+
+```md
+Brief English intro.
 
 ## Overview
 
 Core idea in one or two short sentences.
 
-- Yo necesito agua. — I need water.
+- Yo estudio español. -> I study Spanish.
 
-## Structure
+## Formas
 
-| Structure | Example | Translation |
-| --- | --- | --- |
-| subject + necesitar + noun | Ella necesita un libro. | She needs a book. |
-| subject + necesitar + infinitive | Nosotros necesitamos estudiar. | We need to study. |
-| subject + no + necesitar + noun/infinitive | Tú no necesitas ayuda. | You do not need help. |
+- mi / mis -> my
 
-## Conjugation
+## Conjugación
 
-| Subject | Form | Example | Translation |
+| Subject | Forma | Example | Translation |
 | --- | --- | --- | --- |
-| Yo | TBD | TBD | TBD |
-| Tú | TBD | TBD | TBD |
-| Él / Ella / Usted | TBD | TBD | TBD |
-| Nosotros / Nosotras | TBD | TBD | TBD |
-| Ellos / Ellas / Ustedes | TBD | TBD | TBD |
+| Yo | hablo | Yo hablo español. | I speak Spanish. |
 
-## Conjugation Practice Source Marker
+## Cómo/cuándo lo usamos
 
-`sn-conjugation-practice`
+### Daily actions
 
-Use this marker only when `lesson_type=verb-usage` and the target is one simple isolated verb.
+Use the form to talk about routines.
 
-Do not use `sn-conjugation-practice` for structures, compound phrases, periphrases, or expressions such as `tener que`, `hay algo`, or `he tenido problemas`.
+- Trabajo en casa. -> I work at home.
 
-## Uses
+## Comparación
 
-Adapt the use sections to the verb or structure. Do not force every lesson into the same pattern.
+| Patrón | Example | Translation |
+| --- | --- | --- |
+| este vs ese | Este es mío; ese es tuyo. | This one is mine; that one is yours. |
 
-### Use 1
+## Oraciones.
 
-TBD.
+### Afirmativas
 
-- TBD. — TBD.
-- TBD. — TBD.
+- Ella practica hoy. -> She practices today.
 
-### Use 2
+### Negativas
 
-TBD.
+- Ella no practica hoy. -> She does not practice today.
 
-- TBD. — TBD.
-- TBD. — TBD.
+### Forma de pregunta
 
-## Oraciones
-
-### Afirmativa
-
-- TBD. — TBD.
-- TBD. — TBD.
-- TBD. — TBD.
-- TBD. — TBD.
-
-### Negativa
-
-- TBD. — TBD.
-- TBD. — TBD.
-- TBD. — TBD.
-- TBD. — TBD.
-
-### Preguntas
-
-- ¿TBD? — TBD?
-- ¿TBD? — TBD?
-- ¿TBD? — TBD?
-- ¿TBD? — TBD?
+- ¿Ella practica hoy? -> Does she practice today?
 
 ## Ejercicios
 
-Use the exercise blocks that fit the lesson. `Seleccionar` is allowed but not required for every lesson.
-
-### Seleccionar
-
-1. Yo _____ estudiar.
-   - a) necesita
-   - b) necesito
-   - c) necesitamos
-
-2. TBD.
-   - a) TBD
-   - b) TBD
-   - c) TBD
-
-3. TBD.
-   - a) TBD
-   - b) TBD
-   - c) TBD
-
-4. TBD.
-   - a) TBD
-   - b) TBD
-   - c) TBD
-
-5. TBD.
-   - a) TBD
-   - b) TBD
-   - c) TBD
-
-6. TBD.
-   - a) TBD
-   - b) TBD
-   - c) TBD
-
-7. TBD.
-   - a) TBD
-   - b) TBD
-   - c) TBD
-
-8. TBD.
-   - a) TBD
-   - b) TBD
-   - c) TBD
-
 ### Completar
 
-1. Yo ___ agua.
+1. Yo ___ español.
 
-   Yo **necesito** agua.
-
-2. Tú ___ estudiar.
-
-   Tú **necesitas** estudiar.
-
-3. Ella ___ una pluma.
-
-   Ella **necesita** una pluma.
-
-4. Nosotros ___ practicar.
-
-   Nosotros **necesitamos** practicar.
-
-5. Ellos ___ comida.
-
-   Ellos **necesitan** comida.
-
-6. Ustedes no ___ ayuda.
-
-   Ustedes no **necesitan** ayuda.
-
-7. ¿Tú ___ un diccionario?
-
-   ¿Tú **necesitas** un diccionario?
-
-8. ¿Ella ___ descansar?
-
-   ¿Ella **necesita** descansar?
-
-### Preguntas de si/no
-
-Visible example:
-
-- ¿Ella es brasileña? - Sí, ella es brasileña. / No, ella no es brasileña.
-
-1. ¿TBD?
-
-   Sí, TBD.
-
-   No, TBD.
-
-2. ¿TBD?
-
-   Sí, TBD.
-
-   No, TBD.
-
-3. ¿TBD?
-
-   Sí, TBD.
-
-   No, TBD.
-
-4. ¿TBD?
-
-   Sí, TBD.
-
-   No, TBD.
-
-5. ¿TBD?
-
-   Sí, TBD.
-
-   No, TBD.
-
-### Traducir
-
-1. I need water.
-
-   Yo **necesito** agua.
-
-2. You need to study.
-
-   Tú **necesitas** estudiar.
-
-3. She needs help.
-
-   Ella **necesita** ayuda.
-
-4. We need time.
-
-   Nosotros **necesitamos** tiempo.
-
-5. They need food.
-
-   Ellos **necesitan** comida.
-
-6. I do not need coffee.
-
-   Yo no **necesito** café.
-
-7. Do you need a taxi?
-
-   ¿Tú **necesitas** un taxi?
-
-8. Do they need to wait?
-
-   ¿Ellos **necesitan** esperar?
+   Yo estudio español.
 
 ## Wrap Up
 
 | Use | Example | Translation |
 | --- | --- | --- |
-| Need a thing | Yo necesito agua. | I need water. |
-| Need to do something | Tú necesitas estudiar. | You need to study. |
-| Say someone does not need something | Ella no necesita ayuda. | She does not need help. |
-| Ask about a need | ¿Necesitas un taxi? | Do you need a taxi? |
+| Routine | Yo estudio español. | I study Spanish. |
+```
+
+Only include `Formas`, `Conjugación`, or `Comparación` when the content data supports that section.

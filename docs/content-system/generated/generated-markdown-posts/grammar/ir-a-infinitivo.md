@@ -1,26 +1,16 @@
-# Ir a + infinitivo: talking about the future
-
 Ir a plus an infinitive is the easiest way to talk about near future plans in Spanish. It works like going to in English.
 
 ## Overview
 
 Conjugate ir in the present tense, add a, and then use an infinitive. The infinitive does not change.
 
-- Voy a estudiar. - I am going to study.
-- Ella va a cocinar. - She is going to cook.
-- Vamos a viajar manana. - We are going to travel tomorrow.
+- Voy a estudiar. -> I am going to study.
+- Ella va a cocinar. -> She is going to cook.
+- Vamos a viajar manana. -> We are going to travel tomorrow.
 
-## Structure
+## Conjugación
 
-| Structure | Example | Translation |
-| --- | --- | --- |
-| subject + ir + a + infinitive | Yo voy a aprender. | I am going to learn. |
-| subject + no + ir + a + infinitive | Ella no va a salir. | She is not going to leave. |
-| ir + subject + a + infinitive? | Vas a estudiar hoy? | Are you going to study today? |
-
-## Conjugation
-
-| Subject | Form | Example | Translation |
+| Subject | Forma | Example | Translation |
 | --- | --- | --- | --- |
 | Yo | voy a + infinitive | Yo voy a estudiar. | I am going to study. |
 | Tu | vas a + infinitive | Tu vas a trabajar. | You are going to work. |
@@ -28,44 +18,52 @@ Conjugate ir in the present tense, add a, and then use an infinitive. The infini
 | Nosotros / Nosotras | vamos a + infinitive | Nosotros vamos a viajar. | We are going to travel. |
 | Ellos / Ellas / Ustedes | van a + infinitive | Ellos van a correr. | They are going to run. |
 
-## Uses
+## Cómo/cuándo lo usamos
 
 ### Plans
 
 Use ir a plus an infinitive to say what someone is planning to do.
 
-- Voy a visitar a mi familia. - I am going to visit my family.
-- Mis amigos van a jugar futbol. - My friends are going to play soccer.
+- Voy a visitar a mi familia. -> I am going to visit my family.
+- Mis amigos van a jugar futbol. -> My friends are going to play soccer.
 
 ### Near Future
 
 Use this structure for actions that will happen soon or that feel planned.
 
-- Vamos a comer en diez minutos. - We are going to eat in ten minutes.
-- Va a llover esta tarde. - It is going to rain this afternoon.
+- Vamos a comer en diez minutos. -> We are going to eat in ten minutes.
+- Va a llover esta tarde. -> It is going to rain this afternoon.
+
+## Formas
+
+| Patrón | Example | Translation |
+| --- | --- | --- |
+| subject + ir + a + infinitive | Yo voy a aprender. | I am going to learn. |
+| subject + no + ir + a + infinitive | Ella no va a salir. | She is not going to leave. |
+| ir + subject + a + infinitive? | Vas a estudiar hoy? | Are you going to study today? |
 
 ## Oraciones.
 
 ### Afirmativas
 
-- Yo voy a leer esta noche. - I am going to read tonight.
-- Tu vas a aprender mucho. - You are going to learn a lot.
-- Ella va a preparar cafe. - She is going to prepare coffee.
-- Nosotros vamos a practicar juntos. - We are going to practice together.
+- Yo voy a leer esta noche. -> I am going to read tonight.
+- Tu vas a aprender mucho. -> You are going to learn a lot.
+- Ella va a preparar cafe. -> She is going to prepare coffee.
+- Nosotros vamos a practicar juntos. -> We are going to practice together.
 
 ### Negativas
 
-- No voy a salir hoy. - I am not going to go out today.
-- Tu no vas a trabajar manana. - You are not going to work tomorrow.
-- El no va a comprar nada. - He is not going to buy anything.
-- Ellas no van a esperar. - They are not going to wait.
+- No voy a salir hoy. -> I am not going to go out today.
+- Tu no vas a trabajar manana. -> You are not going to work tomorrow.
+- El no va a comprar nada. -> He is not going to buy anything.
+- Ellas no van a esperar. -> They are not going to wait.
 
 ### Forma de pregunta
 
-- Vas a estudiar hoy? - Are you going to study today?
-- Ella va a venir? - Is she going to come?
-- Vamos a empezar ahora? - Are we going to start now?
-- Ustedes van a viajar? - Are you all going to travel?
+- Vas a estudiar hoy? -> Are you going to study today?
+- Ella va a venir? -> Is she going to come?
+- Vamos a empezar ahora? -> Are we going to start now?
+- Ustedes van a viajar? -> Are you all going to travel?
 
 ## Ejercicios
 

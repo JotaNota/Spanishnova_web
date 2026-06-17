@@ -1,26 +1,16 @@
-# Verbos básicos for tener que
-
 Tener que plus an infinitive is the most common way to say that someone has to do something in Spanish. The second verb stays in the infinitive form.
 
 ## Overview
 
 Conjugate tener for the subject, add que, and then use an infinitive such as estudiar, trabajar, comer, or salir.
 
-- Tengo que estudiar. - I have to study.
-- Ella tiene que trabajar. - She has to work.
-- Tenemos que salir ahora. - We have to leave now.
+- Tengo que estudiar. -> I have to study.
+- Ella tiene que trabajar. -> She has to work.
+- Tenemos que salir ahora. -> We have to leave now.
 
-## Structure
+## Conjugación
 
-| Structure | Example | Translation |
-| --- | --- | --- |
-| subject + tener + que + infinitive | Yo tengo que practicar. | I have to practice. |
-| subject + no + tener + que + infinitive | Tu no tienes que esperar. | You do not have to wait. |
-| tener + subject + que + infinitive? | Tienes que trabajar hoy? | Do you have to work today? |
-
-## Conjugation
-
-| Subject | Form | Example | Translation |
+| Subject | Forma | Example | Translation |
 | --- | --- | --- | --- |
 | Yo | tengo que + infinitive | Yo tengo que leer. | I have to read. |
 | Tu | tienes que + infinitive | Tu tienes que escuchar. | You have to listen. |
@@ -28,44 +18,52 @@ Conjugate tener for the subject, add que, and then use an infinitive such as est
 | Nosotros / Nosotras | tenemos que + infinitive | Nosotros tenemos que practicar. | We have to practice. |
 | Ellos / Ellas / Ustedes | tienen que + infinitive | Ellos tienen que trabajar. | They have to work. |
 
-## Uses
+## Cómo/cuándo lo usamos
 
 ### Obligation
 
 Use tener que to talk about a specific obligation for a person or group.
 
-- Tengo que hacer la tarea. - I have to do the homework.
-- Ustedes tienen que llegar temprano. - You all have to arrive early.
+- Tengo que hacer la tarea. -> I have to do the homework.
+- Ustedes tienen que llegar temprano. -> You all have to arrive early.
 
 ### Simple Daily Tasks
 
 Use tener que with common infinitives to describe what people need to do.
 
-- Mi hermano tiene que limpiar su cuarto. - My brother has to clean his room.
-- Tenemos que comprar comida. - We have to buy food.
+- Mi hermano tiene que limpiar su cuarto. -> My brother has to clean his room.
+- Tenemos que comprar comida. -> We have to buy food.
+
+## Formas
+
+| Patrón | Example | Translation |
+| --- | --- | --- |
+| subject + tener + que + infinitive | Yo tengo que practicar. | I have to practice. |
+| subject + no + tener + que + infinitive | Tu no tienes que esperar. | You do not have to wait. |
+| tener + subject + que + infinitive? | Tienes que trabajar hoy? | Do you have to work today? |
 
 ## Oraciones.
 
 ### Afirmativas
 
-- Yo tengo que estudiar espanol. - I have to study Spanish.
-- Tu tienes que llamar a tu madre. - You have to call your mother.
-- Ella tiene que preparar la cena. - She has to prepare dinner.
-- Nosotros tenemos que salir temprano. - We have to leave early.
+- Yo tengo que estudiar espanol. -> I have to study Spanish.
+- Tu tienes que llamar a tu madre. -> You have to call your mother.
+- Ella tiene que preparar la cena. -> She has to prepare dinner.
+- Nosotros tenemos que salir temprano. -> We have to leave early.
 
 ### Negativas
 
-- No tengo que trabajar manana. - I do not have to work tomorrow.
-- Tu no tienes que pagar ahora. - You do not have to pay now.
-- El no tiene que conducir hoy. - He does not have to drive today.
-- Ellos no tienen que esperar. - They do not have to wait.
+- No tengo que trabajar manana. -> I do not have to work tomorrow.
+- Tu no tienes que pagar ahora. -> You do not have to pay now.
+- El no tiene que conducir hoy. -> He does not have to drive today.
+- Ellos no tienen que esperar. -> They do not have to wait.
 
 ### Forma de pregunta
 
-- Tienes que estudiar esta noche? - Do you have to study tonight?
-- Ella tiene que venir a clase? - Does she have to come to class?
-- Tenemos que usar este libro? - Do we have to use this book?
-- Ustedes tienen que practicar? - Do you all have to practice?
+- Tienes que estudiar esta noche? -> Do you have to study tonight?
+- Ella tiene que venir a clase? -> Does she have to come to class?
+- Tenemos que usar este libro? -> Do we have to use this book?
+- Ustedes tienen que practicar? -> Do you all have to practice?
 
 ## Ejercicios
 
