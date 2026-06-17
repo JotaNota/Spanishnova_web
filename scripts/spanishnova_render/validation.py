@@ -1,24 +1,26 @@
-REQUIRED_GRAMMAR_FIELDS = [
+BASE_REQUIRED_GRAMMAR_FIELDS = [
     "intro",
     "overview",
     "examples",
-    "conjugation",
     "uses",
     "sentences",
     "exercises",
     "answers",
 ]
 
-REQUIRED_PARTICLE_SET_FIELDS = [
-    "intro",
-    "overview",
-    "examples",
-    "forms",
-    "uses",
-    "sentences",
-    "exercises",
-    "answers",
-]
+GRAMMAR_REQUIRED_BY_LESSON_TYPE = {
+    "tense": ["conjugation"],
+    "verb-usage": ["conjugation"],
+    "structure": [],
+    "comparison": [],
+    "particle-set": ["forms"],
+}
+
+GRAMMAR_REQUIRE_ONE_OF_BY_LESSON_TYPE = {
+    "structure": ["structure", "forms"],
+    "comparison": ["comparison", "structure"],
+    "particle-set": ["forms", "forms_table"],
+}
 
 
 def require_fields(data, fields, context):
@@ -41,20 +43,41 @@ def require_dict(data, field, context):
     return value
 
 
+def require_one_of(data, fields, context):
+    if not any(field in data for field in fields):
+        raise SystemExit(f"{context} must include one of: {', '.join(fields)}")
+
+
 def validate_grammar_data(data, lesson_type=None):
-    is_particle_set = lesson_type == "particle-set"
-    required_fields = REQUIRED_PARTICLE_SET_FIELDS if is_particle_set else REQUIRED_GRAMMAR_FIELDS
+    if lesson_type not in GRAMMAR_REQUIRED_BY_LESSON_TYPE:
+        raise SystemExit(f"Unsupported grammar lesson_type: {lesson_type}")
+
+    required_fields = BASE_REQUIRED_GRAMMAR_FIELDS + GRAMMAR_REQUIRED_BY_LESSON_TYPE[lesson_type]
     require_fields(data, required_fields, "grammar content-data")
+    if lesson_type in GRAMMAR_REQUIRE_ONE_OF_BY_LESSON_TYPE:
+        require_one_of(data, GRAMMAR_REQUIRE_ONE_OF_BY_LESSON_TYPE[lesson_type], "grammar content-data")
+
     if not isinstance(data.get("intro"), str) or not data["intro"].strip():
         raise SystemExit("grammar content-data intro must be a non-empty string")
 
     overview = require_dict(data, "overview", "grammar content-data")
     require_fields(overview, ["body", "use_note"], "grammar overview")
     require_list(data, "examples", "grammar content-data")
-    if is_particle_set:
+
+    if "forms" in data:
         require_list(data, "forms", "grammar content-data")
-    else:
+    if "forms_table" in data:
+        forms_table = require_dict(data, "forms_table", "grammar content-data")
+        require_fields(forms_table, ["headers", "rows"], "grammar forms_table")
+        require_list(forms_table, "headers", "grammar forms_table")
+        require_list(forms_table, "rows", "grammar forms_table")
+    if "structure" in data:
+        require_list(data, "structure", "grammar content-data")
+    if "comparison" in data:
+        require_list(data, "comparison", "grammar content-data")
+    if "conjugation" in data:
         require_list(data, "conjugation", "grammar content-data")
+
     require_list(data, "uses", "grammar content-data")
 
     sentences = require_dict(data, "sentences", "grammar content-data")

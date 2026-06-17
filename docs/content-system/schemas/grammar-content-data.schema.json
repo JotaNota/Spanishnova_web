@@ -4,6 +4,7 @@
   "title": "SpanishNova Grammar Content Data",
   "type": "object",
   "additionalProperties": false,
+  "$comment": "lesson_type lives in grammar-roadmap.csv. Per-lesson-type requirements are enforced by scripts/spanishnova_render/validation.py.",
   "required": [
     "intro",
     "overview",
@@ -12,10 +13,6 @@
     "sentences",
     "exercises",
     "answers"
-  ],
-  "anyOf": [
-    { "required": ["conjugation"] },
-    { "required": ["forms"] }
   ],
   "properties": {
     "intro": {
@@ -57,7 +54,22 @@
           "example": { "type": "string", "minLength": 1 },
           "translation": { "type": "string", "minLength": 1 }
         }
-      }
+      },
+      "description": "Pattern rows for structure lessons, or comparison lessons that express comparison as patterns."
+    },
+    "comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["pattern", "example", "translation"],
+        "properties": {
+          "pattern": { "type": "string", "minLength": 1 },
+          "example": { "type": "string", "minLength": 1 },
+          "translation": { "type": "string", "minLength": 1 }
+        }
+      },
+      "description": "Comparison rows for comparison lessons. Use structure instead when the contrast is best expressed as patterns."
     },
     "forms": {
       "type": "array",
@@ -71,12 +83,12 @@
           "meaning": { "type": "string", "minLength": 1 }
         }
       },
-      "description": "Particle-set forms such as mi / mis -> my."
+      "description": "Forms for particle-set lessons and structure lessons that need a forms list."
     },
     "notes": {
       "type": "array",
       "items": { "type": "string", "minLength": 1 },
-      "description": "Short notes for particle-set form behavior."
+      "description": "Short notes for form behavior."
     },
     "forms_table": {
       "type": "object",
@@ -98,7 +110,7 @@
           }
         }
       },
-      "description": "Optional particle-set usage table. Do not use a generic Form column for particle sets."
+      "description": "Optional forms or usage table for particle-set lessons. Do not use a generic Form column for particle sets."
     },
     "conjugation": {
       "type": "array",
@@ -199,7 +211,8 @@
           "example": { "type": "string", "minLength": 1 },
           "translation": { "type": "string", "minLength": 1 }
         }
-      }
+      },
+      "description": "Required for tense and verb-usage lessons. Not required for structure, comparison, or particle-set lessons."
     },
     "wrap_up_headers": {
       "type": "array",

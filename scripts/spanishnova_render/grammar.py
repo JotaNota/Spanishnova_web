@@ -12,6 +12,10 @@ def should_render_structure(lesson_type):
     return lesson_type in {"structure", "comparison"}
 
 
+def should_render_conjugation(lesson_type):
+    return lesson_type in {"tense", "verb-usage"}
+
+
 def structure_heading_for(lesson_type):
     if lesson_type == "comparison":
         return "Comparación"
@@ -22,6 +26,12 @@ def structure_id_for(lesson_type):
     if lesson_type == "comparison":
         return "comparacion"
     return "estructura"
+
+
+def structure_items_for(data, lesson_type):
+    if lesson_type == "comparison":
+        return data.get("comparison") or data.get("structure") or []
+    return data.get("structure") or []
 
 
 def md_pair(item):
@@ -65,7 +75,7 @@ def render_markdown(row, data):
             for note in data["notes"]:
                 lines.append(f"- {note}")
 
-    if data.get("conjugation") and lesson_type != "comparison":
+    if data.get("conjugation") and should_render_conjugation(lesson_type):
         lines += [
             "",
             "## Conjugación",
@@ -89,14 +99,15 @@ def render_markdown(row, data):
         lines += render_markdown_table(data["forms_table"]["headers"], data["forms_table"]["rows"])
         lines.append("")
 
-    if data.get("structure") and should_render_structure(lesson_type):
+    structure_items = structure_items_for(data, lesson_type)
+    if structure_items and should_render_structure(lesson_type):
         heading = structure_heading_for(lesson_type)
         lines += [
             f"## {heading}",
             "",
             *render_markdown_table(
                 ["Patrón", "Example", "Translation"],
-                [[item["pattern"], item["example"], item["translation"]] for item in data["structure"]],
+                [[item["pattern"], item["example"], item["translation"]] for item in structure_items],
             ),
             "",
         ]
@@ -258,7 +269,7 @@ def render_html(row, data):
             parts.append(notes)
         parts.append("</section>")
 
-    if data.get("conjugation") and lesson_type != "comparison":
+    if data.get("conjugation") and should_render_conjugation(lesson_type):
         parts += [
             "",
             '<section id="conjugacion">',
@@ -293,7 +304,8 @@ def render_html(row, data):
         )
     parts.append("</section>")
 
-    if data.get("structure") and should_render_structure(lesson_type):
+    structure_items = structure_items_for(data, lesson_type)
+    if structure_items and should_render_structure(lesson_type):
         heading = structure_heading_for(lesson_type)
         section_id = structure_id_for(lesson_type)
         parts += [
@@ -302,7 +314,7 @@ def render_html(row, data):
             f"  <h2>{heading}</h2>",
             render_table(
                 ["Patrón", "Example", "Translation"],
-                [[item["pattern"], item["example"], item["translation"]] for item in data["structure"]],
+                [[item["pattern"], item["example"], item["translation"]] for item in structure_items],
             ),
             "</section>",
         ]

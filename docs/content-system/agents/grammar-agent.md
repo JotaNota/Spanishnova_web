@@ -26,8 +26,8 @@ The editable source of a grammar lesson is the content-data JSON. Markdown and H
 ## Content Data
 
 - Follow `docs/content-system/schemas/grammar-content-data.schema.json`.
-- Standard grammar lessons use `intro`, `overview`, `examples`, `conjugation`, `uses`, `sentences`, `exercises`, and `answers`.
-- `particle-set` lessons use `intro`, `overview`, `examples`, `forms`, `uses`, `sentences`, `exercises`, and `answers`.
+- Base grammar lessons use `intro`, `overview`, `examples`, `uses`, `sentences`, `exercises`, and `answers`.
+- Add lesson-type fields from the `Lesson Types` section below. Do not add `conjugation` just to satisfy an old template.
 - Keep content corrections in JSON and rerender.
 - Use `TBD` only for unknown content that needs human review.
 
@@ -102,13 +102,23 @@ Examples must stay on one line:
 
 For `tense`, use overview, conjugation, usage, sentences, exercises, and wrap up.
 
+Required lesson-type field: `conjugation`.
+
 For `verb-usage`, use overview, conjugation, usage, examples, exercises, and wrap up.
+
+Required lesson-type field: `conjugation`.
 
 For `structure`, use overview, forms or patterns, usage, sentences, exercises, and wrap up.
 
+Required lesson-type field: `structure` or `forms`. Do not force `conjugation`.
+
 For `comparison`, use overview, usage, comparison, sentences, exercises, and wrap up.
 
+Required lesson-type field: `comparison` or `structure`. Do not force `conjugation`.
+
 For `particle-set`, use overview, forms, usage, sentences, exercises, and wrap up.
+
+Required lesson-type field: `forms`. Use `forms_table` when the lesson needs a table. Do not force `conjugation` or `structure`.
 
 ## Language Quality
 
