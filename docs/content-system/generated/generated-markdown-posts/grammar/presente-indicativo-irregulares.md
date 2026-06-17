@@ -40,14 +40,6 @@ Ser, estar, ir, and tener are common irregular verbs that need extra practice.
 - Ella está en casa. -> She is at home.
 - Ustedes van a clase. -> You all go to class.
 
-## Formas
-
-| Patrón | Example | Translation |
-| --- | --- | --- |
-| subject + irregular present form + noun | Yo tengo una pregunta. | I have a question. |
-| subject + irregular present form + infinitive | Ella puede venir. | She can come. |
-| no + irregular present form | No sé la respuesta. | I do not know the answer. |
-
 ## Oraciones.
 
 ### Afirmativas
@@ -138,29 +130,6 @@ Ser, estar, ir, and tener are common irregular verbs that need extra practice.
 4. Can you all wait?
 
    ¿Ustedes pueden esperar?
-
-## Answer Key
-
-### Selección simple
-
-1. Yo hago la tarea.
-2. Ella quiere café.
-3. Nosotros tenemos tiempo.
-4. Ustedes van a clase.
-
-### Completar
-
-1. Yo tengo una pregunta.
-2. Tú quieres practicar.
-3. Ella puede ayudar.
-4. Nosotros vamos al mercado.
-
-### Traducción
-
-1. Yo hago la tarea.
-2. Ella quiere café.
-3. Nosotros tenemos tiempo.
-4. ¿Ustedes pueden esperar?
 
 ## Wrap Up
 

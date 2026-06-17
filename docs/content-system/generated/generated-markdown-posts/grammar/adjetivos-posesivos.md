@@ -127,29 +127,6 @@ Possessive adjectives go before the noun.
 
    Nuestras clases son útiles.
 
-## Answer Key
-
-### Selección simple
-
-1. Mi libro está en la mesa.
-2. Mis libros están en la mesa.
-3. Nuestra casa es grande.
-4. Sus preguntas son buenas.
-
-### Completar
-
-1. Mi teléfono está aquí.
-2. Tus libros son nuevos.
-3. Nuestro profesor es amable.
-4. Nuestras clases son útiles.
-
-### Traducción
-
-1. Mi libro está en la mesa.
-2. Mis libros están en la mesa.
-3. Tu casa es grande.
-4. Nuestras clases son útiles.
-
 ## Wrap Up
 
 | Pronombre | Example | Translation |

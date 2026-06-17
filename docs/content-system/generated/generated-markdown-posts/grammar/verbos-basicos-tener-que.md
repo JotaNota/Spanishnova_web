@@ -34,7 +34,7 @@ Use tener que with common infinitives to describe what people need to do.
 - Mi hermano tiene que limpiar su cuarto. -> My brother has to clean his room.
 - Tenemos que comprar comida. -> We have to buy food.
 
-## Formas
+## Estructura
 
 | Patrón | Example | Translation |
 | --- | --- | --- |
@@ -132,29 +132,6 @@ Use tener que with common infinitives to describe what people need to do.
 4. We have to leave now.
 
    Tenemos que salir ahora.
-
-## Answer Key
-
-### Selección simple
-
-1. Yo tengo que estudiar.
-2. Tu tienes que escuchar.
-3. Ella tiene que trabajar.
-4. Nosotros tenemos que practicar.
-
-### Completar
-
-1. Yo tengo que leer.
-2. Tu tienes que estudiar.
-3. Ella tiene que trabajar.
-4. Ellos tienen que salir.
-
-### Traducción
-
-1. Tengo que estudiar.
-2. Tu tienes que escuchar.
-3. Ella tiene que trabajar.
-4. Tenemos que salir ahora.
 
 ## Wrap Up
 

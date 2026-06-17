@@ -39,7 +39,7 @@ Use ver in the imperfect for what someone was seeing, used to see, or was watchi
 - Nosotros veíamos dibujos animados después de clase. -> We used to watch cartoons after class.
 - Desde la ventana, ella veía el mar. -> From the window, she could see the sea.
 
-## Formas
+## Estructura
 
 | Patrón | Example | Translation |
 | --- | --- | --- |
@@ -197,41 +197,6 @@ Use ver in the imperfect for what someone was seeing, used to see, or was watchi
 8. Did you use to go every day?
 
    ¿Tú ibas todos los días?
-
-## Answer Key
-
-### Selección simple
-
-1. Yo era estudiante.
-2. Tú ibas al parque los domingos.
-3. Ella veía una película.
-4. Nosotros éramos amigos.
-5. Ellos iban a la escuela juntos.
-6. Ustedes veían el partido en casa.
-7. Mi casa era pequeña.
-8. Yo no veía las respuestas.
-
-### Completar
-
-1. Yo era muy paciente antes.
-2. Tú ibas a clase temprano.
-3. Ella veía la ciudad desde el balcón.
-4. Nosotros éramos una familia grande.
-5. Ellos iban al cine cada mes.
-6. Ustedes veían el mar desde el hotel.
-7. Mi escuela era moderna.
-8. Nosotras no íbamos al centro de noche.
-
-### Traducción
-
-1. Yo era niño.
-2. Tú ibas al parque.
-3. Ella veía películas.
-4. Nosotros éramos amigos.
-5. Ellos iban a la escuela.
-6. Ustedes veían las montañas.
-7. Él no era médico.
-8. ¿Tú ibas todos los días?
 
 ## Wrap Up
 

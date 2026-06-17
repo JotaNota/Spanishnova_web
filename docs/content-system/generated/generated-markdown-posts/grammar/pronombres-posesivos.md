@@ -134,29 +134,6 @@ Use ser plus a possessive pronoun to say that something belongs to someone.
 
    ¿Estas llaves son tuyas?
 
-## Answer Key
-
-### Selección simple
-
-1. Este libro es mío.
-2. La casa es tuya.
-3. Los boletos son nuestros.
-4. Las llaves son suyas.
-
-### Completar
-
-1. Este teléfono no es mío.
-2. La bicicleta es tuya.
-3. Los documentos son nuestros.
-4. Las ideas son suyas.
-
-### Traducción
-
-1. Este libro es mío.
-2. La casa es tuya.
-3. Los boletos son nuestros.
-4. ¿Estas llaves son tuyas?
-
 ## Wrap Up
 
 | Pronombre | Example | Translation |

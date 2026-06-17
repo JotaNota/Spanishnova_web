@@ -129,29 +129,6 @@ Use both forms when you want to compare distance and ownership in the same sente
 
    ¿Aquellos coches son nuestros?
 
-## Answer Key
-
-### Selección simple
-
-1. Este libro es mío.
-2. Esa mochila es tuya.
-3. Aquellos vasos son nuestros.
-4. Estas llaves son suyas.
-
-### Completar
-
-1. Este teléfono no es mío.
-2. Esa casa es tuya.
-3. Estos libros son nuestros.
-4. Aquellas ideas son suyas.
-
-### Traducción
-
-1. Este cuaderno es mío.
-2. Esa silla es tuya.
-3. Estas mesas son nuestras.
-4. ¿Aquellos coches son nuestros?
-
 ## Wrap Up
 
 | Use | Example | Translation |

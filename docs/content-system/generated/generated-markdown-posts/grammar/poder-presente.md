@@ -34,14 +34,6 @@ Use poder to ask permission or to say that something is possible.
 - Puedes usar mi telefono. -> You can use my phone.
 - Podemos estudiar despues. -> We can study later.
 
-## Formas
-
-| Patrón | Example | Translation |
-| --- | --- | --- |
-| subject + poder + infinitive | Ella puede hablar espanol. | She can speak Spanish. |
-| subject + no + poder + infinitive | Nosotros no podemos salir ahora. | We cannot leave now. |
-| Poder + subject + infinitive? | Puedes venir manana? | Can you come tomorrow? |
-
 ## Oraciones.
 
 ### Afirmativas
@@ -192,41 +184,6 @@ Use poder to ask permission or to say that something is possible.
 8. Can they travel tomorrow?
 
    Ellos pueden viajar manana?
-
-## Answer Key
-
-### Selección simple
-
-1. Yo puedo ayudar.
-2. Tu puedes leer este libro.
-3. Ella puede trabajar hoy.
-4. Nosotros podemos practicar.
-5. Ellos pueden esperar.
-6. Usted puede hablar conmigo.
-7. Ustedes no pueden salir ahora.
-8. Puedes tu venir manana?
-
-### Completar
-
-1. Yo puedo estudiar esta noche.
-2. Tu puedes usar mi lapiz.
-3. Ella puede correr rapido.
-4. Nosotros podemos escuchar musica.
-5. Ellos pueden comprar comida.
-6. Ustedes no pueden abrir la puerta.
-7. Puedes tu esperar cinco minutos?
-8. El puede descansar ahora?
-
-### Traducción
-
-1. Yo puedo ayudar.
-2. Tu puedes leer este libro.
-3. Ella puede trabajar hoy.
-4. Nosotros podemos practicar.
-5. Ellos pueden esperar.
-6. Yo no puedo manejar hoy.
-7. Puedes repetir, por favor?
-8. Ellos pueden viajar manana?
 
 ## Wrap Up
 

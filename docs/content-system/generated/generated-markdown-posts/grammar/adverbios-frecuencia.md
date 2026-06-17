@@ -135,29 +135,6 @@ Use a veces for occasional actions and nunca for actions that do not happen.
 
    ¿Trabajas normalmente los lunes?
 
-## Answer Key
-
-### Selección simple
-
-1. Siempre estudio por la mañana.
-2. A veces camino al trabajo.
-3. Nunca tomo café por la noche.
-4. Normalmente desayuno a las ocho.
-
-### Completar
-
-1. Siempre practico español.
-2. A veces escucho música.
-3. Nunca llego tarde.
-4. A menudo cocino en casa.
-
-### Traducción
-
-1. Siempre estudio después de clase.
-2. A veces corro en el parque.
-3. Nunca llego tarde.
-4. ¿Trabajas normalmente los lunes?
-
 ## Wrap Up
 
 | Use | Example | Translation |

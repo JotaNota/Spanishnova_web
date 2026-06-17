@@ -8,6 +8,22 @@ ANSWER_GROUP_LABELS = {
 }
 
 
+def should_render_structure(lesson_type):
+    return lesson_type in {"structure", "comparison"}
+
+
+def structure_heading_for(lesson_type):
+    if lesson_type == "comparison":
+        return "Comparación"
+    return "Estructura"
+
+
+def structure_id_for(lesson_type):
+    if lesson_type == "comparison":
+        return "comparacion"
+    return "estructura"
+
+
 def md_pair(item):
     return f"{item['spanish']} -> {item['english']}"
 
@@ -73,8 +89,8 @@ def render_markdown(row, data):
         lines += render_markdown_table(data["forms_table"]["headers"], data["forms_table"]["rows"])
         lines.append("")
 
-    if data.get("structure"):
-        heading = "Comparación" if lesson_type == "comparison" else "Formas"
+    if data.get("structure") and should_render_structure(lesson_type):
+        heading = structure_heading_for(lesson_type)
         lines += [
             f"## {heading}",
             "",
@@ -111,15 +127,6 @@ def render_markdown(row, data):
     lines += ["### Traducción", ""]
     for index, item in enumerate(data["exercises"]["translate"], start=1):
         lines += [f"{index}. {item['prompt']}", "", f"   {item['answer']}", ""]
-
-    lines += ["## Answer Key", ""]
-    for group in ["select", "complete", "translate"]:
-        if group not in data["answers"]:
-            continue
-        lines += [f"### {ANSWER_GROUP_LABELS[group]}", ""]
-        for index, answer in enumerate(data["answers"][group], start=1):
-            lines.append(f"{index}. {answer}")
-        lines.append("")
 
     if data.get("wrap_up"):
         lines += [
@@ -286,9 +293,9 @@ def render_html(row, data):
         )
     parts.append("</section>")
 
-    if data.get("structure"):
-        heading = "Comparación" if lesson_type == "comparison" else "Formas"
-        section_id = "comparacion" if lesson_type == "comparison" else "formas-estructura"
+    if data.get("structure") and should_render_structure(lesson_type):
+        heading = structure_heading_for(lesson_type)
+        section_id = structure_id_for(lesson_type)
         parts += [
             "",
             f'<section id="{section_id}">',

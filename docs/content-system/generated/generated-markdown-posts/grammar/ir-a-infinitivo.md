@@ -34,7 +34,7 @@ Use this structure for actions that will happen soon or that feel planned.
 - Vamos a comer en diez minutos. -> We are going to eat in ten minutes.
 - Va a llover esta tarde. -> It is going to rain this afternoon.
 
-## Formas
+## Estructura
 
 | Patrón | Example | Translation |
 | --- | --- | --- |
@@ -132,29 +132,6 @@ Use this structure for actions that will happen soon or that feel planned.
 4. We are going to travel tomorrow.
 
    Vamos a viajar manana.
-
-## Answer Key
-
-### Selección simple
-
-1. Yo voy a estudiar.
-2. Tu vas a trabajar.
-3. Ella va a cocinar.
-4. Nosotros vamos a practicar.
-
-### Completar
-
-1. Yo voy a leer.
-2. Tu vas a aprender mucho.
-3. Ella va a cocinar.
-4. Ellos van a correr.
-
-### Traducción
-
-1. Voy a estudiar.
-2. Tu vas a trabajar.
-3. Ella va a cocinar.
-4. Vamos a viajar manana.
 
 ## Wrap Up
 

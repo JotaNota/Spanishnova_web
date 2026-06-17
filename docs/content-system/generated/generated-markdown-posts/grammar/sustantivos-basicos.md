@@ -41,7 +41,7 @@ Use hay before nouns to say that something exists or is present.
 - Hay una silla aqui. -> There is a chair here.
 - Hay estudiantes en la escuela. -> There are students in the school.
 
-## Formas
+## Estructura
 
 | Patrón | Example | Translation |
 | --- | --- | --- |
@@ -139,29 +139,6 @@ Use hay before nouns to say that something exists or is present.
 4. The classes are interesting.
 
    Las clases son interesantes.
-
-## Answer Key
-
-### Selección simple
-
-1. El libro es rojo.
-2. Tengo una pregunta.
-3. Hay dos sillas en la clase.
-4. Las mesas son pequenas.
-
-### Completar
-
-1. El libro es interesante.
-2. Tengo una computadora.
-3. Hay una ventana en la oficina.
-4. Las clases son faciles.
-
-### Traducción
-
-1. El libro es importante.
-2. Tengo una pregunta.
-3. Hay una mesa.
-4. Las clases son interesantes.
 
 ## Wrap Up
 

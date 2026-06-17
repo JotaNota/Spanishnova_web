@@ -52,14 +52,6 @@ Use aquel forms for things that feel farther away in space, time, or context.
 - Aquel edificio es antiguo. -> That building over there is old.
 - Aquellas vacaciones fueron perfectas. -> Those vacations back then were perfect.
 
-## Formas
-
-| Patrón | Example | Translation |
-| --- | --- | --- |
-| este / esta + singular noun | esta mesa | this table |
-| ese / esa + singular noun | ese coche | that car |
-| aquel / aquella + singular noun | aquella escuela | that school over there |
-
 ## Oraciones.
 
 ### Afirmativas
@@ -150,29 +142,6 @@ Use aquel forms for things that feel farther away in space, time, or context.
 4. That building over there is old.
 
    Aquel edificio es antiguo.
-
-## Answer Key
-
-### Selección simple
-
-1. Este libro es interesante.
-2. Esa casa es grande.
-3. Aquellos estudiantes son nuevos.
-4. Estas preguntas son fáciles.
-
-### Completar
-
-1. Este libro es mío.
-2. Esta mesa está limpia.
-3. Esas casas son bonitas.
-4. Aquel edificio es antiguo.
-
-### Traducción
-
-1. Este libro es mío.
-2. Esa casa es bonita.
-3. Estas preguntas son fáciles.
-4. Aquel edificio es antiguo.
 
 ## Wrap Up
 
