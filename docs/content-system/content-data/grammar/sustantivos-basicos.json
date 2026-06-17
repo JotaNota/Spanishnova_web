@@ -69,7 +69,7 @@
   ],
   "uses": [
     {
-      "heading": "Identify With Ser",
+      "heading": "Identify with ser",
       "body": "Use ser with a noun to identify a person or thing.",
       "examples": [
         {
@@ -77,13 +77,13 @@
           "english": "She is a doctor."
         },
         {
-          "spanish": "Esto es un telefono.",
+          "spanish": "Esto es un teléfono.",
           "english": "This is a phone."
         }
       ]
     },
     {
-      "heading": "Possession With Tener",
+      "heading": "Possession with tener",
       "body": "Use tener with nouns to say what someone has.",
       "examples": [
         {
@@ -97,11 +97,11 @@
       ]
     },
     {
-      "heading": "Existence With Hay",
+      "heading": "Existence with hay",
       "body": "Use hay before nouns to say that something exists or is present.",
       "examples": [
         {
-          "spanish": "Hay una silla aqui.",
+          "spanish": "Hay una silla aquí.",
           "english": "There is a chair here."
         },
         {
@@ -132,15 +132,15 @@
     ],
     "negative": [
       {
-        "spanish": "No tengo un lapiz.",
+        "spanish": "No tengo un lápiz.",
         "english": "I do not have a pencil."
       },
       {
-        "spanish": "No hay estudiantes aqui.",
+        "spanish": "No hay estudiantes aquí.",
         "english": "There are no students here."
       },
       {
-        "spanish": "La pregunta no es dificil.",
+        "spanish": "La pregunta no es difícil.",
         "english": "The question is not difficult."
       },
       {
@@ -150,19 +150,19 @@
     ],
     "questions": [
       {
-        "spanish": "Es una escuela?",
+        "spanish": "¿Es una escuela?",
         "english": "Is it a school?"
       },
       {
-        "spanish": "Tienes una pregunta?",
+        "spanish": "¿Tienes una pregunta?",
         "english": "Do you have a question?"
       },
       {
-        "spanish": "Hay una farmacia cerca?",
+        "spanish": "¿Hay una farmacia cerca?",
         "english": "Is there a pharmacy nearby?"
       },
       {
-        "spanish": "Son tus amigos?",
+        "spanish": "¿Son tus amigos?",
         "english": "Are they your friends?"
       }
     ]
@@ -185,9 +185,9 @@
         "answer": "Hay dos sillas en la clase."
       },
       {
-        "prompt": "_____ mesas son pequenas.",
+        "prompt": "_____ mesas son pequeñas.",
         "options": ["Los", "Las", "El"],
-        "answer": "Las mesas son pequenas."
+        "answer": "Las mesas son pequeñas."
       }
     ],
     "complete": [
@@ -204,8 +204,8 @@
         "answer": "Hay una ventana en la oficina."
       },
       {
-        "prompt": "Las ___ son faciles.",
-        "answer": "Las clases son faciles."
+        "prompt": "Las ___ son fáciles.",
+        "answer": "Las clases son fáciles."
       }
     ],
     "translate": [
@@ -232,13 +232,13 @@
       "El libro es rojo.",
       "Tengo una pregunta.",
       "Hay dos sillas en la clase.",
-      "Las mesas son pequenas."
+      "Las mesas son pequeñas."
     ],
     "complete": [
       "El libro es interesante.",
       "Tengo una computadora.",
       "Hay una ventana en la oficina.",
-      "Las clases son faciles."
+      "Las clases son fáciles."
     ],
     "translate": [
       "El libro es importante.",
@@ -252,6 +252,11 @@
       "use": "Identify",
       "example": "Es una escuela.",
       "translation": "It is a school."
+    },
+    {
+      "use": "Gender and number",
+      "example": "Las mesas son pequeñas.",
+      "translation": "The tables are small."
     },
     {
       "use": "Possession",

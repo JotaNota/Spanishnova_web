@@ -20,25 +20,25 @@ Most Spanish nouns are masculine or feminine, and they can be singular or plural
 
 ## Cómo/cuándo lo usamos
 
-### Identify With Ser
+### Identify with ser
 
 Use ser with a noun to identify a person or thing.
 
 - Ella es doctora. -> She is a doctor.
-- Esto es un telefono. -> This is a phone.
+- Esto es un teléfono. -> This is a phone.
 
-### Possession With Tener
+### Possession with tener
 
 Use tener with nouns to say what someone has.
 
 - Tengo una computadora. -> I have a computer.
 - Ellos tienen dos perros. -> They have two dogs.
 
-### Existence With Hay
+### Existence with hay
 
 Use hay before nouns to say that something exists or is present.
 
-- Hay una silla aqui. -> There is a chair here.
+- Hay una silla aquí. -> There is a chair here.
 - Hay estudiantes en la escuela. -> There are students in the school.
 
 ## Estructura
@@ -60,17 +60,17 @@ Use hay before nouns to say that something exists or is present.
 
 ### Negativas
 
-- No tengo un lapiz. -> I do not have a pencil.
-- No hay estudiantes aqui. -> There are no students here.
-- La pregunta no es dificil. -> The question is not difficult.
+- No tengo un lápiz. -> I do not have a pencil.
+- No hay estudiantes aquí. -> There are no students here.
+- La pregunta no es difícil. -> The question is not difficult.
 - Los libros no son nuevos. -> The books are not new.
 
 ### Forma de pregunta
 
-- Es una escuela? -> Is it a school?
-- Tienes una pregunta? -> Do you have a question?
-- Hay una farmacia cerca? -> Is there a pharmacy nearby?
-- Son tus amigos? -> Are they your friends?
+- ¿Es una escuela? -> Is it a school?
+- ¿Tienes una pregunta? -> Do you have a question?
+- ¿Hay una farmacia cerca? -> Is there a pharmacy nearby?
+- ¿Son tus amigos? -> Are they your friends?
 
 ## Ejercicios
 
@@ -97,12 +97,12 @@ Use hay before nouns to say that something exists or is present.
 
    Hay dos sillas en la clase.
 
-4. _____ mesas son pequenas.
+4. _____ mesas son pequeñas.
    - a) Los
    - b) Las
    - c) El
 
-   Las mesas son pequenas.
+   Las mesas son pequeñas.
 
 ### Completar
 
@@ -118,9 +118,9 @@ Use hay before nouns to say that something exists or is present.
 
    Hay una ventana en la oficina.
 
-4. Las ___ son faciles.
+4. Las ___ son fáciles.
 
-   Las clases son faciles.
+   Las clases son fáciles.
 
 ### Traducción
 
@@ -145,5 +145,6 @@ Use hay before nouns to say that something exists or is present.
 | Use | Example | Translation |
 | --- | --- | --- |
 | Identify | Es una escuela. | It is a school. |
+| Gender and number | Las mesas son pequeñas. | The tables are small. |
 | Possession | Tengo un libro. | I have a book. |
 | Existence | Hay una mesa. | There is a table. |

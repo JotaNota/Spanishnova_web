@@ -26,12 +26,12 @@
     },
     {
       "pattern": "subject + no + tener + que + infinitive",
-      "example": "Tu no tienes que esperar.",
+      "example": "Tú no tienes que esperar.",
       "translation": "You do not have to wait."
     },
     {
       "pattern": "tener + subject + que + infinitive?",
-      "example": "Tienes que trabajar hoy?",
+      "example": "¿Tienes que trabajar hoy?",
       "translation": "Do you have to work today?"
     }
   ],
@@ -43,13 +43,13 @@
       "translation": "I have to read."
     },
     {
-      "subject": "Tu",
+      "subject": "Tú",
       "form": "tienes que + infinitive",
-      "example": "Tu tienes que escuchar.",
+      "example": "Tú tienes que escuchar.",
       "translation": "You have to listen."
     },
     {
-      "subject": "El / Ella / Usted",
+      "subject": "Él / Ella / Usted",
       "form": "tiene que + infinitive",
       "example": "Ella tiene que estudiar.",
       "translation": "She has to study."
@@ -100,11 +100,11 @@
   "sentences": {
     "affirmative": [
       {
-        "spanish": "Yo tengo que estudiar espanol.",
+        "spanish": "Yo tengo que estudiar español.",
         "english": "I have to study Spanish."
       },
       {
-        "spanish": "Tu tienes que llamar a tu madre.",
+        "spanish": "Tú tienes que llamar a tu madre.",
         "english": "You have to call your mother."
       },
       {
@@ -118,15 +118,15 @@
     ],
     "negative": [
       {
-        "spanish": "No tengo que trabajar manana.",
+        "spanish": "No tengo que trabajar mañana.",
         "english": "I do not have to work tomorrow."
       },
       {
-        "spanish": "Tu no tienes que pagar ahora.",
+        "spanish": "Tú no tienes que pagar ahora.",
         "english": "You do not have to pay now."
       },
       {
-        "spanish": "El no tiene que conducir hoy.",
+        "spanish": "Él no tiene que conducir hoy.",
         "english": "He does not have to drive today."
       },
       {
@@ -136,19 +136,19 @@
     ],
     "questions": [
       {
-        "spanish": "Tienes que estudiar esta noche?",
+        "spanish": "¿Tienes que estudiar esta noche?",
         "english": "Do you have to study tonight?"
       },
       {
-        "spanish": "Ella tiene que venir a clase?",
+        "spanish": "¿Ella tiene que venir a clase?",
         "english": "Does she have to come to class?"
       },
       {
-        "spanish": "Tenemos que usar este libro?",
+        "spanish": "¿Tenemos que usar este libro?",
         "english": "Do we have to use this book?"
       },
       {
-        "spanish": "Ustedes tienen que practicar?",
+        "spanish": "¿Ustedes tienen que practicar?",
         "english": "Do you all have to practice?"
       }
     ]
@@ -161,14 +161,14 @@
         "answer": "Yo tengo que estudiar."
       },
       {
-        "prompt": "Tu _____ que escuchar.",
+        "prompt": "Tú _____ que escuchar.",
         "options": ["tiene", "tienes", "tenemos"],
-        "answer": "Tu tienes que escuchar."
+        "answer": "Tú tienes que escuchar."
       },
       {
-        "prompt": "Ella tiene que _____.",
+        "prompt": "Usted tiene que _____.",
         "options": ["trabaja", "trabajar", "trabajo"],
-        "answer": "Ella tiene que trabajar."
+        "answer": "Usted tiene que trabajar."
       },
       {
         "prompt": "Nosotros _____ que practicar.",
@@ -182,8 +182,8 @@
         "answer": "Yo tengo que leer."
       },
       {
-        "prompt": "Tu tienes que ___.",
-        "answer": "Tu tienes que estudiar."
+        "prompt": "Tú tienes que ___.",
+        "answer": "Tú tienes que descansar."
       },
       {
         "prompt": "Ella ___ que trabajar.",
@@ -201,7 +201,7 @@
       },
       {
         "prompt": "You have to listen.",
-        "answer": "Tu tienes que escuchar."
+        "answer": "Tú tienes que escuchar."
       },
       {
         "prompt": "She has to work.",
@@ -216,19 +216,19 @@
   "answers": {
     "select": [
       "Yo tengo que estudiar.",
-      "Tu tienes que escuchar.",
-      "Ella tiene que trabajar.",
+      "Tú tienes que escuchar.",
+      "Usted tiene que trabajar.",
       "Nosotros tenemos que practicar."
     ],
     "complete": [
       "Yo tengo que leer.",
-      "Tu tienes que estudiar.",
+      "Tú tienes que descansar.",
       "Ella tiene que trabajar.",
       "Ellos tienen que salir."
     ],
     "translate": [
       "Tengo que estudiar.",
-      "Tu tienes que escuchar.",
+      "Tú tienes que escuchar.",
       "Ella tiene que trabajar.",
       "Tenemos que salir ahora."
     ]
@@ -246,7 +246,7 @@
     },
     {
       "use": "Question",
-      "example": "Tienes que trabajar hoy?",
+      "example": "¿Tienes que trabajar hoy?",
       "translation": "Do you have to work today?"
     }
   ]

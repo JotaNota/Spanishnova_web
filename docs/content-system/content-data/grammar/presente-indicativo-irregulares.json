@@ -65,7 +65,7 @@
   ],
   "uses": [
     {
-      "heading": "Stem-Changing Verbs",
+      "heading": "Stem-changing verbs",
       "body": "Some verbs change the stem in most present-tense forms, but nosotros often keeps the original stem.",
       "examples": [
         {
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "heading": "Irregular Yo Forms",
+      "heading": "Irregular yo forms",
       "body": "Some verbs are irregular mainly in the yo form.",
       "examples": [
         {
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "heading": "Very Common Irregular Verbs",
+      "heading": "Very common irregular verbs",
       "body": "Ser, estar, ir, and tener are common irregular verbs that need extra practice.",
       "examples": [
         {
@@ -166,14 +166,14 @@
   "exercises": {
     "select": [
       {
-        "prompt": "Yo _____ la tarea.",
+        "prompt": "Yo _____ la cena.",
         "options": ["hago", "haces", "hace"],
-        "answer": "Yo hago la tarea."
+        "answer": "Yo hago la cena."
       },
       {
-        "prompt": "Ella _____ café.",
+        "prompt": "Ella _____ agua.",
         "options": ["quiero", "quiere", "queremos"],
-        "answer": "Ella quiere café."
+        "answer": "Ella quiere agua."
       },
       {
         "prompt": "Nosotros _____ tiempo.",
@@ -206,8 +206,8 @@
     ],
     "translate": [
       {
-        "prompt": "I do the homework.",
-        "answer": "Yo hago la tarea."
+        "prompt": "I make dinner.",
+        "answer": "Yo hago la cena."
       },
       {
         "prompt": "She wants coffee.",
@@ -225,8 +225,8 @@
   },
   "answers": {
     "select": [
-      "Yo hago la tarea.",
-      "Ella quiere café.",
+      "Yo hago la cena.",
+      "Ella quiere agua.",
       "Nosotros tenemos tiempo.",
       "Ustedes van a clase."
     ],
@@ -237,7 +237,7 @@
       "Nosotros vamos al mercado."
     ],
     "translate": [
-      "Yo hago la tarea.",
+      "Yo hago la cena.",
       "Ella quiere café.",
       "Nosotros tenemos tiempo.",
       "¿Ustedes pueden esperar?"
@@ -251,13 +251,18 @@
     },
     {
       "use": "Irregular yo",
-      "example": "Yo hago la tarea.",
-      "translation": "I do the homework."
+      "example": "Yo hago la cena.",
+      "translation": "I make dinner."
     },
     {
       "use": "Common irregular verb",
       "example": "Nosotros vamos al parque.",
       "translation": "We go to the park."
+    },
+    {
+      "use": "Question",
+      "example": "¿Ustedes pueden esperar?",
+      "translation": "Can you all wait?"
     }
   ]
 }

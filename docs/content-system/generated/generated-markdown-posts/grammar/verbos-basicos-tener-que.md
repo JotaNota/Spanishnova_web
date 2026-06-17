@@ -13,8 +13,8 @@ Conjugate tener for the subject, add que, and then use an infinitive such as est
 | Subject | Forma | Example | Translation |
 | --- | --- | --- | --- |
 | Yo | tengo que + infinitive | Yo tengo que leer. | I have to read. |
-| Tu | tienes que + infinitive | Tu tienes que escuchar. | You have to listen. |
-| El / Ella / Usted | tiene que + infinitive | Ella tiene que estudiar. | She has to study. |
+| Tú | tienes que + infinitive | Tú tienes que escuchar. | You have to listen. |
+| Él / Ella / Usted | tiene que + infinitive | Ella tiene que estudiar. | She has to study. |
 | Nosotros / Nosotras | tenemos que + infinitive | Nosotros tenemos que practicar. | We have to practice. |
 | Ellos / Ellas / Ustedes | tienen que + infinitive | Ellos tienen que trabajar. | They have to work. |
 
@@ -39,31 +39,31 @@ Use tener que with common infinitives to describe what people need to do.
 | Patrón | Example | Translation |
 | --- | --- | --- |
 | subject + tener + que + infinitive | Yo tengo que practicar. | I have to practice. |
-| subject + no + tener + que + infinitive | Tu no tienes que esperar. | You do not have to wait. |
-| tener + subject + que + infinitive? | Tienes que trabajar hoy? | Do you have to work today? |
+| subject + no + tener + que + infinitive | Tú no tienes que esperar. | You do not have to wait. |
+| tener + subject + que + infinitive? | ¿Tienes que trabajar hoy? | Do you have to work today? |
 
 ## Oraciones.
 
 ### Afirmativas
 
-- Yo tengo que estudiar espanol. -> I have to study Spanish.
-- Tu tienes que llamar a tu madre. -> You have to call your mother.
+- Yo tengo que estudiar español. -> I have to study Spanish.
+- Tú tienes que llamar a tu madre. -> You have to call your mother.
 - Ella tiene que preparar la cena. -> She has to prepare dinner.
 - Nosotros tenemos que salir temprano. -> We have to leave early.
 
 ### Negativas
 
-- No tengo que trabajar manana. -> I do not have to work tomorrow.
-- Tu no tienes que pagar ahora. -> You do not have to pay now.
-- El no tiene que conducir hoy. -> He does not have to drive today.
+- No tengo que trabajar mañana. -> I do not have to work tomorrow.
+- Tú no tienes que pagar ahora. -> You do not have to pay now.
+- Él no tiene que conducir hoy. -> He does not have to drive today.
 - Ellos no tienen que esperar. -> They do not have to wait.
 
 ### Forma de pregunta
 
-- Tienes que estudiar esta noche? -> Do you have to study tonight?
-- Ella tiene que venir a clase? -> Does she have to come to class?
-- Tenemos que usar este libro? -> Do we have to use this book?
-- Ustedes tienen que practicar? -> Do you all have to practice?
+- ¿Tienes que estudiar esta noche? -> Do you have to study tonight?
+- ¿Ella tiene que venir a clase? -> Does she have to come to class?
+- ¿Tenemos que usar este libro? -> Do we have to use this book?
+- ¿Ustedes tienen que practicar? -> Do you all have to practice?
 
 ## Ejercicios
 
@@ -76,19 +76,19 @@ Use tener que with common infinitives to describe what people need to do.
 
    Yo tengo que estudiar.
 
-2. Tu _____ que escuchar.
+2. Tú _____ que escuchar.
    - a) tiene
    - b) tienes
    - c) tenemos
 
-   Tu tienes que escuchar.
+   Tú tienes que escuchar.
 
-3. Ella tiene que _____.
+3. Usted tiene que _____.
    - a) trabaja
    - b) trabajar
    - c) trabajo
 
-   Ella tiene que trabajar.
+   Usted tiene que trabajar.
 
 4. Nosotros _____ que practicar.
    - a) tenemos
@@ -103,9 +103,9 @@ Use tener que with common infinitives to describe what people need to do.
 
    Yo tengo que leer.
 
-2. Tu tienes que ___.
+2. Tú tienes que ___.
 
-   Tu tienes que estudiar.
+   Tú tienes que descansar.
 
 3. Ella ___ que trabajar.
 
@@ -123,7 +123,7 @@ Use tener que with common infinitives to describe what people need to do.
 
 2. You have to listen.
 
-   Tu tienes que escuchar.
+   Tú tienes que escuchar.
 
 3. She has to work.
 
@@ -139,4 +139,4 @@ Use tener que with common infinitives to describe what people need to do.
 | --- | --- | --- |
 | Obligation | Tengo que estudiar. | I have to study. |
 | Negative obligation | No tienes que pagar. | You do not have to pay. |
-| Question | Tienes que trabajar hoy? | Do you have to work today? |
+| Question | ¿Tienes que trabajar hoy? | Do you have to work today? |

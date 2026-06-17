@@ -19,21 +19,21 @@ Present indicative irregular verbs include stem-changing verbs like querer and p
 
 ## Cómo/cuándo lo usamos
 
-### Stem-Changing Verbs
+### Stem-changing verbs
 
 Some verbs change the stem in most present-tense forms, but nosotros often keeps the original stem.
 
 - Yo quiero practicar. -> I want to practice.
 - Nosotros podemos estudiar hoy. -> We can study today.
 
-### Irregular Yo Forms
+### Irregular yo forms
 
 Some verbs are irregular mainly in the yo form.
 
 - Yo hago la cena. -> I make dinner.
 - Yo pongo el libro aquí. -> I put the book here.
 
-### Very Common Irregular Verbs
+### Very common irregular verbs
 
 Ser, estar, ir, and tener are common irregular verbs that need extra practice.
 
@@ -67,19 +67,19 @@ Ser, estar, ir, and tener are common irregular verbs that need extra practice.
 
 ### Selección simple
 
-1. Yo _____ la tarea.
+1. Yo _____ la cena.
    - a) hago
    - b) haces
    - c) hace
 
-   Yo hago la tarea.
+   Yo hago la cena.
 
-2. Ella _____ café.
+2. Ella _____ agua.
    - a) quiero
    - b) quiere
    - c) queremos
 
-   Ella quiere café.
+   Ella quiere agua.
 
 3. Nosotros _____ tiempo.
    - a) tengo
@@ -115,9 +115,9 @@ Ser, estar, ir, and tener are common irregular verbs that need extra practice.
 
 ### Traducción
 
-1. I do the homework.
+1. I make dinner.
 
-   Yo hago la tarea.
+   Yo hago la cena.
 
 2. She wants coffee.
 
@@ -136,5 +136,6 @@ Ser, estar, ir, and tener are common irregular verbs that need extra practice.
 | Use | Example | Translation |
 | --- | --- | --- |
 | Stem change | Ella quiere café. | She wants coffee. |
-| Irregular yo | Yo hago la tarea. | I do the homework. |
+| Irregular yo | Yo hago la cena. | I make dinner. |
 | Common irregular verb | Nosotros vamos al parque. | We go to the park. |
+| Question | ¿Ustedes pueden esperar? | Can you all wait? |

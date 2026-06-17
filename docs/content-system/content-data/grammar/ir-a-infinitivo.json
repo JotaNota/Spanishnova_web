@@ -14,7 +14,7 @@
       "english": "She is going to cook."
     },
     {
-      "spanish": "Vamos a viajar manana.",
+      "spanish": "Vamos a viajar mañana.",
       "english": "We are going to travel tomorrow."
     }
   ],
@@ -31,7 +31,7 @@
     },
     {
       "pattern": "ir + subject + a + infinitive?",
-      "example": "Vas a estudiar hoy?",
+      "example": "¿Vas a estudiar hoy?",
       "translation": "Are you going to study today?"
     }
   ],
@@ -43,13 +43,13 @@
       "translation": "I am going to study."
     },
     {
-      "subject": "Tu",
+      "subject": "Tú",
       "form": "vas a + infinitive",
-      "example": "Tu vas a trabajar.",
+      "example": "Tú vas a trabajar.",
       "translation": "You are going to work."
     },
     {
-      "subject": "El / Ella / Usted",
+      "subject": "Él / Ella / Usted",
       "form": "va a + infinitive",
       "example": "Ella va a cocinar.",
       "translation": "She is going to cook."
@@ -77,7 +77,7 @@
           "english": "I am going to visit my family."
         },
         {
-          "spanish": "Mis amigos van a jugar futbol.",
+          "spanish": "Mis amigos van a jugar fútbol.",
           "english": "My friends are going to play soccer."
         }
       ]
@@ -104,11 +104,11 @@
         "english": "I am going to read tonight."
       },
       {
-        "spanish": "Tu vas a aprender mucho.",
+        "spanish": "Tú vas a aprender mucho.",
         "english": "You are going to learn a lot."
       },
       {
-        "spanish": "Ella va a preparar cafe.",
+        "spanish": "Ella va a preparar café.",
         "english": "She is going to prepare coffee."
       },
       {
@@ -122,11 +122,11 @@
         "english": "I am not going to go out today."
       },
       {
-        "spanish": "Tu no vas a trabajar manana.",
+        "spanish": "Tú no vas a trabajar mañana.",
         "english": "You are not going to work tomorrow."
       },
       {
-        "spanish": "El no va a comprar nada.",
+        "spanish": "Él no va a comprar nada.",
         "english": "He is not going to buy anything."
       },
       {
@@ -136,19 +136,19 @@
     ],
     "questions": [
       {
-        "spanish": "Vas a estudiar hoy?",
+        "spanish": "¿Vas a estudiar hoy?",
         "english": "Are you going to study today?"
       },
       {
-        "spanish": "Ella va a venir?",
+        "spanish": "¿Ella va a venir?",
         "english": "Is she going to come?"
       },
       {
-        "spanish": "Vamos a empezar ahora?",
+        "spanish": "¿Vamos a empezar ahora?",
         "english": "Are we going to start now?"
       },
       {
-        "spanish": "Ustedes van a viajar?",
+        "spanish": "¿Ustedes van a viajar?",
         "english": "Are you all going to travel?"
       }
     ]
@@ -161,9 +161,9 @@
         "answer": "Yo voy a estudiar."
       },
       {
-        "prompt": "Tu _____ a trabajar.",
+        "prompt": "Tú _____ a trabajar.",
         "options": ["va", "vas", "vamos"],
-        "answer": "Tu vas a trabajar."
+        "answer": "Tú vas a trabajar."
       },
       {
         "prompt": "Ella va a _____.",
@@ -182,8 +182,8 @@
         "answer": "Yo voy a leer."
       },
       {
-        "prompt": "Tu ___ a aprender mucho.",
-        "answer": "Tu vas a aprender mucho."
+        "prompt": "Tú ___ a aprender mucho.",
+        "answer": "Tú vas a aprender mucho."
       },
       {
         "prompt": "Ella ___ a cocinar.",
@@ -201,7 +201,7 @@
       },
       {
         "prompt": "You are going to work.",
-        "answer": "Tu vas a trabajar."
+        "answer": "Tú vas a trabajar."
       },
       {
         "prompt": "She is going to cook.",
@@ -209,28 +209,28 @@
       },
       {
         "prompt": "We are going to travel tomorrow.",
-        "answer": "Vamos a viajar manana."
+        "answer": "Vamos a viajar mañana."
       }
     ]
   },
   "answers": {
     "select": [
       "Yo voy a estudiar.",
-      "Tu vas a trabajar.",
+      "Tú vas a trabajar.",
       "Ella va a cocinar.",
       "Nosotros vamos a practicar."
     ],
     "complete": [
       "Yo voy a leer.",
-      "Tu vas a aprender mucho.",
+      "Tú vas a aprender mucho.",
       "Ella va a cocinar.",
       "Ellos van a correr."
     ],
     "translate": [
       "Voy a estudiar.",
-      "Tu vas a trabajar.",
+      "Tú vas a trabajar.",
       "Ella va a cocinar.",
-      "Vamos a viajar manana."
+      "Vamos a viajar mañana."
     ]
   },
   "wrap_up": [
@@ -246,7 +246,7 @@
     },
     {
       "use": "Question",
-      "example": "Vas a practicar?",
+      "example": "¿Vas a practicar?",
       "translation": "Are you going to practice?"
     }
   ]

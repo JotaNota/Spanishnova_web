@@ -6,15 +6,15 @@ Conjugate ir in the present tense, add a, and then use an infinitive. The infini
 
 - Voy a estudiar. -> I am going to study.
 - Ella va a cocinar. -> She is going to cook.
-- Vamos a viajar manana. -> We are going to travel tomorrow.
+- Vamos a viajar mañana. -> We are going to travel tomorrow.
 
 ## Conjugación
 
 | Subject | Forma | Example | Translation |
 | --- | --- | --- | --- |
 | Yo | voy a + infinitive | Yo voy a estudiar. | I am going to study. |
-| Tu | vas a + infinitive | Tu vas a trabajar. | You are going to work. |
-| El / Ella / Usted | va a + infinitive | Ella va a cocinar. | She is going to cook. |
+| Tú | vas a + infinitive | Tú vas a trabajar. | You are going to work. |
+| Él / Ella / Usted | va a + infinitive | Ella va a cocinar. | She is going to cook. |
 | Nosotros / Nosotras | vamos a + infinitive | Nosotros vamos a viajar. | We are going to travel. |
 | Ellos / Ellas / Ustedes | van a + infinitive | Ellos van a correr. | They are going to run. |
 
@@ -25,7 +25,7 @@ Conjugate ir in the present tense, add a, and then use an infinitive. The infini
 Use ir a plus an infinitive to say what someone is planning to do.
 
 - Voy a visitar a mi familia. -> I am going to visit my family.
-- Mis amigos van a jugar futbol. -> My friends are going to play soccer.
+- Mis amigos van a jugar fútbol. -> My friends are going to play soccer.
 
 ### Near Future
 
@@ -40,30 +40,30 @@ Use this structure for actions that will happen soon or that feel planned.
 | --- | --- | --- |
 | subject + ir + a + infinitive | Yo voy a aprender. | I am going to learn. |
 | subject + no + ir + a + infinitive | Ella no va a salir. | She is not going to leave. |
-| ir + subject + a + infinitive? | Vas a estudiar hoy? | Are you going to study today? |
+| ir + subject + a + infinitive? | ¿Vas a estudiar hoy? | Are you going to study today? |
 
 ## Oraciones.
 
 ### Afirmativas
 
 - Yo voy a leer esta noche. -> I am going to read tonight.
-- Tu vas a aprender mucho. -> You are going to learn a lot.
-- Ella va a preparar cafe. -> She is going to prepare coffee.
+- Tú vas a aprender mucho. -> You are going to learn a lot.
+- Ella va a preparar café. -> She is going to prepare coffee.
 - Nosotros vamos a practicar juntos. -> We are going to practice together.
 
 ### Negativas
 
 - No voy a salir hoy. -> I am not going to go out today.
-- Tu no vas a trabajar manana. -> You are not going to work tomorrow.
-- El no va a comprar nada. -> He is not going to buy anything.
+- Tú no vas a trabajar mañana. -> You are not going to work tomorrow.
+- Él no va a comprar nada. -> He is not going to buy anything.
 - Ellas no van a esperar. -> They are not going to wait.
 
 ### Forma de pregunta
 
-- Vas a estudiar hoy? -> Are you going to study today?
-- Ella va a venir? -> Is she going to come?
-- Vamos a empezar ahora? -> Are we going to start now?
-- Ustedes van a viajar? -> Are you all going to travel?
+- ¿Vas a estudiar hoy? -> Are you going to study today?
+- ¿Ella va a venir? -> Is she going to come?
+- ¿Vamos a empezar ahora? -> Are we going to start now?
+- ¿Ustedes van a viajar? -> Are you all going to travel?
 
 ## Ejercicios
 
@@ -76,12 +76,12 @@ Use this structure for actions that will happen soon or that feel planned.
 
    Yo voy a estudiar.
 
-2. Tu _____ a trabajar.
+2. Tú _____ a trabajar.
    - a) va
    - b) vas
    - c) vamos
 
-   Tu vas a trabajar.
+   Tú vas a trabajar.
 
 3. Ella va a _____.
    - a) cocina
@@ -103,9 +103,9 @@ Use this structure for actions that will happen soon or that feel planned.
 
    Yo voy a leer.
 
-2. Tu ___ a aprender mucho.
+2. Tú ___ a aprender mucho.
 
-   Tu vas a aprender mucho.
+   Tú vas a aprender mucho.
 
 3. Ella ___ a cocinar.
 
@@ -123,7 +123,7 @@ Use this structure for actions that will happen soon or that feel planned.
 
 2. You are going to work.
 
-   Tu vas a trabajar.
+   Tú vas a trabajar.
 
 3. She is going to cook.
 
@@ -131,7 +131,7 @@ Use this structure for actions that will happen soon or that feel planned.
 
 4. We are going to travel tomorrow.
 
-   Vamos a viajar manana.
+   Vamos a viajar mañana.
 
 ## Wrap Up
 
@@ -139,4 +139,4 @@ Use this structure for actions that will happen soon or that feel planned.
 | --- | --- | --- |
 | Plan | Voy a estudiar. | I am going to study. |
 | Negative plan | No vamos a salir. | We are not going to leave. |
-| Question | Vas a practicar? | Are you going to practice? |
+| Question | ¿Vas a practicar? | Are you going to practice? |
