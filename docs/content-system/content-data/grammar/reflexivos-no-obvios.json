@@ -121,24 +121,99 @@
     "select": [
       {
         "prompt": "Yo _____ acuerdo de la fecha.",
-        "options": ["me", "te", "se"],
+        "options": [
+          "me",
+          "te",
+          "se"
+        ],
         "answer": "Yo me acuerdo de la fecha."
       },
       {
-        "prompt": "Nosotros _____ quedamos aquí.",
-        "options": ["nos", "se", "me"],
-        "answer": "Nosotros nos quedamos aquí."
+        "prompt": "Nosotros _____ quedamos aqu?.",
+        "options": [
+          "nos",
+          "se",
+          "me"
+        ],
+        "answer": "Nosotros nos quedamos aqu?."
       },
       {
         "prompt": "Ella _____ va temprano.",
-        "options": ["se", "te", "nos"],
+        "options": [
+          "se",
+          "te",
+          "nos"
+        ],
         "answer": "Ella se va temprano."
+      },
+      {
+        "prompt": "T? _____ das cuenta r?pido.",
+        "options": [
+          "te",
+          "se",
+          "me"
+        ],
+        "answer": "T? te das cuenta r?pido."
+      },
+      {
+        "prompt": "Yo no _____ olvido de la clase.",
+        "options": [
+          "me",
+          "te",
+          "se"
+        ],
+        "answer": "Yo no me olvido de la clase."
+      },
+      {
+        "prompt": "Ellos _____ quedan en casa.",
+        "options": [
+          "se",
+          "nos",
+          "me"
+        ],
+        "answer": "Ellos se quedan en casa."
+      },
+      {
+        "prompt": "Ana _____ acuerda del n?mero.",
+        "options": [
+          "se",
+          "te",
+          "nos"
+        ],
+        "answer": "Ana se acuerda del n?mero."
+      },
+      {
+        "prompt": "?T? _____ acuerdas de m??",
+        "options": [
+          "te",
+          "se",
+          "me"
+        ],
+        "answer": "?T? te acuerdas de m??"
+      },
+      {
+        "prompt": "Nosotros _____ vamos despu?s.",
+        "options": [
+          "nos",
+          "se",
+          "te"
+        ],
+        "answer": "Nosotros nos vamos despu?s."
+      },
+      {
+        "prompt": "Ustedes no _____ quedan en la oficina.",
+        "options": [
+          "se",
+          "nos",
+          "me"
+        ],
+        "answer": "Ustedes no se quedan en la oficina."
       }
     ],
     "complete": [
       {
-        "prompt": "Tú ___ das cuenta.",
-        "answer": "Tú te das cuenta."
+        "prompt": "T? ___ das cuenta.",
+        "answer": "T? te das cuenta."
       },
       {
         "prompt": "Yo no ___ olvido de la clase.",
@@ -147,6 +222,34 @@
       {
         "prompt": "Ellos ___ quedan en casa.",
         "answer": "Ellos se quedan en casa."
+      },
+      {
+        "prompt": "Ella ___ va temprano.",
+        "answer": "Ella se va temprano."
+      },
+      {
+        "prompt": "Nosotros ___ acordamos del plan.",
+        "answer": "Nosotros nos acordamos del plan."
+      },
+      {
+        "prompt": "Usted ___ da cuenta del problema.",
+        "answer": "Usted se da cuenta del problema."
+      },
+      {
+        "prompt": "Yo ___ quedo en el hotel.",
+        "answer": "Yo me quedo en el hotel."
+      },
+      {
+        "prompt": "T? no ___ acuerdas del nombre.",
+        "answer": "T? no te acuerdas del nombre."
+      },
+      {
+        "prompt": "Nosotras ___ vamos ahora.",
+        "answer": "Nosotras nos vamos ahora."
+      },
+      {
+        "prompt": "?Ellos ___ quedan aqu??",
+        "answer": "?Ellos se quedan aqu??"
       }
     ],
     "translate": [
@@ -160,25 +263,74 @@
       },
       {
         "prompt": "Do you realize?",
-        "answer": "¿Te das cuenta?"
+        "answer": "?Te das cuenta?"
+      },
+      {
+        "prompt": "We stay here.",
+        "answer": "Nos quedamos aqu?."
+      },
+      {
+        "prompt": "I do not forget the homework.",
+        "answer": "No me olvido de la tarea."
+      },
+      {
+        "prompt": "They stay at home.",
+        "answer": "Ellos se quedan en casa."
+      },
+      {
+        "prompt": "Ana remembers the date.",
+        "answer": "Ana se acuerda de la fecha."
+      },
+      {
+        "prompt": "Are we leaving later?",
+        "answer": "?Nos vamos despu?s?"
+      },
+      {
+        "prompt": "You realize the change.",
+        "answer": "Te das cuenta del cambio."
+      },
+      {
+        "prompt": "He does not remember the number.",
+        "answer": "?l no se acuerda del n?mero."
       }
     ]
   },
   "answers": {
     "select": [
       "Yo me acuerdo de la fecha.",
-      "Nosotros nos quedamos aquí.",
-      "Ella se va temprano."
+      "Nosotros nos quedamos aqu?.",
+      "Ella se va temprano.",
+      "T? te das cuenta r?pido.",
+      "Yo no me olvido de la clase.",
+      "Ellos se quedan en casa.",
+      "Ana se acuerda del n?mero.",
+      "?T? te acuerdas de m??",
+      "Nosotros nos vamos despu?s.",
+      "Ustedes no se quedan en la oficina."
     ],
     "complete": [
-      "Tú te das cuenta.",
+      "T? te das cuenta.",
       "Yo no me olvido de la clase.",
-      "Ellos se quedan en casa."
+      "Ellos se quedan en casa.",
+      "Ella se va temprano.",
+      "Nosotros nos acordamos del plan.",
+      "Usted se da cuenta del problema.",
+      "Yo me quedo en el hotel.",
+      "T? no te acuerdas del nombre.",
+      "Nosotras nos vamos ahora.",
+      "?Ellos se quedan aqu??"
     ],
     "translate": [
       "Me acuerdo de tu nombre.",
       "Ella se va temprano.",
-      "¿Te das cuenta?"
+      "?Te das cuenta?",
+      "Nos quedamos aqu?.",
+      "No me olvido de la tarea.",
+      "Ellos se quedan en casa.",
+      "Ana se acuerda de la fecha.",
+      "?Nos vamos despu?s?",
+      "Te das cuenta del cambio.",
+      "?l no se acuerda del n?mero."
     ]
   },
   "wrap_up": [

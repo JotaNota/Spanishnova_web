@@ -36,6 +36,13 @@ def require_list(data, field, context):
     return value
 
 
+def require_exact_list(data, field, count, context):
+    value = require_list(data, field, context)
+    if len(value) != count:
+        raise SystemExit(f"{context}.{field} must contain exactly {count} item(s)")
+    return value
+
+
 def require_dict(data, field, context):
     value = data.get(field)
     if not isinstance(value, dict):
@@ -86,18 +93,15 @@ def validate_grammar_data(data, lesson_type=None):
         require_list(sentences, group, "grammar sentences")
 
     exercises = require_dict(data, "exercises", "grammar content-data")
-    require_fields(exercises, ["complete", "translate"], "grammar exercises")
+    require_fields(exercises, ["select", "complete", "translate"], "grammar exercises")
     for group in ["select", "complete", "translate"]:
-        if group not in exercises:
-            continue
-        items = require_list(exercises, group, "grammar exercises")
+        items = require_exact_list(exercises, group, 10, "grammar exercises")
         for index, item in enumerate(items, start=1):
             require_fields(item, ["prompt", "answer"], f"grammar exercises.{group}[{index}]")
             if group == "select":
                 require_list(item, "options", f"grammar exercises.{group}[{index}]")
 
     answers = require_dict(data, "answers", "grammar content-data")
-    require_fields(answers, ["complete", "translate"], "grammar answers")
-    for group in ["select"]:
-        if group in exercises:
-            require_fields(answers, [group], "grammar answers")
+    require_fields(answers, ["select", "complete", "translate"], "grammar answers")
+    for group in ["select", "complete", "translate"]:
+        require_exact_list(answers, group, 10, "grammar answers")

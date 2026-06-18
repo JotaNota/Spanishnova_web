@@ -121,32 +121,135 @@
     "select": [
       {
         "prompt": "Yo _____ voy a las ocho.",
-        "options": ["me", "te", "se"],
+        "options": [
+          "me",
+          "te",
+          "se"
+        ],
         "answer": "Yo me voy a las ocho."
       },
       {
-        "prompt": "Ella se _____ en el sofá.",
-        "options": ["duerme", "duermo", "duermen"],
-        "answer": "Ella se duerme en el sofá."
+        "prompt": "Ella se _____ en el sof?.",
+        "options": [
+          "duerme",
+          "duermo",
+          "duermen"
+        ],
+        "answer": "Ella se duerme en el sof?."
       },
       {
         "prompt": "Nosotros _____ llevamos los documentos.",
-        "options": ["nos", "se", "me"],
+        "options": [
+          "nos",
+          "se",
+          "me"
+        ],
         "answer": "Nosotros nos llevamos los documentos."
+      },
+      {
+        "prompt": "T? _____ vas temprano.",
+        "options": [
+          "te",
+          "se",
+          "nos"
+        ],
+        "answer": "T? te vas temprano."
+      },
+      {
+        "prompt": "El beb? _____ duerme.",
+        "options": [
+          "se",
+          "me",
+          "te"
+        ],
+        "answer": "El beb? se duerme."
+      },
+      {
+        "prompt": "Ellas _____ quedan en el hotel.",
+        "options": [
+          "se",
+          "nos",
+          "me"
+        ],
+        "answer": "Ellas se quedan en el hotel."
+      },
+      {
+        "prompt": "Yo no _____ voy todav?a.",
+        "options": [
+          "me",
+          "te",
+          "se"
+        ],
+        "answer": "Yo no me voy todav?a."
+      },
+      {
+        "prompt": "?T? _____ vas ahora?",
+        "options": [
+          "te",
+          "se",
+          "nos"
+        ],
+        "answer": "?T? te vas ahora?"
+      },
+      {
+        "prompt": "Nosotros _____ llevamos las llaves.",
+        "options": [
+          "nos",
+          "se",
+          "me"
+        ],
+        "answer": "Nosotros nos llevamos las llaves."
+      },
+      {
+        "prompt": "?l no _____ duerme en clase.",
+        "options": [
+          "se",
+          "me",
+          "te"
+        ],
+        "answer": "?l no se duerme en clase."
       }
     ],
     "complete": [
       {
-        "prompt": "Tú ___ vas temprano.",
-        "answer": "Tú te vas temprano."
+        "prompt": "T? ___ vas temprano.",
+        "answer": "T? te vas temprano."
       },
       {
-        "prompt": "El bebé ___ duerme.",
-        "answer": "El bebé se duerme."
+        "prompt": "El beb? ___ duerme.",
+        "answer": "El beb? se duerme."
       },
       {
         "prompt": "Ellas ___ quedan en el hotel.",
         "answer": "Ellas se quedan en el hotel."
+      },
+      {
+        "prompt": "Yo ___ voy a las ocho.",
+        "answer": "Yo me voy a las ocho."
+      },
+      {
+        "prompt": "Nosotros ___ llevamos los documentos.",
+        "answer": "Nosotros nos llevamos los documentos."
+      },
+      {
+        "prompt": "Ella ___ duerme r?pido.",
+        "answer": "Ella se duerme r?pido."
+      },
+      {
+        "prompt": "Ustedes no ___ van todav?a.",
+        "answer": "Ustedes no se van todav?a."
+      },
+      {
+        "prompt": "Nosotras ___ quedamos aqu?.",
+        "answer": "Nosotras nos quedamos aqu?."
+      },
+      {
+        "prompt": "?l ___ lleva el libro.",
+        "answer": "?l se lleva el libro."
+      },
+      {
+        "prompt": "?T? ___ vas ahora?",
+        "answer": "?T? te vas ahora?"
       }
     ],
     "translate": [
@@ -156,29 +259,78 @@
       },
       {
         "prompt": "She falls asleep quickly.",
-        "answer": "Ella se duerme rápido."
+        "answer": "Ella se duerme r?pido."
       },
       {
         "prompt": "Are you leaving now?",
-        "answer": "¿Te vas ahora?"
+        "answer": "?Te vas ahora?"
+      },
+      {
+        "prompt": "We take the documents with us.",
+        "answer": "Nos llevamos los documentos."
+      },
+      {
+        "prompt": "They stay at the hotel.",
+        "answer": "Ellos se quedan en el hotel."
+      },
+      {
+        "prompt": "I am not leaving yet.",
+        "answer": "No me voy todav?a."
+      },
+      {
+        "prompt": "He does not fall asleep in class.",
+        "answer": "?l no se duerme en clase."
+      },
+      {
+        "prompt": "We are leaving now.",
+        "answer": "Nos vamos ahora."
+      },
+      {
+        "prompt": "She takes the book with her.",
+        "answer": "Ella se lleva el libro."
+      },
+      {
+        "prompt": "Do they stay at home?",
+        "answer": "?Ellos se quedan en casa?"
       }
     ]
   },
   "answers": {
     "select": [
       "Yo me voy a las ocho.",
-      "Ella se duerme en el sofá.",
-      "Nosotros nos llevamos los documentos."
+      "Ella se duerme en el sof?.",
+      "Nosotros nos llevamos los documentos.",
+      "T? te vas temprano.",
+      "El beb? se duerme.",
+      "Ellas se quedan en el hotel.",
+      "Yo no me voy todav?a.",
+      "?T? te vas ahora?",
+      "Nosotros nos llevamos las llaves.",
+      "?l no se duerme en clase."
     ],
     "complete": [
-      "Tú te vas temprano.",
-      "El bebé se duerme.",
-      "Ellas se quedan en el hotel."
+      "T? te vas temprano.",
+      "El beb? se duerme.",
+      "Ellas se quedan en el hotel.",
+      "Yo me voy a las ocho.",
+      "Nosotros nos llevamos los documentos.",
+      "Ella se duerme r?pido.",
+      "Ustedes no se van todav?a.",
+      "Nosotras nos quedamos aqu?.",
+      "?l se lleva el libro.",
+      "?T? te vas ahora?"
     ],
     "translate": [
       "Me voy a las ocho.",
-      "Ella se duerme rápido.",
-      "¿Te vas ahora?"
+      "Ella se duerme r?pido.",
+      "?Te vas ahora?",
+      "Nos llevamos los documentos.",
+      "Ellos se quedan en el hotel.",
+      "No me voy todav?a.",
+      "?l no se duerme en clase.",
+      "Nos vamos ahora.",
+      "Ella se lleva el libro.",
+      "?Ellos se quedan en casa?"
     ]
   },
   "wrap_up": [

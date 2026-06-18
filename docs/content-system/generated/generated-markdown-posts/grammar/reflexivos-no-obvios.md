@@ -65,12 +65,12 @@ Other reflexives describe what happens with the subject's own movement or locati
 
    Yo me acuerdo de la fecha.
 
-2. Nosotros _____ quedamos aquí.
+2. Nosotros _____ quedamos aqu?.
    - a) nos
    - b) se
    - c) me
 
-   Nosotros nos quedamos aquí.
+   Nosotros nos quedamos aqu?.
 
 3. Ella _____ va temprano.
    - a) se
@@ -79,11 +79,60 @@ Other reflexives describe what happens with the subject's own movement or locati
 
    Ella se va temprano.
 
+4. T? _____ das cuenta r?pido.
+   - a) te
+   - b) se
+   - c) me
+
+   T? te das cuenta r?pido.
+
+5. Yo no _____ olvido de la clase.
+   - a) me
+   - b) te
+   - c) se
+
+   Yo no me olvido de la clase.
+
+6. Ellos _____ quedan en casa.
+   - a) se
+   - b) nos
+   - c) me
+
+   Ellos se quedan en casa.
+
+7. Ana _____ acuerda del n?mero.
+   - a) se
+   - b) te
+   - c) nos
+
+   Ana se acuerda del n?mero.
+
+8. ?T? _____ acuerdas de m??
+   - a) te
+   - b) se
+   - c) me
+
+   ?T? te acuerdas de m??
+
+9. Nosotros _____ vamos despu?s.
+   - a) nos
+   - b) se
+   - c) te
+
+   Nosotros nos vamos despu?s.
+
+10. Ustedes no _____ quedan en la oficina.
+   - a) se
+   - b) nos
+   - c) me
+
+   Ustedes no se quedan en la oficina.
+
 ### Completar
 
-1. Tú ___ das cuenta.
+1. T? ___ das cuenta.
 
-   Tú te das cuenta.
+   T? te das cuenta.
 
 2. Yo no ___ olvido de la clase.
 
@@ -92,6 +141,34 @@ Other reflexives describe what happens with the subject's own movement or locati
 3. Ellos ___ quedan en casa.
 
    Ellos se quedan en casa.
+
+4. Ella ___ va temprano.
+
+   Ella se va temprano.
+
+5. Nosotros ___ acordamos del plan.
+
+   Nosotros nos acordamos del plan.
+
+6. Usted ___ da cuenta del problema.
+
+   Usted se da cuenta del problema.
+
+7. Yo ___ quedo en el hotel.
+
+   Yo me quedo en el hotel.
+
+8. T? no ___ acuerdas del nombre.
+
+   T? no te acuerdas del nombre.
+
+9. Nosotras ___ vamos ahora.
+
+   Nosotras nos vamos ahora.
+
+10. ?Ellos ___ quedan aqu??
+
+   ?Ellos se quedan aqu??
 
 ### Traducción
 
@@ -105,7 +182,35 @@ Other reflexives describe what happens with the subject's own movement or locati
 
 3. Do you realize?
 
-   ¿Te das cuenta?
+   ?Te das cuenta?
+
+4. We stay here.
+
+   Nos quedamos aqu?.
+
+5. I do not forget the homework.
+
+   No me olvido de la tarea.
+
+6. They stay at home.
+
+   Ellos se quedan en casa.
+
+7. Ana remembers the date.
+
+   Ana se acuerda de la fecha.
+
+8. Are we leaving later?
+
+   ?Nos vamos despu?s?
+
+9. You realize the change.
+
+   Te das cuenta del cambio.
+
+10. He does not remember the number.
+
+   ?l no se acuerda del n?mero.
 
 ## Wrap Up
 

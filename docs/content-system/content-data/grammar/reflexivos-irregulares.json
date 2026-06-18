@@ -121,24 +121,99 @@
     "select": [
       {
         "prompt": "Yo _____ pongo la camisa.",
-        "options": ["me", "te", "se"],
+        "options": [
+          "me",
+          "te",
+          "se"
+        ],
         "answer": "Yo me pongo la camisa."
       },
       {
         "prompt": "Ella se _____ cansada.",
-        "options": ["siente", "siento", "sentimos"],
+        "options": [
+          "siente",
+          "siento",
+          "sentimos"
+        ],
         "answer": "Ella se siente cansada."
       },
       {
         "prompt": "Nosotros nos _____.",
-        "options": ["vestimos", "visten", "visto"],
+        "options": [
+          "vestimos",
+          "visten",
+          "visto"
+        ],
         "answer": "Nosotros nos vestimos."
+      },
+      {
+        "prompt": "T? te _____ tarde.",
+        "options": [
+          "acuestas",
+          "acuesto",
+          "acuestan"
+        ],
+        "answer": "T? te acuestas tarde."
+      },
+      {
+        "prompt": "Ellos se _____ a las ocho.",
+        "options": [
+          "despiertan",
+          "despierta",
+          "despierto"
+        ],
+        "answer": "Ellos se despiertan a las ocho."
+      },
+      {
+        "prompt": "Yo me _____ mejor.",
+        "options": [
+          "siento",
+          "siente",
+          "sentimos"
+        ],
+        "answer": "Yo me siento mejor."
+      },
+      {
+        "prompt": "Ustedes se _____ mucho.",
+        "options": [
+          "divierten",
+          "divierte",
+          "divierto"
+        ],
+        "answer": "Ustedes se divierten mucho."
+      },
+      {
+        "prompt": "?l no se _____ enfermo.",
+        "options": [
+          "siente",
+          "siento",
+          "sentimos"
+        ],
+        "answer": "?l no se siente enfermo."
+      },
+      {
+        "prompt": "?Nosotros nos _____ los abrigos?",
+        "options": [
+          "ponemos",
+          "ponen",
+          "pongo"
+        ],
+        "answer": "?Nosotros nos ponemos los abrigos?"
+      },
+      {
+        "prompt": "Ella se _____ temprano.",
+        "options": [
+          "despierta",
+          "despierto",
+          "despiertan"
+        ],
+        "answer": "Ella se despierta temprano."
       }
     ],
     "complete": [
       {
-        "prompt": "Tú ___ despiertas temprano.",
-        "answer": "Tú te despiertas temprano."
+        "prompt": "T? ___ despiertas temprano.",
+        "answer": "T? te despiertas temprano."
       },
       {
         "prompt": "Ellos se ___ en la fiesta.",
@@ -147,6 +222,34 @@
       {
         "prompt": "Yo me ___ mejor.",
         "answer": "Yo me siento mejor."
+      },
+      {
+        "prompt": "Ella ___ acuesta tarde.",
+        "answer": "Ella se acuesta tarde."
+      },
+      {
+        "prompt": "Nosotros nos ___ para la reuni?n.",
+        "answer": "Nosotros nos vestimos para la reuni?n."
+      },
+      {
+        "prompt": "Yo me ___ la chaqueta.",
+        "answer": "Yo me pongo la chaqueta."
+      },
+      {
+        "prompt": "Ustedes se ___ a las siete.",
+        "answer": "Ustedes se despiertan a las siete."
+      },
+      {
+        "prompt": "?l no se ___ bien.",
+        "answer": "?l no se siente bien."
+      },
+      {
+        "prompt": "Nosotras no nos ___ aqu?.",
+        "answer": "Nosotras no nos divertimos aqu?."
+      },
+      {
+        "prompt": "?T? te ___ temprano?",
+        "answer": "?T? te acuestas temprano?"
       }
     ],
     "translate": [
@@ -160,7 +263,35 @@
       },
       {
         "prompt": "Do you wake up early?",
-        "answer": "¿Te despiertas temprano?"
+        "answer": "?Te despiertas temprano?"
+      },
+      {
+        "prompt": "We get dressed quickly.",
+        "answer": "Nos vestimos r?pido."
+      },
+      {
+        "prompt": "They have fun in class.",
+        "answer": "Ellos se divierten en clase."
+      },
+      {
+        "prompt": "You go to bed late.",
+        "answer": "Te acuestas tarde."
+      },
+      {
+        "prompt": "I feel better today.",
+        "answer": "Me siento mejor hoy."
+      },
+      {
+        "prompt": "She wakes up at eight.",
+        "answer": "Ella se despierta a las ocho."
+      },
+      {
+        "prompt": "We put on our coats.",
+        "answer": "Nos ponemos los abrigos."
+      },
+      {
+        "prompt": "He does not feel sick.",
+        "answer": "?l no se siente enfermo."
       }
     ]
   },
@@ -168,17 +299,38 @@
     "select": [
       "Yo me pongo la camisa.",
       "Ella se siente cansada.",
-      "Nosotros nos vestimos."
+      "Nosotros nos vestimos.",
+      "T? te acuestas tarde.",
+      "Ellos se despiertan a las ocho.",
+      "Yo me siento mejor.",
+      "Ustedes se divierten mucho.",
+      "?l no se siente enfermo.",
+      "?Nosotros nos ponemos los abrigos?",
+      "Ella se despierta temprano."
     ],
     "complete": [
-      "Tú te despiertas temprano.",
+      "T? te despiertas temprano.",
       "Ellos se divierten en la fiesta.",
-      "Yo me siento mejor."
+      "Yo me siento mejor.",
+      "Ella se acuesta tarde.",
+      "Nosotros nos vestimos para la reuni?n.",
+      "Yo me pongo la chaqueta.",
+      "Ustedes se despiertan a las siete.",
+      "?l no se siente bien.",
+      "Nosotras no nos divertimos aqu?.",
+      "?T? te acuestas temprano?"
     ],
     "translate": [
       "Me pongo la chaqueta.",
       "Ella se siente cansada.",
-      "¿Te despiertas temprano?"
+      "?Te despiertas temprano?",
+      "Nos vestimos r?pido.",
+      "Ellos se divierten en clase.",
+      "Te acuestas tarde.",
+      "Me siento mejor hoy.",
+      "Ella se despierta a las ocho.",
+      "Nos ponemos los abrigos.",
+      "?l no se siente enfermo."
     ]
   },
   "wrap_up": [

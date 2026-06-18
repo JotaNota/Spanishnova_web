@@ -121,18 +121,93 @@
     "select": [
       {
         "prompt": "Yo _____ levanto temprano.",
-        "options": ["me", "te", "se"],
+        "options": [
+          "me",
+          "te",
+          "se"
+        ],
         "answer": "Yo me levanto temprano."
       },
       {
-        "prompt": "Tú _____ duchas después.",
-        "options": ["me", "te", "nos"],
-        "answer": "Tú te duchas después."
+        "prompt": "T? _____ duchas despu?s.",
+        "options": [
+          "me",
+          "te",
+          "nos"
+        ],
+        "answer": "T? te duchas despu?s."
       },
       {
         "prompt": "Ellas _____ acuestan tarde.",
-        "options": ["se", "te", "me"],
+        "options": [
+          "se",
+          "te",
+          "me"
+        ],
         "answer": "Ellas se acuestan tarde."
+      },
+      {
+        "prompt": "Nosotros _____ vestimos r?pido.",
+        "options": [
+          "nos",
+          "se",
+          "me"
+        ],
+        "answer": "Nosotros nos vestimos r?pido."
+      },
+      {
+        "prompt": "Ella _____ lava la cara.",
+        "options": [
+          "se",
+          "te",
+          "nos"
+        ],
+        "answer": "Ella se lava la cara."
+      },
+      {
+        "prompt": "Ustedes _____ cepillan los dientes.",
+        "options": [
+          "se",
+          "nos",
+          "me"
+        ],
+        "answer": "Ustedes se cepillan los dientes."
+      },
+      {
+        "prompt": "Yo no _____ afeito hoy.",
+        "options": [
+          "me",
+          "te",
+          "se"
+        ],
+        "answer": "Yo no me afeito hoy."
+      },
+      {
+        "prompt": "?T? _____ despiertas temprano?",
+        "options": [
+          "te",
+          "se",
+          "nos"
+        ],
+        "answer": "?T? te despiertas temprano?"
+      },
+      {
+        "prompt": "Los ni?os _____ ba?an por la noche.",
+        "options": [
+          "se",
+          "me",
+          "te"
+        ],
+        "answer": "Los ni?os se ba?an por la noche."
+      },
+      {
+        "prompt": "Nosotros _____ lavamos las manos.",
+        "options": [
+          "nos",
+          "se",
+          "te"
+        ],
+        "answer": "Nosotros nos lavamos las manos."
       }
     ],
     "complete": [
@@ -141,12 +216,40 @@
         "answer": "Yo me lavo la cara."
       },
       {
-        "prompt": "Nosotros ___ vestimos rápido.",
-        "answer": "Nosotros nos vestimos rápido."
+        "prompt": "Nosotros ___ vestimos r?pido.",
+        "answer": "Nosotros nos vestimos r?pido."
       },
       {
         "prompt": "Ella ___ cepilla los dientes.",
         "answer": "Ella se cepilla los dientes."
+      },
+      {
+        "prompt": "T? ___ despiertas a las seis.",
+        "answer": "T? te despiertas a las seis."
+      },
+      {
+        "prompt": "Ellos ___ acuestan temprano.",
+        "answer": "Ellos se acuestan temprano."
+      },
+      {
+        "prompt": "Yo no ___ levanto tarde.",
+        "answer": "Yo no me levanto tarde."
+      },
+      {
+        "prompt": "Ustedes ___ ba?an despu?s.",
+        "answer": "Ustedes se ba?an despu?s."
+      },
+      {
+        "prompt": "Nosotras ___ maquillamos hoy.",
+        "answer": "Nosotras nos maquillamos hoy."
+      },
+      {
+        "prompt": "?l ___ afeita los lunes.",
+        "answer": "?l se afeita los lunes."
+      },
+      {
+        "prompt": "?T? ___ duchas ahora?",
+        "answer": "?T? te duchas ahora?"
       }
     ],
     "translate": [
@@ -156,29 +259,78 @@
       },
       {
         "prompt": "She showers in the morning.",
-        "answer": "Ella se ducha por la mañana."
+        "answer": "Ella se ducha por la ma?ana."
       },
       {
         "prompt": "Do you brush your teeth?",
-        "answer": "¿Te cepillas los dientes?"
+        "answer": "?Te cepillas los dientes?"
+      },
+      {
+        "prompt": "We get dressed quickly.",
+        "answer": "Nos vestimos r?pido."
+      },
+      {
+        "prompt": "They go to bed early.",
+        "answer": "Ellos se acuestan temprano."
+      },
+      {
+        "prompt": "I wash my face.",
+        "answer": "Me lavo la cara."
+      },
+      {
+        "prompt": "He does not shave today.",
+        "answer": "?l no se afeita hoy."
+      },
+      {
+        "prompt": "You wake up early.",
+        "answer": "Te despiertas temprano."
+      },
+      {
+        "prompt": "We wash our hands.",
+        "answer": "Nos lavamos las manos."
+      },
+      {
+        "prompt": "Are you showering now?",
+        "answer": "?Te duchas ahora?"
       }
     ]
   },
   "answers": {
     "select": [
       "Yo me levanto temprano.",
-      "Tú te duchas después.",
-      "Ellas se acuestan tarde."
+      "T? te duchas despu?s.",
+      "Ellas se acuestan tarde.",
+      "Nosotros nos vestimos r?pido.",
+      "Ella se lava la cara.",
+      "Ustedes se cepillan los dientes.",
+      "Yo no me afeito hoy.",
+      "?T? te despiertas temprano?",
+      "Los ni?os se ba?an por la noche.",
+      "Nosotros nos lavamos las manos."
     ],
     "complete": [
       "Yo me lavo la cara.",
-      "Nosotros nos vestimos rápido.",
-      "Ella se cepilla los dientes."
+      "Nosotros nos vestimos r?pido.",
+      "Ella se cepilla los dientes.",
+      "T? te despiertas a las seis.",
+      "Ellos se acuestan temprano.",
+      "Yo no me levanto tarde.",
+      "Ustedes se ba?an despu?s.",
+      "Nosotras nos maquillamos hoy.",
+      "?l se afeita los lunes.",
+      "?T? te duchas ahora?"
     ],
     "translate": [
       "Me levanto a las siete.",
-      "Ella se ducha por la mañana.",
-      "¿Te cepillas los dientes?"
+      "Ella se ducha por la ma?ana.",
+      "?Te cepillas los dientes?",
+      "Nos vestimos r?pido.",
+      "Ellos se acuestan temprano.",
+      "Me lavo la cara.",
+      "?l no se afeita hoy.",
+      "Te despiertas temprano.",
+      "Nos lavamos las manos.",
+      "?Te duchas ahora?"
     ]
   },
   "wrap_up": [

@@ -65,12 +65,12 @@ Some reflexive forms focus on the result or change for the subject.
 
    Yo me voy a las ocho.
 
-2. Ella se _____ en el sofá.
+2. Ella se _____ en el sof?.
    - a) duerme
    - b) duermo
    - c) duermen
 
-   Ella se duerme en el sofá.
+   Ella se duerme en el sof?.
 
 3. Nosotros _____ llevamos los documentos.
    - a) nos
@@ -79,19 +79,96 @@ Some reflexive forms focus on the result or change for the subject.
 
    Nosotros nos llevamos los documentos.
 
+4. T? _____ vas temprano.
+   - a) te
+   - b) se
+   - c) nos
+
+   T? te vas temprano.
+
+5. El beb? _____ duerme.
+   - a) se
+   - b) me
+   - c) te
+
+   El beb? se duerme.
+
+6. Ellas _____ quedan en el hotel.
+   - a) se
+   - b) nos
+   - c) me
+
+   Ellas se quedan en el hotel.
+
+7. Yo no _____ voy todav?a.
+   - a) me
+   - b) te
+   - c) se
+
+   Yo no me voy todav?a.
+
+8. ?T? _____ vas ahora?
+   - a) te
+   - b) se
+   - c) nos
+
+   ?T? te vas ahora?
+
+9. Nosotros _____ llevamos las llaves.
+   - a) nos
+   - b) se
+   - c) me
+
+   Nosotros nos llevamos las llaves.
+
+10. ?l no _____ duerme en clase.
+   - a) se
+   - b) me
+   - c) te
+
+   ?l no se duerme en clase.
+
 ### Completar
 
-1. Tú ___ vas temprano.
+1. T? ___ vas temprano.
 
-   Tú te vas temprano.
+   T? te vas temprano.
 
-2. El bebé ___ duerme.
+2. El beb? ___ duerme.
 
-   El bebé se duerme.
+   El beb? se duerme.
 
 3. Ellas ___ quedan en el hotel.
 
    Ellas se quedan en el hotel.
+
+4. Yo ___ voy a las ocho.
+
+   Yo me voy a las ocho.
+
+5. Nosotros ___ llevamos los documentos.
+
+   Nosotros nos llevamos los documentos.
+
+6. Ella ___ duerme r?pido.
+
+   Ella se duerme r?pido.
+
+7. Ustedes no ___ van todav?a.
+
+   Ustedes no se van todav?a.
+
+8. Nosotras ___ quedamos aqu?.
+
+   Nosotras nos quedamos aqu?.
+
+9. ?l ___ lleva el libro.
+
+   ?l se lleva el libro.
+
+10. ?T? ___ vas ahora?
+
+   ?T? te vas ahora?
 
 ### Traducción
 
@@ -101,11 +178,39 @@ Some reflexive forms focus on the result or change for the subject.
 
 2. She falls asleep quickly.
 
-   Ella se duerme rápido.
+   Ella se duerme r?pido.
 
 3. Are you leaving now?
 
-   ¿Te vas ahora?
+   ?Te vas ahora?
+
+4. We take the documents with us.
+
+   Nos llevamos los documentos.
+
+5. They stay at the hotel.
+
+   Ellos se quedan en el hotel.
+
+6. I am not leaving yet.
+
+   No me voy todav?a.
+
+7. He does not fall asleep in class.
+
+   ?l no se duerme en clase.
+
+8. We are leaving now.
+
+   Nos vamos ahora.
+
+9. She takes the book with her.
+
+   Ella se lleva el libro.
+
+10. Do they stay at home?
+
+   ?Ellos se quedan en casa?
 
 ## Wrap Up
 

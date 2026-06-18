@@ -74,6 +74,9 @@ Examples must stay on one line:
 
 - Use `Afirmativas`, `Negativas`, and `Forma de pregunta` under `Oraciones.`.
 - Use only `select`, `complete`, and `translate` exercise groups.
+- `select`, `complete`, and `translate` must all exist.
+- Each exercise group must contain exactly 10 items.
+- `answers` must include `select`, `complete`, and `translate`, with exactly 10 answers in each group.
 - Use `Selección simple`, `Completar`, and `Traducción` as exercise subsection headings.
 - Every exercise item must include a `<details><summary>Respuesta</summary>...</details>` answer block.
 - Selection exercises are allowed but not required for every grammar lesson.

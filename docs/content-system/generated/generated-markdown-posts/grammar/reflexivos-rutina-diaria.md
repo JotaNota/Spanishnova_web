@@ -65,12 +65,12 @@ Reflexive verbs also describe routines before sleeping or resting.
 
    Yo me levanto temprano.
 
-2. Tú _____ duchas después.
+2. T? _____ duchas despu?s.
    - a) me
    - b) te
    - c) nos
 
-   Tú te duchas después.
+   T? te duchas despu?s.
 
 3. Ellas _____ acuestan tarde.
    - a) se
@@ -79,19 +79,96 @@ Reflexive verbs also describe routines before sleeping or resting.
 
    Ellas se acuestan tarde.
 
+4. Nosotros _____ vestimos r?pido.
+   - a) nos
+   - b) se
+   - c) me
+
+   Nosotros nos vestimos r?pido.
+
+5. Ella _____ lava la cara.
+   - a) se
+   - b) te
+   - c) nos
+
+   Ella se lava la cara.
+
+6. Ustedes _____ cepillan los dientes.
+   - a) se
+   - b) nos
+   - c) me
+
+   Ustedes se cepillan los dientes.
+
+7. Yo no _____ afeito hoy.
+   - a) me
+   - b) te
+   - c) se
+
+   Yo no me afeito hoy.
+
+8. ?T? _____ despiertas temprano?
+   - a) te
+   - b) se
+   - c) nos
+
+   ?T? te despiertas temprano?
+
+9. Los ni?os _____ ba?an por la noche.
+   - a) se
+   - b) me
+   - c) te
+
+   Los ni?os se ba?an por la noche.
+
+10. Nosotros _____ lavamos las manos.
+   - a) nos
+   - b) se
+   - c) te
+
+   Nosotros nos lavamos las manos.
+
 ### Completar
 
 1. Yo ___ lavo la cara.
 
    Yo me lavo la cara.
 
-2. Nosotros ___ vestimos rápido.
+2. Nosotros ___ vestimos r?pido.
 
-   Nosotros nos vestimos rápido.
+   Nosotros nos vestimos r?pido.
 
 3. Ella ___ cepilla los dientes.
 
    Ella se cepilla los dientes.
+
+4. T? ___ despiertas a las seis.
+
+   T? te despiertas a las seis.
+
+5. Ellos ___ acuestan temprano.
+
+   Ellos se acuestan temprano.
+
+6. Yo no ___ levanto tarde.
+
+   Yo no me levanto tarde.
+
+7. Ustedes ___ ba?an despu?s.
+
+   Ustedes se ba?an despu?s.
+
+8. Nosotras ___ maquillamos hoy.
+
+   Nosotras nos maquillamos hoy.
+
+9. ?l ___ afeita los lunes.
+
+   ?l se afeita los lunes.
+
+10. ?T? ___ duchas ahora?
+
+   ?T? te duchas ahora?
 
 ### Traducción
 
@@ -101,11 +178,39 @@ Reflexive verbs also describe routines before sleeping or resting.
 
 2. She showers in the morning.
 
-   Ella se ducha por la mañana.
+   Ella se ducha por la ma?ana.
 
 3. Do you brush your teeth?
 
-   ¿Te cepillas los dientes?
+   ?Te cepillas los dientes?
+
+4. We get dressed quickly.
+
+   Nos vestimos r?pido.
+
+5. They go to bed early.
+
+   Ellos se acuestan temprano.
+
+6. I wash my face.
+
+   Me lavo la cara.
+
+7. He does not shave today.
+
+   ?l no se afeita hoy.
+
+8. You wake up early.
+
+   Te despiertas temprano.
+
+9. We wash our hands.
+
+   Nos lavamos las manos.
+
+10. Are you showering now?
+
+   ?Te duchas ahora?
 
 ## Wrap Up
 

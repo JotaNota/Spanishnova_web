@@ -79,11 +79,60 @@ The irregular form changes the verb shape, but the reflexive pronoun still shows
 
    Nosotros nos vestimos.
 
+4. T? te _____ tarde.
+   - a) acuestas
+   - b) acuesto
+   - c) acuestan
+
+   T? te acuestas tarde.
+
+5. Ellos se _____ a las ocho.
+   - a) despiertan
+   - b) despierta
+   - c) despierto
+
+   Ellos se despiertan a las ocho.
+
+6. Yo me _____ mejor.
+   - a) siento
+   - b) siente
+   - c) sentimos
+
+   Yo me siento mejor.
+
+7. Ustedes se _____ mucho.
+   - a) divierten
+   - b) divierte
+   - c) divierto
+
+   Ustedes se divierten mucho.
+
+8. ?l no se _____ enfermo.
+   - a) siente
+   - b) siento
+   - c) sentimos
+
+   ?l no se siente enfermo.
+
+9. ?Nosotros nos _____ los abrigos?
+   - a) ponemos
+   - b) ponen
+   - c) pongo
+
+   ?Nosotros nos ponemos los abrigos?
+
+10. Ella se _____ temprano.
+   - a) despierta
+   - b) despierto
+   - c) despiertan
+
+   Ella se despierta temprano.
+
 ### Completar
 
-1. Tú ___ despiertas temprano.
+1. T? ___ despiertas temprano.
 
-   Tú te despiertas temprano.
+   T? te despiertas temprano.
 
 2. Ellos se ___ en la fiesta.
 
@@ -92,6 +141,34 @@ The irregular form changes the verb shape, but the reflexive pronoun still shows
 3. Yo me ___ mejor.
 
    Yo me siento mejor.
+
+4. Ella ___ acuesta tarde.
+
+   Ella se acuesta tarde.
+
+5. Nosotros nos ___ para la reuni?n.
+
+   Nosotros nos vestimos para la reuni?n.
+
+6. Yo me ___ la chaqueta.
+
+   Yo me pongo la chaqueta.
+
+7. Ustedes se ___ a las siete.
+
+   Ustedes se despiertan a las siete.
+
+8. ?l no se ___ bien.
+
+   ?l no se siente bien.
+
+9. Nosotras no nos ___ aqu?.
+
+   Nosotras no nos divertimos aqu?.
+
+10. ?T? te ___ temprano?
+
+   ?T? te acuestas temprano?
 
 ### Traducción
 
@@ -105,7 +182,35 @@ The irregular form changes the verb shape, but the reflexive pronoun still shows
 
 3. Do you wake up early?
 
-   ¿Te despiertas temprano?
+   ?Te despiertas temprano?
+
+4. We get dressed quickly.
+
+   Nos vestimos r?pido.
+
+5. They have fun in class.
+
+   Ellos se divierten en clase.
+
+6. You go to bed late.
+
+   Te acuestas tarde.
+
+7. I feel better today.
+
+   Me siento mejor hoy.
+
+8. She wakes up at eight.
+
+   Ella se despierta a las ocho.
+
+9. We put on our coats.
+
+   Nos ponemos los abrigos.
+
+10. He does not feel sick.
+
+   ?l no se siente enfermo.
 
 ## Wrap Up
 

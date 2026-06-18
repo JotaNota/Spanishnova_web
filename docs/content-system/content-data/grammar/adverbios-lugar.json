@@ -64,11 +64,27 @@
     }
   ],
   "forms_table": {
-    "headers": ["Adverbio", "Meaning", "Distance"],
+    "headers": [
+      "Adverbio",
+      "Meaning",
+      "Distance"
+    ],
     "rows": [
-      ["aquí", "here", "close to the speaker"],
-      ["ahí", "there", "near the listener or already identified"],
-      ["allí", "over there", "farther away"]
+      [
+        "aquí",
+        "here",
+        "close to the speaker"
+      ],
+      [
+        "ahí",
+        "there",
+        "near the listener or already identified"
+      ],
+      [
+        "allí",
+        "over there",
+        "farther away"
+      ]
     ]
   },
   "sentences": {
@@ -131,64 +147,216 @@
     "select": [
       {
         "prompt": "Estoy _____.",
-        "options": ["aquí", "alto", "bueno"],
-        "answer": "Estoy aquí."
+        "options": [
+          "aqu?",
+          "alto",
+          "bueno"
+        ],
+        "answer": "Estoy aqu?."
       },
       {
-        "prompt": "Tu mochila está _____.",
-        "options": ["ahí", "muy", "dos"],
-        "answer": "Tu mochila está ahí."
+        "prompt": "Tu mochila est? _____.",
+        "options": [
+          "ah?",
+          "muy",
+          "dos"
+        ],
+        "answer": "Tu mochila est? ah?."
       },
       {
-        "prompt": "La estación está _____.",
-        "options": ["allí", "azul", "nunca"],
-        "answer": "La estación está allí."
+        "prompt": "La estaci?n est? _____.",
+        "options": [
+          "all?",
+          "azul",
+          "nunca"
+        ],
+        "answer": "La estaci?n est? all?."
+      },
+      {
+        "prompt": "Nosotros trabajamos _____.",
+        "options": [
+          "aqu?",
+          "r?pido",
+          "grande"
+        ],
+        "answer": "Nosotros trabajamos aqu?."
+      },
+      {
+        "prompt": "El caf? est? _____.",
+        "options": [
+          "ah?",
+          "bien",
+          "mucho"
+        ],
+        "answer": "El caf? est? ah?."
+      },
+      {
+        "prompt": "Mis amigos viven _____.",
+        "options": [
+          "all?",
+          "nuevo",
+          "tarde"
+        ],
+        "answer": "Mis amigos viven all?."
+      },
+      {
+        "prompt": "La clase empieza _____.",
+        "options": [
+          "aqu?",
+          "siempre",
+          "rojo"
+        ],
+        "answer": "La clase empieza aqu?."
+      },
+      {
+        "prompt": "La llave no est? _____.",
+        "options": [
+          "ah?",
+          "dif?cil",
+          "poco"
+        ],
+        "answer": "La llave no est? ah?."
+      },
+      {
+        "prompt": "Ellos esperan _____.",
+        "options": [
+          "all?",
+          "amable",
+          "cinco"
+        ],
+        "answer": "Ellos esperan all?."
+      },
+      {
+        "prompt": "?Nos sentamos _____?",
+        "options": [
+          "aqu?",
+          "lunes",
+          "caro"
+        ],
+        "answer": "?Nos sentamos aqu??"
       }
     ],
     "complete": [
       {
         "prompt": "La clase empieza ___.",
-        "answer": "La clase empieza aquí."
+        "answer": "La clase empieza aqu?."
       },
       {
-        "prompt": "El libro está ___.",
-        "answer": "El libro está ahí."
+        "prompt": "El libro est? ___.",
+        "answer": "El libro est? ah?."
       },
       {
         "prompt": "Mis primos viven ___.",
-        "answer": "Mis primos viven allí."
+        "answer": "Mis primos viven all?."
+      },
+      {
+        "prompt": "No vivo ___.",
+        "answer": "No vivo aqu?."
+      },
+      {
+        "prompt": "Tu tel?fono est? ___.",
+        "answer": "Tu tel?fono est? ah?."
+      },
+      {
+        "prompt": "La farmacia est? ___.",
+        "answer": "La farmacia est? all?."
+      },
+      {
+        "prompt": "Nosotros esperamos ___.",
+        "answer": "Nosotros esperamos aqu?."
+      },
+      {
+        "prompt": "La silla no est? ___.",
+        "answer": "La silla no est? ah?."
+      },
+      {
+        "prompt": "Ellas trabajan ___.",
+        "answer": "Ellas trabajan all?."
+      },
+      {
+        "prompt": "?Est?s ___?",
+        "answer": "?Est?s aqu??"
       }
     ],
     "translate": [
       {
         "prompt": "I am here.",
-        "answer": "Estoy aquí."
+        "answer": "Estoy aqu?."
       },
       {
         "prompt": "The phone is there.",
-        "answer": "El teléfono está ahí."
+        "answer": "El tel?fono est? ah?."
       },
       {
         "prompt": "The school is over there.",
-        "answer": "La escuela está allí."
+        "answer": "La escuela est? all?."
+      },
+      {
+        "prompt": "We work here.",
+        "answer": "Trabajamos aqu?."
+      },
+      {
+        "prompt": "The key is not there.",
+        "answer": "La llave no est? ah?."
+      },
+      {
+        "prompt": "My friends live over there.",
+        "answer": "Mis amigos viven all?."
+      },
+      {
+        "prompt": "Are you here?",
+        "answer": "?Est?s aqu??"
+      },
+      {
+        "prompt": "Is the coffee there?",
+        "answer": "?El caf? est? ah??"
+      },
+      {
+        "prompt": "Do we sit here?",
+        "answer": "?Nos sentamos aqu??"
+      },
+      {
+        "prompt": "They wait over there.",
+        "answer": "Ellos esperan all?."
       }
     ]
   },
   "answers": {
     "select": [
-      "Estoy aquí.",
-      "Tu mochila está ahí.",
-      "La estación está allí."
+      "Estoy aqu?.",
+      "Tu mochila est? ah?.",
+      "La estaci?n est? all?.",
+      "Nosotros trabajamos aqu?.",
+      "El caf? est? ah?.",
+      "Mis amigos viven all?.",
+      "La clase empieza aqu?.",
+      "La llave no est? ah?.",
+      "Ellos esperan all?.",
+      "?Nos sentamos aqu??"
     ],
     "complete": [
-      "La clase empieza aquí.",
-      "El libro está ahí.",
-      "Mis primos viven allí."
+      "La clase empieza aqu?.",
+      "El libro est? ah?.",
+      "Mis primos viven all?.",
+      "No vivo aqu?.",
+      "Tu tel?fono est? ah?.",
+      "La farmacia est? all?.",
+      "Nosotros esperamos aqu?.",
+      "La silla no est? ah?.",
+      "Ellas trabajan all?.",
+      "?Est?s aqu??"
     ],
     "translate": [
-      "Estoy aquí.",
-      "El teléfono está ahí.",
-      "La escuela está allí."
+      "Estoy aqu?.",
+      "El tel?fono est? ah?.",
+      "La escuela est? all?.",
+      "Trabajamos aqu?.",
+      "La llave no est? ah?.",
+      "Mis amigos viven all?.",
+      "?Est?s aqu??",
+      "?El caf? est? ah??",
+      "?Nos sentamos aqu??",
+      "Ellos esperan all?."
     ]
   },
   "wrap_up": [

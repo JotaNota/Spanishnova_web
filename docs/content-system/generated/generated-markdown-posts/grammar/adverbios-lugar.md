@@ -69,53 +69,158 @@ These words are common short answers to questions with dónde.
 ### Selección simple
 
 1. Estoy _____.
-   - a) aquí
+   - a) aqu?
    - b) alto
    - c) bueno
 
-   Estoy aquí.
+   Estoy aqu?.
 
-2. Tu mochila está _____.
-   - a) ahí
+2. Tu mochila est? _____.
+   - a) ah?
    - b) muy
    - c) dos
 
-   Tu mochila está ahí.
+   Tu mochila est? ah?.
 
-3. La estación está _____.
-   - a) allí
+3. La estaci?n est? _____.
+   - a) all?
    - b) azul
    - c) nunca
 
-   La estación está allí.
+   La estaci?n est? all?.
+
+4. Nosotros trabajamos _____.
+   - a) aqu?
+   - b) r?pido
+   - c) grande
+
+   Nosotros trabajamos aqu?.
+
+5. El caf? est? _____.
+   - a) ah?
+   - b) bien
+   - c) mucho
+
+   El caf? est? ah?.
+
+6. Mis amigos viven _____.
+   - a) all?
+   - b) nuevo
+   - c) tarde
+
+   Mis amigos viven all?.
+
+7. La clase empieza _____.
+   - a) aqu?
+   - b) siempre
+   - c) rojo
+
+   La clase empieza aqu?.
+
+8. La llave no est? _____.
+   - a) ah?
+   - b) dif?cil
+   - c) poco
+
+   La llave no est? ah?.
+
+9. Ellos esperan _____.
+   - a) all?
+   - b) amable
+   - c) cinco
+
+   Ellos esperan all?.
+
+10. ?Nos sentamos _____?
+   - a) aqu?
+   - b) lunes
+   - c) caro
+
+   ?Nos sentamos aqu??
 
 ### Completar
 
 1. La clase empieza ___.
 
-   La clase empieza aquí.
+   La clase empieza aqu?.
 
-2. El libro está ___.
+2. El libro est? ___.
 
-   El libro está ahí.
+   El libro est? ah?.
 
 3. Mis primos viven ___.
 
-   Mis primos viven allí.
+   Mis primos viven all?.
+
+4. No vivo ___.
+
+   No vivo aqu?.
+
+5. Tu tel?fono est? ___.
+
+   Tu tel?fono est? ah?.
+
+6. La farmacia est? ___.
+
+   La farmacia est? all?.
+
+7. Nosotros esperamos ___.
+
+   Nosotros esperamos aqu?.
+
+8. La silla no est? ___.
+
+   La silla no est? ah?.
+
+9. Ellas trabajan ___.
+
+   Ellas trabajan all?.
+
+10. ?Est?s ___?
+
+   ?Est?s aqu??
 
 ### Traducción
 
 1. I am here.
 
-   Estoy aquí.
+   Estoy aqu?.
 
 2. The phone is there.
 
-   El teléfono está ahí.
+   El tel?fono est? ah?.
 
 3. The school is over there.
 
-   La escuela está allí.
+   La escuela est? all?.
+
+4. We work here.
+
+   Trabajamos aqu?.
+
+5. The key is not there.
+
+   La llave no est? ah?.
+
+6. My friends live over there.
+
+   Mis amigos viven all?.
+
+7. Are you here?
+
+   ?Est?s aqu??
+
+8. Is the coffee there?
+
+   ?El caf? est? ah??
+
+9. Do we sit here?
+
+   ?Nos sentamos aqu??
+
+10. They wait over there.
+
+   Ellos esperan all?.
 
 ## Wrap Up
 
