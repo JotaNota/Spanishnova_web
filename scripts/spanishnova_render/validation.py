@@ -1,3 +1,6 @@
+import re
+
+
 BASE_REQUIRED_GRAMMAR_FIELDS = [
     "intro",
     "overview",
@@ -21,6 +24,19 @@ GRAMMAR_REQUIRE_ONE_OF_BY_LESSON_TYPE = {
     "comparison": ["comparison", "structure"],
     "particle-set": ["forms", "forms_table"],
 }
+
+SPANISH_TEXT_FIELDS = {"spanish", "prompt", "answer", "example", "options"}
+BROKEN_ENCODING_PATTERNS = [
+    (re.compile(r"\ufffd"), "replacement character"),
+    (re.compile(r"[ÃÂ]"), "UTF-8 mojibake marker"),
+    (re.compile(r"\?T\?"), "broken Tú marker"),
+    (re.compile(r"\bT\?"), "broken Tú marker"),
+    (re.compile(r"\?l"), "broken él marker"),
+    (re.compile(r"\?Qu"), "broken Qué marker"),
+    (re.compile(r"\?D"), "broken Dónde/Cuándo marker"),
+    (re.compile(r"\?C"), "broken Cómo/Cuándo/Cuál marker"),
+    (re.compile(r"\?[A-ZÁÉÍÓÚÜÑ]"), "question mark used where opening ¿ is expected"),
+]
 
 
 def require_fields(data, fields, context):
@@ -55,6 +71,29 @@ def require_one_of(data, fields, context):
         raise SystemExit(f"{context} must include one of: {', '.join(fields)}")
 
 
+def validate_no_broken_spanish_text(value, path):
+    if isinstance(value, dict):
+        for key, child in value.items():
+            child_path = f"{path}.{key}" if path else key
+            if key in SPANISH_TEXT_FIELDS:
+                validate_no_broken_spanish_text(child, child_path)
+            elif isinstance(child, (dict, list)):
+                validate_no_broken_spanish_text(child, child_path)
+        return
+
+    if isinstance(value, list):
+        for index, child in enumerate(value, start=1):
+            validate_no_broken_spanish_text(child, f"{path}[{index}]")
+        return
+
+    if not isinstance(value, str):
+        return
+
+    for pattern, label in BROKEN_ENCODING_PATTERNS:
+        if pattern.search(value):
+            raise SystemExit(f"Broken Spanish text encoding in {path}: {label}: {value}")
+
+
 def validate_grammar_data(data, lesson_type=None):
     if lesson_type not in GRAMMAR_REQUIRED_BY_LESSON_TYPE:
         raise SystemExit(f"Unsupported grammar lesson_type: {lesson_type}")
@@ -66,6 +105,7 @@ def validate_grammar_data(data, lesson_type=None):
 
     if not isinstance(data.get("intro"), str) or not data["intro"].strip():
         raise SystemExit("grammar content-data intro must be a non-empty string")
+    validate_no_broken_spanish_text(data, "grammar content-data")
 
     overview = require_dict(data, "overview", "grammar content-data")
     require_fields(overview, ["body", "use_note"], "grammar overview")

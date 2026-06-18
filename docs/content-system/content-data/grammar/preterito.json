@@ -1,0 +1,112 @@
+{
+  "intro": "The preterite talks about completed actions in the past. Use it when an action has a clear beginning, end, or finished result.",
+  "overview": {
+    "body": "The Spanish preterite is common with yesterday, last night, last week, specific dates, and actions that happened once or were completed.",
+    "use_note": "finished past actions"
+  },
+  "examples": [
+    {"spanish": "Ayer estudié español.", "english": "Yesterday I studied Spanish."},
+    {"spanish": "Ella compró café esta mañana.", "english": "She bought coffee this morning."}
+  ],
+  "conjugation": [
+    {"subject": "Yo", "form": "-é / -í", "example": "Yo hablé con Ana.", "translation": "I spoke with Ana."},
+    {"subject": "Tú", "form": "-aste / -iste", "example": "Tú comiste temprano.", "translation": "You ate early."},
+    {"subject": "Él / Ella / Usted", "form": "-ó / -ió", "example": "Ella vivió en Madrid.", "translation": "She lived in Madrid."},
+    {"subject": "Nosotros / Nosotras", "form": "-amos / -imos", "example": "Nosotros trabajamos ayer.", "translation": "We worked yesterday."},
+    {"subject": "Ellos / Ellas / Ustedes", "form": "-aron / -ieron", "example": "Ellos salieron tarde.", "translation": "They left late."}
+  ],
+  "uses": [
+    {
+      "heading": "Completed actions",
+      "body": "Use the preterite when the action is finished.",
+      "examples": [
+        {"spanish": "Terminé la tarea.", "english": "I finished the homework."},
+        {"spanish": "Ustedes visitaron el museo.", "english": "You all visited the museum."}
+      ]
+    },
+    {
+      "heading": "Specific time in the past",
+      "body": "The preterite often appears with specific past-time expressions.",
+      "examples": [
+        {"spanish": "El lunes compré un libro.", "english": "On Monday I bought a book."},
+        {"spanish": "Anoche vimos una película.", "english": "Last night we watched a movie."}
+      ]
+    },
+    {
+      "heading": "Sequence of events",
+      "body": "Use the preterite to tell what happened next in a past story.",
+      "examples": [
+        {"spanish": "Entré, saludé y me senté.", "english": "I entered, said hello, and sat down."},
+        {"spanish": "Ella llegó y llamó a su mamá.", "english": "She arrived and called her mom."}
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {"spanish": "Yo estudié anoche.", "english": "I studied last night."},
+      {"spanish": "Tú escribiste un mensaje.", "english": "You wrote a message."},
+      {"spanish": "Ella abrió la puerta.", "english": "She opened the door."},
+      {"spanish": "Nosotros viajamos a México.", "english": "We traveled to Mexico."}
+    ],
+    "negative": [
+      {"spanish": "No terminé el proyecto.", "english": "I did not finish the project."},
+      {"spanish": "Él no comió desayuno.", "english": "He did not eat breakfast."},
+      {"spanish": "Nosotras no salimos ayer.", "english": "We did not go out yesterday."},
+      {"spanish": "Ellos no llamaron después.", "english": "They did not call later."}
+    ],
+    "questions": [
+      {"spanish": "¿Estudiaste ayer?", "english": "Did you study yesterday?"},
+      {"spanish": "¿Ella compró el café?", "english": "Did she buy the coffee?"},
+      {"spanish": "¿Nosotros llegamos tarde?", "english": "Did we arrive late?"},
+      {"spanish": "¿Ustedes vieron la película?", "english": "Did you all see the movie?"}
+    ]
+  },
+  "exercises": {
+    "select": [
+      {"prompt": "Yo _____ español ayer.", "options": ["estudié", "estudio", "estudiaba"], "answer": "Yo estudié español ayer."},
+      {"prompt": "Tú _____ temprano.", "options": ["comiste", "comes", "comías"], "answer": "Tú comiste temprano."},
+      {"prompt": "Ella _____ café.", "options": ["compró", "compra", "compraba"], "answer": "Ella compró café."},
+      {"prompt": "Nosotros _____ a México.", "options": ["viajamos", "viajábamos", "viajan"], "answer": "Nosotros viajamos a México."},
+      {"prompt": "Ellos _____ tarde.", "options": ["salieron", "salen", "salían"], "answer": "Ellos salieron tarde."},
+      {"prompt": "Yo no _____ el proyecto.", "options": ["terminé", "termino", "terminaba"], "answer": "Yo no terminé el proyecto."},
+      {"prompt": "Usted _____ la puerta.", "options": ["abrió", "abre", "abría"], "answer": "Usted abrió la puerta."},
+      {"prompt": "Nosotras _____ una película.", "options": ["vimos", "vemos", "veíamos"], "answer": "Nosotras vimos una película."},
+      {"prompt": "Tú _____ un mensaje.", "options": ["escribiste", "escribes", "escribías"], "answer": "Tú escribiste un mensaje."},
+      {"prompt": "¿Ustedes _____ ayer?", "options": ["trabajaron", "trabajan", "trabajaban"], "answer": "¿Ustedes trabajaron ayer?"}
+    ],
+    "complete": [
+      {"prompt": "Yo ___ con Ana.", "answer": "Yo hablé con Ana."},
+      {"prompt": "Tú ___ un café.", "answer": "Tú tomaste un café."},
+      {"prompt": "Ella ___ a las ocho.", "answer": "Ella llegó a las ocho."},
+      {"prompt": "Nosotros ___ la tarea.", "answer": "Nosotros terminamos la tarea."},
+      {"prompt": "Ellos ___ al museo.", "answer": "Ellos fueron al museo."},
+      {"prompt": "Yo no ___ el correo.", "answer": "Yo no escribí el correo."},
+      {"prompt": "Usted ___ el libro.", "answer": "Usted leyó el libro."},
+      {"prompt": "Nosotras ___ temprano.", "answer": "Nosotras salimos temprano."},
+      {"prompt": "Tú ___ la puerta.", "answer": "Tú abriste la puerta."},
+      {"prompt": "¿Ellas ___ la película?", "answer": "¿Ellas vieron la película?"}
+    ],
+    "translate": [
+      {"prompt": "Yesterday I studied Spanish.", "answer": "Ayer estudié español."},
+      {"prompt": "You ate early.", "answer": "Tú comiste temprano."},
+      {"prompt": "She bought coffee.", "answer": "Ella compró café."},
+      {"prompt": "We traveled to Mexico.", "answer": "Viajamos a México."},
+      {"prompt": "They left late.", "answer": "Ellos salieron tarde."},
+      {"prompt": "I did not finish the project.", "answer": "No terminé el proyecto."},
+      {"prompt": "Did you study yesterday?", "answer": "¿Estudiaste ayer?"},
+      {"prompt": "We watched a movie last night.", "answer": "Anoche vimos una película."},
+      {"prompt": "He opened the door.", "answer": "Él abrió la puerta."},
+      {"prompt": "You all worked yesterday.", "answer": "Ustedes trabajaron ayer."}
+    ]
+  },
+  "answers": {
+    "select": ["Yo estudié español ayer.", "Tú comiste temprano.", "Ella compró café.", "Nosotros viajamos a México.", "Ellos salieron tarde.", "Yo no terminé el proyecto.", "Usted abrió la puerta.", "Nosotras vimos una película.", "Tú escribiste un mensaje.", "¿Ustedes trabajaron ayer?"],
+    "complete": ["Yo hablé con Ana.", "Tú tomaste un café.", "Ella llegó a las ocho.", "Nosotros terminamos la tarea.", "Ellos fueron al museo.", "Yo no escribí el correo.", "Usted leyó el libro.", "Nosotras salimos temprano.", "Tú abriste la puerta.", "¿Ellas vieron la película?"],
+    "translate": ["Ayer estudié español.", "Tú comiste temprano.", "Ella compró café.", "Viajamos a México.", "Ellos salieron tarde.", "No terminé el proyecto.", "¿Estudiaste ayer?", "Anoche vimos una película.", "Él abrió la puerta.", "Ustedes trabajaron ayer."]
+  },
+  "wrap_up": [
+    {"use": "Completed action", "example": "Terminé la tarea.", "translation": "I finished the homework."},
+    {"use": "Specific past time", "example": "Ayer estudié español.", "translation": "Yesterday I studied Spanish."},
+    {"use": "Sequence", "example": "Entré, saludé y me senté.", "translation": "I entered, said hello, and sat down."}
+  ]
+}
