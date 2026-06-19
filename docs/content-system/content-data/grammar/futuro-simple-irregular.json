@@ -1,0 +1,368 @@
+{
+  "intro": "Irregular future verbs keep the regular future endings, but use a shortened or changed stem. These forms are common with everyday verbs like tener, poder, hacer, decir, venir, salir, poner, and querer.",
+  "overview": {
+    "body": "Irregular future verbs keep the regular future endings, but use a shortened or changed stem. These forms are common with everyday verbs like tener, poder, hacer, decir, venir, salir, poner, and querer. Focus on the message first, then choose the form that fits the context.",
+    "use_note": "irregular future forms"
+  },
+  "examples": [
+    {
+      "spanish": "Future irregular stems: ejemplo principal.",
+      "english": "Future irregular stems: main example."
+    },
+    {
+      "spanish": "Future irregular stems: otro ejemplo ?til.",
+      "english": "Future irregular stems: another useful example."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Real use",
+      "body": "Use this pattern when future irregular stems helps express a real message, not just a grammar label.",
+      "examples": [
+        {
+          "spanish": "Future irregular stems: ejemplo pr?ctico uno.",
+          "english": "Future irregular stems: practical example one."
+        },
+        {
+          "spanish": "Future irregular stems: ejemplo pr?ctico dos.",
+          "english": "Future irregular stems: practical example two."
+        }
+      ]
+    },
+    {
+      "heading": "Common context",
+      "body": "This form often appears in everyday explanations, plans, advice, and reactions depending on the sentence.",
+      "examples": [
+        {
+          "spanish": "Future irregular stems: contexto com?n uno.",
+          "english": "Future irregular stems: common context one."
+        },
+        {
+          "spanish": "Future irregular stems: contexto com?n dos.",
+          "english": "Future irregular stems: common context two."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Future irregular stems: frase afirmativa 1.",
+        "english": "Future irregular stems: affirmative sentence 1."
+      },
+      {
+        "spanish": "Future irregular stems: frase afirmativa 2.",
+        "english": "Future irregular stems: affirmative sentence 2."
+      },
+      {
+        "spanish": "Future irregular stems: frase afirmativa 3.",
+        "english": "Future irregular stems: affirmative sentence 3."
+      },
+      {
+        "spanish": "Future irregular stems: frase afirmativa 4.",
+        "english": "Future irregular stems: affirmative sentence 4."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No usamos future irregular stems as? en el ejemplo 1.",
+        "english": "We do not use future irregular stems like that in example 1."
+      },
+      {
+        "spanish": "No usamos future irregular stems as? en el ejemplo 2.",
+        "english": "We do not use future irregular stems like that in example 2."
+      },
+      {
+        "spanish": "No usamos future irregular stems as? en el ejemplo 3.",
+        "english": "We do not use future irregular stems like that in example 3."
+      },
+      {
+        "spanish": "No usamos future irregular stems as? en el ejemplo 4.",
+        "english": "We do not use future irregular stems like that in example 4."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "Future irregular stems: pregunta modelo 1.",
+        "english": "Future irregular stems: model question 1."
+      },
+      {
+        "spanish": "Future irregular stems: pregunta modelo 2.",
+        "english": "Future irregular stems: model question 2."
+      },
+      {
+        "spanish": "Future irregular stems: pregunta modelo 3.",
+        "english": "Future irregular stems: model question 3."
+      },
+      {
+        "spanish": "Future irregular stems: pregunta modelo 4.",
+        "english": "Future irregular stems: model question 4."
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Future irregular stems: opci?n 1 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Future irregular stems: opci?n 1 forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: opci?n 2 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Future irregular stems: opci?n 2 forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: opci?n 3 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Future irregular stems: opci?n 3 forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: opci?n 4 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Future irregular stems: opci?n 4 forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: opci?n 5 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Future irregular stems: opci?n 5 forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: opci?n 6 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Future irregular stems: opci?n 6 forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: opci?n 7 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Future irregular stems: opci?n 7 forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: opci?n 8 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Future irregular stems: opci?n 8 forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: opci?n 9 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Future irregular stems: opci?n 9 forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: opci?n 10 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Future irregular stems: opci?n 10 forma correcta."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Future irregular stems: completa la idea 1: ___.",
+        "answer": "Future irregular stems: completa la idea 1: forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: completa la idea 2: ___.",
+        "answer": "Future irregular stems: completa la idea 2: forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: completa la idea 3: ___.",
+        "answer": "Future irregular stems: completa la idea 3: forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: completa la idea 4: ___.",
+        "answer": "Future irregular stems: completa la idea 4: forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: completa la idea 5: ___.",
+        "answer": "Future irregular stems: completa la idea 5: forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: completa la idea 6: ___.",
+        "answer": "Future irregular stems: completa la idea 6: forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: completa la idea 7: ___.",
+        "answer": "Future irregular stems: completa la idea 7: forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: completa la idea 8: ___.",
+        "answer": "Future irregular stems: completa la idea 8: forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: completa la idea 9: ___.",
+        "answer": "Future irregular stems: completa la idea 9: forma correcta."
+      },
+      {
+        "prompt": "Future irregular stems: completa la idea 10: ___.",
+        "answer": "Future irregular stems: completa la idea 10: forma correcta."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "Future irregular stems practice sentence 1.",
+        "answer": "Future irregular stems: frase modelo 1."
+      },
+      {
+        "prompt": "Future irregular stems practice sentence 2.",
+        "answer": "Future irregular stems: frase modelo 2."
+      },
+      {
+        "prompt": "Future irregular stems practice sentence 3.",
+        "answer": "Future irregular stems: frase modelo 3."
+      },
+      {
+        "prompt": "Future irregular stems practice sentence 4.",
+        "answer": "Future irregular stems: frase modelo 4."
+      },
+      {
+        "prompt": "Future irregular stems practice sentence 5.",
+        "answer": "Future irregular stems: frase modelo 5."
+      },
+      {
+        "prompt": "Future irregular stems practice sentence 6.",
+        "answer": "Future irregular stems: frase modelo 6."
+      },
+      {
+        "prompt": "Future irregular stems practice sentence 7.",
+        "answer": "Future irregular stems: frase modelo 7."
+      },
+      {
+        "prompt": "Future irregular stems practice sentence 8.",
+        "answer": "Future irregular stems: frase modelo 8."
+      },
+      {
+        "prompt": "Future irregular stems practice sentence 9.",
+        "answer": "Future irregular stems: frase modelo 9."
+      },
+      {
+        "prompt": "Future irregular stems practice sentence 10.",
+        "answer": "Future irregular stems: frase modelo 10."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Future irregular stems: opci?n 1 forma correcta.",
+      "Future irregular stems: opci?n 2 forma correcta.",
+      "Future irregular stems: opci?n 3 forma correcta.",
+      "Future irregular stems: opci?n 4 forma correcta.",
+      "Future irregular stems: opci?n 5 forma correcta.",
+      "Future irregular stems: opci?n 6 forma correcta.",
+      "Future irregular stems: opci?n 7 forma correcta.",
+      "Future irregular stems: opci?n 8 forma correcta.",
+      "Future irregular stems: opci?n 9 forma correcta.",
+      "Future irregular stems: opci?n 10 forma correcta."
+    ],
+    "complete": [
+      "Future irregular stems: completa la idea 1: forma correcta.",
+      "Future irregular stems: completa la idea 2: forma correcta.",
+      "Future irregular stems: completa la idea 3: forma correcta.",
+      "Future irregular stems: completa la idea 4: forma correcta.",
+      "Future irregular stems: completa la idea 5: forma correcta.",
+      "Future irregular stems: completa la idea 6: forma correcta.",
+      "Future irregular stems: completa la idea 7: forma correcta.",
+      "Future irregular stems: completa la idea 8: forma correcta.",
+      "Future irregular stems: completa la idea 9: forma correcta.",
+      "Future irregular stems: completa la idea 10: forma correcta."
+    ],
+    "translate": [
+      "Future irregular stems: frase modelo 1.",
+      "Future irregular stems: frase modelo 2.",
+      "Future irregular stems: frase modelo 3.",
+      "Future irregular stems: frase modelo 4.",
+      "Future irregular stems: frase modelo 5.",
+      "Future irregular stems: frase modelo 6.",
+      "Future irregular stems: frase modelo 7.",
+      "Future irregular stems: frase modelo 8.",
+      "Future irregular stems: frase modelo 9.",
+      "Future irregular stems: frase modelo 10."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Core idea",
+      "example": "Future irregular stems: ejemplo claro.",
+      "translation": "Clear example."
+    },
+    {
+      "use": "Negative or contrast",
+      "example": "Future irregular stems: no siempre cambia igual.",
+      "translation": "It does not always change the same way."
+    },
+    {
+      "use": "Question",
+      "example": "Cmo usas future irregular stems",
+      "translation": "How do you use it?"
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Yo",
+      "form": "forma yo",
+      "example": "Future irregular stems: yo uso la forma.",
+      "translation": "I use the form."
+    },
+    {
+      "subject": "T?",
+      "form": "forma t?",
+      "example": "Future irregular stems: t? usas la forma.",
+      "translation": "You use the form."
+    },
+    {
+      "subject": "?l / Ella / Usted",
+      "form": "forma ?l/ella/usted",
+      "example": "Future irregular stems: ella usa la forma.",
+      "translation": "She uses the form."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "forma nosotros",
+      "example": "Future irregular stems: nosotros usamos la forma.",
+      "translation": "We use the form."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "forma ellos/ustedes",
+      "example": "Future irregular stems: ellos usan la forma.",
+      "translation": "They use the form."
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "intro": "Iba a + infinitive talks about plans, intentions, or expected actions in the past. It is the past version of voy a + infinitive.",
+  "overview": {
+    "body": "Use iba, ibas, iba, íbamos, or iban + a + infinitive when someone was going to do something.",
+    "use_note": "past plans with iba a + infinitive"
+  },
+  "examples": [
+    {
+      "spanish": "Iba a llamar, pero me quedé sin batería.",
+      "english": "I was going to call, but my battery died."
+    },
+    {
+      "spanish": "Íbamos a salir, pero empezó a llover.",
+      "english": "We were going to go out, but it started to rain."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Past plans",
+      "body": "Use it for a plan someone had before another event or decision changed things.",
+      "examples": [
+        {
+          "spanish": "Iba a cocinar, pero pedimos comida.",
+          "english": "I was going to cook, but we ordered food."
+        },
+        {
+          "spanish": "Ellos iban a viajar en julio.",
+          "english": "They were going to travel in July."
+        }
+      ]
+    },
+    {
+      "heading": "Expected action",
+      "body": "It can also show what was expected or about to happen.",
+      "examples": [
+        {
+          "spanish": "La clase iba a empezar a las ocho.",
+          "english": "The class was going to start at eight."
+        },
+        {
+          "spanish": "Íbamos a entrar cuando llegó Ana.",
+          "english": "We were going to enter when Ana arrived."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Yo trabajaba en el centro.",
+        "english": "I used to work downtown."
+      },
+      {
+        "spanish": "Tú comías con tu familia.",
+        "english": "You used to eat with your family."
+      },
+      {
+        "spanish": "Ella vivía cerca.",
+        "english": "She used to live nearby."
+      },
+      {
+        "spanish": "Nosotros íbamos al parque.",
+        "english": "We used to go to the park."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "Yo no salía mucho.",
+        "english": "I did not use to go out much."
+      },
+      {
+        "spanish": "Él no tenía coche.",
+        "english": "He did not have a car."
+      },
+      {
+        "spanish": "Nosotras no veíamos televisión.",
+        "english": "We did not use to watch TV."
+      },
+      {
+        "spanish": "Ellos no eran vecinos.",
+        "english": "They were not neighbors."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Trabajabas los sábados?",
+        "english": "Did you use to work on Saturdays?"
+      },
+      {
+        "spanish": "¿Ella vivía aquí?",
+        "english": "Did she use to live here?"
+      },
+      {
+        "spanish": "¿Íbamos juntos?",
+        "english": "Did we use to go together?"
+      },
+      {
+        "spanish": "¿Ustedes veían esa serie?",
+        "english": "Did you all use to watch that series?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ llamar.",
+        "options": [
+          "iba a",
+          "fui a",
+          "voy a"
+        ],
+        "answer": "Yo iba a llamar."
+      },
+      {
+        "prompt": "Tú _____ estudiar.",
+        "options": [
+          "ibas a",
+          "fuiste a",
+          "vas a"
+        ],
+        "answer": "Tú ibas a estudiar."
+      },
+      {
+        "prompt": "Ella _____ comprar pan.",
+        "options": [
+          "iba a",
+          "fue a",
+          "va a"
+        ],
+        "answer": "Ella iba a comprar pan."
+      },
+      {
+        "prompt": "Nosotros _____ salir.",
+        "options": [
+          "íbamos a",
+          "fuimos a",
+          "vamos a"
+        ],
+        "answer": "Nosotros íbamos a salir."
+      },
+      {
+        "prompt": "Ellos _____ viajar.",
+        "options": [
+          "iban a",
+          "fueron a",
+          "van a"
+        ],
+        "answer": "Ellos iban a viajar."
+      },
+      {
+        "prompt": "Yo no _____ decir nada.",
+        "options": [
+          "iba a",
+          "fui a",
+          "voy a"
+        ],
+        "answer": "Yo no iba a decir nada."
+      },
+      {
+        "prompt": "Usted _____ esperar aquí.",
+        "options": [
+          "iba a",
+          "fue a",
+          "va a"
+        ],
+        "answer": "Usted iba a esperar aquí."
+      },
+      {
+        "prompt": "Nosotras _____ cocinar.",
+        "options": [
+          "íbamos a",
+          "fuimos a",
+          "vamos a"
+        ],
+        "answer": "Nosotras íbamos a cocinar."
+      },
+      {
+        "prompt": "Tú _____ ayudarme.",
+        "options": [
+          "ibas a",
+          "fuiste a",
+          "vas a"
+        ],
+        "answer": "Tú ibas a ayudarme."
+      },
+      {
+        "prompt": "¿Ustedes _____ quedarse?",
+        "options": [
+          "iban a",
+          "fueron a",
+          "van a"
+        ],
+        "answer": "¿Ustedes iban a quedarse?"
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ llamar.",
+        "answer": "Yo iba a llamar."
+      },
+      {
+        "prompt": "Tú ___ estudiar.",
+        "answer": "Tú ibas a estudiar."
+      },
+      {
+        "prompt": "Ella ___ comprar pan.",
+        "answer": "Ella iba a comprar pan."
+      },
+      {
+        "prompt": "Nosotros ___ salir.",
+        "answer": "Nosotros íbamos a salir."
+      },
+      {
+        "prompt": "Ellos ___ viajar.",
+        "answer": "Ellos iban a viajar."
+      },
+      {
+        "prompt": "Yo no ___ decir nada.",
+        "answer": "Yo no iba a decir nada."
+      },
+      {
+        "prompt": "Usted ___ esperar aquí.",
+        "answer": "Usted iba a esperar aquí."
+      },
+      {
+        "prompt": "Nosotras ___ cocinar.",
+        "answer": "Nosotras íbamos a cocinar."
+      },
+      {
+        "prompt": "Tú ___ ayudarme.",
+        "answer": "Tú ibas a ayudarme."
+      },
+      {
+        "prompt": "¿Ustedes ___ quedarse?",
+        "answer": "¿Ustedes iban a quedarse?"
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I was going to call.",
+        "answer": "Iba a llamar."
+      },
+      {
+        "prompt": "You were going to study.",
+        "answer": "Tú ibas a estudiar."
+      },
+      {
+        "prompt": "She was going to buy bread.",
+        "answer": "Ella iba a comprar pan."
+      },
+      {
+        "prompt": "We were going to leave.",
+        "answer": "Íbamos a salir."
+      },
+      {
+        "prompt": "They were going to travel.",
+        "answer": "Ellos iban a viajar."
+      },
+      {
+        "prompt": "I was not going to say anything.",
+        "answer": "No iba a decir nada."
+      },
+      {
+        "prompt": "You were going to wait here.",
+        "answer": "Usted iba a esperar aquí."
+      },
+      {
+        "prompt": "We were going to cook.",
+        "answer": "Íbamos a cocinar."
+      },
+      {
+        "prompt": "You were going to help me.",
+        "answer": "Tú ibas a ayudarme."
+      },
+      {
+        "prompt": "Were you all going to stay?",
+        "answer": "¿Ustedes iban a quedarse?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo iba a llamar.",
+      "Tú ibas a estudiar.",
+      "Ella iba a comprar pan.",
+      "Nosotros íbamos a salir.",
+      "Ellos iban a viajar.",
+      "Yo no iba a decir nada.",
+      "Usted iba a esperar aquí.",
+      "Nosotras íbamos a cocinar.",
+      "Tú ibas a ayudarme.",
+      "¿Ustedes iban a quedarse?"
+    ],
+    "complete": [
+      "Yo iba a llamar.",
+      "Tú ibas a estudiar.",
+      "Ella iba a comprar pan.",
+      "Nosotros íbamos a salir.",
+      "Ellos iban a viajar.",
+      "Yo no iba a decir nada.",
+      "Usted iba a esperar aquí.",
+      "Nosotras íbamos a cocinar.",
+      "Tú ibas a ayudarme.",
+      "¿Ustedes iban a quedarse?"
+    ],
+    "translate": [
+      "Iba a llamar.",
+      "Tú ibas a estudiar.",
+      "Ella iba a comprar pan.",
+      "Íbamos a salir.",
+      "Ellos iban a viajar.",
+      "No iba a decir nada.",
+      "Usted iba a esperar aquí.",
+      "Íbamos a cocinar.",
+      "Tú ibas a ayudarme.",
+      "¿Ustedes iban a quedarse?"
+    ]
+  },
+  "structure": [
+    {
+      "pattern": "subject + iba/ibas/íbamos/iban + a + infinitive",
+      "example": "Yo iba a estudiar.",
+      "translation": "I was going to study."
+    },
+    {
+      "pattern": "no + iba a + infinitive",
+      "example": "No iba a decir nada.",
+      "translation": "I was not going to say anything."
+    },
+    {
+      "pattern": "question + iba a + infinitive",
+      "example": "¿Ibas a venir?",
+      "translation": "Were you going to come?"
+    }
+  ],
+  "wrap_up": [
+    {
+      "use": "Plan",
+      "example": "Iba a llamarte.",
+      "translation": "I was going to call you."
+    },
+    {
+      "use": "Change of plan",
+      "example": "Íbamos a salir, pero llovió.",
+      "translation": "We were going to go out, but it rained."
+    },
+    {
+      "use": "Question",
+      "example": "¿Ibas a venir?",
+      "translation": "Were you going to come?"
+    }
+  ]
+}

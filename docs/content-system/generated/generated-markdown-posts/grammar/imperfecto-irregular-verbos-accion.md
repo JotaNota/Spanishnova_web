@@ -1,11 +1,21 @@
-Ser, ir, and ver are the three everyday irregular verbs in the imperfect. Use them to describe what someone was like, where someone used to go, and what someone was seeing or watching.
+Only three verbs are truly irregular in the imperfect: ser, ir, and ver. They are common because they describe background, repeated movement, and what someone could see or was watching.
 
 ## Overview
 
-The forms are era, iba, and veía. They are short, common, and useful for real past descriptions.
+Use era for what someone was like, iba for where someone used to go, and veía for what someone saw or used to watch.
 
-- Cuando era niño, iba al parque. -> When I was a child, I used to go to the park.
-- Desde la ventana, veía el río. -> From the window, I could see the river.
+- Yo era estudiante y veía a mis amigos todos los días. -> I was a student and used to see my friends every day.
+- Íbamos al parque cuando hacía buen tiempo. -> We used to go to the park when the weather was nice.
+
+## Conjugación
+
+| Subject | Forma | Example | Translation |
+| --- | --- | --- | --- |
+| Yo | era / iba / veía | Yo era estudiante. | I was a student. |
+| Tú | eras / ibas / veías | Tú ibas al club. | You used to go to the club. |
+| Él / Ella / Usted | era / iba / veía | Ella veía el mar. | She could see the sea. |
+| Nosotros / Nosotras | éramos / íbamos / veíamos | Nosotros éramos amigos. | We were friends. |
+| Ellos / Ellas / Ustedes | eran / iban / veían | Ellos iban al centro. | They used to go downtown. |
 
 ## Cómo/cuándo lo usamos
 
@@ -22,14 +32,6 @@ Use ir for repeated movement and ver for what someone saw or watched.
 
 - Íbamos al cine los viernes. -> We used to go to the movies on Fridays.
 - Veíamos las noticias por la noche. -> We used to watch the news at night.
-
-## Estructura
-
-| Patrón | Example | Translation |
-| --- | --- | --- |
-| subject + era/eras/éramos + description | La clase era interesante. | The class was interesting. |
-| subject + iba/ibas/íbamos + a + place | Íbamos al mercado los sábados. | We used to go to the market on Saturdays. |
-| subject + veía/veías/veíamos + object | Veíamos películas en casa. | We used to watch movies at home. |
 
 ## Oraciones.
 
@@ -216,6 +218,6 @@ Use ir for repeated movement and ver for what someone saw or watched.
 
 | Use | Example | Translation |
 | --- | --- | --- |
-| Ser | Ella era muy paciente. | She was very patient. |
-| Ir | Iba al centro cada semana. | I used to go downtown every week. |
-| Ver | Veíamos el partido juntos. | We used to watch the game together. |
+| Ser | Era una persona tranquila. | She was a calm person. |
+| Ir | Iba al trabajo en bus. | I used to go to work by bus. |
+| Ver | Veía el mar desde casa. | I could see the sea from home. |

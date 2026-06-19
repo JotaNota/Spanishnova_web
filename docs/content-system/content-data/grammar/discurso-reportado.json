@@ -1,0 +1,353 @@
+{
+  "intro": "Reported speech lets you say what someone said, asked, or explained without quoting every word directly. Spanish often shifts tense, pronouns, and time expressions.",
+  "overview": {
+    "body": "Reported speech lets you say what someone said, asked, or explained without quoting every word directly. Spanish often shifts tense, pronouns, and time expressions. Focus on the message first, then choose the form that fits the context.",
+    "use_note": "reported speech patterns"
+  },
+  "examples": [
+    {
+      "spanish": "Reported speech: ejemplo principal.",
+      "english": "Reported speech: main example."
+    },
+    {
+      "spanish": "Reported speech: otro ejemplo ?til.",
+      "english": "Reported speech: another useful example."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Real use",
+      "body": "Use this pattern when reported speech helps express a real message, not just a grammar label.",
+      "examples": [
+        {
+          "spanish": "Reported speech: ejemplo pr?ctico uno.",
+          "english": "Reported speech: practical example one."
+        },
+        {
+          "spanish": "Reported speech: ejemplo pr?ctico dos.",
+          "english": "Reported speech: practical example two."
+        }
+      ]
+    },
+    {
+      "heading": "Common context",
+      "body": "This form often appears in everyday explanations, plans, advice, and reactions depending on the sentence.",
+      "examples": [
+        {
+          "spanish": "Reported speech: contexto com?n uno.",
+          "english": "Reported speech: common context one."
+        },
+        {
+          "spanish": "Reported speech: contexto com?n dos.",
+          "english": "Reported speech: common context two."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Reported speech: frase afirmativa 1.",
+        "english": "Reported speech: affirmative sentence 1."
+      },
+      {
+        "spanish": "Reported speech: frase afirmativa 2.",
+        "english": "Reported speech: affirmative sentence 2."
+      },
+      {
+        "spanish": "Reported speech: frase afirmativa 3.",
+        "english": "Reported speech: affirmative sentence 3."
+      },
+      {
+        "spanish": "Reported speech: frase afirmativa 4.",
+        "english": "Reported speech: affirmative sentence 4."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No usamos reported speech as? en el ejemplo 1.",
+        "english": "We do not use reported speech like that in example 1."
+      },
+      {
+        "spanish": "No usamos reported speech as? en el ejemplo 2.",
+        "english": "We do not use reported speech like that in example 2."
+      },
+      {
+        "spanish": "No usamos reported speech as? en el ejemplo 3.",
+        "english": "We do not use reported speech like that in example 3."
+      },
+      {
+        "spanish": "No usamos reported speech as? en el ejemplo 4.",
+        "english": "We do not use reported speech like that in example 4."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "Reported speech: pregunta modelo 1.",
+        "english": "Reported speech: model question 1."
+      },
+      {
+        "spanish": "Reported speech: pregunta modelo 2.",
+        "english": "Reported speech: model question 2."
+      },
+      {
+        "spanish": "Reported speech: pregunta modelo 3.",
+        "english": "Reported speech: model question 3."
+      },
+      {
+        "spanish": "Reported speech: pregunta modelo 4.",
+        "english": "Reported speech: model question 4."
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Reported speech: opci?n 1 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Reported speech: opci?n 1 forma correcta."
+      },
+      {
+        "prompt": "Reported speech: opci?n 2 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Reported speech: opci?n 2 forma correcta."
+      },
+      {
+        "prompt": "Reported speech: opci?n 3 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Reported speech: opci?n 3 forma correcta."
+      },
+      {
+        "prompt": "Reported speech: opci?n 4 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Reported speech: opci?n 4 forma correcta."
+      },
+      {
+        "prompt": "Reported speech: opci?n 5 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Reported speech: opci?n 5 forma correcta."
+      },
+      {
+        "prompt": "Reported speech: opci?n 6 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Reported speech: opci?n 6 forma correcta."
+      },
+      {
+        "prompt": "Reported speech: opci?n 7 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Reported speech: opci?n 7 forma correcta."
+      },
+      {
+        "prompt": "Reported speech: opci?n 8 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Reported speech: opci?n 8 forma correcta."
+      },
+      {
+        "prompt": "Reported speech: opci?n 9 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Reported speech: opci?n 9 forma correcta."
+      },
+      {
+        "prompt": "Reported speech: opci?n 10 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Reported speech: opci?n 10 forma correcta."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Reported speech: completa la idea 1: ___.",
+        "answer": "Reported speech: completa la idea 1: forma correcta."
+      },
+      {
+        "prompt": "Reported speech: completa la idea 2: ___.",
+        "answer": "Reported speech: completa la idea 2: forma correcta."
+      },
+      {
+        "prompt": "Reported speech: completa la idea 3: ___.",
+        "answer": "Reported speech: completa la idea 3: forma correcta."
+      },
+      {
+        "prompt": "Reported speech: completa la idea 4: ___.",
+        "answer": "Reported speech: completa la idea 4: forma correcta."
+      },
+      {
+        "prompt": "Reported speech: completa la idea 5: ___.",
+        "answer": "Reported speech: completa la idea 5: forma correcta."
+      },
+      {
+        "prompt": "Reported speech: completa la idea 6: ___.",
+        "answer": "Reported speech: completa la idea 6: forma correcta."
+      },
+      {
+        "prompt": "Reported speech: completa la idea 7: ___.",
+        "answer": "Reported speech: completa la idea 7: forma correcta."
+      },
+      {
+        "prompt": "Reported speech: completa la idea 8: ___.",
+        "answer": "Reported speech: completa la idea 8: forma correcta."
+      },
+      {
+        "prompt": "Reported speech: completa la idea 9: ___.",
+        "answer": "Reported speech: completa la idea 9: forma correcta."
+      },
+      {
+        "prompt": "Reported speech: completa la idea 10: ___.",
+        "answer": "Reported speech: completa la idea 10: forma correcta."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "Reported speech practice sentence 1.",
+        "answer": "Reported speech: frase modelo 1."
+      },
+      {
+        "prompt": "Reported speech practice sentence 2.",
+        "answer": "Reported speech: frase modelo 2."
+      },
+      {
+        "prompt": "Reported speech practice sentence 3.",
+        "answer": "Reported speech: frase modelo 3."
+      },
+      {
+        "prompt": "Reported speech practice sentence 4.",
+        "answer": "Reported speech: frase modelo 4."
+      },
+      {
+        "prompt": "Reported speech practice sentence 5.",
+        "answer": "Reported speech: frase modelo 5."
+      },
+      {
+        "prompt": "Reported speech practice sentence 6.",
+        "answer": "Reported speech: frase modelo 6."
+      },
+      {
+        "prompt": "Reported speech practice sentence 7.",
+        "answer": "Reported speech: frase modelo 7."
+      },
+      {
+        "prompt": "Reported speech practice sentence 8.",
+        "answer": "Reported speech: frase modelo 8."
+      },
+      {
+        "prompt": "Reported speech practice sentence 9.",
+        "answer": "Reported speech: frase modelo 9."
+      },
+      {
+        "prompt": "Reported speech practice sentence 10.",
+        "answer": "Reported speech: frase modelo 10."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Reported speech: opci?n 1 forma correcta.",
+      "Reported speech: opci?n 2 forma correcta.",
+      "Reported speech: opci?n 3 forma correcta.",
+      "Reported speech: opci?n 4 forma correcta.",
+      "Reported speech: opci?n 5 forma correcta.",
+      "Reported speech: opci?n 6 forma correcta.",
+      "Reported speech: opci?n 7 forma correcta.",
+      "Reported speech: opci?n 8 forma correcta.",
+      "Reported speech: opci?n 9 forma correcta.",
+      "Reported speech: opci?n 10 forma correcta."
+    ],
+    "complete": [
+      "Reported speech: completa la idea 1: forma correcta.",
+      "Reported speech: completa la idea 2: forma correcta.",
+      "Reported speech: completa la idea 3: forma correcta.",
+      "Reported speech: completa la idea 4: forma correcta.",
+      "Reported speech: completa la idea 5: forma correcta.",
+      "Reported speech: completa la idea 6: forma correcta.",
+      "Reported speech: completa la idea 7: forma correcta.",
+      "Reported speech: completa la idea 8: forma correcta.",
+      "Reported speech: completa la idea 9: forma correcta.",
+      "Reported speech: completa la idea 10: forma correcta."
+    ],
+    "translate": [
+      "Reported speech: frase modelo 1.",
+      "Reported speech: frase modelo 2.",
+      "Reported speech: frase modelo 3.",
+      "Reported speech: frase modelo 4.",
+      "Reported speech: frase modelo 5.",
+      "Reported speech: frase modelo 6.",
+      "Reported speech: frase modelo 7.",
+      "Reported speech: frase modelo 8.",
+      "Reported speech: frase modelo 9.",
+      "Reported speech: frase modelo 10."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Core idea",
+      "example": "Reported speech: ejemplo claro.",
+      "translation": "Clear example."
+    },
+    {
+      "use": "Negative or contrast",
+      "example": "Reported speech: no siempre cambia igual.",
+      "translation": "It does not always change the same way."
+    },
+    {
+      "use": "Question",
+      "example": "Cmo usas reported speech",
+      "translation": "How do you use it?"
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "trigger + que + verb form",
+      "example": "Reported speech: quiero que uses la forma.",
+      "translation": "I want you to use the form."
+    },
+    {
+      "pattern": "si + condition, result",
+      "example": "Reported speech: si cambia el contexto, cambia la forma.",
+      "translation": "If the context changes, the form changes."
+    },
+    {
+      "pattern": "reported/passive pattern",
+      "example": "Reported speech: la idea se expresa con claridad.",
+      "translation": "The idea is expressed clearly."
+    }
+  ]
+}

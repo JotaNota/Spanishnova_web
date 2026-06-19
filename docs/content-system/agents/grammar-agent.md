@@ -79,9 +79,21 @@ Examples must stay on one line:
 - `answers` must include `select`, `complete`, and `translate`, with exactly 10 answers in each group.
 - Use `Selección simple`, `Completar`, and `Traducción` as exercise subsection headings.
 - Every exercise item must include a `<details><summary>Respuesta</summary>...</details>` answer block.
-- Selection exercises are allowed but not required for every grammar lesson.
+- Selection exercises are required for every grammar lesson.
 - Avoid repeating exact examples already used in `Overview`, `Conjugación`, `Cómo/cuándo lo usamos`, or `Oraciones.`.
 - Keep vocabulary and difficulty aligned with the roadmap level.
+
+## Generation Quality
+
+- Each section must do a distinct job.
+- Intro, overview, and uses must not repeat the same explanation.
+- Use a clear, direct voice that does not sound schoolish.
+- Explain less; show more through examples.
+- Do not recycle the same sentences across sections.
+- Exercises must be designed, not mechanically patterned.
+- Do not order exercises by pronoun.
+- In selection exercises, vary the position of the correct answer.
+- `select`, `complete`, and `translate` must practice different things.
 
 ## Tables
 

@@ -1,0 +1,336 @@
+{
+  "intro": "Direct object pronouns work the same with irregular verbs. The verb form may be irregular, but the pronoun still goes before the conjugated verb in simple sentences.",
+  "overview": {
+    "body": "With verbs like tener, poner, hacer, decir, traer, poder, querer, saber, and venir, keep the pronoun placement steady: lo tengo, la pongo, lo hago, te vengo a buscar.",
+    "use_note": "direct object pronouns with irregular verbs"
+  },
+  "examples": [
+    {
+      "spanish": "Tengo el pasaporte. Lo tengo.",
+      "english": "I have the passport. I have it."
+    },
+    {
+      "spanish": "Hago la tarea. La hago.",
+      "english": "I do the homework. I do it."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Replace a repeated noun",
+      "body": "Use lo, la, los, or las when the object is already clear.",
+      "examples": [
+        {
+          "spanish": "Tengo el boleto. Lo tengo.",
+          "english": "I have the ticket. I have it."
+        },
+        {
+          "spanish": "Compro las entradas. Las compro.",
+          "english": "I buy the tickets. I buy them."
+        }
+      ]
+    },
+    {
+      "heading": "People can be direct objects",
+      "body": "Use me, te, nos, lo, la, los, or las for people who receive the action directly.",
+      "examples": [
+        {
+          "spanish": "Ana me ayuda.",
+          "english": "Ana helps me."
+        },
+        {
+          "spanish": "Yo te escucho.",
+          "english": "I listen to you."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Lo veo todos los días.",
+        "english": "I see it every day."
+      },
+      {
+        "spanish": "La compré ayer.",
+        "english": "I bought it yesterday."
+      },
+      {
+        "spanish": "Nos invitaron a cenar.",
+        "english": "They invited us to dinner."
+      },
+      {
+        "spanish": "Los necesitamos ahora.",
+        "english": "We need them now."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No lo tengo aquí.",
+        "english": "I do not have it here."
+      },
+      {
+        "spanish": "Ella no me conoce.",
+        "english": "She does not know me."
+      },
+      {
+        "spanish": "No las encontré.",
+        "english": "I did not find them."
+      },
+      {
+        "spanish": "Ellos no nos escuchan.",
+        "english": "They do not listen to us."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Lo quieres ahora?",
+        "english": "Do you want it now?"
+      },
+      {
+        "spanish": "¿La viste ayer?",
+        "english": "Did you see her yesterday?"
+      },
+      {
+        "spanish": "¿Nos llamaron?",
+        "english": "Did they call us?"
+      },
+      {
+        "spanish": "¿Los compraste?",
+        "english": "Did you buy them?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ tengo.",
+        "options": [
+          "lo",
+          "le",
+          "se"
+        ],
+        "answer": "Yo lo tengo."
+      },
+      {
+        "prompt": "Ella _____ pone en la mesa.",
+        "options": [
+          "la",
+          "le",
+          "se"
+        ],
+        "answer": "Ella la pone en la mesa."
+      },
+      {
+        "prompt": "Nosotros _____ hacemos hoy.",
+        "options": [
+          "lo",
+          "le",
+          "se"
+        ],
+        "answer": "Nosotros lo hacemos hoy."
+      },
+      {
+        "prompt": "Tú _____ dices claramente.",
+        "options": [
+          "lo",
+          "le",
+          "se"
+        ],
+        "answer": "Tú lo dices claramente."
+      },
+      {
+        "prompt": "Ellos _____ traen mañana.",
+        "options": [
+          "los",
+          "les",
+          "se"
+        ],
+        "answer": "Ellos los traen mañana."
+      },
+      {
+        "prompt": "No _____ puedo abrir.",
+        "options": [
+          "lo",
+          "le",
+          "se"
+        ],
+        "answer": "No lo puedo abrir."
+      },
+      {
+        "prompt": "¿_____ quieres ver?",
+        "options": [
+          "La",
+          "Le",
+          "Se"
+        ],
+        "answer": "¿La quieres ver?"
+      },
+      {
+        "prompt": "Usted _____ sabe.",
+        "options": [
+          "lo",
+          "le",
+          "se"
+        ],
+        "answer": "Usted lo sabe."
+      },
+      {
+        "prompt": "Yo _____ vengo a buscar.",
+        "options": [
+          "te",
+          "tu",
+          "ti"
+        ],
+        "answer": "Yo te vengo a buscar."
+      },
+      {
+        "prompt": "Ana _____ puede usar.",
+        "options": [
+          "las",
+          "les",
+          "se"
+        ],
+        "answer": "Ana las puede usar."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ tengo listo.",
+        "answer": "Yo lo tengo listo."
+      },
+      {
+        "prompt": "Ella ___ pone en la mesa.",
+        "answer": "Ella la pone en la mesa."
+      },
+      {
+        "prompt": "Nosotros ___ hacemos hoy.",
+        "answer": "Nosotros lo hacemos hoy."
+      },
+      {
+        "prompt": "Tú ___ dices claramente.",
+        "answer": "Tú lo dices claramente."
+      },
+      {
+        "prompt": "Ellos ___ traen mañana.",
+        "answer": "Ellos los traen mañana."
+      },
+      {
+        "prompt": "No ___ puedo abrir.",
+        "answer": "No lo puedo abrir."
+      },
+      {
+        "prompt": "¿Tú ___ quieres ver?",
+        "answer": "¿Tú la quieres ver?"
+      },
+      {
+        "prompt": "Usted ___ sabe.",
+        "answer": "Usted lo sabe."
+      },
+      {
+        "prompt": "Yo ___ vengo a buscar.",
+        "answer": "Yo te vengo a buscar."
+      },
+      {
+        "prompt": "Ana ___ puede usar.",
+        "answer": "Ana las puede usar."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I have it ready.",
+        "answer": "Lo tengo listo."
+      },
+      {
+        "prompt": "She puts it on the table.",
+        "answer": "Ella la pone en la mesa."
+      },
+      {
+        "prompt": "We do it today.",
+        "answer": "Lo hacemos hoy."
+      },
+      {
+        "prompt": "You say it clearly.",
+        "answer": "Tú lo dices claramente."
+      },
+      {
+        "prompt": "They bring them tomorrow.",
+        "answer": "Ellos los traen mañana."
+      },
+      {
+        "prompt": "I cannot open it.",
+        "answer": "No lo puedo abrir."
+      },
+      {
+        "prompt": "Do you want to see it?",
+        "answer": "¿La quieres ver?"
+      },
+      {
+        "prompt": "You know it.",
+        "answer": "Usted lo sabe."
+      },
+      {
+        "prompt": "I am coming to get you.",
+        "answer": "Te vengo a buscar."
+      },
+      {
+        "prompt": "Ana can use them.",
+        "answer": "Ana las puede usar."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo lo tengo.",
+      "Ella la pone en la mesa.",
+      "Nosotros lo hacemos hoy.",
+      "Tú lo dices claramente.",
+      "Ellos los traen mañana.",
+      "No lo puedo abrir.",
+      "¿La quieres ver?",
+      "Usted lo sabe.",
+      "Yo te vengo a buscar.",
+      "Ana las puede usar."
+    ],
+    "complete": [
+      "Yo lo tengo listo.",
+      "Ella la pone en la mesa.",
+      "Nosotros lo hacemos hoy.",
+      "Tú lo dices claramente.",
+      "Ellos los traen mañana.",
+      "No lo puedo abrir.",
+      "¿Tú la quieres ver?",
+      "Usted lo sabe.",
+      "Yo te vengo a buscar.",
+      "Ana las puede usar."
+    ],
+    "translate": [
+      "Lo tengo listo.",
+      "Ella la pone en la mesa.",
+      "Lo hacemos hoy.",
+      "Tú lo dices claramente.",
+      "Ellos los traen mañana.",
+      "No lo puedo abrir.",
+      "¿La quieres ver?",
+      "Usted lo sabe.",
+      "Te vengo a buscar.",
+      "Ana las puede usar."
+    ]
+  },
+  "structure": [
+    {
+      "pattern": "subject + direct object pronoun + verb",
+      "example": "Yo lo necesito.",
+      "translation": "I need it."
+    },
+    {
+      "pattern": "no + direct object pronoun + verb",
+      "example": "No la veo.",
+      "translation": "I do not see her."
+    },
+    {
+      "pattern": "question + direct object pronoun + verb",
+      "example": "¿Los quieres?",
+      "translation": "Do you want them?"
+    }
+  ]
+}

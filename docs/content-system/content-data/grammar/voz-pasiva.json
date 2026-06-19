@@ -1,0 +1,353 @@
+{
+  "intro": "The passive voice focuses on what receives the action instead of who does it. Spanish often uses ser plus participle for formal passive sentences, and se for more natural passive-like statements.",
+  "overview": {
+    "body": "The passive voice focuses on what receives the action instead of who does it. Spanish often uses ser plus participle for formal passive sentences, and se for more natural passive-like statements. Focus on the message first, then choose the form that fits the context.",
+    "use_note": "passive voice patterns"
+  },
+  "examples": [
+    {
+      "spanish": "Passive voice: ejemplo principal.",
+      "english": "Passive voice: main example."
+    },
+    {
+      "spanish": "Passive voice: otro ejemplo ?til.",
+      "english": "Passive voice: another useful example."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Real use",
+      "body": "Use this pattern when passive voice helps express a real message, not just a grammar label.",
+      "examples": [
+        {
+          "spanish": "Passive voice: ejemplo pr?ctico uno.",
+          "english": "Passive voice: practical example one."
+        },
+        {
+          "spanish": "Passive voice: ejemplo pr?ctico dos.",
+          "english": "Passive voice: practical example two."
+        }
+      ]
+    },
+    {
+      "heading": "Common context",
+      "body": "This form often appears in everyday explanations, plans, advice, and reactions depending on the sentence.",
+      "examples": [
+        {
+          "spanish": "Passive voice: contexto com?n uno.",
+          "english": "Passive voice: common context one."
+        },
+        {
+          "spanish": "Passive voice: contexto com?n dos.",
+          "english": "Passive voice: common context two."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Passive voice: frase afirmativa 1.",
+        "english": "Passive voice: affirmative sentence 1."
+      },
+      {
+        "spanish": "Passive voice: frase afirmativa 2.",
+        "english": "Passive voice: affirmative sentence 2."
+      },
+      {
+        "spanish": "Passive voice: frase afirmativa 3.",
+        "english": "Passive voice: affirmative sentence 3."
+      },
+      {
+        "spanish": "Passive voice: frase afirmativa 4.",
+        "english": "Passive voice: affirmative sentence 4."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No usamos passive voice as? en el ejemplo 1.",
+        "english": "We do not use passive voice like that in example 1."
+      },
+      {
+        "spanish": "No usamos passive voice as? en el ejemplo 2.",
+        "english": "We do not use passive voice like that in example 2."
+      },
+      {
+        "spanish": "No usamos passive voice as? en el ejemplo 3.",
+        "english": "We do not use passive voice like that in example 3."
+      },
+      {
+        "spanish": "No usamos passive voice as? en el ejemplo 4.",
+        "english": "We do not use passive voice like that in example 4."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "Passive voice: pregunta modelo 1.",
+        "english": "Passive voice: model question 1."
+      },
+      {
+        "spanish": "Passive voice: pregunta modelo 2.",
+        "english": "Passive voice: model question 2."
+      },
+      {
+        "spanish": "Passive voice: pregunta modelo 3.",
+        "english": "Passive voice: model question 3."
+      },
+      {
+        "spanish": "Passive voice: pregunta modelo 4.",
+        "english": "Passive voice: model question 4."
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Passive voice: opci?n 1 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Passive voice: opci?n 1 forma correcta."
+      },
+      {
+        "prompt": "Passive voice: opci?n 2 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Passive voice: opci?n 2 forma correcta."
+      },
+      {
+        "prompt": "Passive voice: opci?n 3 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Passive voice: opci?n 3 forma correcta."
+      },
+      {
+        "prompt": "Passive voice: opci?n 4 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Passive voice: opci?n 4 forma correcta."
+      },
+      {
+        "prompt": "Passive voice: opci?n 5 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Passive voice: opci?n 5 forma correcta."
+      },
+      {
+        "prompt": "Passive voice: opci?n 6 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Passive voice: opci?n 6 forma correcta."
+      },
+      {
+        "prompt": "Passive voice: opci?n 7 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Passive voice: opci?n 7 forma correcta."
+      },
+      {
+        "prompt": "Passive voice: opci?n 8 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Passive voice: opci?n 8 forma correcta."
+      },
+      {
+        "prompt": "Passive voice: opci?n 9 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Passive voice: opci?n 9 forma correcta."
+      },
+      {
+        "prompt": "Passive voice: opci?n 10 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Passive voice: opci?n 10 forma correcta."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Passive voice: completa la idea 1: ___.",
+        "answer": "Passive voice: completa la idea 1: forma correcta."
+      },
+      {
+        "prompt": "Passive voice: completa la idea 2: ___.",
+        "answer": "Passive voice: completa la idea 2: forma correcta."
+      },
+      {
+        "prompt": "Passive voice: completa la idea 3: ___.",
+        "answer": "Passive voice: completa la idea 3: forma correcta."
+      },
+      {
+        "prompt": "Passive voice: completa la idea 4: ___.",
+        "answer": "Passive voice: completa la idea 4: forma correcta."
+      },
+      {
+        "prompt": "Passive voice: completa la idea 5: ___.",
+        "answer": "Passive voice: completa la idea 5: forma correcta."
+      },
+      {
+        "prompt": "Passive voice: completa la idea 6: ___.",
+        "answer": "Passive voice: completa la idea 6: forma correcta."
+      },
+      {
+        "prompt": "Passive voice: completa la idea 7: ___.",
+        "answer": "Passive voice: completa la idea 7: forma correcta."
+      },
+      {
+        "prompt": "Passive voice: completa la idea 8: ___.",
+        "answer": "Passive voice: completa la idea 8: forma correcta."
+      },
+      {
+        "prompt": "Passive voice: completa la idea 9: ___.",
+        "answer": "Passive voice: completa la idea 9: forma correcta."
+      },
+      {
+        "prompt": "Passive voice: completa la idea 10: ___.",
+        "answer": "Passive voice: completa la idea 10: forma correcta."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "Passive voice practice sentence 1.",
+        "answer": "Passive voice: frase modelo 1."
+      },
+      {
+        "prompt": "Passive voice practice sentence 2.",
+        "answer": "Passive voice: frase modelo 2."
+      },
+      {
+        "prompt": "Passive voice practice sentence 3.",
+        "answer": "Passive voice: frase modelo 3."
+      },
+      {
+        "prompt": "Passive voice practice sentence 4.",
+        "answer": "Passive voice: frase modelo 4."
+      },
+      {
+        "prompt": "Passive voice practice sentence 5.",
+        "answer": "Passive voice: frase modelo 5."
+      },
+      {
+        "prompt": "Passive voice practice sentence 6.",
+        "answer": "Passive voice: frase modelo 6."
+      },
+      {
+        "prompt": "Passive voice practice sentence 7.",
+        "answer": "Passive voice: frase modelo 7."
+      },
+      {
+        "prompt": "Passive voice practice sentence 8.",
+        "answer": "Passive voice: frase modelo 8."
+      },
+      {
+        "prompt": "Passive voice practice sentence 9.",
+        "answer": "Passive voice: frase modelo 9."
+      },
+      {
+        "prompt": "Passive voice practice sentence 10.",
+        "answer": "Passive voice: frase modelo 10."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Passive voice: opci?n 1 forma correcta.",
+      "Passive voice: opci?n 2 forma correcta.",
+      "Passive voice: opci?n 3 forma correcta.",
+      "Passive voice: opci?n 4 forma correcta.",
+      "Passive voice: opci?n 5 forma correcta.",
+      "Passive voice: opci?n 6 forma correcta.",
+      "Passive voice: opci?n 7 forma correcta.",
+      "Passive voice: opci?n 8 forma correcta.",
+      "Passive voice: opci?n 9 forma correcta.",
+      "Passive voice: opci?n 10 forma correcta."
+    ],
+    "complete": [
+      "Passive voice: completa la idea 1: forma correcta.",
+      "Passive voice: completa la idea 2: forma correcta.",
+      "Passive voice: completa la idea 3: forma correcta.",
+      "Passive voice: completa la idea 4: forma correcta.",
+      "Passive voice: completa la idea 5: forma correcta.",
+      "Passive voice: completa la idea 6: forma correcta.",
+      "Passive voice: completa la idea 7: forma correcta.",
+      "Passive voice: completa la idea 8: forma correcta.",
+      "Passive voice: completa la idea 9: forma correcta.",
+      "Passive voice: completa la idea 10: forma correcta."
+    ],
+    "translate": [
+      "Passive voice: frase modelo 1.",
+      "Passive voice: frase modelo 2.",
+      "Passive voice: frase modelo 3.",
+      "Passive voice: frase modelo 4.",
+      "Passive voice: frase modelo 5.",
+      "Passive voice: frase modelo 6.",
+      "Passive voice: frase modelo 7.",
+      "Passive voice: frase modelo 8.",
+      "Passive voice: frase modelo 9.",
+      "Passive voice: frase modelo 10."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Core idea",
+      "example": "Passive voice: ejemplo claro.",
+      "translation": "Clear example."
+    },
+    {
+      "use": "Negative or contrast",
+      "example": "Passive voice: no siempre cambia igual.",
+      "translation": "It does not always change the same way."
+    },
+    {
+      "use": "Question",
+      "example": "Cmo usas passive voice",
+      "translation": "How do you use it?"
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "trigger + que + verb form",
+      "example": "Passive voice: quiero que uses la forma.",
+      "translation": "I want you to use the form."
+    },
+    {
+      "pattern": "si + condition, result",
+      "example": "Passive voice: si cambia el contexto, cambia la forma.",
+      "translation": "If the context changes, the form changes."
+    },
+    {
+      "pattern": "reported/passive pattern",
+      "example": "Passive voice: la idea se expresa con claridad.",
+      "translation": "The idea is expressed clearly."
+    }
+  ]
+}

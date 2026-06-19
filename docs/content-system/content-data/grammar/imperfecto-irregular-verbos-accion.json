@@ -1,17 +1,17 @@
 {
-  "intro": "Ser, ir, and ver are the three everyday irregular verbs in the imperfect. Use them to describe what someone was like, where someone used to go, and what someone was seeing or watching.",
+  "intro": "Only three verbs are truly irregular in the imperfect: ser, ir, and ver. They are common because they describe background, repeated movement, and what someone could see or was watching.",
   "overview": {
-    "body": "The forms are era, iba, and veía. They are short, common, and useful for real past descriptions.",
-    "use_note": "ser, ir, and ver in imperfect descriptions"
+    "body": "Use era for what someone was like, iba for where someone used to go, and veía for what someone saw or used to watch.",
+    "use_note": "ser, ir, and ver in the imperfect"
   },
   "examples": [
     {
-      "spanish": "Cuando era niño, iba al parque.",
-      "english": "When I was a child, I used to go to the park."
+      "spanish": "Yo era estudiante y veía a mis amigos todos los días.",
+      "english": "I was a student and used to see my friends every day."
     },
     {
-      "spanish": "Desde la ventana, veía el río.",
-      "english": "From the window, I could see the river."
+      "spanish": "Íbamos al parque cuando hacía buen tiempo.",
+      "english": "We used to go to the park when the weather was nice."
     }
   ],
   "uses": [
@@ -316,38 +316,53 @@
       "¿Ustedes eran vecinos?"
     ]
   },
-  "structure": [
+  "conjugation": [
     {
-      "pattern": "subject + era/eras/éramos + description",
-      "example": "La clase era interesante.",
-      "translation": "The class was interesting."
+      "subject": "Yo",
+      "form": "era / iba / veía",
+      "example": "Yo era estudiante.",
+      "translation": "I was a student."
     },
     {
-      "pattern": "subject + iba/ibas/íbamos + a + place",
-      "example": "Íbamos al mercado los sábados.",
-      "translation": "We used to go to the market on Saturdays."
+      "subject": "Tú",
+      "form": "eras / ibas / veías",
+      "example": "Tú ibas al club.",
+      "translation": "You used to go to the club."
     },
     {
-      "pattern": "subject + veía/veías/veíamos + object",
-      "example": "Veíamos películas en casa.",
-      "translation": "We used to watch movies at home."
+      "subject": "Él / Ella / Usted",
+      "form": "era / iba / veía",
+      "example": "Ella veía el mar.",
+      "translation": "She could see the sea."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "éramos / íbamos / veíamos",
+      "example": "Nosotros éramos amigos.",
+      "translation": "We were friends."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "eran / iban / veían",
+      "example": "Ellos iban al centro.",
+      "translation": "They used to go downtown."
     }
   ],
   "wrap_up": [
     {
       "use": "Ser",
-      "example": "Ella era muy paciente.",
-      "translation": "She was very patient."
+      "example": "Era una persona tranquila.",
+      "translation": "She was a calm person."
     },
     {
       "use": "Ir",
-      "example": "Iba al centro cada semana.",
-      "translation": "I used to go downtown every week."
+      "example": "Iba al trabajo en bus.",
+      "translation": "I used to go to work by bus."
     },
     {
       "use": "Ver",
-      "example": "Veíamos el partido juntos.",
-      "translation": "We used to watch the game together."
+      "example": "Veía el mar desde casa.",
+      "translation": "I could see the sea from home."
     }
   ]
 }

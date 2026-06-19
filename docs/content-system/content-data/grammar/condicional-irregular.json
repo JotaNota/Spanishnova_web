@@ -1,0 +1,368 @@
+{
+  "intro": "Irregular conditional verbs use the same changed stems as the irregular future, but with conditional endings. Learn the stem and the ending together.",
+  "overview": {
+    "body": "Irregular conditional verbs use the same changed stems as the irregular future, but with conditional endings. Learn the stem and the ending together. Focus on the message first, then choose the form that fits the context.",
+    "use_note": "irregular conditional forms"
+  },
+  "examples": [
+    {
+      "spanish": "Irregular conditional: ejemplo principal.",
+      "english": "Irregular conditional: main example."
+    },
+    {
+      "spanish": "Irregular conditional: otro ejemplo ?til.",
+      "english": "Irregular conditional: another useful example."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Real use",
+      "body": "Use this pattern when irregular conditional helps express a real message, not just a grammar label.",
+      "examples": [
+        {
+          "spanish": "Irregular conditional: ejemplo pr?ctico uno.",
+          "english": "Irregular conditional: practical example one."
+        },
+        {
+          "spanish": "Irregular conditional: ejemplo pr?ctico dos.",
+          "english": "Irregular conditional: practical example two."
+        }
+      ]
+    },
+    {
+      "heading": "Common context",
+      "body": "This form often appears in everyday explanations, plans, advice, and reactions depending on the sentence.",
+      "examples": [
+        {
+          "spanish": "Irregular conditional: contexto com?n uno.",
+          "english": "Irregular conditional: common context one."
+        },
+        {
+          "spanish": "Irregular conditional: contexto com?n dos.",
+          "english": "Irregular conditional: common context two."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Irregular conditional: frase afirmativa 1.",
+        "english": "Irregular conditional: affirmative sentence 1."
+      },
+      {
+        "spanish": "Irregular conditional: frase afirmativa 2.",
+        "english": "Irregular conditional: affirmative sentence 2."
+      },
+      {
+        "spanish": "Irregular conditional: frase afirmativa 3.",
+        "english": "Irregular conditional: affirmative sentence 3."
+      },
+      {
+        "spanish": "Irregular conditional: frase afirmativa 4.",
+        "english": "Irregular conditional: affirmative sentence 4."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No usamos irregular conditional as? en el ejemplo 1.",
+        "english": "We do not use irregular conditional like that in example 1."
+      },
+      {
+        "spanish": "No usamos irregular conditional as? en el ejemplo 2.",
+        "english": "We do not use irregular conditional like that in example 2."
+      },
+      {
+        "spanish": "No usamos irregular conditional as? en el ejemplo 3.",
+        "english": "We do not use irregular conditional like that in example 3."
+      },
+      {
+        "spanish": "No usamos irregular conditional as? en el ejemplo 4.",
+        "english": "We do not use irregular conditional like that in example 4."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "Irregular conditional: pregunta modelo 1.",
+        "english": "Irregular conditional: model question 1."
+      },
+      {
+        "spanish": "Irregular conditional: pregunta modelo 2.",
+        "english": "Irregular conditional: model question 2."
+      },
+      {
+        "spanish": "Irregular conditional: pregunta modelo 3.",
+        "english": "Irregular conditional: model question 3."
+      },
+      {
+        "spanish": "Irregular conditional: pregunta modelo 4.",
+        "english": "Irregular conditional: model question 4."
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Irregular conditional: opci?n 1 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Irregular conditional: opci?n 1 forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: opci?n 2 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Irregular conditional: opci?n 2 forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: opci?n 3 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Irregular conditional: opci?n 3 forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: opci?n 4 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Irregular conditional: opci?n 4 forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: opci?n 5 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Irregular conditional: opci?n 5 forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: opci?n 6 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Irregular conditional: opci?n 6 forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: opci?n 7 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Irregular conditional: opci?n 7 forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: opci?n 8 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Irregular conditional: opci?n 8 forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: opci?n 9 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Irregular conditional: opci?n 9 forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: opci?n 10 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Irregular conditional: opci?n 10 forma correcta."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Irregular conditional: completa la idea 1: ___.",
+        "answer": "Irregular conditional: completa la idea 1: forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: completa la idea 2: ___.",
+        "answer": "Irregular conditional: completa la idea 2: forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: completa la idea 3: ___.",
+        "answer": "Irregular conditional: completa la idea 3: forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: completa la idea 4: ___.",
+        "answer": "Irregular conditional: completa la idea 4: forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: completa la idea 5: ___.",
+        "answer": "Irregular conditional: completa la idea 5: forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: completa la idea 6: ___.",
+        "answer": "Irregular conditional: completa la idea 6: forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: completa la idea 7: ___.",
+        "answer": "Irregular conditional: completa la idea 7: forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: completa la idea 8: ___.",
+        "answer": "Irregular conditional: completa la idea 8: forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: completa la idea 9: ___.",
+        "answer": "Irregular conditional: completa la idea 9: forma correcta."
+      },
+      {
+        "prompt": "Irregular conditional: completa la idea 10: ___.",
+        "answer": "Irregular conditional: completa la idea 10: forma correcta."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "Irregular conditional practice sentence 1.",
+        "answer": "Irregular conditional: frase modelo 1."
+      },
+      {
+        "prompt": "Irregular conditional practice sentence 2.",
+        "answer": "Irregular conditional: frase modelo 2."
+      },
+      {
+        "prompt": "Irregular conditional practice sentence 3.",
+        "answer": "Irregular conditional: frase modelo 3."
+      },
+      {
+        "prompt": "Irregular conditional practice sentence 4.",
+        "answer": "Irregular conditional: frase modelo 4."
+      },
+      {
+        "prompt": "Irregular conditional practice sentence 5.",
+        "answer": "Irregular conditional: frase modelo 5."
+      },
+      {
+        "prompt": "Irregular conditional practice sentence 6.",
+        "answer": "Irregular conditional: frase modelo 6."
+      },
+      {
+        "prompt": "Irregular conditional practice sentence 7.",
+        "answer": "Irregular conditional: frase modelo 7."
+      },
+      {
+        "prompt": "Irregular conditional practice sentence 8.",
+        "answer": "Irregular conditional: frase modelo 8."
+      },
+      {
+        "prompt": "Irregular conditional practice sentence 9.",
+        "answer": "Irregular conditional: frase modelo 9."
+      },
+      {
+        "prompt": "Irregular conditional practice sentence 10.",
+        "answer": "Irregular conditional: frase modelo 10."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Irregular conditional: opci?n 1 forma correcta.",
+      "Irregular conditional: opci?n 2 forma correcta.",
+      "Irregular conditional: opci?n 3 forma correcta.",
+      "Irregular conditional: opci?n 4 forma correcta.",
+      "Irregular conditional: opci?n 5 forma correcta.",
+      "Irregular conditional: opci?n 6 forma correcta.",
+      "Irregular conditional: opci?n 7 forma correcta.",
+      "Irregular conditional: opci?n 8 forma correcta.",
+      "Irregular conditional: opci?n 9 forma correcta.",
+      "Irregular conditional: opci?n 10 forma correcta."
+    ],
+    "complete": [
+      "Irregular conditional: completa la idea 1: forma correcta.",
+      "Irregular conditional: completa la idea 2: forma correcta.",
+      "Irregular conditional: completa la idea 3: forma correcta.",
+      "Irregular conditional: completa la idea 4: forma correcta.",
+      "Irregular conditional: completa la idea 5: forma correcta.",
+      "Irregular conditional: completa la idea 6: forma correcta.",
+      "Irregular conditional: completa la idea 7: forma correcta.",
+      "Irregular conditional: completa la idea 8: forma correcta.",
+      "Irregular conditional: completa la idea 9: forma correcta.",
+      "Irregular conditional: completa la idea 10: forma correcta."
+    ],
+    "translate": [
+      "Irregular conditional: frase modelo 1.",
+      "Irregular conditional: frase modelo 2.",
+      "Irregular conditional: frase modelo 3.",
+      "Irregular conditional: frase modelo 4.",
+      "Irregular conditional: frase modelo 5.",
+      "Irregular conditional: frase modelo 6.",
+      "Irregular conditional: frase modelo 7.",
+      "Irregular conditional: frase modelo 8.",
+      "Irregular conditional: frase modelo 9.",
+      "Irregular conditional: frase modelo 10."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Core idea",
+      "example": "Irregular conditional: ejemplo claro.",
+      "translation": "Clear example."
+    },
+    {
+      "use": "Negative or contrast",
+      "example": "Irregular conditional: no siempre cambia igual.",
+      "translation": "It does not always change the same way."
+    },
+    {
+      "use": "Question",
+      "example": "Cmo usas irregular conditional",
+      "translation": "How do you use it?"
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Yo",
+      "form": "forma yo",
+      "example": "Irregular conditional: yo uso la forma.",
+      "translation": "I use the form."
+    },
+    {
+      "subject": "T?",
+      "form": "forma t?",
+      "example": "Irregular conditional: t? usas la forma.",
+      "translation": "You use the form."
+    },
+    {
+      "subject": "?l / Ella / Usted",
+      "form": "forma ?l/ella/usted",
+      "example": "Irregular conditional: ella usa la forma.",
+      "translation": "She uses the form."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "forma nosotros",
+      "example": "Irregular conditional: nosotros usamos la forma.",
+      "translation": "We use the form."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "forma ellos/ustedes",
+      "example": "Irregular conditional: ellos usan la forma.",
+      "translation": "They use the form."
+    }
+  ]
+}

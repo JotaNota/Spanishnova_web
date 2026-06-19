@@ -1,0 +1,336 @@
+{
+  "intro": "Indirect object pronouns show who receives, benefits from, or is affected by an action. They often answer to whom or for whom.",
+  "overview": {
+    "body": "The main indirect object pronouns are me, te, le, nos, and les. They usually appear before the conjugated verb: me escribe, le doy, nos mandan.",
+    "use_note": "indirect object pronouns"
+  },
+  "examples": [
+    {
+      "spanish": "Le escribo a Ana.",
+      "english": "I write to Ana."
+    },
+    {
+      "spanish": "Nos dieron la información.",
+      "english": "They gave us the information."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Communication and giving",
+      "body": "Indirect objects are common with decir, escribir, mandar, dar, explicar, and contar.",
+      "examples": [
+        {
+          "spanish": "Te mandé el archivo.",
+          "english": "I sent you the file."
+        },
+        {
+          "spanish": "Les expliqué la regla.",
+          "english": "I explained the rule to them."
+        }
+      ]
+    },
+    {
+      "heading": "Clarify le and les",
+      "body": "Le and les can refer to different people, so Spanish often adds a + person for clarity.",
+      "examples": [
+        {
+          "spanish": "Le escribí a mi jefe.",
+          "english": "I wrote to my boss."
+        },
+        {
+          "spanish": "Les di el número a mis padres.",
+          "english": "I gave the number to my parents."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Le escribo a Ana.",
+        "english": "I write to Ana."
+      },
+      {
+        "spanish": "Me dieron una respuesta.",
+        "english": "They gave me an answer."
+      },
+      {
+        "spanish": "Nos mandaron el archivo.",
+        "english": "They sent us the file."
+      },
+      {
+        "spanish": "Les expliqué el problema.",
+        "english": "I explained the problem to them."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No le dije nada.",
+        "english": "I did not tell him anything."
+      },
+      {
+        "spanish": "Ella no me respondió.",
+        "english": "She did not answer me."
+      },
+      {
+        "spanish": "No nos enviaron la dirección.",
+        "english": "They did not send us the address."
+      },
+      {
+        "spanish": "No les gustó la idea.",
+        "english": "They did not like the idea."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Me mandaste el enlace?",
+        "english": "Did you send me the link?"
+      },
+      {
+        "spanish": "¿Le escribiste a tu jefe?",
+        "english": "Did you write to your boss?"
+      },
+      {
+        "spanish": "¿Nos explican el plan?",
+        "english": "Do they explain the plan to us?"
+      },
+      {
+        "spanish": "¿Les diste el número?",
+        "english": "Did you give them the number?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ escribo a Ana.",
+        "options": [
+          "le",
+          "lo",
+          "la"
+        ],
+        "answer": "Yo le escribo a Ana."
+      },
+      {
+        "prompt": "Ella _____ manda un mensaje.",
+        "options": [
+          "me",
+          "mi",
+          "yo"
+        ],
+        "answer": "Ella me manda un mensaje."
+      },
+      {
+        "prompt": "Nosotros _____ damos el libro.",
+        "options": [
+          "te",
+          "tu",
+          "ti"
+        ],
+        "answer": "Nosotros te damos el libro."
+      },
+      {
+        "prompt": "Ellos _____ explican el plan.",
+        "options": [
+          "nos",
+          "los",
+          "las"
+        ],
+        "answer": "Ellos nos explican el plan."
+      },
+      {
+        "prompt": "Yo _____ doy la dirección.",
+        "options": [
+          "les",
+          "los",
+          "las"
+        ],
+        "answer": "Yo les doy la dirección."
+      },
+      {
+        "prompt": "No _____ dije nada.",
+        "options": [
+          "le",
+          "lo",
+          "la"
+        ],
+        "answer": "No le dije nada."
+      },
+      {
+        "prompt": "¿_____ mandaste el enlace?",
+        "options": [
+          "Me",
+          "Mi",
+          "Yo"
+        ],
+        "answer": "¿Me mandaste el enlace?"
+      },
+      {
+        "prompt": "Usted _____ ofrece ayuda.",
+        "options": [
+          "nos",
+          "los",
+          "las"
+        ],
+        "answer": "Usted nos ofrece ayuda."
+      },
+      {
+        "prompt": "Ana _____ prepara café.",
+        "options": [
+          "te",
+          "tu",
+          "ti"
+        ],
+        "answer": "Ana te prepara café."
+      },
+      {
+        "prompt": "Ellas _____ cuentan la historia.",
+        "options": [
+          "les",
+          "los",
+          "las"
+        ],
+        "answer": "Ellas les cuentan la historia."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ escribo a Ana.",
+        "answer": "Yo le escribo a Ana."
+      },
+      {
+        "prompt": "Ella ___ manda un mensaje.",
+        "answer": "Ella me manda un mensaje."
+      },
+      {
+        "prompt": "Nosotros ___ damos el libro.",
+        "answer": "Nosotros te damos el libro."
+      },
+      {
+        "prompt": "Ellos ___ explican el plan.",
+        "answer": "Ellos nos explican el plan."
+      },
+      {
+        "prompt": "Yo ___ doy la dirección.",
+        "answer": "Yo les doy la dirección."
+      },
+      {
+        "prompt": "No ___ dije nada.",
+        "answer": "No le dije nada."
+      },
+      {
+        "prompt": "¿Tú ___ mandaste el enlace?",
+        "answer": "¿Tú me mandaste el enlace?"
+      },
+      {
+        "prompt": "Usted ___ ofrece ayuda.",
+        "answer": "Usted nos ofrece ayuda."
+      },
+      {
+        "prompt": "Ana ___ prepara café.",
+        "answer": "Ana te prepara café."
+      },
+      {
+        "prompt": "Ellas ___ cuentan la historia.",
+        "answer": "Ellas les cuentan la historia."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I write to Ana.",
+        "answer": "Le escribo a Ana."
+      },
+      {
+        "prompt": "She sends me a message.",
+        "answer": "Ella me manda un mensaje."
+      },
+      {
+        "prompt": "We give you the book.",
+        "answer": "Te damos el libro."
+      },
+      {
+        "prompt": "They explain the plan to us.",
+        "answer": "Nos explican el plan."
+      },
+      {
+        "prompt": "I give them the address.",
+        "answer": "Les doy la dirección."
+      },
+      {
+        "prompt": "I did not tell him anything.",
+        "answer": "No le dije nada."
+      },
+      {
+        "prompt": "Did you send me the link?",
+        "answer": "¿Me mandaste el enlace?"
+      },
+      {
+        "prompt": "You offer us help.",
+        "answer": "Usted nos ofrece ayuda."
+      },
+      {
+        "prompt": "Ana prepares coffee for you.",
+        "answer": "Ana te prepara café."
+      },
+      {
+        "prompt": "They tell them the story.",
+        "answer": "Ellas les cuentan la historia."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo le escribo a Ana.",
+      "Ella me manda un mensaje.",
+      "Nosotros te damos el libro.",
+      "Ellos nos explican el plan.",
+      "Yo les doy la dirección.",
+      "No le dije nada.",
+      "¿Me mandaste el enlace?",
+      "Usted nos ofrece ayuda.",
+      "Ana te prepara café.",
+      "Ellas les cuentan la historia."
+    ],
+    "complete": [
+      "Yo le escribo a Ana.",
+      "Ella me manda un mensaje.",
+      "Nosotros te damos el libro.",
+      "Ellos nos explican el plan.",
+      "Yo les doy la dirección.",
+      "No le dije nada.",
+      "¿Tú me mandaste el enlace?",
+      "Usted nos ofrece ayuda.",
+      "Ana te prepara café.",
+      "Ellas les cuentan la historia."
+    ],
+    "translate": [
+      "Le escribo a Ana.",
+      "Ella me manda un mensaje.",
+      "Te damos el libro.",
+      "Nos explican el plan.",
+      "Les doy la dirección.",
+      "No le dije nada.",
+      "¿Me mandaste el enlace?",
+      "Usted nos ofrece ayuda.",
+      "Ana te prepara café.",
+      "Ellas les cuentan la historia."
+    ]
+  },
+  "structure": [
+    {
+      "pattern": "indirect object pronoun + verb + thing",
+      "example": "Le mando un mensaje.",
+      "translation": "I send him a message."
+    },
+    {
+      "pattern": "no + indirect object pronoun + verb",
+      "example": "No me respondió.",
+      "translation": "She did not answer me."
+    },
+    {
+      "pattern": "indirect object pronoun + verb + a + person",
+      "example": "Le escribo a Ana.",
+      "translation": "I write to Ana."
+    }
+  ]
+}
