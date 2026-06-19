@@ -1,0 +1,112 @@
+{
+  "title": "Watching Movies at Home Vocabulary in Spanish",
+  "intro": "Learn Spanish vocabulary for watching movies at home, choosing what to watch, and talking about snacks and opinions.",
+  "vocabulary": [
+    {
+      "heading": "Movie Night Basics",
+      "items": [
+        {
+          "spanish": "la pel?cula",
+          "english": "movie"
+        },
+        {
+          "spanish": "la serie",
+          "english": "series"
+        },
+        {
+          "spanish": "la pantalla",
+          "english": "screen"
+        },
+        {
+          "spanish": "el control remoto",
+          "english": "remote control"
+        },
+        {
+          "spanish": "los subt?tulos",
+          "english": "subtitles"
+        },
+        {
+          "spanish": "el sof?",
+          "english": "sofa"
+        }
+      ]
+    },
+    {
+      "heading": "Genres and Snacks",
+      "items": [
+        {
+          "spanish": "la comedia",
+          "english": "comedy"
+        },
+        {
+          "spanish": "el drama",
+          "english": "drama"
+        },
+        {
+          "spanish": "el terror",
+          "english": "horror"
+        },
+        {
+          "spanish": "las palomitas",
+          "english": "popcorn"
+        },
+        {
+          "spanish": "la bebida",
+          "english": "drink"
+        },
+        {
+          "spanish": "recomendar",
+          "english": "to recommend"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Vamos a ver una pel?cula en casa.",
+      "english": "We are going to watch a movie at home."
+    },
+    {
+      "spanish": "?Quieres subt?tulos?",
+      "english": "Do you want subtitles?"
+    },
+    {
+      "spanish": "Traigo palomitas.",
+      "english": "I am bringing popcorn."
+    },
+    {
+      "spanish": "Esta pel?cula es muy divertida.",
+      "english": "This movie is very funny."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Elegir la pel?cula tarda m?s que verla.",
+    "english": "Choosing the movie takes longer than watching it."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "We are going to watch a movie at home.",
+        "answer": "Vamos a ver una pel?cula en casa."
+      },
+      {
+        "prompt": "Do you want subtitles?",
+        "answer": "?Quieres subt?tulos?"
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Traigo _____ palomitas.",
+        "answer": "Traigo palomitas."
+      },
+      {
+        "prompt": "Vamos _____ a ver una pel?cula en casa.",
+        "answer": "Vamos a ver una pel?cula en casa."
+      }
+    ]
+  },
+  "questions": [
+    "?Ves pel?culas en casa o en el cine?",
+    "?Usas subt?tulos?"
+  ]
+}

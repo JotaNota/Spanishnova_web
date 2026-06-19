@@ -1,0 +1,112 @@
+{
+  "title": "School Vocabulary in Spanish",
+  "intro": "Learn Spanish school vocabulary for classrooms, supplies, subjects, and everyday student life.",
+  "vocabulary": [
+    {
+      "heading": "People and Places",
+      "items": [
+        {
+          "spanish": "la escuela",
+          "english": "school"
+        },
+        {
+          "spanish": "la clase",
+          "english": "class"
+        },
+        {
+          "spanish": "el aula",
+          "english": "classroom"
+        },
+        {
+          "spanish": "el profesor",
+          "english": "teacher"
+        },
+        {
+          "spanish": "la profesora",
+          "english": "teacher"
+        },
+        {
+          "spanish": "el estudiante",
+          "english": "student"
+        }
+      ]
+    },
+    {
+      "heading": "Supplies and Subjects",
+      "items": [
+        {
+          "spanish": "el libro",
+          "english": "book"
+        },
+        {
+          "spanish": "el cuaderno",
+          "english": "notebook"
+        },
+        {
+          "spanish": "el l?piz",
+          "english": "pencil"
+        },
+        {
+          "spanish": "la mochila",
+          "english": "backpack"
+        },
+        {
+          "spanish": "la tarea",
+          "english": "homework"
+        },
+        {
+          "spanish": "matem?ticas",
+          "english": "math"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Tengo clase a las ocho.",
+      "english": "I have class at eight."
+    },
+    {
+      "spanish": "Necesito mi cuaderno.",
+      "english": "I need my notebook."
+    },
+    {
+      "spanish": "La tarea es para ma?ana.",
+      "english": "The homework is for tomorrow."
+    },
+    {
+      "spanish": "El examen es dif?cil.",
+      "english": "The test is difficult."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Mi mochila tiene de todo menos tiempo libre.",
+    "english": "My backpack has everything except free time."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "I have class at eight.",
+        "answer": "Tengo clase a las ocho."
+      },
+      {
+        "prompt": "I need my notebook.",
+        "answer": "Necesito mi cuaderno."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "La _____ tarea es para ma?ana.",
+        "answer": "La tarea es para ma?ana."
+      },
+      {
+        "prompt": "Tengo _____ clase a las ocho.",
+        "answer": "Tengo clase a las ocho."
+      }
+    ]
+  },
+  "questions": [
+    "?Cu?l era tu materia favorita?",
+    "?Usas cuaderno o computadora?"
+  ]
+}

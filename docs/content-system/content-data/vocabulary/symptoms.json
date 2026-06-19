@@ -1,0 +1,112 @@
+{
+  "title": "Symptoms Vocabulary in Spanish",
+  "intro": "Learn Spanish symptom vocabulary for explaining how you feel at a clinic, pharmacy, or doctor appointment.",
+  "vocabulary": [
+    {
+      "heading": "Common Symptoms",
+      "items": [
+        {
+          "spanish": "el dolor",
+          "english": "pain"
+        },
+        {
+          "spanish": "la fiebre",
+          "english": "fever"
+        },
+        {
+          "spanish": "la tos",
+          "english": "cough"
+        },
+        {
+          "spanish": "el resfriado",
+          "english": "cold"
+        },
+        {
+          "spanish": "el mareo",
+          "english": "dizziness"
+        },
+        {
+          "spanish": "la n?usea",
+          "english": "nausea"
+        }
+      ]
+    },
+    {
+      "heading": "Body Areas",
+      "items": [
+        {
+          "spanish": "la cabeza",
+          "english": "head"
+        },
+        {
+          "spanish": "la garganta",
+          "english": "throat"
+        },
+        {
+          "spanish": "el est?mago",
+          "english": "stomach"
+        },
+        {
+          "spanish": "la espalda",
+          "english": "back"
+        },
+        {
+          "spanish": "el pecho",
+          "english": "chest"
+        },
+        {
+          "spanish": "la pierna",
+          "english": "leg"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Me duele la cabeza.",
+      "english": "My head hurts."
+    },
+    {
+      "spanish": "Tengo fiebre.",
+      "english": "I have a fever."
+    },
+    {
+      "spanish": "Me siento mareado.",
+      "english": "I feel dizzy."
+    },
+    {
+      "spanish": "Necesito ver a un doctor.",
+      "english": "I need to see a doctor."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Mi cuerpo dice que hoy toca descansar.",
+    "english": "My body says today is for resting."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "My head hurts.",
+        "answer": "Me duele la cabeza."
+      },
+      {
+        "prompt": "I have a fever.",
+        "answer": "Tengo fiebre."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Me _____ siento mareado.",
+        "answer": "Me siento mareado."
+      },
+      {
+        "prompt": "Me _____ duele la cabeza.",
+        "answer": "Me duele la cabeza."
+      }
+    ]
+  },
+  "questions": [
+    "?Qu? dices cuando te duele la cabeza?",
+    "?Qu? haces para descansar?"
+  ]
+}

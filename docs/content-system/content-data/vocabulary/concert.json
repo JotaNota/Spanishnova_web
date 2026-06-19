@@ -1,0 +1,112 @@
+{
+  "title": "Concert Vocabulary in Spanish",
+  "intro": "Learn Spanish concert vocabulary for buying tickets, finding your seat, and enjoying live music.",
+  "vocabulary": [
+    {
+      "heading": "Concert Basics",
+      "items": [
+        {
+          "spanish": "el concierto",
+          "english": "concert"
+        },
+        {
+          "spanish": "la entrada",
+          "english": "ticket"
+        },
+        {
+          "spanish": "el escenario",
+          "english": "stage"
+        },
+        {
+          "spanish": "el asiento",
+          "english": "seat"
+        },
+        {
+          "spanish": "la fila",
+          "english": "row"
+        },
+        {
+          "spanish": "el p?blico",
+          "english": "audience"
+        }
+      ]
+    },
+    {
+      "heading": "At the Venue",
+      "items": [
+        {
+          "spanish": "la puerta",
+          "english": "gate"
+        },
+        {
+          "spanish": "la seguridad",
+          "english": "security"
+        },
+        {
+          "spanish": "la cola",
+          "english": "line"
+        },
+        {
+          "spanish": "el sonido",
+          "english": "sound"
+        },
+        {
+          "spanish": "las luces",
+          "english": "lights"
+        },
+        {
+          "spanish": "la salida",
+          "english": "exit"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Tengo entradas para el concierto.",
+      "english": "I have tickets for the concert."
+    },
+    {
+      "spanish": "?D?nde est? mi asiento?",
+      "english": "Where is my seat?"
+    },
+    {
+      "spanish": "La banda sale al escenario.",
+      "english": "The band comes on stage."
+    },
+    {
+      "spanish": "El p?blico canta muy fuerte.",
+      "english": "The audience sings very loudly."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Perd? la voz, pero gan? un buen recuerdo.",
+    "english": "I lost my voice, but I gained a good memory."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "I have tickets for the concert.",
+        "answer": "Tengo entradas para el concierto."
+      },
+      {
+        "prompt": "Where is my seat?",
+        "answer": "?D?nde est? mi asiento?"
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "La _____ banda sale al escenario.",
+        "answer": "La banda sale al escenario."
+      },
+      {
+        "prompt": "Tengo _____ entradas para el concierto.",
+        "answer": "Tengo entradas para el concierto."
+      }
+    ]
+  },
+  "questions": [
+    "?Te gustan los conciertos?",
+    "?Qu? artista quieres ver en vivo?"
+  ]
+}

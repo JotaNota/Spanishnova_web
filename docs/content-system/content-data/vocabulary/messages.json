@@ -1,0 +1,112 @@
+{
+  "title": "Messages and Chats Vocabulary in Spanish",
+  "intro": "Learn Spanish vocabulary for text messages, chats, notifications, and everyday digital communication.",
+  "vocabulary": [
+    {
+      "heading": "Message Words",
+      "items": [
+        {
+          "spanish": "el mensaje",
+          "english": "message"
+        },
+        {
+          "spanish": "el chat",
+          "english": "chat"
+        },
+        {
+          "spanish": "la notificaci?n",
+          "english": "notification"
+        },
+        {
+          "spanish": "el grupo",
+          "english": "group"
+        },
+        {
+          "spanish": "el emoji",
+          "english": "emoji"
+        },
+        {
+          "spanish": "la respuesta",
+          "english": "reply"
+        }
+      ]
+    },
+    {
+      "heading": "Actions",
+      "items": [
+        {
+          "spanish": "mandar",
+          "english": "to send"
+        },
+        {
+          "spanish": "recibir",
+          "english": "to receive"
+        },
+        {
+          "spanish": "responder",
+          "english": "to reply"
+        },
+        {
+          "spanish": "escribir",
+          "english": "to write"
+        },
+        {
+          "spanish": "borrar",
+          "english": "to delete"
+        },
+        {
+          "spanish": "reenviar",
+          "english": "to forward"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Te mando un mensaje.",
+      "english": "I will send you a message."
+    },
+    {
+      "spanish": "No vi tu mensaje.",
+      "english": "I did not see your message."
+    },
+    {
+      "spanish": "Resp?ndeme cuando puedas.",
+      "english": "Reply when you can."
+    },
+    {
+      "spanish": "Estoy en un chat de grupo.",
+      "english": "I am in a group chat."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Escrib? un mensaje largo y solo respondieron con un emoji.",
+    "english": "I wrote a long message and they only answered with an emoji."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "I will send you a message.",
+        "answer": "Te mando un mensaje."
+      },
+      {
+        "prompt": "I did not see your message.",
+        "answer": "No vi tu mensaje."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Resp?ndeme _____ cuando puedas.",
+        "answer": "Resp?ndeme cuando puedas."
+      },
+      {
+        "prompt": "Te _____ mando un mensaje.",
+        "answer": "Te mando un mensaje."
+      }
+    ]
+  },
+  "questions": [
+    "?Mandas muchos mensajes cada d?a?",
+    "?Usas emojis cuando escribes?"
+  ]
+}
