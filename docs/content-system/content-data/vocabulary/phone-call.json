@@ -1,0 +1,108 @@
+{
+  "title": "Phone Call Vocabulary in Spanish",
+  "intro": "Learn Spanish vocabulary and phrases for making phone calls, answering calls, and leaving messages.",
+  "vocabulary": [
+    {
+      "heading": "Phone Words",
+      "items": [
+        {
+          "spanish": "el tel?fono",
+          "english": "phone"
+        },
+        {
+          "spanish": "la llamada",
+          "english": "call"
+        },
+        {
+          "spanish": "el mensaje",
+          "english": "message"
+        },
+        {
+          "spanish": "el buz?n de voz",
+          "english": "voicemail"
+        },
+        {
+          "spanish": "el n?mero",
+          "english": "number"
+        },
+        {
+          "spanish": "la se?al",
+          "english": "signal"
+        }
+      ]
+    },
+    {
+      "heading": "Call Actions",
+      "items": [
+        {
+          "spanish": "llamar",
+          "english": "to call"
+        },
+        {
+          "spanish": "contestar",
+          "english": "to answer"
+        },
+        {
+          "spanish": "colgar",
+          "english": "to hang up"
+        },
+        {
+          "spanish": "dejar un mensaje",
+          "english": "to leave a message"
+        },
+        {
+          "spanish": "devolver la llamada",
+          "english": "to return the call"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Te llamo m?s tarde.",
+      "english": "I will call you later."
+    },
+    {
+      "spanish": "No tengo se?al.",
+      "english": "I do not have signal."
+    },
+    {
+      "spanish": "?Puedes dejar un mensaje?",
+      "english": "Can you leave a message?"
+    },
+    {
+      "spanish": "Voy a devolver la llamada.",
+      "english": "I am going to return the call."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Mi tel?fono suena justo cuando no puedo contestar.",
+    "english": "My phone rings exactly when I cannot answer."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "I will call you later.",
+        "answer": "Te llamo m?s tarde."
+      },
+      {
+        "prompt": "I do not have signal.",
+        "answer": "No tengo se?al."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "?Puedes _____ dejar un mensaje?",
+        "answer": "?Puedes dejar un mensaje?"
+      },
+      {
+        "prompt": "Te _____ llamo m?s tarde.",
+        "answer": "Te llamo m?s tarde."
+      }
+    ]
+  },
+  "questions": [
+    "?Prefieres llamar o mandar mensajes?",
+    "?Qu? dices al contestar el tel?fono?"
+  ]
+}

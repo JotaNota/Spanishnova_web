@@ -135,7 +135,7 @@ def validate_grammar_data(data, lesson_type=None):
     exercises = require_dict(data, "exercises", "grammar content-data")
     require_fields(exercises, ["select", "complete", "translate"], "grammar exercises")
     for group in ["select", "complete", "translate"]:
-        items = require_exact_list(exercises, group, 10, "grammar exercises")
+        items = require_list(exercises, group, "grammar exercises")
         for index, item in enumerate(items, start=1):
             require_fields(item, ["prompt", "answer"], f"grammar exercises.{group}[{index}]")
             if group == "select":
@@ -144,4 +144,4 @@ def validate_grammar_data(data, lesson_type=None):
     answers = require_dict(data, "answers", "grammar content-data")
     require_fields(answers, ["select", "complete", "translate"], "grammar answers")
     for group in ["select", "complete", "translate"]:
-        require_exact_list(answers, group, 10, "grammar answers")
+        require_list(answers, group, "grammar answers")

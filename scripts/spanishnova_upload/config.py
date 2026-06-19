@@ -7,6 +7,7 @@ HTML_ROOT = ROOT / "docs/content-system/generated/generated-html-posts"
 
 ROADMAPS = {
     "grammar": ROOT / "docs/content-system/content-plan/grammar-roadmap.csv",
+    "vocabulary": ROOT / "docs/content-system/content-plan/vocabulary-roadmap.csv",
 }
 
 ROADMAP = ROADMAPS["grammar"]

@@ -1,0 +1,112 @@
+{
+  "title": "Weather Vocabulary in Spanish",
+  "intro": "Learn useful Spanish weather vocabulary for talking about the forecast, seasons, and everyday plans.",
+  "vocabulary": [
+    {
+      "heading": "Weather Conditions",
+      "items": [
+        {
+          "spanish": "el tiempo",
+          "english": "weather"
+        },
+        {
+          "spanish": "el sol",
+          "english": "sun"
+        },
+        {
+          "spanish": "la lluvia",
+          "english": "rain"
+        },
+        {
+          "spanish": "la nieve",
+          "english": "snow"
+        },
+        {
+          "spanish": "el viento",
+          "english": "wind"
+        },
+        {
+          "spanish": "la tormenta",
+          "english": "storm"
+        }
+      ]
+    },
+    {
+      "heading": "Descriptions",
+      "items": [
+        {
+          "spanish": "hace calor",
+          "english": "it is hot"
+        },
+        {
+          "spanish": "hace fr?o",
+          "english": "it is cold"
+        },
+        {
+          "spanish": "est? soleado",
+          "english": "it is sunny"
+        },
+        {
+          "spanish": "est? nublado",
+          "english": "it is cloudy"
+        },
+        {
+          "spanish": "llueve",
+          "english": "it is raining"
+        },
+        {
+          "spanish": "el pron?stico",
+          "english": "forecast"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "?Qu? tiempo hace hoy?",
+      "english": "What is the weather like today?"
+    },
+    {
+      "spanish": "Hace mucho calor.",
+      "english": "It is very hot."
+    },
+    {
+      "spanish": "Parece que va a llover.",
+      "english": "It looks like it is going to rain."
+    },
+    {
+      "spanish": "Necesito un paraguas.",
+      "english": "I need an umbrella."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "No hay mal tiempo, solo ropa equivocada.",
+    "english": "There is no bad weather, only the wrong clothes."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "What is the weather like today?",
+        "answer": "?Qu? tiempo hace hoy?"
+      },
+      {
+        "prompt": "It is very hot.",
+        "answer": "Hace mucho calor."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Parece _____ que va a llover.",
+        "answer": "Parece que va a llover."
+      },
+      {
+        "prompt": "?Qu? _____ tiempo hace hoy?",
+        "answer": "?Qu? tiempo hace hoy?"
+      }
+    ]
+  },
+  "questions": [
+    "?Qu? tiempo hace hoy donde vives?",
+    "?Prefieres el verano o el invierno?"
+  ]
+}

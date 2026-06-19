@@ -1,0 +1,108 @@
+{
+  "title": "Post Office Vocabulary in Spanish",
+  "intro": "Learn Spanish vocabulary for the post office, mailing letters, sending packages, and asking for delivery help.",
+  "vocabulary": [
+    {
+      "heading": "Post Office Basics",
+      "items": [
+        {
+          "spanish": "la oficina de correos",
+          "english": "post office"
+        },
+        {
+          "spanish": "la carta",
+          "english": "letter"
+        },
+        {
+          "spanish": "el paquete",
+          "english": "package"
+        },
+        {
+          "spanish": "el sobre",
+          "english": "envelope"
+        },
+        {
+          "spanish": "el sello",
+          "english": "stamp"
+        },
+        {
+          "spanish": "la direcci?n",
+          "english": "address"
+        }
+      ]
+    },
+    {
+      "heading": "Shipping Words",
+      "items": [
+        {
+          "spanish": "el env?o",
+          "english": "shipment"
+        },
+        {
+          "spanish": "la entrega",
+          "english": "delivery"
+        },
+        {
+          "spanish": "el recibo",
+          "english": "receipt"
+        },
+        {
+          "spanish": "el c?digo postal",
+          "english": "zip code"
+        },
+        {
+          "spanish": "el destino",
+          "english": "destination"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Quiero enviar este paquete.",
+      "english": "I want to send this package."
+    },
+    {
+      "spanish": "Necesito comprar sellos.",
+      "english": "I need to buy stamps."
+    },
+    {
+      "spanish": "?Cu?nto cuesta el env?o?",
+      "english": "How much does shipping cost?"
+    },
+    {
+      "spanish": "?Cu?ndo llega la entrega?",
+      "english": "When does the delivery arrive?"
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Mi paquete viaja m?s que yo.",
+    "english": "My package travels more than I do."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "I want to send this package.",
+        "answer": "Quiero enviar este paquete."
+      },
+      {
+        "prompt": "I need to buy stamps.",
+        "answer": "Necesito comprar sellos."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "?Cu?nto _____ cuesta el env?o?",
+        "answer": "?Cu?nto cuesta el env?o?"
+      },
+      {
+        "prompt": "Quiero _____ enviar este paquete.",
+        "answer": "Quiero enviar este paquete."
+      }
+    ]
+  },
+  "questions": [
+    "?Mandas cartas o paquetes?",
+    "?Hay una oficina de correos cerca de tu casa?"
+  ]
+}

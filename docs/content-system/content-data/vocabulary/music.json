@@ -1,0 +1,112 @@
+{
+  "title": "Music Vocabulary in Spanish",
+  "intro": "Learn Spanish music vocabulary for talking about songs, instruments, concerts, and favorite artists.",
+  "vocabulary": [
+    {
+      "heading": "Music Basics",
+      "items": [
+        {
+          "spanish": "la m?sica",
+          "english": "music"
+        },
+        {
+          "spanish": "la canci?n",
+          "english": "song"
+        },
+        {
+          "spanish": "el ritmo",
+          "english": "rhythm"
+        },
+        {
+          "spanish": "la letra",
+          "english": "lyrics"
+        },
+        {
+          "spanish": "el sonido",
+          "english": "sound"
+        },
+        {
+          "spanish": "el volumen",
+          "english": "volume"
+        }
+      ]
+    },
+    {
+      "heading": "People and Instruments",
+      "items": [
+        {
+          "spanish": "el cantante",
+          "english": "singer"
+        },
+        {
+          "spanish": "la banda",
+          "english": "band"
+        },
+        {
+          "spanish": "el m?sico",
+          "english": "musician"
+        },
+        {
+          "spanish": "la guitarra",
+          "english": "guitar"
+        },
+        {
+          "spanish": "el piano",
+          "english": "piano"
+        },
+        {
+          "spanish": "la bater?a",
+          "english": "drums"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Me encanta esta canci?n.",
+      "english": "I love this song."
+    },
+    {
+      "spanish": "La letra es muy bonita.",
+      "english": "The lyrics are very beautiful."
+    },
+    {
+      "spanish": "Toco la guitarra.",
+      "english": "I play guitar."
+    },
+    {
+      "spanish": "Sube el volumen, por favor.",
+      "english": "Turn up the volume, please."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Canto mejor cuando nadie me escucha.",
+    "english": "I sing better when nobody hears me."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "I love this song.",
+        "answer": "Me encanta esta canci?n."
+      },
+      {
+        "prompt": "The lyrics are very beautiful.",
+        "answer": "La letra es muy bonita."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Toco _____ la guitarra.",
+        "answer": "Toco la guitarra."
+      },
+      {
+        "prompt": "Me _____ encanta esta canci?n.",
+        "answer": "Me encanta esta canci?n."
+      }
+    ]
+  },
+  "questions": [
+    "?Qu? tipo de m?sica escuchas?",
+    "?Tocas alg?n instrumento?"
+  ]
+}

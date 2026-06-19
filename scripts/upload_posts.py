@@ -3,9 +3,9 @@ import argparse
 import urllib.parse
 from datetime import datetime, timezone
 
-from spanishnova_upload.config import load_env
-from spanishnova_upload.roadmap import find_row_by_slug, ensure_can_upload, read_roadmap_rows, write_roadmap_rows
-from spanishnova_upload.uploader import audit_grammar, dry_run, find_html, grammar_order, sync_statuses, taxonomy_payload
+from spanishnova_upload.config import ROADMAPS, ROOT, load_env
+from spanishnova_upload.roadmap import find_row_by_slug, ensure_can_upload, load_roadmap, read_roadmap_rows, write_roadmap_rows
+from spanishnova_upload.uploader import audit_grammar, find_html, grammar_order, sync_statuses, taxonomy_payload
 from spanishnova_upload.wordpress import wp_request
 
 
@@ -99,10 +99,10 @@ def ensure_no_wp_overwrite_conflict(row, post):
         )
 
 
-def update_roadmap_upload_tracking(slug, result):
-    fieldnames, rows = read_roadmap_rows()
+def update_roadmap_upload_tracking(slug, result, roadmap_path):
+    fieldnames, rows = read_roadmap_rows(roadmap_path)
     if not fieldnames:
-        raise SystemExit("Missing grammar roadmap header")
+        raise SystemExit("Missing roadmap header")
 
     updated_fieldnames = list(fieldnames)
     for column in UPLOAD_TRACKING_COLUMNS:
@@ -124,10 +124,10 @@ def update_roadmap_upload_tracking(slug, result):
     if not updated:
         raise SystemExit(f"Could not update roadmap upload tracking for: {slug}")
 
-    write_roadmap_rows(updated_fieldnames, rows)
+    write_roadmap_rows(updated_fieldnames, rows, roadmap_path)
 
 
-def protected_upload_one(env, row):
+def protected_upload_one(env, row, roadmap_path):
     ensure_can_upload(row)
 
     slug = row.get("base_slug", "").strip()
@@ -157,12 +157,49 @@ def protected_upload_one(env, row):
         result = wp_request(env, f"/wp-json/wp/v2/{cpt}", method="POST", data=payload)
         print(f"Created draft: {result.get('id')} {result.get('link')}")
 
-    update_roadmap_upload_tracking(slug, result)
+    update_roadmap_upload_tracking(slug, result, roadmap_path)
     print(f"Updated roadmap upload tracking: {slug} -> draft")
+
+
+def dry_run_type(content_type, roadmap_path, slug=None):
+    rows = load_roadmap(roadmap_path)
+    selected = rows.values()
+
+    if slug:
+        if slug not in rows:
+            raise SystemExit(f"Slug not found in {content_type} roadmap: {slug}")
+        selected = [rows[slug]]
+
+    for row in selected:
+        if row.get("cpt", "").strip() != content_type:
+            continue
+
+        html_path = find_html(row)
+        if not html_path.exists():
+            continue
+
+        content = html_path.read_text(encoding="utf-8").strip()
+        post = {
+            "slug": row.get("base_slug", "").strip(),
+            "title": row.get("public_title", "").strip(),
+            "cpt": row.get("cpt", "").strip(),
+            "status": row.get("status", "").strip(),
+            "level_tax": row.get("level_tax", "").strip(),
+            "grammar_tax": row.get("grammar_tax", "").strip(),
+            "topic_tax": row.get("topic_tax", "").strip(),
+            "post_tags": row.get("post_tags", "").strip(),
+            "html_path": str(html_path.relative_to(ROOT)),
+            "content_chars": len(content),
+        }
+
+        print("=" * 80)
+        for key, value in post.items():
+            print(f"{key}: {value}")
 
 
 def main():
     parser = argparse.ArgumentParser(description="Upload generated SpanishNova posts to Local WordPress.")
+    parser.add_argument("--type", default="grammar", choices=["grammar", "vocabulary"], help="Roadmap/content type to use.")
     parser.add_argument("--dry-run", action="store_true", help="Preview posts without uploading.")
     parser.add_argument("--check-auth", action="store_true", help="Check WordPress REST authentication.")
     parser.add_argument("--upload-one", action="store_true", help="Create or update one draft post. Requires --slug.")
@@ -172,6 +209,7 @@ def main():
     parser.add_argument("--sync-grammar-order", action="store_true", help="Update grammar menu_order from roadmap priority.")
     parser.add_argument("--slug", help="Only process one base_slug.")
     args = parser.parse_args()
+    roadmap_path = ROADMAPS[args.type]
 
     if args.check_auth:
         env = load_env()
@@ -180,14 +218,14 @@ def main():
         return
 
     if args.dry_run:
-        dry_run(args.slug)
+        dry_run_type(args.type, roadmap_path, args.slug)
         return
 
     if args.upload_one:
         if not args.slug:
             raise SystemExit("--upload-one requires --slug")
         env = load_env()
-        protected_upload_one(env, find_row_by_slug(args.slug))
+        protected_upload_one(env, find_row_by_slug(args.slug, roadmap_path), roadmap_path)
         return
 
     if args.sync_status:

@@ -1,0 +1,112 @@
+{
+  "title": "Hobbies Vocabulary in Spanish",
+  "intro": "Learn Spanish hobby vocabulary for talking about free time, interests, and favorite activities.",
+  "vocabulary": [
+    {
+      "heading": "Creative Hobbies",
+      "items": [
+        {
+          "spanish": "leer",
+          "english": "to read"
+        },
+        {
+          "spanish": "dibujar",
+          "english": "to draw"
+        },
+        {
+          "spanish": "pintar",
+          "english": "to paint"
+        },
+        {
+          "spanish": "cocinar",
+          "english": "to cook"
+        },
+        {
+          "spanish": "escribir",
+          "english": "to write"
+        },
+        {
+          "spanish": "tocar un instrumento",
+          "english": "to play an instrument"
+        }
+      ]
+    },
+    {
+      "heading": "Active and Relaxing Hobbies",
+      "items": [
+        {
+          "spanish": "bailar",
+          "english": "to dance"
+        },
+        {
+          "spanish": "correr",
+          "english": "to run"
+        },
+        {
+          "spanish": "nadar",
+          "english": "to swim"
+        },
+        {
+          "spanish": "ver pel?culas",
+          "english": "to watch movies"
+        },
+        {
+          "spanish": "escuchar m?sica",
+          "english": "to listen to music"
+        },
+        {
+          "spanish": "jugar videojuegos",
+          "english": "to play video games"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Mi pasatiempo favorito es leer.",
+      "english": "My favorite hobby is reading."
+    },
+    {
+      "spanish": "Me gusta cocinar los fines de semana.",
+      "english": "I like to cook on weekends."
+    },
+    {
+      "spanish": "Quiero aprender a pintar.",
+      "english": "I want to learn to paint."
+    },
+    {
+      "spanish": "Escucho m?sica para relajarme.",
+      "english": "I listen to music to relax."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Tengo demasiados pasatiempos y muy poco tiempo libre.",
+    "english": "I have too many hobbies and too little free time."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "My favorite hobby is reading.",
+        "answer": "Mi pasatiempo favorito es leer."
+      },
+      {
+        "prompt": "I like to cook on weekends.",
+        "answer": "Me gusta cocinar los fines de semana."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Quiero _____ aprender a pintar.",
+        "answer": "Quiero aprender a pintar."
+      },
+      {
+        "prompt": "Mi _____ pasatiempo favorito es leer.",
+        "answer": "Mi pasatiempo favorito es leer."
+      }
+    ]
+  },
+  "questions": [
+    "?Cu?l es tu pasatiempo favorito?",
+    "?Qu? pasatiempo quieres aprender?"
+  ]
+}

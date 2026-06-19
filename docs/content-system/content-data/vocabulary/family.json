@@ -1,0 +1,112 @@
+{
+  "title": "Family Vocabulary in Spanish",
+  "intro": "Learn Spanish family vocabulary for talking about relatives, relationships, and family life.",
+  "vocabulary": [
+    {
+      "heading": "Immediate Family",
+      "items": [
+        {
+          "spanish": "la madre",
+          "english": "mother"
+        },
+        {
+          "spanish": "el padre",
+          "english": "father"
+        },
+        {
+          "spanish": "los padres",
+          "english": "parents"
+        },
+        {
+          "spanish": "la hermana",
+          "english": "sister"
+        },
+        {
+          "spanish": "el hermano",
+          "english": "brother"
+        },
+        {
+          "spanish": "los hijos",
+          "english": "children"
+        }
+      ]
+    },
+    {
+      "heading": "Extended Family",
+      "items": [
+        {
+          "spanish": "la abuela",
+          "english": "grandmother"
+        },
+        {
+          "spanish": "el abuelo",
+          "english": "grandfather"
+        },
+        {
+          "spanish": "la t?a",
+          "english": "aunt"
+        },
+        {
+          "spanish": "el t?o",
+          "english": "uncle"
+        },
+        {
+          "spanish": "la prima",
+          "english": "female cousin"
+        },
+        {
+          "spanish": "el primo",
+          "english": "male cousin"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Tengo dos hermanos.",
+      "english": "I have two siblings."
+    },
+    {
+      "spanish": "Mi abuela vive cerca.",
+      "english": "My grandmother lives nearby."
+    },
+    {
+      "spanish": "Somos una familia grande.",
+      "english": "We are a big family."
+    },
+    {
+      "spanish": "Voy a visitar a mis padres.",
+      "english": "I am going to visit my parents."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "En mi familia todos hablan al mismo tiempo.",
+    "english": "In my family everyone talks at the same time."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "I have two siblings.",
+        "answer": "Tengo dos hermanos."
+      },
+      {
+        "prompt": "My grandmother lives nearby.",
+        "answer": "Mi abuela vive cerca."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Somos _____ una familia grande.",
+        "answer": "Somos una familia grande."
+      },
+      {
+        "prompt": "Tengo _____ dos hermanos.",
+        "answer": "Tengo dos hermanos."
+      }
+    ]
+  },
+  "questions": [
+    "?Tienes hermanos?",
+    "?Tu familia vive cerca o lejos?"
+  ]
+}

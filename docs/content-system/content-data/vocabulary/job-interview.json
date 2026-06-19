@@ -1,0 +1,112 @@
+{
+  "title": "Job Interview Vocabulary in Spanish",
+  "intro": "Learn Spanish vocabulary for job interviews, applications, experience, and professional conversations.",
+  "vocabulary": [
+    {
+      "heading": "Interview Basics",
+      "items": [
+        {
+          "spanish": "la entrevista",
+          "english": "interview"
+        },
+        {
+          "spanish": "el trabajo",
+          "english": "job"
+        },
+        {
+          "spanish": "el puesto",
+          "english": "position"
+        },
+        {
+          "spanish": "la empresa",
+          "english": "company"
+        },
+        {
+          "spanish": "el curr?culum",
+          "english": "resume"
+        },
+        {
+          "spanish": "la solicitud",
+          "english": "application"
+        }
+      ]
+    },
+    {
+      "heading": "Experience and Skills",
+      "items": [
+        {
+          "spanish": "la experiencia",
+          "english": "experience"
+        },
+        {
+          "spanish": "la habilidad",
+          "english": "skill"
+        },
+        {
+          "spanish": "la responsabilidad",
+          "english": "responsibility"
+        },
+        {
+          "spanish": "el logro",
+          "english": "achievement"
+        },
+        {
+          "spanish": "el equipo",
+          "english": "team"
+        },
+        {
+          "spanish": "el horario",
+          "english": "schedule"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Estoy interesado en el puesto.",
+      "english": "I am interested in the position."
+    },
+    {
+      "spanish": "Tengo experiencia en ventas.",
+      "english": "I have experience in sales."
+    },
+    {
+      "spanish": "Soy una persona responsable.",
+      "english": "I am a responsible person."
+    },
+    {
+      "spanish": "?Cu?l es el horario?",
+      "english": "What is the schedule?"
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Vengo preparado y con una sonrisa profesional.",
+    "english": "I come prepared and with a professional smile."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "I am interested in the position.",
+        "answer": "Estoy interesado en el puesto."
+      },
+      {
+        "prompt": "I have experience in sales.",
+        "answer": "Tengo experiencia en ventas."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Soy _____ una persona responsable.",
+        "answer": "Soy una persona responsable."
+      },
+      {
+        "prompt": "Estoy _____ interesado en el puesto.",
+        "answer": "Estoy interesado en el puesto."
+      }
+    ]
+  },
+  "questions": [
+    "?Has tenido una entrevista de trabajo?",
+    "?Qu? habilidades quieres mencionar?"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "title": "Daily Routine Vocabulary in Spanish",
+  "intro": "Learn Spanish vocabulary for daily routines, morning habits, and everyday activities.",
+  "vocabulary": [
+    {
+      "heading": "Morning",
+      "items": [
+        {
+          "spanish": "despertarse",
+          "english": "to wake up"
+        },
+        {
+          "spanish": "levantarse",
+          "english": "to get up"
+        },
+        {
+          "spanish": "ducharse",
+          "english": "to shower"
+        },
+        {
+          "spanish": "vestirse",
+          "english": "to get dressed"
+        },
+        {
+          "spanish": "desayunar",
+          "english": "to have breakfast"
+        }
+      ]
+    },
+    {
+      "heading": "Day and Night",
+      "items": [
+        {
+          "spanish": "trabajar",
+          "english": "to work"
+        },
+        {
+          "spanish": "estudiar",
+          "english": "to study"
+        },
+        {
+          "spanish": "almorzar",
+          "english": "to have lunch"
+        },
+        {
+          "spanish": "cenar",
+          "english": "to have dinner"
+        },
+        {
+          "spanish": "acostarse",
+          "english": "to go to bed"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Me despierto a las siete.",
+      "english": "I wake up at seven."
+    },
+    {
+      "spanish": "Desayuno caf? y pan.",
+      "english": "I have coffee and bread for breakfast."
+    },
+    {
+      "spanish": "Trabajo por la tarde.",
+      "english": "I work in the afternoon."
+    },
+    {
+      "spanish": "Por la noche descanso.",
+      "english": "At night I rest."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Mi rutina empieza mejor con caf?.",
+    "english": "My routine starts better with coffee."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "I wake up at seven.",
+        "answer": "Me despierto a las siete."
+      },
+      {
+        "prompt": "I have coffee and bread for breakfast.",
+        "answer": "Desayuno caf? y pan."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Trabajo _____ por la tarde.",
+        "answer": "Trabajo por la tarde."
+      },
+      {
+        "prompt": "Me _____ despierto a las siete.",
+        "answer": "Me despierto a las siete."
+      }
+    ]
+  },
+  "questions": [
+    "?A qu? hora te despiertas?",
+    "?Qu? haces por la ma?ana?"
+  ]
+}

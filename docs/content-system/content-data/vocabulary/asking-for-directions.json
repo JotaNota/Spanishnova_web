@@ -1,0 +1,191 @@
+{
+  "title": "Asking for Directions Vocabulary in Spanish",
+  "intro": "Learn practical Spanish words and phrases for asking for directions, understanding street instructions, and finding your way around a city.",
+  "vocabulary": [
+    {
+      "heading": "Places",
+      "items": [
+        {
+          "spanish": "la calle",
+          "english": "street"
+        },
+        {
+          "spanish": "la avenida",
+          "english": "avenue"
+        },
+        {
+          "spanish": "la esquina",
+          "english": "corner"
+        },
+        {
+          "spanish": "la plaza",
+          "english": "square"
+        },
+        {
+          "spanish": "el centro",
+          "english": "downtown"
+        },
+        {
+          "spanish": "la estación",
+          "english": "station"
+        },
+        {
+          "spanish": "la parada",
+          "english": "stop"
+        },
+        {
+          "spanish": "el mapa",
+          "english": "map"
+        }
+      ]
+    },
+    {
+      "heading": "Direction Words",
+      "items": [
+        {
+          "spanish": "a la derecha",
+          "english": "to the right"
+        },
+        {
+          "spanish": "a la izquierda",
+          "english": "to the left"
+        },
+        {
+          "spanish": "derecho",
+          "english": "straight ahead"
+        },
+        {
+          "spanish": "cerca",
+          "english": "near"
+        },
+        {
+          "spanish": "lejos",
+          "english": "far"
+        },
+        {
+          "spanish": "al lado de",
+          "english": "next to"
+        },
+        {
+          "spanish": "enfrente de",
+          "english": "across from"
+        },
+        {
+          "spanish": "entre",
+          "english": "between"
+        }
+      ]
+    },
+    {
+      "heading": "Useful Verbs",
+      "items": [
+        {
+          "spanish": "ir",
+          "english": "to go"
+        },
+        {
+          "spanish": "seguir",
+          "english": "to continue"
+        },
+        {
+          "spanish": "doblar",
+          "english": "to turn"
+        },
+        {
+          "spanish": "cruzar",
+          "english": "to cross"
+        },
+        {
+          "spanish": "llegar",
+          "english": "to arrive"
+        },
+        {
+          "spanish": "buscar",
+          "english": "to look for"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "¿Dónde está la estación?",
+      "english": "Where is the station?"
+    },
+    {
+      "spanish": "¿Cómo llego al centro?",
+      "english": "How do I get downtown?"
+    },
+    {
+      "spanish": "Siga derecho dos cuadras.",
+      "english": "Go straight for two blocks."
+    },
+    {
+      "spanish": "Doble a la derecha en la esquina.",
+      "english": "Turn right at the corner."
+    },
+    {
+      "spanish": "Está al lado del banco.",
+      "english": "It is next to the bank."
+    },
+    {
+      "spanish": "Está enfrente de la plaza.",
+      "english": "It is across from the square."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Estoy perdido, pero practico mi español.",
+    "english": "I am lost, but I am practicing my Spanish."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "Where is the station?",
+        "answer": "¿Dónde está la estación?"
+      },
+      {
+        "prompt": "Turn left at the corner.",
+        "answer": "Doble a la izquierda en la esquina."
+      },
+      {
+        "prompt": "Go straight for two blocks.",
+        "answer": "Siga derecho dos cuadras."
+      },
+      {
+        "prompt": "The bank is next to the plaza.",
+        "answer": "El banco está al lado de la plaza."
+      },
+      {
+        "prompt": "How do I get downtown?",
+        "answer": "¿Cómo llego al centro?"
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Doble a la _____ en la esquina.",
+        "answer": "Doble a la derecha en la esquina."
+      },
+      {
+        "prompt": "La estación está _____ de la plaza.",
+        "answer": "La estación está enfrente de la plaza."
+      },
+      {
+        "prompt": "Siga _____ dos cuadras.",
+        "answer": "Siga derecho dos cuadras."
+      },
+      {
+        "prompt": "El café está _____ el banco y la farmacia.",
+        "answer": "El café está entre el banco y la farmacia."
+      },
+      {
+        "prompt": "Estoy buscando la _____ de autobús.",
+        "answer": "Estoy buscando la parada de autobús."
+      }
+    ]
+  },
+  "questions": [
+    "¿Pides direcciones cuando viajas?",
+    "¿Prefieres usar un mapa o preguntar a una persona?",
+    "¿Qué lugares necesitas encontrar en una ciudad nueva?",
+    "¿Es fácil para ti entender direcciones en español?"
+  ]
+}

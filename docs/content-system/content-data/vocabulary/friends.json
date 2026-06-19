@@ -1,0 +1,104 @@
+{
+  "title": "Friends Vocabulary in Spanish",
+  "intro": "Learn Spanish vocabulary for talking about friends, plans, invitations, and social life.",
+  "vocabulary": [
+    {
+      "heading": "People",
+      "items": [
+        {
+          "spanish": "el amigo",
+          "english": "friend"
+        },
+        {
+          "spanish": "la amiga",
+          "english": "friend"
+        },
+        {
+          "spanish": "el mejor amigo",
+          "english": "best friend"
+        },
+        {
+          "spanish": "la amistad",
+          "english": "friendship"
+        },
+        {
+          "spanish": "el grupo",
+          "english": "group"
+        }
+      ]
+    },
+    {
+      "heading": "Plans",
+      "items": [
+        {
+          "spanish": "salir",
+          "english": "to go out"
+        },
+        {
+          "spanish": "quedar",
+          "english": "to meet up"
+        },
+        {
+          "spanish": "invitar",
+          "english": "to invite"
+        },
+        {
+          "spanish": "charlar",
+          "english": "to chat"
+        },
+        {
+          "spanish": "celebrar",
+          "english": "to celebrate"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Voy a salir con mis amigos.",
+      "english": "I am going out with my friends."
+    },
+    {
+      "spanish": "?Quieres quedar esta tarde?",
+      "english": "Do you want to meet up this afternoon?"
+    },
+    {
+      "spanish": "Mi mejor amiga es muy divertida.",
+      "english": "My best friend is very fun."
+    },
+    {
+      "spanish": "Tenemos un plan para el s?bado.",
+      "english": "We have a plan for Saturday."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Un buen amigo siempre trae buena energ?a.",
+    "english": "A good friend always brings good energy."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "I am going out with my friends.",
+        "answer": "Voy a salir con mis amigos."
+      },
+      {
+        "prompt": "Do you want to meet up this afternoon?",
+        "answer": "?Quieres quedar esta tarde?"
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Mi _____ mejor amiga es muy divertida.",
+        "answer": "Mi mejor amiga es muy divertida."
+      },
+      {
+        "prompt": "Voy _____ a salir con mis amigos.",
+        "answer": "Voy a salir con mis amigos."
+      }
+    ]
+  },
+  "questions": [
+    "?Cu?ndo ves a tus amigos?",
+    "?Prefieres planes tranquilos o fiestas?"
+  ]
+}

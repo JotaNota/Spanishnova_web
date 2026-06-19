@@ -1,0 +1,108 @@
+{
+  "title": "Feelings Vocabulary in Spanish",
+  "intro": "Learn Spanish words for feelings and emotions so you can describe your mood and understand others.",
+  "vocabulary": [
+    {
+      "heading": "Basic Feelings",
+      "items": [
+        {
+          "spanish": "feliz",
+          "english": "happy"
+        },
+        {
+          "spanish": "triste",
+          "english": "sad"
+        },
+        {
+          "spanish": "enojado",
+          "english": "angry"
+        },
+        {
+          "spanish": "nervioso",
+          "english": "nervous"
+        },
+        {
+          "spanish": "tranquilo",
+          "english": "calm"
+        },
+        {
+          "spanish": "cansado",
+          "english": "tired"
+        }
+      ]
+    },
+    {
+      "heading": "More Emotions",
+      "items": [
+        {
+          "spanish": "preocupado",
+          "english": "worried"
+        },
+        {
+          "spanish": "orgulloso",
+          "english": "proud"
+        },
+        {
+          "spanish": "sorprendido",
+          "english": "surprised"
+        },
+        {
+          "spanish": "aburrido",
+          "english": "bored"
+        },
+        {
+          "spanish": "confundido",
+          "english": "confused"
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "spanish": "Estoy feliz hoy.",
+      "english": "I am happy today."
+    },
+    {
+      "spanish": "Me siento un poco nervioso.",
+      "english": "I feel a little nervous."
+    },
+    {
+      "spanish": "Ella est? preocupada.",
+      "english": "She is worried."
+    },
+    {
+      "spanish": "Necesito estar tranquilo.",
+      "english": "I need to be calm."
+    }
+  ],
+  "fun_phrase": {
+    "spanish": "Tengo muchas emociones y solo una taza de caf?.",
+    "english": "I have many emotions and only one cup of coffee."
+  },
+  "exercises": {
+    "translate": [
+      {
+        "prompt": "I am happy today.",
+        "answer": "Estoy feliz hoy."
+      },
+      {
+        "prompt": "I feel a little nervous.",
+        "answer": "Me siento un poco nervioso."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Ella _____ est? preocupada.",
+        "answer": "Ella est? preocupada."
+      },
+      {
+        "prompt": "Estoy _____ feliz hoy.",
+        "answer": "Estoy feliz hoy."
+      }
+    ]
+  },
+  "questions": [
+    "?C?mo te sientes hoy?",
+    "?Qu? te pone feliz?"
+  ]
+}
