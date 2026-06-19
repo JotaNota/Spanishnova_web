@@ -6,7 +6,7 @@ from spanishnova_render.renderer import render_content
 
 def main():
     parser = argparse.ArgumentParser(description="Render SpanishNova content data into Markdown and HTML.")
-    parser.add_argument("--type", required=True, choices=["grammar"], help="Content type to render.")
+    parser.add_argument("--type", required=True, choices=["grammar", "vocabulary"], help="Content type to render.")
     parser.add_argument("--slug", required=True, help="Roadmap base_slug and content-data filename.")
     args = parser.parse_args()
 

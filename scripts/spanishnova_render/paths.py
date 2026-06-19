@@ -10,4 +10,5 @@ GENERATED_HTML = CONTENT_SYSTEM / "generated/generated-html-posts"
 
 ROADMAPS = {
     "grammar": CONTENT_PLAN / "grammar-roadmap.csv",
+    "vocabulary": CONTENT_PLAN / "vocabulary-roadmap.csv",
 }
