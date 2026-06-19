@@ -1,0 +1,353 @@
+{
+  "intro": "Use pueda, puedas, podamos, and puedan when poder appears after expressions of need, doubt, permission, or purpose. The idea is not just ability, but possible ability inside another clause.",
+  "overview": {
+    "body": "Use pueda, puedas, podamos, and puedan when poder appears after expressions of need, doubt, permission, or purpose. The idea is not just ability, but possible ability inside another clause. Focus on the message first, then choose the form that fits the context.",
+    "use_note": "poder in the present subjunctive"
+  },
+  "examples": [
+    {
+      "spanish": "Poder in subjunctive: ejemplo principal.",
+      "english": "Poder in subjunctive: main example."
+    },
+    {
+      "spanish": "Poder in subjunctive: otro ejemplo ?til.",
+      "english": "Poder in subjunctive: another useful example."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Real use",
+      "body": "Use this pattern when poder in subjunctive helps express a real message, not just a grammar label.",
+      "examples": [
+        {
+          "spanish": "Poder in subjunctive: ejemplo pr?ctico uno.",
+          "english": "Poder in subjunctive: practical example one."
+        },
+        {
+          "spanish": "Poder in subjunctive: ejemplo pr?ctico dos.",
+          "english": "Poder in subjunctive: practical example two."
+        }
+      ]
+    },
+    {
+      "heading": "Common context",
+      "body": "This form often appears in everyday explanations, plans, advice, and reactions depending on the sentence.",
+      "examples": [
+        {
+          "spanish": "Poder in subjunctive: contexto com?n uno.",
+          "english": "Poder in subjunctive: common context one."
+        },
+        {
+          "spanish": "Poder in subjunctive: contexto com?n dos.",
+          "english": "Poder in subjunctive: common context two."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Poder in subjunctive: frase afirmativa 1.",
+        "english": "Poder in subjunctive: affirmative sentence 1."
+      },
+      {
+        "spanish": "Poder in subjunctive: frase afirmativa 2.",
+        "english": "Poder in subjunctive: affirmative sentence 2."
+      },
+      {
+        "spanish": "Poder in subjunctive: frase afirmativa 3.",
+        "english": "Poder in subjunctive: affirmative sentence 3."
+      },
+      {
+        "spanish": "Poder in subjunctive: frase afirmativa 4.",
+        "english": "Poder in subjunctive: affirmative sentence 4."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No usamos poder in subjunctive as? en el ejemplo 1.",
+        "english": "We do not use poder in subjunctive like that in example 1."
+      },
+      {
+        "spanish": "No usamos poder in subjunctive as? en el ejemplo 2.",
+        "english": "We do not use poder in subjunctive like that in example 2."
+      },
+      {
+        "spanish": "No usamos poder in subjunctive as? en el ejemplo 3.",
+        "english": "We do not use poder in subjunctive like that in example 3."
+      },
+      {
+        "spanish": "No usamos poder in subjunctive as? en el ejemplo 4.",
+        "english": "We do not use poder in subjunctive like that in example 4."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "Poder in subjunctive: pregunta modelo 1.",
+        "english": "Poder in subjunctive: model question 1."
+      },
+      {
+        "spanish": "Poder in subjunctive: pregunta modelo 2.",
+        "english": "Poder in subjunctive: model question 2."
+      },
+      {
+        "spanish": "Poder in subjunctive: pregunta modelo 3.",
+        "english": "Poder in subjunctive: model question 3."
+      },
+      {
+        "spanish": "Poder in subjunctive: pregunta modelo 4.",
+        "english": "Poder in subjunctive: model question 4."
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Poder in subjunctive: opci?n 1 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Poder in subjunctive: opci?n 1 forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: opci?n 2 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Poder in subjunctive: opci?n 2 forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: opci?n 3 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Poder in subjunctive: opci?n 3 forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: opci?n 4 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Poder in subjunctive: opci?n 4 forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: opci?n 5 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Poder in subjunctive: opci?n 5 forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: opci?n 6 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Poder in subjunctive: opci?n 6 forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: opci?n 7 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Poder in subjunctive: opci?n 7 forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: opci?n 8 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Poder in subjunctive: opci?n 8 forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: opci?n 9 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Poder in subjunctive: opci?n 9 forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: opci?n 10 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Poder in subjunctive: opci?n 10 forma correcta."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Poder in subjunctive: completa la idea 1: ___.",
+        "answer": "Poder in subjunctive: completa la idea 1: forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: completa la idea 2: ___.",
+        "answer": "Poder in subjunctive: completa la idea 2: forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: completa la idea 3: ___.",
+        "answer": "Poder in subjunctive: completa la idea 3: forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: completa la idea 4: ___.",
+        "answer": "Poder in subjunctive: completa la idea 4: forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: completa la idea 5: ___.",
+        "answer": "Poder in subjunctive: completa la idea 5: forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: completa la idea 6: ___.",
+        "answer": "Poder in subjunctive: completa la idea 6: forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: completa la idea 7: ___.",
+        "answer": "Poder in subjunctive: completa la idea 7: forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: completa la idea 8: ___.",
+        "answer": "Poder in subjunctive: completa la idea 8: forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: completa la idea 9: ___.",
+        "answer": "Poder in subjunctive: completa la idea 9: forma correcta."
+      },
+      {
+        "prompt": "Poder in subjunctive: completa la idea 10: ___.",
+        "answer": "Poder in subjunctive: completa la idea 10: forma correcta."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "Poder in subjunctive practice sentence 1.",
+        "answer": "Poder in subjunctive: frase modelo 1."
+      },
+      {
+        "prompt": "Poder in subjunctive practice sentence 2.",
+        "answer": "Poder in subjunctive: frase modelo 2."
+      },
+      {
+        "prompt": "Poder in subjunctive practice sentence 3.",
+        "answer": "Poder in subjunctive: frase modelo 3."
+      },
+      {
+        "prompt": "Poder in subjunctive practice sentence 4.",
+        "answer": "Poder in subjunctive: frase modelo 4."
+      },
+      {
+        "prompt": "Poder in subjunctive practice sentence 5.",
+        "answer": "Poder in subjunctive: frase modelo 5."
+      },
+      {
+        "prompt": "Poder in subjunctive practice sentence 6.",
+        "answer": "Poder in subjunctive: frase modelo 6."
+      },
+      {
+        "prompt": "Poder in subjunctive practice sentence 7.",
+        "answer": "Poder in subjunctive: frase modelo 7."
+      },
+      {
+        "prompt": "Poder in subjunctive practice sentence 8.",
+        "answer": "Poder in subjunctive: frase modelo 8."
+      },
+      {
+        "prompt": "Poder in subjunctive practice sentence 9.",
+        "answer": "Poder in subjunctive: frase modelo 9."
+      },
+      {
+        "prompt": "Poder in subjunctive practice sentence 10.",
+        "answer": "Poder in subjunctive: frase modelo 10."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Poder in subjunctive: opci?n 1 forma correcta.",
+      "Poder in subjunctive: opci?n 2 forma correcta.",
+      "Poder in subjunctive: opci?n 3 forma correcta.",
+      "Poder in subjunctive: opci?n 4 forma correcta.",
+      "Poder in subjunctive: opci?n 5 forma correcta.",
+      "Poder in subjunctive: opci?n 6 forma correcta.",
+      "Poder in subjunctive: opci?n 7 forma correcta.",
+      "Poder in subjunctive: opci?n 8 forma correcta.",
+      "Poder in subjunctive: opci?n 9 forma correcta.",
+      "Poder in subjunctive: opci?n 10 forma correcta."
+    ],
+    "complete": [
+      "Poder in subjunctive: completa la idea 1: forma correcta.",
+      "Poder in subjunctive: completa la idea 2: forma correcta.",
+      "Poder in subjunctive: completa la idea 3: forma correcta.",
+      "Poder in subjunctive: completa la idea 4: forma correcta.",
+      "Poder in subjunctive: completa la idea 5: forma correcta.",
+      "Poder in subjunctive: completa la idea 6: forma correcta.",
+      "Poder in subjunctive: completa la idea 7: forma correcta.",
+      "Poder in subjunctive: completa la idea 8: forma correcta.",
+      "Poder in subjunctive: completa la idea 9: forma correcta.",
+      "Poder in subjunctive: completa la idea 10: forma correcta."
+    ],
+    "translate": [
+      "Poder in subjunctive: frase modelo 1.",
+      "Poder in subjunctive: frase modelo 2.",
+      "Poder in subjunctive: frase modelo 3.",
+      "Poder in subjunctive: frase modelo 4.",
+      "Poder in subjunctive: frase modelo 5.",
+      "Poder in subjunctive: frase modelo 6.",
+      "Poder in subjunctive: frase modelo 7.",
+      "Poder in subjunctive: frase modelo 8.",
+      "Poder in subjunctive: frase modelo 9.",
+      "Poder in subjunctive: frase modelo 10."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Core idea",
+      "example": "Poder in subjunctive: ejemplo claro.",
+      "translation": "Clear example."
+    },
+    {
+      "use": "Negative or contrast",
+      "example": "Poder in subjunctive: no siempre cambia igual.",
+      "translation": "It does not always change the same way."
+    },
+    {
+      "use": "Question",
+      "example": "Cmo usas poder in subjunctive",
+      "translation": "How do you use it?"
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "trigger + que + verb form",
+      "example": "Poder in subjunctive: quiero que uses la forma.",
+      "translation": "I want you to use the form."
+    },
+    {
+      "pattern": "si + condition, result",
+      "example": "Poder in subjunctive: si cambia el contexto, cambia la forma.",
+      "translation": "If the context changes, the form changes."
+    },
+    {
+      "pattern": "reported/passive pattern",
+      "example": "Poder in subjunctive: la idea se expresa con claridad.",
+      "translation": "The idea is expressed clearly."
+    }
+  ]
+}

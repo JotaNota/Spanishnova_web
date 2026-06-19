@@ -1,0 +1,188 @@
+{
+  "intro": "Some Spanish reflexive verbs express changes that English often translates with get. Verbs like ponerse, volverse, hacerse, and quedarse describe different kinds of change.",
+  "overview": {
+    "body": "Use these reflexive verbs to talk about becoming, getting, or ending up in a new state. The best verb depends on whether the change is temporary, sudden, chosen, gradual, or a final result.",
+    "use_note": "reflexive verbs for get and become"
+  },
+  "examples": [
+    {
+      "spanish": "Me pongo nervioso antes del examen.",
+      "english": "I get nervous before the exam."
+    },
+    {
+      "spanish": "Ella se hizo doctora.",
+      "english": "She became a doctor."
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "ponerse + adjective",
+      "example": "Se puso triste.",
+      "translation": "He or she got sad."
+    },
+    {
+      "pattern": "volverse + adjective",
+      "example": "Se volvió impaciente.",
+      "translation": "He or she became impatient."
+    },
+    {
+      "pattern": "hacerse + noun or adjective",
+      "example": "Se hizo profesor.",
+      "translation": "He became a teacher."
+    },
+    {
+      "pattern": "quedarse + adjective",
+      "example": "Me quedé sorprendido.",
+      "translation": "I was left surprised."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Temporary changes",
+      "body": "Use ponerse for a change in mood, health, color, or temporary condition.",
+      "examples": [
+        {
+          "spanish": "Tú te pones rojo cuando hablas.",
+          "english": "You get red when you speak."
+        },
+        {
+          "spanish": "Nos ponemos contentos con buenas noticias.",
+          "english": "We get happy with good news."
+        }
+      ]
+    },
+    {
+      "heading": "Bigger or lasting changes",
+      "body": "Use volverse for a strong change in personality or character, and hacerse for a chosen or gradual identity change.",
+      "examples": [
+        {
+          "spanish": "Él se volvió más paciente.",
+          "english": "He became more patient."
+        },
+        {
+          "spanish": "Mi hermana se hizo abogada.",
+          "english": "My sister became a lawyer."
+        }
+      ]
+    },
+    {
+      "heading": "Final results",
+      "body": "Use quedarse when someone ends up in a state after an event.",
+      "examples": [
+        {
+          "spanish": "Me quedé sin palabras.",
+          "english": "I was left speechless."
+        },
+        {
+          "spanish": "Ellos se quedaron tranquilos.",
+          "english": "They became calm."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Me pongo nervioso en entrevistas.",
+        "english": "I get nervous in interviews."
+      },
+      {
+        "spanish": "Ella se volvió famosa.",
+        "english": "She became famous."
+      },
+      {
+        "spanish": "Nos hicimos amigos.",
+        "english": "We became friends."
+      },
+      {
+        "spanish": "Tú te quedaste callado.",
+        "english": "You became quiet."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No me pongo triste fácilmente.",
+        "english": "I do not get sad easily."
+      },
+      {
+        "spanish": "Él no se volvió arrogante.",
+        "english": "He did not become arrogant."
+      },
+      {
+        "spanish": "Nosotros no nos hicimos ricos.",
+        "english": "We did not become rich."
+      },
+      {
+        "spanish": "Ellas no se quedaron solas.",
+        "english": "They were not left alone."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Te pones nervioso?",
+        "english": "Do you get nervous?"
+      },
+      {
+        "spanish": "¿Ella se volvió seria?",
+        "english": "Did she become serious?"
+      },
+      {
+        "spanish": "¿Ustedes se hicieron amigos?",
+        "english": "Did you all become friends?"
+      },
+      {
+        "spanish": "¿Nos quedamos listos?",
+        "english": "Did we end up ready?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {"prompt": "Yo _____ pongo nervioso.", "options": ["me", "te", "se"], "answer": "Yo me pongo nervioso."},
+      {"prompt": "Ella se _____ famosa.", "options": ["volvió", "puse", "quedamos"], "answer": "Ella se volvió famosa."},
+      {"prompt": "Nosotros nos _____ amigos.", "options": ["hicimos", "hizo", "hice"], "answer": "Nosotros nos hicimos amigos."},
+      {"prompt": "Tú te _____ callado.", "options": ["quedaste", "volvieron", "hice"], "answer": "Tú te quedaste callado."},
+      {"prompt": "Ellos se _____ tranquilos.", "options": ["quedaron", "pongo", "haces"], "answer": "Ellos se quedaron tranquilos."},
+      {"prompt": "Mi hermano se _____ médico.", "options": ["hizo", "puso", "quedó"], "answer": "Mi hermano se hizo médico."},
+      {"prompt": "Usted se _____ impaciente.", "options": ["volvió", "hicimos", "quedé"], "answer": "Usted se volvió impaciente."},
+      {"prompt": "Nosotras _____ ponemos contentas.", "options": ["nos", "se", "me"], "answer": "Nosotras nos ponemos contentas."},
+      {"prompt": "Yo me _____ sin palabras.", "options": ["quedé", "hizo", "volvieron"], "answer": "Yo me quedé sin palabras."},
+      {"prompt": "¿Tú te _____ rojo?", "options": ["pones", "pone", "ponen"], "answer": "¿Tú te pones rojo?"}
+    ],
+    "complete": [
+      {"prompt": "Yo ___ pongo triste.", "answer": "Yo me pongo triste."},
+      {"prompt": "Ella se ___ más paciente.", "answer": "Ella se volvió más paciente."},
+      {"prompt": "Nosotros nos ___ profesores.", "answer": "Nosotros nos hicimos profesores."},
+      {"prompt": "Tú te ___ sorprendido.", "answer": "Tú te quedaste sorprendido."},
+      {"prompt": "Ellos ___ quedaron tranquilos.", "answer": "Ellos se quedaron tranquilos."},
+      {"prompt": "Mi hermana se ___ abogada.", "answer": "Mi hermana se hizo abogada."},
+      {"prompt": "Ustedes se ___ serios.", "answer": "Ustedes se volvieron serios."},
+      {"prompt": "Nosotras ___ ponemos nerviosas.", "answer": "Nosotras nos ponemos nerviosas."},
+      {"prompt": "Yo no ___ quedé solo.", "answer": "Yo no me quedé solo."},
+      {"prompt": "¿Tú ___ haces más responsable?", "answer": "¿Tú te haces más responsable?"}
+    ],
+    "translate": [
+      {"prompt": "I get nervous.", "answer": "Me pongo nervioso."},
+      {"prompt": "She became famous.", "answer": "Ella se volvió famosa."},
+      {"prompt": "We became friends.", "answer": "Nos hicimos amigos."},
+      {"prompt": "You became quiet.", "answer": "Te quedaste callado."},
+      {"prompt": "They became calm.", "answer": "Ellos se quedaron tranquilos."},
+      {"prompt": "My sister became a lawyer.", "answer": "Mi hermana se hizo abogada."},
+      {"prompt": "Did you get red?", "answer": "¿Te pusiste rojo?"},
+      {"prompt": "He did not become arrogant.", "answer": "Él no se volvió arrogante."},
+      {"prompt": "I was left speechless.", "answer": "Me quedé sin palabras."},
+      {"prompt": "You all became serious.", "answer": "Ustedes se volvieron serios."}
+    ]
+  },
+  "answers": {
+    "select": ["Yo me pongo nervioso.", "Ella se volvió famosa.", "Nosotros nos hicimos amigos.", "Tú te quedaste callado.", "Ellos se quedaron tranquilos.", "Mi hermano se hizo médico.", "Usted se volvió impaciente.", "Nosotras nos ponemos contentas.", "Yo me quedé sin palabras.", "¿Tú te pones rojo?"],
+    "complete": ["Yo me pongo triste.", "Ella se volvió más paciente.", "Nosotros nos hicimos profesores.", "Tú te quedaste sorprendido.", "Ellos se quedaron tranquilos.", "Mi hermana se hizo abogada.", "Ustedes se volvieron serios.", "Nosotras nos ponemos nerviosas.", "Yo no me quedé solo.", "¿Tú te haces más responsable?"],
+    "translate": ["Me pongo nervioso.", "Ella se volvió famosa.", "Nos hicimos amigos.", "Te quedaste callado.", "Ellos se quedaron tranquilos.", "Mi hermana se hizo abogada.", "¿Te pusiste rojo?", "Él no se volvió arrogante.", "Me quedé sin palabras.", "Ustedes se volvieron serios."]
+  },
+  "wrap_up": [
+    {"use": "ponerse", "example": "Me pongo nervioso.", "translation": "I get nervous."},
+    {"use": "volverse", "example": "Ella se volvió famosa.", "translation": "She became famous."},
+    {"use": "hacerse", "example": "Nos hicimos amigos.", "translation": "We became friends."},
+    {"use": "quedarse", "example": "Me quedé sin palabras.", "translation": "I was left speechless."}
+  ]
+}

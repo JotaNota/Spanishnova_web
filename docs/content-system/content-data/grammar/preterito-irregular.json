@@ -1,0 +1,112 @@
+{
+  "intro": "Irregular preterite verbs still talk about completed past actions, but their stems and endings do not follow the regular pattern. Learn the most common forms as practical chunks.",
+  "overview": {
+    "body": "Many high-frequency verbs are irregular in the preterite: tener, estar, poder, poner, saber, hacer, querer, venir, decir, traer, ser, ir, dar, and ver. The good news is that several of them share the same endings.",
+    "use_note": "common irregular preterite forms"
+  },
+  "examples": [
+    {"spanish": "Ayer tuve una reunión importante.", "english": "Yesterday I had an important meeting."},
+    {"spanish": "Ellos fueron al centro después del trabajo.", "english": "They went downtown after work."}
+  ],
+  "conjugation": [
+    {"subject": "Yo", "form": "tuve / estuve / hice / fui", "example": "Yo tuve tiempo ayer.", "translation": "I had time yesterday."},
+    {"subject": "Tú", "form": "tuviste / estuviste / hiciste / fuiste", "example": "Tú hiciste la reserva.", "translation": "You made the reservation."},
+    {"subject": "Él / Ella / Usted", "form": "tuvo / estuvo / hizo / fue", "example": "Ella fue a la oficina.", "translation": "She went to the office."},
+    {"subject": "Nosotros / Nosotras", "form": "tuvimos / estuvimos / hicimos / fuimos", "example": "Nosotros estuvimos en casa.", "translation": "We were at home."},
+    {"subject": "Ellos / Ellas / Ustedes", "form": "tuvieron / estuvieron / hicieron / fueron", "example": "Ellos hicieron la comida.", "translation": "They made the food."}
+  ],
+  "uses": [
+    {
+      "heading": "Very common finished actions",
+      "body": "Use irregular preterite forms for completed actions with common verbs like tener, hacer, estar, ser, and ir.",
+      "examples": [
+        {"spanish": "Tuve una idea.", "english": "I had an idea."},
+        {"spanish": "Fuimos al supermercado.", "english": "We went to the supermarket."}
+      ]
+    },
+    {
+      "heading": "Shared irregular endings",
+      "body": "Many irregular preterite verbs use endings like -e, -iste, -o, -imos, -ieron, without accent marks.",
+      "examples": [
+        {"spanish": "Pudimos terminar temprano.", "english": "We were able to finish early."},
+        {"spanish": "Ustedes pusieron la mesa.", "english": "You all set the table."}
+      ]
+    },
+    {
+      "heading": "Ser and ir look the same",
+      "body": "Ser and ir have the same preterite forms. Context tells you whether fue means was or went.",
+      "examples": [
+        {"spanish": "La reunión fue corta.", "english": "The meeting was short."},
+        {"spanish": "Ana fue al banco.", "english": "Ana went to the bank."}
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {"spanish": "Yo tuve una buena semana.", "english": "I had a good week."},
+      {"spanish": "Tú hiciste el plan.", "english": "You made the plan."},
+      {"spanish": "Ella puso las llaves en la mesa.", "english": "She put the keys on the table."},
+      {"spanish": "Nosotros fuimos al parque.", "english": "We went to the park."}
+    ],
+    "negative": [
+      {"spanish": "No pude llamar antes.", "english": "I could not call earlier."},
+      {"spanish": "Él no quiso salir.", "english": "He did not want to go out."},
+      {"spanish": "Nosotras no estuvimos en la reunión.", "english": "We were not at the meeting."},
+      {"spanish": "Ellos no dijeron nada.", "english": "They did not say anything."}
+    ],
+    "questions": [
+      {"spanish": "¿Tuviste tiempo ayer?", "english": "Did you have time yesterday?"},
+      {"spanish": "¿Ella hizo la reserva?", "english": "Did she make the reservation?"},
+      {"spanish": "¿Fuimos al lugar correcto?", "english": "Did we go to the right place?"},
+      {"spanish": "¿Ustedes trajeron los documentos?", "english": "Did you all bring the documents?"}
+    ]
+  },
+  "exercises": {
+    "select": [
+      {"prompt": "Yo _____ una reunión ayer.", "options": ["tuve", "tení", "tenía"], "answer": "Yo tuve una reunión ayer."},
+      {"prompt": "Tú _____ la reserva.", "options": ["hiciste", "haces", "haciste"], "answer": "Tú hiciste la reserva."},
+      {"prompt": "Ella _____ las llaves aquí.", "options": ["puso", "ponió", "ponía"], "answer": "Ella puso las llaves aquí."},
+      {"prompt": "Nosotros _____ al centro.", "options": ["fuimos", "íbamos", "vamos"], "answer": "Nosotros fuimos al centro."},
+      {"prompt": "Ellos _____ la verdad.", "options": ["dijeron", "decieron", "decían"], "answer": "Ellos dijeron la verdad."},
+      {"prompt": "Yo no _____ terminar.", "options": ["pude", "podí", "podía"], "answer": "Yo no pude terminar."},
+      {"prompt": "Usted _____ temprano.", "options": ["vino", "venió", "venía"], "answer": "Usted vino temprano."},
+      {"prompt": "Nosotras _____ en casa.", "options": ["estuvimos", "estábamos", "estemos"], "answer": "Nosotras estuvimos en casa."},
+      {"prompt": "Tú _____ los documentos.", "options": ["trajiste", "traíste", "traías"], "answer": "Tú trajiste los documentos."},
+      {"prompt": "¿Ustedes _____ la noticia?", "options": ["supieron", "sabieron", "sabían"], "answer": "¿Ustedes supieron la noticia?"}
+    ],
+    "complete": [
+      {"prompt": "Yo ___ tiempo ayer.", "answer": "Yo tuve tiempo ayer."},
+      {"prompt": "Tú ___ la comida.", "answer": "Tú hiciste la comida."},
+      {"prompt": "Ella ___ al banco.", "answer": "Ella fue al banco."},
+      {"prompt": "Nosotros ___ terminar temprano.", "answer": "Nosotros pudimos terminar temprano."},
+      {"prompt": "Ellos ___ el informe en la mesa.", "answer": "Ellos pusieron el informe en la mesa."},
+      {"prompt": "Yo no ___ salir.", "answer": "Yo no quise salir."},
+      {"prompt": "Usted ___ de Chile.", "answer": "Usted vino de Chile."},
+      {"prompt": "Nosotras ___ una buena conversación.", "answer": "Nosotras tuvimos una buena conversación."},
+      {"prompt": "Tú ___ la verdad.", "answer": "Tú dijiste la verdad."},
+      {"prompt": "¿Ellas ___ los libros?", "answer": "¿Ellas trajeron los libros?"}
+    ],
+    "translate": [
+      {"prompt": "I had time yesterday.", "answer": "Tuve tiempo ayer."},
+      {"prompt": "You made dinner.", "answer": "Tú hiciste la cena."},
+      {"prompt": "She went to the bank.", "answer": "Ella fue al banco."},
+      {"prompt": "We were at home.", "answer": "Estuvimos en casa."},
+      {"prompt": "They said the truth.", "answer": "Ellos dijeron la verdad."},
+      {"prompt": "I could not finish.", "answer": "No pude terminar."},
+      {"prompt": "Did you have a meeting?", "answer": "¿Tuviste una reunión?"},
+      {"prompt": "You all brought the documents.", "answer": "Ustedes trajeron los documentos."},
+      {"prompt": "He did not want to go out.", "answer": "Él no quiso salir."},
+      {"prompt": "We found out the news yesterday.", "answer": "Supimos la noticia ayer."}
+    ]
+  },
+  "answers": {
+    "select": ["Yo tuve una reunión ayer.", "Tú hiciste la reserva.", "Ella puso las llaves aquí.", "Nosotros fuimos al centro.", "Ellos dijeron la verdad.", "Yo no pude terminar.", "Usted vino temprano.", "Nosotras estuvimos en casa.", "Tú trajiste los documentos.", "¿Ustedes supieron la noticia?"],
+    "complete": ["Yo tuve tiempo ayer.", "Tú hiciste la comida.", "Ella fue al banco.", "Nosotros pudimos terminar temprano.", "Ellos pusieron el informe en la mesa.", "Yo no quise salir.", "Usted vino de Chile.", "Nosotras tuvimos una buena conversación.", "Tú dijiste la verdad.", "¿Ellas trajeron los libros?"],
+    "translate": ["Tuve tiempo ayer.", "Tú hiciste la cena.", "Ella fue al banco.", "Estuvimos en casa.", "Ellos dijeron la verdad.", "No pude terminar.", "¿Tuviste una reunión?", "Ustedes trajeron los documentos.", "Él no quiso salir.", "Supimos la noticia ayer."]
+  },
+  "wrap_up": [
+    {"use": "Irregular stem", "example": "Tener -> tuve, tuviste, tuvo.", "translation": "To have -> I had, you had, she/he had."},
+    {"use": "No accent on shared endings", "example": "Pudimos terminar temprano.", "translation": "We were able to finish early."},
+    {"use": "Ser / ir context", "example": "Fue una buena clase / fue a clase.", "translation": "It was a good class / he went to class."}
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "intro": "The pluperfect indicative says what had already happened before another past moment. It uses imperfect haber plus a past participle.",
+  "overview": {
+    "body": "The pluperfect indicative says what had already happened before another past moment. It uses imperfect haber plus a past participle. Focus on the message first, then choose the form that fits the context.",
+    "use_note": "had done in Spanish"
+  },
+  "examples": [
+    {
+      "spanish": "Pluperfect indicative: ejemplo principal.",
+      "english": "Pluperfect indicative: main example."
+    },
+    {
+      "spanish": "Pluperfect indicative: otro ejemplo ?til.",
+      "english": "Pluperfect indicative: another useful example."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Real use",
+      "body": "Use this pattern when pluperfect indicative helps express a real message, not just a grammar label.",
+      "examples": [
+        {
+          "spanish": "Pluperfect indicative: ejemplo pr?ctico uno.",
+          "english": "Pluperfect indicative: practical example one."
+        },
+        {
+          "spanish": "Pluperfect indicative: ejemplo pr?ctico dos.",
+          "english": "Pluperfect indicative: practical example two."
+        }
+      ]
+    },
+    {
+      "heading": "Common context",
+      "body": "This form often appears in everyday explanations, plans, advice, and reactions depending on the sentence.",
+      "examples": [
+        {
+          "spanish": "Pluperfect indicative: contexto com?n uno.",
+          "english": "Pluperfect indicative: common context one."
+        },
+        {
+          "spanish": "Pluperfect indicative: contexto com?n dos.",
+          "english": "Pluperfect indicative: common context two."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Pluperfect indicative: frase afirmativa 1.",
+        "english": "Pluperfect indicative: affirmative sentence 1."
+      },
+      {
+        "spanish": "Pluperfect indicative: frase afirmativa 2.",
+        "english": "Pluperfect indicative: affirmative sentence 2."
+      },
+      {
+        "spanish": "Pluperfect indicative: frase afirmativa 3.",
+        "english": "Pluperfect indicative: affirmative sentence 3."
+      },
+      {
+        "spanish": "Pluperfect indicative: frase afirmativa 4.",
+        "english": "Pluperfect indicative: affirmative sentence 4."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No usamos pluperfect indicative as? en el ejemplo 1.",
+        "english": "We do not use pluperfect indicative like that in example 1."
+      },
+      {
+        "spanish": "No usamos pluperfect indicative as? en el ejemplo 2.",
+        "english": "We do not use pluperfect indicative like that in example 2."
+      },
+      {
+        "spanish": "No usamos pluperfect indicative as? en el ejemplo 3.",
+        "english": "We do not use pluperfect indicative like that in example 3."
+      },
+      {
+        "spanish": "No usamos pluperfect indicative as? en el ejemplo 4.",
+        "english": "We do not use pluperfect indicative like that in example 4."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "Pluperfect indicative: pregunta modelo 1.",
+        "english": "Pluperfect indicative: model question 1."
+      },
+      {
+        "spanish": "Pluperfect indicative: pregunta modelo 2.",
+        "english": "Pluperfect indicative: model question 2."
+      },
+      {
+        "spanish": "Pluperfect indicative: pregunta modelo 3.",
+        "english": "Pluperfect indicative: model question 3."
+      },
+      {
+        "spanish": "Pluperfect indicative: pregunta modelo 4.",
+        "english": "Pluperfect indicative: model question 4."
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Pluperfect indicative: opci?n 1 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Pluperfect indicative: opci?n 1 forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: opci?n 2 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Pluperfect indicative: opci?n 2 forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: opci?n 3 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Pluperfect indicative: opci?n 3 forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: opci?n 4 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Pluperfect indicative: opci?n 4 forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: opci?n 5 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Pluperfect indicative: opci?n 5 forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: opci?n 6 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Pluperfect indicative: opci?n 6 forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: opci?n 7 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Pluperfect indicative: opci?n 7 forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: opci?n 8 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Pluperfect indicative: opci?n 8 forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: opci?n 9 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Pluperfect indicative: opci?n 9 forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: opci?n 10 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Pluperfect indicative: opci?n 10 forma correcta."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Pluperfect indicative: completa la idea 1: ___.",
+        "answer": "Pluperfect indicative: completa la idea 1: forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: completa la idea 2: ___.",
+        "answer": "Pluperfect indicative: completa la idea 2: forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: completa la idea 3: ___.",
+        "answer": "Pluperfect indicative: completa la idea 3: forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: completa la idea 4: ___.",
+        "answer": "Pluperfect indicative: completa la idea 4: forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: completa la idea 5: ___.",
+        "answer": "Pluperfect indicative: completa la idea 5: forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: completa la idea 6: ___.",
+        "answer": "Pluperfect indicative: completa la idea 6: forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: completa la idea 7: ___.",
+        "answer": "Pluperfect indicative: completa la idea 7: forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: completa la idea 8: ___.",
+        "answer": "Pluperfect indicative: completa la idea 8: forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: completa la idea 9: ___.",
+        "answer": "Pluperfect indicative: completa la idea 9: forma correcta."
+      },
+      {
+        "prompt": "Pluperfect indicative: completa la idea 10: ___.",
+        "answer": "Pluperfect indicative: completa la idea 10: forma correcta."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "Pluperfect indicative practice sentence 1.",
+        "answer": "Pluperfect indicative: frase modelo 1."
+      },
+      {
+        "prompt": "Pluperfect indicative practice sentence 2.",
+        "answer": "Pluperfect indicative: frase modelo 2."
+      },
+      {
+        "prompt": "Pluperfect indicative practice sentence 3.",
+        "answer": "Pluperfect indicative: frase modelo 3."
+      },
+      {
+        "prompt": "Pluperfect indicative practice sentence 4.",
+        "answer": "Pluperfect indicative: frase modelo 4."
+      },
+      {
+        "prompt": "Pluperfect indicative practice sentence 5.",
+        "answer": "Pluperfect indicative: frase modelo 5."
+      },
+      {
+        "prompt": "Pluperfect indicative practice sentence 6.",
+        "answer": "Pluperfect indicative: frase modelo 6."
+      },
+      {
+        "prompt": "Pluperfect indicative practice sentence 7.",
+        "answer": "Pluperfect indicative: frase modelo 7."
+      },
+      {
+        "prompt": "Pluperfect indicative practice sentence 8.",
+        "answer": "Pluperfect indicative: frase modelo 8."
+      },
+      {
+        "prompt": "Pluperfect indicative practice sentence 9.",
+        "answer": "Pluperfect indicative: frase modelo 9."
+      },
+      {
+        "prompt": "Pluperfect indicative practice sentence 10.",
+        "answer": "Pluperfect indicative: frase modelo 10."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Pluperfect indicative: opci?n 1 forma correcta.",
+      "Pluperfect indicative: opci?n 2 forma correcta.",
+      "Pluperfect indicative: opci?n 3 forma correcta.",
+      "Pluperfect indicative: opci?n 4 forma correcta.",
+      "Pluperfect indicative: opci?n 5 forma correcta.",
+      "Pluperfect indicative: opci?n 6 forma correcta.",
+      "Pluperfect indicative: opci?n 7 forma correcta.",
+      "Pluperfect indicative: opci?n 8 forma correcta.",
+      "Pluperfect indicative: opci?n 9 forma correcta.",
+      "Pluperfect indicative: opci?n 10 forma correcta."
+    ],
+    "complete": [
+      "Pluperfect indicative: completa la idea 1: forma correcta.",
+      "Pluperfect indicative: completa la idea 2: forma correcta.",
+      "Pluperfect indicative: completa la idea 3: forma correcta.",
+      "Pluperfect indicative: completa la idea 4: forma correcta.",
+      "Pluperfect indicative: completa la idea 5: forma correcta.",
+      "Pluperfect indicative: completa la idea 6: forma correcta.",
+      "Pluperfect indicative: completa la idea 7: forma correcta.",
+      "Pluperfect indicative: completa la idea 8: forma correcta.",
+      "Pluperfect indicative: completa la idea 9: forma correcta.",
+      "Pluperfect indicative: completa la idea 10: forma correcta."
+    ],
+    "translate": [
+      "Pluperfect indicative: frase modelo 1.",
+      "Pluperfect indicative: frase modelo 2.",
+      "Pluperfect indicative: frase modelo 3.",
+      "Pluperfect indicative: frase modelo 4.",
+      "Pluperfect indicative: frase modelo 5.",
+      "Pluperfect indicative: frase modelo 6.",
+      "Pluperfect indicative: frase modelo 7.",
+      "Pluperfect indicative: frase modelo 8.",
+      "Pluperfect indicative: frase modelo 9.",
+      "Pluperfect indicative: frase modelo 10."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Core idea",
+      "example": "Pluperfect indicative: ejemplo claro.",
+      "translation": "Clear example."
+    },
+    {
+      "use": "Negative or contrast",
+      "example": "Pluperfect indicative: no siempre cambia igual.",
+      "translation": "It does not always change the same way."
+    },
+    {
+      "use": "Question",
+      "example": "Cmo usas pluperfect indicative",
+      "translation": "How do you use it?"
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Yo",
+      "form": "forma yo",
+      "example": "Pluperfect indicative: yo uso la forma.",
+      "translation": "I use the form."
+    },
+    {
+      "subject": "T?",
+      "form": "forma t?",
+      "example": "Pluperfect indicative: t? usas la forma.",
+      "translation": "You use the form."
+    },
+    {
+      "subject": "?l / Ella / Usted",
+      "form": "forma ?l/ella/usted",
+      "example": "Pluperfect indicative: ella usa la forma.",
+      "translation": "She uses the form."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "forma nosotros",
+      "example": "Pluperfect indicative: nosotros usamos la forma.",
+      "translation": "We use the form."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "forma ellos/ustedes",
+      "example": "Pluperfect indicative: ellos usan la forma.",
+      "translation": "They use the form."
+    }
+  ]
+}

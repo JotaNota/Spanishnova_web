@@ -1,0 +1,268 @@
+{
+  "intro": "Possessive pronouns and demonstratives both replace or point to nouns. Use them together to contrast ownership and distance: mine, yours, this one, that one.",
+  "overview": {
+    "body": "Possessive pronouns show ownership, while demonstratives point to which person or thing you mean. Both agree with the noun in gender and number.",
+    "use_note": "contrast ownership and reference"
+  },
+  "examples": [
+    {
+      "spanish": "Este libro es mío; ese es tuyo.",
+      "english": "This book is mine; that one is yours."
+    },
+    {
+      "spanish": "Estas llaves son nuestras; aquellas son suyas.",
+      "english": "These keys are ours; those over there are theirs."
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "demonstrative + noun + ser + possessive pronoun",
+      "example": "Este cuaderno es mío.",
+      "translation": "This notebook is mine."
+    },
+    {
+      "pattern": "demonstrative pronoun + ser + possessive pronoun",
+      "example": "Ese es tuyo.",
+      "translation": "That one is yours."
+    },
+    {
+      "pattern": "demonstrative plural + ser + possessive plural",
+      "example": "Aquellas son nuestras.",
+      "translation": "Those over there are ours."
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Masculine singular",
+      "form": "este / ese / aquel + mío / tuyo / suyo",
+      "example": "Este es mío.",
+      "translation": "This one is mine."
+    },
+    {
+      "subject": "Feminine singular",
+      "form": "esta / esa / aquella + mía / tuya / suya",
+      "example": "Esa es tuya.",
+      "translation": "That one is yours."
+    },
+    {
+      "subject": "Masculine plural",
+      "form": "estos / esos / aquellos + míos / tuyos / suyos",
+      "example": "Aquellos son suyos.",
+      "translation": "Those over there are his, hers, yours formal, or theirs."
+    },
+    {
+      "subject": "Feminine plural",
+      "form": "estas / esas / aquellas + mías / tuyas / suyas",
+      "example": "Estas son nuestras.",
+      "translation": "These are ours."
+    },
+    {
+      "subject": "Nuestro forms",
+      "form": "nuestro / nuestra / nuestros / nuestras",
+      "example": "Ese coche es nuestro.",
+      "translation": "That car is ours."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Possessive Pronouns",
+      "body": "Use possessive pronouns to replace a noun and show who owns it.",
+      "examples": [
+        {
+          "spanish": "El rojo es mío.",
+          "english": "The red one is mine."
+        },
+        {
+          "spanish": "La grande es tuya.",
+          "english": "The big one is yours."
+        }
+      ]
+    },
+    {
+      "heading": "Demonstratives",
+      "body": "Use demonstratives to point to this one, that one, or that one over there.",
+      "examples": [
+        {
+          "spanish": "Este es nuevo.",
+          "english": "This one is new."
+        },
+        {
+          "spanish": "Aquel es antiguo.",
+          "english": "That one over there is old."
+        }
+      ]
+    },
+    {
+      "heading": "Using Both Together",
+      "body": "Use both forms when you want to compare distance and ownership in the same sentence.",
+      "examples": [
+        {
+          "spanish": "Esta mochila es mía; esa es tuya.",
+          "english": "This backpack is mine; that one is yours."
+        },
+        {
+          "spanish": "Estos vasos son nuestros; aquellos son suyos.",
+          "english": "These glasses are ours; those over there are theirs."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Este lápiz es mío.",
+        "english": "This pencil is mine."
+      },
+      {
+        "spanish": "Esa silla es tuya.",
+        "english": "That chair is yours."
+      },
+      {
+        "spanish": "Aquellos libros son suyos.",
+        "english": "Those books over there are his, hers, yours formal, or theirs."
+      },
+      {
+        "spanish": "Estas mesas son nuestras.",
+        "english": "These tables are ours."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "Este teléfono no es mío.",
+        "english": "This phone is not mine."
+      },
+      {
+        "spanish": "Esa mochila no es tuya.",
+        "english": "That backpack is not yours."
+      },
+      {
+        "spanish": "Aquellas llaves no son nuestras.",
+        "english": "Those keys over there are not ours."
+      },
+      {
+        "spanish": "Estos documentos no son suyos.",
+        "english": "These documents are not his, hers, yours formal, or theirs."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Este cuaderno es tuyo?",
+        "english": "Is this notebook yours?"
+      },
+      {
+        "spanish": "¿Esa casa es suya?",
+        "english": "Is that house his, hers, yours formal, or theirs?"
+      },
+      {
+        "spanish": "¿Aquellos coches son nuestros?",
+        "english": "Are those cars over there ours?"
+      },
+      {
+        "spanish": "¿Estas fotos son mías?",
+        "english": "Are these photos mine?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Este libro es _____.",
+        "options": ["mío", "mía", "mías"],
+        "answer": "Este libro es mío."
+      },
+      {
+        "prompt": "Esa mochila es _____.",
+        "options": ["tuyo", "tuya", "tuyos"],
+        "answer": "Esa mochila es tuya."
+      },
+      {
+        "prompt": "Aquellos vasos son _____.",
+        "options": ["nuestro", "nuestras", "nuestros"],
+        "answer": "Aquellos vasos son nuestros."
+      },
+      {
+        "prompt": "Estas llaves son _____.",
+        "options": ["suyo", "suya", "suyas"],
+        "answer": "Estas llaves son suyas."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Este teléfono no es ___.",
+        "answer": "Este teléfono no es mío."
+      },
+      {
+        "prompt": "Esa casa es ___.",
+        "answer": "Esa casa es tuya."
+      },
+      {
+        "prompt": "Estos libros son ___.",
+        "answer": "Estos libros son nuestros."
+      },
+      {
+        "prompt": "Aquellas ideas son ___.",
+        "answer": "Aquellas ideas son suyas."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "This notebook is mine.",
+        "answer": "Este cuaderno es mío."
+      },
+      {
+        "prompt": "That chair is yours.",
+        "answer": "Esa silla es tuya."
+      },
+      {
+        "prompt": "These tables are ours.",
+        "answer": "Estas mesas son nuestras."
+      },
+      {
+        "prompt": "Are those cars over there ours?",
+        "answer": "¿Aquellos coches son nuestros?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Este libro es mío.",
+      "Esa mochila es tuya.",
+      "Aquellos vasos son nuestros.",
+      "Estas llaves son suyas."
+    ],
+    "complete": [
+      "Este teléfono no es mío.",
+      "Esa casa es tuya.",
+      "Estos libros son nuestros.",
+      "Aquellas ideas son suyas."
+    ],
+    "translate": [
+      "Este cuaderno es mío.",
+      "Esa silla es tuya.",
+      "Estas mesas son nuestras.",
+      "¿Aquellos coches son nuestros?"
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Possession",
+      "example": "Este libro es mío.",
+      "translation": "This book is mine."
+    },
+    {
+      "use": "Distance",
+      "example": "Ese es tuyo.",
+      "translation": "That one is yours."
+    },
+    {
+      "use": "Distant contrast",
+      "example": "Aquellas son nuestras.",
+      "translation": "Those over there are ours."
+    },
+    {
+      "use": "Full contrast",
+      "example": "Esta mochila es mía; esa es tuya.",
+      "translation": "This backpack is mine; that one is yours."
+    }
+  ]
+}

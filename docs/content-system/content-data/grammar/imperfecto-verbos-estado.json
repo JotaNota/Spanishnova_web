@@ -1,0 +1,353 @@
+{
+  "intro": "State verbs often use the imperfect because they describe conditions, knowledge, feelings, possession, or wants in the past. They give background instead of a single finished event.",
+  "overview": {
+    "body": "Common state verbs include estar, tener, saber, conocer, querer, necesitar, creer, and entender. In the imperfect they describe what was true at the time.",
+    "use_note": "imperfect with state verbs"
+  },
+  "examples": [
+    {
+      "spanish": "Estaba cansado y tenía hambre.",
+      "english": "I was tired and hungry."
+    },
+    {
+      "spanish": "Sabíamos la dirección, pero no conocíamos la zona.",
+      "english": "We knew the address, but we did not know the area."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Conditions and feelings",
+      "body": "Use the imperfect for what someone was feeling or what condition they were in.",
+      "examples": [
+        {
+          "spanish": "Estábamos nerviosos.",
+          "english": "We were nervous."
+        },
+        {
+          "spanish": "Tenía frío.",
+          "english": "I was cold."
+        }
+      ]
+    },
+    {
+      "heading": "Knowledge, possession, and wants",
+      "body": "Use it for what someone knew, had, believed, wanted, or needed at that time.",
+      "examples": [
+        {
+          "spanish": "Conocía bien el barrio.",
+          "english": "She knew the neighborhood well."
+        },
+        {
+          "spanish": "Necesitábamos más tiempo.",
+          "english": "We needed more time."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Yo trabajaba en el centro.",
+        "english": "I used to work downtown."
+      },
+      {
+        "spanish": "Tú comías con tu familia.",
+        "english": "You used to eat with your family."
+      },
+      {
+        "spanish": "Ella vivía cerca.",
+        "english": "She used to live nearby."
+      },
+      {
+        "spanish": "Nosotros íbamos al parque.",
+        "english": "We used to go to the park."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "Yo no salía mucho.",
+        "english": "I did not use to go out much."
+      },
+      {
+        "spanish": "Él no tenía coche.",
+        "english": "He did not have a car."
+      },
+      {
+        "spanish": "Nosotras no veíamos televisión.",
+        "english": "We did not use to watch TV."
+      },
+      {
+        "spanish": "Ellos no eran vecinos.",
+        "english": "They were not neighbors."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Trabajabas los sábados?",
+        "english": "Did you use to work on Saturdays?"
+      },
+      {
+        "spanish": "¿Ella vivía aquí?",
+        "english": "Did she use to live here?"
+      },
+      {
+        "spanish": "¿Íbamos juntos?",
+        "english": "Did we use to go together?"
+      },
+      {
+        "spanish": "¿Ustedes veían esa serie?",
+        "english": "Did you all use to watch that series?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ cansado.",
+        "options": [
+          "estaba",
+          "estuve",
+          "estoy"
+        ],
+        "answer": "Yo estaba cansado."
+      },
+      {
+        "prompt": "Tú _____ razón.",
+        "options": [
+          "tenías",
+          "tuviste",
+          "tienes"
+        ],
+        "answer": "Tú tenías razón."
+      },
+      {
+        "prompt": "Ella _____ la respuesta.",
+        "options": [
+          "sabía",
+          "supo",
+          "sabe"
+        ],
+        "answer": "Ella sabía la respuesta."
+      },
+      {
+        "prompt": "Nosotros _____ vivir allí.",
+        "options": [
+          "queríamos",
+          "quisimos",
+          "queremos"
+        ],
+        "answer": "Nosotros queríamos vivir allí."
+      },
+      {
+        "prompt": "Ellos _____ la ciudad.",
+        "options": [
+          "conocían",
+          "conocieron",
+          "conocen"
+        ],
+        "answer": "Ellos conocían la ciudad."
+      },
+      {
+        "prompt": "Yo no _____ hambre.",
+        "options": [
+          "tenía",
+          "tuve",
+          "tengo"
+        ],
+        "answer": "Yo no tenía hambre."
+      },
+      {
+        "prompt": "Usted _____ preocupado.",
+        "options": [
+          "estaba",
+          "estuvo",
+          "está"
+        ],
+        "answer": "Usted estaba preocupado."
+      },
+      {
+        "prompt": "Nosotras _____ la dirección.",
+        "options": [
+          "sabíamos",
+          "supimos",
+          "sabemos"
+        ],
+        "answer": "Nosotras sabíamos la dirección."
+      },
+      {
+        "prompt": "Tú _____ quedarte.",
+        "options": [
+          "querías",
+          "quisiste",
+          "quieres"
+        ],
+        "answer": "Tú querías quedarte."
+      },
+      {
+        "prompt": "¿Ustedes _____ el problema?",
+        "options": [
+          "entendían",
+          "entendieron",
+          "entienden"
+        ],
+        "answer": "¿Ustedes entendían el problema?"
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ cansado.",
+        "answer": "Yo estaba cansado."
+      },
+      {
+        "prompt": "Tú ___ razón.",
+        "answer": "Tú tenías razón."
+      },
+      {
+        "prompt": "Ella ___ la respuesta.",
+        "answer": "Ella sabía la respuesta."
+      },
+      {
+        "prompt": "Nosotros ___ vivir allí.",
+        "answer": "Nosotros queríamos vivir allí."
+      },
+      {
+        "prompt": "Ellos ___ la ciudad.",
+        "answer": "Ellos conocían la ciudad."
+      },
+      {
+        "prompt": "Yo no ___ hambre.",
+        "answer": "Yo no tenía hambre."
+      },
+      {
+        "prompt": "Usted ___ preocupado.",
+        "answer": "Usted estaba preocupado."
+      },
+      {
+        "prompt": "Nosotras ___ la dirección.",
+        "answer": "Nosotras sabíamos la dirección."
+      },
+      {
+        "prompt": "Tú ___ quedarte.",
+        "answer": "Tú querías quedarte."
+      },
+      {
+        "prompt": "¿Ustedes ___ el problema?",
+        "answer": "¿Ustedes entendían el problema?"
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I was tired.",
+        "answer": "Estaba cansado."
+      },
+      {
+        "prompt": "You were right.",
+        "answer": "Tú tenías razón."
+      },
+      {
+        "prompt": "She knew the answer.",
+        "answer": "Ella sabía la respuesta."
+      },
+      {
+        "prompt": "We wanted to live there.",
+        "answer": "Queríamos vivir allí."
+      },
+      {
+        "prompt": "They knew the city.",
+        "answer": "Ellos conocían la ciudad."
+      },
+      {
+        "prompt": "I was not hungry.",
+        "answer": "No tenía hambre."
+      },
+      {
+        "prompt": "You were worried.",
+        "answer": "Usted estaba preocupado."
+      },
+      {
+        "prompt": "We knew the address.",
+        "answer": "Sabíamos la dirección."
+      },
+      {
+        "prompt": "You wanted to stay.",
+        "answer": "Tú querías quedarte."
+      },
+      {
+        "prompt": "Did you all understand the problem?",
+        "answer": "¿Ustedes entendían el problema?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo estaba cansado.",
+      "Tú tenías razón.",
+      "Ella sabía la respuesta.",
+      "Nosotros queríamos vivir allí.",
+      "Ellos conocían la ciudad.",
+      "Yo no tenía hambre.",
+      "Usted estaba preocupado.",
+      "Nosotras sabíamos la dirección.",
+      "Tú querías quedarte.",
+      "¿Ustedes entendían el problema?"
+    ],
+    "complete": [
+      "Yo estaba cansado.",
+      "Tú tenías razón.",
+      "Ella sabía la respuesta.",
+      "Nosotros queríamos vivir allí.",
+      "Ellos conocían la ciudad.",
+      "Yo no tenía hambre.",
+      "Usted estaba preocupado.",
+      "Nosotras sabíamos la dirección.",
+      "Tú querías quedarte.",
+      "¿Ustedes entendían el problema?"
+    ],
+    "translate": [
+      "Estaba cansado.",
+      "Tú tenías razón.",
+      "Ella sabía la respuesta.",
+      "Queríamos vivir allí.",
+      "Ellos conocían la ciudad.",
+      "No tenía hambre.",
+      "Usted estaba preocupado.",
+      "Sabíamos la dirección.",
+      "Tú querías quedarte.",
+      "¿Ustedes entendían el problema?"
+    ]
+  },
+  "structure": [
+    {
+      "pattern": "state verb in imperfect + condition",
+      "example": "Yo estaba cansado.",
+      "translation": "I was tired."
+    },
+    {
+      "pattern": "tener/saber/conocer in imperfect",
+      "example": "Ella sabía la respuesta.",
+      "translation": "She knew the answer."
+    },
+    {
+      "pattern": "querer/necesitar in imperfect + infinitive/noun",
+      "example": "Queríamos descansar.",
+      "translation": "We wanted to rest."
+    }
+  ],
+  "wrap_up": [
+    {
+      "use": "Condition",
+      "example": "Estaba preocupado.",
+      "translation": "He was worried."
+    },
+    {
+      "use": "Knowledge",
+      "example": "Sabíamos la respuesta.",
+      "translation": "We knew the answer."
+    },
+    {
+      "use": "Want or need",
+      "example": "Querían salir temprano.",
+      "translation": "They wanted to leave early."
+    }
+  ]
+}

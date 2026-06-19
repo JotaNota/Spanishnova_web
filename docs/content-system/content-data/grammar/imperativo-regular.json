@@ -1,0 +1,368 @@
+{
+  "intro": "Regular commands help you tell someone what to do in a clear, practical way. The form changes depending on whether you speak to t?, usted, ustedes, or nosotros.",
+  "overview": {
+    "body": "Regular commands help you tell someone what to do in a clear, practical way. The form changes depending on whether you speak to t?, usted, ustedes, or nosotros. Focus on the message first, then choose the form that fits the context.",
+    "use_note": "regular commands"
+  },
+  "examples": [
+    {
+      "spanish": "Regular imperative: ejemplo principal.",
+      "english": "Regular imperative: main example."
+    },
+    {
+      "spanish": "Regular imperative: otro ejemplo ?til.",
+      "english": "Regular imperative: another useful example."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Real use",
+      "body": "Use this pattern when regular imperative helps express a real message, not just a grammar label.",
+      "examples": [
+        {
+          "spanish": "Regular imperative: ejemplo pr?ctico uno.",
+          "english": "Regular imperative: practical example one."
+        },
+        {
+          "spanish": "Regular imperative: ejemplo pr?ctico dos.",
+          "english": "Regular imperative: practical example two."
+        }
+      ]
+    },
+    {
+      "heading": "Common context",
+      "body": "This form often appears in everyday explanations, plans, advice, and reactions depending on the sentence.",
+      "examples": [
+        {
+          "spanish": "Regular imperative: contexto com?n uno.",
+          "english": "Regular imperative: common context one."
+        },
+        {
+          "spanish": "Regular imperative: contexto com?n dos.",
+          "english": "Regular imperative: common context two."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Regular imperative: frase afirmativa 1.",
+        "english": "Regular imperative: affirmative sentence 1."
+      },
+      {
+        "spanish": "Regular imperative: frase afirmativa 2.",
+        "english": "Regular imperative: affirmative sentence 2."
+      },
+      {
+        "spanish": "Regular imperative: frase afirmativa 3.",
+        "english": "Regular imperative: affirmative sentence 3."
+      },
+      {
+        "spanish": "Regular imperative: frase afirmativa 4.",
+        "english": "Regular imperative: affirmative sentence 4."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No usamos regular imperative as? en el ejemplo 1.",
+        "english": "We do not use regular imperative like that in example 1."
+      },
+      {
+        "spanish": "No usamos regular imperative as? en el ejemplo 2.",
+        "english": "We do not use regular imperative like that in example 2."
+      },
+      {
+        "spanish": "No usamos regular imperative as? en el ejemplo 3.",
+        "english": "We do not use regular imperative like that in example 3."
+      },
+      {
+        "spanish": "No usamos regular imperative as? en el ejemplo 4.",
+        "english": "We do not use regular imperative like that in example 4."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "Regular imperative: pregunta modelo 1.",
+        "english": "Regular imperative: model question 1."
+      },
+      {
+        "spanish": "Regular imperative: pregunta modelo 2.",
+        "english": "Regular imperative: model question 2."
+      },
+      {
+        "spanish": "Regular imperative: pregunta modelo 3.",
+        "english": "Regular imperative: model question 3."
+      },
+      {
+        "spanish": "Regular imperative: pregunta modelo 4.",
+        "english": "Regular imperative: model question 4."
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Regular imperative: opci?n 1 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Regular imperative: opci?n 1 forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: opci?n 2 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Regular imperative: opci?n 2 forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: opci?n 3 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Regular imperative: opci?n 3 forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: opci?n 4 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Regular imperative: opci?n 4 forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: opci?n 5 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Regular imperative: opci?n 5 forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: opci?n 6 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Regular imperative: opci?n 6 forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: opci?n 7 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Regular imperative: opci?n 7 forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: opci?n 8 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Regular imperative: opci?n 8 forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: opci?n 9 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Regular imperative: opci?n 9 forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: opci?n 10 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Regular imperative: opci?n 10 forma correcta."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Regular imperative: completa la idea 1: ___.",
+        "answer": "Regular imperative: completa la idea 1: forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: completa la idea 2: ___.",
+        "answer": "Regular imperative: completa la idea 2: forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: completa la idea 3: ___.",
+        "answer": "Regular imperative: completa la idea 3: forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: completa la idea 4: ___.",
+        "answer": "Regular imperative: completa la idea 4: forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: completa la idea 5: ___.",
+        "answer": "Regular imperative: completa la idea 5: forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: completa la idea 6: ___.",
+        "answer": "Regular imperative: completa la idea 6: forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: completa la idea 7: ___.",
+        "answer": "Regular imperative: completa la idea 7: forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: completa la idea 8: ___.",
+        "answer": "Regular imperative: completa la idea 8: forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: completa la idea 9: ___.",
+        "answer": "Regular imperative: completa la idea 9: forma correcta."
+      },
+      {
+        "prompt": "Regular imperative: completa la idea 10: ___.",
+        "answer": "Regular imperative: completa la idea 10: forma correcta."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "Regular imperative practice sentence 1.",
+        "answer": "Regular imperative: frase modelo 1."
+      },
+      {
+        "prompt": "Regular imperative practice sentence 2.",
+        "answer": "Regular imperative: frase modelo 2."
+      },
+      {
+        "prompt": "Regular imperative practice sentence 3.",
+        "answer": "Regular imperative: frase modelo 3."
+      },
+      {
+        "prompt": "Regular imperative practice sentence 4.",
+        "answer": "Regular imperative: frase modelo 4."
+      },
+      {
+        "prompt": "Regular imperative practice sentence 5.",
+        "answer": "Regular imperative: frase modelo 5."
+      },
+      {
+        "prompt": "Regular imperative practice sentence 6.",
+        "answer": "Regular imperative: frase modelo 6."
+      },
+      {
+        "prompt": "Regular imperative practice sentence 7.",
+        "answer": "Regular imperative: frase modelo 7."
+      },
+      {
+        "prompt": "Regular imperative practice sentence 8.",
+        "answer": "Regular imperative: frase modelo 8."
+      },
+      {
+        "prompt": "Regular imperative practice sentence 9.",
+        "answer": "Regular imperative: frase modelo 9."
+      },
+      {
+        "prompt": "Regular imperative practice sentence 10.",
+        "answer": "Regular imperative: frase modelo 10."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Regular imperative: opci?n 1 forma correcta.",
+      "Regular imperative: opci?n 2 forma correcta.",
+      "Regular imperative: opci?n 3 forma correcta.",
+      "Regular imperative: opci?n 4 forma correcta.",
+      "Regular imperative: opci?n 5 forma correcta.",
+      "Regular imperative: opci?n 6 forma correcta.",
+      "Regular imperative: opci?n 7 forma correcta.",
+      "Regular imperative: opci?n 8 forma correcta.",
+      "Regular imperative: opci?n 9 forma correcta.",
+      "Regular imperative: opci?n 10 forma correcta."
+    ],
+    "complete": [
+      "Regular imperative: completa la idea 1: forma correcta.",
+      "Regular imperative: completa la idea 2: forma correcta.",
+      "Regular imperative: completa la idea 3: forma correcta.",
+      "Regular imperative: completa la idea 4: forma correcta.",
+      "Regular imperative: completa la idea 5: forma correcta.",
+      "Regular imperative: completa la idea 6: forma correcta.",
+      "Regular imperative: completa la idea 7: forma correcta.",
+      "Regular imperative: completa la idea 8: forma correcta.",
+      "Regular imperative: completa la idea 9: forma correcta.",
+      "Regular imperative: completa la idea 10: forma correcta."
+    ],
+    "translate": [
+      "Regular imperative: frase modelo 1.",
+      "Regular imperative: frase modelo 2.",
+      "Regular imperative: frase modelo 3.",
+      "Regular imperative: frase modelo 4.",
+      "Regular imperative: frase modelo 5.",
+      "Regular imperative: frase modelo 6.",
+      "Regular imperative: frase modelo 7.",
+      "Regular imperative: frase modelo 8.",
+      "Regular imperative: frase modelo 9.",
+      "Regular imperative: frase modelo 10."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Core idea",
+      "example": "Regular imperative: ejemplo claro.",
+      "translation": "Clear example."
+    },
+    {
+      "use": "Negative or contrast",
+      "example": "Regular imperative: no siempre cambia igual.",
+      "translation": "It does not always change the same way."
+    },
+    {
+      "use": "Question",
+      "example": "Cmo usas regular imperative",
+      "translation": "How do you use it?"
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Yo",
+      "form": "forma yo",
+      "example": "Regular imperative: yo uso la forma.",
+      "translation": "I use the form."
+    },
+    {
+      "subject": "T?",
+      "form": "forma t?",
+      "example": "Regular imperative: t? usas la forma.",
+      "translation": "You use the form."
+    },
+    {
+      "subject": "?l / Ella / Usted",
+      "form": "forma ?l/ella/usted",
+      "example": "Regular imperative: ella usa la forma.",
+      "translation": "She uses the form."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "forma nosotros",
+      "example": "Regular imperative: nosotros usamos la forma.",
+      "translation": "We use the form."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "forma ellos/ustedes",
+      "example": "Regular imperative: ellos usan la forma.",
+      "translation": "They use the form."
+    }
+  ]
+}

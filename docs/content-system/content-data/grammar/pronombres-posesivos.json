@@ -1,0 +1,243 @@
+{
+  "intro": "Possessive pronouns replace a noun when it is already clear what belongs to someone. In Spanish, forms like mío, tuyo, suyo, and nuestro agree with the thing possessed.",
+  "overview": {
+    "body": "Possessive pronouns stand alone: el mío, la tuya, los suyos, las nuestras. They change for masculine, feminine, singular, and plural nouns.",
+    "use_note": "mine, yours, his, hers, ours, and theirs"
+  },
+  "examples": [
+    {
+      "spanish": "Este libro es mío.",
+      "english": "This book is mine."
+    },
+    {
+      "spanish": "Estas llaves son tuyas.",
+      "english": "These keys are yours."
+    }
+  ],
+  "forms": [
+    {
+      "label": "mío / mía / míos / mías",
+      "meaning": "mine"
+    },
+    {
+      "label": "tuyo / tuya / tuyos / tuyas",
+      "meaning": "yours"
+    },
+    {
+      "label": "suyo / suya / suyos / suyas",
+      "meaning": "his, hers, yours formal, theirs"
+    },
+    {
+      "label": "nuestro / nuestra / nuestros / nuestras",
+      "meaning": "ours"
+    }
+  ],
+  "notes": [
+    "Possessive pronouns agree with the noun they replace.",
+    "Use el, la, los, or las when the possessive pronoun stands for a specific thing."
+  ],
+  "uses": [
+    {
+      "heading": "Replace A Known Noun",
+      "body": "Use a possessive pronoun when the noun is already clear from context.",
+      "examples": [
+        {
+          "spanish": "Mi casa es pequeña; la tuya es grande.",
+          "english": "My house is small; yours is big."
+        },
+        {
+          "spanish": "Tus zapatos son negros; los míos son blancos.",
+          "english": "Your shoes are black; mine are white."
+        }
+      ]
+    },
+    {
+      "heading": "Say Whose Something Is",
+      "body": "Use ser plus a possessive pronoun to say that something belongs to someone.",
+      "examples": [
+        {
+          "spanish": "La mochila es suya.",
+          "english": "The backpack is his, hers, yours formal, or theirs."
+        },
+        {
+          "spanish": "Los libros son nuestros.",
+          "english": "The books are ours."
+        }
+      ]
+    }
+  ],
+  "forms_table": {
+    "headers": ["Pronombre", "Masculino singular", "Femenino singular", "Plural"],
+    "rows": [
+      ["Yo", "el mío", "la mía", "los míos / las mías"],
+      ["Tú", "el tuyo", "la tuya", "los tuyos / las tuyas"],
+      ["Él / Ella / Usted", "el suyo", "la suya", "los suyos / las suyas"],
+      ["Nosotros / Nosotras", "el nuestro", "la nuestra", "los nuestros / las nuestras"],
+      ["Ellos / Ellas / Ustedes", "el suyo", "la suya", "los suyos / las suyas"]
+    ]
+  },
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Este cuaderno es mío.",
+        "english": "This notebook is mine."
+      },
+      {
+        "spanish": "La casa roja es tuya.",
+        "english": "The red house is yours."
+      },
+      {
+        "spanish": "Los boletos son nuestros.",
+        "english": "The tickets are ours."
+      },
+      {
+        "spanish": "Estas ideas son suyas.",
+        "english": "These ideas are his, hers, yours formal, or theirs."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "Este teléfono no es mío.",
+        "english": "This phone is not mine."
+      },
+      {
+        "spanish": "La bicicleta no es tuya.",
+        "english": "The bike is not yours."
+      },
+      {
+        "spanish": "Esos documentos no son nuestros.",
+        "english": "Those documents are not ours."
+      },
+      {
+        "spanish": "Las llaves no son suyas.",
+        "english": "The keys are not his, hers, yours formal, or theirs."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Este libro es tuyo?",
+        "english": "Is this book yours?"
+      },
+      {
+        "spanish": "¿La mochila es suya?",
+        "english": "Is the backpack his, hers, yours formal, or theirs?"
+      },
+      {
+        "spanish": "¿Estos vasos son nuestros?",
+        "english": "Are these glasses ours?"
+      },
+      {
+        "spanish": "¿Las fotos son mías?",
+        "english": "Are the photos mine?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Este libro es _____.",
+        "options": ["mío", "mía", "mías"],
+        "answer": "Este libro es mío."
+      },
+      {
+        "prompt": "La casa es _____.",
+        "options": ["tuyo", "tuya", "tuyos"],
+        "answer": "La casa es tuya."
+      },
+      {
+        "prompt": "Los boletos son _____.",
+        "options": ["nuestro", "nuestra", "nuestros"],
+        "answer": "Los boletos son nuestros."
+      },
+      {
+        "prompt": "Las llaves son _____.",
+        "options": ["suyo", "suya", "suyas"],
+        "answer": "Las llaves son suyas."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Este teléfono no es ___.",
+        "answer": "Este teléfono no es mío."
+      },
+      {
+        "prompt": "La bicicleta es ___.",
+        "answer": "La bicicleta es tuya."
+      },
+      {
+        "prompt": "Los documentos son ___.",
+        "answer": "Los documentos son nuestros."
+      },
+      {
+        "prompt": "Las ideas son ___.",
+        "answer": "Las ideas son suyas."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "This book is mine.",
+        "answer": "Este libro es mío."
+      },
+      {
+        "prompt": "The house is yours.",
+        "answer": "La casa es tuya."
+      },
+      {
+        "prompt": "The tickets are ours.",
+        "answer": "Los boletos son nuestros."
+      },
+      {
+        "prompt": "Are these keys yours?",
+        "answer": "¿Estas llaves son tuyas?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Este libro es mío.",
+      "La casa es tuya.",
+      "Los boletos son nuestros.",
+      "Las llaves son suyas."
+    ],
+    "complete": [
+      "Este teléfono no es mío.",
+      "La bicicleta es tuya.",
+      "Los documentos son nuestros.",
+      "Las ideas son suyas."
+    ],
+    "translate": [
+      "Este libro es mío.",
+      "La casa es tuya.",
+      "Los boletos son nuestros.",
+      "¿Estas llaves son tuyas?"
+    ]
+  },
+  "wrap_up_headers": ["Pronombre", "Example", "Translation"],
+  "wrap_up": [
+    {
+      "use": "Yo",
+      "example": "el mío / la mía / los míos / las mías",
+      "translation": "mine"
+    },
+    {
+      "use": "Tú",
+      "example": "el tuyo / la tuya / los tuyos / las tuyas",
+      "translation": "yours"
+    },
+    {
+      "use": "Él / Ella / Usted",
+      "example": "el suyo / la suya / los suyos / las suyas",
+      "translation": "his, hers, yours formal"
+    },
+    {
+      "use": "Nosotros / Nosotras",
+      "example": "el nuestro / la nuestra / los nuestros / las nuestras",
+      "translation": "ours"
+    },
+    {
+      "use": "Ellos / Ellas / Ustedes",
+      "example": "el suyo / la suya / los suyos / las suyas",
+      "translation": "theirs, yours plural"
+    }
+  ]
+}

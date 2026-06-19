@@ -1,0 +1,368 @@
+{
+  "intro": "The imperfect describes past habits, background, descriptions, and ongoing situations. It tells what life was like, not just what happened once.",
+  "overview": {
+    "body": "Use the imperfect for repeated past actions, age, time, weather, feelings, descriptions, and actions already in progress.",
+    "use_note": "past habits, descriptions, and background"
+  },
+  "examples": [
+    {
+      "spanish": "Cuando era niño, jugaba en la calle.",
+      "english": "When I was a child, I used to play in the street."
+    },
+    {
+      "spanish": "La casa era pequeña y tenía un patio.",
+      "english": "The house was small and had a patio."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Past habits",
+      "body": "Use the imperfect for what someone used to do or did regularly.",
+      "examples": [
+        {
+          "spanish": "Estudiábamos juntos los martes.",
+          "english": "We used to study together on Tuesdays."
+        },
+        {
+          "spanish": "Ella corría por la mañana.",
+          "english": "She used to run in the morning."
+        }
+      ]
+    },
+    {
+      "heading": "Background and description",
+      "body": "Use it to describe people, places, age, weather, and situations in the past.",
+      "examples": [
+        {
+          "spanish": "Era tarde y hacía frío.",
+          "english": "It was late and it was cold."
+        },
+        {
+          "spanish": "Mi abuelo tenía ochenta años.",
+          "english": "My grandfather was eighty years old."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Yo trabajaba en el centro.",
+        "english": "I used to work downtown."
+      },
+      {
+        "spanish": "Tú comías con tu familia.",
+        "english": "You used to eat with your family."
+      },
+      {
+        "spanish": "Ella vivía cerca.",
+        "english": "She used to live nearby."
+      },
+      {
+        "spanish": "Nosotros íbamos al parque.",
+        "english": "We used to go to the park."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "Yo no salía mucho.",
+        "english": "I did not use to go out much."
+      },
+      {
+        "spanish": "Él no tenía coche.",
+        "english": "He did not have a car."
+      },
+      {
+        "spanish": "Nosotras no veíamos televisión.",
+        "english": "We did not use to watch TV."
+      },
+      {
+        "spanish": "Ellos no eran vecinos.",
+        "english": "They were not neighbors."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Trabajabas los sábados?",
+        "english": "Did you use to work on Saturdays?"
+      },
+      {
+        "spanish": "¿Ella vivía aquí?",
+        "english": "Did she use to live here?"
+      },
+      {
+        "spanish": "¿Íbamos juntos?",
+        "english": "Did we use to go together?"
+      },
+      {
+        "spanish": "¿Ustedes veían esa serie?",
+        "english": "Did you all use to watch that series?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ mucho antes.",
+        "options": [
+          "trabajaba",
+          "trabajé",
+          "trabajo"
+        ],
+        "answer": "Yo trabajaba mucho antes."
+      },
+      {
+        "prompt": "Tú _____ café cada mañana.",
+        "options": [
+          "tomabas",
+          "tomaste",
+          "tomas"
+        ],
+        "answer": "Tú tomabas café cada mañana."
+      },
+      {
+        "prompt": "Ella _____ cerca.",
+        "options": [
+          "vivía",
+          "vivió",
+          "vive"
+        ],
+        "answer": "Ella vivía cerca."
+      },
+      {
+        "prompt": "Nosotros _____ al parque.",
+        "options": [
+          "íbamos",
+          "fuimos",
+          "vamos"
+        ],
+        "answer": "Nosotros íbamos al parque."
+      },
+      {
+        "prompt": "Ellos _____ estudiantes.",
+        "options": [
+          "eran",
+          "fueron",
+          "son"
+        ],
+        "answer": "Ellos eran estudiantes."
+      },
+      {
+        "prompt": "Yo no _____ coche.",
+        "options": [
+          "tenía",
+          "tuve",
+          "tengo"
+        ],
+        "answer": "Yo no tenía coche."
+      },
+      {
+        "prompt": "Usted _____ la ciudad.",
+        "options": [
+          "conocía",
+          "conoció",
+          "conoce"
+        ],
+        "answer": "Usted conocía la ciudad."
+      },
+      {
+        "prompt": "Nosotras _____ la tele.",
+        "options": [
+          "veíamos",
+          "vimos",
+          "vemos"
+        ],
+        "answer": "Nosotras veíamos la tele."
+      },
+      {
+        "prompt": "Tú _____ cansado.",
+        "options": [
+          "estabas",
+          "estuviste",
+          "estás"
+        ],
+        "answer": "Tú estabas cansado."
+      },
+      {
+        "prompt": "¿Ustedes _____ los domingos?",
+        "options": [
+          "salían",
+          "salieron",
+          "salen"
+        ],
+        "answer": "¿Ustedes salían los domingos?"
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ mucho antes.",
+        "answer": "Yo trabajaba mucho antes."
+      },
+      {
+        "prompt": "Tú ___ café cada mañana.",
+        "answer": "Tú tomabas café cada mañana."
+      },
+      {
+        "prompt": "Ella ___ cerca.",
+        "answer": "Ella vivía cerca."
+      },
+      {
+        "prompt": "Nosotros ___ al parque.",
+        "answer": "Nosotros íbamos al parque."
+      },
+      {
+        "prompt": "Ellos ___ estudiantes.",
+        "answer": "Ellos eran estudiantes."
+      },
+      {
+        "prompt": "Yo no ___ coche.",
+        "answer": "Yo no tenía coche."
+      },
+      {
+        "prompt": "Usted ___ la ciudad.",
+        "answer": "Usted conocía la ciudad."
+      },
+      {
+        "prompt": "Nosotras ___ la tele.",
+        "answer": "Nosotras veíamos la tele."
+      },
+      {
+        "prompt": "Tú ___ cansado.",
+        "answer": "Tú estabas cansado."
+      },
+      {
+        "prompt": "¿Ustedes ___ los domingos?",
+        "answer": "¿Ustedes salían los domingos?"
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I used to work a lot.",
+        "answer": "Trabajaba mucho."
+      },
+      {
+        "prompt": "You used to drink coffee every morning.",
+        "answer": "Tú tomabas café cada mañana."
+      },
+      {
+        "prompt": "She used to live nearby.",
+        "answer": "Ella vivía cerca."
+      },
+      {
+        "prompt": "We used to go to the park.",
+        "answer": "Íbamos al parque."
+      },
+      {
+        "prompt": "They were students.",
+        "answer": "Ellos eran estudiantes."
+      },
+      {
+        "prompt": "I did not have a car.",
+        "answer": "No tenía coche."
+      },
+      {
+        "prompt": "You knew the city.",
+        "answer": "Usted conocía la ciudad."
+      },
+      {
+        "prompt": "We used to watch TV.",
+        "answer": "Veíamos la tele."
+      },
+      {
+        "prompt": "You were tired.",
+        "answer": "Tú estabas cansado."
+      },
+      {
+        "prompt": "Did you all go out on Sundays?",
+        "answer": "¿Ustedes salían los domingos?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo trabajaba mucho antes.",
+      "Tú tomabas café cada mañana.",
+      "Ella vivía cerca.",
+      "Nosotros íbamos al parque.",
+      "Ellos eran estudiantes.",
+      "Yo no tenía coche.",
+      "Usted conocía la ciudad.",
+      "Nosotras veíamos la tele.",
+      "Tú estabas cansado.",
+      "¿Ustedes salían los domingos?"
+    ],
+    "complete": [
+      "Yo trabajaba mucho antes.",
+      "Tú tomabas café cada mañana.",
+      "Ella vivía cerca.",
+      "Nosotros íbamos al parque.",
+      "Ellos eran estudiantes.",
+      "Yo no tenía coche.",
+      "Usted conocía la ciudad.",
+      "Nosotras veíamos la tele.",
+      "Tú estabas cansado.",
+      "¿Ustedes salían los domingos?"
+    ],
+    "translate": [
+      "Trabajaba mucho.",
+      "Tú tomabas café cada mañana.",
+      "Ella vivía cerca.",
+      "Íbamos al parque.",
+      "Ellos eran estudiantes.",
+      "No tenía coche.",
+      "Usted conocía la ciudad.",
+      "Veíamos la tele.",
+      "Tú estabas cansado.",
+      "¿Ustedes salían los domingos?"
+    ]
+  },
+  "conjugation": [
+    {
+      "subject": "Yo",
+      "form": "hablaba / comía / vivía",
+      "example": "Yo vivía en Lima.",
+      "translation": "I used to live in Lima."
+    },
+    {
+      "subject": "Tú",
+      "form": "hablabas / comías / vivías",
+      "example": "Tú trabajabas mucho.",
+      "translation": "You used to work a lot."
+    },
+    {
+      "subject": "Él / Ella / Usted",
+      "form": "hablaba / comía / vivía",
+      "example": "Ella comía temprano.",
+      "translation": "She used to eat early."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "hablábamos / comíamos / vivíamos",
+      "example": "Nosotros hablábamos cada día.",
+      "translation": "We used to talk every day."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "hablaban / comían / vivían",
+      "example": "Ellos vivían cerca.",
+      "translation": "They used to live nearby."
+    }
+  ],
+  "wrap_up": [
+    {
+      "use": "Habit",
+      "example": "Trabajaba los sábados.",
+      "translation": "I used to work on Saturdays."
+    },
+    {
+      "use": "Description",
+      "example": "La ciudad era tranquila.",
+      "translation": "The city was quiet."
+    },
+    {
+      "use": "Background",
+      "example": "Llovía cuando salí.",
+      "translation": "It was raining when I left."
+    }
+  ]
+}

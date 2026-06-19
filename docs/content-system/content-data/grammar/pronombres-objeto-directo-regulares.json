@@ -1,0 +1,336 @@
+{
+  "intro": "Direct object pronouns replace the thing or person that receives the action directly. Use them to avoid repeating the same noun again and again.",
+  "overview": {
+    "body": "The basic direct object pronouns are me, te, lo, la, nos, los, and las. In simple sentences, they usually go before the conjugated verb.",
+    "use_note": "direct object pronouns with regular verbs"
+  },
+  "examples": [
+    {
+      "spanish": "Compro el libro. Lo compro.",
+      "english": "I buy the book. I buy it."
+    },
+    {
+      "spanish": "Veo a Ana. La veo.",
+      "english": "I see Ana. I see her."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Replace a repeated noun",
+      "body": "Use lo, la, los, or las when the object is already clear.",
+      "examples": [
+        {
+          "spanish": "Tengo el boleto. Lo tengo.",
+          "english": "I have the ticket. I have it."
+        },
+        {
+          "spanish": "Compro las entradas. Las compro.",
+          "english": "I buy the tickets. I buy them."
+        }
+      ]
+    },
+    {
+      "heading": "People can be direct objects",
+      "body": "Use me, te, nos, lo, la, los, or las for people who receive the action directly.",
+      "examples": [
+        {
+          "spanish": "Ana me ayuda.",
+          "english": "Ana helps me."
+        },
+        {
+          "spanish": "Yo te escucho.",
+          "english": "I listen to you."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Lo veo todos los días.",
+        "english": "I see it every day."
+      },
+      {
+        "spanish": "La compré ayer.",
+        "english": "I bought it yesterday."
+      },
+      {
+        "spanish": "Nos invitaron a cenar.",
+        "english": "They invited us to dinner."
+      },
+      {
+        "spanish": "Los necesitamos ahora.",
+        "english": "We need them now."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No lo tengo aquí.",
+        "english": "I do not have it here."
+      },
+      {
+        "spanish": "Ella no me conoce.",
+        "english": "She does not know me."
+      },
+      {
+        "spanish": "No las encontré.",
+        "english": "I did not find them."
+      },
+      {
+        "spanish": "Ellos no nos escuchan.",
+        "english": "They do not listen to us."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Lo quieres ahora?",
+        "english": "Do you want it now?"
+      },
+      {
+        "spanish": "¿La viste ayer?",
+        "english": "Did you see her yesterday?"
+      },
+      {
+        "spanish": "¿Nos llamaron?",
+        "english": "Did they call us?"
+      },
+      {
+        "spanish": "¿Los compraste?",
+        "english": "Did you buy them?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ veo.",
+        "options": [
+          "lo",
+          "le",
+          "se"
+        ],
+        "answer": "Yo lo veo."
+      },
+      {
+        "prompt": "Ella _____ compra.",
+        "options": [
+          "la",
+          "le",
+          "se"
+        ],
+        "answer": "Ella la compra."
+      },
+      {
+        "prompt": "Nosotros _____ necesitamos.",
+        "options": [
+          "los",
+          "les",
+          "se"
+        ],
+        "answer": "Nosotros los necesitamos."
+      },
+      {
+        "prompt": "Tú _____ llamas.",
+        "options": [
+          "me",
+          "mi",
+          "yo"
+        ],
+        "answer": "Tú me llamas."
+      },
+      {
+        "prompt": "Ellos _____ escuchan.",
+        "options": [
+          "nos",
+          "les",
+          "se"
+        ],
+        "answer": "Ellos nos escuchan."
+      },
+      {
+        "prompt": "No _____ tengo.",
+        "options": [
+          "lo",
+          "le",
+          "se"
+        ],
+        "answer": "No lo tengo."
+      },
+      {
+        "prompt": "¿_____ quieres?",
+        "options": [
+          "La",
+          "Le",
+          "Se"
+        ],
+        "answer": "¿La quieres?"
+      },
+      {
+        "prompt": "Usted _____ entiende.",
+        "options": [
+          "me",
+          "mi",
+          "yo"
+        ],
+        "answer": "Usted me entiende."
+      },
+      {
+        "prompt": "Yo _____ invito.",
+        "options": [
+          "te",
+          "tu",
+          "ti"
+        ],
+        "answer": "Yo te invito."
+      },
+      {
+        "prompt": "Ana _____ busca.",
+        "options": [
+          "los",
+          "les",
+          "se"
+        ],
+        "answer": "Ana los busca."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ veo en la mesa.",
+        "answer": "Yo lo veo en la mesa."
+      },
+      {
+        "prompt": "Ella ___ compra hoy.",
+        "answer": "Ella la compra hoy."
+      },
+      {
+        "prompt": "Nosotros ___ necesitamos.",
+        "answer": "Nosotros los necesitamos."
+      },
+      {
+        "prompt": "Tú ___ llamas por la tarde.",
+        "answer": "Tú me llamas por la tarde."
+      },
+      {
+        "prompt": "Ellos ___ escuchan.",
+        "answer": "Ellos nos escuchan."
+      },
+      {
+        "prompt": "No ___ tengo aquí.",
+        "answer": "No lo tengo aquí."
+      },
+      {
+        "prompt": "¿Tú ___ quieres?",
+        "answer": "¿Tú la quieres?"
+      },
+      {
+        "prompt": "Usted ___ entiende bien.",
+        "answer": "Usted me entiende bien."
+      },
+      {
+        "prompt": "Yo ___ invito a cenar.",
+        "answer": "Yo te invito a cenar."
+      },
+      {
+        "prompt": "Ana ___ busca en la oficina.",
+        "answer": "Ana los busca en la oficina."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I see it.",
+        "answer": "Lo veo."
+      },
+      {
+        "prompt": "She buys it.",
+        "answer": "Ella la compra."
+      },
+      {
+        "prompt": "We need them.",
+        "answer": "Los necesitamos."
+      },
+      {
+        "prompt": "You call me.",
+        "answer": "Tú me llamas."
+      },
+      {
+        "prompt": "They listen to us.",
+        "answer": "Ellos nos escuchan."
+      },
+      {
+        "prompt": "I do not have it.",
+        "answer": "No lo tengo."
+      },
+      {
+        "prompt": "Do you want it?",
+        "answer": "¿La quieres?"
+      },
+      {
+        "prompt": "You understand me.",
+        "answer": "Usted me entiende."
+      },
+      {
+        "prompt": "I invite you.",
+        "answer": "Te invito."
+      },
+      {
+        "prompt": "Ana looks for them.",
+        "answer": "Ana los busca."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo lo veo.",
+      "Ella la compra.",
+      "Nosotros los necesitamos.",
+      "Tú me llamas.",
+      "Ellos nos escuchan.",
+      "No lo tengo.",
+      "¿La quieres?",
+      "Usted me entiende.",
+      "Yo te invito.",
+      "Ana los busca."
+    ],
+    "complete": [
+      "Yo lo veo en la mesa.",
+      "Ella la compra hoy.",
+      "Nosotros los necesitamos.",
+      "Tú me llamas por la tarde.",
+      "Ellos nos escuchan.",
+      "No lo tengo aquí.",
+      "¿Tú la quieres?",
+      "Usted me entiende bien.",
+      "Yo te invito a cenar.",
+      "Ana los busca en la oficina."
+    ],
+    "translate": [
+      "Lo veo.",
+      "Ella la compra.",
+      "Los necesitamos.",
+      "Tú me llamas.",
+      "Ellos nos escuchan.",
+      "No lo tengo.",
+      "¿La quieres?",
+      "Usted me entiende.",
+      "Te invito.",
+      "Ana los busca."
+    ]
+  },
+  "structure": [
+    {
+      "pattern": "subject + direct object pronoun + verb",
+      "example": "Yo lo necesito.",
+      "translation": "I need it."
+    },
+    {
+      "pattern": "no + direct object pronoun + verb",
+      "example": "No la veo.",
+      "translation": "I do not see her."
+    },
+    {
+      "pattern": "question + direct object pronoun + verb",
+      "example": "¿Los quieres?",
+      "translation": "Do you want them?"
+    }
+  ]
+}

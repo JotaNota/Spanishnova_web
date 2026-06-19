@@ -1,0 +1,336 @@
+{
+  "intro": "Decir in the preterite is common with indirect object pronouns because we often tell something to someone. Use me, te, le, nos, and les before dije, dijiste, dijo, dijimos, and dijeron.",
+  "overview": {
+    "body": "The structure is simple: indirect object pronoun + decir in the preterite + what was said. Le dije la verdad means I told him or her the truth.",
+    "use_note": "indirect object pronouns with decir in the preterite"
+  },
+  "examples": [
+    {
+      "spanish": "Le dije la verdad.",
+      "english": "I told him the truth."
+    },
+    {
+      "spanish": "Nos dijeron la hora.",
+      "english": "They told us the time."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Tell information to someone",
+      "body": "Use this pattern when the person receives information, news, an answer, or a warning.",
+      "examples": [
+        {
+          "spanish": "Te dije la dirección.",
+          "english": "I told you the address."
+        },
+        {
+          "spanish": "Nos dijeron la noticia.",
+          "english": "They told us the news."
+        }
+      ]
+    },
+    {
+      "heading": "Use a + person for clarity",
+      "body": "Add a mí, a ti, a él, a ella, or a ellos when le or les could be unclear.",
+      "examples": [
+        {
+          "spanish": "Le dije a Ana que no.",
+          "english": "I told Ana no."
+        },
+        {
+          "spanish": "Les dije a mis amigos la verdad.",
+          "english": "I told my friends the truth."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Le escribo a Ana.",
+        "english": "I write to Ana."
+      },
+      {
+        "spanish": "Me dieron una respuesta.",
+        "english": "They gave me an answer."
+      },
+      {
+        "spanish": "Nos mandaron el archivo.",
+        "english": "They sent us the file."
+      },
+      {
+        "spanish": "Les expliqué el problema.",
+        "english": "I explained the problem to them."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No le dije nada.",
+        "english": "I did not tell him anything."
+      },
+      {
+        "spanish": "Ella no me respondió.",
+        "english": "She did not answer me."
+      },
+      {
+        "spanish": "No nos enviaron la dirección.",
+        "english": "They did not send us the address."
+      },
+      {
+        "spanish": "No les gustó la idea.",
+        "english": "They did not like the idea."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Me mandaste el enlace?",
+        "english": "Did you send me the link?"
+      },
+      {
+        "spanish": "¿Le escribiste a tu jefe?",
+        "english": "Did you write to your boss?"
+      },
+      {
+        "spanish": "¿Nos explican el plan?",
+        "english": "Do they explain the plan to us?"
+      },
+      {
+        "spanish": "¿Les diste el número?",
+        "english": "Did you give them the number?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ dije la verdad.",
+        "options": [
+          "le",
+          "lo",
+          "la"
+        ],
+        "answer": "Yo le dije la verdad."
+      },
+      {
+        "prompt": "Ella _____ dijo que sí.",
+        "options": [
+          "me",
+          "mi",
+          "yo"
+        ],
+        "answer": "Ella me dijo que sí."
+      },
+      {
+        "prompt": "Nosotros _____ dijimos el plan.",
+        "options": [
+          "te",
+          "tu",
+          "ti"
+        ],
+        "answer": "Nosotros te dijimos el plan."
+      },
+      {
+        "prompt": "Ellos _____ dijeron la hora.",
+        "options": [
+          "nos",
+          "los",
+          "las"
+        ],
+        "answer": "Ellos nos dijeron la hora."
+      },
+      {
+        "prompt": "Yo _____ dije la noticia.",
+        "options": [
+          "les",
+          "los",
+          "las"
+        ],
+        "answer": "Yo les dije la noticia."
+      },
+      {
+        "prompt": "No _____ dije nada.",
+        "options": [
+          "le",
+          "lo",
+          "la"
+        ],
+        "answer": "No le dije nada."
+      },
+      {
+        "prompt": "¿_____ dijiste la dirección?",
+        "options": [
+          "Me",
+          "Mi",
+          "Yo"
+        ],
+        "answer": "¿Me dijiste la dirección?"
+      },
+      {
+        "prompt": "Usted _____ dijo la respuesta.",
+        "options": [
+          "nos",
+          "los",
+          "las"
+        ],
+        "answer": "Usted nos dijo la respuesta."
+      },
+      {
+        "prompt": "Ana _____ dijo la verdad.",
+        "options": [
+          "te",
+          "tu",
+          "ti"
+        ],
+        "answer": "Ana te dijo la verdad."
+      },
+      {
+        "prompt": "Ellas _____ dijeron que no.",
+        "options": [
+          "les",
+          "los",
+          "las"
+        ],
+        "answer": "Ellas les dijeron que no."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ dije la verdad.",
+        "answer": "Yo le dije la verdad."
+      },
+      {
+        "prompt": "Ella ___ dijo que sí.",
+        "answer": "Ella me dijo que sí."
+      },
+      {
+        "prompt": "Nosotros ___ dijimos el plan.",
+        "answer": "Nosotros te dijimos el plan."
+      },
+      {
+        "prompt": "Ellos ___ dijeron la hora.",
+        "answer": "Ellos nos dijeron la hora."
+      },
+      {
+        "prompt": "Yo ___ dije la noticia.",
+        "answer": "Yo les dije la noticia."
+      },
+      {
+        "prompt": "No ___ dije nada.",
+        "answer": "No le dije nada."
+      },
+      {
+        "prompt": "¿Tú ___ dijiste la dirección?",
+        "answer": "¿Tú me dijiste la dirección?"
+      },
+      {
+        "prompt": "Usted ___ dijo la respuesta.",
+        "answer": "Usted nos dijo la respuesta."
+      },
+      {
+        "prompt": "Ana ___ dijo la verdad.",
+        "answer": "Ana te dijo la verdad."
+      },
+      {
+        "prompt": "Ellas ___ dijeron que no.",
+        "answer": "Ellas les dijeron que no."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I told him the truth.",
+        "answer": "Le dije la verdad."
+      },
+      {
+        "prompt": "She told me yes.",
+        "answer": "Ella me dijo que sí."
+      },
+      {
+        "prompt": "We told you the plan.",
+        "answer": "Te dijimos el plan."
+      },
+      {
+        "prompt": "They told us the time.",
+        "answer": "Nos dijeron la hora."
+      },
+      {
+        "prompt": "I told them the news.",
+        "answer": "Les dije la noticia."
+      },
+      {
+        "prompt": "I did not tell her anything.",
+        "answer": "No le dije nada."
+      },
+      {
+        "prompt": "Did you tell me the address?",
+        "answer": "¿Me dijiste la dirección?"
+      },
+      {
+        "prompt": "You told us the answer.",
+        "answer": "Usted nos dijo la respuesta."
+      },
+      {
+        "prompt": "Ana told you the truth.",
+        "answer": "Ana te dijo la verdad."
+      },
+      {
+        "prompt": "They told them no.",
+        "answer": "Ellas les dijeron que no."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo le dije la verdad.",
+      "Ella me dijo que sí.",
+      "Nosotros te dijimos el plan.",
+      "Ellos nos dijeron la hora.",
+      "Yo les dije la noticia.",
+      "No le dije nada.",
+      "¿Me dijiste la dirección?",
+      "Usted nos dijo la respuesta.",
+      "Ana te dijo la verdad.",
+      "Ellas les dijeron que no."
+    ],
+    "complete": [
+      "Yo le dije la verdad.",
+      "Ella me dijo que sí.",
+      "Nosotros te dijimos el plan.",
+      "Ellos nos dijeron la hora.",
+      "Yo les dije la noticia.",
+      "No le dije nada.",
+      "¿Tú me dijiste la dirección?",
+      "Usted nos dijo la respuesta.",
+      "Ana te dijo la verdad.",
+      "Ellas les dijeron que no."
+    ],
+    "translate": [
+      "Le dije la verdad.",
+      "Ella me dijo que sí.",
+      "Te dijimos el plan.",
+      "Nos dijeron la hora.",
+      "Les dije la noticia.",
+      "No le dije nada.",
+      "¿Me dijiste la dirección?",
+      "Usted nos dijo la respuesta.",
+      "Ana te dijo la verdad.",
+      "Ellas les dijeron que no."
+    ]
+  },
+  "structure": [
+    {
+      "pattern": "indirect object pronoun + verb + thing",
+      "example": "Le mando un mensaje.",
+      "translation": "I send him a message."
+    },
+    {
+      "pattern": "no + indirect object pronoun + verb",
+      "example": "No me respondió.",
+      "translation": "She did not answer me."
+    },
+    {
+      "pattern": "indirect object pronoun + verb + a + person",
+      "example": "Le escribo a Ana.",
+      "translation": "I write to Ana."
+    }
+  ]
+}

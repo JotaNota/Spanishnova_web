@@ -1,0 +1,268 @@
+{
+  "intro": "Many common Spanish verbs are irregular in the present indicative. Their endings may look familiar, but the stem or the yo form changes.",
+  "overview": {
+    "body": "Present indicative irregular verbs include stem-changing verbs like querer and poder, yo-form verbs like hacer and poner, and very common irregular verbs like ser, estar, ir, and tener.",
+    "use_note": "common present-tense irregular verbs"
+  },
+  "examples": [
+    {
+      "spanish": "Yo hago la tarea.",
+      "english": "I do the homework."
+    },
+    {
+      "spanish": "Ella quiere café.",
+      "english": "She wants coffee."
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "subject + irregular present form + noun",
+      "example": "Yo tengo una pregunta.",
+      "translation": "I have a question."
+    },
+    {
+      "pattern": "subject + irregular present form + infinitive",
+      "example": "Ella puede venir.",
+      "translation": "She can come."
+    },
+    {
+      "pattern": "no + irregular present form",
+      "example": "No sé la respuesta.",
+      "translation": "I do not know the answer."
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Yo",
+      "form": "hago / tengo / voy / sé",
+      "example": "Yo hago ejercicio.",
+      "translation": "I exercise."
+    },
+    {
+      "subject": "Tú",
+      "form": "quieres / puedes / tienes / vas",
+      "example": "Tú quieres aprender.",
+      "translation": "You want to learn."
+    },
+    {
+      "subject": "Él / Ella / Usted",
+      "form": "quiere / puede / tiene / va",
+      "example": "Ella puede ayudar.",
+      "translation": "She can help."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "queremos / podemos / tenemos / vamos",
+      "example": "Nosotros tenemos tiempo.",
+      "translation": "We have time."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "quieren / pueden / tienen / van",
+      "example": "Ellos van al mercado.",
+      "translation": "They go to the market."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Stem-changing verbs",
+      "body": "Some verbs change the stem in most present-tense forms, but nosotros often keeps the original stem.",
+      "examples": [
+        {
+          "spanish": "Yo quiero practicar.",
+          "english": "I want to practice."
+        },
+        {
+          "spanish": "Nosotros podemos estudiar hoy.",
+          "english": "We can study today."
+        }
+      ]
+    },
+    {
+      "heading": "Irregular yo forms",
+      "body": "Some verbs are irregular mainly in the yo form.",
+      "examples": [
+        {
+          "spanish": "Yo hago la cena.",
+          "english": "I make dinner."
+        },
+        {
+          "spanish": "Yo pongo el libro aquí.",
+          "english": "I put the book here."
+        }
+      ]
+    },
+    {
+      "heading": "Very common irregular verbs",
+      "body": "Ser, estar, ir, and tener are common irregular verbs that need extra practice.",
+      "examples": [
+        {
+          "spanish": "Ella está en casa.",
+          "english": "She is at home."
+        },
+        {
+          "spanish": "Ustedes van a clase.",
+          "english": "You all go to class."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Yo tengo dos hermanos.",
+        "english": "I have two siblings."
+      },
+      {
+        "spanish": "Tú puedes abrir la puerta.",
+        "english": "You can open the door."
+      },
+      {
+        "spanish": "Ella quiere agua.",
+        "english": "She wants water."
+      },
+      {
+        "spanish": "Nosotros vamos al parque.",
+        "english": "We go to the park."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "Yo no sé la respuesta.",
+        "english": "I do not know the answer."
+      },
+      {
+        "spanish": "Tú no tienes tiempo.",
+        "english": "You do not have time."
+      },
+      {
+        "spanish": "Él no puede venir.",
+        "english": "He cannot come."
+      },
+      {
+        "spanish": "Ellas no van hoy.",
+        "english": "They are not going today."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Tienes una pregunta?",
+        "english": "Do you have a question?"
+      },
+      {
+        "spanish": "¿Ella quiere café?",
+        "english": "Does she want coffee?"
+      },
+      {
+        "spanish": "¿Ustedes pueden esperar?",
+        "english": "Can you all wait?"
+      },
+      {
+        "spanish": "¿Vamos ahora?",
+        "english": "Are we going now?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ la cena.",
+        "options": ["hago", "haces", "hace"],
+        "answer": "Yo hago la cena."
+      },
+      {
+        "prompt": "Ella _____ agua.",
+        "options": ["quiero", "quiere", "queremos"],
+        "answer": "Ella quiere agua."
+      },
+      {
+        "prompt": "Nosotros _____ tiempo.",
+        "options": ["tengo", "tiene", "tenemos"],
+        "answer": "Nosotros tenemos tiempo."
+      },
+      {
+        "prompt": "Ustedes _____ a clase.",
+        "options": ["voy", "van", "vamos"],
+        "answer": "Ustedes van a clase."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ una pregunta.",
+        "answer": "Yo tengo una pregunta."
+      },
+      {
+        "prompt": "Tú ___ practicar.",
+        "answer": "Tú quieres practicar."
+      },
+      {
+        "prompt": "Ella ___ ayudar.",
+        "answer": "Ella puede ayudar."
+      },
+      {
+        "prompt": "Nosotros ___ al mercado.",
+        "answer": "Nosotros vamos al mercado."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I make dinner.",
+        "answer": "Yo hago la cena."
+      },
+      {
+        "prompt": "She wants coffee.",
+        "answer": "Ella quiere café."
+      },
+      {
+        "prompt": "We have time.",
+        "answer": "Nosotros tenemos tiempo."
+      },
+      {
+        "prompt": "Can you all wait?",
+        "answer": "¿Ustedes pueden esperar?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo hago la cena.",
+      "Ella quiere agua.",
+      "Nosotros tenemos tiempo.",
+      "Ustedes van a clase."
+    ],
+    "complete": [
+      "Yo tengo una pregunta.",
+      "Tú quieres practicar.",
+      "Ella puede ayudar.",
+      "Nosotros vamos al mercado."
+    ],
+    "translate": [
+      "Yo hago la cena.",
+      "Ella quiere café.",
+      "Nosotros tenemos tiempo.",
+      "¿Ustedes pueden esperar?"
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Stem change",
+      "example": "Ella quiere café.",
+      "translation": "She wants coffee."
+    },
+    {
+      "use": "Irregular yo",
+      "example": "Yo hago la cena.",
+      "translation": "I make dinner."
+    },
+    {
+      "use": "Common irregular verb",
+      "example": "Nosotros vamos al parque.",
+      "translation": "We go to the park."
+    },
+    {
+      "use": "Question",
+      "example": "¿Ustedes pueden esperar?",
+      "translation": "Can you all wait?"
+    }
+  ]
+}

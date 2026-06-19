@@ -1,0 +1,368 @@
+{
+  "intro": "The present perfect subjunctive talks about actions that may have happened, have not happened, or matter now inside a subjunctive trigger.",
+  "overview": {
+    "body": "The present perfect subjunctive talks about actions that may have happened, have not happened, or matter now inside a subjunctive trigger. Focus on the message first, then choose the form that fits the context.",
+    "use_note": "present perfect subjunctive forms"
+  },
+  "examples": [
+    {
+      "spanish": "Present perfect subjunctive: ejemplo principal.",
+      "english": "Present perfect subjunctive: main example."
+    },
+    {
+      "spanish": "Present perfect subjunctive: otro ejemplo ?til.",
+      "english": "Present perfect subjunctive: another useful example."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Real use",
+      "body": "Use this pattern when present perfect subjunctive helps express a real message, not just a grammar label.",
+      "examples": [
+        {
+          "spanish": "Present perfect subjunctive: ejemplo pr?ctico uno.",
+          "english": "Present perfect subjunctive: practical example one."
+        },
+        {
+          "spanish": "Present perfect subjunctive: ejemplo pr?ctico dos.",
+          "english": "Present perfect subjunctive: practical example two."
+        }
+      ]
+    },
+    {
+      "heading": "Common context",
+      "body": "This form often appears in everyday explanations, plans, advice, and reactions depending on the sentence.",
+      "examples": [
+        {
+          "spanish": "Present perfect subjunctive: contexto com?n uno.",
+          "english": "Present perfect subjunctive: common context one."
+        },
+        {
+          "spanish": "Present perfect subjunctive: contexto com?n dos.",
+          "english": "Present perfect subjunctive: common context two."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Present perfect subjunctive: frase afirmativa 1.",
+        "english": "Present perfect subjunctive: affirmative sentence 1."
+      },
+      {
+        "spanish": "Present perfect subjunctive: frase afirmativa 2.",
+        "english": "Present perfect subjunctive: affirmative sentence 2."
+      },
+      {
+        "spanish": "Present perfect subjunctive: frase afirmativa 3.",
+        "english": "Present perfect subjunctive: affirmative sentence 3."
+      },
+      {
+        "spanish": "Present perfect subjunctive: frase afirmativa 4.",
+        "english": "Present perfect subjunctive: affirmative sentence 4."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No usamos present perfect subjunctive as? en el ejemplo 1.",
+        "english": "We do not use present perfect subjunctive like that in example 1."
+      },
+      {
+        "spanish": "No usamos present perfect subjunctive as? en el ejemplo 2.",
+        "english": "We do not use present perfect subjunctive like that in example 2."
+      },
+      {
+        "spanish": "No usamos present perfect subjunctive as? en el ejemplo 3.",
+        "english": "We do not use present perfect subjunctive like that in example 3."
+      },
+      {
+        "spanish": "No usamos present perfect subjunctive as? en el ejemplo 4.",
+        "english": "We do not use present perfect subjunctive like that in example 4."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "Present perfect subjunctive: pregunta modelo 1.",
+        "english": "Present perfect subjunctive: model question 1."
+      },
+      {
+        "spanish": "Present perfect subjunctive: pregunta modelo 2.",
+        "english": "Present perfect subjunctive: model question 2."
+      },
+      {
+        "spanish": "Present perfect subjunctive: pregunta modelo 3.",
+        "english": "Present perfect subjunctive: model question 3."
+      },
+      {
+        "spanish": "Present perfect subjunctive: pregunta modelo 4.",
+        "english": "Present perfect subjunctive: model question 4."
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Present perfect subjunctive: opci?n 1 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Present perfect subjunctive: opci?n 1 forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: opci?n 2 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Present perfect subjunctive: opci?n 2 forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: opci?n 3 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Present perfect subjunctive: opci?n 3 forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: opci?n 4 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Present perfect subjunctive: opci?n 4 forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: opci?n 5 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Present perfect subjunctive: opci?n 5 forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: opci?n 6 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Present perfect subjunctive: opci?n 6 forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: opci?n 7 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Present perfect subjunctive: opci?n 7 forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: opci?n 8 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Present perfect subjunctive: opci?n 8 forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: opci?n 9 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Present perfect subjunctive: opci?n 9 forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: opci?n 10 _____.",
+        "options": [
+          "forma correcta",
+          "otra forma",
+          "forma no usada"
+        ],
+        "answer": "Present perfect subjunctive: opci?n 10 forma correcta."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Present perfect subjunctive: completa la idea 1: ___.",
+        "answer": "Present perfect subjunctive: completa la idea 1: forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: completa la idea 2: ___.",
+        "answer": "Present perfect subjunctive: completa la idea 2: forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: completa la idea 3: ___.",
+        "answer": "Present perfect subjunctive: completa la idea 3: forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: completa la idea 4: ___.",
+        "answer": "Present perfect subjunctive: completa la idea 4: forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: completa la idea 5: ___.",
+        "answer": "Present perfect subjunctive: completa la idea 5: forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: completa la idea 6: ___.",
+        "answer": "Present perfect subjunctive: completa la idea 6: forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: completa la idea 7: ___.",
+        "answer": "Present perfect subjunctive: completa la idea 7: forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: completa la idea 8: ___.",
+        "answer": "Present perfect subjunctive: completa la idea 8: forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: completa la idea 9: ___.",
+        "answer": "Present perfect subjunctive: completa la idea 9: forma correcta."
+      },
+      {
+        "prompt": "Present perfect subjunctive: completa la idea 10: ___.",
+        "answer": "Present perfect subjunctive: completa la idea 10: forma correcta."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "Present perfect subjunctive practice sentence 1.",
+        "answer": "Present perfect subjunctive: frase modelo 1."
+      },
+      {
+        "prompt": "Present perfect subjunctive practice sentence 2.",
+        "answer": "Present perfect subjunctive: frase modelo 2."
+      },
+      {
+        "prompt": "Present perfect subjunctive practice sentence 3.",
+        "answer": "Present perfect subjunctive: frase modelo 3."
+      },
+      {
+        "prompt": "Present perfect subjunctive practice sentence 4.",
+        "answer": "Present perfect subjunctive: frase modelo 4."
+      },
+      {
+        "prompt": "Present perfect subjunctive practice sentence 5.",
+        "answer": "Present perfect subjunctive: frase modelo 5."
+      },
+      {
+        "prompt": "Present perfect subjunctive practice sentence 6.",
+        "answer": "Present perfect subjunctive: frase modelo 6."
+      },
+      {
+        "prompt": "Present perfect subjunctive practice sentence 7.",
+        "answer": "Present perfect subjunctive: frase modelo 7."
+      },
+      {
+        "prompt": "Present perfect subjunctive practice sentence 8.",
+        "answer": "Present perfect subjunctive: frase modelo 8."
+      },
+      {
+        "prompt": "Present perfect subjunctive practice sentence 9.",
+        "answer": "Present perfect subjunctive: frase modelo 9."
+      },
+      {
+        "prompt": "Present perfect subjunctive practice sentence 10.",
+        "answer": "Present perfect subjunctive: frase modelo 10."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Present perfect subjunctive: opci?n 1 forma correcta.",
+      "Present perfect subjunctive: opci?n 2 forma correcta.",
+      "Present perfect subjunctive: opci?n 3 forma correcta.",
+      "Present perfect subjunctive: opci?n 4 forma correcta.",
+      "Present perfect subjunctive: opci?n 5 forma correcta.",
+      "Present perfect subjunctive: opci?n 6 forma correcta.",
+      "Present perfect subjunctive: opci?n 7 forma correcta.",
+      "Present perfect subjunctive: opci?n 8 forma correcta.",
+      "Present perfect subjunctive: opci?n 9 forma correcta.",
+      "Present perfect subjunctive: opci?n 10 forma correcta."
+    ],
+    "complete": [
+      "Present perfect subjunctive: completa la idea 1: forma correcta.",
+      "Present perfect subjunctive: completa la idea 2: forma correcta.",
+      "Present perfect subjunctive: completa la idea 3: forma correcta.",
+      "Present perfect subjunctive: completa la idea 4: forma correcta.",
+      "Present perfect subjunctive: completa la idea 5: forma correcta.",
+      "Present perfect subjunctive: completa la idea 6: forma correcta.",
+      "Present perfect subjunctive: completa la idea 7: forma correcta.",
+      "Present perfect subjunctive: completa la idea 8: forma correcta.",
+      "Present perfect subjunctive: completa la idea 9: forma correcta.",
+      "Present perfect subjunctive: completa la idea 10: forma correcta."
+    ],
+    "translate": [
+      "Present perfect subjunctive: frase modelo 1.",
+      "Present perfect subjunctive: frase modelo 2.",
+      "Present perfect subjunctive: frase modelo 3.",
+      "Present perfect subjunctive: frase modelo 4.",
+      "Present perfect subjunctive: frase modelo 5.",
+      "Present perfect subjunctive: frase modelo 6.",
+      "Present perfect subjunctive: frase modelo 7.",
+      "Present perfect subjunctive: frase modelo 8.",
+      "Present perfect subjunctive: frase modelo 9.",
+      "Present perfect subjunctive: frase modelo 10."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Core idea",
+      "example": "Present perfect subjunctive: ejemplo claro.",
+      "translation": "Clear example."
+    },
+    {
+      "use": "Negative or contrast",
+      "example": "Present perfect subjunctive: no siempre cambia igual.",
+      "translation": "It does not always change the same way."
+    },
+    {
+      "use": "Question",
+      "example": "Cmo usas present perfect subjunctive",
+      "translation": "How do you use it?"
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Yo",
+      "form": "forma yo",
+      "example": "Present perfect subjunctive: yo uso la forma.",
+      "translation": "I use the form."
+    },
+    {
+      "subject": "T?",
+      "form": "forma t?",
+      "example": "Present perfect subjunctive: t? usas la forma.",
+      "translation": "You use the form."
+    },
+    {
+      "subject": "?l / Ella / Usted",
+      "form": "forma ?l/ella/usted",
+      "example": "Present perfect subjunctive: ella usa la forma.",
+      "translation": "She uses the form."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "forma nosotros",
+      "example": "Present perfect subjunctive: nosotros usamos la forma.",
+      "translation": "We use the form."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "forma ellos/ustedes",
+      "example": "Present perfect subjunctive: ellos usan la forma.",
+      "translation": "They use the form."
+    }
+  ]
+}

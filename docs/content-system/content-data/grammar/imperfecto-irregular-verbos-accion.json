@@ -1,0 +1,368 @@
+{
+  "intro": "Only three verbs are truly irregular in the imperfect: ser, ir, and ver. They are common because they describe background, repeated movement, and what someone could see or was watching.",
+  "overview": {
+    "body": "Use era for what someone was like, iba for where someone used to go, and veía for what someone saw or used to watch.",
+    "use_note": "ser, ir, and ver in the imperfect"
+  },
+  "examples": [
+    {
+      "spanish": "Yo era estudiante y veía a mis amigos todos los días.",
+      "english": "I was a student and used to see my friends every day."
+    },
+    {
+      "spanish": "Íbamos al parque cuando hacía buen tiempo.",
+      "english": "We used to go to the park when the weather was nice."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Ser for descriptions",
+      "body": "Use ser in the imperfect for identity and descriptions in the past.",
+      "examples": [
+        {
+          "spanish": "Mi escuela era pequeña.",
+          "english": "My school was small."
+        },
+        {
+          "spanish": "Ellos eran vecinos.",
+          "english": "They were neighbors."
+        }
+      ]
+    },
+    {
+      "heading": "Ir and ver for repeated scenes",
+      "body": "Use ir for repeated movement and ver for what someone saw or watched.",
+      "examples": [
+        {
+          "spanish": "Íbamos al cine los viernes.",
+          "english": "We used to go to the movies on Fridays."
+        },
+        {
+          "spanish": "Veíamos las noticias por la noche.",
+          "english": "We used to watch the news at night."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Yo trabajaba en el centro.",
+        "english": "I used to work downtown."
+      },
+      {
+        "spanish": "Tú comías con tu familia.",
+        "english": "You used to eat with your family."
+      },
+      {
+        "spanish": "Ella vivía cerca.",
+        "english": "She used to live nearby."
+      },
+      {
+        "spanish": "Nosotros íbamos al parque.",
+        "english": "We used to go to the park."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "Yo no salía mucho.",
+        "english": "I did not use to go out much."
+      },
+      {
+        "spanish": "Él no tenía coche.",
+        "english": "He did not have a car."
+      },
+      {
+        "spanish": "Nosotras no veíamos televisión.",
+        "english": "We did not use to watch TV."
+      },
+      {
+        "spanish": "Ellos no eran vecinos.",
+        "english": "They were not neighbors."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Trabajabas los sábados?",
+        "english": "Did you use to work on Saturdays?"
+      },
+      {
+        "spanish": "¿Ella vivía aquí?",
+        "english": "Did she use to live here?"
+      },
+      {
+        "spanish": "¿Íbamos juntos?",
+        "english": "Did we use to go together?"
+      },
+      {
+        "spanish": "¿Ustedes veían esa serie?",
+        "english": "Did you all use to watch that series?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ estudiante.",
+        "options": [
+          "era",
+          "fui",
+          "soy"
+        ],
+        "answer": "Yo era estudiante."
+      },
+      {
+        "prompt": "Tú _____ al club.",
+        "options": [
+          "ibas",
+          "fuiste",
+          "vas"
+        ],
+        "answer": "Tú ibas al club."
+      },
+      {
+        "prompt": "Ella _____ el mar.",
+        "options": [
+          "veía",
+          "vio",
+          "ve"
+        ],
+        "answer": "Ella veía el mar."
+      },
+      {
+        "prompt": "Nosotros _____ amigos.",
+        "options": [
+          "éramos",
+          "fuimos",
+          "somos"
+        ],
+        "answer": "Nosotros éramos amigos."
+      },
+      {
+        "prompt": "Ellos _____ al centro.",
+        "options": [
+          "iban",
+          "fueron",
+          "van"
+        ],
+        "answer": "Ellos iban al centro."
+      },
+      {
+        "prompt": "Yo no _____ la pantalla.",
+        "options": [
+          "veía",
+          "vi",
+          "veo"
+        ],
+        "answer": "Yo no veía la pantalla."
+      },
+      {
+        "prompt": "Usted _____ muy amable.",
+        "options": [
+          "era",
+          "fue",
+          "es"
+        ],
+        "answer": "Usted era muy amable."
+      },
+      {
+        "prompt": "Nosotras _____ a la escuela.",
+        "options": [
+          "íbamos",
+          "fuimos",
+          "vamos"
+        ],
+        "answer": "Nosotras íbamos a la escuela."
+      },
+      {
+        "prompt": "Tú _____ las montañas.",
+        "options": [
+          "veías",
+          "viste",
+          "ves"
+        ],
+        "answer": "Tú veías las montañas."
+      },
+      {
+        "prompt": "¿Ustedes _____ vecinos?",
+        "options": [
+          "eran",
+          "fueron",
+          "son"
+        ],
+        "answer": "¿Ustedes eran vecinos?"
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ estudiante.",
+        "answer": "Yo era estudiante."
+      },
+      {
+        "prompt": "Tú ___ al club.",
+        "answer": "Tú ibas al club."
+      },
+      {
+        "prompt": "Ella ___ el mar.",
+        "answer": "Ella veía el mar."
+      },
+      {
+        "prompt": "Nosotros ___ amigos.",
+        "answer": "Nosotros éramos amigos."
+      },
+      {
+        "prompt": "Ellos ___ al centro.",
+        "answer": "Ellos iban al centro."
+      },
+      {
+        "prompt": "Yo no ___ la pantalla.",
+        "answer": "Yo no veía la pantalla."
+      },
+      {
+        "prompt": "Usted ___ muy amable.",
+        "answer": "Usted era muy amable."
+      },
+      {
+        "prompt": "Nosotras ___ a la escuela.",
+        "answer": "Nosotras íbamos a la escuela."
+      },
+      {
+        "prompt": "Tú ___ las montañas.",
+        "answer": "Tú veías las montañas."
+      },
+      {
+        "prompt": "¿Ustedes ___ vecinos?",
+        "answer": "¿Ustedes eran vecinos?"
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I was a student.",
+        "answer": "Yo era estudiante."
+      },
+      {
+        "prompt": "You used to go to the club.",
+        "answer": "Tú ibas al club."
+      },
+      {
+        "prompt": "She could see the sea.",
+        "answer": "Ella veía el mar."
+      },
+      {
+        "prompt": "We were friends.",
+        "answer": "Éramos amigos."
+      },
+      {
+        "prompt": "They used to go downtown.",
+        "answer": "Ellos iban al centro."
+      },
+      {
+        "prompt": "I did not see the screen.",
+        "answer": "No veía la pantalla."
+      },
+      {
+        "prompt": "You were very kind.",
+        "answer": "Usted era muy amable."
+      },
+      {
+        "prompt": "We used to go to school.",
+        "answer": "Íbamos a la escuela."
+      },
+      {
+        "prompt": "You could see the mountains.",
+        "answer": "Tú veías las montañas."
+      },
+      {
+        "prompt": "Were you all neighbors?",
+        "answer": "¿Ustedes eran vecinos?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo era estudiante.",
+      "Tú ibas al club.",
+      "Ella veía el mar.",
+      "Nosotros éramos amigos.",
+      "Ellos iban al centro.",
+      "Yo no veía la pantalla.",
+      "Usted era muy amable.",
+      "Nosotras íbamos a la escuela.",
+      "Tú veías las montañas.",
+      "¿Ustedes eran vecinos?"
+    ],
+    "complete": [
+      "Yo era estudiante.",
+      "Tú ibas al club.",
+      "Ella veía el mar.",
+      "Nosotros éramos amigos.",
+      "Ellos iban al centro.",
+      "Yo no veía la pantalla.",
+      "Usted era muy amable.",
+      "Nosotras íbamos a la escuela.",
+      "Tú veías las montañas.",
+      "¿Ustedes eran vecinos?"
+    ],
+    "translate": [
+      "Yo era estudiante.",
+      "Tú ibas al club.",
+      "Ella veía el mar.",
+      "Éramos amigos.",
+      "Ellos iban al centro.",
+      "No veía la pantalla.",
+      "Usted era muy amable.",
+      "Íbamos a la escuela.",
+      "Tú veías las montañas.",
+      "¿Ustedes eran vecinos?"
+    ]
+  },
+  "conjugation": [
+    {
+      "subject": "Yo",
+      "form": "era / iba / veía",
+      "example": "Yo era estudiante.",
+      "translation": "I was a student."
+    },
+    {
+      "subject": "Tú",
+      "form": "eras / ibas / veías",
+      "example": "Tú ibas al club.",
+      "translation": "You used to go to the club."
+    },
+    {
+      "subject": "Él / Ella / Usted",
+      "form": "era / iba / veía",
+      "example": "Ella veía el mar.",
+      "translation": "She could see the sea."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "éramos / íbamos / veíamos",
+      "example": "Nosotros éramos amigos.",
+      "translation": "We were friends."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "eran / iban / veían",
+      "example": "Ellos iban al centro.",
+      "translation": "They used to go downtown."
+    }
+  ],
+  "wrap_up": [
+    {
+      "use": "Ser",
+      "example": "Era una persona tranquila.",
+      "translation": "She was a calm person."
+    },
+    {
+      "use": "Ir",
+      "example": "Iba al trabajo en bus.",
+      "translation": "I used to go to work by bus."
+    },
+    {
+      "use": "Ver",
+      "example": "Veía el mar desde casa.",
+      "translation": "I could see the sea from home."
+    }
+  ]
+}

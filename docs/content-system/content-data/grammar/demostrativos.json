@@ -1,0 +1,285 @@
+{
+  "intro": "Demonstratives point to people or things. In Spanish, este, ese, and aquel help you say this, that, and that over there.",
+  "overview": {
+    "body": "Spanish demonstratives agree with the noun in gender and number. Este is close to the speaker, ese is farther away or near the listener, and aquel points to something more distant.",
+    "use_note": "this, that, and that over there"
+  },
+  "examples": [
+    {
+      "spanish": "Este libro es mío.",
+      "english": "This book is mine."
+    },
+    {
+      "spanish": "Esa casa es bonita.",
+      "english": "That house is pretty."
+    },
+    {
+      "spanish": "Aquellos estudiantes son nuevos.",
+      "english": "Those students over there are new."
+    }
+  ],
+  "forms": [
+    {
+      "label": "este / esta / estos / estas",
+      "meaning": "this / these"
+    },
+    {
+      "label": "ese / esa / esos / esas",
+      "meaning": "that / those"
+    },
+    {
+      "label": "aquel / aquella / aquellos / aquellas",
+      "meaning": "that over there / those over there"
+    }
+  ],
+  "notes": [
+    "Demonstratives agree with the noun in gender and number.",
+    "Este points to something close, ese points to something farther away, and aquel points to something more distant."
+  ],
+  "structure": [
+    {
+      "pattern": "este / esta + singular noun",
+      "example": "esta mesa",
+      "translation": "this table"
+    },
+    {
+      "pattern": "ese / esa + singular noun",
+      "example": "ese coche",
+      "translation": "that car"
+    },
+    {
+      "pattern": "aquel / aquella + singular noun",
+      "example": "aquella escuela",
+      "translation": "that school over there"
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Close masculine",
+      "form": "este / estos",
+      "example": "este libro / estos libros",
+      "translation": "this book / these books"
+    },
+    {
+      "subject": "Close feminine",
+      "form": "esta / estas",
+      "example": "esta mesa / estas mesas",
+      "translation": "this table / these tables"
+    },
+    {
+      "subject": "Farther masculine",
+      "form": "ese / esos",
+      "example": "ese coche / esos coches",
+      "translation": "that car / those cars"
+    },
+    {
+      "subject": "Farther feminine",
+      "form": "esa / esas",
+      "example": "esa casa / esas casas",
+      "translation": "that house / those houses"
+    },
+    {
+      "subject": "Distant",
+      "form": "aquel / aquella / aquellos / aquellas",
+      "example": "aquellos edificios",
+      "translation": "those buildings over there"
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Close Things",
+      "body": "Use este, esta, estos, and estas for things close to the speaker.",
+      "examples": [
+        {
+          "spanish": "Esta silla es cómoda.",
+          "english": "This chair is comfortable."
+        },
+        {
+          "spanish": "Estos zapatos son nuevos.",
+          "english": "These shoes are new."
+        }
+      ]
+    },
+    {
+      "heading": "Farther Things",
+      "body": "Use ese, esa, esos, and esas for things farther away or near the listener.",
+      "examples": [
+        {
+          "spanish": "Ese restaurante es bueno.",
+          "english": "That restaurant is good."
+        },
+        {
+          "spanish": "Esas preguntas son fáciles.",
+          "english": "Those questions are easy."
+        }
+      ]
+    },
+    {
+      "heading": "Distant Things",
+      "body": "Use aquel forms for things that feel farther away in space, time, or context.",
+      "examples": [
+        {
+          "spanish": "Aquel edificio es antiguo.",
+          "english": "That building over there is old."
+        },
+        {
+          "spanish": "Aquellas vacaciones fueron perfectas.",
+          "english": "Those vacations back then were perfect."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Este café está frío.",
+        "english": "This coffee is cold."
+      },
+      {
+        "spanish": "Esta clase es interesante.",
+        "english": "This class is interesting."
+      },
+      {
+        "spanish": "Esos libros son caros.",
+        "english": "Those books are expensive."
+      },
+      {
+        "spanish": "Aquella ciudad es famosa.",
+        "english": "That city over there is famous."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "Este teléfono no funciona.",
+        "english": "This phone does not work."
+      },
+      {
+        "spanish": "Esas ventanas no están abiertas.",
+        "english": "Those windows are not open."
+      },
+      {
+        "spanish": "Aquel hotel no es barato.",
+        "english": "That hotel over there is not cheap."
+      },
+      {
+        "spanish": "Estos ejercicios no son difíciles.",
+        "english": "These exercises are not difficult."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Este libro es tuyo?",
+        "english": "Is this book yours?"
+      },
+      {
+        "spanish": "¿Esa mochila es de Ana?",
+        "english": "Is that backpack Ana's?"
+      },
+      {
+        "spanish": "¿Aquellos hombres son profesores?",
+        "english": "Are those men over there teachers?"
+      },
+      {
+        "spanish": "¿Estas llaves son tuyas?",
+        "english": "Are these keys yours?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "_____ libro es interesante.",
+        "options": ["Este", "Esta", "Estos"],
+        "answer": "Este libro es interesante."
+      },
+      {
+        "prompt": "_____ casa es grande.",
+        "options": ["Ese", "Esa", "Esos"],
+        "answer": "Esa casa es grande."
+      },
+      {
+        "prompt": "_____ estudiantes son nuevos.",
+        "options": ["Aquel", "Aquella", "Aquellos"],
+        "answer": "Aquellos estudiantes son nuevos."
+      },
+      {
+        "prompt": "_____ preguntas son fáciles.",
+        "options": ["Estas", "Este", "Esta"],
+        "answer": "Estas preguntas son fáciles."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "___ libro es mío.",
+        "answer": "Este libro es mío."
+      },
+      {
+        "prompt": "___ mesa está limpia.",
+        "answer": "Esta mesa está limpia."
+      },
+      {
+        "prompt": "___ casas son bonitas.",
+        "answer": "Esas casas son bonitas."
+      },
+      {
+        "prompt": "___ edificio es antiguo.",
+        "answer": "Aquel edificio es antiguo."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "This book is mine.",
+        "answer": "Este libro es mío."
+      },
+      {
+        "prompt": "That house is pretty.",
+        "answer": "Esa casa es bonita."
+      },
+      {
+        "prompt": "These questions are easy.",
+        "answer": "Estas preguntas son fáciles."
+      },
+      {
+        "prompt": "That building over there is old.",
+        "answer": "Aquel edificio es antiguo."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Este libro es interesante.",
+      "Esa casa es grande.",
+      "Aquellos estudiantes son nuevos.",
+      "Estas preguntas son fáciles."
+    ],
+    "complete": [
+      "Este libro es mío.",
+      "Esta mesa está limpia.",
+      "Esas casas son bonitas.",
+      "Aquel edificio es antiguo."
+    ],
+    "translate": [
+      "Este libro es mío.",
+      "Esa casa es bonita.",
+      "Estas preguntas son fáciles.",
+      "Aquel edificio es antiguo."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Close",
+      "example": "este / esta / estos / estas",
+      "translation": "this / these"
+    },
+    {
+      "use": "Farther away",
+      "example": "ese / esa / esos / esas",
+      "translation": "that / those"
+    },
+    {
+      "use": "Distant",
+      "example": "aquel / aquella / aquellos / aquellas",
+      "translation": "that over there / those over there"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "intro": "Frequency adverbs help you say how often something happens. In Spanish, words like siempre, a veces, and nunca are useful for talking about routines.",
+  "overview": {
+    "body": "Frequency adverbs usually go near the verb. They can describe daily habits, regular activities, and things that do not happen.",
+    "use_note": "always, often, sometimes, rarely, and never"
+  },
+  "examples": [
+    {
+      "spanish": "Siempre estudio por la mañana.",
+      "english": "I always study in the morning."
+    },
+    {
+      "spanish": "A veces camino al trabajo.",
+      "english": "Sometimes I walk to work."
+    }
+  ],
+  "forms": [
+    {
+      "label": "siempre",
+      "meaning": "always"
+    },
+    {
+      "label": "normalmente / generalmente",
+      "meaning": "normally / generally"
+    },
+    {
+      "label": "a menudo",
+      "meaning": "often"
+    },
+    {
+      "label": "a veces",
+      "meaning": "sometimes"
+    },
+    {
+      "label": "casi nunca / nunca",
+      "meaning": "almost never / never"
+    }
+  ],
+  "notes": [
+    "Many frequency adverbs can go before or after the verb.",
+    "Nunca usually works with no before the verb when it comes after the verb: No estudio nunca."
+  ],
+  "uses": [
+    {
+      "heading": "Routines",
+      "body": "Use frequency adverbs to describe regular habits and routines.",
+      "examples": [
+        {
+          "spanish": "Normalmente desayuno a las ocho.",
+          "english": "I normally eat breakfast at eight."
+        },
+        {
+          "spanish": "A menudo leo por la noche.",
+          "english": "I often read at night."
+        }
+      ]
+    },
+    {
+      "heading": "Sometimes And Never",
+      "body": "Use a veces for occasional actions and nunca for actions that do not happen.",
+      "examples": [
+        {
+          "spanish": "A veces estudio en la biblioteca.",
+          "english": "Sometimes I study at the library."
+        },
+        {
+          "spanish": "Nunca tomo café por la noche.",
+          "english": "I never drink coffee at night."
+        }
+      ]
+    }
+  ],
+  "forms_table": {
+    "headers": ["Adverbio", "Meaning", "Example"],
+    "rows": [
+      ["siempre", "always", "Siempre practico español."],
+      ["normalmente", "normally", "Normalmente camino al trabajo."],
+      ["a menudo", "often", "A menudo cocino en casa."],
+      ["a veces", "sometimes", "A veces escucho música."],
+      ["nunca", "never", "Nunca fumo."]
+    ]
+  },
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Siempre estudio después de clase.",
+        "english": "I always study after class."
+      },
+      {
+        "spanish": "Normalmente trabajo en casa.",
+        "english": "I normally work at home."
+      },
+      {
+        "spanish": "A menudo comemos juntos.",
+        "english": "We often eat together."
+      },
+      {
+        "spanish": "A veces corro en el parque.",
+        "english": "Sometimes I run in the park."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "Nunca llego tarde.",
+        "english": "I never arrive late."
+      },
+      {
+        "spanish": "Casi nunca veo televisión.",
+        "english": "I almost never watch television."
+      },
+      {
+        "spanish": "No trabajo nunca los domingos.",
+        "english": "I never work on Sundays."
+      },
+      {
+        "spanish": "Mis amigos no estudian a menudo.",
+        "english": "My friends do not study often."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Siempre estudias por la noche?",
+        "english": "Do you always study at night?"
+      },
+      {
+        "spanish": "¿A veces cocinas en casa?",
+        "english": "Do you sometimes cook at home?"
+      },
+      {
+        "spanish": "¿Trabajas normalmente los lunes?",
+        "english": "Do you normally work on Mondays?"
+      },
+      {
+        "spanish": "¿Nunca tomas café?",
+        "english": "Do you never drink coffee?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "_____ estudio por la mañana.",
+        "options": ["Siempre", "Rojo", "Aquí"],
+        "answer": "Siempre estudio por la mañana."
+      },
+      {
+        "prompt": "_____ camino al trabajo.",
+        "options": ["A veces", "Mío", "Este"],
+        "answer": "A veces camino al trabajo."
+      },
+      {
+        "prompt": "_____ tomo café por la noche.",
+        "options": ["Nunca", "Casa", "Tuya"],
+        "answer": "Nunca tomo café por la noche."
+      },
+      {
+        "prompt": "_____ desayuno a las ocho.",
+        "options": ["Normalmente", "Azul", "Nuestro"],
+        "answer": "Normalmente desayuno a las ocho."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "___ practico español.",
+        "answer": "Siempre practico español."
+      },
+      {
+        "prompt": "___ escucho música.",
+        "answer": "A veces escucho música."
+      },
+      {
+        "prompt": "___ llego tarde.",
+        "answer": "Nunca llego tarde."
+      },
+      {
+        "prompt": "___ cocino en casa.",
+        "answer": "A menudo cocino en casa."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I always study after class.",
+        "answer": "Siempre estudio después de clase."
+      },
+      {
+        "prompt": "Sometimes I run in the park.",
+        "answer": "A veces corro en el parque."
+      },
+      {
+        "prompt": "I never arrive late.",
+        "answer": "Nunca llego tarde."
+      },
+      {
+        "prompt": "Do you normally work on Mondays?",
+        "answer": "¿Trabajas normalmente los lunes?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Siempre estudio por la mañana.",
+      "A veces camino al trabajo.",
+      "Nunca tomo café por la noche.",
+      "Normalmente desayuno a las ocho."
+    ],
+    "complete": [
+      "Siempre practico español.",
+      "A veces escucho música.",
+      "Nunca llego tarde.",
+      "A menudo cocino en casa."
+    ],
+    "translate": [
+      "Siempre estudio después de clase.",
+      "A veces corro en el parque.",
+      "Nunca llego tarde.",
+      "¿Trabajas normalmente los lunes?"
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Always",
+      "example": "Siempre estudio.",
+      "translation": "I always study."
+    },
+    {
+      "use": "Sometimes",
+      "example": "A veces camino.",
+      "translation": "Sometimes I walk."
+    },
+    {
+      "use": "Never",
+      "example": "Nunca llego tarde.",
+      "translation": "I never arrive late."
+    }
+  ]
+}

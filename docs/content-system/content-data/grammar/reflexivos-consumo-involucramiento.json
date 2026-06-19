@@ -1,0 +1,110 @@
+{
+  "intro": "Spanish sometimes uses reflexive verbs to show personal involvement, completion, or enjoyment. This is common with verbs like comer, beber, comprar, leer, and ver.",
+  "overview": {
+    "body": "In sentences like me comí la pizza or me compré una chaqueta, the reflexive pronoun does not mean myself. It shows that the action matters personally to the subject or that the subject fully consumed, used, or obtained something.",
+    "use_note": "reflexive pronouns for involvement and consumption"
+  },
+  "examples": [
+    {"spanish": "Me comí toda la pizza.", "english": "I ate the whole pizza."},
+    {"spanish": "Ella se compró una chaqueta.", "english": "She bought herself a jacket."}
+  ],
+  "structure": [
+    {"pattern": "reflexive pronoun + consumption verb + object", "example": "Nos bebimos el café.", "translation": "We drank the coffee up."},
+    {"pattern": "reflexive pronoun + comprar + object", "example": "Me compré un libro.", "translation": "I bought myself a book."},
+    {"pattern": "reflexive pronoun + leer / ver + whole object", "example": "Se leyó la novela.", "translation": "He or she read the whole novel."}
+  ],
+  "uses": [
+    {
+      "heading": "Completed consumption",
+      "body": "Use the reflexive pronoun when the whole item is consumed or finished.",
+      "examples": [
+        {"spanish": "Me bebí el agua.", "english": "I drank the water up."},
+        {"spanish": "Ellos se comieron todos los tacos.", "english": "They ate all the tacos."}
+      ]
+    },
+    {
+      "heading": "Personal benefit",
+      "body": "With comprar and similar verbs, the reflexive pronoun can show that the subject got something for themselves.",
+      "examples": [
+        {"spanish": "Tú te compraste zapatos nuevos.", "english": "You bought yourself new shoes."},
+        {"spanish": "Nos compramos boletos para el concierto.", "english": "We bought ourselves tickets for the concert."}
+      ]
+    },
+    {
+      "heading": "Strong involvement",
+      "body": "The reflexive pronoun can make the action feel more complete, personal, or involved.",
+      "examples": [
+        {"spanish": "Me vi toda la serie.", "english": "I watched the whole series."},
+        {"spanish": "Ella se leyó el informe completo.", "english": "She read the complete report."}
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {"spanish": "Me comí la sopa.", "english": "I ate up the soup."},
+      {"spanish": "Tú te compraste una camisa.", "english": "You bought yourself a shirt."},
+      {"spanish": "Ella se leyó el libro.", "english": "She read the book all the way through."},
+      {"spanish": "Nosotros nos bebimos el café.", "english": "We drank the coffee up."}
+    ],
+    "negative": [
+      {"spanish": "No me comí el postre.", "english": "I did not eat the dessert."},
+      {"spanish": "Él no se compró nada.", "english": "He did not buy himself anything."},
+      {"spanish": "Nosotras no nos vimos la película.", "english": "We did not watch the movie."},
+      {"spanish": "Ellos no se bebieron el jugo.", "english": "They did not drink the juice up."}
+    ],
+    "questions": [
+      {"spanish": "¿Te comiste todo?", "english": "Did you eat everything?"},
+      {"spanish": "¿Ella se compró una bicicleta?", "english": "Did she buy herself a bicycle?"},
+      {"spanish": "¿Nos leímos el capítulo?", "english": "Did we read the chapter all the way through?"},
+      {"spanish": "¿Ustedes se bebieron el té?", "english": "Did you all drink the tea up?"}
+    ]
+  },
+  "exercises": {
+    "select": [
+      {"prompt": "Yo _____ comí toda la pizza.", "options": ["me", "te", "se"], "answer": "Yo me comí toda la pizza."},
+      {"prompt": "Ella _____ compró una chaqueta.", "options": ["se", "nos", "me"], "answer": "Ella se compró una chaqueta."},
+      {"prompt": "Nosotros _____ bebimos el café.", "options": ["nos", "se", "te"], "answer": "Nosotros nos bebimos el café."},
+      {"prompt": "Tú _____ leíste el libro.", "options": ["te", "me", "se"], "answer": "Tú te leíste el libro."},
+      {"prompt": "Ellos _____ comieron los tacos.", "options": ["se", "nos", "me"], "answer": "Ellos se comieron los tacos."},
+      {"prompt": "Yo no _____ compré nada.", "options": ["me", "te", "nos"], "answer": "Yo no me compré nada."},
+      {"prompt": "Ustedes _____ vieron la serie.", "options": ["se", "me", "te"], "answer": "Ustedes se vieron la serie."},
+      {"prompt": "Nosotras _____ compramos boletos.", "options": ["nos", "se", "me"], "answer": "Nosotras nos compramos boletos."},
+      {"prompt": "Él _____ bebió el jugo.", "options": ["se", "nos", "te"], "answer": "Él se bebió el jugo."},
+      {"prompt": "¿Tú _____ comiste todo?", "options": ["te", "me", "se"], "answer": "¿Tú te comiste todo?"}
+    ],
+    "complete": [
+      {"prompt": "Yo ___ comí la sopa.", "answer": "Yo me comí la sopa."},
+      {"prompt": "Ella ___ compró zapatos.", "answer": "Ella se compró zapatos."},
+      {"prompt": "Nosotros ___ bebimos el agua.", "answer": "Nosotros nos bebimos el agua."},
+      {"prompt": "Tú ___ leíste el informe.", "answer": "Tú te leíste el informe."},
+      {"prompt": "Ellas ___ vieron la película.", "answer": "Ellas se vieron la película."},
+      {"prompt": "Yo no ___ comí el postre.", "answer": "Yo no me comí el postre."},
+      {"prompt": "Ustedes ___ compraron entradas.", "answer": "Ustedes se compraron entradas."},
+      {"prompt": "Nosotras ___ leímos el capítulo.", "answer": "Nosotras nos leímos el capítulo."},
+      {"prompt": "Él ___ bebió el té.", "answer": "Él se bebió el té."},
+      {"prompt": "¿Tú ___ compraste una mochila?", "answer": "¿Tú te compraste una mochila?"}
+    ],
+    "translate": [
+      {"prompt": "I ate the whole pizza.", "answer": "Me comí toda la pizza."},
+      {"prompt": "She bought herself a jacket.", "answer": "Ella se compró una chaqueta."},
+      {"prompt": "We drank the coffee up.", "answer": "Nos bebimos el café."},
+      {"prompt": "You read the whole book.", "answer": "Te leíste todo el libro."},
+      {"prompt": "They ate all the tacos.", "answer": "Ellos se comieron todos los tacos."},
+      {"prompt": "I did not buy myself anything.", "answer": "No me compré nada."},
+      {"prompt": "You all watched the series.", "answer": "Ustedes se vieron la serie."},
+      {"prompt": "We bought ourselves tickets.", "answer": "Nos compramos boletos."},
+      {"prompt": "Did you eat everything?", "answer": "¿Te comiste todo?"},
+      {"prompt": "He drank the juice up.", "answer": "Él se bebió el jugo."}
+    ]
+  },
+  "answers": {
+    "select": ["Yo me comí toda la pizza.", "Ella se compró una chaqueta.", "Nosotros nos bebimos el café.", "Tú te leíste el libro.", "Ellos se comieron los tacos.", "Yo no me compré nada.", "Ustedes se vieron la serie.", "Nosotras nos compramos boletos.", "Él se bebió el jugo.", "¿Tú te comiste todo?"],
+    "complete": ["Yo me comí la sopa.", "Ella se compró zapatos.", "Nosotros nos bebimos el agua.", "Tú te leíste el informe.", "Ellas se vieron la película.", "Yo no me comí el postre.", "Ustedes se compraron entradas.", "Nosotras nos leímos el capítulo.", "Él se bebió el té.", "¿Tú te compraste una mochila?"],
+    "translate": ["Me comí toda la pizza.", "Ella se compró una chaqueta.", "Nos bebimos el café.", "Te leíste todo el libro.", "Ellos se comieron todos los tacos.", "No me compré nada.", "Ustedes se vieron la serie.", "Nos compramos boletos.", "¿Te comiste todo?", "Él se bebió el jugo."]
+  },
+  "wrap_up": [
+    {"use": "Consumption", "example": "Me comí toda la pizza.", "translation": "I ate the whole pizza."},
+    {"use": "Personal benefit", "example": "Ella se compró una chaqueta.", "translation": "She bought herself a jacket."},
+    {"use": "Complete action", "example": "Se leyó la novela.", "translation": "He or she read the whole novel."}
+  ]
+}

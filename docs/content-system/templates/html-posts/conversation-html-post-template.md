@@ -4,7 +4,7 @@ Use this template to generate clean HTML fragment files for conversation posts i
 
 `docs/content-system/generated/generated-html-posts/conversations/`
 
-This is post-body HTML only. Do not include document wrappers, embedded styles, scripts, block comments, editor-specific block syntax, breadcrumb, taxonomy pills, or metadata rows.
+This is post-body HTML only. Do not include document wrappers, embedded styles, scripts, block comments, editor-specific block syntax, navigation-trail markup, taxonomy labels, or metadata rows.
 
 ## Fragment
 
@@ -90,6 +90,6 @@ For `podcast_style`, use dialogue lines inside one continuous dialogue block.
 
 For `street_interview`, use interview headings and grouped dialogue blocks.
 
-Use semantic HTML only. Do not add inline styles. Do not add metadata, breadcrumb, pills, or WordPress wrappers.
+Use semantic HTML only. Do not add inline styles. Do not add metadata, navigation-trail markup, taxonomy labels, or WordPress wrappers.
 
 Use short indented italic notes for selected English support. Do not use a box for translation support.

@@ -4,9 +4,9 @@ Use this template to generate clean HTML fragment files for vocabulary posts in:
 
 `docs/content-system/generated/generated-html-posts/vocabulary/`
 
-This is post-body HTML only. Do not include document wrappers, embedded styles, scripts, block comments, editor-specific block syntax, breadcrumbs, meta rows, or taxonomy pills.
+This is post-body HTML only. Do not include document wrappers, embedded styles, scripts, block comments, editor-specific block syntax, navigation-trail markup, metadata rows, or taxonomy labels.
 
-Breadcrumbs and pills are rendered by `single-vocabulary.php` from `topic_tax` and `level_tax`.
+Navigation and taxonomy labels are rendered by `single-vocabulary.php` from `topic_tax` and `level_tax`.
 
 Each vocabulary category can have 4–10 terms depending on the topic. Expand or reduce the `<li>` rows in each category to match the generated Markdown source.
 

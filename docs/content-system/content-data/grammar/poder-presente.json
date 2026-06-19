@@ -13,7 +13,7 @@
   "structure": [
     {
       "pattern": "subject + poder + infinitive",
-      "example": "Ella puede hablar espanol.",
+      "example": "Ella puede hablar español.",
       "translation": "She can speak Spanish."
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "pattern": "Poder + subject + infinitive?",
-      "example": "Puedes venir manana?",
+      "example": "¿Puedes venir mañana?",
       "translation": "Can you come tomorrow?"
     }
   ],
@@ -35,13 +35,13 @@
       "translation": "I can help."
     },
     {
-      "subject": "Tu",
+      "subject": "Tú",
       "form": "puedes",
-      "example": "Tu puedes leer este libro.",
+      "example": "Tú puedes leer este libro.",
       "translation": "You can read this book."
     },
     {
-      "subject": "El / Ella / Usted",
+      "subject": "Él / Ella / Usted",
       "form": "puede",
       "example": "Ella puede trabajar hoy.",
       "translation": "She can work today."
@@ -79,11 +79,11 @@
       "body": "Use poder to ask permission or to say that something is possible.",
       "examples": [
         {
-          "spanish": "Puedes usar mi telefono.",
+          "spanish": "Puedes usar mi teléfono.",
           "english": "You can use my phone."
         },
         {
-          "spanish": "Podemos estudiar despues.",
+          "spanish": "Podemos estudiar después.",
           "english": "We can study later."
         }
       ]
@@ -96,11 +96,11 @@
         "english": "I can speak with the teacher."
       },
       {
-        "spanish": "Tu puedes abrir la ventana.",
+        "spanish": "Tú puedes abrir la ventana.",
         "english": "You can open the window."
       },
       {
-        "spanish": "Ella puede preparar cafe.",
+        "spanish": "Ella puede preparar café.",
         "english": "She can make coffee."
       },
       {
@@ -114,33 +114,33 @@
         "english": "I cannot drive today."
       },
       {
-        "spanish": "Tu no puedes entrar ahora.",
+        "spanish": "Tú no puedes entrar ahora.",
         "english": "You cannot enter now."
       },
       {
-        "spanish": "El no puede llamar esta noche.",
+        "spanish": "Él no puede llamar esta noche.",
         "english": "He cannot call tonight."
       },
       {
-        "spanish": "Ellas no pueden viajar manana.",
+        "spanish": "Ellas no pueden viajar mañana.",
         "english": "They cannot travel tomorrow."
       }
     ],
     "questions": [
       {
-        "spanish": "Puedes repetir, por favor?",
+        "spanish": "¿Puedes repetir, por favor?",
         "english": "Can you repeat, please?"
       },
       {
-        "spanish": "Ella puede venir a clase?",
+        "spanish": "¿Ella puede venir a clase?",
         "english": "Can she come to class?"
       },
       {
-        "spanish": "Ustedes pueden esperar aqui?",
+        "spanish": "¿Ustedes pueden esperar aquí?",
         "english": "Can you all wait here?"
       },
       {
-        "spanish": "Podemos empezar ahora?",
+        "spanish": "¿Podemos empezar ahora?",
         "english": "Can we start now?"
       }
     ]
@@ -153,9 +153,9 @@
         "answer": "Yo puedo ayudar."
       },
       {
-        "prompt": "Tu _____ leer este libro.",
+        "prompt": "Tú _____ abrir la ventana.",
         "options": ["puedes", "puedo", "pueden"],
-        "answer": "Tu puedes leer este libro."
+        "answer": "Tú puedes abrir la ventana."
       },
       {
         "prompt": "Ella _____ trabajar hoy.",
@@ -183,9 +183,9 @@
         "answer": "Ustedes no pueden salir ahora."
       },
       {
-        "prompt": "_____ tu venir manana?",
+        "prompt": "¿_____ tú venir mañana?",
         "options": ["Puede", "Puedes", "Podemos"],
-        "answer": "Puedes tu venir manana?"
+        "answer": "¿Puedes tú venir mañana?"
       }
     ],
     "complete": [
@@ -194,16 +194,16 @@
         "answer": "Yo puedo estudiar esta noche."
       },
       {
-        "prompt": "Tu ___ usar mi lapiz.",
-        "answer": "Tu puedes usar mi lapiz."
+        "prompt": "Tú ___ usar mi lápiz.",
+        "answer": "Tú puedes usar mi lápiz."
       },
       {
-        "prompt": "Ella ___ correr rapido.",
-        "answer": "Ella puede correr rapido."
+        "prompt": "Ella ___ correr rápido.",
+        "answer": "Ella puede correr rápido."
       },
       {
-        "prompt": "Nosotros ___ escuchar musica.",
-        "answer": "Nosotros podemos escuchar musica."
+        "prompt": "Nosotros ___ escuchar música.",
+        "answer": "Nosotros podemos escuchar música."
       },
       {
         "prompt": "Ellos ___ comprar comida.",
@@ -214,12 +214,12 @@
         "answer": "Ustedes no pueden abrir la puerta."
       },
       {
-        "prompt": "___ tu esperar cinco minutos?",
-        "answer": "Puedes tu esperar cinco minutos?"
+        "prompt": "¿___ tú esperar cinco minutos?",
+        "answer": "¿Puedes tú esperar cinco minutos?"
       },
       {
-        "prompt": "El ___ descansar ahora?",
-        "answer": "El puede descansar ahora?"
+        "prompt": "¿Él ___ descansar ahora?",
+        "answer": "¿Él puede descansar ahora?"
       }
     ],
     "translate": [
@@ -229,7 +229,7 @@
       },
       {
         "prompt": "You can read this book.",
-        "answer": "Tu puedes leer este libro."
+        "answer": "Tú puedes leer este libro."
       },
       {
         "prompt": "She can work today.",
@@ -249,44 +249,44 @@
       },
       {
         "prompt": "Can you repeat, please?",
-        "answer": "Puedes repetir, por favor?"
+        "answer": "¿Puedes repetir, por favor?"
       },
       {
         "prompt": "Can they travel tomorrow?",
-        "answer": "Ellos pueden viajar manana?"
+        "answer": "¿Ellos pueden viajar mañana?"
       }
     ]
   },
   "answers": {
     "select": [
       "Yo puedo ayudar.",
-      "Tu puedes leer este libro.",
+      "Tú puedes abrir la ventana.",
       "Ella puede trabajar hoy.",
       "Nosotros podemos practicar.",
       "Ellos pueden esperar.",
       "Usted puede hablar conmigo.",
       "Ustedes no pueden salir ahora.",
-      "Puedes tu venir manana?"
+      "¿Puedes tú venir mañana?"
     ],
     "complete": [
       "Yo puedo estudiar esta noche.",
-      "Tu puedes usar mi lapiz.",
-      "Ella puede correr rapido.",
-      "Nosotros podemos escuchar musica.",
+      "Tú puedes usar mi lápiz.",
+      "Ella puede correr rápido.",
+      "Nosotros podemos escuchar música.",
       "Ellos pueden comprar comida.",
       "Ustedes no pueden abrir la puerta.",
-      "Puedes tu esperar cinco minutos?",
-      "El puede descansar ahora?"
+      "¿Puedes tú esperar cinco minutos?",
+      "¿Él puede descansar ahora?"
     ],
     "translate": [
       "Yo puedo ayudar.",
-      "Tu puedes leer este libro.",
+      "Tú puedes leer este libro.",
       "Ella puede trabajar hoy.",
       "Nosotros podemos practicar.",
       "Ellos pueden esperar.",
       "Yo no puedo manejar hoy.",
-      "Puedes repetir, por favor?",
-      "Ellos pueden viajar manana?"
+      "¿Puedes repetir, por favor?",
+      "¿Ellos pueden viajar mañana?"
     ]
   },
   "wrap_up": [
@@ -297,12 +297,12 @@
     },
     {
       "use": "Permission",
-      "example": "Puedes usar mi telefono.",
+      "example": "Puedes usar mi teléfono.",
       "translation": "You can use my phone."
     },
     {
       "use": "Possibility",
-      "example": "Podemos estudiar despues.",
+      "example": "Podemos estudiar después.",
       "translation": "We can study later."
     },
     {

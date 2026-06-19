@@ -1,0 +1,111 @@
+{
+  "intro": "Reflexive verbs in the preterite describe completed actions where the subject also receives the action. The verb moves to the past, but the reflexive pronoun still matches the subject.",
+  "overview": {
+    "body": "Use me, te, se, nos, and se before the preterite verb: me levanté, te acostaste, se duchó, nos vestimos, se fueron. The pronoun does not change because of the tense.",
+    "use_note": "completed reflexive actions in the past"
+  },
+  "examples": [
+    {"spanish": "Me levanté temprano ayer.", "english": "I got up early yesterday."},
+    {"spanish": "Ellos se quedaron en casa anoche.", "english": "They stayed home last night."}
+  ],
+  "structure": [
+    {"pattern": "reflexive pronoun + preterite verb", "example": "Me desperté a las siete.", "translation": "I woke up at seven."},
+    {"pattern": "no + reflexive pronoun + preterite verb", "example": "No nos acostamos tarde.", "translation": "We did not go to bed late."},
+    {"pattern": "question + reflexive pronoun + preterite verb", "example": "¿Te bañaste después de correr?", "translation": "Did you bathe after running?"},
+    {"pattern": "plural subject + se + preterite verb", "example": "Ellas se vistieron rápido.", "translation": "They got dressed quickly."}
+  ],
+  "uses": [
+    {
+      "heading": "Daily routine that happened once",
+      "body": "Use the preterite when a routine action happened at a specific time or as one finished event.",
+      "examples": [
+        {"spanish": "Me duché después del gimnasio.", "english": "I showered after the gym."},
+        {"spanish": "Se despertaron a las seis.", "english": "They woke up at six."}
+      ]
+    },
+    {
+      "heading": "Completed change of state",
+      "body": "Reflexive preterite forms can show that someone became, got, or ended up in a state.",
+      "examples": [
+        {"spanish": "Me sentí mejor después de comer.", "english": "I felt better after eating."},
+        {"spanish": "Ella se puso nerviosa.", "english": "She got nervous."}
+      ]
+    },
+    {
+      "heading": "Movement and staying",
+      "body": "Common verbs like irse and quedarse are reflexive in meaning and often appear in past stories.",
+      "examples": [
+        {"spanish": "Nos fuimos temprano.", "english": "We left early."},
+        {"spanish": "Se quedaron en el hotel.", "english": "They stayed at the hotel."}
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {"spanish": "Me levanté a las ocho.", "english": "I got up at eight."},
+      {"spanish": "Tú te acostaste temprano.", "english": "You went to bed early."},
+      {"spanish": "Ella se vistió para la reunión.", "english": "She got dressed for the meeting."},
+      {"spanish": "Nosotros nos fuimos después de cenar.", "english": "We left after dinner."}
+    ],
+    "negative": [
+      {"spanish": "No me desperté con la alarma.", "english": "I did not wake up with the alarm."},
+      {"spanish": "Él no se bañó por la mañana.", "english": "He did not bathe in the morning."},
+      {"spanish": "Nosotras no nos quedamos mucho tiempo.", "english": "We did not stay for a long time."},
+      {"spanish": "Ellos no se sintieron bien.", "english": "They did not feel well."}
+    ],
+    "questions": [
+      {"spanish": "¿Te levantaste temprano?", "english": "Did you get up early?"},
+      {"spanish": "¿Ana se puso nerviosa?", "english": "Did Ana get nervous?"},
+      {"spanish": "¿Nos quedamos aquí?", "english": "Did we stay here?"},
+      {"spanish": "¿Ustedes se fueron tarde?", "english": "Did you all leave late?"}
+    ]
+  },
+  "exercises": {
+    "select": [
+      {"prompt": "Yo _____ levanté temprano.", "options": ["me", "te", "se"], "answer": "Yo me levanté temprano."},
+      {"prompt": "Tú te _____ tarde.", "options": ["acostaste", "acostó", "acostabas"], "answer": "Tú te acostaste tarde."},
+      {"prompt": "Ella _____ vistió rápido.", "options": ["se", "me", "nos"], "answer": "Ella se vistió rápido."},
+      {"prompt": "Nosotros nos _____ temprano.", "options": ["fuimos", "fueron", "íbamos"], "answer": "Nosotros nos fuimos temprano."},
+      {"prompt": "Ellos se _____ en casa.", "options": ["quedaron", "quedó", "quedaban"], "answer": "Ellos se quedaron en casa."},
+      {"prompt": "Yo no me _____ con la alarma.", "options": ["desperté", "despierto", "despertaba"], "answer": "Yo no me desperté con la alarma."},
+      {"prompt": "Usted se _____ nervioso.", "options": ["puso", "ponió", "ponía"], "answer": "Usted se puso nervioso."},
+      {"prompt": "Nosotras nos _____ mejor.", "options": ["sentimos", "sintieron", "sentíamos"], "answer": "Nosotras nos sentimos mejor."},
+      {"prompt": "¿Tú te _____ después de correr?", "options": ["bañaste", "bañó", "bañabas"], "answer": "¿Tú te bañaste después de correr?"},
+      {"prompt": "¿Ustedes se _____ tarde?", "options": ["fueron", "fue", "iban"], "answer": "¿Ustedes se fueron tarde?"}
+    ],
+    "complete": [
+      {"prompt": "Yo ___ levanté a las ocho.", "answer": "Yo me levanté a las ocho."},
+      {"prompt": "Tú te ___ temprano.", "answer": "Tú te acostaste temprano."},
+      {"prompt": "Ella ___ duchó después del gimnasio.", "answer": "Ella se duchó después del gimnasio."},
+      {"prompt": "Nosotros nos ___ en el hotel.", "answer": "Nosotros nos quedamos en el hotel."},
+      {"prompt": "Ellas se ___ rápido.", "answer": "Ellas se vistieron rápido."},
+      {"prompt": "Yo no me ___ bien.", "answer": "Yo no me sentí bien."},
+      {"prompt": "Usted se ___ nervioso.", "answer": "Usted se puso nervioso."},
+      {"prompt": "Nosotras nos ___ temprano.", "answer": "Nosotras nos fuimos temprano."},
+      {"prompt": "Tú te ___ después de correr.", "answer": "Tú te bañaste después de correr."},
+      {"prompt": "¿Ellos se ___ en casa?", "answer": "¿Ellos se quedaron en casa?"}
+    ],
+    "translate": [
+      {"prompt": "I got up early.", "answer": "Me levanté temprano."},
+      {"prompt": "You went to bed late.", "answer": "Tú te acostaste tarde."},
+      {"prompt": "She showered after the gym.", "answer": "Ella se duchó después del gimnasio."},
+      {"prompt": "We left early.", "answer": "Nos fuimos temprano."},
+      {"prompt": "They stayed at home.", "answer": "Ellos se quedaron en casa."},
+      {"prompt": "I did not wake up with the alarm.", "answer": "No me desperté con la alarma."},
+      {"prompt": "Did you bathe after running?", "answer": "¿Te bañaste después de correr?"},
+      {"prompt": "She got nervous.", "answer": "Ella se puso nerviosa."},
+      {"prompt": "We felt better.", "answer": "Nos sentimos mejor."},
+      {"prompt": "Did you all leave late?", "answer": "¿Ustedes se fueron tarde?"}
+    ]
+  },
+  "answers": {
+    "select": ["Yo me levanté temprano.", "Tú te acostaste tarde.", "Ella se vistió rápido.", "Nosotros nos fuimos temprano.", "Ellos se quedaron en casa.", "Yo no me desperté con la alarma.", "Usted se puso nervioso.", "Nosotras nos sentimos mejor.", "¿Tú te bañaste después de correr?", "¿Ustedes se fueron tarde?"],
+    "complete": ["Yo me levanté a las ocho.", "Tú te acostaste temprano.", "Ella se duchó después del gimnasio.", "Nosotros nos quedamos en el hotel.", "Ellas se vistieron rápido.", "Yo no me sentí bien.", "Usted se puso nervioso.", "Nosotras nos fuimos temprano.", "Tú te bañaste después de correr.", "¿Ellos se quedaron en casa?"],
+    "translate": ["Me levanté temprano.", "Tú te acostaste tarde.", "Ella se duchó después del gimnasio.", "Nos fuimos temprano.", "Ellos se quedaron en casa.", "No me desperté con la alarma.", "¿Te bañaste después de correr?", "Ella se puso nerviosa.", "Nos sentimos mejor.", "¿Ustedes se fueron tarde?"]
+  },
+  "wrap_up": [
+    {"use": "Pronoun stays", "example": "Me levanté / te levantaste / se levantó.", "translation": "I got up / you got up / she got up."},
+    {"use": "Negative", "example": "No nos quedamos mucho tiempo.", "translation": "We did not stay for a long time."},
+    {"use": "Question", "example": "¿Te bañaste después de correr?", "translation": "Did you bathe after running?"}
+  ]
+}

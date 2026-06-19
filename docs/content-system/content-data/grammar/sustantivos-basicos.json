@@ -1,0 +1,272 @@
+{
+  "intro": "Spanish nouns name people, places, things, and ideas. In beginner Spanish, nouns work closely with ser, tener, and hay because they help you identify things, say what someone has, and say what exists.",
+  "overview": {
+    "body": "Most Spanish nouns are masculine or feminine, and they can be singular or plural. Articles like el, la, un, and una usually show the gender and number of the noun.",
+    "use_note": "basic nouns with ser, tener, and hay"
+  },
+  "examples": [
+    {
+      "spanish": "El libro es importante.",
+      "english": "The book is important."
+    },
+    {
+      "spanish": "Tengo una pregunta.",
+      "english": "I have a question."
+    },
+    {
+      "spanish": "Hay dos estudiantes en la clase.",
+      "english": "There are two students in the class."
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "el / la + noun",
+      "example": "la clase",
+      "translation": "the class"
+    },
+    {
+      "pattern": "un / una + noun",
+      "example": "un profesor",
+      "translation": "a teacher"
+    },
+    {
+      "pattern": "hay + noun",
+      "example": "Hay una mesa.",
+      "translation": "There is a table."
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Masculine singular",
+      "form": "el / un",
+      "example": "el libro / un libro",
+      "translation": "the book / a book"
+    },
+    {
+      "subject": "Feminine singular",
+      "form": "la / una",
+      "example": "la mesa / una mesa",
+      "translation": "the table / a table"
+    },
+    {
+      "subject": "Masculine plural",
+      "form": "los / unos",
+      "example": "los libros / unos libros",
+      "translation": "the books / some books"
+    },
+    {
+      "subject": "Feminine plural",
+      "form": "las / unas",
+      "example": "las mesas / unas mesas",
+      "translation": "the tables / some tables"
+    },
+    {
+      "subject": "With hay",
+      "form": "hay + noun",
+      "example": "Hay una ventana.",
+      "translation": "There is a window."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Identify with ser",
+      "body": "Use ser with a noun to identify a person or thing.",
+      "examples": [
+        {
+          "spanish": "Ella es doctora.",
+          "english": "She is a doctor."
+        },
+        {
+          "spanish": "Esto es un teléfono.",
+          "english": "This is a phone."
+        }
+      ]
+    },
+    {
+      "heading": "Possession with tener",
+      "body": "Use tener with nouns to say what someone has.",
+      "examples": [
+        {
+          "spanish": "Tengo una computadora.",
+          "english": "I have a computer."
+        },
+        {
+          "spanish": "Ellos tienen dos perros.",
+          "english": "They have two dogs."
+        }
+      ]
+    },
+    {
+      "heading": "Existence with hay",
+      "body": "Use hay before nouns to say that something exists or is present.",
+      "examples": [
+        {
+          "spanish": "Hay una silla aquí.",
+          "english": "There is a chair here."
+        },
+        {
+          "spanish": "Hay estudiantes en la escuela.",
+          "english": "There are students in the school."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "El profesor es amable.",
+        "english": "The teacher is kind."
+      },
+      {
+        "spanish": "Tengo una mochila azul.",
+        "english": "I have a blue backpack."
+      },
+      {
+        "spanish": "Hay un libro en la mesa.",
+        "english": "There is a book on the table."
+      },
+      {
+        "spanish": "Las clases son interesantes.",
+        "english": "The classes are interesting."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No tengo un lápiz.",
+        "english": "I do not have a pencil."
+      },
+      {
+        "spanish": "No hay estudiantes aquí.",
+        "english": "There are no students here."
+      },
+      {
+        "spanish": "La pregunta no es difícil.",
+        "english": "The question is not difficult."
+      },
+      {
+        "spanish": "Los libros no son nuevos.",
+        "english": "The books are not new."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Es una escuela?",
+        "english": "Is it a school?"
+      },
+      {
+        "spanish": "¿Tienes una pregunta?",
+        "english": "Do you have a question?"
+      },
+      {
+        "spanish": "¿Hay una farmacia cerca?",
+        "english": "Is there a pharmacy nearby?"
+      },
+      {
+        "spanish": "¿Son tus amigos?",
+        "english": "Are they your friends?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "_____ libro es rojo.",
+        "options": ["El", "La", "Las"],
+        "answer": "El libro es rojo."
+      },
+      {
+        "prompt": "Tengo _____ pregunta.",
+        "options": ["un", "una", "unos"],
+        "answer": "Tengo una pregunta."
+      },
+      {
+        "prompt": "_____ dos sillas en la clase.",
+        "options": ["Tiene", "Hay", "Es"],
+        "answer": "Hay dos sillas en la clase."
+      },
+      {
+        "prompt": "_____ mesas son pequeñas.",
+        "options": ["Los", "Las", "El"],
+        "answer": "Las mesas son pequeñas."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "___ libro es interesante.",
+        "answer": "El libro es interesante."
+      },
+      {
+        "prompt": "Tengo ___ computadora.",
+        "answer": "Tengo una computadora."
+      },
+      {
+        "prompt": "___ una ventana en la oficina.",
+        "answer": "Hay una ventana en la oficina."
+      },
+      {
+        "prompt": "Las ___ son fáciles.",
+        "answer": "Las clases son fáciles."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "The book is important.",
+        "answer": "El libro es importante."
+      },
+      {
+        "prompt": "I have a question.",
+        "answer": "Tengo una pregunta."
+      },
+      {
+        "prompt": "There is a table.",
+        "answer": "Hay una mesa."
+      },
+      {
+        "prompt": "The classes are interesting.",
+        "answer": "Las clases son interesantes."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "El libro es rojo.",
+      "Tengo una pregunta.",
+      "Hay dos sillas en la clase.",
+      "Las mesas son pequeñas."
+    ],
+    "complete": [
+      "El libro es interesante.",
+      "Tengo una computadora.",
+      "Hay una ventana en la oficina.",
+      "Las clases son fáciles."
+    ],
+    "translate": [
+      "El libro es importante.",
+      "Tengo una pregunta.",
+      "Hay una mesa.",
+      "Las clases son interesantes."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Identify",
+      "example": "Es una escuela.",
+      "translation": "It is a school."
+    },
+    {
+      "use": "Gender and number",
+      "example": "Las mesas son pequeñas.",
+      "translation": "The tables are small."
+    },
+    {
+      "use": "Possession",
+      "example": "Tengo un libro.",
+      "translation": "I have a book."
+    },
+    {
+      "use": "Existence",
+      "example": "Hay una mesa.",
+      "translation": "There is a table."
+    }
+  ]
+}

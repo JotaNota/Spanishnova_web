@@ -1,0 +1,270 @@
+{
+  "intro": "Interrogative pronouns help you ask for specific information. In Spanish, words like qué, quién, cuándo, and dónde usually carry an accent mark in questions.",
+  "overview": {
+    "body": "Use interrogative pronouns to ask what, who, when, where, why, which, and how much. They can appear in direct questions and indirect questions.",
+    "use_note": "question words for information questions"
+  },
+  "examples": [
+    {
+      "spanish": "¿Qué estudias?",
+      "english": "What do you study?"
+    },
+    {
+      "spanish": "¿Dónde vives?",
+      "english": "Where do you live?"
+    }
+  ],
+  "forms": [
+    {
+      "label": "qué",
+      "meaning": "what"
+    },
+    {
+      "label": "quién / quiénes",
+      "meaning": "who"
+    },
+    {
+      "label": "cuándo",
+      "meaning": "when"
+    },
+    {
+      "label": "dónde",
+      "meaning": "where"
+    },
+    {
+      "label": "por qué",
+      "meaning": "why"
+    },
+    {
+      "label": "cuál / cuáles",
+      "meaning": "which / what"
+    },
+    {
+      "label": "cuánto / cuánta / cuántos / cuántas",
+      "meaning": "how much / how many"
+    }
+  ],
+  "notes": [
+    "Question words carry accent marks in direct and indirect questions.",
+    "Quién and cuál change for singular and plural. Cuánto changes for gender and number."
+  ],
+  "uses": [
+    {
+      "heading": "Ask For Basic Information",
+      "body": "Use qué, quién, cuándo, and dónde to ask for the most common details.",
+      "examples": [
+        {
+          "spanish": "¿Qué necesitas?",
+          "english": "What do you need?"
+        },
+        {
+          "spanish": "¿Quién es tu profesor?",
+          "english": "Who is your teacher?"
+        }
+      ]
+    },
+    {
+      "heading": "Ask For Reasons And Choices",
+      "body": "Use por qué for reasons and cuál or cuáles for choices.",
+      "examples": [
+        {
+          "spanish": "¿Por qué estudias español?",
+          "english": "Why do you study Spanish?"
+        },
+        {
+          "spanish": "¿Cuál prefieres?",
+          "english": "Which one do you prefer?"
+        }
+      ]
+    },
+    {
+      "heading": "Ask About Amounts",
+      "body": "Use cuánto forms to ask about quantity.",
+      "examples": [
+        {
+          "spanish": "¿Cuánto cuesta?",
+          "english": "How much does it cost?"
+        },
+        {
+          "spanish": "¿Cuántas clases tienes?",
+          "english": "How many classes do you have?"
+        }
+      ]
+    }
+  ],
+  "forms_table": {
+    "headers": ["Pronombre", "Meaning", "Example"],
+    "rows": [
+      ["qué", "what", "¿Qué estudias?"],
+      ["quién / quiénes", "who", "¿Quién viene?"],
+      ["cuándo", "when", "¿Cuándo trabajas?"],
+      ["dónde", "where", "¿Dónde vives?"],
+      ["por qué", "why", "¿Por qué corres?"],
+      ["cuál / cuáles", "which / what", "¿Cuál prefieres?"],
+      ["cuánto / cuánta / cuántos / cuántas", "how much / how many", "¿Cuántas preguntas tienes?"]
+    ]
+  },
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Sé dónde vive Ana.",
+        "english": "I know where Ana lives."
+      },
+      {
+        "spanish": "Entiendo qué necesitas.",
+        "english": "I understand what you need."
+      },
+      {
+        "spanish": "Sabemos cuándo empieza la clase.",
+        "english": "We know when the class starts."
+      },
+      {
+        "spanish": "Ella pregunta cuánto cuesta.",
+        "english": "She asks how much it costs."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No sé quién viene.",
+        "english": "I do not know who is coming."
+      },
+      {
+        "spanish": "No entiendo por qué esperas.",
+        "english": "I do not understand why you are waiting."
+      },
+      {
+        "spanish": "No sabemos cuál es correcto.",
+        "english": "We do not know which one is correct."
+      },
+      {
+        "spanish": "No recuerdo dónde está el banco.",
+        "english": "I do not remember where the bank is."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Qué estudias?",
+        "english": "What do you study?"
+      },
+      {
+        "spanish": "¿Quién es tu amiga?",
+        "english": "Who is your friend?"
+      },
+      {
+        "spanish": "¿Cuándo trabajas?",
+        "english": "When do you work?"
+      },
+      {
+        "spanish": "¿Dónde está la estación?",
+        "english": "Where is the station?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "_____ estudias?",
+        "options": ["Qué", "Quién", "Dónde"],
+        "answer": "¿Qué estudias?"
+      },
+      {
+        "prompt": "_____ vive Ana?",
+        "options": ["Cuándo", "Dónde", "Cuál"],
+        "answer": "¿Dónde vive Ana?"
+      },
+      {
+        "prompt": "_____ es tu profesor?",
+        "options": ["Quién", "Qué", "Cuánto"],
+        "answer": "¿Quién es tu profesor?"
+      },
+      {
+        "prompt": "_____ cuesta?",
+        "options": ["Cuánto", "Quiénes", "Dónde"],
+        "answer": "¿Cuánto cuesta?"
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "¿___ necesitas?",
+        "answer": "¿Qué necesitas?"
+      },
+      {
+        "prompt": "¿___ trabajas?",
+        "answer": "¿Cuándo trabajas?"
+      },
+      {
+        "prompt": "¿___ estudias español?",
+        "answer": "¿Por qué estudias español?"
+      },
+      {
+        "prompt": "¿___ clases tienes?",
+        "answer": "¿Cuántas clases tienes?"
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "What do you study?",
+        "answer": "¿Qué estudias?"
+      },
+      {
+        "prompt": "Where do you live?",
+        "answer": "¿Dónde vives?"
+      },
+      {
+        "prompt": "Who is your teacher?",
+        "answer": "¿Quién es tu profesor?"
+      },
+      {
+        "prompt": "Why do you study Spanish?",
+        "answer": "¿Por qué estudias español?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "¿Qué estudias?",
+      "¿Dónde vive Ana?",
+      "¿Quién es tu profesor?",
+      "¿Cuánto cuesta?"
+    ],
+    "complete": [
+      "¿Qué necesitas?",
+      "¿Cuándo trabajas?",
+      "¿Por qué estudias español?",
+      "¿Cuántas clases tienes?"
+    ],
+    "translate": [
+      "¿Qué estudias?",
+      "¿Dónde vives?",
+      "¿Quién es tu profesor?",
+      "¿Por qué estudias español?"
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "What",
+      "example": "¿Qué estudias?",
+      "translation": "What do you study?"
+    },
+    {
+      "use": "Who",
+      "example": "¿Quién viene?",
+      "translation": "Who is coming?"
+    },
+    {
+      "use": "When",
+      "example": "¿Cuándo trabajas?",
+      "translation": "When do you work?"
+    },
+    {
+      "use": "Where",
+      "example": "¿Dónde vives?",
+      "translation": "Where do you live?"
+    },
+    {
+      "use": "Why",
+      "example": "¿Por qué esperas?",
+      "translation": "Why are you waiting?"
+    }
+  ]
+}

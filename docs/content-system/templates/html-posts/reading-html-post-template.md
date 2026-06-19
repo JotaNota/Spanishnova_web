@@ -4,9 +4,9 @@ Use this template to generate clean HTML fragment files for reading posts in:
 
 `docs/content-system/generated/generated-html-posts/readings/`
 
-This is post-body HTML only. Do not include document wrappers, embedded styles, scripts, block comments, editor-specific block syntax, breadcrumbs, meta rows, taxonomy pills, or `` section cards.
+This is post-body HTML only. Do not include document wrappers, embedded styles, scripts, block comments, editor-specific block syntax, navigation-trail markup, metadata rows, taxonomy labels, or section cards.
 
-Breadcrumbs and pills are rendered by the readings single template from `topic_tax` and `level_tax`.
+Navigation and taxonomy labels are rendered by the readings single template from `topic_tax` and `level_tax`.
 
 Use `default_variant` only to shape the content before HTML generation. Do not print `default_variant` in the HTML.
 
@@ -86,4 +86,4 @@ The HTML must follow the generated Markdown source and the selected structure in
 - For `procedural_set`, render each grouped item as a repeated `sn-reading-block` with parallel subheadings.
 - For `curiosity_article`, render thematic sections as repeated `sn-reading-block` sections.
 - Do not include inline `style` attributes.
-- Do not include `sn-breadcrumb`, `sn-meta-row`, or `sn-pill`.
+- Do not include navigation, metadata, or taxonomy label wrappers.

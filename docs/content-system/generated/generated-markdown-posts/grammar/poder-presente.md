@@ -1,77 +1,65 @@
-# How to Use “Poder” in the Present Tense in Spanish
-
 The verb poder means to be able to or can. In the present tense, use it to talk about ability, permission, and things that are possible.
 
 ## Overview
 
 Poder is an irregular verb in the present tense. The stem changes from o to ue in puedo, puedes, puede, and pueden, but nosotros keeps the regular stem: podemos.
 
-- Yo puedo estudiar hoy. - I can study today.
+- Yo puedo estudiar hoy. -> I can study today.
 
-## Structure
+## Conjugación
 
-| Structure | Example | Translation |
-| --- | --- | --- |
-| subject + poder + infinitive | Ella puede hablar espanol. | She can speak Spanish. |
-| subject + no + poder + infinitive | Nosotros no podemos salir ahora. | We cannot leave now. |
-| Poder + subject + infinitive? | Puedes venir manana? | Can you come tomorrow? |
-
-## Conjugation
-
-| Subject | Form | Example | Translation |
+| Subject | Forma | Example | Translation |
 | --- | --- | --- | --- |
 | Yo | puedo | Yo puedo ayudar. | I can help. |
-| Tu | puedes | Tu puedes leer este libro. | You can read this book. |
-| El / Ella / Usted | puede | Ella puede trabajar hoy. | She can work today. |
+| Tú | puedes | Tú puedes leer este libro. | You can read this book. |
+| Él / Ella / Usted | puede | Ella puede trabajar hoy. | She can work today. |
 | Nosotros / Nosotras | podemos | Nosotros podemos practicar. | We can practice. |
 | Ellos / Ellas / Ustedes | pueden | Ellos pueden esperar. | They can wait. |
 
-## Conjugation Practice Source Marker
-
 `sn-conjugation-practice`
 
-## Uses
+## Cómo/cuándo lo usamos
 
 ### Ability
 
 Use poder with an infinitive to say that someone can do something.
 
-- Puedo cocinar arroz. - I can cook rice.
-- Mi hermano puede nadar. - My brother can swim.
+- Puedo cocinar arroz. -> I can cook rice.
+- Mi hermano puede nadar. -> My brother can swim.
 
 ### Permission And Possibility
 
 Use poder to ask permission or to say that something is possible.
 
-- Puedes usar mi telefono. - You can use my phone.
-- Podemos estudiar despues. - We can study later.
+- Puedes usar mi teléfono. -> You can use my phone.
+- Podemos estudiar después. -> We can study later.
 
-## Oraciones
+## Oraciones.
 
-### Afirmativa
+### Afirmativas
 
-- Yo puedo hablar con la maestra. - I can speak with the teacher.
-- Tu puedes abrir la ventana. - You can open the window.
-- Ella puede preparar cafe. - She can make coffee.
-- Nosotros podemos caminar al parque. - We can walk to the park.
+- Yo puedo hablar con la maestra. -> I can speak with the teacher.
+- Tú puedes abrir la ventana. -> You can open the window.
+- Ella puede preparar café. -> She can make coffee.
+- Nosotros podemos caminar al parque. -> We can walk to the park.
 
-### Negativa
+### Negativas
 
-- Yo no puedo manejar hoy. - I cannot drive today.
-- Tu no puedes entrar ahora. - You cannot enter now.
-- El no puede llamar esta noche. - He cannot call tonight.
-- Ellas no pueden viajar manana. - They cannot travel tomorrow.
+- Yo no puedo manejar hoy. -> I cannot drive today.
+- Tú no puedes entrar ahora. -> You cannot enter now.
+- Él no puede llamar esta noche. -> He cannot call tonight.
+- Ellas no pueden viajar mañana. -> They cannot travel tomorrow.
 
-### Preguntas
+### Forma de pregunta
 
-- Puedes repetir, por favor? - Can you repeat, please?
-- Ella puede venir a clase? - Can she come to class?
-- Ustedes pueden esperar aqui? - Can you all wait here?
-- Podemos empezar ahora? - Can we start now?
+- ¿Puedes repetir, por favor? -> Can you repeat, please?
+- ¿Ella puede venir a clase? -> Can she come to class?
+- ¿Ustedes pueden esperar aquí? -> Can you all wait here?
+- ¿Podemos empezar ahora? -> Can we start now?
 
 ## Ejercicios
 
-### Seleccionar
+### Selección simple
 
 1. Yo _____ ayudar.
    - a) puede
@@ -80,12 +68,12 @@ Use poder to ask permission or to say that something is possible.
 
    Yo puedo ayudar.
 
-2. Tu _____ leer este libro.
+2. Tú _____ abrir la ventana.
    - a) puedes
    - b) puedo
    - c) pueden
 
-   Tu puedes leer este libro.
+   Tú puedes abrir la ventana.
 
 3. Ella _____ trabajar hoy.
    - a) podemos
@@ -122,12 +110,12 @@ Use poder to ask permission or to say that something is possible.
 
    Ustedes no pueden salir ahora.
 
-8. _____ tu venir manana?
+8. ¿_____ tú venir mañana?
    - a) Puede
    - b) Puedes
    - c) Podemos
 
-   Puedes tu venir manana?
+   ¿Puedes tú venir mañana?
 
 ### Completar
 
@@ -135,17 +123,17 @@ Use poder to ask permission or to say that something is possible.
 
    Yo puedo estudiar esta noche.
 
-2. Tu ___ usar mi lapiz.
+2. Tú ___ usar mi lápiz.
 
-   Tu puedes usar mi lapiz.
+   Tú puedes usar mi lápiz.
 
-3. Ella ___ correr rapido.
+3. Ella ___ correr rápido.
 
-   Ella puede correr rapido.
+   Ella puede correr rápido.
 
-4. Nosotros ___ escuchar musica.
+4. Nosotros ___ escuchar música.
 
-   Nosotros podemos escuchar musica.
+   Nosotros podemos escuchar música.
 
 5. Ellos ___ comprar comida.
 
@@ -155,15 +143,15 @@ Use poder to ask permission or to say that something is possible.
 
    Ustedes no pueden abrir la puerta.
 
-7. ___ tu esperar cinco minutos?
+7. ¿___ tú esperar cinco minutos?
 
-   Puedes tu esperar cinco minutos?
+   ¿Puedes tú esperar cinco minutos?
 
-8. El ___ descansar ahora?
+8. ¿Él ___ descansar ahora?
 
-   El puede descansar ahora?
+   ¿Él puede descansar ahora?
 
-### Traducir
+### Traducción
 
 1. I can help.
 
@@ -171,7 +159,7 @@ Use poder to ask permission or to say that something is possible.
 
 2. You can read this book.
 
-   Tu puedes leer este libro.
+   Tú puedes leer este libro.
 
 3. She can work today.
 
@@ -191,52 +179,17 @@ Use poder to ask permission or to say that something is possible.
 
 7. Can you repeat, please?
 
-   Puedes repetir, por favor?
+   ¿Puedes repetir, por favor?
 
 8. Can they travel tomorrow?
 
-   Ellos pueden viajar manana?
-
-## Answer Key
-
-### Select
-
-1. Yo puedo ayudar.
-2. Tu puedes leer este libro.
-3. Ella puede trabajar hoy.
-4. Nosotros podemos practicar.
-5. Ellos pueden esperar.
-6. Usted puede hablar conmigo.
-7. Ustedes no pueden salir ahora.
-8. Puedes tu venir manana?
-
-### Complete
-
-1. Yo puedo estudiar esta noche.
-2. Tu puedes usar mi lapiz.
-3. Ella puede correr rapido.
-4. Nosotros podemos escuchar musica.
-5. Ellos pueden comprar comida.
-6. Ustedes no pueden abrir la puerta.
-7. Puedes tu esperar cinco minutos?
-8. El puede descansar ahora?
-
-### Translate
-
-1. Yo puedo ayudar.
-2. Tu puedes leer este libro.
-3. Ella puede trabajar hoy.
-4. Nosotros podemos practicar.
-5. Ellos pueden esperar.
-6. Yo no puedo manejar hoy.
-7. Puedes repetir, por favor?
-8. Ellos pueden viajar manana?
+   ¿Ellos pueden viajar mañana?
 
 ## Wrap Up
 
 | Use | Example | Translation |
 | --- | --- | --- |
 | Ability | Yo puedo ayudar. | I can help. |
-| Permission | Puedes usar mi telefono. | You can use my phone. |
-| Possibility | Podemos estudiar despues. | We can study later. |
+| Permission | Puedes usar mi teléfono. | You can use my phone. |
+| Possibility | Podemos estudiar después. | We can study later. |
 | Negative ability | No puedo manejar hoy. | I cannot drive today. |

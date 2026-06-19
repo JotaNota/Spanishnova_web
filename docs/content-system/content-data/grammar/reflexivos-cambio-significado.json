@@ -1,0 +1,353 @@
+{
+  "intro": "Some verbs change meaning when they become reflexive. The reflexive version often describes a personal change, a result, or the subject's involvement in the action.",
+  "overview": {
+    "body": "Compare the non-reflexive verb with the reflexive form. Ir means to go, but irse means to leave. Dormir means to sleep, but dormirse means to fall asleep.",
+    "use_note": "verbs whose meaning changes in reflexive form"
+  },
+  "examples": [
+    {
+      "spanish": "Voy al banco.",
+      "english": "I go to the bank."
+    },
+    {
+      "spanish": "Me voy a las ocho.",
+      "english": "I leave at eight."
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "ir",
+      "example": "Vamos al centro.",
+      "translation": "We go downtown."
+    },
+    {
+      "pattern": "irse",
+      "example": "Nos vamos ahora.",
+      "translation": "We are leaving now."
+    },
+    {
+      "pattern": "dormir / dormirse",
+      "example": "El niño se duerme temprano.",
+      "translation": "The child falls asleep early."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Movement versus leaving",
+      "body": "Use ir for going to a place and irse for leaving a place or situation.",
+      "examples": [
+        {
+          "spanish": "Ellos van a la escuela.",
+          "english": "They go to school."
+        },
+        {
+          "spanish": "Ellos se van después de la clase.",
+          "english": "They leave after class."
+        }
+      ]
+    },
+    {
+      "heading": "Action versus result",
+      "body": "Some reflexive forms focus on the result or change for the subject.",
+      "examples": [
+        {
+          "spanish": "Leo en la cama.",
+          "english": "I read in bed."
+        },
+        {
+          "spanish": "Me duermo en la cama.",
+          "english": "I fall asleep in bed."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Voy a la oficina.",
+        "english": "I go to the office."
+      },
+      {
+        "spanish": "Me voy de la oficina.",
+        "english": "I leave the office."
+      },
+      {
+        "spanish": "Ella duerme ocho horas.",
+        "english": "She sleeps eight hours."
+      },
+      {
+        "spanish": "Ella se duerme en el sofá.",
+        "english": "She falls asleep on the sofa."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No me voy todavía.",
+        "english": "I am not leaving yet."
+      },
+      {
+        "spanish": "Él no se duerme en clase.",
+        "english": "He does not fall asleep in class."
+      },
+      {
+        "spanish": "Nosotros no nos quedamos aquí.",
+        "english": "We do not stay here."
+      },
+      {
+        "spanish": "Ustedes no se llevan el libro.",
+        "english": "You all do not take the book with you."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Te vas ahora?",
+        "english": "Are you leaving now?"
+      },
+      {
+        "spanish": "¿Ella se duerme rápido?",
+        "english": "Does she fall asleep quickly?"
+      },
+      {
+        "spanish": "¿Nos llevamos las llaves?",
+        "english": "Do we take the keys with us?"
+      },
+      {
+        "spanish": "¿Ellos se quedan en casa?",
+        "english": "Do they stay at home?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ voy a las ocho.",
+        "options": [
+          "me",
+          "te",
+          "se"
+        ],
+        "answer": "Yo me voy a las ocho."
+      },
+      {
+        "prompt": "Ella se _____ en el sof?.",
+        "options": [
+          "duerme",
+          "duermo",
+          "duermen"
+        ],
+        "answer": "Ella se duerme en el sof?."
+      },
+      {
+        "prompt": "Nosotros _____ llevamos los documentos.",
+        "options": [
+          "nos",
+          "se",
+          "me"
+        ],
+        "answer": "Nosotros nos llevamos los documentos."
+      },
+      {
+        "prompt": "T? _____ vas temprano.",
+        "options": [
+          "te",
+          "se",
+          "nos"
+        ],
+        "answer": "T? te vas temprano."
+      },
+      {
+        "prompt": "El beb? _____ duerme.",
+        "options": [
+          "se",
+          "me",
+          "te"
+        ],
+        "answer": "El beb? se duerme."
+      },
+      {
+        "prompt": "Ellas _____ quedan en el hotel.",
+        "options": [
+          "se",
+          "nos",
+          "me"
+        ],
+        "answer": "Ellas se quedan en el hotel."
+      },
+      {
+        "prompt": "Yo no _____ voy todav?a.",
+        "options": [
+          "me",
+          "te",
+          "se"
+        ],
+        "answer": "Yo no me voy todav?a."
+      },
+      {
+        "prompt": "?T? _____ vas ahora?",
+        "options": [
+          "te",
+          "se",
+          "nos"
+        ],
+        "answer": "?T? te vas ahora?"
+      },
+      {
+        "prompt": "Nosotros _____ llevamos las llaves.",
+        "options": [
+          "nos",
+          "se",
+          "me"
+        ],
+        "answer": "Nosotros nos llevamos las llaves."
+      },
+      {
+        "prompt": "?l no _____ duerme en clase.",
+        "options": [
+          "se",
+          "me",
+          "te"
+        ],
+        "answer": "?l no se duerme en clase."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "T? ___ vas temprano.",
+        "answer": "T? te vas temprano."
+      },
+      {
+        "prompt": "El beb? ___ duerme.",
+        "answer": "El beb? se duerme."
+      },
+      {
+        "prompt": "Ellas ___ quedan en el hotel.",
+        "answer": "Ellas se quedan en el hotel."
+      },
+      {
+        "prompt": "Yo ___ voy a las ocho.",
+        "answer": "Yo me voy a las ocho."
+      },
+      {
+        "prompt": "Nosotros ___ llevamos los documentos.",
+        "answer": "Nosotros nos llevamos los documentos."
+      },
+      {
+        "prompt": "Ella ___ duerme r?pido.",
+        "answer": "Ella se duerme r?pido."
+      },
+      {
+        "prompt": "Ustedes no ___ van todav?a.",
+        "answer": "Ustedes no se van todav?a."
+      },
+      {
+        "prompt": "Nosotras ___ quedamos aqu?.",
+        "answer": "Nosotras nos quedamos aqu?."
+      },
+      {
+        "prompt": "?l ___ lleva el libro.",
+        "answer": "?l se lleva el libro."
+      },
+      {
+        "prompt": "?T? ___ vas ahora?",
+        "answer": "?T? te vas ahora?"
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I leave at eight.",
+        "answer": "Me voy a las ocho."
+      },
+      {
+        "prompt": "She falls asleep quickly.",
+        "answer": "Ella se duerme r?pido."
+      },
+      {
+        "prompt": "Are you leaving now?",
+        "answer": "?Te vas ahora?"
+      },
+      {
+        "prompt": "We take the documents with us.",
+        "answer": "Nos llevamos los documentos."
+      },
+      {
+        "prompt": "They stay at the hotel.",
+        "answer": "Ellos se quedan en el hotel."
+      },
+      {
+        "prompt": "I am not leaving yet.",
+        "answer": "No me voy todav?a."
+      },
+      {
+        "prompt": "He does not fall asleep in class.",
+        "answer": "?l no se duerme en clase."
+      },
+      {
+        "prompt": "We are leaving now.",
+        "answer": "Nos vamos ahora."
+      },
+      {
+        "prompt": "She takes the book with her.",
+        "answer": "Ella se lleva el libro."
+      },
+      {
+        "prompt": "Do they stay at home?",
+        "answer": "?Ellos se quedan en casa?"
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo me voy a las ocho.",
+      "Ella se duerme en el sof?.",
+      "Nosotros nos llevamos los documentos.",
+      "T? te vas temprano.",
+      "El beb? se duerme.",
+      "Ellas se quedan en el hotel.",
+      "Yo no me voy todav?a.",
+      "?T? te vas ahora?",
+      "Nosotros nos llevamos las llaves.",
+      "?l no se duerme en clase."
+    ],
+    "complete": [
+      "T? te vas temprano.",
+      "El beb? se duerme.",
+      "Ellas se quedan en el hotel.",
+      "Yo me voy a las ocho.",
+      "Nosotros nos llevamos los documentos.",
+      "Ella se duerme r?pido.",
+      "Ustedes no se van todav?a.",
+      "Nosotras nos quedamos aqu?.",
+      "?l se lleva el libro.",
+      "?T? te vas ahora?"
+    ],
+    "translate": [
+      "Me voy a las ocho.",
+      "Ella se duerme r?pido.",
+      "?Te vas ahora?",
+      "Nos llevamos los documentos.",
+      "Ellos se quedan en el hotel.",
+      "No me voy todav?a.",
+      "?l no se duerme en clase.",
+      "Nos vamos ahora.",
+      "Ella se lleva el libro.",
+      "?Ellos se quedan en casa?"
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "ir / irse",
+      "example": "Voy al banco. / Me voy ahora.",
+      "translation": "I go to the bank. / I leave now."
+    },
+    {
+      "use": "dormir / dormirse",
+      "example": "Duermo bien. / Me duermo rápido.",
+      "translation": "I sleep well. / I fall asleep quickly."
+    },
+    {
+      "use": "llevar / llevarse",
+      "example": "Llevo una mochila. / Me llevo la mochila.",
+      "translation": "I carry a backpack. / I take the backpack with me."
+    }
+  ]
+}

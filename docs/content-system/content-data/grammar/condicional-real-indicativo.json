@@ -1,0 +1,102 @@
+{
+  "intro": "Real conditional sentences describe situations that are possible or realistic. In Spanish, many real conditionals use si with the indicative, followed by another indicative verb.",
+  "overview": {
+    "body": "Use this structure when the condition can really happen. The si clause gives the condition, and the main clause gives the result.",
+    "use_note": "real conditional with indicative"
+  },
+  "examples": [
+    {"spanish": "Si tengo tiempo, estudio español.", "english": "If I have time, I study Spanish."},
+    {"spanish": "Si llueve, nos quedamos en casa.", "english": "If it rains, we stay at home."}
+  ],
+  "structure": [
+    {"pattern": "si + present indicative, present indicative", "example": "Si tengo hambre, como algo.", "translation": "If I am hungry, I eat something."},
+    {"pattern": "present indicative + si + present indicative", "example": "Voy al parque si hace sol.", "translation": "I go to the park if it is sunny."},
+    {"pattern": "si + present indicative, future or command-like result", "example": "Si necesitas ayuda, te llamo.", "translation": "If you need help, I will call you."}
+  ],
+  "uses": [
+    {
+      "heading": "Real possibilities",
+      "body": "Use the indicative when the condition is possible, factual, or likely.",
+      "examples": [
+        {"spanish": "Si Ana está en casa, la visitamos.", "english": "If Ana is at home, we visit her."},
+        {"spanish": "Si tú puedes, empezamos ahora.", "english": "If you can, we start now."}
+      ]
+    },
+    {
+      "heading": "General truths and routines",
+      "body": "Real conditionals can describe what normally happens when a condition is true.",
+      "examples": [
+        {"spanish": "Si trabajo mucho, me canso.", "english": "If I work a lot, I get tired."},
+        {"spanish": "Si los niños tienen hambre, comen fruta.", "english": "If the children are hungry, they eat fruit."}
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {"spanish": "Si estudio, aprendo más.", "english": "If I study, I learn more."},
+      {"spanish": "Si tienes café, tomo una taza.", "english": "If you have coffee, I drink a cup."},
+      {"spanish": "Vamos al cine si termina temprano.", "english": "We go to the movies if it ends early."},
+      {"spanish": "Si hace frío, cierro la ventana.", "english": "If it is cold, I close the window."}
+    ],
+    "negative": [
+      {"spanish": "Si no tengo dinero, no compro nada.", "english": "If I do not have money, I do not buy anything."},
+      {"spanish": "No salimos si llueve.", "english": "We do not go out if it rains."},
+      {"spanish": "Si él no llama, no esperamos.", "english": "If he does not call, we do not wait."},
+      {"spanish": "Si no entiendes, no sigues adelante.", "english": "If you do not understand, you do not continue."}
+    ],
+    "questions": [
+      {"spanish": "¿Qué haces si tienes tiempo?", "english": "What do you do if you have time?"},
+      {"spanish": "¿Vienes si te invito?", "english": "Do you come if I invite you?"},
+      {"spanish": "¿Si llueve, cancelamos la clase?", "english": "If it rains, do we cancel the class?"},
+      {"spanish": "¿Me llamas si necesitas ayuda?", "english": "Do you call me if you need help?"}
+    ]
+  },
+  "exercises": {
+    "select": [
+      {"prompt": "Si tengo tiempo, _____ español.", "options": ["estudio", "estudié", "estudiaba"], "answer": "Si tengo tiempo, estudio español."},
+      {"prompt": "Si llueve, nos _____ en casa.", "options": ["quedamos", "quedé", "quedaban"], "answer": "Si llueve, nos quedamos en casa."},
+      {"prompt": "Voy al parque si _____ sol.", "options": ["hace", "hizo", "hacía"], "answer": "Voy al parque si hace sol."},
+      {"prompt": "Si no entiendo, _____ ayuda.", "options": ["pido", "pedí", "pedía"], "answer": "Si no entiendo, pido ayuda."},
+      {"prompt": "Si tienes café, _____ una taza.", "options": ["tomo", "tomé", "tomaba"], "answer": "Si tienes café, tomo una taza."},
+      {"prompt": "No salimos si _____.", "options": ["llueve", "llovió", "llovía"], "answer": "No salimos si llueve."},
+      {"prompt": "Si él llama, lo _____.", "options": ["escucho", "escuché", "escuchaba"], "answer": "Si él llama, lo escucho."},
+      {"prompt": "Si hace frío, _____ la ventana.", "options": ["cierro", "cerré", "cerraba"], "answer": "Si hace frío, cierro la ventana."},
+      {"prompt": "Si puedes, _____ ahora.", "options": ["ven", "viniste", "venías"], "answer": "Si puedes, ven ahora."},
+      {"prompt": "¿Me llamas si _____ ayuda?", "options": ["necesitas", "necesitaste", "necesitabas"], "answer": "¿Me llamas si necesitas ayuda?"}
+    ],
+    "complete": [
+      {"prompt": "Si estudio, ___ más.", "answer": "Si estudio, aprendo más."},
+      {"prompt": "Si tienes tiempo, ___ a casa.", "answer": "Si tienes tiempo, ven a casa."},
+      {"prompt": "Si llueve, no ___.", "answer": "Si llueve, no salimos."},
+      {"prompt": "Voy contigo si tú ___.", "answer": "Voy contigo si tú puedes."},
+      {"prompt": "Si no tengo dinero, no ___ nada.", "answer": "Si no tengo dinero, no compro nada."},
+      {"prompt": "Si Ana está aquí, la ___.", "answer": "Si Ana está aquí, la saludamos."},
+      {"prompt": "Si hace calor, ___ agua.", "answer": "Si hace calor, tomo agua."},
+      {"prompt": "Te llamo si ___ ayuda.", "answer": "Te llamo si necesito ayuda."},
+      {"prompt": "Si trabajas mucho, te ___.", "answer": "Si trabajas mucho, te cansas."},
+      {"prompt": "¿Qué haces si ___ libre?", "answer": "¿Qué haces si estás libre?"}
+    ],
+    "translate": [
+      {"prompt": "If I have time, I study Spanish.", "answer": "Si tengo tiempo, estudio español."},
+      {"prompt": "If it rains, we stay at home.", "answer": "Si llueve, nos quedamos en casa."},
+      {"prompt": "I go to the park if it is sunny.", "answer": "Voy al parque si hace sol."},
+      {"prompt": "If I do not understand, I ask for help.", "answer": "Si no entiendo, pido ayuda."},
+      {"prompt": "If you have coffee, I drink a cup.", "answer": "Si tienes café, tomo una taza."},
+      {"prompt": "We do not go out if it rains.", "answer": "No salimos si llueve."},
+      {"prompt": "If he calls, I listen to him.", "answer": "Si él llama, lo escucho."},
+      {"prompt": "If it is cold, I close the window.", "answer": "Si hace frío, cierro la ventana."},
+      {"prompt": "Call me if you need help.", "answer": "Llámame si necesitas ayuda."},
+      {"prompt": "What do you do if you are free?", "answer": "¿Qué haces si estás libre?"}
+    ]
+  },
+  "answers": {
+    "select": ["Si tengo tiempo, estudio español.", "Si llueve, nos quedamos en casa.", "Voy al parque si hace sol.", "Si no entiendo, pido ayuda.", "Si tienes café, tomo una taza.", "No salimos si llueve.", "Si él llama, lo escucho.", "Si hace frío, cierro la ventana.", "Si puedes, ven ahora.", "¿Me llamas si necesitas ayuda?"],
+    "complete": ["Si estudio, aprendo más.", "Si tienes tiempo, ven a casa.", "Si llueve, no salimos.", "Voy contigo si tú puedes.", "Si no tengo dinero, no compro nada.", "Si Ana está aquí, la saludamos.", "Si hace calor, tomo agua.", "Te llamo si necesito ayuda.", "Si trabajas mucho, te cansas.", "¿Qué haces si estás libre?"],
+    "translate": ["Si tengo tiempo, estudio español.", "Si llueve, nos quedamos en casa.", "Voy al parque si hace sol.", "Si no entiendo, pido ayuda.", "Si tienes café, tomo una taza.", "No salimos si llueve.", "Si él llama, lo escucho.", "Si hace frío, cierro la ventana.", "Llámame si necesitas ayuda.", "¿Qué haces si estás libre?"]
+  },
+  "wrap_up": [
+    {"use": "Condition first", "example": "Si estudio, aprendo más.", "translation": "If I study, I learn more."},
+    {"use": "Result first", "example": "Voy al parque si hace sol.", "translation": "I go to the park if it is sunny."},
+    {"use": "Negative result", "example": "Si llueve, no salimos.", "translation": "If it rains, we do not go out."}
+  ]
+}

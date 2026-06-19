@@ -1,0 +1,112 @@
+{
+  "intro": "Regular preterite verbs follow predictable endings. Use these endings to describe completed past actions with -ar, -er, and -ir verbs.",
+  "overview": {
+    "body": "Regular -ar verbs use endings like hablé, hablaste, habló, hablamos, hablaron. Regular -er and -ir verbs share the same preterite endings: comí, comiste, comió, comimos, comieron.",
+    "use_note": "regular preterite endings"
+  },
+  "examples": [
+    {"spanish": "Yo hablé con mi profesor.", "english": "I spoke with my teacher."},
+    {"spanish": "Nosotros comimos en casa.", "english": "We ate at home."}
+  ],
+  "conjugation": [
+    {"subject": "Yo", "form": "hablé / comí / viví", "example": "Yo viví en Chile.", "translation": "I lived in Chile."},
+    {"subject": "Tú", "form": "hablaste / comiste / viviste", "example": "Tú hablaste ayer.", "translation": "You spoke yesterday."},
+    {"subject": "Él / Ella / Usted", "form": "habló / comió / vivió", "example": "Ella comió arroz.", "translation": "She ate rice."},
+    {"subject": "Nosotros / Nosotras", "form": "hablamos / comimos / vivimos", "example": "Nosotros vivimos allí.", "translation": "We lived there."},
+    {"subject": "Ellos / Ellas / Ustedes", "form": "hablaron / comieron / vivieron", "example": "Ellos hablaron mucho.", "translation": "They spoke a lot."}
+  ],
+  "uses": [
+    {
+      "heading": "-ar verbs",
+      "body": "Remove -ar and add regular preterite endings.",
+      "examples": [
+        {"spanish": "Trabajé el sábado.", "english": "I worked on Saturday."},
+        {"spanish": "Ellas estudiaron para el examen.", "english": "They studied for the exam."}
+      ]
+    },
+    {
+      "heading": "-er and -ir verbs",
+      "body": "Regular -er and -ir verbs use the same preterite endings.",
+      "examples": [
+        {"spanish": "Aprendimos mucho.", "english": "We learned a lot."},
+        {"spanish": "Ustedes vivieron en Perú.", "english": "You all lived in Peru."}
+      ]
+    },
+    {
+      "heading": "Nosotros forms",
+      "body": "For regular -ar and -ir verbs, the nosotros preterite form looks like the present form, so context tells you the time.",
+      "examples": [
+        {"spanish": "Ayer hablamos con Ana.", "english": "Yesterday we spoke with Ana."},
+        {"spanish": "Hoy hablamos con Ana.", "english": "Today we speak with Ana."}
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {"spanish": "Yo trabajé ayer.", "english": "I worked yesterday."},
+      {"spanish": "Tú comiste arroz.", "english": "You ate rice."},
+      {"spanish": "Ella vivió en Lima.", "english": "She lived in Lima."},
+      {"spanish": "Nosotros aprendimos rápido.", "english": "We learned quickly."}
+    ],
+    "negative": [
+      {"spanish": "No hablé con él.", "english": "I did not speak with him."},
+      {"spanish": "Tú no bebiste agua.", "english": "You did not drink water."},
+      {"spanish": "Ella no abrió la ventana.", "english": "She did not open the window."},
+      {"spanish": "Ellos no estudiaron anoche.", "english": "They did not study last night."}
+    ],
+    "questions": [
+      {"spanish": "¿Trabajaste ayer?", "english": "Did you work yesterday?"},
+      {"spanish": "¿Ella comió en casa?", "english": "Did she eat at home?"},
+      {"spanish": "¿Nosotros vivimos allí?", "english": "Did we live there?"},
+      {"spanish": "¿Ustedes terminaron la clase?", "english": "Did you all finish the class?"}
+    ]
+  },
+  "exercises": {
+    "select": [
+      {"prompt": "Yo _____ con Ana.", "options": ["hablé", "hablo", "hablaba"], "answer": "Yo hablé con Ana."},
+      {"prompt": "Tú _____ arroz.", "options": ["comiste", "comes", "comías"], "answer": "Tú comiste arroz."},
+      {"prompt": "Ella _____ en Lima.", "options": ["vivió", "vive", "vivía"], "answer": "Ella vivió en Lima."},
+      {"prompt": "Nosotros _____ mucho.", "options": ["aprendimos", "aprendemos", "aprendíamos"], "answer": "Nosotros aprendimos mucho."},
+      {"prompt": "Ellos _____ para el examen.", "options": ["estudiaron", "estudian", "estudiaban"], "answer": "Ellos estudiaron para el examen."},
+      {"prompt": "Yo no _____ agua.", "options": ["bebí", "bebo", "bebía"], "answer": "Yo no bebí agua."},
+      {"prompt": "Usted _____ la puerta.", "options": ["abrió", "abre", "abría"], "answer": "Usted abrió la puerta."},
+      {"prompt": "Nosotras _____ el sábado.", "options": ["trabajamos", "trabajan", "trabajaban"], "answer": "Nosotras trabajamos el sábado."},
+      {"prompt": "Tú _____ la tarea.", "options": ["terminaste", "terminas", "terminabas"], "answer": "Tú terminaste la tarea."},
+      {"prompt": "¿Ustedes _____ en Perú?", "options": ["vivieron", "viven", "vivían"], "answer": "¿Ustedes vivieron en Perú?"}
+    ],
+    "complete": [
+      {"prompt": "Yo ___ el sábado.", "answer": "Yo trabajé el sábado."},
+      {"prompt": "Tú ___ café.", "answer": "Tú bebiste café."},
+      {"prompt": "Ella ___ la ventana.", "answer": "Ella abrió la ventana."},
+      {"prompt": "Nosotros ___ la lección.", "answer": "Nosotros aprendimos la lección."},
+      {"prompt": "Ellas ___ temprano.", "answer": "Ellas llegaron temprano."},
+      {"prompt": "Yo no ___ con Pedro.", "answer": "Yo no hablé con Pedro."},
+      {"prompt": "Usted ___ el documento.", "answer": "Usted recibió el documento."},
+      {"prompt": "Nosotras ___ en casa.", "answer": "Nosotras comimos en casa."},
+      {"prompt": "Tú ___ en Chile.", "answer": "Tú viviste en Chile."},
+      {"prompt": "¿Ellos ___ la clase?", "answer": "¿Ellos terminaron la clase?"}
+    ],
+    "translate": [
+      {"prompt": "I spoke with Ana.", "answer": "Hablé con Ana."},
+      {"prompt": "You ate rice.", "answer": "Tú comiste arroz."},
+      {"prompt": "She lived in Lima.", "answer": "Ella vivió en Lima."},
+      {"prompt": "We learned a lot.", "answer": "Aprendimos mucho."},
+      {"prompt": "They studied for the exam.", "answer": "Ellos estudiaron para el examen."},
+      {"prompt": "I did not drink water.", "answer": "No bebí agua."},
+      {"prompt": "Did you work yesterday?", "answer": "¿Trabajaste ayer?"},
+      {"prompt": "You all lived in Peru.", "answer": "Ustedes vivieron en Perú."},
+      {"prompt": "We ate at home.", "answer": "Comimos en casa."},
+      {"prompt": "She opened the window.", "answer": "Ella abrió la ventana."}
+    ]
+  },
+  "answers": {
+    "select": ["Yo hablé con Ana.", "Tú comiste arroz.", "Ella vivió en Lima.", "Nosotros aprendimos mucho.", "Ellos estudiaron para el examen.", "Yo no bebí agua.", "Usted abrió la puerta.", "Nosotras trabajamos el sábado.", "Tú terminaste la tarea.", "¿Ustedes vivieron en Perú?"],
+    "complete": ["Yo trabajé el sábado.", "Tú bebiste café.", "Ella abrió la ventana.", "Nosotros aprendimos la lección.", "Ellas llegaron temprano.", "Yo no hablé con Pedro.", "Usted recibió el documento.", "Nosotras comimos en casa.", "Tú viviste en Chile.", "¿Ellos terminaron la clase?"],
+    "translate": ["Hablé con Ana.", "Tú comiste arroz.", "Ella vivió en Lima.", "Aprendimos mucho.", "Ellos estudiaron para el examen.", "No bebí agua.", "¿Trabajaste ayer?", "Ustedes vivieron en Perú.", "Comimos en casa.", "Ella abrió la ventana."]
+  },
+  "wrap_up": [
+    {"use": "-ar verbs", "example": "Yo hablé / tú hablaste / ella habló.", "translation": "I spoke / you spoke / she spoke."},
+    {"use": "-er verbs", "example": "Yo comí / tú comiste / ella comió.", "translation": "I ate / you ate / she ate."},
+    {"use": "-ir verbs", "example": "Yo viví / tú viviste / ella vivió.", "translation": "I lived / you lived / she lived."}
+  ]
+}

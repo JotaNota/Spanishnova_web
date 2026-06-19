@@ -33,10 +33,10 @@ Columns:
 | ----------------- | ---------------------------------------------------------------------------------------- |
 | `base_slug`       | Stable slug for the item. Also used as the generated file name.                          |
 | `topic_base`      | Internal label for the grammar topic or concept.                                         |
-| `public_title`    | Visible post title and generated H1.                                                     |
+| `public_title`    | Visible WordPress post title. Generated grammar HTML does not include an H1.             |
 | `status`          | Production state.                                                                        |
 | `cpt`             | WordPress custom post type. For this roadmap: `grammar`.                                 |
-| `lesson_type`     | Grammar lesson structure. Current values include `tense`, `verb-usage`, and `structure`. |
+| `lesson_type`     | Grammar lesson structure. Valid values: `tense`, `verb-usage`, `structure`, `comparison`, `particle-set`. |
 | `level_tax`       | Difficulty taxonomy term.                                                                |
 | `grammar_tax`     | Grammar taxonomy term.                                                                   |
 | `topic_tax`       | Semantic topic taxonomy term. Can be empty for grammar items.                            |
@@ -45,6 +45,35 @@ Columns:
 | `post_tags`       | Native WordPress tags. Use semicolons for multiple tags.                                 |
 | `priority`        | Production order. Lower numbers come first.                                              |
 | `output_folder`   | Folder where generated Markdown files are expected.                                      |
+
+### Grammar public title rules
+
+* `public_title` is the visible WordPress post title. Grammar generated HTML is body-only and must not include the title, H1, metadata, navigation, or page layout.
+* Use SEO-readable titles, but do not force English grammar categories when they distort the Spanish grammar concept.
+* Keep valid learner-search terms when they match Spanish-learning usage, such as `preterite`, `imperfect`, `subjunctive`, `conditional`, `imperative`, `reflexive verbs`, and `object pronouns`.
+* Avoid public titles centered on English-only labels such as `present perfect`, `present progressive`, or `simple future`.
+* For those cases, prefer functional or Spanish-structure titles, such as:
+  * How to Talk About What You Have Done in Spanish
+  * How to Use “Haber + Participio” in Spanish
+  * How to Talk About What Is Happening Now in Spanish
+  * How to Use “Estar + Gerundio” in Spanish
+* English search labels may remain in `default_focus` or `post_tags`.
+
+### Grammar lesson types
+
+Grammar content-data JSON is the editable source. Generated Markdown and HTML are outputs.
+
+WordPress owns post title, H1, metadata, navigation, and layout. Grammar generated HTML is clean post-body HTML only.
+
+| `lesson_type`   | Required content-data fields beyond the base fields                       | Notes                                                                 |
+| --------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| `tense`         | `conjugation`                                                             | Use for verb tense lessons.                                           |
+| `verb-usage`    | `conjugation`                                                             | Use for one verb or verb family usage lessons.                        |
+| `structure`     | `structure` or `forms`                                                    | Use patterns or forms; do not force conjugation.                      |
+| `comparison`    | `comparison` or `structure`                                               | Use comparison rows or pattern rows; do not force conjugation.        |
+| `particle-set`  | `forms`; `forms_table` when a table is needed                             | Use for particles or form groups that do not depend on a verb tense.  |
+
+Base grammar fields are `intro`, `overview`, `examples`, `uses`, `sentences`, `exercises`, and `answers`.
 
 ## Vocabulary roadmap
 
@@ -65,7 +94,7 @@ Columns:
 | Column               | Meaning                                                         |
 | -------------------- | --------------------------------------------------------------- |
 | `base_slug`          | Stable slug for the item. Also used as the generated file name. |
-| `public_title`       | Visible post title and generated H1.                            |
+| `public_title`       | Visible WordPress post title.                                   |
 | `vocabulary_variant` | Optional vocabulary structure variant. Can be empty.            |
 | `status`             | Production state.                                               |
 | `cpt`                | WordPress custom post type. For this roadmap: `vocabulary`.     |
@@ -95,7 +124,7 @@ Columns:
 | Column            | Meaning                                                               |
 | ----------------- | --------------------------------------------------------------------- |
 | `base_slug`       | Stable slug for the item. Also used as the generated file name.       |
-| `public_title`    | Visible post title and generated H1.                                  |
+| `public_title`    | Visible WordPress post title.                                         |
 | `default_variant` | Reading structure variant used to select the matching reading format. |
 | `status`          | Production state.                                                     |
 | `cpt`             | WordPress custom post type. For this roadmap: `readings`.             |
@@ -125,7 +154,7 @@ Columns:
 | Column            | Meaning                                                                         |
 | ----------------- | ------------------------------------------------------------------------------- |
 | `base_slug`       | Stable slug for the item. Also used as the generated file name.                 |
-| `public_title`    | Visible post title and generated H1.                                            |
+| `public_title`    | Visible WordPress post title.                                                   |
 | `default_variant` | Conversation structure variant used to select the matching conversation format. |
 | `status`          | Production state.                                                               |
 | `cpt`             | WordPress custom post type. For this roadmap: `conversations`.                  |

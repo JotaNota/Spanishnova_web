@@ -1,0 +1,253 @@
+{
+  "intro": "Ir a plus an infinitive is the easiest way to talk about near future plans in Spanish. It works like going to in English.",
+  "overview": {
+    "body": "Conjugate ir in the present tense, add a, and then use an infinitive. The infinitive does not change.",
+    "use_note": "near future plans and intentions"
+  },
+  "examples": [
+    {
+      "spanish": "Voy a estudiar.",
+      "english": "I am going to study."
+    },
+    {
+      "spanish": "Ella va a cocinar.",
+      "english": "She is going to cook."
+    },
+    {
+      "spanish": "Vamos a viajar mañana.",
+      "english": "We are going to travel tomorrow."
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "subject + ir + a + infinitive",
+      "example": "Yo voy a aprender.",
+      "translation": "I am going to learn."
+    },
+    {
+      "pattern": "subject + no + ir + a + infinitive",
+      "example": "Ella no va a salir.",
+      "translation": "She is not going to leave."
+    },
+    {
+      "pattern": "ir + subject + a + infinitive?",
+      "example": "¿Vas a estudiar hoy?",
+      "translation": "Are you going to study today?"
+    }
+  ],
+  "conjugation": [
+    {
+      "subject": "Yo",
+      "form": "voy a + infinitive",
+      "example": "Yo voy a estudiar.",
+      "translation": "I am going to study."
+    },
+    {
+      "subject": "Tú",
+      "form": "vas a + infinitive",
+      "example": "Tú vas a trabajar.",
+      "translation": "You are going to work."
+    },
+    {
+      "subject": "Él / Ella / Usted",
+      "form": "va a + infinitive",
+      "example": "Ella va a cocinar.",
+      "translation": "She is going to cook."
+    },
+    {
+      "subject": "Nosotros / Nosotras",
+      "form": "vamos a + infinitive",
+      "example": "Nosotros vamos a viajar.",
+      "translation": "We are going to travel."
+    },
+    {
+      "subject": "Ellos / Ellas / Ustedes",
+      "form": "van a + infinitive",
+      "example": "Ellos van a correr.",
+      "translation": "They are going to run."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Plans",
+      "body": "Use ir a plus an infinitive to say what someone is planning to do.",
+      "examples": [
+        {
+          "spanish": "Voy a visitar a mi familia.",
+          "english": "I am going to visit my family."
+        },
+        {
+          "spanish": "Mis amigos van a jugar fútbol.",
+          "english": "My friends are going to play soccer."
+        }
+      ]
+    },
+    {
+      "heading": "Near Future",
+      "body": "Use this structure for actions that will happen soon or that feel planned.",
+      "examples": [
+        {
+          "spanish": "Vamos a comer en diez minutos.",
+          "english": "We are going to eat in ten minutes."
+        },
+        {
+          "spanish": "Va a llover esta tarde.",
+          "english": "It is going to rain this afternoon."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Yo voy a leer esta noche.",
+        "english": "I am going to read tonight."
+      },
+      {
+        "spanish": "Tú vas a aprender mucho.",
+        "english": "You are going to learn a lot."
+      },
+      {
+        "spanish": "Ella va a preparar café.",
+        "english": "She is going to prepare coffee."
+      },
+      {
+        "spanish": "Nosotros vamos a practicar juntos.",
+        "english": "We are going to practice together."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No voy a salir hoy.",
+        "english": "I am not going to go out today."
+      },
+      {
+        "spanish": "Tú no vas a trabajar mañana.",
+        "english": "You are not going to work tomorrow."
+      },
+      {
+        "spanish": "Él no va a comprar nada.",
+        "english": "He is not going to buy anything."
+      },
+      {
+        "spanish": "Ellas no van a esperar.",
+        "english": "They are not going to wait."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Vas a estudiar hoy?",
+        "english": "Are you going to study today?"
+      },
+      {
+        "spanish": "¿Ella va a venir?",
+        "english": "Is she going to come?"
+      },
+      {
+        "spanish": "¿Vamos a empezar ahora?",
+        "english": "Are we going to start now?"
+      },
+      {
+        "spanish": "¿Ustedes van a viajar?",
+        "english": "Are you all going to travel?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Yo _____ a estudiar.",
+        "options": ["voy", "vas", "va"],
+        "answer": "Yo voy a estudiar."
+      },
+      {
+        "prompt": "Tú _____ a trabajar.",
+        "options": ["va", "vas", "vamos"],
+        "answer": "Tú vas a trabajar."
+      },
+      {
+        "prompt": "Ella va a _____.",
+        "options": ["cocina", "cocinar", "cocino"],
+        "answer": "Ella va a cocinar."
+      },
+      {
+        "prompt": "Nosotros _____ a practicar.",
+        "options": ["van", "vamos", "voy"],
+        "answer": "Nosotros vamos a practicar."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Yo ___ a leer.",
+        "answer": "Yo voy a leer."
+      },
+      {
+        "prompt": "Tú ___ a aprender mucho.",
+        "answer": "Tú vas a aprender mucho."
+      },
+      {
+        "prompt": "Ella ___ a cocinar.",
+        "answer": "Ella va a cocinar."
+      },
+      {
+        "prompt": "Ellos ___ a correr.",
+        "answer": "Ellos van a correr."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I am going to study.",
+        "answer": "Voy a estudiar."
+      },
+      {
+        "prompt": "You are going to work.",
+        "answer": "Tú vas a trabajar."
+      },
+      {
+        "prompt": "She is going to cook.",
+        "answer": "Ella va a cocinar."
+      },
+      {
+        "prompt": "We are going to travel tomorrow.",
+        "answer": "Vamos a viajar mañana."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Yo voy a estudiar.",
+      "Tú vas a trabajar.",
+      "Ella va a cocinar.",
+      "Nosotros vamos a practicar."
+    ],
+    "complete": [
+      "Yo voy a leer.",
+      "Tú vas a aprender mucho.",
+      "Ella va a cocinar.",
+      "Ellos van a correr."
+    ],
+    "translate": [
+      "Voy a estudiar.",
+      "Tú vas a trabajar.",
+      "Ella va a cocinar.",
+      "Vamos a viajar mañana."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Plan",
+      "example": "Voy a estudiar.",
+      "translation": "I am going to study."
+    },
+    {
+      "use": "Negative plan",
+      "example": "No vamos a salir.",
+      "translation": "We are not going to leave."
+    },
+    {
+      "use": "Question",
+      "example": "¿Vas a practicar?",
+      "translation": "Are you going to practice?"
+    }
+  ]
+}
