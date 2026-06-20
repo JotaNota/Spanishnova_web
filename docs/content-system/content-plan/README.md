@@ -66,8 +66,18 @@ Columns:
   * How to Talk About What You Have Done in Spanish
   * How to Use “Haber + Participio” in Spanish
   * How to Talk About What Is Happening Now in Spanish
-  * How to Use “Estar + Gerundio”
+  * How to Use “Estar + Gerundio” in Spanish
 * English search labels may remain in `default_focus` or `post_tags`.
+
+### Grammar default variants
+
+* `lexical-grammar` means the post remains a grammar lesson, but teaches the grammar pattern through controlled vocabulary.
+* Use `lexical-grammar` in `default_variant`, not in `lesson_type`.
+* Keep `cpt=grammar`. Do not move lexical-grammar lessons to the vocabulary CPT.
+* Keep `lesson_type` technical. For articles, particles, pronouns, or form sets, use `particle-set` when appropriate.
+* The grammar pattern is the lesson goal. Vocabulary is the practice material.
+* Use lexical groups to practice gender, number, article use, singular/plural changes, agreement, or related form patterns.
+* Do not turn a lexical-grammar lesson into a vocabulary list without a grammar function.
 
 ### Grammar lesson types
 
