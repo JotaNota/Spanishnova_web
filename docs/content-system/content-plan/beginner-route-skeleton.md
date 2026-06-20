@@ -1,132 +1,238 @@
 # Beginner route skeleton
 
-This document records the first working skeleton for the SpanishNova Beginner route.
+This document records the working skeleton for the SpanishNova Beginner route.
 
-The route should stay limited. Beginner should not expand into 80 or 100 visible lessons.
+Beginner is a guided present-time path. It should not become every beginner post.
 
 ## Route limit
 
 ```txt
 Beginner Path
-├─ 8 blocks maximum
-├─ 4 to 6 route items per block
-├─ 35 to 45 route items total
-├─ 2 to 3 grammar items per block maximum
-├─ at least 1 vocabulary, conversation, reading, practice, or resource item per block when available
+├─ 10 blocks maximum
+├─ 3 to 5 route items per block
+├─ 35 to 45 route items total when other content types are added
+├─ 2 to 3 grammar items per block in most blocks
+├─ vocabulary, conversation, reading, practice, or resource items can be added later
 └─ extra beginner content remains outside the route
 ```
 
-## Route blocks
+## Route model
 
 ```txt
-route_tax
-├─ beginner-01-first-sentences
-├─ beginner-02-needs-and-obligation
-├─ beginner-03-places-and-movement
-├─ beginner-04-daily-actions
-├─ beginner-05-people-and-description
-├─ beginner-06-food-and-preferences
-├─ beginner-07-questions-and-small-talk
-└─ beginner-08-review-and-mini-stories
+route_tax = beginner
+route_block = 01 / 02 / 03...
+route_step = 10 / 20 / 30...
 ```
 
-## Block 1 · First sentences
+`route_tax` identifies the guided route. `route_block` creates the visible route section. `route_step` orders items inside that section.
+
+## Block 01 · First sentences
 
 Function: create simple sentences.
 
-Possible route items:
+Grammar route items:
 
-- Grammar: Ser
-- Grammar: Estar
-- Grammar: Hay
-- Grammar: Sustantivos básicos
-- Vocabulary: people, places, basic nouns
-- Conversation: introducing yourself / describing where things are
+```txt
+10 ser-presente
+20 estar-presente
+30 hay
+40 sustantivos-basicos
+```
 
-## Block 2 · Needs and obligation
+Future supporting content:
+
+```txt
+Vocabulary: people, places, basic nouns
+Conversation: introducing yourself / describing where things are
+Practice: first sentence patterns
+```
+
+## Block 02 · Needs and obligation
 
 Function: say what someone has, needs, or must do.
 
-Possible route items:
+Grammar route items:
 
-- Grammar: Tener
-- Grammar: Hay que
-- Grammar: Tener que / Deber
-- Grammar: Verbos básicos for tener que
-- Vocabulary: objects, home, classroom
-- Practice: needs and obligations
+```txt
+10 tener-presente
+20 hay-que
+30 tener-que-deber
+40 verbos-basicos-tener-que
+```
 
-## Block 3 · Places and movement
+Future supporting content:
+
+```txt
+Vocabulary: objects, home, classroom
+Practice: needs and obligations
+Conversation: what do you need to do?
+```
+
+## Block 03 · Places and movement
 
 Function: talk about places, movement, and plans.
 
-Possible route items:
+Grammar route items:
 
-- Grammar: Ir
-- Grammar: Ir a + infinitivo
-- Grammar: Adverbios de lugar
-- Vocabulary: city, places, transportation
-- Conversation: asking where someone is going
+```txt
+10 ir-presente
+20 ir-a-infinitivo
+30 adverbios-lugar
+```
 
-## Block 4 · Daily actions
+Future supporting content:
 
-Function: talk about routines and present actions.
+```txt
+Vocabulary: city, places, transportation
+Conversation: asking where someone is going
+Practice: places and movement
+```
 
-Possible route items:
+## Block 04 · Present actions
 
-- Grammar: Presente indicativo regular
-- Grammar: Presente indicativo irregular
-- Grammar: Estar + gerundio
-- Grammar: Hacer
-- Vocabulary: daily routine, common verbs
-- Conversation: what are you doing today?
+Function: talk about routines and what is happening now.
 
-## Block 5 · People and description
+Grammar route items:
+
+```txt
+10 hacer-presente
+20 presente-indicativo-regulares
+30 presente-indicativo-irregulares
+40 estar-gerundio
+```
+
+Future supporting content:
+
+```txt
+Vocabulary: daily actions, common verbs
+Conversation: what are you doing today?
+Practice: present tense contrast
+```
+
+## Block 05 · People and description
 
 Function: describe people and things.
 
-Possible route items:
+Grammar route items:
 
-- Grammar: Adjetivos posesivos
-- Grammar: Demostrativos
-- Vocabulary: family, appearance, personality, clothes
-- Reading: describing a person
-- Practice: description review
+```txt
+10 adjetivos-posesivos
+20 demostrativos
+```
 
-## Block 6 · Food and preferences
+Future supporting content:
 
-Function: ask for food, express wants, needs, and basic preferences.
+```txt
+Vocabulary: family, appearance, personality, clothes
+Reading: describing a person
+Practice: description review
+```
 
-Possible route items:
+## Block 06 · Wants and needs
 
-- Grammar: Querer / Preferir / Necesitar
-- Grammar: Gustar, if kept in Beginner later
-- Vocabulary: food, café, restaurant
-- Conversation: ordering at a café
-- Practice: wants and preferences
+Function: express wants, preferences, and needs.
 
-## Block 7 · Questions and small talk
+Grammar route items:
 
-Function: ask, answer, and hold a simple exchange.
+```txt
+10 querer-preferir-necesitar
+```
 
-Possible route items:
+Future supporting content:
 
-- Grammar: Pronombres interrogativos
-- Grammar: Adverbios de frecuencia
-- Vocabulary: time, days, activities
-- Conversation: small talk / making plans
-- Practice: questions and answers
+```txt
+Vocabulary: food, café, restaurant
+Conversation: ordering at a café
+Practice: wants and preferences
+```
 
-## Block 8 · Review and mini stories
+## Block 07 · Questions and routines
 
-Function: integrate beginner content without adding too much grammar.
+Function: ask questions and describe routine frequency.
 
-Possible route items:
+Grammar route items:
 
-- Practice: mixed beginner review
-- Reading: short beginner story
-- Conversation: review dialogue
-- Resource: beginner checklist
+```txt
+10 pronombres-interrogativos
+20 adverbios-frecuencia
+```
+
+Future supporting content:
+
+```txt
+Vocabulary: time, days, activities
+Conversation: small talk / making plans
+Practice: questions and answers
+```
+
+## Block 08 · Opinions and reactions
+
+Function: express likes, interests, reactions, and opinions in the present.
+
+Grammar route items:
+
+```txt
+10 gustar-encantar-interesar
+20 me-encanta-me-interesa
+30 me-molesta-fascina-importa
+```
+
+Future supporting content:
+
+```txt
+Vocabulary: hobbies, media, daily preferences
+Conversation: talking about what you like
+Practice: reaction patterns
+```
+
+## Block 09 · Possession and reference
+
+Function: refer to things as mine, yours, this one, or that one.
+
+Grammar route items:
+
+```txt
+10 pronombres-posesivos
+20 pronombres-posesivos-demostrativos
+```
+
+Future supporting content:
+
+```txt
+Vocabulary: personal objects, clothes, classroom objects
+Conversation: choosing and comparing objects
+Practice: possession and reference
+```
+
+## Block 10 · Reflexives: daily use
+
+Function: talk about daily actions where the subject acts on itself.
+
+Grammar route items:
+
+```txt
+10 reflexivos-regulares-obvios
+20 reflexivos-rutina-diaria
+30 reflexivos-irregulares
+```
+
+Future supporting content:
+
+```txt
+Vocabulary: morning routine, hygiene, daily schedule
+Conversation: daily routine
+Practice: routine sequence
+```
+
+## Boundary
+
+Beginner ends before the main past-tense route.
+
+The next route should begin with:
+
+```txt
+Intermediate 01 · Past: preterite base
+```
 
 ## Working principle
 
@@ -135,7 +241,7 @@ Grammar should support use.
 Avoid blocks that feel like:
 
 ```txt
-Grammar -> Grammar -> Grammar -> Grammar -> Grammar
+Grammar -> Grammar -> Grammar -> Grammar
 ```
 
 Prefer blocks that can become:
