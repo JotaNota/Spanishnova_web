@@ -20,23 +20,23 @@ Beginner Path
 
 ```txt
 route_tax = beginner
-route_block = 01 / 02 / 03...
-route_step = 10 / 20 / 30...
+route_block = 1 / 2 / 3...
+route_step = 5 / 10 / 20...
 ```
 
 `route_tax` identifies the guided route. `route_block` creates the visible route section. `route_step` orders items inside that section.
 
-## Block 01 · First sentences
+## Block 1 · First sentences
 
 Function: create simple sentences.
 
 Grammar route items:
 
 ```txt
+5 sustantivos-basicos
 10 ser-presente
 20 estar-presente
 30 hay
-40 sustantivos-basicos
 ```
 
 Future supporting content:
@@ -47,7 +47,7 @@ Conversation: introducing yourself / describing where things are
 Practice: first sentence patterns
 ```
 
-## Block 02 · Needs and obligation
+## Block 2 · Needs and obligation
 
 Function: say what someone has, needs, or must do.
 
@@ -68,7 +68,7 @@ Practice: needs and obligations
 Conversation: what do you need to do?
 ```
 
-## Block 03 · Places and movement
+## Block 3 · Places and movement
 
 Function: talk about places, movement, and plans.
 
@@ -88,7 +88,7 @@ Conversation: asking where someone is going
 Practice: places and movement
 ```
 
-## Block 04 · Present actions
+## Block 4 · Present actions
 
 Function: talk about routines and what is happening now.
 
@@ -109,7 +109,7 @@ Conversation: what are you doing today?
 Practice: present tense contrast
 ```
 
-## Block 05 · People and description
+## Block 5 · People and description
 
 Function: describe people and things.
 
@@ -128,7 +128,7 @@ Reading: describing a person
 Practice: description review
 ```
 
-## Block 06 · Wants and needs
+## Block 6 · Wants and needs
 
 Function: express wants, preferences, and needs.
 
@@ -146,7 +146,7 @@ Conversation: ordering at a café
 Practice: wants and preferences
 ```
 
-## Block 07 · Questions and routines
+## Block 7 · Questions and routines
 
 Function: ask questions and describe routine frequency.
 
@@ -165,7 +165,7 @@ Conversation: small talk / making plans
 Practice: questions and answers
 ```
 
-## Block 08 · Opinions and reactions
+## Block 8 · Opinions and reactions
 
 Function: express likes, interests, reactions, and opinions in the present.
 
@@ -185,7 +185,7 @@ Conversation: talking about what you like
 Practice: reaction patterns
 ```
 
-## Block 09 · Possession and reference
+## Block 9 · Possession and reference
 
 Function: refer to things as mine, yours, this one, or that one.
 
@@ -231,7 +231,7 @@ Beginner ends before the main past-tense route.
 The next route should begin with:
 
 ```txt
-Intermediate 01 · Past: preterite base
+Intermediate 1 · Past: preterite base
 ```
 
 ## Working principle
