@@ -31,7 +31,7 @@ grammar-roadmap.csv
 Schema:
 
 ```text
-base_slug,topic_base,public_title,status,cpt,lesson_type,level_tax,grammar_tax,topic_tax,route_tax,route_block,route_step,default_focus,default_variant,post_tags,priority,output_folder
+base_slug,topic_base,public_title,status,cpt,lesson_type,default_variant,default_focus,level_tax,grammar_tax,topic_tax,route_tax,route_block,route_step,post_tags,priority,output_folder
 ```
 
 Columns:
@@ -44,14 +44,14 @@ Columns:
 | `status`          | Production state.                                                                        |
 | `cpt`             | WordPress custom post type. For this roadmap: `grammar`.                                 |
 | `lesson_type`     | Grammar lesson structure. Valid values: `tense`, `verb-usage`, `structure`, `comparison`, `particle-set`. |
+| `default_variant` | Optional structure variant. Can be empty.                                                |
+| `default_focus`   | Default grammar focus used by the content agent when no focus is specified.              |
 | `level_tax`       | Difficulty taxonomy term.                                                                |
 | `grammar_tax`     | Grammar taxonomy term.                                                                   |
 | `topic_tax`       | Semantic topic taxonomy term. Can be empty for grammar items.                            |
 | `route_tax`       | Optional route taxonomy term for the guided route, such as `beginner`, `intermediate`, or `advanced`. Leave empty when the item is not part of a guided route or the assignment is unclear. |
-| `route_block`     | Optional display block within the route, such as `01`, `02`, or `03`. This is stored as post meta in WordPress. |
-| `route_step`      | Optional ordering value within `route_block`, using multiples of 10. This is stored as post meta in WordPress and is not shown as a visible lesson number. |
-| `default_focus`   | Default grammar focus used by the content agent when no focus is specified.              |
-| `default_variant` | Optional structure variant. Can be empty.                                                |
+| `route_block`     | Optional display block within the route, such as `1`, `2`, or `3`. This is stored as post meta in WordPress. |
+| `route_step`      | Optional numeric ordering value within `route_block`, such as `5`, `10`, or `20`. This is stored as post meta in WordPress and is not shown as a visible lesson number. |
 | `post_tags`       | Native WordPress tags. Use semicolons for multiple tags.                                 |
 | `priority`        | Production order. Lower numbers come first.                                              |
 | `output_folder`   | Folder where generated Markdown files are expected.                                      |
@@ -66,7 +66,7 @@ Columns:
   * How to Talk About What You Have Done in Spanish
   * How to Use “Haber + Participio” in Spanish
   * How to Talk About What Is Happening Now in Spanish
-  * How to Use “Estar + Gerundio” in Spanish
+  * How to Use “Estar + Gerundio”
 * English search labels may remain in `default_focus` or `post_tags`.
 
 ### Grammar lesson types
