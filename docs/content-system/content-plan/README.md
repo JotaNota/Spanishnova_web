@@ -13,6 +13,13 @@ docs/content-system/content-plan/reading-roadmap.csv
 docs/content-system/content-plan/conversation-roadmap.csv
 ```
 
+## Route planning
+
+- [Route intention](../../decisions/route-intention.md)
+- [Beginner route skeleton](beginner-route-skeleton.md)
+- [Intermediate route skeleton](intermediate-route-skeleton.md)
+- [Advanced route skeleton](advanced-route-skeleton.md)
+
 ## Grammar roadmap
 
 File:
