@@ -122,10 +122,10 @@ Cambios hechos hasta ahora:
 
 ```txt
 Cambios locales
-├─ taxonomía nueva: routes
+├─ taxonomía nueva: route_tax / routes
 ├─ término route: beginner
 ├─ término route: intermediate
-├─ término route: advance
+├─ término route: advanced
 ├─ cambio en frontpage porque “niveles” ahora apunta a rutas nuevas
 ├─ creación/modificación de /route/beginner/
 ├─ modificación de /level/beginner/
@@ -139,38 +139,82 @@ http://spanishnova-localwp-full-import.local/route/beginner/
 http://spanishnova-localwp-full-import.local/level/beginner/
 ```
 
-Cambios que probablemente pertenecen a WordPress admin:
+## Archivos/capas detectadas en ramas o PRs anteriores
+
+La PR relacionada con presentación de rutas muestra que esto no es solo contenido de WordPress admin. Incluye cambios de tema, CSS, PHP, taxonomías, scripts y roadmap.
 
 ```txt
-├─ crear taxonomía routes
-├─ crear términos beginner, intermediate, advance
-├─ revisar asociaciones de posts o páginas con routes
+Tema / front
+├─ front-page.php
+├─ taxonomy-level_tax.php
+├─ taxonomy-route_tax.php
+├─ inc/enqueue.php
+├─ inc/taxonomies.php
+├─ inc/taxonomy-seeds.php
+└─ assets/css/level-route.css
+
+Scripts / sincronización
+├─ scripts/upload_posts.py
+├─ scripts/spanishnova_upload/uploader.py
+├─ scripts/sync_roadmap_from_wp.py
+└─ scripts/README.md
+
+Roadmap / documentación
+├─ docs/content-system/content-plan/grammar-roadmap.csv
+├─ docs/content-system/content-plan/README.md
+├─ docs/content-system/content-plan/beginner-route-skeleton.md
+├─ docs/content-system/content-plan/intermediate-route-skeleton.md
+├─ docs/content-system/content-plan/advanced-route-skeleton.md
+└─ docs/decisions/route-intention.md
+```
+
+## Qué implica para pasar esto online
+
+```txt
+No alcanza con crear páginas manualmente.
+También hay que llevar archivos del tema.
+También hay que registrar la taxonomía route_tax.
+También hay que verificar que el CSS level-route.css esté cargando.
+También hay que verificar que /route/beginner/ use taxonomy-route_tax.php.
+También hay que verificar que /level/beginner/ use taxonomy-level_tax.php.
+También hay que sincronizar route_tax, route_block y route_step en los posts que pertenecen a la ruta.
+```
+
+## Cambios que probablemente pertenecen a WordPress admin
+
+```txt
+├─ revisar que existan los términos beginner, intermediate, advanced en route_tax
+├─ revisar asociaciones de posts con route_tax
+├─ revisar metadatos route_block y route_step en posts de grammar
 ├─ revisar /route/beginner/
 ├─ revisar /level/beginner/
 └─ revisar enlaces de la sección niveles en frontpage
 ```
 
-Cambios que probablemente pertenecen al tema o código:
+## Cambios que probablemente pertenecen al tema o código
 
 ```txt
-├─ templates de archive/taxonomy si existen
-├─ templates de level si fueron modificados
-├─ frontpage o bloque de niveles si está en el tema
-├─ CSS si cambió la presentación
-└─ funciones PHP si se registró la taxonomía routes en código
+├─ registrar route_tax en inc/taxonomies.php
+├─ sembrar términos route_tax en inc/taxonomy-seeds.php
+├─ cargar level-route.css desde inc/enqueue.php
+├─ modificar enlaces de niveles en front-page.php
+├─ crear template taxonomy-route_tax.php
+├─ modificar template taxonomy-level_tax.php
+└─ subir assets/css/level-route.css
 ```
 
-Pendiente:
+## Pendiente
 
 ```txt
-1. Revisar archivos modificados con Git.
-2. Identificar dónde se registró la taxonomía routes.
-3. Identificar qué archivo controla la frontpage.
-4. Identificar qué archivo controla /level/beginner/.
-5. Identificar qué archivo controla /route/beginner/.
-6. Definir qué se replica online desde archivos.
-7. Definir qué se replica online desde WordPress admin.
-8. No importar el tema completo.
+1. Revisar archivos modificados con Git en la rama local actual.
+2. Comparar contra PR #29 si esos cambios ya están en remoto.
+3. Identificar si los cambios locales nuevos son continuación o corrección de esa rama.
+4. Identificar si route_tax está registrada en el online.
+5. Identificar si los términos beginner, intermediate y advanced existen online.
+6. Identificar qué posts tienen route_tax, route_block y route_step.
+7. Verificar /route/beginner/ online.
+8. Verificar /level/beginner/ online.
+9. No importar el tema completo.
 ```
 
 ## Ramas o PRs recientes relacionadas
