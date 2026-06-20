@@ -122,19 +122,65 @@ Cambios hechos hasta ahora:
 
 ```txt
 Cambios locales
-├─ algunas páginas
-├─ taxonomía
-├─ algunos posts
-└─ página principal
+├─ taxonomía nueva: routes
+├─ término route: beginner
+├─ término route: intermediate
+├─ término route: advance
+├─ cambio en frontpage porque “niveles” ahora apunta a rutas nuevas
+├─ creación/modificación de /route/beginner/
+├─ modificación de /level/beginner/
+└─ sección de niveles redirige a tres páginas nuevas de route
+```
+
+URLs locales mencionadas:
+
+```txt
+http://spanishnova-localwp-full-import.local/route/beginner/
+http://spanishnova-localwp-full-import.local/level/beginner/
+```
+
+Cambios que probablemente pertenecen a WordPress admin:
+
+```txt
+├─ crear taxonomía routes
+├─ crear términos beginner, intermediate, advance
+├─ revisar asociaciones de posts o páginas con routes
+├─ revisar /route/beginner/
+├─ revisar /level/beginner/
+└─ revisar enlaces de la sección niveles en frontpage
+```
+
+Cambios que probablemente pertenecen al tema o código:
+
+```txt
+├─ templates de archive/taxonomy si existen
+├─ templates de level si fueron modificados
+├─ frontpage o bloque de niveles si está en el tema
+├─ CSS si cambió la presentación
+└─ funciones PHP si se registró la taxonomía routes en código
 ```
 
 Pendiente:
 
 ```txt
 1. Revisar archivos modificados con Git.
-2. Anotar páginas modificadas.
-3. Anotar posts modificados.
-4. Anotar taxonomías modificadas.
-5. Definir qué se replica online.
-6. No importar el tema completo.
+2. Identificar dónde se registró la taxonomía routes.
+3. Identificar qué archivo controla la frontpage.
+4. Identificar qué archivo controla /level/beginner/.
+5. Identificar qué archivo controla /route/beginner/.
+6. Definir qué se replica online desde archivos.
+7. Definir qué se replica online desde WordPress admin.
+8. No importar el tema completo.
+```
+
+## Ramas o PRs recientes relacionadas
+
+```txt
+#29 Work/grammar route presentation
+#28 Add local WordPress vocabulary pull script
+#27 Work/vocabulary roadmap posts
+#26 Add WordPress-to-repo sync workflow
+#25 Work/content roadmaps routes
+#24 Publish posts and organize taxonomies
+#23 Arch/mod content system
 ```
