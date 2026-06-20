@@ -139,6 +139,28 @@ http://spanishnova-localwp-full-import.local/route/beginner/
 http://spanishnova-localwp-full-import.local/level/beginner/
 ```
 
+## Aclaración clave
+
+`/route/beginner/` no debe importarse como una página de WordPress.
+
+Esa URL sale de:
+
+```txt
+route_tax
+├─ term: beginner
+└─ template: taxonomy-route_tax.php
+```
+
+`/level/beginner/` tampoco es una página normal. Sale de:
+
+```txt
+level_tax
+├─ term: beginner
+└─ template: taxonomy-level_tax.php
+```
+
+La importación correcta no es crear páginas manuales para esas URLs. La importación correcta es subir el código, registrar la taxonomía, crear/sincronizar términos y asociar posts.
+
 ## Archivos/capas detectadas en ramas o PRs anteriores
 
 La PR relacionada con presentación de rutas muestra que esto no es solo contenido de WordPress admin. Incluye cambios de tema, CSS, PHP, taxonomías, scripts y roadmap.
@@ -166,6 +188,65 @@ Roadmap / documentación
 ├─ docs/content-system/content-plan/intermediate-route-skeleton.md
 ├─ docs/content-system/content-plan/advanced-route-skeleton.md
 └─ docs/decisions/route-intention.md
+```
+
+## Cómo importar este cambio online
+
+```txt
+1. Subir solo archivos del tema modificados
+   ├─ front-page.php
+   ├─ taxonomy-level_tax.php
+   ├─ taxonomy-route_tax.php
+   ├─ inc/enqueue.php
+   ├─ inc/taxonomies.php
+   ├─ inc/taxonomy-seeds.php
+   └─ assets/css/level-route.css
+
+2. Subir solo scripts y roadmaps si se van a usar para sincronizar
+   ├─ scripts/upload_posts.py
+   ├─ scripts/spanishnova_upload/uploader.py
+   ├─ scripts/sync_roadmap_from_wp.py
+   └─ docs/content-system/content-plan/grammar-roadmap.csv
+
+3. Entrar al WordPress online
+   ├─ visitar admin para que WordPress cargue el tema actualizado
+   ├─ revisar que exista la taxonomía Routes / route_tax
+   ├─ revisar que existan beginner, intermediate y advanced
+   └─ guardar enlaces permanentes para refrescar reglas de URLs
+
+4. Sincronizar relación de posts con rutas
+   ├─ route_tax
+   ├─ route_block
+   └─ route_step
+
+5. Revisar URLs online
+   ├─ /route/beginner/
+   ├─ /route/intermediate/
+   ├─ /route/advanced/
+   └─ /level/beginner/
+
+6. Revisar home online
+   ├─ enlaces de Beginner → /route/beginner/
+   ├─ enlaces de Intermediate → /route/intermediate/
+   └─ enlaces de Advanced → /route/advanced/
+
+7. Revisar que no se tocó configuración viva
+   ├─ plugins
+   ├─ Site Kit
+   ├─ Analytics
+   ├─ usuarios
+   └─ configuración general
+```
+
+## Qué NO hacer para este caso
+
+```txt
+No crear /route/beginner/ como página manual.
+No importar base de datos completa.
+No importar tema completo desde WordPress si eso pisa plugins/configuración.
+No copiar wp-content completo.
+No borrar plugins del online.
+No reemplazar Site Kit.
 ```
 
 ## Qué implica para pasar esto online
