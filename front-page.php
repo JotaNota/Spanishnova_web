@@ -36,7 +36,7 @@ $post_type_labels = [
       <div class="panel side-card">
         <h2>By level</h2>
         <ul>
-          <li><a href="<?php echo esc_url(home_url('/level/beginner/')); ?>">Beginner</a></li>
+          <li><a href="<?php echo esc_url(home_url('/route/beginner/')); ?>">Beginner</a></li>
           <li><a href="<?php echo esc_url(home_url('/level/intermediate/')); ?>">Intermediate</a></li>
           <li><a href="<?php echo esc_url(home_url('/level/advanced/')); ?>">Advanced</a></li>
           <li><a href="<?php echo esc_url(home_url('/resources/worksheets/')); ?>">Worksheets</a></li>

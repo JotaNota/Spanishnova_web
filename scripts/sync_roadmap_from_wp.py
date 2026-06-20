@@ -10,7 +10,7 @@ from spanishnova_upload.roadmap import read_roadmap_rows, write_roadmap_rows
 from spanishnova_upload.wordpress import wp_request
 
 
-METADATA_COLUMNS = ["wp_post_id", "wp_slug", "wp_status", "last_wp_seen_modified_gmt"]
+METADATA_COLUMNS = ["route_tax", "route_block", "route_step", "wp_post_id", "wp_slug", "wp_status", "last_wp_seen_modified_gmt"]
 VOCABULARY_OUTPUT_FOLDER = "docs/content-system/generated/generated-markdown-posts/vocabulary/"
 
 
@@ -52,6 +52,27 @@ def load_wp_posts(env, cpt):
             break
         page += 1
     return posts
+
+
+def route_tax_slugs(env, post, cache):
+    term_ids = post.get("route_tax") or []
+    slugs = []
+
+    for term_id in term_ids:
+        key = str(term_id)
+        if key not in cache:
+            term = wp_request(env, f"/wp-json/wp/v2/route_tax/{term_id}")
+            cache[key] = str(term.get("slug") or "").strip()
+        if cache[key]:
+            slugs.append(cache[key])
+
+    return "; ".join(slugs)
+
+
+def post_meta_value(post, key):
+    meta = post.get("meta") or {}
+    value = meta.get(key, "")
+    return str(value or "").strip()
 
 
 def add_columns(fieldnames):
@@ -103,6 +124,9 @@ def vocabulary_row_for_post(post, pk_value, priority):
         "level_tax": "",
         "grammar_tax": "",
         "topic_tax": "",
+        "route_tax": "",
+        "route_block": "",
+        "route_step": "",
         "post_tags": "",
         "priority": str(priority),
         "output_folder": VOCABULARY_OUTPUT_FOLDER,
@@ -199,6 +223,7 @@ def sync_grammar_metadata(env, roadmap, dry_run):
     changed = 0
     missing_wp = 0
     updated_fieldnames = add_columns(fieldnames)
+    route_tax_cache = {}
 
     emit("Roadmap metadata sync from WordPress")
     emit("====================================")
@@ -221,6 +246,9 @@ def sync_grammar_metadata(env, roadmap, dry_run):
             "base_slug": wp_slug,
             "public_title": clean_title(post),
             "status": wp_status,
+            "route_tax": route_tax_slugs(env, post, route_tax_cache),
+            "route_block": post_meta_value(post, "route_block"),
+            "route_step": post_meta_value(post, "route_step"),
             "wp_post_id": str(post.get("id") or ""),
             "wp_slug": wp_slug,
             "wp_status": wp_status,

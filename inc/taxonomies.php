@@ -39,8 +39,44 @@ function spanishnova_register_taxonomies() {
         'rewrite' => ['slug' => 'topic'],
     ]);
 
+    register_taxonomy('route_tax', $post_types, [
+        'labels' => [
+            'name' => __('Routes', 'spanishnova'),
+            'singular_name' => __('Route', 'spanishnova'),
+        ],
+        'public' => true,
+        'show_in_rest' => true,
+        'hierarchical' => true,
+        'rewrite' => ['slug' => 'route'],
+    ]);
+
     foreach ($post_types as $post_type) {
         register_taxonomy_for_object_type('post_tag', $post_type);
     }
 }
 add_action('init', 'spanishnova_register_taxonomies');
+
+function spanishnova_register_route_meta() {
+    $post_types = ['grammar', 'vocabulary', 'readings', 'conversations', 'practice', 'resources'];
+
+    foreach ($post_types as $post_type) {
+        register_post_meta($post_type, 'route_block', [
+            'type' => 'string',
+            'single' => true,
+            'show_in_rest' => true,
+            'auth_callback' => function () {
+                return current_user_can('edit_posts');
+            },
+        ]);
+
+        register_post_meta($post_type, 'route_step', [
+            'type' => 'integer',
+            'single' => true,
+            'show_in_rest' => true,
+            'auth_callback' => function () {
+                return current_user_can('edit_posts');
+            },
+        ]);
+    }
+}
+add_action('init', 'spanishnova_register_route_meta');
