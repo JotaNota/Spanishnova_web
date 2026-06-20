@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 
 from spanishnova_upload.config import ROADMAPS, ROOT, load_env
 from spanishnova_upload.roadmap import find_row_by_slug, ensure_can_upload, load_roadmap, read_roadmap_rows, write_roadmap_rows
-from spanishnova_upload.uploader import audit_grammar, find_html, grammar_order, sync_statuses, taxonomy_payload
+from spanishnova_upload.uploader import audit_grammar, find_html, grammar_order, route_payload, sync_statuses, taxonomy_payload
 from spanishnova_upload.wordpress import wp_request
 
 
@@ -147,7 +147,7 @@ def protected_upload_one(env, row, roadmap_path):
         "status": "draft",
         "content": content,
     }
-    payload.update(taxonomy_payload(env, row))
+    payload.update(route_payload(env, row))
 
     if existing:
         post_id = existing["id"]
@@ -187,6 +187,9 @@ def dry_run_type(content_type, roadmap_path, slug=None):
             "level_tax": row.get("level_tax", "").strip(),
             "grammar_tax": row.get("grammar_tax", "").strip(),
             "topic_tax": row.get("topic_tax", "").strip(),
+            "route_tax": row.get("route_tax", "").strip(),
+            "route_block": row.get("route_block", "").strip(),
+            "route_step": row.get("route_step", "").strip(),
             "post_tags": row.get("post_tags", "").strip(),
             "html_path": str(html_path.relative_to(ROOT)),
             "content_chars": len(content),
@@ -197,6 +200,70 @@ def dry_run_type(content_type, roadmap_path, slug=None):
             print(f"{key}: {value}")
 
 
+def sync_route_meta(env, content_type, roadmap_path, dry_run=False):
+    if content_type != "grammar":
+        raise SystemExit("--sync-route-meta currently supports --type grammar only")
+
+    rows = load_roadmap(roadmap_path).values()
+    updated = 0
+    skipped = 0
+    missing = 0
+
+    print("Route metadata sync")
+    print("===================")
+    print(f"type: {content_type}")
+    print(f"dry_run: {'yes' if dry_run else 'no'}")
+    print()
+
+    for row in rows:
+        if row.get("cpt", "").strip() != content_type:
+            skipped += 1
+            continue
+
+        route_tax = row.get("route_tax", "").strip()
+        if not route_tax:
+            skipped += 1
+            continue
+
+        slug = row.get("base_slug", "").strip()
+        if not slug:
+            skipped += 1
+            continue
+
+        query = urllib.parse.urlencode({"slug": slug, "status": "any", "per_page": 1, "context": "edit"})
+        posts = wp_request(env, f"/wp-json/wp/v2/{content_type}?{query}")
+        if not posts:
+            missing += 1
+            print(f"missing slug={slug}")
+            continue
+
+        post = posts[0]
+        payload = route_payload(env, row)
+        if not payload:
+            skipped += 1
+            continue
+
+        print(
+            "update slug={slug} wp_post_id={post_id} route_tax={route_tax} route_block={route_block} route_step={route_step}".format(
+                slug=slug,
+                post_id=post.get("id"),
+                route_tax=route_tax,
+                route_block=row.get("route_block", "").strip(),
+                route_step=row.get("route_step", "").strip(),
+            )
+        )
+
+        if not dry_run:
+            wp_request(env, f"/wp-json/wp/v2/{content_type}/{post.get('id')}", method="POST", data=payload)
+
+        updated += 1
+
+    print()
+    print(f"updated: {updated}")
+    print(f"skipped: {skipped}")
+    print(f"missing: {missing}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Upload generated SpanishNova posts to Local WordPress.")
     parser.add_argument("--type", default="grammar", choices=["grammar", "vocabulary"], help="Roadmap/content type to use.")
@@ -204,6 +271,7 @@ def main():
     parser.add_argument("--check-auth", action="store_true", help="Check WordPress REST authentication.")
     parser.add_argument("--upload-one", action="store_true", help="Create or update one draft post. Requires --slug.")
     parser.add_argument("--sync-status", action="store_true", help="Update roadmap status from HTML files and WordPress.")
+    parser.add_argument("--sync-route-meta", action="store_true", help="Update route_tax, route_block, and route_step on existing WordPress posts.")
     parser.add_argument("--audit-grammar", action="store_true", help="Read-only reconciliation report for grammar roadmap, HTML, and WordPress.")
     parser.add_argument("--dry-run-grammar-order", action="store_true", help="Preview grammar menu_order changes from roadmap priority.")
     parser.add_argument("--sync-grammar-order", action="store_true", help="Update grammar menu_order from roadmap priority.")
@@ -218,7 +286,16 @@ def main():
         return
 
     if args.dry_run:
+        if args.sync_route_meta:
+            env = load_env()
+            sync_route_meta(env, args.type, roadmap_path, dry_run=True)
+            return
         dry_run_type(args.type, roadmap_path, args.slug)
+        return
+
+    if args.sync_route_meta:
+        env = load_env()
+        sync_route_meta(env, args.type, roadmap_path, dry_run=False)
         return
 
     if args.upload_one:
@@ -248,7 +325,7 @@ def main():
         grammar_order(sync=True, env=env)
         return
 
-    raise SystemExit("Use --dry-run, --check-auth, --sync-status, --audit-grammar, --dry-run-grammar-order, --sync-grammar-order, or --upload-one --slug SLUG.")
+    raise SystemExit("Use --dry-run, --check-auth, --sync-status, --sync-route-meta, --audit-grammar, --dry-run-grammar-order, --sync-grammar-order, or --upload-one --slug SLUG.")
 
 
 if __name__ == "__main__":

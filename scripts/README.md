@@ -313,6 +313,32 @@ Las filas con `status=not-created` se ignoran.
 
 ---
 
+## Sincronizar metadata de ruta de grammar
+
+Plan de cambios sin modificar WordPress:
+
+```bash
+python scripts/upload_posts.py --dry-run --sync-route-meta --type grammar
+```
+
+Aplicar cambios:
+
+```bash
+python scripts/upload_posts.py --sync-route-meta --type grammar
+```
+
+Lee `docs/content-system/content-plan/grammar-roadmap.csv`, busca cada post
+existente por `base_slug` en el CPT `grammar`, y actualiza solamente:
+
+- `route_tax` como taxonomía
+- `route_block` como post meta
+- `route_step` como post meta
+
+No crea posts, no borra posts, no cambia título, slug, contenido ni status.
+El resumen final muestra `updated`, `skipped` y `missing`.
+
+---
+
 # Comandos que queremos agregar
 
 Estos comandos todavía no existen.

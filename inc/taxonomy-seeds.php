@@ -98,6 +98,15 @@ function spanishnova_seed_taxonomy_terms() {
         ['name' => 'Education', 'slug' => 'education'],
         ['name' => 'Society', 'slug' => 'society'],
     ]);
+
+    $route_terms = [
+        ['name' => 'Beginner', 'slug' => 'beginner'],
+        ['name' => 'Intermediate', 'slug' => 'intermediate'],
+        ['name' => 'Advanced', 'slug' => 'advanced'],
+    ];
+
+    spanishnova_seed_flat_taxonomy_terms('route_tax', $route_terms);
+    spanishnova_prune_taxonomy_terms('route_tax', array_column($route_terms, 'slug'));
 }
 add_action('init', 'spanishnova_seed_taxonomy_terms', 20);
 
@@ -121,6 +130,27 @@ function spanishnova_seed_hierarchical_taxonomy_terms($taxonomy, array $terms, $
 
         if ($term_id && !empty($term['children'])) {
             spanishnova_seed_hierarchical_taxonomy_terms($taxonomy, $term['children'], $term_id);
+        }
+    }
+}
+
+function spanishnova_prune_taxonomy_terms($taxonomy, array $allowed_slugs) {
+    if (!taxonomy_exists($taxonomy)) {
+        return;
+    }
+
+    $terms = get_terms([
+        'taxonomy' => $taxonomy,
+        'hide_empty' => false,
+    ]);
+
+    if (empty($terms) || is_wp_error($terms)) {
+        return;
+    }
+
+    foreach ($terms as $term) {
+        if (!in_array($term->slug, $allowed_slugs, true)) {
+            wp_delete_term((int) $term->term_id, $taxonomy);
         }
     }
 }

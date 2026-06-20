@@ -13,6 +13,13 @@ docs/content-system/content-plan/reading-roadmap.csv
 docs/content-system/content-plan/conversation-roadmap.csv
 ```
 
+## Route planning
+
+- [Route intention](../../decisions/route-intention.md)
+- [Beginner route skeleton](beginner-route-skeleton.md)
+- [Intermediate route skeleton](intermediate-route-skeleton.md)
+- [Advanced route skeleton](advanced-route-skeleton.md)
+
 ## Grammar roadmap
 
 File:
@@ -24,7 +31,7 @@ grammar-roadmap.csv
 Schema:
 
 ```text
-base_slug,topic_base,public_title,status,cpt,lesson_type,level_tax,grammar_tax,topic_tax,default_focus,default_variant,post_tags,priority,output_folder
+base_slug,topic_base,public_title,status,cpt,lesson_type,level_tax,grammar_tax,topic_tax,route_tax,route_block,route_step,default_focus,default_variant,post_tags,priority,output_folder
 ```
 
 Columns:
@@ -40,6 +47,9 @@ Columns:
 | `level_tax`       | Difficulty taxonomy term.                                                                |
 | `grammar_tax`     | Grammar taxonomy term.                                                                   |
 | `topic_tax`       | Semantic topic taxonomy term. Can be empty for grammar items.                            |
+| `route_tax`       | Optional route taxonomy term for the guided route, such as `beginner`, `intermediate`, or `advanced`. Leave empty when the item is not part of a guided route or the assignment is unclear. |
+| `route_block`     | Optional display block within the route, such as `01`, `02`, or `03`. This is stored as post meta in WordPress. |
+| `route_step`      | Optional ordering value within `route_block`, using multiples of 10. This is stored as post meta in WordPress and is not shown as a visible lesson number. |
 | `default_focus`   | Default grammar focus used by the content agent when no focus is specified.              |
 | `default_variant` | Optional structure variant. Can be empty.                                                |
 | `post_tags`       | Native WordPress tags. Use semicolons for multiple tags.                                 |
@@ -180,6 +190,8 @@ Columns:
 * `public_title` is the title intended for the generated post.
 * `base_slug` should stay stable once content is generated.
 * `topic_tax`, `grammar_tax`, `level_tax`, and `post_tags` should match the editorial model used by WordPress.
+* `route_tax` identifies the overall guided route. Use `route_block` for visible route sections and `route_step` for ordering inside each block.
+* A post can still belong to a level without belonging to a route.
 * `output_folder` points to the expected Markdown output folder, not the HTML output folder.
 * Grammar exercise sets should vary sentence content and subject order across `Seleccionar`, `Completar`, and `Traducir`.
 * Structured grammar lessons pair the roadmap row with `docs/content-system/content-data/grammar/[base_slug].json` and render with `python scripts/render_content.py --type grammar --slug [base_slug]`.

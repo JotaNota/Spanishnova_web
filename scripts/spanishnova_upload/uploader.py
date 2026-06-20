@@ -23,12 +23,23 @@ def split_terms(value):
     return [item.strip() for item in value.replace(";", ",").split(",") if item.strip()]
 
 
+def get_route_term_id(env, name_or_slug):
+    query = urllib.parse.urlencode({"slug": name_or_slug})
+    existing = wp_request(env, f"/wp-json/wp/v2/route_tax?{query}")
+
+    if existing:
+        return existing[0]["id"]
+
+    return get_term_id(env, "route_tax", name_or_slug)
+
+
 def taxonomy_payload(env, row):
     payload = {}
 
     level_terms = split_terms(row.get("level_tax", ""))
     grammar_terms = split_terms(row.get("grammar_tax", ""))
     topic_terms = split_terms(row.get("topic_tax", ""))
+    route_terms = split_terms(row.get("route_tax", ""))
     tag_terms = split_terms(row.get("post_tags", ""))
 
     if level_terms:
@@ -37,9 +48,34 @@ def taxonomy_payload(env, row):
         payload["grammar_tax"] = [get_term_id(env, "grammar_tax", name) for name in grammar_terms]
     if topic_terms:
         payload["topic_tax"] = [get_term_id(env, "topic_tax", name) for name in topic_terms]
+    if route_terms:
+        payload["route_tax"] = [get_route_term_id(env, name) for name in route_terms]
     if tag_terms:
         payload["tags"] = [get_term_id(env, "tags", name, create=True) for name in tag_terms]
 
+    return payload
+
+
+def route_meta_payload(row):
+    meta = {}
+    route_block = str(row.get("route_block", "") or "").strip()
+    route_step = str(row.get("route_step", "") or "").strip()
+
+    if route_block:
+        meta["route_block"] = route_block
+    if route_step:
+        try:
+            meta["route_step"] = int(route_step)
+        except ValueError:
+            raise SystemExit(f"Invalid route_step for {row.get('base_slug', '').strip()}: {route_step}")
+
+    return {"meta": meta} if meta else {}
+
+
+def route_payload(env, row):
+    payload = {}
+    payload.update(taxonomy_payload(env, row))
+    payload.update(route_meta_payload(row))
     return payload
 
 
@@ -66,7 +102,7 @@ def upload_one(env, row):
         "status": "draft",
         "content": content,
     }
-    payload.update(taxonomy_payload(env, row))
+    payload.update(route_payload(env, row))
 
     if existing:
         post_id = existing[0]["id"]
@@ -318,6 +354,9 @@ def dry_run(slug=None):
             "level_tax": row.get("level_tax", "").strip(),
             "grammar_tax": row.get("grammar_tax", "").strip(),
             "topic_tax": row.get("topic_tax", "").strip(),
+            "route_tax": row.get("route_tax", "").strip(),
+            "route_block": row.get("route_block", "").strip(),
+            "route_step": row.get("route_step", "").strip(),
             "post_tags": row.get("post_tags", "").strip(),
             "html_path": str(html_path.relative_to(ROOT)),
             "content_chars": len(content),
