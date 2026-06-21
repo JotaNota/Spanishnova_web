@@ -1,0 +1,23 @@
+pk_conversation,base_slug,public_title,default_variant,status,cpt,level_tax,grammar_tax,topic_tax,post_tags,priority,output_folder
+001,watching-movies-at-home,Spanish Conversation: Ver películas en casa,podcast_style,planned,conversations,beginner,,Leisure,movies;home;preferences,1,docs/content-system/generated/markdown/conversations/
+002,favorite-coffee,Spanish Conversation: Tu café favorito,street_interview,planned,conversations,beginner,,Food,coffee;preferences;interview,2,docs/content-system/generated/markdown/conversations/
+003,asking-for-directions,Spanish Conversation: Pedir direcciones,street_interview,planned,conversations,beginner,,Travel,directions;city,3,docs/content-system/generated/markdown/conversations/
+004,making-plans,Spanish Conversation: Hacer planes,podcast_style,planned,conversations,beginner,,Leisure,plans;social,4,docs/content-system/generated/markdown/conversations/
+005,at-the-doctor,Spanish Conversation: En el médico,podcast_style,planned,conversations,beginner,,Health,doctor;appointment,5,docs/content-system/generated/markdown/conversations/
+006,daily-routine-interview,Spanish Conversation: Tu rutina diaria,street_interview,planned,conversations,beginner,,Daily Life,routine;daily-life;interview,6,docs/content-system/generated/markdown/conversations/
+007,christmas-plans-interview,Spanish Conversation: Qué haces en Navidad,street_interview,planned,conversations,beginner,,Culture,Christmas;plans;interview,7,docs/content-system/generated/markdown/conversations/
+008,weekend-plans-interview,Spanish Conversation: Tus planes para el fin de semana,street_interview,planned,conversations,beginner,,Leisure,weekend;plans;interview,8,docs/content-system/generated/markdown/conversations/
+009,favorite-food-interview,Spanish Conversation: Tu comida favorita,street_interview,planned,conversations,beginner,,Food,food;preferences;interview,9,docs/content-system/generated/markdown/conversations/
+010,city-life-interview,Spanish Conversation: Vivir en la ciudad,street_interview,planned,conversations,beginner,,Daily Life,city;daily-life;interview,10,docs/content-system/generated/markdown/conversations/
+011,exercise-interview,Spanish Conversation: Hacer ejercicio,street_interview,planned,conversations,beginner,,Health,exercise;routine;interview,11,docs/content-system/generated/markdown/conversations/
+012,music-interview,Spanish Conversation: La música que escuchas,street_interview,planned,conversations,beginner,,Leisure,music;preferences;interview,12,docs/content-system/generated/markdown/conversations/
+013,work-from-home-interview,Spanish Conversation: Trabajar desde casa,street_interview,planned,conversations,beginner,,Work,remote-work;home-office;interview,13,docs/content-system/generated/markdown/conversations/
+014,managing-stress,Spanish Conversation: Manejar el estrés,podcast_style,planned,conversations,intermediate,,Health,stress;mental-health;podcast,14,docs/content-system/generated/markdown/conversations/
+015,learning-spanish,Spanish Conversation: Aprender español,podcast_style,planned,conversations,beginner,,Education,Spanish;learning;podcast,15,docs/content-system/generated/markdown/conversations/
+016,sleep-and-routine,Spanish Conversation: Dormir mejor,podcast_style,planned,conversations,beginner,,Health,sleep;routine;podcast,16,docs/content-system/generated/markdown/conversations/
+017,going-to-the-cinema,Spanish Conversation: Ir al cine,podcast_style,planned,conversations,beginner,,Leisure,cinema;movies;podcast,17,docs/content-system/generated/markdown/conversations/
+018,going-to-a-concert,Spanish Conversation: Ir a un concierto,podcast_style,planned,conversations,beginner,,Leisure,concert;music;podcast,18,docs/content-system/generated/markdown/conversations/
+019,healthy-habits,Spanish Conversation: Hábitos saludables,podcast_style,planned,conversations,intermediate,,Health,habits;health;podcast,19,docs/content-system/generated/markdown/conversations/
+020,moving-to-a-new-city,Spanish Conversation: Mudarse a una ciudad nueva,podcast_style,planned,conversations,intermediate,,Daily Life,city;moving;podcast,20,docs/content-system/generated/markdown/conversations/
+021,technology-and-routine,Spanish Conversation: La tecnología en la vida diaria,podcast_style,planned,conversations,intermediate,,Daily Life,technology;routine;podcast,21,docs/content-system/generated/markdown/conversations/
+022,holidays-and-family,Spanish Conversation: Fiestas y familia,podcast_style,planned,conversations,beginner,,Culture,holidays;family;podcast,22,docs/content-system/generated/markdown/conversations/

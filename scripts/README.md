@@ -6,14 +6,14 @@
 roadmap CSV -> content-data JSON -> render -> generated Markdown/HTML -> upload -> WordPress draft
 ```
 
-1. Elegir una fila en `docs/content-system/content-plan/grammar-roadmap.csv`.
-2. Crear o editar `docs/content-system/content-data/grammar/[slug].json`.
+1. Elegir una fila en `docs/content-system/roadmaps/grammar-roadmap.csv`.
+2. Crear o editar `docs/content-system/generated/json/grammar/[slug].json`.
 3. Renderizar con `python scripts/render_content.py --type grammar --slug [slug]`.
-4. Revisar `docs/content-system/generated/generated-markdown-posts/grammar/[slug].md`.
+4. Revisar `docs/content-system/generated/markdown/grammar/[slug].md`.
 5. Subir el HTML generado con `python scripts/upload_posts.py --upload-one --slug [slug]`.
 
 El render genera un fragmento HTML compatible con el upload existente en
-`docs/content-system/generated/generated-html-posts/grammar/[slug].html`.
+`docs/content-system/generated/html/grammar/[slug].html`.
 
 ## Render de contenido estructurado
 
@@ -49,7 +49,7 @@ Ruta del script:
 
 El script toma dos fuentes:
 
-`docs/content-system/content-plan/*.csv`
+`docs/content-system/roadmaps/*.csv`
 
 Usa los roadmaps para leer:
 
@@ -61,7 +61,7 @@ Usa los roadmaps para leer:
 - taxonomías
 - tags
 
-`docs/content-system/generated/generated-html-posts/`
+`docs/content-system/generated/html/`
 
 Usa los archivos HTML como contenido visible del post.
 
@@ -242,8 +242,8 @@ python scripts/upload_posts.py --audit-grammar
 
 Genera un reporte de solo lectura para reconciliar:
 
-- `docs/content-system/content-plan/grammar-roadmap.csv`
-- `docs/content-system/generated/generated-html-posts/grammar/`
+- `docs/content-system/roadmaps/grammar-roadmap.csv`
+- `docs/content-system/generated/html/grammar/`
 - WordPress Local, CPT `grammar`
 
 El reporte muestra:
@@ -264,7 +264,7 @@ No modifica el CSV y no crea ni actualiza posts en WordPress.
 python scripts/upload_posts.py --dry-run-grammar-order
 ```
 
-Lee `docs/content-system/content-plan/grammar-roadmap.csv` y compara la columna
+Lee `docs/content-system/roadmaps/grammar-roadmap.csv` y compara la columna
 `priority` con el `menu_order` actual de cada post del CPT `grammar` en
 WordPress Local.
 
@@ -293,7 +293,7 @@ No modifica WordPress y no modifica archivos.
 python scripts/upload_posts.py --sync-grammar-order
 ```
 
-Lee `docs/content-system/content-plan/grammar-roadmap.csv` y actualiza
+Lee `docs/content-system/roadmaps/grammar-roadmap.csv` y actualiza
 `menu_order` de los posts existentes del CPT `grammar` usando el orden invertido:
 
 ```txt
@@ -327,7 +327,7 @@ Aplicar cambios:
 python scripts/upload_posts.py --sync-route-meta --type grammar
 ```
 
-Lee `docs/content-system/content-plan/grammar-roadmap.csv`, busca cada post
+Lee `docs/content-system/roadmaps/grammar-roadmap.csv`, busca cada post
 existente por `base_slug` en el CPT `grammar`, y actualiza solamente:
 
 - `route_tax` como taxonomía
@@ -439,28 +439,28 @@ Cambiar cada fila subida a draft
 
 ```txt
 grammar
-├─ roadmap: docs/content-system/content-plan/grammar-roadmap.csv
+├─ roadmap: docs/content-system/roadmaps/grammar-roadmap.csv
 ├─ pk: pk_grammar
 ├─ cpt: grammar
-└─ html folder: docs/content-system/generated/generated-html-posts/grammar/
+└─ html folder: docs/content-system/generated/html/grammar/
 
 vocabulary
-├─ roadmap: docs/content-system/content-plan/vocabulary-roadmap.csv
+├─ roadmap: docs/content-system/roadmaps/vocabulary-roadmap.csv
 ├─ pk: pk_vocabulary
 ├─ cpt: vocabulary
-└─ html folder: docs/content-system/generated/generated-html-posts/vocabulary/
+└─ html folder: docs/content-system/generated/html/vocabulary/
 
 conversations
-├─ roadmap: docs/content-system/content-plan/conversation-roadmap.csv
+├─ roadmap: docs/content-system/roadmaps/conversation-roadmap.csv
 ├─ pk: pk_conversation
 ├─ cpt: conversations
-└─ html folder: docs/content-system/generated/generated-html-posts/conversations/
+└─ html folder: docs/content-system/generated/html/conversations/
 
 readings
-├─ roadmap: docs/content-system/content-plan/reading-roadmap.csv
+├─ roadmap: docs/content-system/roadmaps/reading-roadmap.csv
 ├─ pk: pk_reading
 ├─ cpt: readings
-└─ html folder: docs/content-system/generated/generated-html-posts/readings/
+└─ html folder: docs/content-system/generated/html/readings/
 ```
 
 ---

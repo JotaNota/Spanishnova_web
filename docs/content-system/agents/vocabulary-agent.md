@@ -4,22 +4,22 @@ Create Spanish vocabulary lesson source files and clean HTML fragments.
 
 ## Read
 
-- `docs/content-system/content-plan/vocabulary-roadmap.csv`
+- `docs/content-system/roadmaps/vocabulary-roadmap.csv`
 - `docs/content-system/templates/markdown-posts/vocabulary-markdown-post-template.md`
 - `docs/content-system/templates/html-posts/vocabulary-html-post-template.md`
-- `docs/content-system/content-plan/content-pilot.md` only when the user explicitly selects an item from the manual queue.
+- `docs/content-system/roadmaps/content-pilot.md` only when the user explicitly selects an item from the manual queue.
 
 Do not read:
 - `docs/content-system/templates/html-references/`
 
 ## Official Flow
 
-1. Consult `docs/content-system/content-plan/vocabulary-roadmap.csv` for editorial metadata.
+1. Consult `docs/content-system/roadmaps/vocabulary-roadmap.csv` for editorial metadata.
 2. Generate Markdown source using `docs/content-system/templates/markdown-posts/vocabulary-markdown-post-template.md`.
-3. Save Markdown source in `docs/content-system/generated/generated-markdown-posts/vocabulary/`.
+3. Save Markdown source in `docs/content-system/generated/markdown/vocabulary/`.
 4. Read the generated Markdown source.
 5. Generate a clean HTML fragment using `docs/content-system/templates/html-posts/vocabulary-html-post-template.md`.
-6. Save the HTML fragment in `docs/content-system/generated/generated-html-posts/vocabulary/`.
+6. Save the HTML fragment in `docs/content-system/generated/html/vocabulary/`.
 
 The HTML output is a fragment ready to paste or import as the body content of a `vocabulary` post.
 
@@ -59,7 +59,7 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 - Use `vocabulary_variant` as an optional editorial structure variant when it is present.
 - Do not print external metadata or `vocabulary_variant` in the lesson body.
 - Build the Markdown filename as `output_folder + base_slug + .md`.
-- Build the HTML filename by mirroring `base_slug` in `docs/content-system/generated/generated-html-posts/vocabulary/`.
+- Build the HTML filename by mirroring `base_slug` in `docs/content-system/generated/html/vocabulary/`.
 - Do not include level labels in titles.
 - Keep level information in `level_tax`, not in the visible title.
 - Do not turn `vocabulary_variant` into `grammar_tax` or `topic_tax`.

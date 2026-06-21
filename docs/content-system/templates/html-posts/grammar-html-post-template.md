@@ -2,7 +2,7 @@
 
 Use this template to generate clean post-body HTML fragments for grammar posts in:
 
-`docs/content-system/generated/generated-html-posts/grammar/`
+`docs/content-system/generated/html/grammar/`
 
 WordPress owns the post title, metadata, navigation trail, and surrounding layout. The grammar body must not include title or metadata.
 

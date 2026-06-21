@@ -33,7 +33,7 @@ These are draft generators. They must not edit PHP, CSS, templates, or publish t
 
 ## Roadmap format
 
-Content agents use `.csv` roadmaps from `docs/content-system/content-plan/`.
+Content agents use `.csv` roadmaps from `docs/content-system/roadmaps/`.
 
 ## Default agent flow
 

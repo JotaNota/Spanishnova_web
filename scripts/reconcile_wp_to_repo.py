@@ -6,7 +6,7 @@ import json
 from spanishnova_upload.config import HTML_ROOT, ROOT
 
 
-DATA_ROOT = ROOT / "docs/content-system/content-data"
+DATA_ROOT = ROOT / "docs/content-system/generated/json"
 SNAPSHOT_ROOT = ROOT / ".sync/wp-snapshots"
 RECONCILE_ROOT = ROOT / ".sync/reconcile"
 

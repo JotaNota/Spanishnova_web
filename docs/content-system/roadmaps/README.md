@@ -7,10 +7,10 @@ Each roadmap defines the editorial queue for one content type. Roadmaps do not a
 ## Roadmaps
 
 ```text
-docs/content-system/content-plan/grammar-roadmap.csv
-docs/content-system/content-plan/vocabulary-roadmap.csv
-docs/content-system/content-plan/reading-roadmap.csv
-docs/content-system/content-plan/conversation-roadmap.csv
+docs/content-system/roadmaps/grammar-roadmap.csv
+docs/content-system/roadmaps/vocabulary-roadmap.csv
+docs/content-system/roadmaps/reading-roadmap.csv
+docs/content-system/roadmaps/conversation-roadmap.csv
 ```
 
 ## Route planning
@@ -204,4 +204,4 @@ Columns:
 * A post can still belong to a level without belonging to a route.
 * `output_folder` points to the expected Markdown output folder, not the HTML output folder.
 * Grammar exercise sets should vary sentence content and subject order across `Seleccionar`, `Completar`, and `Traducir`.
-* Structured grammar lessons pair the roadmap row with `docs/content-system/content-data/grammar/[base_slug].json` and render with `python scripts/render_content.py --type grammar --slug [base_slug]`.
+* Structured grammar lessons pair the roadmap row with `docs/content-system/generated/json/grammar/[base_slug].json` and render with `python scripts/render_content.py --type grammar --slug [base_slug]`.

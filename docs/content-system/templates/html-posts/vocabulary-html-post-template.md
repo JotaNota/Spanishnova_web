@@ -2,7 +2,7 @@
 
 Use this template to generate clean HTML fragment files for vocabulary posts in:
 
-`docs/content-system/generated/generated-html-posts/vocabulary/`
+`docs/content-system/generated/html/vocabulary/`
 
 This is post-body HTML only. Do not include document wrappers, embedded styles, scripts, block comments, editor-specific block syntax, navigation-trail markup, metadata rows, or taxonomy labels.
 

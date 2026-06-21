@@ -54,7 +54,7 @@ assets/css/level-route.css
 scripts/upload_posts.py
 scripts/spanishnova_upload/uploader.py
 scripts/sync_roadmap_from_wp.py
-docs/content-system/content-plan/grammar-roadmap.csv
+docs/content-system/roadmaps/grammar-roadmap.csv
 ```
 
 Estos archivos no necesariamente se suben al servidor público como parte del tema. Sirven para controlar y sincronizar el contenido.

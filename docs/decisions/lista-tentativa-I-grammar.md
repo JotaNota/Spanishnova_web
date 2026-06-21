@@ -103,4 +103,4 @@ Object pronouns
 - It should not be treated as final taxonomy.
 - It should not be inserted into generated lessons.
 - It should guide future roadmap expansion.
-- Individual items can later become rows in `docs/content-system/content-plan/grammar-roadmap.csv`.
+- Individual items can later become rows in `docs/content-system/roadmaps/grammar-roadmap.csv`.

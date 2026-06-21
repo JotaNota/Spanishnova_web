@@ -2,7 +2,7 @@
 
 Use this template to generate clean HTML fragment files for conversation posts in:
 
-`docs/content-system/generated/generated-html-posts/conversations/`
+`docs/content-system/generated/html/conversations/`
 
 This is post-body HTML only. Do not include document wrappers, embedded styles, scripts, block comments, editor-specific block syntax, navigation-trail markup, taxonomy labels, or metadata rows.
 

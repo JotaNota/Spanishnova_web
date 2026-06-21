@@ -4,21 +4,21 @@ Create structured Spanish grammar lesson content-data and render generated revie
 
 ## Read
 
-- `docs/content-system/content-plan/grammar-roadmap.csv`
+- `docs/content-system/roadmaps/grammar-roadmap.csv`
 - `docs/content-system/schemas/grammar-content-data.schema.json`
-- existing examples in `docs/content-system/content-data/grammar/` when they help with structure or tone
+- existing examples in `docs/content-system/generated/json/grammar/` when they help with structure or tone
 - `scripts/render_content.py` and `scripts/spanishnova_render/` only to understand current render behavior
 
 ## Official Flow
 
-1. Read `docs/content-system/content-plan/grammar-roadmap.csv`.
+1. Read `docs/content-system/roadmaps/grammar-roadmap.csv`.
 2. Identify the target row by `base_slug`, `topic_base`, or `public_title`.
 3. Read `docs/content-system/schemas/grammar-content-data.schema.json`.
-4. Create or edit `docs/content-system/content-data/grammar/[slug].json`.
+4. Create or edit `docs/content-system/generated/json/grammar/[slug].json`.
 5. Run `python scripts/render_content.py --type grammar --slug [slug]`.
 6. Confirm the render generated:
-   - `docs/content-system/generated/generated-markdown-posts/grammar/[slug].md`
-   - `docs/content-system/generated/generated-html-posts/grammar/[slug].html`
+   - `docs/content-system/generated/markdown/grammar/[slug].md`
+   - `docs/content-system/generated/html/grammar/[slug].html`
 7. Review `git status --short`.
 
 The editable source of a grammar lesson is the content-data JSON. Markdown and HTML are generated outputs.

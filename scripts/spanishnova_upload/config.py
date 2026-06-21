@@ -3,11 +3,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 ENV_FILE = ROOT / ".env.local"
-HTML_ROOT = ROOT / "docs/content-system/generated/generated-html-posts"
+HTML_ROOT = ROOT / "docs/content-system/generated/html"
 
 ROADMAPS = {
-    "grammar": ROOT / "docs/content-system/content-plan/grammar-roadmap.csv",
-    "vocabulary": ROOT / "docs/content-system/content-plan/vocabulary-roadmap.csv",
+    "grammar": ROOT / "docs/content-system/roadmaps/grammar-roadmap.csv",
+    "vocabulary": ROOT / "docs/content-system/roadmaps/vocabulary-roadmap.csv",
 }
 
 ROADMAP = ROADMAPS["grammar"]

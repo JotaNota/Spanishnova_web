@@ -182,11 +182,11 @@ Scripts / sincronización
 └─ scripts/README.md
 
 Roadmap / documentación
-├─ docs/content-system/content-plan/grammar-roadmap.csv
-├─ docs/content-system/content-plan/README.md
-├─ docs/content-system/content-plan/beginner-route-skeleton.md
-├─ docs/content-system/content-plan/intermediate-route-skeleton.md
-├─ docs/content-system/content-plan/advanced-route-skeleton.md
+├─ docs/content-system/roadmaps/grammar-roadmap.csv
+├─ docs/content-system/roadmaps/README.md
+├─ docs/content-system/roadmaps/beginner-route-skeleton.md
+├─ docs/content-system/roadmaps/intermediate-route-skeleton.md
+├─ docs/content-system/roadmaps/advanced-route-skeleton.md
 └─ docs/decisions/route-intention.md
 ```
 
@@ -206,7 +206,7 @@ Roadmap / documentación
    ├─ scripts/upload_posts.py
    ├─ scripts/spanishnova_upload/uploader.py
    ├─ scripts/sync_roadmap_from_wp.py
-   └─ docs/content-system/content-plan/grammar-roadmap.csv
+   └─ docs/content-system/roadmaps/grammar-roadmap.csv
 
 3. Entrar al WordPress online
    ├─ visitar admin para que WordPress cargue el tema actualizado

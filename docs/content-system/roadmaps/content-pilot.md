@@ -3,7 +3,7 @@
 Status: Optional manual queue
 Date updated: 2026-05-28
 
-This file is an optional manual queue. It is not the source of truth for grammar generation; grammar drafts use `docs/content-system/content-plan/grammar-roadmap.csv` for base metadata plus the user request for focus and variant.
+This file is an optional manual queue. It is not the source of truth for grammar generation; grammar drafts use `docs/content-system/roadmaps/grammar-roadmap.csv` for base metadata plus the user request for focus and variant.
 
 ## Rules
 

@@ -12,7 +12,7 @@ from spanishnova_render.grammar import render_html as render_grammar_html
 from spanishnova_render.validation import validate_grammar_data
 
 
-DATA_ROOT = ROOT / "docs/content-system/content-data"
+DATA_ROOT = ROOT / "docs/content-system/generated/json"
 
 
 def parse_wp_datetime(value):

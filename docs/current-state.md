@@ -108,7 +108,7 @@ Roadmaps exist for:
 - Reading
 - Conversation
 
-The content pilot queue exists at `docs/content-system/content-plan/content-pilot.md`.
+The content pilot queue exists at `docs/content-system/roadmaps/content-pilot.md`.
 
 The content production log exists at `docs/content-system/content-log.md`.
 

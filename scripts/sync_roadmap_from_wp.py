@@ -11,8 +11,8 @@ from spanishnova_upload.wordpress import wp_request
 
 
 METADATA_COLUMNS = ["route_tax", "route_block", "route_step", "wp_post_id", "wp_slug", "wp_status", "last_wp_seen_modified_gmt"]
-VOCABULARY_OUTPUT_FOLDER = "docs/content-system/generated/generated-markdown-posts/vocabulary/"
-GRAMMAR_OUTPUT_FOLDER = "docs/content-system/generated/generated-markdown-posts/grammar/"
+VOCABULARY_OUTPUT_FOLDER = "docs/content-system/generated/markdown/vocabulary/"
+GRAMMAR_OUTPUT_FOLDER = "docs/content-system/generated/markdown/grammar/"
 
 
 def emit(message=""):

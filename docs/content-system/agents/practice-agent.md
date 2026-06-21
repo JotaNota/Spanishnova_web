@@ -6,7 +6,7 @@ Use the SpanishNova practice template.
 
 Read:
 - `docs/content-system/templates/practice-template.html`
-- `docs/content-system/content-plan/practice-roadmap.csv`
+- `docs/content-system/roadmaps/practice-roadmap.csv`
 
 Write drafts to:
 - `docs/content-system/content/practice/`

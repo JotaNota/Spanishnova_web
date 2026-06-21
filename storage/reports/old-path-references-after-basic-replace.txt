@@ -1,0 +1,46 @@
+scripts/README.md:6:roadmap CSV -> content-data JSON -> render -> generated Markdown/HTML -> upload -> WordPress draft
+scripts/README.md:30:El render lee el roadmap, el JSON de content-data y el renderer interno de
+scripts/reconcile_wp_to_repo.py:9:DATA_ROOT = ROOT / "docs/content-system/content-data"
+scripts/render_content.py:10:    parser.add_argument("--slug", required=True, help="Roadmap base_slug and content-data filename.")
+scripts/scan_wp_changes.py:15:DATA_ROOT = ROOT / "docs/content-system/content-data"
+scripts/spanishnova_render/renderer.py:16:        raise SystemExit(f"Missing content-data JSON: {data_path}")
+scripts/spanishnova_render/validation.py:102:    require_fields(data, required_fields, "grammar content-data")
+scripts/spanishnova_render/validation.py:104:        require_one_of(data, GRAMMAR_REQUIRE_ONE_OF_BY_LESSON_TYPE[lesson_type], "grammar content-data")
+scripts/spanishnova_render/validation.py:107:        raise SystemExit("grammar content-data intro must be a non-empty string")
+scripts/spanishnova_render/validation.py:108:    validate_no_broken_spanish_text(data, "grammar content-data")
+scripts/spanishnova_render/validation.py:110:    overview = require_dict(data, "overview", "grammar content-data")
+scripts/spanishnova_render/validation.py:112:    require_list(data, "examples", "grammar content-data")
+scripts/spanishnova_render/validation.py:115:        require_list(data, "forms", "grammar content-data")
+scripts/spanishnova_render/validation.py:117:        forms_table = require_dict(data, "forms_table", "grammar content-data")
+scripts/spanishnova_render/validation.py:122:        require_list(data, "structure", "grammar content-data")
+scripts/spanishnova_render/validation.py:124:        require_list(data, "comparison", "grammar content-data")
+scripts/spanishnova_render/validation.py:126:        require_list(data, "conjugation", "grammar content-data")
+scripts/spanishnova_render/validation.py:128:    require_list(data, "uses", "grammar content-data")
+scripts/spanishnova_render/validation.py:130:    sentences = require_dict(data, "sentences", "grammar content-data")
+scripts/spanishnova_render/validation.py:135:    exercises = require_dict(data, "exercises", "grammar content-data")
+scripts/spanishnova_render/validation.py:144:    answers = require_dict(data, "answers", "grammar content-data")
+scripts/spanishnova_render/vocabulary.py:6:        raise SystemExit("vocabulary content-data must be an object")
+scripts/spanishnova_render/vocabulary.py:8:        raise SystemExit("vocabulary content-data intro must be a non-empty string")
+scripts/spanishnova_render/vocabulary.py:10:        raise SystemExit("vocabulary content-data must include vocabulary, categories, sections, or word_groups")
+scripts/spanishnova_upload/config.py:6:HTML_ROOT = ROOT / "docs/content-system/generated/generated-html-posts"
+docs/content-system/agents/grammar-agent.md:3:Create structured Spanish grammar lesson content-data and render generated review/output files.
+docs/content-system/agents/grammar-agent.md:8:- `docs/content-system/schemas/grammar-content-data.schema.json`
+docs/content-system/agents/grammar-agent.md:16:3. Read `docs/content-system/schemas/grammar-content-data.schema.json`.
+docs/content-system/agents/grammar-agent.md:24:The editable source of a grammar lesson is the content-data JSON. Markdown and HTML are generated outputs.
+docs/content-system/agents/grammar-agent.md:28:- Follow `docs/content-system/schemas/grammar-content-data.schema.json`.
+docs/content-system/decisions/script-futuro.md:30:├─ construye la ruta HTML esperada: reemplaza generated-markdown-posts por generated-html-posts y usa base_slug + .html
+docs/content-system/README.md:6:- `content-plan/` - roadmaps and live/manual planning queues.
+docs/content-system/README.md:7:- `content-data/` - structured JSON source data for generated lessons.
+docs/content-system/README.md:8:- `schemas/` - contracts for structured content-data files.
+docs/content-system/README.md:14:  - `generated-markdown-posts/` for Markdown sources.
+docs/content-system/README.md:15:  - `generated-html-posts/` for WordPress-ready HTML fragments.
+docs/content-system/README.md:22:Grammar, vocabulary, reading, and conversation roadmaps share one schema. Use `content-plan/README.md` as the roadmap field reference and `content-plan/grammar-roadmap.csv` as the reference column order.
+docs/content-system/README.md:29:content-plan/grammar-roadmap.csv
+docs/content-system/README.md:30:-> content-data/grammar/[slug].json
+docs/content-system/README.md:32:-> generated/generated-markdown-posts/grammar/[slug].md
+docs/content-system/README.md:33:-> generated/generated-html-posts/grammar/[slug].html
+docs/content-system/README.md:39:priority, and production status. The content-data JSON owns the lesson body. The
+docs/content-system/README.md:43:Grammar content-data must follow `schemas/grammar-content-data.schema.json`.
+docs/content-system/roadmaps/README.md:74:Grammar content-data JSON is the editable source. Generated Markdown and HTML are outputs.
+docs/content-system/roadmaps/README.md:78:| `lesson_type`   | Required content-data fields beyond the base fields                       | Notes                                                                 |
+docs/content-system/schemas/grammar-content-data.schema.json:3:  "$id": "https://spanishnova.local/schemas/grammar-content-data.schema.json",

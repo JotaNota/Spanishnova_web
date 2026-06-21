@@ -2,7 +2,7 @@
 
 Use this template to generate clean HTML fragment files for reading posts in:
 
-`docs/content-system/generated/generated-html-posts/readings/`
+`docs/content-system/generated/html/readings/`
 
 This is post-body HTML only. Do not include document wrappers, embedded styles, scripts, block comments, editor-specific block syntax, navigation-trail markup, metadata rows, taxonomy labels, or section cards.
 

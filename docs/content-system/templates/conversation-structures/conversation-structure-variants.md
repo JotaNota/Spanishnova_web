@@ -1,6 +1,6 @@
 # Conversation Structure Variants - SpanishNova
 
-Use `default_variant` from `docs/content-system/content-plan/conversation-roadmap.csv` to choose the lesson format.
+Use `default_variant` from `docs/content-system/roadmaps/conversation-roadmap.csv` to choose the lesson format.
 
 The roadmap stores only the selector. Format, voice, rhythm, and section behavior live here.
 

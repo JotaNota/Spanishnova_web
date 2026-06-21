@@ -4,24 +4,24 @@ Create Spanish reading lesson source files and clean HTML fragments.
 
 ## Read
 
-- `docs/content-system/content-plan/reading-roadmap.csv`
+- `docs/content-system/roadmaps/reading-roadmap.csv`
 - `docs/content-system/templates/reading-structures/reading-structure-variants.md`
 - `docs/content-system/templates/markdown-posts/reading-markdown-post-template.md`
 - `docs/content-system/templates/html-posts/reading-html-post-template.md`
-- `docs/content-system/content-plan/content-pilot.md` only when the user explicitly selects an item from the manual queue.
+- `docs/content-system/roadmaps/content-pilot.md` only when the user explicitly selects an item from the manual queue.
 
 Do not read:
 - `docs/content-system/templates/html-references/`
 
 ## Official Flow
 
-1. Consult `docs/content-system/content-plan/reading-roadmap.csv` for editorial metadata.
+1. Consult `docs/content-system/roadmaps/reading-roadmap.csv` for editorial metadata.
 2. Use `default_variant` to select the matching skeleton from `docs/content-system/templates/reading-structures/reading-structure-variants.md`.
 3. Generate Markdown source using `docs/content-system/templates/markdown-posts/reading-markdown-post-template.md`.
-4. Save Markdown source in `docs/content-system/generated/generated-markdown-posts/readings/`.
+4. Save Markdown source in `docs/content-system/generated/markdown/readings/`.
 5. Read the generated Markdown source.
 6. Generate a clean HTML fragment using `docs/content-system/templates/html-posts/reading-html-post-template.md`.
-7. Save the HTML fragment in `docs/content-system/generated/generated-html-posts/readings/`.
+7. Save the HTML fragment in `docs/content-system/generated/html/readings/`.
 
 The HTML output is a fragment ready to paste or import as the body content of a `readings` post.
 
@@ -57,7 +57,7 @@ The HTML output is a fragment ready to paste or import as the body content of a 
 - Do not print external metadata in the lesson body.
 - Keep the reading inside the selected `default_variant` scope.
 - Build the Markdown filename as `output_folder + base_slug + .md`.
-- Build the HTML filename by mirroring `base_slug` in `docs/content-system/generated/generated-html-posts/readings/`.
+- Build the HTML filename by mirroring `base_slug` in `docs/content-system/generated/html/readings/`.
 - Do not include level labels in titles.
 - Keep level information in `level_tax`, not in the visible title.
 - Do not turn `default_variant` into `grammar_tax` or `topic_tax`.

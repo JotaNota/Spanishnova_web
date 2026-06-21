@@ -6,7 +6,7 @@ Use the SpanishNova resource template.
 
 Read:
 - `docs/content-system/templates/resource-template.html`
-- `docs/content-system/content-plan/resource-roadmap.csv`
+- `docs/content-system/roadmaps/resource-roadmap.csv`
 
 Write drafts to:
 - `docs/content-system/content/resources/`
