@@ -8,57 +8,57 @@ $current_term = get_queried_object();
 $is_route_term = $current_term instanceof WP_Term && $current_term->taxonomy === 'route_tax';
 
 $route_blocks = [
-  '01' => [
+  '1' => [
     'label' => 'First sentences',
     'description' => 'Build simple Spanish sentences with ser, estar, hay, and basic nouns.',
   ],
-  '02' => [
+  '2' => [
     'label' => 'Needs and obligation',
     'description' => 'Say what someone has, needs, or has to do.',
   ],
-  '03' => [
+  '3' => [
     'label' => 'Places and movement',
     'description' => 'Talk about where people are, where they go, and near-future plans.',
   ],
-  '04' => [
+  '4' => [
     'label' => 'Daily actions',
     'description' => 'Describe routines, common actions, and what is happening now.',
   ],
-  '05' => [
+  '5' => [
     'label' => 'People and description',
     'description' => 'Describe people, ownership, and things around you.',
   ],
-  '06' => [
+  '6' => [
     'label' => 'Food and preferences',
     'description' => 'Express wants, needs, choices, and preferences.',
   ],
-  '07' => [
+  '7' => [
     'label' => 'Questions and small talk',
     'description' => 'Ask simple questions and talk about everyday frequency.',
   ],
 ];
 
 $fallback_route_map = [
-  'ser-presente' => ['block' => '01', 'step' => 10],
-  'estar-presente' => ['block' => '01', 'step' => 20],
-  'hay' => ['block' => '01', 'step' => 30],
-  'sustantivos-basicos' => ['block' => '01', 'step' => 40],
-  'tener-presente' => ['block' => '02', 'step' => 10],
-  'hay-que' => ['block' => '02', 'step' => 20],
-  'tener-que-deber' => ['block' => '02', 'step' => 30],
-  'verbos-basicos-tener-que' => ['block' => '02', 'step' => 40],
-  'ir-presente' => ['block' => '03', 'step' => 10],
-  'ir-a-infinitivo' => ['block' => '03', 'step' => 20],
-  'adverbios-lugar' => ['block' => '03', 'step' => 30],
-  'hacer-presente' => ['block' => '04', 'step' => 10],
-  'presente-indicativo-regulares' => ['block' => '04', 'step' => 20],
-  'presente-indicativo-irregulares' => ['block' => '04', 'step' => 30],
-  'estar-gerundio' => ['block' => '04', 'step' => 40],
-  'adjetivos-posesivos' => ['block' => '05', 'step' => 10],
-  'demostrativos' => ['block' => '05', 'step' => 20],
-  'querer-preferir-necesitar' => ['block' => '06', 'step' => 10],
-  'pronombres-interrogativos' => ['block' => '07', 'step' => 10],
-  'adverbios-frecuencia' => ['block' => '07', 'step' => 20],
+  'sustantivos-basicos' => ['block' => '1', 'step' => 5],
+  'ser-presente' => ['block' => '1', 'step' => 10],
+  'estar-presente' => ['block' => '1', 'step' => 20],
+  'hay' => ['block' => '1', 'step' => 30],
+  'tener-presente' => ['block' => '2', 'step' => 10],
+  'hay-que' => ['block' => '2', 'step' => 20],
+  'tener-que-deber' => ['block' => '2', 'step' => 30],
+  'verbos-basicos-tener-que' => ['block' => '2', 'step' => 40],
+  'ir-presente' => ['block' => '3', 'step' => 10],
+  'ir-a-infinitivo' => ['block' => '3', 'step' => 20],
+  'adverbios-lugar' => ['block' => '3', 'step' => 30],
+  'hacer-presente' => ['block' => '4', 'step' => 10],
+  'presente-indicativo-regulares' => ['block' => '4', 'step' => 20],
+  'presente-indicativo-irregulares' => ['block' => '4', 'step' => 30],
+  'estar-gerundio' => ['block' => '4', 'step' => 40],
+  'adjetivos-posesivos' => ['block' => '5', 'step' => 10],
+  'demostrativos' => ['block' => '5', 'step' => 20],
+  'querer-preferir-necesitar' => ['block' => '6', 'step' => 10],
+  'pronombres-interrogativos' => ['block' => '7', 'step' => 10],
+  'adverbios-frecuencia' => ['block' => '7', 'step' => 20],
 ];
 
 $route_groups = [];

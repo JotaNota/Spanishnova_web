@@ -52,11 +52,11 @@ A route page should:
 
 ```txt
 route_tax = beginner
-route_block = 01
-route_step = 10
+route_block = 1
+route_step = 5
 ```
 
-`route_step` should use multiples of 10 so new items can be inserted later.
+`route_step` uses numeric order values. Smaller numbers appear first, and gaps can be left for later insertions.
 
 A post can belong to a level without belonging to a route.
 
@@ -69,15 +69,15 @@ Beginner starts with sentence creation and ends before the main past-tense syste
 Beginner includes:
 
 ```txt
-01 First sentences
-02 Needs and obligation
-03 Places and movement
-04 Present actions
-05 People and description
-06 Wants and needs
-07 Questions and routines
-08 Opinions and reactions
-09 Possession and reference
+1 First sentences
+2 Needs and obligation
+3 Places and movement
+4 Present actions
+5 People and description
+6 Wants and needs
+7 Questions and routines
+8 Opinions and reactions
+9 Possession and reference
 10 Reflexives: daily use
 ```
 
@@ -92,11 +92,11 @@ Intermediate starts with past-tense use, especially the preterite.
 Intermediate includes:
 
 ```txt
-01 Past: preterite base
-02 Object pronouns
-03 Past: imperfect
-04 Future
-05 Pretérito perfecto
+1 Past: preterite base
+2 Object pronouns
+3 Past: imperfect
+4 Future
+5 Pretérito perfecto
 ```
 
 The main shift is not difficulty alone. The shift is functional: the learner starts telling what happened, connecting actions, replacing objects, and contrasting time.
@@ -108,9 +108,9 @@ Advanced should hold topics where meaning changes, nuance matters, or structures
 Advanced includes:
 
 ```txt
-01 Reflexives: meaning and nuance
-02 Past: difficult contrasts
-03 Conditional / complex structures
+1 Reflexives: meaning and nuance
+2 Past: difficult contrasts
+3 Conditional / complex structures
 ```
 
 Advanced is not just more grammar. It is grammar where the learner must control meaning, stance, emphasis, and contrast.
