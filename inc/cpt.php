@@ -8,7 +8,7 @@ function spanishnova_register_cpts() {
         'readings' => ['Readings', 'Reading'],
         'conversations' => ['Conversations', 'Conversation'],
         'practice' => ['Practice', 'Practice'],
-        'resources' => ['Resources', 'Resource'],
+        'resource' => ['Resources', 'Resource'],
     ];
 
     foreach ($post_types as $slug => $labels) {
@@ -28,8 +28,15 @@ function spanishnova_register_cpts() {
             'show_in_rest' => true,
             'menu_position' => 20,
             'supports' => $supports,
-            'rewrite' => ['slug' => $slug],
+            'rewrite' => ['slug' => $slug === 'resource' ? 'resources' : $slug],
         ]);
     }
 }
 add_action('init', 'spanishnova_register_cpts');
+
+function spanishnova_register_resource_taxonomies() {
+    foreach (['level_tax', 'topic_tax', 'route_tax', 'post_tag'] as $taxonomy) {
+        register_taxonomy_for_object_type($taxonomy, 'resource');
+    }
+}
+add_action('init', 'spanishnova_register_resource_taxonomies', 11);

@@ -1,12 +1,18 @@
-<?php get_header(); ?>
+<?php
+wp_enqueue_style('spanishnova-archives', get_template_directory_uri() . '/assets/css/archives.css', ['spanishnova-main'], '0.1.0');
+get_header();
+?>
 
 <?php
+$paged = max(1, get_query_var('paged'), get_query_var('page'));
+
 $featured_query = new WP_Query([
   'post_type'      => ['grammar', 'vocabulary', 'reading'],
   'post_status'    => 'publish',
-  'posts_per_page' => 6,
+  'posts_per_page' => 8,
   'orderby'        => 'date',
   'order'          => 'DESC',
+  'paged'          => $paged,
 ]);
 
 $post_type_labels = [
@@ -68,6 +74,24 @@ $post_type_labels = [
             </a>
           <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>
+
+          <?php
+          $pagination = paginate_links([
+            'total'   => $featured_query->max_num_pages,
+            'current' => $paged,
+            'type'    => 'list',
+            'mid_size' => 1,
+            'end_size' => 1,
+            'prev_text' => '←',
+            'next_text' => 'Next →',
+          ]);
+          ?>
+
+          <?php if ($pagination) : ?>
+            <nav class="pagination explore-pagination" aria-label="Latest lessons and activities pagination">
+              <?php echo wp_kses_post($pagination); ?>
+            </nav>
+          <?php endif; ?>
         <?php else : ?>
           <p class="empty-state">No lessons published yet.</p>
         <?php endif; ?>

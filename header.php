@@ -155,26 +155,50 @@ $sn_render_topic_links = function ($base_path = '/') use ($sn_topic_items) {
         </li>
 
         <li class="menu-item has-submenu">
-          <a href="<?php echo $sn_home_link('/vocabulary/'); ?>">Vocabulary</a>
+          <a href="<?php echo esc_url(add_query_arg('type', 'vocabulary', home_url('/explore/'))); ?>">Vocabulary</a>
           <ul class="submenu">
-            <li><a href="<?php echo $sn_home_link('/vocabulary/'); ?>">All vocabulary</a></li>
-            <?php $sn_render_topic_links('/vocabulary/'); ?>
+            <li><a href="<?php echo esc_url(add_query_arg('type', 'vocabulary', home_url('/explore/'))); ?>">All vocabulary</a></li>
+            <?php $sn_render_topic_links('/explore/?type=vocabulary'); ?>
           </ul>
         </li>
 
         <li class="menu-item has-submenu">
-          <a href="<?php echo $sn_home_link('/readings/'); ?>">Readings</a>
+          <a href="<?php echo esc_url(add_query_arg('type', 'readings', home_url('/explore/'))); ?>">Readings</a>
           <ul class="submenu">
-            <li><a href="<?php echo $sn_home_link('/readings/'); ?>">All readings</a></li>
-            <?php $sn_render_topic_links('/readings/'); ?>
+            <li><a href="<?php echo esc_url(add_query_arg('type', 'readings', home_url('/explore/'))); ?>">All readings</a></li>
+            <?php
+            foreach ($sn_topic_items as $slug => $label) {
+              $url = add_query_arg(
+                [
+                  'type'  => 'readings',
+                  'topic' => $slug,
+                ],
+                home_url('/explore/')
+              );
+
+              printf('<li><a href="%s">%s</a></li>', esc_url($url), esc_html($label));
+            }
+            ?>
           </ul>
         </li>
 
         <li class="menu-item has-submenu">
-          <a href="<?php echo $sn_home_link('/conversations/'); ?>">Conversations</a>
+          <a href="<?php echo esc_url(add_query_arg('type', 'conversations', home_url('/explore/'))); ?>">Conversations</a>
           <ul class="submenu">
-            <li><a href="<?php echo $sn_home_link('/conversations/'); ?>">All conversations</a></li>
-            <?php $sn_render_topic_links('/conversations/'); ?>
+            <li><a href="<?php echo esc_url(add_query_arg('type', 'conversations', home_url('/explore/'))); ?>">All conversations</a></li>
+            <?php
+            foreach ($sn_topic_items as $slug => $label) {
+              $url = add_query_arg(
+                [
+                  'type'  => 'conversations',
+                  'topic' => $slug,
+                ],
+                home_url('/explore/')
+              );
+
+              printf('<li><a href="%s">%s</a></li>', esc_url($url), esc_html($label));
+            }
+            ?>
           </ul>
         </li>
 

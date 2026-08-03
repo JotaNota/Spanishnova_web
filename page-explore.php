@@ -26,10 +26,13 @@ if (!$is_valid_type) {
   $query_post_types = array();
 }
 
+$paged = max(1, get_query_var('paged') ? get_query_var('paged') : get_query_var('page'));
+
 $query_args = array(
   'post_type' => $query_post_types,
   'post_status' => 'publish',
-  'posts_per_page' => -1,
+  'posts_per_page' => 12,
+  'paged' => $paged,
 );
 
 if ($selected_topic && $is_valid_topic) {
@@ -43,9 +46,8 @@ if ($selected_topic && $is_valid_topic) {
 }
 
 $explore_query = ($is_valid_type && $is_valid_topic) ? new WP_Query($query_args) : null;
-$result_count = $explore_query ? (int) $explore_query->post_count : 0;
+$result_count = $explore_query ? (int) $explore_query->found_posts : 0;
 $result_count_label = $result_count === 1 ? 'result' : 'results';
-$group_order = array('readings', 'vocabulary', 'conversations');
 ?>
 <main class="explore-page">
   <section class="panel explore-panel">
@@ -103,52 +105,50 @@ $group_order = array('readings', 'vocabulary', 'conversations');
 
     <?php if ($explore_query) : ?>
       <?php if ($explore_query->have_posts()) : ?>
-        <?php if ($selected_type === '') : ?>
-          <?php
-          $grouped_posts = array();
-          foreach ($allowed_types as $allowed_type) {
-            $grouped_posts[$allowed_type] = array();
-          }
-
-          foreach ($explore_query->posts as $explore_post) {
-            if (isset($grouped_posts[$explore_post->post_type])) {
-              $grouped_posts[$explore_post->post_type][] = $explore_post;
-            }
-          }
-          ?>
-          <?php foreach ($group_order as $group_type) : ?>
-            <?php if (empty($grouped_posts[$group_type])) : ?>
-              <?php continue; ?>
-            <?php endif; ?>
-            <h3 class="explore-group-title"><?php echo esc_html($type_labels[$group_type]); ?></h3>
-            <div class="activity-list">
-            <?php foreach ($grouped_posts[$group_type] as $post) : setup_postdata($post); ?>
-              <?php
-              $post_type = get_post_type();
-              $label = isset($type_labels[$post_type]) ? $type_labels[$post_type] : $post_type;
-              ?>
-              <a class="activity-row" href="<?php echo esc_url(get_permalink()); ?>">
-                <span class="label"><?php echo esc_html($label); ?></span>
-                <div><h3><?php the_title(); ?></h3><p><?php echo esc_html(wp_trim_words(spanishnova_get_card_excerpt(get_the_ID()), 22)); ?></p></div>
-                <span class="arrow">&rarr;</span>
-              </a>
-            <?php endforeach; ?>
-            </div>
-          <?php endforeach; ?>
-        <?php else : ?>
-        <div class="activity-list">
+        <div class="explore-results">
         <?php while ($explore_query->have_posts()) : $explore_query->the_post(); ?>
           <?php
           $post_type = get_post_type();
           $label = isset($type_labels[$post_type]) ? $type_labels[$post_type] : $post_type;
+          $level_terms = get_the_terms(get_the_ID(), 'level_tax');
+          $topic_terms = get_the_terms(get_the_ID(), 'topic_tax');
+          $level_names = (!is_wp_error($level_terms) && $level_terms) ? wp_list_pluck($level_terms, 'name') : array();
+          $topic_names = (!is_wp_error($topic_terms) && $topic_terms) ? wp_list_pluck($topic_terms, 'name') : array();
           ?>
-          <a class="activity-row" href="<?php echo esc_url(get_permalink()); ?>">
-            <span class="label"><?php echo esc_html($label); ?></span>
-            <div><h3><?php the_title(); ?></h3><p><?php echo esc_html(wp_trim_words(spanishnova_get_card_excerpt(get_the_ID()), 22)); ?></p></div>
-            <span class="arrow">&rarr;</span>
+          <a class="explore-result explore-result--<?php echo esc_attr(sanitize_html_class($post_type)); ?>" href="<?php echo esc_url(get_permalink()); ?>">
+            <div class="explore-result-meta">
+              <span class="explore-result-type"><?php echo esc_html($label); ?></span>
+              <span class="explore-result-level"><?php echo esc_html($level_names ? implode(', ', $level_names) : 'Level not specified'); ?></span>
+            </div>
+            <h2 class="explore-result-title"><?php the_title(); ?></h2>
+            <p class="explore-result-description"><?php echo esc_html(wp_trim_words(spanishnova_get_card_excerpt(get_the_ID()), 32)); ?></p>
+            <p class="explore-result-topics"><?php echo esc_html($topic_names ? 'Topics: ' . implode(', ', $topic_names) : 'Topics not specified'); ?></p>
+            <span class="explore-result-arrow" aria-hidden="true">&rarr;</span>
           </a>
         <?php endwhile; ?>
         </div>
+
+        <?php
+        $pagination_args = array();
+        if ($selected_type) {
+          $pagination_args['type'] = $selected_type;
+        }
+        if ($selected_topic) {
+          $pagination_args['topic'] = $selected_topic;
+        }
+
+        $pagination = paginate_links(array(
+          'total' => $explore_query->max_num_pages,
+          'current' => $paged,
+          'type' => 'list',
+          'add_args' => $pagination_args,
+        ));
+        ?>
+
+        <?php if ($pagination) : ?>
+          <nav class="pagination explore-pagination" aria-label="Explore pagination">
+            <?php echo wp_kses_post($pagination); ?>
+          </nav>
         <?php endif; ?>
       <?php else : ?>
         <p>No content yet.</p>

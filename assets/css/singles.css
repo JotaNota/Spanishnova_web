@@ -179,6 +179,62 @@ body.single-conversations {
   color: var(--sn-muted);
 }
 
+.sn-grammar-recommendations {
+  margin-top: 52px;
+  padding-top: 34px;
+  border-top: 1px solid var(--sn-border);
+}
+
+.sn-recommendation-section + .sn-recommendation-section {
+  margin-top: 38px;
+}
+
+.sn-recommendation-section > h2 {
+  margin: 0 0 16px;
+  color: var(--sn-ink);
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.sn-recommendation-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.sn-recommendation-item {
+  padding: 18px;
+  border: 1px solid var(--sn-border);
+  border-radius: 14px;
+  background: var(--sn-paper);
+}
+
+.sn-recommendation-item h3 {
+  margin: 0 0 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.sn-recommendation-item p {
+  margin: 0 0 12px;
+  color: var(--sn-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.sn-recommendation-link,
+.sn-grammar-archive-link {
+  color: var(--sn-orange);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.sn-grammar-archive-link {
+  display: inline-block;
+  margin-top: 24px;
+}
+
 .sn-post-content tr:last-child td {
   border-bottom: 1px solid var(--sn-ink);
 }
@@ -373,5 +429,14 @@ body.single-conversations {
   .sn-post-content table {
     display: block;
     overflow-x: auto;
+  }
+
+  .sn-grammar-recommendations {
+    margin-top: 40px;
+    padding-top: 28px;
+  }
+
+  .sn-recommendation-list {
+    grid-template-columns: 1fr;
   }
 }
