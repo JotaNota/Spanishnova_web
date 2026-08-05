@@ -317,3 +317,237 @@
     font-size: 25px;
   }
 }
+
+.starter-level-page {
+  gap: 24px;
+}
+
+.starter-level-hero {
+  display: grid;
+  gap: 12px;
+}
+
+.starter-level-hero h1,
+.starter-level-hero .level-route-description {
+  margin: 0;
+}
+
+.starter-level-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.starter-level-link {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 7px 13px;
+  background: #ffffff;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+.starter-level-link:hover,
+.starter-level-link:focus-visible {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.starter-level-link:focus-visible {
+  outline: 3px solid var(--orange-soft);
+  outline-offset: 2px;
+}
+
+.starter-level-link.is-active {
+  border-color: var(--orange);
+  background: var(--orange);
+  color: #ffffff;
+}
+
+.starter-modules {
+  display: grid;
+  gap: 18px;
+}
+
+.starter-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.starter-section-heading h2 {
+  font-size: clamp(26px, 3.4vw, 38px);
+  letter-spacing: 0;
+}
+
+.starter-module-list {
+  display: grid;
+  gap: 16px;
+}
+
+.starter-module {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 18px rgba(62, 41, 20, 0.05);
+}
+
+.starter-module-heading {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+  background: #fffaf5;
+}
+
+.starter-module-kicker {
+  margin: 0 0 4px;
+  color: var(--orange);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.starter-module-heading h3 {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 950;
+}
+
+.starter-lesson-list {
+  display: grid;
+}
+
+.starter-lesson-row {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  min-height: 72px;
+  padding: 13px 18px;
+  color: var(--ink);
+}
+
+.starter-lesson-row + .starter-lesson-row {
+  border-top: 1px solid var(--border);
+}
+
+.starter-lesson-row:hover,
+.starter-lesson-row:focus-visible {
+  background: var(--orange-soft);
+  color: var(--orange);
+}
+
+.starter-lesson-row:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline: 3px solid var(--orange);
+  outline-offset: -3px;
+}
+
+.starter-lesson-order {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 10px;
+  background: #fff3e7;
+  color: var(--orange);
+  font-size: 0.78rem;
+  font-weight: 950;
+}
+
+.starter-lesson-copy {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
+}
+
+.starter-lesson-copy strong {
+  font-size: 0.94rem;
+  line-height: 1.3;
+}
+
+.starter-lesson-copy > span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.starter-lesson-arrow {
+  color: var(--orange);
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.starter-empty-state {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  text-align: center;
+}
+
+.starter-empty-state h3,
+.starter-empty-state p {
+  margin: 0;
+}
+
+.starter-empty-state p {
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .starter-section-heading {
+    display: grid;
+    gap: 10px;
+  }
+
+  .starter-level-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .starter-level-link:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 520px) {
+  .starter-level-hero {
+    gap: 10px;
+  }
+
+  .starter-level-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .starter-level-link:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+
+  .starter-module-heading {
+    padding: 15px;
+  }
+
+  .starter-lesson-row {
+    grid-template-columns: 38px minmax(0, 1fr) auto;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+
+  .starter-lesson-order {
+    width: 32px;
+    height: 32px;
+  }
+}

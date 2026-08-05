@@ -20,6 +20,34 @@ $post_type_labels = [
   'vocabulary' => 'Vocabulary',
   'reading'    => 'Reading',
 ];
+
+$level_slugs = [
+  'starter' => 'Starter',
+  'beginner' => 'Beginner',
+  'intermediate' => 'Intermediate',
+  'upper-intermediate' => 'Upper-Intermediate',
+  'advanced' => 'Advanced',
+];
+$level_links = [];
+
+foreach ($level_slugs as $level_slug => $level_label) {
+  $level_term = get_term_by('slug', $level_slug, 'level_tax');
+
+  if (!$level_term || is_wp_error($level_term)) {
+    continue;
+  }
+
+  $level_url = get_term_link($level_term);
+
+  if (is_wp_error($level_url)) {
+    continue;
+  }
+
+  $level_links[] = [
+    'label' => $level_label,
+    'url' => $level_url,
+  ];
+}
 ?>
 
 <main>
@@ -42,10 +70,13 @@ $post_type_labels = [
       <div class="panel side-card">
         <h2>By level</h2>
         <ul>
-          <li><a href="<?php echo esc_url(home_url('/route/beginner/')); ?>">Beginner</a></li>
-          <li><a href="<?php echo esc_url(home_url('/route/intermediate/')); ?>">Intermediate</a></li>
-          <li><a href="<?php echo esc_url(home_url('/route/advanced/')); ?>">Advanced</a></li>
-          <li><a href="<?php echo esc_url(home_url('/resources/worksheets/')); ?>">Worksheets</a></li>
+          <?php foreach ($level_links as $level_link) : ?>
+            <li>
+              <a href="<?php echo esc_url($level_link['url']); ?>">
+                <?php echo esc_html($level_link['label']); ?>
+              </a>
+            </li>
+          <?php endforeach; ?>
         </ul>
       </div>
     </aside>

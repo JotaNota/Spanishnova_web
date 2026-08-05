@@ -80,3 +80,35 @@ function spanishnova_register_route_meta() {
     }
 }
 add_action('init', 'spanishnova_register_route_meta');
+
+function spanishnova_register_level_editorial_meta() {
+    add_post_type_support('grammar', 'custom-fields');
+
+    register_post_meta('grammar', 'level_module', [
+        'type' => 'string',
+        'single' => true,
+        'show_in_rest' => true,
+        'auth_callback' => function () {
+            return current_user_can('edit_posts');
+        },
+    ]);
+
+    register_post_meta('grammar', 'level_order', [
+        'type' => 'integer',
+        'single' => true,
+        'show_in_rest' => true,
+        'auth_callback' => function () {
+            return current_user_can('edit_posts');
+        },
+    ]);
+
+    register_post_meta('grammar', 'level_roadmap_source', [
+        'type' => 'string',
+        'single' => true,
+        'show_in_rest' => true,
+        'auth_callback' => function () {
+            return current_user_can('edit_posts');
+        },
+    ]);
+}
+add_action('init', 'spanishnova_register_level_editorial_meta');

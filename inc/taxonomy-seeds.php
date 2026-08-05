@@ -3,8 +3,10 @@ if (!defined('ABSPATH')) { exit; }
 
 function spanishnova_seed_taxonomy_terms() {
     spanishnova_seed_flat_taxonomy_terms('level_tax', [
+        ['name' => 'Starter', 'slug' => 'starter'],
         ['name' => 'Beginner', 'slug' => 'beginner'],
         ['name' => 'Intermediate', 'slug' => 'intermediate'],
+        ['name' => 'Upper-Intermediate', 'slug' => 'upper-intermediate'],
         ['name' => 'Advanced', 'slug' => 'advanced'],
     ]);
 
@@ -100,8 +102,10 @@ function spanishnova_seed_taxonomy_terms() {
     ]);
 
     $route_terms = [
+        ['name' => 'Starter', 'slug' => 'starter'],
         ['name' => 'Beginner', 'slug' => 'beginner'],
         ['name' => 'Intermediate', 'slug' => 'intermediate'],
+        ['name' => 'Upper-Intermediate', 'slug' => 'upper-intermediate'],
         ['name' => 'Advanced', 'slug' => 'advanced'],
     ];
 
