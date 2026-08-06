@@ -93,6 +93,19 @@ body.single-conversations {
   min-width: 0;
 }
 
+.sn-lesson--single-column .sn-breadcrumb,
+.sn-lesson--single-column .sn-lesson-header,
+.sn-lesson--single-column .sn-lesson-layout {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sn-lesson--single-column .sn-lesson-layout {
+  display: block;
+  margin-top: 38px;
+}
+
 .sn-grammar-page .sn-post-content {
   color: #24313b;
   font-size: 16px;
