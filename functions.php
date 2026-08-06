@@ -6,7 +6,7 @@ require_once get_template_directory() . '/inc/enqueue.php';
 require_once get_template_directory() . '/inc/cpt.php';
 require_once get_template_directory() . '/inc/taxonomies.php';
 require_once get_template_directory() . '/inc/taxonomy-seeds.php';
-
+require_once get_template_directory() . '/inc/grammar-meta.php';
 
 if (!function_exists('spanishnova_get_card_excerpt')) {
     function spanishnova_get_card_excerpt($post_id = null) {
@@ -26,4 +26,3 @@ if (!function_exists('spanishnova_get_card_excerpt')) {
         return $excerpt;
     }
 }
-
