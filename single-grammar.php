@@ -101,9 +101,10 @@
       $continue_practicing = $get_topic_recommendations('practice', 1, array());
       $related_lessons = $get_topic_recommendations('grammar', 3, array($post_id));
       $has_resources = $pdf_url || $audio_url || $slides_url;
+      $has_sidebar = $has_resources || $flashcard_word || $next_lesson || $related_lessons;
     ?>
 
-    <article class="sn-lesson">
+    <article class="sn-lesson<?php echo $has_sidebar ? '' : ' sn-lesson--single-column'; ?>">
       <nav class="sn-breadcrumb" aria-label="Breadcrumb">
         <a href="<?php echo esc_url($grammar_url); ?>">Grammar</a>
         <?php foreach ($breadcrumb_terms as $term) : ?>
@@ -142,7 +143,7 @@
           <?php endif; ?>
         </div>
 
-        <?php if ($has_resources || $flashcard_word || $next_lesson || $related_lessons) : ?>
+        <?php if ($has_sidebar) : ?>
           <aside class="sn-sidebar" aria-label="Lesson resources">
             <?php if ($has_resources || $continue_practicing) : ?>
               <section class="sn-sidebar-box">
