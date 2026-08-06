@@ -1,45 +1,99 @@
 {
-  "intro": "Use pueda, puedas, podamos, and puedan when poder appears after expressions of need, doubt, permission, or purpose. The idea is not just ability, but possible ability inside another clause.",
+  "intro": "Use the present subjunctive of poder — pueda, puedas, podamos, puedan — after expressions that create a second clause: need, doubt, permission, purpose, or possibility.",
   "overview": {
-    "body": "Use pueda, puedas, podamos, and puedan when poder appears after expressions of need, doubt, permission, or purpose. The idea is not just ability, but possible ability inside another clause. Focus on the message first, then choose the form that fits the context.",
+    "body": "Poder means can or to be able to. In the present subjunctive, it often appears after que or para que because the action depends on another idea: someone needs it, doubts it, allows it, or wants it to be possible.",
     "use_note": "poder in the present subjunctive"
   },
   "examples": [
     {
-      "spanish": "Poder in subjunctive: ejemplo principal.",
-      "english": "Poder in subjunctive: main example."
+      "spanish": "Necesito que puedas venir temprano.",
+      "english": "I need you to be able to come early."
     },
     {
-      "spanish": "Poder in subjunctive: otro ejemplo ?til.",
-      "english": "Poder in subjunctive: another useful example."
+      "spanish": "Te llamo para que podamos hablar.",
+      "english": "I am calling you so that we can talk."
+    }
+  ],
+  "forms": [
+    {
+      "label": "yo / él / ella / usted pueda",
+      "meaning": "I / he / she / you formal can"
+    },
+    {
+      "label": "tú puedas",
+      "meaning": "you can"
+    },
+    {
+      "label": "nosotros / nosotras podamos",
+      "meaning": "we can"
+    },
+    {
+      "label": "ellos / ellas / ustedes puedan",
+      "meaning": "they / you all can"
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "necesitar + que + poder",
+      "example": "Necesito que puedas leer este mensaje.",
+      "translation": "I need you to be able to read this message."
+    },
+    {
+      "pattern": "dudar + que + poder",
+      "example": "Dudo que él pueda llegar a tiempo.",
+      "translation": "I doubt he can arrive on time."
+    },
+    {
+      "pattern": "para que + poder",
+      "example": "Te envío la dirección para que puedas encontrar la casa.",
+      "translation": "I am sending you the address so you can find the house."
+    },
+    {
+      "pattern": "permitir/dejar + que + poder",
+      "example": "La profesora deja que podamos usar el diccionario.",
+      "translation": "The teacher lets us use the dictionary."
     }
   ],
   "uses": [
     {
-      "heading": "Real use",
-      "body": "Use this pattern when poder in subjunctive helps express a real message, not just a grammar label.",
+      "heading": "Need or request",
+      "body": "Use the subjunctive when one person needs, asks, or wants another person to be able to do something.",
       "examples": [
         {
-          "spanish": "Poder in subjunctive: ejemplo pr?ctico uno.",
-          "english": "Poder in subjunctive: practical example one."
+          "spanish": "Quiero que puedas descansar esta noche.",
+          "english": "I want you to be able to rest tonight."
         },
         {
-          "spanish": "Poder in subjunctive: ejemplo pr?ctico dos.",
-          "english": "Poder in subjunctive: practical example two."
+          "spanish": "Necesitamos que ustedes puedan entrar al sistema.",
+          "english": "We need you all to be able to enter the system."
         }
       ]
     },
     {
-      "heading": "Common context",
-      "body": "This form often appears in everyday explanations, plans, advice, and reactions depending on the sentence.",
+      "heading": "Doubt or uncertainty",
+      "body": "Use the subjunctive when the ability is not presented as a fact.",
       "examples": [
         {
-          "spanish": "Poder in subjunctive: contexto com?n uno.",
-          "english": "Poder in subjunctive: common context one."
+          "spanish": "No creo que ella pueda venir hoy.",
+          "english": "I do not think she can come today."
         },
         {
-          "spanish": "Poder in subjunctive: contexto com?n dos.",
-          "english": "Poder in subjunctive: common context two."
+          "spanish": "Dudo que podamos terminar antes de las seis.",
+          "english": "I doubt we can finish before six."
+        }
+      ]
+    },
+    {
+      "heading": "Purpose",
+      "body": "Use para que when the second action explains the purpose of the first action.",
+      "examples": [
+        {
+          "spanish": "Hablo despacio para que puedas entender.",
+          "english": "I speak slowly so you can understand."
+        },
+        {
+          "spanish": "Abrimos la ventana para que puedan respirar mejor.",
+          "english": "We open the window so they can breathe better."
         }
       ]
     }
@@ -47,307 +101,295 @@
   "sentences": {
     "affirmative": [
       {
-        "spanish": "Poder in subjunctive: frase afirmativa 1.",
-        "english": "Poder in subjunctive: affirmative sentence 1."
+        "spanish": "Espero que puedas venir mañana.",
+        "english": "I hope you can come tomorrow."
       },
       {
-        "spanish": "Poder in subjunctive: frase afirmativa 2.",
-        "english": "Poder in subjunctive: affirmative sentence 2."
+        "spanish": "Busco una silla para que mi abuela pueda sentarse.",
+        "english": "I am looking for a chair so my grandmother can sit down."
       },
       {
-        "spanish": "Poder in subjunctive: frase afirmativa 3.",
-        "english": "Poder in subjunctive: affirmative sentence 3."
+        "spanish": "Necesitamos que todos puedan participar.",
+        "english": "We need everyone to be able to participate."
       },
       {
-        "spanish": "Poder in subjunctive: frase afirmativa 4.",
-        "english": "Poder in subjunctive: affirmative sentence 4."
+        "spanish": "Te explico otra vez para que podamos continuar.",
+        "english": "I will explain it again so we can continue."
       }
     ],
     "negative": [
       {
-        "spanish": "No usamos poder in subjunctive as? en el ejemplo 1.",
-        "english": "We do not use poder in subjunctive like that in example 1."
+        "spanish": "No creo que pueda salir esta noche.",
+        "english": "I do not think I can go out tonight."
       },
       {
-        "spanish": "No usamos poder in subjunctive as? en el ejemplo 2.",
-        "english": "We do not use poder in subjunctive like that in example 2."
+        "spanish": "No es posible que ellos puedan pagar ahora.",
+        "english": "It is not possible that they can pay now."
       },
       {
-        "spanish": "No usamos poder in subjunctive as? en el ejemplo 3.",
-        "english": "We do not use poder in subjunctive like that in example 3."
+        "spanish": "No quiero que puedas ver la respuesta todavía.",
+        "english": "I do not want you to be able to see the answer yet."
       },
       {
-        "spanish": "No usamos poder in subjunctive as? en el ejemplo 4.",
-        "english": "We do not use poder in subjunctive like that in example 4."
+        "spanish": "No parece que podamos resolverlo hoy.",
+        "english": "It does not seem that we can solve it today."
       }
     ],
     "questions": [
       {
-        "spanish": "Poder in subjunctive: pregunta modelo 1.",
-        "english": "Poder in subjunctive: model question 1."
+        "spanish": "¿Quieres que pueda ayudarte?",
+        "english": "Do you want me to be able to help you?"
       },
       {
-        "spanish": "Poder in subjunctive: pregunta modelo 2.",
-        "english": "Poder in subjunctive: model question 2."
+        "spanish": "¿Hay algo que podamos hacer?",
+        "english": "Is there something we can do?"
       },
       {
-        "spanish": "Poder in subjunctive: pregunta modelo 3.",
-        "english": "Poder in subjunctive: model question 3."
+        "spanish": "¿Dudas que ella pueda aprenderlo?",
+        "english": "Do you doubt that she can learn it?"
       },
       {
-        "spanish": "Poder in subjunctive: pregunta modelo 4.",
-        "english": "Poder in subjunctive: model question 4."
+        "spanish": "¿Me mandas el enlace para que pueda entrar?",
+        "english": "Can you send me the link so I can enter?"
       }
     ]
   },
   "exercises": {
     "select": [
       {
-        "prompt": "Poder in subjunctive: opci?n 1 _____.",
+        "prompt": "Necesito que tú _____ llegar antes de las nueve.",
         "options": [
-          "forma correcta",
-          "otra forma",
-          "forma no usada"
+          "puedes",
+          "puedas",
+          "podamos"
         ],
-        "answer": "Poder in subjunctive: opci?n 1 forma correcta."
+        "answer": "Necesito que tú puedas llegar antes de las nueve."
       },
       {
-        "prompt": "Poder in subjunctive: opci?n 2 _____.",
+        "prompt": "No creo que ella _____ terminar hoy.",
         "options": [
-          "forma correcta",
-          "otra forma",
-          "forma no usada"
+          "pueda",
+          "puede",
+          "puedan"
         ],
-        "answer": "Poder in subjunctive: opci?n 2 forma correcta."
+        "answer": "No creo que ella pueda terminar hoy."
       },
       {
-        "prompt": "Poder in subjunctive: opci?n 3 _____.",
+        "prompt": "Te llamo para que nosotros _____ organizar el viaje.",
         "options": [
-          "forma correcta",
-          "otra forma",
-          "forma no usada"
+          "podemos",
+          "pueda",
+          "podamos"
         ],
-        "answer": "Poder in subjunctive: opci?n 3 forma correcta."
+        "answer": "Te llamo para que nosotros podamos organizar el viaje."
       },
       {
-        "prompt": "Poder in subjunctive: opci?n 4 _____.",
+        "prompt": "Es importante que ustedes _____ escuchar bien.",
         "options": [
-          "forma correcta",
-          "otra forma",
-          "forma no usada"
+          "puedan",
+          "pueden",
+          "puedas"
         ],
-        "answer": "Poder in subjunctive: opci?n 4 forma correcta."
+        "answer": "Es importante que ustedes puedan escuchar bien."
       },
       {
-        "prompt": "Poder in subjunctive: opci?n 5 _____.",
+        "prompt": "Quiero que mi hermano _____ estudiar tranquilo.",
         "options": [
-          "forma correcta",
-          "otra forma",
-          "forma no usada"
+          "puede",
+          "pueda",
+          "puedas"
         ],
-        "answer": "Poder in subjunctive: opci?n 5 forma correcta."
+        "answer": "Quiero que mi hermano pueda estudiar tranquilo."
       },
       {
-        "prompt": "Poder in subjunctive: opci?n 6 _____.",
+        "prompt": "Dudo que tú _____ abrir esa puerta.",
         "options": [
-          "forma correcta",
-          "otra forma",
-          "forma no usada"
+          "puedas",
+          "puedes",
+          "podamos"
         ],
-        "answer": "Poder in subjunctive: opci?n 6 forma correcta."
+        "answer": "Dudo que tú puedas abrir esa puerta."
       },
       {
-        "prompt": "Poder in subjunctive: opci?n 7 _____.",
+        "prompt": "Buscamos una mesa para que todos _____ comer juntos.",
         "options": [
-          "forma correcta",
-          "otra forma",
-          "forma no usada"
+          "puedan",
+          "pueda",
+          "podemos"
         ],
-        "answer": "Poder in subjunctive: opci?n 7 forma correcta."
+        "answer": "Buscamos una mesa para que todos puedan comer juntos."
       },
       {
-        "prompt": "Poder in subjunctive: opci?n 8 _____.",
+        "prompt": "No parece que nosotros _____ salir temprano.",
         "options": [
-          "forma correcta",
-          "otra forma",
-          "forma no usada"
+          "podamos",
+          "podemos",
+          "puedan"
         ],
-        "answer": "Poder in subjunctive: opci?n 8 forma correcta."
+        "answer": "No parece que nosotros podamos salir temprano."
       },
       {
-        "prompt": "Poder in subjunctive: opci?n 9 _____.",
+        "prompt": "Ojalá que yo _____ descansar este fin de semana.",
         "options": [
-          "forma correcta",
-          "otra forma",
-          "forma no usada"
+          "puedo",
+          "pueda",
+          "puedas"
         ],
-        "answer": "Poder in subjunctive: opci?n 9 forma correcta."
+        "answer": "Ojalá que yo pueda descansar este fin de semana."
       },
       {
-        "prompt": "Poder in subjunctive: opci?n 10 _____.",
+        "prompt": "La profesora explica despacio para que la clase _____.",
         "options": [
-          "forma correcta",
-          "otra forma",
-          "forma no usada"
+          "pueda entender",
+          "puede entender",
+          "puedas entender"
         ],
-        "answer": "Poder in subjunctive: opci?n 10 forma correcta."
+        "answer": "La profesora explica despacio para que la clase pueda entender."
       }
     ],
     "complete": [
       {
-        "prompt": "Poder in subjunctive: completa la idea 1: ___.",
-        "answer": "Poder in subjunctive: completa la idea 1: forma correcta."
+        "prompt": "Completa con poder en subjuntivo: Quiero que tú ___ practicar más.",
+        "answer": "Quiero que tú puedas practicar más."
       },
       {
-        "prompt": "Poder in subjunctive: completa la idea 2: ___.",
-        "answer": "Poder in subjunctive: completa la idea 2: forma correcta."
+        "prompt": "Completa con poder en subjuntivo: No creo que él ___ manejar de noche.",
+        "answer": "No creo que él pueda manejar de noche."
       },
       {
-        "prompt": "Poder in subjunctive: completa la idea 3: ___.",
-        "answer": "Poder in subjunctive: completa la idea 3: forma correcta."
+        "prompt": "Completa con poder en subjuntivo: Te doy mi número para que me ___ llamar.",
+        "answer": "Te doy mi número para que me puedas llamar."
       },
       {
-        "prompt": "Poder in subjunctive: completa la idea 4: ___.",
-        "answer": "Poder in subjunctive: completa la idea 4: forma correcta."
+        "prompt": "Completa con poder en subjuntivo: Necesitamos que ustedes ___ confirmar hoy.",
+        "answer": "Necesitamos que ustedes puedan confirmar hoy."
       },
       {
-        "prompt": "Poder in subjunctive: completa la idea 5: ___.",
-        "answer": "Poder in subjunctive: completa la idea 5: forma correcta."
+        "prompt": "Completa con poder en subjuntivo: Es mejor que nosotros ___ hablar primero.",
+        "answer": "Es mejor que nosotros podamos hablar primero."
       },
       {
-        "prompt": "Poder in subjunctive: completa la idea 6: ___.",
-        "answer": "Poder in subjunctive: completa la idea 6: forma correcta."
+        "prompt": "Completa con poder en subjuntivo: Dudo que María ___ venir a la reunión.",
+        "answer": "Dudo que María pueda venir a la reunión."
       },
       {
-        "prompt": "Poder in subjunctive: completa la idea 7: ___.",
-        "answer": "Poder in subjunctive: completa la idea 7: forma correcta."
+        "prompt": "Completa con poder en subjuntivo: Busco una app para que los estudiantes ___ practicar.",
+        "answer": "Busco una app para que los estudiantes puedan practicar."
       },
       {
-        "prompt": "Poder in subjunctive: completa la idea 8: ___.",
-        "answer": "Poder in subjunctive: completa la idea 8: forma correcta."
+        "prompt": "Completa con poder en subjuntivo: Ojalá que yo ___ dormir bien.",
+        "answer": "Ojalá que yo pueda dormir bien."
       },
       {
-        "prompt": "Poder in subjunctive: completa la idea 9: ___.",
-        "answer": "Poder in subjunctive: completa la idea 9: forma correcta."
+        "prompt": "Completa con poder en subjuntivo: Te explico el problema para que ___ ayudarme.",
+        "answer": "Te explico el problema para que puedas ayudarme."
       },
       {
-        "prompt": "Poder in subjunctive: completa la idea 10: ___.",
-        "answer": "Poder in subjunctive: completa la idea 10: forma correcta."
+        "prompt": "Completa con poder en subjuntivo: No es seguro que nosotros ___ viajar mañana.",
+        "answer": "No es seguro que nosotros podamos viajar mañana."
       }
     ],
     "translate": [
       {
-        "prompt": "Poder in subjunctive practice sentence 1.",
-        "answer": "Poder in subjunctive: frase modelo 1."
+        "prompt": "I need you to be able to help me.",
+        "answer": "Necesito que puedas ayudarme."
       },
       {
-        "prompt": "Poder in subjunctive practice sentence 2.",
-        "answer": "Poder in subjunctive: frase modelo 2."
+        "prompt": "I do not think she can come today.",
+        "answer": "No creo que ella pueda venir hoy."
       },
       {
-        "prompt": "Poder in subjunctive practice sentence 3.",
-        "answer": "Poder in subjunctive: frase modelo 3."
+        "prompt": "We are looking for a place so we can talk.",
+        "answer": "Buscamos un lugar para que podamos hablar."
       },
       {
-        "prompt": "Poder in subjunctive practice sentence 4.",
-        "answer": "Poder in subjunctive: frase modelo 4."
+        "prompt": "It is important that they can understand the instructions.",
+        "answer": "Es importante que puedan entender las instrucciones."
       },
       {
-        "prompt": "Poder in subjunctive practice sentence 5.",
-        "answer": "Poder in subjunctive: frase modelo 5."
+        "prompt": "I hope I can sleep tonight.",
+        "answer": "Espero que pueda dormir esta noche."
       },
       {
-        "prompt": "Poder in subjunctive practice sentence 6.",
-        "answer": "Poder in subjunctive: frase modelo 6."
+        "prompt": "I will send you the address so you can arrive.",
+        "answer": "Te mando la dirección para que puedas llegar."
       },
       {
-        "prompt": "Poder in subjunctive practice sentence 7.",
-        "answer": "Poder in subjunctive: frase modelo 7."
+        "prompt": "I doubt we can finish now.",
+        "answer": "Dudo que podamos terminar ahora."
       },
       {
-        "prompt": "Poder in subjunctive practice sentence 8.",
-        "answer": "Poder in subjunctive: frase modelo 8."
+        "prompt": "Do you want me to be able to read it?",
+        "answer": "¿Quieres que pueda leerlo?"
       },
       {
-        "prompt": "Poder in subjunctive practice sentence 9.",
-        "answer": "Poder in subjunctive: frase modelo 9."
+        "prompt": "The teacher speaks slowly so the students can write.",
+        "answer": "La profesora habla despacio para que los estudiantes puedan escribir."
       },
       {
-        "prompt": "Poder in subjunctive practice sentence 10.",
-        "answer": "Poder in subjunctive: frase modelo 10."
+        "prompt": "There is nothing we can do today.",
+        "answer": "No hay nada que podamos hacer hoy."
       }
     ]
   },
   "answers": {
     "select": [
-      "Poder in subjunctive: opci?n 1 forma correcta.",
-      "Poder in subjunctive: opci?n 2 forma correcta.",
-      "Poder in subjunctive: opci?n 3 forma correcta.",
-      "Poder in subjunctive: opci?n 4 forma correcta.",
-      "Poder in subjunctive: opci?n 5 forma correcta.",
-      "Poder in subjunctive: opci?n 6 forma correcta.",
-      "Poder in subjunctive: opci?n 7 forma correcta.",
-      "Poder in subjunctive: opci?n 8 forma correcta.",
-      "Poder in subjunctive: opci?n 9 forma correcta.",
-      "Poder in subjunctive: opci?n 10 forma correcta."
+      "Necesito que tú puedas llegar antes de las nueve.",
+      "No creo que ella pueda terminar hoy.",
+      "Te llamo para que nosotros podamos organizar el viaje.",
+      "Es importante que ustedes puedan escuchar bien.",
+      "Quiero que mi hermano pueda estudiar tranquilo.",
+      "Dudo que tú puedas abrir esa puerta.",
+      "Buscamos una mesa para que todos puedan comer juntos.",
+      "No parece que nosotros podamos salir temprano.",
+      "Ojalá que yo pueda descansar este fin de semana.",
+      "La profesora explica despacio para que la clase pueda entender."
     ],
     "complete": [
-      "Poder in subjunctive: completa la idea 1: forma correcta.",
-      "Poder in subjunctive: completa la idea 2: forma correcta.",
-      "Poder in subjunctive: completa la idea 3: forma correcta.",
-      "Poder in subjunctive: completa la idea 4: forma correcta.",
-      "Poder in subjunctive: completa la idea 5: forma correcta.",
-      "Poder in subjunctive: completa la idea 6: forma correcta.",
-      "Poder in subjunctive: completa la idea 7: forma correcta.",
-      "Poder in subjunctive: completa la idea 8: forma correcta.",
-      "Poder in subjunctive: completa la idea 9: forma correcta.",
-      "Poder in subjunctive: completa la idea 10: forma correcta."
+      "Quiero que tú puedas practicar más.",
+      "No creo que él pueda manejar de noche.",
+      "Te doy mi número para que me puedas llamar.",
+      "Necesitamos que ustedes puedan confirmar hoy.",
+      "Es mejor que nosotros podamos hablar primero.",
+      "Dudo que María pueda venir a la reunión.",
+      "Busco una app para que los estudiantes puedan practicar.",
+      "Ojalá que yo pueda dormir bien.",
+      "Te explico el problema para que puedas ayudarme.",
+      "No es seguro que nosotros podamos viajar mañana."
     ],
     "translate": [
-      "Poder in subjunctive: frase modelo 1.",
-      "Poder in subjunctive: frase modelo 2.",
-      "Poder in subjunctive: frase modelo 3.",
-      "Poder in subjunctive: frase modelo 4.",
-      "Poder in subjunctive: frase modelo 5.",
-      "Poder in subjunctive: frase modelo 6.",
-      "Poder in subjunctive: frase modelo 7.",
-      "Poder in subjunctive: frase modelo 8.",
-      "Poder in subjunctive: frase modelo 9.",
-      "Poder in subjunctive: frase modelo 10."
+      "Necesito que puedas ayudarme.",
+      "No creo que ella pueda venir hoy.",
+      "Buscamos un lugar para que podamos hablar.",
+      "Es importante que puedan entender las instrucciones.",
+      "Espero que pueda dormir esta noche.",
+      "Te mando la dirección para que puedas llegar.",
+      "Dudo que podamos terminar ahora.",
+      "¿Quieres que pueda leerlo?",
+      "La profesora habla despacio para que los estudiantes puedan escribir.",
+      "No hay nada que podamos hacer hoy."
     ]
   },
   "wrap_up": [
     {
-      "use": "Core idea",
-      "example": "Poder in subjunctive: ejemplo claro.",
-      "translation": "Clear example."
+      "use": "Need or request",
+      "example": "Necesito que puedas venir.",
+      "translation": "I need you to be able to come."
     },
     {
-      "use": "Negative or contrast",
-      "example": "Poder in subjunctive: no siempre cambia igual.",
-      "translation": "It does not always change the same way."
+      "use": "Doubt",
+      "example": "No creo que ella pueda salir.",
+      "translation": "I do not think she can go out."
     },
     {
-      "use": "Question",
-      "example": "Cmo usas poder in subjunctive",
-      "translation": "How do you use it?"
-    }
-  ],
-  "structure": [
-    {
-      "pattern": "trigger + que + verb form",
-      "example": "Poder in subjunctive: quiero que uses la forma.",
-      "translation": "I want you to use the form."
+      "use": "Purpose",
+      "example": "Te llamo para que podamos hablar.",
+      "translation": "I am calling you so we can talk."
     },
     {
-      "pattern": "si + condition, result",
-      "example": "Poder in subjunctive: si cambia el contexto, cambia la forma.",
-      "translation": "If the context changes, the form changes."
-    },
-    {
-      "pattern": "reported/passive pattern",
-      "example": "Poder in subjunctive: la idea se expresa con claridad.",
-      "translation": "The idea is expressed clearly."
+      "use": "Form choice",
+      "example": "Ellos necesitan que podamos ayudar.",
+      "translation": "They need us to be able to help."
     }
   ]
 }

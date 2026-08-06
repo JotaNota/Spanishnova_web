@@ -1,221 +1,180 @@
-Use pueda, puedas, podamos, and puedan when poder appears after expressions of need, doubt, permission, or purpose. The idea is not just ability, but possible ability inside another clause.
+Use the present subjunctive of poder — pueda, puedas, podamos, puedan — after expressions that create a second clause: need, doubt, permission, purpose, or possibility.
 
 ## Overview
 
-Use pueda, puedas, podamos, and puedan when poder appears after expressions of need, doubt, permission, or purpose. The idea is not just ability, but possible ability inside another clause. Focus on the message first, then choose the form that fits the context.
+Poder means can or to be able to. In the present subjunctive, it often appears after que or para que because the action depends on another idea: someone needs it, doubts it, allows it, or wants it to be possible.
 
-- Poder in subjunctive: ejemplo principal. -> Poder in subjunctive: main example.
-- Poder in subjunctive: otro ejemplo ?til. -> Poder in subjunctive: another useful example.
+- Necesito que puedas venir temprano. -> I need you to be able to come early.
+- Te llamo para que podamos hablar. -> I am calling you so that we can talk.
 
-## Cómo/cuándo lo usamos
+## Formas
 
-### Real use
-
-Use this pattern when poder in subjunctive helps express a real message, not just a grammar label.
-
-- Poder in subjunctive: ejemplo pr?ctico uno. -> Poder in subjunctive: practical example one.
-- Poder in subjunctive: ejemplo pr?ctico dos. -> Poder in subjunctive: practical example two.
-
-### Common context
-
-This form often appears in everyday explanations, plans, advice, and reactions depending on the sentence.
-
-- Poder in subjunctive: contexto com?n uno. -> Poder in subjunctive: common context one.
-- Poder in subjunctive: contexto com?n dos. -> Poder in subjunctive: common context two.
+- **yo / él / ella / usted pueda** -> I / he / she / you formal can
+- **tú puedas** -> you can
+- **nosotros / nosotras podamos** -> we can
+- **ellos / ellas / ustedes puedan** -> they / you all can
 
 ## Estructura
 
 | Patrón | Example | Translation |
-| --- | --- | --- |
-| trigger + que + verb form | Poder in subjunctive: quiero que uses la forma. | I want you to use the form. |
-| si + condition, result | Poder in subjunctive: si cambia el contexto, cambia la forma. | If the context changes, the form changes. |
-| reported/passive pattern | Poder in subjunctive: la idea se expresa con claridad. | The idea is expressed clearly. |
+|---|---|---|
+| necesitar + que + poder | Necesito que puedas leer este mensaje. | I need you to be able to read this message. |
+| dudar + que + poder | Dudo que él pueda llegar a tiempo. | I doubt he can arrive on time. |
+| para que + poder | Te envío la dirección para que puedas encontrar la casa. | I am sending you the address so you can find the house. |
+| permitir/dejar + que + poder | La profesora deja que podamos usar el diccionario. | The teacher lets us use the dictionary. |
+
+## Cómo/cuándo lo usamos
+
+### Need or request
+
+Use the subjunctive when one person needs, asks, or wants another person to be able to do something.
+
+- Quiero que puedas descansar esta noche. -> I want you to be able to rest tonight.
+- Necesitamos que ustedes puedan entrar al sistema. -> We need you all to be able to enter the system.
+
+### Doubt or uncertainty
+
+Use the subjunctive when the ability is not presented as a fact.
+
+- No creo que ella pueda venir hoy. -> I do not think she can come today.
+- Dudo que podamos terminar antes de las seis. -> I doubt we can finish before six.
+
+### Purpose
+
+Use para que when the second action explains the purpose of the first action.
+
+- Hablo despacio para que puedas entender. -> I speak slowly so you can understand.
+- Abrimos la ventana para que puedan respirar mejor. -> We open the window so they can breathe better.
 
 ## Oraciones.
 
 ### Afirmativas
 
-- Poder in subjunctive: frase afirmativa 1. -> Poder in subjunctive: affirmative sentence 1.
-- Poder in subjunctive: frase afirmativa 2. -> Poder in subjunctive: affirmative sentence 2.
-- Poder in subjunctive: frase afirmativa 3. -> Poder in subjunctive: affirmative sentence 3.
-- Poder in subjunctive: frase afirmativa 4. -> Poder in subjunctive: affirmative sentence 4.
+- Espero que puedas venir mañana. -> I hope you can come tomorrow.
+- Busco una silla para que mi abuela pueda sentarse. -> I am looking for a chair so my grandmother can sit down.
+- Necesitamos que todos puedan participar. -> We need everyone to be able to participate.
+- Te explico otra vez para que podamos continuar. -> I will explain it again so we can continue.
 
 ### Negativas
 
-- No usamos poder in subjunctive as? en el ejemplo 1. -> We do not use poder in subjunctive like that in example 1.
-- No usamos poder in subjunctive as? en el ejemplo 2. -> We do not use poder in subjunctive like that in example 2.
-- No usamos poder in subjunctive as? en el ejemplo 3. -> We do not use poder in subjunctive like that in example 3.
-- No usamos poder in subjunctive as? en el ejemplo 4. -> We do not use poder in subjunctive like that in example 4.
+- No creo que pueda salir esta noche. -> I do not think I can go out tonight.
+- No es posible que ellos puedan pagar ahora. -> It is not possible that they can pay now.
+- No quiero que puedas ver la respuesta todavía. -> I do not want you to be able to see the answer yet.
+- No parece que podamos resolverlo hoy. -> It does not seem that we can solve it today.
 
 ### Forma de pregunta
 
-- Poder in subjunctive: pregunta modelo 1. -> Poder in subjunctive: model question 1.
-- Poder in subjunctive: pregunta modelo 2. -> Poder in subjunctive: model question 2.
-- Poder in subjunctive: pregunta modelo 3. -> Poder in subjunctive: model question 3.
-- Poder in subjunctive: pregunta modelo 4. -> Poder in subjunctive: model question 4.
+- ¿Quieres que pueda ayudarte? -> Do you want me to be able to help you?
+- ¿Hay algo que podamos hacer? -> Is there something we can do?
+- ¿Dudas que ella pueda aprenderlo? -> Do you doubt that she can learn it?
+- ¿Me mandas el enlace para que pueda entrar? -> Can you send me the link so I can enter?
 
 ## Ejercicios
 
 ### Selección simple
 
-1. Poder in subjunctive: opci?n 1 _____.
-   - a) forma correcta
-   - b) otra forma
-   - c) forma no usada
-
-   Poder in subjunctive: opci?n 1 forma correcta.
-
-2. Poder in subjunctive: opci?n 2 _____.
-   - a) forma correcta
-   - b) otra forma
-   - c) forma no usada
-
-   Poder in subjunctive: opci?n 2 forma correcta.
-
-3. Poder in subjunctive: opci?n 3 _____.
-   - a) forma correcta
-   - b) otra forma
-   - c) forma no usada
-
-   Poder in subjunctive: opci?n 3 forma correcta.
-
-4. Poder in subjunctive: opci?n 4 _____.
-   - a) forma correcta
-   - b) otra forma
-   - c) forma no usada
-
-   Poder in subjunctive: opci?n 4 forma correcta.
-
-5. Poder in subjunctive: opci?n 5 _____.
-   - a) forma correcta
-   - b) otra forma
-   - c) forma no usada
-
-   Poder in subjunctive: opci?n 5 forma correcta.
-
-6. Poder in subjunctive: opci?n 6 _____.
-   - a) forma correcta
-   - b) otra forma
-   - c) forma no usada
-
-   Poder in subjunctive: opci?n 6 forma correcta.
-
-7. Poder in subjunctive: opci?n 7 _____.
-   - a) forma correcta
-   - b) otra forma
-   - c) forma no usada
-
-   Poder in subjunctive: opci?n 7 forma correcta.
-
-8. Poder in subjunctive: opci?n 8 _____.
-   - a) forma correcta
-   - b) otra forma
-   - c) forma no usada
-
-   Poder in subjunctive: opci?n 8 forma correcta.
-
-9. Poder in subjunctive: opci?n 9 _____.
-   - a) forma correcta
-   - b) otra forma
-   - c) forma no usada
-
-   Poder in subjunctive: opci?n 9 forma correcta.
-
-10. Poder in subjunctive: opci?n 10 _____.
-   - a) forma correcta
-   - b) otra forma
-   - c) forma no usada
-
-   Poder in subjunctive: opci?n 10 forma correcta.
+1. Necesito que tú _____ llegar antes de las nueve.
+   a. puedes
+   b. puedas
+   c. podamos
+   Respuesta: Necesito que tú puedas llegar antes de las nueve.
+2. No creo que ella _____ terminar hoy.
+   a. pueda
+   b. puede
+   c. puedan
+   Respuesta: No creo que ella pueda terminar hoy.
+3. Te llamo para que nosotros _____ organizar el viaje.
+   a. podemos
+   b. pueda
+   c. podamos
+   Respuesta: Te llamo para que nosotros podamos organizar el viaje.
+4. Es importante que ustedes _____ escuchar bien.
+   a. puedan
+   b. pueden
+   c. puedas
+   Respuesta: Es importante que ustedes puedan escuchar bien.
+5. Quiero que mi hermano _____ estudiar tranquilo.
+   a. puede
+   b. pueda
+   c. puedas
+   Respuesta: Quiero que mi hermano pueda estudiar tranquilo.
+6. Dudo que tú _____ abrir esa puerta.
+   a. puedas
+   b. puedes
+   c. podamos
+   Respuesta: Dudo que tú puedas abrir esa puerta.
+7. Buscamos una mesa para que todos _____ comer juntos.
+   a. puedan
+   b. pueda
+   c. podemos
+   Respuesta: Buscamos una mesa para que todos puedan comer juntos.
+8. No parece que nosotros _____ salir temprano.
+   a. podamos
+   b. podemos
+   c. puedan
+   Respuesta: No parece que nosotros podamos salir temprano.
+9. Ojalá que yo _____ descansar este fin de semana.
+   a. puedo
+   b. pueda
+   c. puedas
+   Respuesta: Ojalá que yo pueda descansar este fin de semana.
+10. La profesora explica despacio para que la clase _____.
+   a. pueda entender
+   b. puede entender
+   c. puedas entender
+   Respuesta: La profesora explica despacio para que la clase pueda entender.
 
 ### Completar
 
-1. Poder in subjunctive: completa la idea 1: ___.
-
-   Poder in subjunctive: completa la idea 1: forma correcta.
-
-2. Poder in subjunctive: completa la idea 2: ___.
-
-   Poder in subjunctive: completa la idea 2: forma correcta.
-
-3. Poder in subjunctive: completa la idea 3: ___.
-
-   Poder in subjunctive: completa la idea 3: forma correcta.
-
-4. Poder in subjunctive: completa la idea 4: ___.
-
-   Poder in subjunctive: completa la idea 4: forma correcta.
-
-5. Poder in subjunctive: completa la idea 5: ___.
-
-   Poder in subjunctive: completa la idea 5: forma correcta.
-
-6. Poder in subjunctive: completa la idea 6: ___.
-
-   Poder in subjunctive: completa la idea 6: forma correcta.
-
-7. Poder in subjunctive: completa la idea 7: ___.
-
-   Poder in subjunctive: completa la idea 7: forma correcta.
-
-8. Poder in subjunctive: completa la idea 8: ___.
-
-   Poder in subjunctive: completa la idea 8: forma correcta.
-
-9. Poder in subjunctive: completa la idea 9: ___.
-
-   Poder in subjunctive: completa la idea 9: forma correcta.
-
-10. Poder in subjunctive: completa la idea 10: ___.
-
-   Poder in subjunctive: completa la idea 10: forma correcta.
+1. Completa con poder en subjuntivo: Quiero que tú ___ practicar más.
+   Respuesta: Quiero que tú puedas practicar más.
+2. Completa con poder en subjuntivo: No creo que él ___ manejar de noche.
+   Respuesta: No creo que él pueda manejar de noche.
+3. Completa con poder en subjuntivo: Te doy mi número para que me ___ llamar.
+   Respuesta: Te doy mi número para que me puedas llamar.
+4. Completa con poder en subjuntivo: Necesitamos que ustedes ___ confirmar hoy.
+   Respuesta: Necesitamos que ustedes puedan confirmar hoy.
+5. Completa con poder en subjuntivo: Es mejor que nosotros ___ hablar primero.
+   Respuesta: Es mejor que nosotros podamos hablar primero.
+6. Completa con poder en subjuntivo: Dudo que María ___ venir a la reunión.
+   Respuesta: Dudo que María pueda venir a la reunión.
+7. Completa con poder en subjuntivo: Busco una app para que los estudiantes ___ practicar.
+   Respuesta: Busco una app para que los estudiantes puedan practicar.
+8. Completa con poder en subjuntivo: Ojalá que yo ___ dormir bien.
+   Respuesta: Ojalá que yo pueda dormir bien.
+9. Completa con poder en subjuntivo: Te explico el problema para que ___ ayudarme.
+   Respuesta: Te explico el problema para que puedas ayudarme.
+10. Completa con poder en subjuntivo: No es seguro que nosotros ___ viajar mañana.
+   Respuesta: No es seguro que nosotros podamos viajar mañana.
 
 ### Traducción
 
-1. Poder in subjunctive practice sentence 1.
-
-   Poder in subjunctive: frase modelo 1.
-
-2. Poder in subjunctive practice sentence 2.
-
-   Poder in subjunctive: frase modelo 2.
-
-3. Poder in subjunctive practice sentence 3.
-
-   Poder in subjunctive: frase modelo 3.
-
-4. Poder in subjunctive practice sentence 4.
-
-   Poder in subjunctive: frase modelo 4.
-
-5. Poder in subjunctive practice sentence 5.
-
-   Poder in subjunctive: frase modelo 5.
-
-6. Poder in subjunctive practice sentence 6.
-
-   Poder in subjunctive: frase modelo 6.
-
-7. Poder in subjunctive practice sentence 7.
-
-   Poder in subjunctive: frase modelo 7.
-
-8. Poder in subjunctive practice sentence 8.
-
-   Poder in subjunctive: frase modelo 8.
-
-9. Poder in subjunctive practice sentence 9.
-
-   Poder in subjunctive: frase modelo 9.
-
-10. Poder in subjunctive practice sentence 10.
-
-   Poder in subjunctive: frase modelo 10.
+1. I need you to be able to help me.
+   Respuesta: Necesito que puedas ayudarme.
+2. I do not think she can come today.
+   Respuesta: No creo que ella pueda venir hoy.
+3. We are looking for a place so we can talk.
+   Respuesta: Buscamos un lugar para que podamos hablar.
+4. It is important that they can understand the instructions.
+   Respuesta: Es importante que puedan entender las instrucciones.
+5. I hope I can sleep tonight.
+   Respuesta: Espero que pueda dormir esta noche.
+6. I will send you the address so you can arrive.
+   Respuesta: Te mando la dirección para que puedas llegar.
+7. I doubt we can finish now.
+   Respuesta: Dudo que podamos terminar ahora.
+8. Do you want me to be able to read it?
+   Respuesta: ¿Quieres que pueda leerlo?
+9. The teacher speaks slowly so the students can write.
+   Respuesta: La profesora habla despacio para que los estudiantes puedan escribir.
+10. There is nothing we can do today.
+   Respuesta: No hay nada que podamos hacer hoy.
 
 ## Wrap Up
 
 | Use | Example | Translation |
-| --- | --- | --- |
-| Core idea | Poder in subjunctive: ejemplo claro. | Clear example. |
-| Negative or contrast | Poder in subjunctive: no siempre cambia igual. | It does not always change the same way. |
-| Question | Cmo usas poder in subjunctive | How do you use it? |
+|---|---|---|
+| Need or request | Necesito que puedas venir. | I need you to be able to come. |
+| Doubt | No creo que ella pueda salir. | I do not think she can go out. |
+| Purpose | Te llamo para que podamos hablar. | I am calling you so we can talk. |
+| Form choice | Ellos necesitan que podamos ayudar. | They need us to be able to help. |
