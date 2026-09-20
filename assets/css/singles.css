@@ -293,8 +293,7 @@ body.single-conversations {
 
 .sn-sidebar {
   align-self: start;
-  position: sticky;
-  top: 28px;
+  position: static;
 }
 
 .sn-sidebar-box {
