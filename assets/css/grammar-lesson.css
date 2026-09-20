@@ -100,7 +100,9 @@
 
 /* Conjugation controls */
 .sn-grammar-page .sn-conj-check,
-.sn-grammar-page .sn-conj-reset {
+.sn-grammar-page .sn-conj-reset,
+.sn-grammar-page [data-grammar-check],
+.sn-grammar-page [data-grammar-reset] {
   margin: 0 8px 0 0;
   padding: 11px 16px;
   border: 1px solid var(--sn-grammar-border);
@@ -115,7 +117,11 @@
 .sn-grammar-page .sn-conj-check:hover,
 .sn-grammar-page .sn-conj-check:focus-visible,
 .sn-grammar-page .sn-conj-reset:hover,
-.sn-grammar-page .sn-conj-reset:focus-visible {
+.sn-grammar-page .sn-conj-reset:focus-visible,
+.sn-grammar-page [data-grammar-check]:hover,
+.sn-grammar-page [data-grammar-check]:focus-visible,
+.sn-grammar-page [data-grammar-reset]:hover,
+.sn-grammar-page [data-grammar-reset]:focus-visible {
   border-color: var(--sn-grammar-orange);
   background: var(--sn-grammar-orange-soft);
   color: var(--sn-grammar-ink);
