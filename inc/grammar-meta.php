@@ -17,6 +17,7 @@ function spanishnova_render_grammar_lesson_details_metabox($post) {
     wp_nonce_field('spanishnova_save_grammar_lesson_details', 'spanishnova_grammar_lesson_details_nonce');
 
     $duration = get_post_meta($post->ID, '_sn_lesson_duration', true);
+    $video_url = get_post_meta($post->ID, '_sn_lesson_video_url', true);
     $pdf_url = get_post_meta($post->ID, '_sn_lesson_pdf_url', true);
     $audio_url = get_post_meta($post->ID, '_sn_lesson_audio_url', true);
     $slides_url = get_post_meta($post->ID, '_sn_lesson_slides_url', true);
@@ -39,6 +40,10 @@ function spanishnova_render_grammar_lesson_details_metabox($post) {
         <tr>
             <th scope="row"><label for="sn_lesson_duration">Duration</label></th>
             <td><input class="regular-text" id="sn_lesson_duration" name="sn_lesson_duration" type="text" value="<?php echo esc_attr($duration); ?>" placeholder="10 min"></td>
+        </tr>
+        <tr>
+            <th scope="row"><label for="sn_lesson_video_url">Video URL</label></th>
+            <td><input class="large-text" id="sn_lesson_video_url" name="sn_lesson_video_url" type="url" value="<?php echo esc_url($video_url); ?>" placeholder="https://youtu.be/"></td>
         </tr>
         <tr>
             <th scope="row"><label for="sn_lesson_pdf_url">PDF URL</label></th>
@@ -108,6 +113,7 @@ function spanishnova_save_grammar_lesson_details($post_id) {
     }
 
     $url_fields = array(
+        '_sn_lesson_video_url' => 'sn_lesson_video_url',
         '_sn_lesson_pdf_url' => 'sn_lesson_pdf_url',
         '_sn_lesson_audio_url' => 'sn_lesson_audio_url',
         '_sn_lesson_slides_url' => 'sn_lesson_slides_url',
