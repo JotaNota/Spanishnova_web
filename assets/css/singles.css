@@ -338,6 +338,34 @@ body.single-conversations {
   padding-bottom: 0;
 }
 
+.sn-video-frame {
+  aspect-ratio: 16 / 9;
+  margin: 0 0 12px;
+  overflow: hidden;
+  border-radius: 7px;
+  background: #1f1b18;
+}
+
+.sn-video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.sn-video-youtube-link {
+  display: block;
+  color: #24655f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sn-video-youtube-link:hover,
+.sn-video-youtube-link:focus-visible {
+  color: #1f5e59;
+  text-decoration: underline;
+}
+
 .sn-flashcard {
   padding: 16px;
   border-radius: 8px;
