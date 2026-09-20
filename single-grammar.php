@@ -24,6 +24,28 @@
       $next_lesson_id = absint(get_post_meta($post_id, '_sn_next_lesson_id', true));
       $next_lesson = $next_lesson_id ? get_post($next_lesson_id) : null;
 
+      $youtube_id = '';
+
+      if ($video_url) {
+        $video_host = strtolower((string) wp_parse_url($video_url, PHP_URL_HOST));
+        $video_path = trim((string) wp_parse_url($video_url, PHP_URL_PATH), '/');
+        $video_query = (string) wp_parse_url($video_url, PHP_URL_QUERY);
+
+        if (in_array($video_host, array('youtu.be', 'www.youtu.be'), true)) {
+          $youtube_id = strtok($video_path, '/');
+        } elseif (in_array($video_host, array('youtube.com', 'www.youtube.com', 'm.youtube.com'), true)) {
+          parse_str($video_query, $video_params);
+
+          if (!empty($video_params['v'])) {
+            $youtube_id = $video_params['v'];
+          } elseif (preg_match('#^(?:embed|shorts)/([^/?]+)#', $video_path, $matches)) {
+            $youtube_id = $matches[1];
+          }
+        }
+
+        $youtube_id = preg_match('/^[A-Za-z0-9_-]{11}$/', $youtube_id) ? $youtube_id : '';
+      }
+
       $primary_grammar_term = null;
 
       foreach ($grammar_terms as $term) {
@@ -102,8 +124,7 @@
       $continue_practicing = $get_topic_recommendations('practice', 1, array());
       $related_lessons = $get_topic_recommendations('grammar', 3, array($post_id));
       $has_resources = $pdf_url || $audio_url || $slides_url;
-      $has_lesson_details = $grammar_url || $level_terms || $duration;
-      $has_sidebar = $has_lesson_details || $video_url || $has_resources || $flashcard_word || $next_lesson || $related_lessons;
+      $has_sidebar = $video_url || $has_resources || $flashcard_word || $next_lesson || $related_lessons;
     ?>
 
     <article class="sn-lesson<?php echo $has_sidebar ? '' : ' sn-lesson--single-column'; ?>">
@@ -149,25 +170,19 @@
         <?php if ($has_sidebar) : ?>
           <aside class="sn-sidebar" aria-label="Lesson resources">
             <?php if ($video_url) : ?>
-              <section class="sn-sidebar-box">
+              <section class="sn-sidebar-box sn-video-lesson">
                 <h2>Video lesson</h2>
-                <a class="sn-next-lesson-link" href="<?php echo esc_url($video_url); ?>" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a>
-              </section>
-            <?php endif; ?>
-
-            <?php if ($has_lesson_details) : ?>
-              <section class="sn-sidebar-box">
-                <h2>Lesson details</h2>
-                <nav class="sn-resource-list">
-                  <a href="<?php echo esc_url($grammar_url); ?>">Grammar</a>
-                  <?php foreach ($level_terms as $term) : ?>
-                    <?php $term_link = get_term_link($term); ?>
-                    <?php if (!is_wp_error($term_link)) : ?>
-                      <a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a>
-                    <?php endif; ?>
-                  <?php endforeach; ?>
-                  <?php if ($duration) : ?><span><?php echo esc_html($duration); ?></span><?php endif; ?>
-                </nav>
+                <?php if ($youtube_id) : ?>
+                  <div class="sn-video-frame">
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/<?php echo esc_attr($youtube_id); ?>?rel=0"
+                      title="<?php echo esc_attr(get_the_title()); ?> video lesson"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+                <?php endif; ?>
+                <a class="sn-video-youtube-link" href="<?php echo esc_url($video_url); ?>" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a>
               </section>
             <?php endif; ?>
 
