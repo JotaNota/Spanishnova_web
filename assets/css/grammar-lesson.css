@@ -81,3 +81,25 @@
   background: #ffffff;
   color: var(--sn-grammar-ink);
 }
+
+/* Example cards */
+.sn-grammar-page .grammar-lesson-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0 32px;
+}
+
+.sn-grammar-page .grammar-lesson-card {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid var(--sn-grammar-border);
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+@media (max-width: 760px) {
+  .sn-grammar-page .grammar-lesson-cards {
+    grid-template-columns: 1fr;
+  }
+}
