@@ -15,29 +15,9 @@
   color: var(--sn-grammar-orange);
 }
 
-/* Lesson buttons */
-.sn-grammar-page .sn-button,
-.sn-grammar-page button,
-.sn-grammar-page input[type="button"],
-.sn-grammar-page input[type="submit"] {
-  border: 1px solid var(--sn-grammar-orange);
-  border-radius: 999px;
-  background: var(--sn-grammar-orange);
-  color: #ffffff;
-}
-
-/* Secondary controls */
-.sn-grammar-page .sn-conj-reset,
-.sn-grammar-page [data-grammar-reset] {
-  background: #ffffff;
-  color: var(--sn-grammar-orange);
-}
-
-/* Card headings */
-.sn-grammar-page .sn-sidebar-box h2,
-.sn-grammar-page .grammar-lesson-card h3,
-.sn-grammar-page .grammar-lesson-question h3,
-.sn-grammar-page .grammar-lesson-module > h3,
-.sn-grammar-page .sn-lesson-cta h2 {
-  color: var(--sn-grammar-orange);
+/* Table headers */
+.sn-grammar-page .sn-post-content th {
+  background: var(--sn-grammar-orange-soft);
+  border-color: var(--sn-grammar-border);
+  color: var(--sn-grammar-ink);
 }
