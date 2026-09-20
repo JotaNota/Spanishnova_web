@@ -15,6 +15,7 @@
       $grammar_url = get_post_type_archive_link('grammar');
       $grammar_url = $grammar_url ? $grammar_url : home_url('/grammar/');
       $duration = get_post_meta($post_id, '_sn_lesson_duration', true);
+      $video_url = get_post_meta($post_id, '_sn_lesson_video_url', true);
       $pdf_url = get_post_meta($post_id, '_sn_lesson_pdf_url', true);
       $audio_url = get_post_meta($post_id, '_sn_lesson_audio_url', true);
       $slides_url = get_post_meta($post_id, '_sn_lesson_slides_url', true);
@@ -102,7 +103,7 @@
       $related_lessons = $get_topic_recommendations('grammar', 3, array($post_id));
       $has_resources = $pdf_url || $audio_url || $slides_url;
       $has_lesson_details = $grammar_url || $level_terms || $duration;
-      $has_sidebar = $has_lesson_details || $has_resources || $flashcard_word || $next_lesson || $related_lessons;
+      $has_sidebar = $has_lesson_details || $video_url || $has_resources || $flashcard_word || $next_lesson || $related_lessons;
     ?>
 
     <article class="sn-lesson<?php echo $has_sidebar ? '' : ' sn-lesson--single-column'; ?>">
@@ -147,6 +148,13 @@
 
         <?php if ($has_sidebar) : ?>
           <aside class="sn-sidebar" aria-label="Lesson resources">
+            <?php if ($video_url) : ?>
+              <section class="sn-sidebar-box">
+                <h2>Video lesson</h2>
+                <a class="sn-next-lesson-link" href="<?php echo esc_url($video_url); ?>" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a>
+              </section>
+            <?php endif; ?>
+
             <?php if ($has_lesson_details) : ?>
               <section class="sn-sidebar-box">
                 <h2>Lesson details</h2>
