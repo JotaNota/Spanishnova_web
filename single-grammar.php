@@ -101,7 +101,8 @@
       $continue_practicing = $get_topic_recommendations('practice', 1, array());
       $related_lessons = $get_topic_recommendations('grammar', 3, array($post_id));
       $has_resources = $pdf_url || $audio_url || $slides_url;
-      $has_sidebar = $has_resources || $flashcard_word || $next_lesson || $related_lessons;
+      $has_lesson_details = $grammar_url || $level_terms || $duration;
+      $has_sidebar = $has_lesson_details || $has_resources || $flashcard_word || $next_lesson || $related_lessons;
     ?>
 
     <article class="sn-lesson<?php echo $has_sidebar ? '' : ' sn-lesson--single-column'; ?>">
@@ -117,8 +118,8 @@
       </nav>
 
       <header class="sn-lesson-header">
-        <h1 class="sn-post-title"><?php the_title(); ?></h1>
         <div class="sn-meta-row">
+          <span class="sn-pill"><a href="<?php echo esc_url($grammar_url); ?>">Grammar</a></span>
           <?php foreach ($level_terms as $term) : ?>
             <?php $term_link = get_term_link($term); ?>
             <?php if (!is_wp_error($term_link)) : ?>
@@ -126,9 +127,10 @@
             <?php endif; ?>
           <?php endforeach; ?>
           <?php if ($duration) : ?><span class="sn-pill"><?php echo esc_html($duration); ?></span><?php endif; ?>
-          <span class="sn-pill"><a href="<?php echo esc_url($grammar_url); ?>">Grammar</a></span>
         </div>
+        <h1 class="sn-post-title"><?php the_title(); ?></h1>
       </header>
+      <hr class="sn-lesson-divider" />
 
       <div class="sn-lesson-layout">
         <div class="sn-content sn-post-content">
@@ -145,6 +147,22 @@
 
         <?php if ($has_sidebar) : ?>
           <aside class="sn-sidebar" aria-label="Lesson resources">
+            <?php if ($has_lesson_details) : ?>
+              <section class="sn-sidebar-box">
+                <h2>Lesson details</h2>
+                <nav class="sn-resource-list">
+                  <a href="<?php echo esc_url($grammar_url); ?>">Grammar</a>
+                  <?php foreach ($level_terms as $term) : ?>
+                    <?php $term_link = get_term_link($term); ?>
+                    <?php if (!is_wp_error($term_link)) : ?>
+                      <a href="<?php echo esc_url($term_link); ?>"><?php echo esc_html($term->name); ?></a>
+                    <?php endif; ?>
+                  <?php endforeach; ?>
+                  <?php if ($duration) : ?><span><?php echo esc_html($duration); ?></span><?php endif; ?>
+                </nav>
+              </section>
+            <?php endif; ?>
+
             <?php if ($has_resources || $continue_practicing) : ?>
               <section class="sn-sidebar-box">
                 <h2>Lesson materials</h2>

@@ -14,6 +14,11 @@ function spanishnova_enqueue_assets() {
         wp_enqueue_style('spanishnova-singles', get_template_directory_uri() . '/assets/css/singles.css', ['spanishnova-main'], '0.1.0');
     }
 
+    if (is_singular('grammar')) {
+        wp_enqueue_style('spanishnova-grammar-lesson', get_template_directory_uri() . '/assets/css/grammar-lesson.css', ['spanishnova-singles'], filemtime(get_template_directory() . '/assets/css/grammar-lesson.css'));
+        wp_enqueue_script('spanishnova-grammar-lesson', get_template_directory_uri() . '/assets/js/grammar-lesson.js', [], '0.1.0', true);
+    }
+
     if (is_archive() || is_tax() || is_search()) {
         wp_enqueue_style('spanishnova-archives', get_template_directory_uri() . '/assets/css/archives.css', ['spanishnova-main'], '0.1.0');
     }
