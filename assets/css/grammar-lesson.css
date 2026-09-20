@@ -40,11 +40,23 @@
   margin-bottom: 12px;
 }
 
+.sn-grammar-page .grammar-lesson-question .grammar-lesson-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* The current lesson places each option in its own paragraph. */
+.sn-grammar-page .grammar-lesson-question p:has(> .grammar-lesson-option) {
+  display: inline-flex;
+  margin: 0 10px 0 0;
+}
+
 .sn-grammar-page .grammar-lesson-option {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 4px 8px 0 0;
+  margin: 0;
   padding: 11px 16px;
   border: 1px solid var(--sn-grammar-border);
   border-radius: 10px;
