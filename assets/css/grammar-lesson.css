@@ -132,3 +132,35 @@
     grid-template-columns: 1fr;
   }
 }
+
+.grammar-lesson-cards--horizontal {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.grammar-lesson-cards--horizontal .grammar-lesson-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.45fr) 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.grammar-lesson-cards--horizontal .grammar-lesson-card-title h3 {
+  margin: 0;
+}
+
+.grammar-lesson-cards--horizontal .grammar-lesson-card-content > :first-child {
+  margin-top: 0;
+}
+
+.grammar-lesson-cards--horizontal .grammar-lesson-card-content > :last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .grammar-lesson-cards--horizontal .grammar-lesson-card {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
