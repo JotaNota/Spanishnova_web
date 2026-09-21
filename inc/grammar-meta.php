@@ -1,7 +1,11 @@
 <?php
 if (!defined('ABSPATH')) { exit; }
 
-function spanishnova_add_grammar_lesson_details_metabox() {
+function spanishnova_add_grammar_lesson_details_metabox($post_type) {
+    if ('grammar' !== $post_type) {
+        return;
+    }
+
     add_meta_box(
         'spanishnova_grammar_lesson_details',
         'Lesson details',
@@ -11,7 +15,7 @@ function spanishnova_add_grammar_lesson_details_metabox() {
         'default'
     );
 }
-add_action('add_meta_boxes_grammar', 'spanishnova_add_grammar_lesson_details_metabox');
+add_action('add_meta_boxes', 'spanishnova_add_grammar_lesson_details_metabox', 10, 1);
 
 function spanishnova_render_grammar_lesson_details_metabox($post) {
     wp_nonce_field('spanishnova_save_grammar_lesson_details', 'spanishnova_grammar_lesson_details_nonce');
