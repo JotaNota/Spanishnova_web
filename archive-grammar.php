@@ -209,7 +209,7 @@ if ($selected_term || $show_other) {
         </section>
       <?php endif; ?>
 
-      <?php if (!$group_previews && !$other_preview->have_posts()) : ?>
+      <?php if (!$group_previews && (int) $other_preview->found_posts === 0) : ?>
         <p class="empty-state">No grammar lessons published yet.</p>
       <?php endif; ?>
     <?php else : ?>
