@@ -395,3 +395,43 @@
 .sn-grammar-library .grammar-results-heading{margin:28px 0 16px}
 .sn-grammar-library .grammar-results-heading h2{font-family:Georgia,serif;font-size:25px;text-transform:none;letter-spacing:normal;margin:0}
 @media(max-width:650px){.sn-grammar-library .grammar-archive-panel{padding:20px}.sn-grammar-library .sn-grammar-cards{grid-template-columns:1fr}.sn-grammar-library .sn-grammar-card{min-height:0}.sn-grammar-library .sn-grammar-group-heading h2{font-size:22px}}
+
+/* Grammar navigator (live search + hierarchical topics). */
+.sn-grammar-library .sn-grammar-search-wrap{position:relative;margin:4px 0 16px}
+.sn-grammar-library .sn-grammar-search-wrap svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:#928276;pointer-events:none}
+.sn-grammar-library .sn-grammar-search-wrap input{display:block;width:100%;min-height:50px;padding:12px 46px 12px 45px;border:1px solid var(--border);border-radius:11px;background:#fff;color:var(--ink);font:inherit;font-size:14px;outline:0}
+.sn-grammar-library .sn-grammar-search-wrap input:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(242,107,47,.14)}
+.sn-grammar-library .sn-grammar-search-wrap button{position:absolute;right:12px;top:50%;transform:translateY(-50%);border:0;border-radius:6px;background:#fff0e6;padding:5px 10px;color:#a34f23;cursor:pointer}
+.sn-grammar-library .sn-grammar-search-wrap button[hidden],.sn-grammar-library .sn-grammar-nav[hidden]{display:none}
+.sn-grammar-library .sn-grammar-nav{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:19px}
+.sn-grammar-library .sn-grammar-chip{border:1px solid var(--border);border-radius:100px;background:#fff;color:var(--ink);padding:9px 14px;font-size:12px;font-weight:700;cursor:pointer}
+.sn-grammar-library .sn-grammar-chip.is-active{background:var(--orange);color:#fff;border-color:var(--orange)}
+.sn-grammar-library .sn-grammar-breadcrumbs{display:flex;gap:6px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+.sn-grammar-library .sn-grammar-breadcrumbs button{border:0;background:none;color:#b25225;padding:0;cursor:pointer;font:inherit}
+.sn-grammar-library .sn-grammar-group{border-top:1px solid var(--border);padding-top:21px;margin-top:21px}
+.sn-grammar-library .sn-grammar-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.sn-grammar-library .sn-grammar-topic-card{display:flex;flex-direction:column;align-items:flex-start;gap:14px;min-height:110px;border:1px solid var(--border);border-radius:12px;padding:18px;background:#fff;color:var(--ink);text-align:left;cursor:pointer}
+.sn-grammar-library .sn-grammar-topic-card strong{font-size:15px;line-height:1.4}
+.sn-grammar-library .sn-grammar-topic-card .sn-grammar-topic-count{font-size:12px;color:#bd5629;margin-top:auto}
+.sn-grammar-library .sn-grammar-topic-card:hover,.sn-grammar-library .sn-grammar-topic-card:focus-visible{border-color:var(--orange)}
+.sn-grammar-library .sn-grammar-lesson-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.sn-grammar-library .sn-grammar-lesson-card{display:flex;flex-direction:column;gap:9px;min-height:140px;padding:18px;border:1px solid var(--border);border-radius:12px;background:#fff;color:var(--ink);text-decoration:none}
+.sn-grammar-library .sn-grammar-lesson-card:hover,.sn-grammar-library .sn-grammar-lesson-card:focus-visible{border-color:var(--orange)}
+.sn-grammar-library .sn-grammar-lesson-card strong{font-size:14px}
+.sn-grammar-library .sn-grammar-lesson-card p{font-size:12px;color:var(--muted);line-height:1.5;margin:0}
+.sn-grammar-library .sn-grammar-lesson-link{font-size:12px;color:#b55326;font-weight:700;margin-top:auto}
+.sn-grammar-library .sn-grammar-results{display:grid;gap:10px}
+.sn-grammar-library .sn-grammar-result{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:16px;border:1px solid var(--border);border-radius:11px;background:#fff;color:var(--ink);text-decoration:none}
+.sn-grammar-library .sn-grammar-result:hover,.sn-grammar-library .sn-grammar-result:focus-visible{border-color:var(--orange)}
+.sn-grammar-library .sn-grammar-result-path{display:block;font-size:11px;color:#b25225;margin-bottom:5px}
+.sn-grammar-library .sn-grammar-result strong{display:block;font-size:14px}
+.sn-grammar-library .sn-grammar-result p{font-size:12px;color:var(--muted);margin:6px 0 0}
+.sn-grammar-library .sn-grammar-result-arrow{color:#b25225}
+.sn-grammar-library .sn-grammar-no-results{border:1px dashed var(--border);border-radius:10px;padding:25px;color:var(--muted);font-size:13px}
+.sn-grammar-library .sn-grammar-more-results{font-size:12px;color:var(--muted)}
+.sn-grammar-library .sn-grammar-pager{display:flex;align-items:center;justify-content:center;gap:15px;margin-top:18px;font-size:12px}
+.sn-grammar-library .sn-grammar-pager button{background:#fff;border:1px solid var(--border);border-radius:7px;padding:9px 13px;cursor:pointer}
+.sn-grammar-library .sn-grammar-pager button:disabled{opacity:.4;cursor:default}
+.sn-grammar-library button:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+@media(max-width:700px){.sn-grammar-library .sn-grammar-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sn-grammar-library .sn-grammar-lesson-grid{grid-template-columns:1fr}}
+@media(max-width:420px){.sn-grammar-library .sn-grammar-topic-grid{grid-template-columns:1fr}}
