@@ -1,8 +1,5 @@
 <?php
-/**
- * Grammar navigator. Topics and search data come from published grammar posts.
- * Each lesson has one canonical location in this index, chosen from grammar_tax.
- */
+/** Grammar navigator: use every assigned grammar_tax term. */
 if (!defined('ABSPATH')) { exit; }
 
 $grammar_archive_url = get_post_type_archive_link('grammar') ?: home_url('/grammar/');
@@ -17,27 +14,6 @@ foreach ($terms as $term) {
     'slug' => $term->slug,
   ];
 }
-
-$priority_slugs = ['tenses', 'verbs', 'moods', 'parts-of-speech'];
-$rank = array_flip($priority_slugs);
-$root_for = static function ($id) use (&$term_index) {
-  $seen = [];
-  while (isset($term_index[$id]) && $term_index[$id]['parent'] && !isset($seen[$id])) {
-    $seen[$id] = true;
-    $id = $term_index[$id]['parent'];
-  }
-  return $id;
-};
-$depth_of = static function ($id) use (&$term_index) {
-  $depth = 0;
-  $seen = [];
-  while (isset($term_index[$id]) && $term_index[$id]['parent'] && !isset($seen[$id])) {
-    $seen[$id] = true;
-    $id = $term_index[$id]['parent'];
-    $depth++;
-  }
-  return $depth;
-};
 
 $lessons = [];
 $lesson_ids = get_posts([
@@ -65,16 +41,7 @@ foreach ($lesson_ids as $post_id) {
       }
     }
   }
-  usort($choices, static function ($a, $b) use ($depth_of, $root_for, $term_index, $rank) {
-    $depth_diff = $depth_of($b) - $depth_of($a);
-    if ($depth_diff) { return $depth_diff; }
-    $a_root = $root_for($a);
-    $b_root = $root_for($b);
-    $a_rank = $rank[$term_index[$a_root]['slug'] ?? ''] ?? 999;
-    $b_rank = $rank[$term_index[$b_root]['slug'] ?? ''] ?? 999;
-    if ($a_rank !== $b_rank) { return $a_rank <=> $b_rank; }
-    return strcmp($term_index[$a]['name'], $term_index[$b]['name']);
-  });
+  $choices = array_values(array_unique($choices));
 
   $body = get_post_field('post_content', $post_id);
   $lessons[] = [
@@ -82,13 +49,14 @@ foreach ($lesson_ids as $post_id) {
     'title' => get_the_title($post_id),
     'description' => wp_trim_words(spanishnova_get_card_excerpt($post_id), 27),
     'url' => get_permalink($post_id),
-    'term' => $choices ? $choices[0] : 0,
+    'terms' => $choices,
     'keywords' => implode(' ', array_unique($term_names)) . ' ' . wp_trim_words(wp_strip_all_tags(strip_shortcodes($body)), 200, ''),
   ];
 }
 $data = [
   'terms' => array_values($term_index),
   'lessons' => $lessons,
+  'total' => count($lessons),
 ];
 
 wp_enqueue_script(
@@ -112,6 +80,7 @@ get_header();
       <input id="sn-grammar-search" type="search" placeholder="Try 'present regu', 'indirect object', 'subjunctive'…" autocomplete="off">
       <button id="sn-grammar-clear" type="button" aria-label="Clear search" hidden>×</button>
     </div>
+    <p class="sn-grammar-catalog-total"><?php echo esc_html(count($lessons)); ?> published grammar lessons</p>
     <nav id="sn-grammar-sections" class="sn-grammar-nav" aria-label="Grammar sections"></nav>
     <nav id="sn-grammar-breadcrumbs" class="sn-grammar-breadcrumbs" aria-label="Grammar navigation"></nav>
     <div id="sn-grammar-content" aria-live="polite"></div>
