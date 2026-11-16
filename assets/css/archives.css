@@ -435,3 +435,28 @@
 .sn-grammar-library button:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 @media(max-width:700px){.sn-grammar-library .sn-grammar-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sn-grammar-library .sn-grammar-lesson-grid{grid-template-columns:1fr}}
 @media(max-width:420px){.sn-grammar-library .sn-grammar-topic-grid{grid-template-columns:1fr}}
+
+/* Explore: live search and populated topic filters only. */
+.explore-page .explore-panel{max-width:1050px;margin-left:auto;margin-right:auto}
+.explore-page .explore-intro{margin-top:-8px;margin-bottom:20px;font-size:14px;color:var(--muted)}
+.explore-page .sn-explore-search{position:relative;margin-bottom:22px}
+.explore-page .sn-explore-search svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:#958277;pointer-events:none}
+.explore-page .sn-explore-search input{width:100%;min-height:50px;border:1px solid var(--border);border-radius:11px;background:#fff;color:var(--ink);font:inherit;font-size:14px;padding:12px 45px;outline:none}
+.explore-page .sn-explore-search input:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(242,107,47,.12)}
+.explore-page .sn-explore-search button{position:absolute;right:12px;top:50%;transform:translateY(-50%);border:0;border-radius:6px;background:#fff0e6;color:#b65324;padding:6px 11px;cursor:pointer}
+.explore-page .sn-explore-search button[hidden],.explore-page .sn-explore-topic-area[hidden]{display:none}
+.explore-page .sn-explore-topic-area h2{font-family:Inter,system-ui,sans-serif;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin:0 0 11px}
+.explore-page .sn-explore-topic-list{display:flex;flex-wrap:wrap;gap:8px}
+.explore-page .sn-explore-topic{border:1px solid var(--border);background:#fff;color:var(--ink);border-radius:999px;padding:9px 13px;font-size:12px;font-weight:700;cursor:pointer}
+.explore-page .sn-explore-topic.is-active{border-color:var(--orange);background:var(--orange-soft);color:var(--orange)}
+.explore-page .sn-explore-topic:hover,.explore-page .sn-explore-topic:focus-visible{border-color:var(--orange)}
+.explore-page .sn-explore-results-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:25px 0 14px;border-top:1px solid var(--border);padding-top:20px}
+.explore-page .sn-explore-results-heading h2{font:700 23px Georgia,serif;text-transform:none;letter-spacing:normal;margin:0}
+.explore-page .sn-explore-results-heading span{color:var(--muted);font-size:12px}
+.explore-page .explore-result .explore-result-title{font-size:16px}
+.explore-page .sn-explore-empty{border:1px dashed var(--border);border-radius:12px;padding:22px;color:var(--muted);font-size:13px}
+.explore-page .sn-explore-pagination{display:flex;justify-content:center;align-items:center;gap:13px;margin:23px 0 0;font-size:12px}
+.explore-page .sn-explore-pagination button{border:1px solid var(--border);background:#fff;color:var(--ink);border-radius:8px;padding:9px 13px;cursor:pointer}
+.explore-page .sn-explore-pagination button:disabled{opacity:.4;cursor:default}
+.explore-page button:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+@media(max-width:600px){.explore-page .explore-panel{padding:20px}}
