@@ -460,3 +460,28 @@
 .explore-page .sn-explore-pagination button:disabled{opacity:.4;cursor:default}
 .explore-page button:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 @media(max-width:600px){.explore-page .explore-panel{padding:20px}}
+
+/* Compact grammar index. A topic occupies one row regardless of lesson count. */
+.sn-grammar-library .sn-grammar-catalog-total{margin:0 0 16px;color:var(--muted);font-size:12px}
+.sn-grammar-library .sn-grammar-group{margin-top:17px;padding-top:17px}
+.sn-grammar-library .sn-grammar-group-heading{margin-bottom:11px}
+.sn-grammar-library .sn-grammar-group-heading h2{font-size:21px}
+.sn-grammar-library .sn-grammar-index-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.sn-grammar-library .sn-grammar-index-row{display:flex;align-items:center;text-align:left;gap:9px;width:100%;min-height:47px;border:1px solid var(--border);border-radius:9px;background:#fff;color:var(--ink);padding:10px 13px;cursor:pointer}
+.sn-grammar-library .sn-grammar-index-row:hover,.sn-grammar-library .sn-grammar-index-row:focus-visible{border-color:var(--orange)}
+.sn-grammar-library .sn-grammar-index-name{font-size:13px;font-weight:700}
+.sn-grammar-library .sn-grammar-index-count{font-size:11px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.sn-grammar-library .sn-grammar-index-arrow{color:#bb5628;margin-left:auto}
+.sn-grammar-library .sn-grammar-index-count+.sn-grammar-index-arrow{margin-left:0}
+.sn-grammar-library .sn-grammar-lesson-list{display:grid;gap:8px}
+.sn-grammar-library .sn-grammar-list-lesson{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 15px;background:#fff;border:1px solid var(--border);border-radius:9px;color:var(--ink);text-decoration:none}
+.sn-grammar-library .sn-grammar-list-lesson:hover,.sn-grammar-library .sn-grammar-list-lesson:focus-visible{border-color:var(--orange)}
+.sn-grammar-library .sn-grammar-list-lesson-body{min-width:0}
+.sn-grammar-library .sn-grammar-list-lesson strong{display:block;font-size:13px;line-height:1.4}
+.sn-grammar-library .sn-grammar-list-lesson p{margin:3px 0 0;font-size:12px;color:var(--muted);line-height:1.4;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.sn-grammar-library .sn-grammar-direct{margin-top:18px}
+.sn-grammar-library .sn-grammar-direct h3{font-size:15px;margin:0 0 10px}
+.sn-grammar-library .sn-grammar-more{margin-top:9px;border:0;background:none;color:#b65324;cursor:pointer;padding:6px 0}
+.sn-grammar-library .sn-grammar-result-path{display:block;color:#ad542a;font-size:11px;margin:0 0 4px}
+.sn-grammar-library .sn-grammar-unclassified .sn-grammar-index-row{max-width:350px}
+@media(max-width:650px){.sn-grammar-library .sn-grammar-index-list{grid-template-columns:1fr}}
