@@ -173,11 +173,27 @@ $grammar_query = new WP_Query($query_args);
     <?php if ($grammar_query->have_posts()) : ?>
       <div class="activity-list grammar-term-lessons">
         <?php while ($grammar_query->have_posts()) : $grammar_query->the_post(); ?>
-          <a class="activity-row" href="<?php the_permalink(); ?>">
-            <span class="label">Grammar</span>
+          <?php
+          $level_terms = get_the_terms(get_the_ID(), 'level_tax');
+          $level_label = ($level_terms && !is_wp_error($level_terms))
+            ? implode(', ', wp_list_pluck($level_terms, 'name'))
+            : '';
+          $grammar_terms = get_the_terms(get_the_ID(), 'grammar_tax');
+          $grammar_topic = '';
+          if ($grammar_terms && !is_wp_error($grammar_terms)) {
+            usort($grammar_terms, function ($a, $b) {
+              return (int) $b->parent <=> (int) $a->parent;
+            });
+            $grammar_topic = $grammar_terms[0]->name;
+          }
+          ?>
+          <a class="activity-row grammar-level-row" href="<?php the_permalink(); ?>">
+            <span class="grammar-level-label"><?php echo esc_html($level_label); ?></span>
             <div>
               <h3><?php the_title(); ?></h3>
-              <p><?php echo esc_html(wp_trim_words(spanishnova_get_card_excerpt(get_the_ID()), 22)); ?></p>
+              <?php if ($grammar_topic) : ?>
+                <p><?php echo esc_html($grammar_topic); ?></p>
+              <?php endif; ?>
             </div>
             <span class="arrow">→</span>
           </a>
