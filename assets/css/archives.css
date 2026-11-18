@@ -202,3 +202,23 @@
     justify-self: start;
   }
 }
+
+/* Compact level column in Grammar lesson results only */
+.grammar-term-lessons .grammar-level-row {
+  grid-template-columns: 76px minmax(0, 1fr) auto;
+  gap: 8px;
+}
+
+.grammar-term-lessons .grammar-level-label {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .grammar-term-lessons .grammar-level-row {
+    grid-template-columns: 76px minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+}
