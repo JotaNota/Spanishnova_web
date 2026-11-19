@@ -197,15 +197,21 @@ if ($level_slug !== '') $active_args['sn_level'] = $level_slug;
               $grammar_topic = $grammar_terms[0]->name;
             }
             ?>
-            <a class="activity-row grammar-level-row sn-catalog-card sn-catalog-grammar" href="<?php the_permalink(); ?>">
-              <span class="grammar-level-label"><?php echo esc_html($level_label); ?></span>
-              <div>
+            <a class="activity-row sn-catalog-card sn-catalog-grammar" href="<?php the_permalink(); ?>">
+              <div class="sn-grammar-card-content">
+                <div class="sn-catalog-card-meta">
+                  <span>Grammar</span>
+                  <?php if ($level_label !== '') : ?>
+                    <span aria-hidden="true">·</span>
+                    <span><?php echo esc_html($level_label); ?></span>
+                  <?php endif; ?>
+                </div>
                 <h3><?php the_title(); ?></h3>
                 <?php if ($grammar_topic) : ?>
                   <p><?php echo esc_html($grammar_topic); ?></p>
                 <?php endif; ?>
               </div>
-              <span class="arrow">→</span>
+              <span class="arrow" aria-hidden="true">→</span>
             </a>
           <?php endwhile; ?>
         </div>
