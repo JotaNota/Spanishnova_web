@@ -3,9 +3,9 @@
  * Run via WP-CLI from the WordPress installation:
  *   wp eval-file wp-content/themes/spanishnova/scripts/topic-taxonomy-migration.php audit
  *   wp eval-file wp-content/themes/spanishnova/scripts/topic-taxonomy-migration.php migrate home daily-life
- *   wp eval-file wp-content/themes/spanishnova/scripts/topic-taxonomy-migration.php migrate home daily-life --execute
+ *   wp eval-file wp-content/themes/spanishnova/scripts/topic-taxonomy-migration.php migrate home daily-life execute
  *
- * This script never deletes terms. Migration requires explicit --execute.
+ * This script never deletes terms. Migration requires explicit execute.
  * Backup the WordPress database before applying any migration.
  */
 if (!defined('WP_CLI') || !WP_CLI) {
@@ -39,7 +39,7 @@ if ($action === 'audit') {
 }
 
 if ($action !== 'migrate') {
-    WP_CLI::error('Use audit or migrate <legacy-slug> <approved-slug> [--execute].');
+    WP_CLI::error('Use audit or migrate <legacy-slug> <approved-slug> [execute].');
 }
 
 $from_slug = sanitize_title($arguments[1] ?? '');
@@ -61,13 +61,11 @@ WP_CLI::log(sprintf('Proposed reassignment: %s -> %s, %d content items.', $from-
 foreach ($ids as $id) {
     WP_CLI::log(sprintf('%d | %s | %s', $id, get_post_type($id), get_the_title($id)));
 }
-if (!in_array('--execute', $arguments, true)) {
-    WP_CLI::log('DRY RUN: no assignments changed. Add --execute only after reviewing the list and backing up the database.');
+if (!in_array('execute', $arguments, true)) {
+    WP_CLI::log('DRY RUN: no assignments changed. Add execute only after reviewing the list and backing up the database.');
     return;
 }
-if (!WP_CLI::confirm('Apply this reassignment? Legacy term will remain in WordPress.', [], false)) {
-    WP_CLI::error('Canceled.');
-}
+WP_CLI::confirm('Apply this reassignment? Legacy term will remain in WordPress.');
 foreach ($ids as $id) {
     // Append the new topic and keep all other assigned topics.
     $added = wp_set_object_terms($id, [(int) $to->term_id], 'topic_tax', true);
