@@ -66,8 +66,9 @@ $sn_archive_url = function ($post_type, $taxonomy = '', $term = null) {
     return esc_url(add_query_arg('sn_category', $term->slug, $base));
   }
 
-  // WordPress native taxonomy query vars limit results to this post type.
-  return esc_url(add_query_arg($taxonomy, $term->slug, $base));
+  // Avoid WP treating archive links as taxonomy archives across CPTs.
+  $param = $post_type === 'practice' ? 'sn_practice_category' : 'sn_topic';
+  return esc_url(add_query_arg($param, $term->slug, $base));
 };
 
 $sn_render_taxonomy_menu = function ($post_type, $taxonomy, $nested = false) use ($sn_menu_terms, $sn_archive_url) {
