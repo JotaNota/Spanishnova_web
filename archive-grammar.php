@@ -7,13 +7,53 @@ $subtopic_slug = isset($_GET['sn_subtopic']) ? sanitize_title(wp_unslash($_GET['
 $level_slug = isset($_GET['sn_level']) ? sanitize_title(wp_unslash($_GET['sn_level'])) : '';
 $paged = isset($_GET['sn_page']) ? max(1, absint($_GET['sn_page'])) : 1;
 
-$categories = get_terms([
+// Only offer grammar terms that have at least one published Grammar post
+// (including posts assigned to descendants).
+function spanishnova_grammar_term_has_lessons($term_id) {
+  $matches = new WP_Query([
+    'post_type' => 'grammar',
+    'post_status' => 'publish',
+    'posts_per_page' => 1,
+    'fields' => 'ids',
+    'no_found_rows' => true,
+    'tax_query' => [[
+      'taxonomy' => 'grammar_tax',
+      'field' => 'term_id',
+      'terms' => (int) $term_id,
+      'include_children' => true,
+    ]],
+  ]);
+  return $matches->have_posts();
+}
+
+$all_categories = get_terms([
   'taxonomy' => 'grammar_tax',
   'parent' => 0,
   'hide_empty' => false,
 ]);
-if (is_wp_error($categories)) {
-  $categories = [];
+if (is_wp_error($all_categories)) {
+  $all_categories = [];
+}
+$categories = [];
+$category_tree = [];
+foreach ($all_categories as $category) {
+  if (!spanishnova_grammar_term_has_lessons($category->term_id)) continue;
+  $categories[] = $category;
+  $descendants = get_terms([
+    'taxonomy' => 'grammar_tax',
+    'child_of' => $category->term_id,
+    'hide_empty' => false,
+  ]);
+  if (is_wp_error($descendants)) $descendants = [];
+  $visible_descendants = array_values(array_filter($descendants, function ($term) {
+    return spanishnova_grammar_term_has_lessons($term->term_id);
+  }));
+  $category_tree[$category->slug] = [
+    'label' => $category->name,
+    'children' => array_map(function ($term) {
+      return ['slug' => $term->slug, 'label' => $term->name];
+    }, $visible_descendants),
+  ];
 }
 $levels = get_terms([
   'taxonomy' => 'level_tax',
@@ -43,15 +83,8 @@ if (!$selected_subtopic) {
   $subtopic_slug = '';
 }
 $subtopics = [];
-if ($selected_category) {
-  $subtopics = get_terms([
-    'taxonomy' => 'grammar_tax',
-    'child_of' => $selected_category->term_id,
-    'hide_empty' => false,
-  ]);
-  if (is_wp_error($subtopics)) {
-    $subtopics = [];
-  }
+if ($selected_category && isset($category_tree[$selected_category->slug])) {
+  $subtopics = $category_tree[$selected_category->slug]['children'];
 }
 $valid_level = $level_slug ? get_term_by('slug', $level_slug, 'level_tax') : null;
 if (!$valid_level) {
@@ -131,7 +164,7 @@ if ($level_slug !== '') $active_args['sn_level'] = $level_slug;
         <select id="grammar-subtopic" name="sn_subtopic" data-current="<?php echo esc_attr($subtopic_slug); ?>">
           <option value="">All <?php echo $selected_category ? esc_html($selected_category->name) : 'subtopics'; ?></option>
           <?php foreach ($subtopics as $subtopic) : ?>
-            <option value="<?php echo esc_attr($subtopic->slug); ?>" <?php selected($subtopic_slug, $subtopic->slug); ?>><?php echo esc_html($subtopic->name); ?></option>
+            <option value="<?php echo esc_attr($subtopic['slug']); ?>" <?php selected($subtopic_slug, $subtopic['slug']); ?>><?php echo esc_html($subtopic['label']); ?></option>
           <?php endforeach; ?>
         </select>
       </div>
@@ -209,24 +242,7 @@ if ($level_slug !== '') $active_args['sn_level'] = $level_slug;
   var reset = document.getElementById('grammar-reset');
   var timer;
   var requestId = 0;
-  var categoryTree = <?php
-    $category_tree = [];
-    foreach ($categories as $parent_term) {
-      $children = get_terms([
-        'taxonomy' => 'grammar_tax',
-        'child_of' => $parent_term->term_id,
-        'hide_empty' => false,
-      ]);
-      if (is_wp_error($children)) $children = [];
-      $category_tree[$parent_term->slug] = [
-        'label' => $parent_term->name,
-        'children' => array_map(function ($term) {
-          return ['slug' => $term->slug, 'label' => $term->name];
-        }, $children),
-      ];
-    }
-    echo wp_json_encode($category_tree);
-  ?>;
+  var categoryTree = <?php echo wp_json_encode($category_tree); ?>;
 
   function updateSubtopics(value) {
     var entry = categoryTree[value];
