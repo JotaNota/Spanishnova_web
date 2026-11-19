@@ -220,13 +220,24 @@ if ($level_slug !== '') $active_args['sn_level'] = $level_slug;
         <p class="empty-state">No grammar lessons match these filters.</p>
       <?php endif; ?>
 
-      <?php if ($grammar_query->max_num_pages > 1) : ?>
+      <?php if ($grammar_query->max_num_pages > 1) :
+        $total_pages = (int) $grammar_query->max_num_pages;
+        $current_page = min($paged, $total_pages);
+        $previous_url = add_query_arg(array_merge($active_args, ['sn_page' => $current_page - 1]), $base_url);
+        $next_url = add_query_arg(array_merge($active_args, ['sn_page' => $current_page + 1]), $base_url);
+      ?>
         <nav class="grammar-catalog-pagination" aria-label="Grammar pagination">
-          <?php for ($page_number = 1; $page_number <= $grammar_query->max_num_pages; $page_number++) :
-            $page_url = add_query_arg(array_merge($active_args, ['sn_page' => $page_number]), $base_url);
-          ?>
-            <a href="<?php echo esc_url($page_url); ?>" <?php echo $paged === $page_number ? 'aria-current="page"' : ''; ?>><?php echo esc_html($page_number); ?></a>
-          <?php endfor; ?>
+          <?php if ($current_page > 1) : ?>
+            <a class="grammar-page-control" rel="prev" href="<?php echo esc_url($previous_url); ?>">← Previous</a>
+          <?php else : ?>
+            <span class="grammar-page-control is-disabled" aria-disabled="true">← Previous</span>
+          <?php endif; ?>
+          <span class="grammar-page-count" aria-live="polite"><?php echo esc_html($current_page . ' / ' . $total_pages); ?></span>
+          <?php if ($current_page < $total_pages) : ?>
+            <a class="grammar-page-control" rel="next" href="<?php echo esc_url($next_url); ?>">Next →</a>
+          <?php else : ?>
+            <span class="grammar-page-control is-disabled" aria-disabled="true">Next →</span>
+          <?php endif; ?>
         </nav>
       <?php endif; ?>
     </div>
