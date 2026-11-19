@@ -77,26 +77,18 @@ function spanishnova_seed_taxonomy_terms() {
         ],
     ]);
 
-    spanishnova_seed_hierarchical_taxonomy_terms('topic_tax', [
-        [
-            'name' => 'Daily Life',
-            'slug' => 'daily-life',
-            'children' => [
-                ['name' => 'Home', 'slug' => 'home'],
-                ['name' => 'Routine', 'slug' => 'routine'],
-                ['name' => 'Relationships', 'slug' => 'relationships'],
-                ['name' => 'Health', 'slug' => 'health'],
-                ['name' => 'Hobbies', 'slug' => 'hobbies'],
-                ['name' => 'Leisure', 'slug' => 'leisure'],
-            ],
-        ],
+    // Editorial topics stay flat. Historical child terms are preserved in the DB
+    // until their existing post assignments have been reviewed.
+    spanishnova_seed_flat_taxonomy_terms('topic_tax', [
+        ['name' => 'Daily Life', 'slug' => 'daily-life'],
         ['name' => 'Travel', 'slug' => 'travel'],
         ['name' => 'Food', 'slug' => 'food'],
         ['name' => 'Work', 'slug' => 'work'],
+        ['name' => 'Education', 'slug' => 'education'],
         ['name' => 'Culture', 'slug' => 'culture'],
         ['name' => 'Entertainment', 'slug' => 'entertainment'],
-        ['name' => 'Education', 'slug' => 'education'],
         ['name' => 'Society', 'slug' => 'society'],
+        ['name' => 'Science & Nature', 'slug' => 'science-nature'],
     ]);
 
     $route_terms = [
