@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php
 $practice_search = isset($_GET['sn_search']) ? sanitize_text_field(wp_unslash($_GET['sn_search'])) : '';
-$practice_topic = isset($_GET['grammar_tax']) ? sanitize_title(wp_unslash($_GET['grammar_tax'])) : '';
+$practice_topic = isset($_GET['sn_practice_category']) ? sanitize_title(wp_unslash($_GET['sn_practice_category'])) : '';
 $practice_level = isset($_GET['sn_level']) ? sanitize_title(wp_unslash($_GET['sn_level'])) : '';
 $practice_page = isset($_GET['sn_page']) ? max(1, absint($_GET['sn_page'])) : 1;
 $practice_base = get_post_type_archive_link('practice') ?: home_url('/practice/');
@@ -74,7 +74,7 @@ if ($practice_level !== '') $practice_args['sn_level'] = $practice_level;
       </div>
       <div class="grammar-filter-field">
         <label for="practice-category">Topic</label>
-        <select id="practice-category" name="grammar_tax">
+        <select id="practice-category" name="sn_practice_category">
           <option value="">All topics</option>
           <?php foreach ($practice_categories as $term) : ?>
             <option value="<?php echo esc_attr($term->slug); ?>" <?php selected($practice_topic, $term->slug); ?>><?php echo esc_html($term->name); ?></option>
