@@ -66,7 +66,7 @@ Do not reintroduce deprecated taxonomy names.
 |---|---|---|---|
 | `level_tax` | custom hierarchical taxonomy | learning difficulty | all learning CPTs |
 | `grammar_tax` | custom hierarchical taxonomy | grammar navigation and grammar points | `grammar`, optional in `readings`, `practice`, `conversations` |
-| `topic_tax` | custom hierarchical taxonomy | broad semantic contexts | `vocabulary`, `readings`, `conversations`, `practice`, `resources` |
+| `topic_tax` | custom flat taxonomy | broad semantic contexts | `vocabulary`, `readings`, `conversations`, `practice`, `resources` |
 | WordPress native tags (`post_tag`) | native non-hierarchical taxonomy | free labels, specific terms, concrete words, contrasts, dialects, expressions, and cross-cutting cases | all CPTs |
 
 ---
@@ -165,41 +165,62 @@ Rules:
 
 # topic_tax
 
-Used for broad semantic contexts.
+Used for broad subject areas shared by Vocabulary, Readings, Conversations, Practice, and Resources.
 
 Architecture rule:
 
-- `topic_tax` uses max 2 levels.
+- `topic_tax` uses one flat level for the editorial catalog.
+- Do not add subcategories for individual lessons or readings.
+- Use native tags for specific subjects, people, animals, and places.
+- The previous `Daily Life` child terms may still exist in installed WordPress databases. Do not delete or reassign them without auditing content.
 
-Initial seeded structure:
+Seeded structure:
 
 ```txt
 Daily Life
-- Home
-- Routine
-- Relationships
-- Health
-- Hobbies
-- Leisure
-
 Travel
 Food
 Work
+Education
 Culture
 Entertainment
-Education
 Society
+Science & Nature
 ```
+
+Definitions and examples:
+
+| Topic | Scope |
+|---|---|
+| Daily Life | Everyday situations: home, routines, shopping, errands, personal interactions |
+| Travel | Trips, transport, accommodation, destinations |
+| Food | Food, cooking, meals, restaurants |
+| Work | Jobs, workplaces, professional activities |
+| Education | Schools, study, teaching, learning |
+| Culture | Traditions, arts, cultural practices, cultural heritage |
+| Entertainment | Film, music, games, leisure media |
+| Society | Social organization, communities, institutions, social issues |
+| Science & Nature | Animals, ecology, natural phenomena, scientific discoveries |
+
+Examples of reading classification:
+
+```txt
+Sharks       -> Science & Nature | tags: sharks, marine life
+Navajo       -> Culture          | tags: Navajo, Indigenous peoples
+Hedy Lamarr  -> Culture          | tags: Hedy Lamarr, cinema, technology
+```
+
+Choose the topic from the actual focus of the reading. For example, Hedy Lamarr may belong to Science & Nature if the article focuses on technology rather than biography or film. A reading may use more than one topic when justified.
 
 Rules:
 
-- Use `topic_tax` for broad semantic contexts.
-- Use `topic_tax` across CPTs when the same topic applies to vocabulary, readings, conversations, practice, or resources.
-- Do not use `topic_tax` for grammar points such as present, preterite, ser, estar, subjunctive, or imperative.
-- Do not create separate `reading_tax` or `vocabulary_tax`.
-- Do not create very specific proper nouns as `topic_tax` terms too early. Use native WordPress tags for those.
-- Do not turn every future post title into a taxonomy term.
-- A taxonomy term should exist when it can group multiple posts.
+- `Daily Life` is only for everyday situations. Never use it as a fallback for a reading without an obvious topic.
+- `Work` and `Education` are separate.
+- `Culture` and `Society` are separate. Use `Society` for social organization or institutions, rather than treating it as a catch-all category.
+- Do not use `topic_tax` for grammar points; use `grammar_tax`.
+- Keep specific terms, proper names, and narrow topics in WordPress tags.
+- Do not create `reading_tax` or `vocabulary_tax`.
+- A new topic should be introduced only when it groups multiple items.
 
 ---
 
@@ -298,6 +319,7 @@ culture
 entertainment
 education
 society
+science and nature
 ```
 
 ## Specific cases go to native WordPress tags
