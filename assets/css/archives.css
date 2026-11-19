@@ -511,3 +511,37 @@
     padding: 12px;
   }
 }
+
+/* Align learning archives with Grammar's white panel and content width.
+   Preserve each CPT's existing card accent color and filter layout. */
+body.post-type-archive-vocabulary main,
+body.post-type-archive-readings main,
+body.post-type-archive-conversations main,
+body.post-type-archive-practice main,
+body.post-type-archive-resources main {
+  max-width: 1180px;
+  width: 100%;
+}
+
+body.post-type-archive-vocabulary main > .panel,
+body.post-type-archive-readings main > .panel,
+body.post-type-archive-conversations main > .panel,
+body.post-type-archive-practice main > .panel,
+body.post-type-archive-resources main > .panel {
+  width: 100%;
+  max-width: none;
+  background: #ffffff;
+}
+
+body.post-type-archive-vocabulary .activity-row,
+body.post-type-archive-readings .activity-row,
+body.post-type-archive-conversations .activity-row,
+body.post-type-archive-practice .activity-row,
+body.post-type-archive-resources .activity-row {
+  background: #ffffff;
+}
+
+/* Separate the level from the Grammar type color within card metadata. */
+.grammar-term-lessons .sn-catalog-card-meta span:last-child:not(:first-child) {
+  color: #4b4744;
+}
