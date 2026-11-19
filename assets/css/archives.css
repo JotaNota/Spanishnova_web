@@ -457,3 +457,57 @@
     align-self: end;
   }
 }
+
+/* Shared catalog cards: type and level above title */
+.grammar-term-lessons {
+  display: grid;
+  gap: 10px;
+}
+.grammar-term-lessons .sn-catalog-card.sn-catalog-grammar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 16px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-left: 3px solid #8574a6;
+  border-radius: 12px;
+  box-shadow: none;
+}
+.grammar-term-lessons .sn-catalog-card.sn-catalog-grammar:hover,
+.grammar-term-lessons .sn-catalog-card.sn-catalog-grammar:focus-visible {
+  background: #fffaf5;
+  border-color: var(--border);
+  border-left-color: #8574a6;
+  box-shadow: none;
+  transform: none;
+}
+.sn-grammar-card-content {
+  min-width: 0;
+}
+.sn-catalog-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+  color: #5e5277;
+  font-size: 10px;
+  line-height: 1.4;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+}
+.grammar-term-lessons .sn-catalog-card.sn-catalog-grammar h3 {
+  margin: 0 0 5px;
+}
+.grammar-term-lessons .sn-catalog-card.sn-catalog-grammar p {
+  margin: 0;
+}
+@media(max-width:520px) {
+  .grammar-term-lessons .sn-catalog-card.sn-catalog-grammar {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+    padding: 12px;
+  }
+}
