@@ -197,7 +197,7 @@ if ($level_slug !== '') $active_args['sn_level'] = $level_slug;
               $grammar_topic = $grammar_terms[0]->name;
             }
             ?>
-            <a class="activity-row grammar-level-row" href="<?php the_permalink(); ?>">
+            <a class="activity-row grammar-level-row sn-catalog-card sn-catalog-grammar" href="<?php the_permalink(); ?>">
               <span class="grammar-level-label"><?php echo esc_html($level_label); ?></span>
               <div>
                 <h3><?php the_title(); ?></h3>
