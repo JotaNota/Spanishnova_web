@@ -199,6 +199,7 @@ if ($level_slug !== '') $active_args['sn_level'] = $level_slug;
   var form = document.getElementById('grammar-catalog-filters');
   var results = document.getElementById('grammar-catalog-results');
   if (!form || !results || !window.fetch || !window.DOMParser) return;
+  form.classList.add('js-ready');
 
   var search = document.getElementById('grammar-search');
   var category = document.getElementById('grammar-category');
