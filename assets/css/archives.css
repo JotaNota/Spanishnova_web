@@ -553,3 +553,68 @@ body.post-type-archive-resources .activity-row {
 .grammar-term-lessons .sn-catalog-card-meta span:last-child:not(:first-child) {
   color: #4b4744;
 }
+
+/* Practice archive shares the Grammar layout while retaining its orange accent. */
+.practice-archive-panel {
+  background: #ffffff;
+}
+.practice-archive-panel h1 {
+  margin-bottom: 20px;
+}
+.practice-catalog-list {
+  gap: 10px;
+}
+.practice-catalog-list .practice-catalog-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--orange);
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: none;
+}
+.practice-catalog-list .practice-catalog-card:hover,
+.practice-catalog-list .practice-catalog-card:focus-visible {
+  border-color: var(--border);
+  border-left-color: var(--orange);
+  background: #fffaf5;
+  box-shadow: none;
+  transform: none;
+}
+.practice-catalog-content {
+  min-width: 0;
+}
+.practice-catalog-list .sn-catalog-card-meta {
+  color: var(--orange);
+}
+.practice-catalog-list .practice-card-level {
+  color: #4b4744;
+}
+.practice-catalog-list .practice-catalog-card h3 {
+  margin: 0 0 5px;
+}
+.practice-catalog-list .practice-card-topic {
+  margin-top: 6px;
+  font-size: 11px;
+}
+.practice-catalog-filters .grammar-reset-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.practice-catalog-filters .grammar-filter-actions {
+  grid-column: 4;
+  grid-row: 1;
+  align-self: end;
+}
+@media(max-width:820px) {
+  .practice-catalog-filters .grammar-filter-actions {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: end;
+  }
+}
