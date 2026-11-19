@@ -28,3 +28,29 @@ if (!function_exists('spanishnova_get_card_excerpt')) {
     }
 }
 
+
+
+/**
+ * Filter topical CPT archives from header menu without entering taxonomy
+ * archives that combine different post types.
+ */
+function spanishnova_filter_topic_archive($query) {
+    if (is_admin() || !$query->is_main_query() || !$query->is_post_type_archive()) return;
+
+    $post_type = $query->get('post_type');
+    if (!in_array($post_type, ['vocabulary', 'readings', 'conversations'], true)) return;
+    if (!isset($_GET['sn_topic']) || !is_string($_GET['sn_topic'])) return;
+
+    $slug = sanitize_title(wp_unslash($_GET['sn_topic']));
+    if (!$slug || !term_exists($slug, 'topic_tax')) return;
+
+    $filters = (array) $query->get('tax_query');
+    $filters[] = [
+        'taxonomy' => 'topic_tax',
+        'field' => 'slug',
+        'terms' => $slug,
+        'include_children' => true,
+    ];
+    $query->set('tax_query', $filters);
+}
+add_action('pre_get_posts', 'spanishnova_filter_topic_archive');
