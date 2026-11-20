@@ -38,7 +38,12 @@
 .sn-grammar-verb-lesson .grammar-lesson-option:focus-visible {border-color: #d16c30;}
 .sn-grammar-verb-lesson .grammar-lesson-option.correct {background:#e9f6ee;border-color:#55a575;}
 .sn-grammar-verb-lesson .grammar-lesson-option.incorrect {background:#fcece8;border-color:#d88272;}
-.sn-grammar-verb-lesson .grammar-lesson-feedback {font-size:14px;min-height:0;margin:9px 0 0;}
+.sn-grammar-page .sn-post-content .sn-grammar-verb-lesson .grammar-lesson-feedback {
+  text-align:center;font-size:18px;font-weight:800;line-height:1.4;
+  margin:16px 0 0;min-height:25px;color:var(--gv-muted);
+}
+.sn-grammar-verb-lesson .grammar-lesson-feedback[data-result="incorrect"] {color:#c52c2c;}
+.sn-grammar-verb-lesson .grammar-lesson-feedback[data-result="correct"] {color:#187642;}
 .sn-grammar-verb-lesson .sn-simple-example {
   margin:13px 0 20px;padding:9px 15px;border-left:3px solid #ce6638;background:#fcf9f6;
 }
@@ -51,8 +56,16 @@
   border-radius:7px;padding:14px 18px;min-width:0;overflow-wrap:break-word;
 }
 .sn-grammar-page .sn-post-content .sn-grammar-verb-lesson .grammar-lesson-card h3 {font-size:17px;margin:0 0 9px;}
-.sn-grammar-verb-lesson .grammar-lesson-card strong {display:block;}
-.sn-grammar-verb-lesson .grammar-lesson-card strong:not(:first-of-type) {margin-top:11px;}
+/* Each Spanish sentence and its English translation share one line and one row. */
+.sn-grammar-verb-lesson .grammar-lesson-example-row {
+  display:block;line-height:1.55;margin:0;padding:6px 0;
+  overflow-wrap:anywhere;
+}
+.sn-grammar-verb-lesson .grammar-lesson-example-row + .grammar-lesson-example-row {border-top:1px solid #edf0f1;}
+.sn-grammar-verb-lesson .grammar-lesson-example-row strong {display:inline;font-weight:700;}
+.sn-grammar-verb-lesson .grammar-lesson-example-translation {color:var(--gv-muted);}
+.sn-grammar-verb-lesson .grammar-lesson-card > p {margin:0;}
+.sn-grammar-verb-lesson .grammar-lesson-card > strong {display:inline;}
 .sn-grammar-verb-lesson .grammar-lesson-note {
   display:block;margin:24px 0 30px;border-left:3px solid #d8af8c;
   padding:5px 15px;color:var(--gv-muted);
