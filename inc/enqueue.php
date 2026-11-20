@@ -14,6 +14,12 @@ function spanishnova_enqueue_assets() {
         wp_enqueue_style('spanishnova-singles', get_template_directory_uri() . '/assets/css/singles.css', ['spanishnova-main'], '0.1.0');
     }
 
+    // Grammar > Verbos model. Scoped to .sn-grammar-verb-lesson in post content.
+    if (is_singular('grammar')) {
+        wp_enqueue_style('spanishnova-grammar-verbs', get_template_directory_uri() . '/assets/css/grammar-verbs.css', ['spanishnova-singles'], filemtime(get_template_directory() . '/assets/css/grammar-verbs.css'));
+        wp_enqueue_script('spanishnova-grammar-verbs', get_template_directory_uri() . '/assets/js/grammar-verbs.js', [], filemtime(get_template_directory() . '/assets/js/grammar-verbs.js'), true);
+    }
+
     if (is_archive() || is_tax() || is_search()) {
         wp_enqueue_style('spanishnova-archives', get_template_directory_uri() . '/assets/css/archives.css', ['spanishnova-main'], filemtime(get_template_directory() . '/assets/css/archives.css'));
     }
