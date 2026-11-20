@@ -20,6 +20,11 @@ function spanishnova_enqueue_assets() {
         wp_enqueue_script('spanishnova-grammar-verbs', get_template_directory_uri() . '/assets/js/grammar-verbs.js', [], filemtime(get_template_directory() . '/assets/js/grammar-verbs.js'), true);
     }
 
+    // Donations page styles, scoped to the existing section IDs in its content.
+    if (is_page('donations')) {
+        wp_enqueue_style('spanishnova-donations', get_template_directory_uri() . '/assets/css/donations.css', ['spanishnova-main'], filemtime(get_template_directory() . '/assets/css/donations.css'));
+    }
+
     if (is_archive() || is_tax() || is_search()) {
         wp_enqueue_style('spanishnova-archives', get_template_directory_uri() . '/assets/css/archives.css', ['spanishnova-main'], filemtime(get_template_directory() . '/assets/css/archives.css'));
     }
