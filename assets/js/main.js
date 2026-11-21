@@ -65,6 +65,12 @@ document.addEventListener('click', function (event) {
     setOpen(options.hidden);
   });
 
+  document.querySelectorAll('.sn-lesson-contact-button').forEach(function (button) {
+    button.addEventListener('click', function () {
+      emailTrigger.click();
+    });
+  });
+
   emailTrigger.addEventListener('click', function () {
     panel.hidden = false;
     options.hidden = true;
