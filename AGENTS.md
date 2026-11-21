@@ -18,8 +18,10 @@ Agents must treat SpanishNova as a content-led WordPress product with:
 - Preserve existing user edits.
 - Mark unknowns as `TBD`.
 - Do not work directly on `main`.
-- Use one branch per GitHub Issue or one branch per small documentation task.
-- Do not mix unrelated work in one branch or pull request.
+- Use only the existing working branch `work/repo-structure-cleanup` for ongoing project changes.
+- Do not create or switch branches without explicit user authorization.
+- Integrate changes into the existing working branch while preserving local edits and resolving conflicts without overwriting whole files.
+- Do not push, merge into `main`, or deploy unless explicitly requested.
 - Do not edit WordPress core or third-party plugin code from this theme repo.
 - Do not commit uploads, cache, secrets, database dumps, or environment-specific files.
 
@@ -81,8 +83,8 @@ These agents create drafts only. They must not publish to WordPress.
 ## Default workflow
 
 1. `project-coordinator` maps the task to a GitHub Issue user story or creates a local `TBD` backlog row until the issue exists.
-2. `project-coordinator` confirms the branch name and file scope.
-3. Work happens on a non-`main` branch.
+2. `project-coordinator` confirms file scope and uses the existing `work/repo-structure-cleanup` branch.
+3. Work happens on that branch; creating or switching branches requires explicit user authorization.
 4. `content-architect` checks content structure impact when content structure changes.
 5. `wp-theme-developer` implements theme changes when code changes are needed.
 6. `seo-editorial-agent` checks SEO and internal linking impact when SEO changes are involved.
