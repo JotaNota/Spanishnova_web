@@ -93,49 +93,42 @@ if (isset($curricula[$level_slug])) {
     return count($matches) === 1 ? $matches[0] : null;
   };
 
-  foreach ($curricula[$level_slug] as $i => $module) {
-    $items = [];
+  foreach ($curricula[$level_slug] as $module) {
+    $units = [];
     $module_published = 0;
     $module_total = 0;
-    foreach ($module['items'] as $j => $entry) {
-      $post = $resolve_route_post($entry);
-      $is_available = (bool) $post;
-      $associated = [];
-      foreach ($entry['associated'] as $activity) {
-        $activity_post = $resolve_route_post($activity);
-        $associated[] = [
-          'title' => $activity['title'],
-          'type' => $activity['type'],
-          'url' => $activity_post ? get_permalink($activity_post) : '',
+    foreach ($module['units'] as $index => $unit) {
+      $lessons = [];
+      $unit_published = 0;
+      foreach ($unit['lessons'] as $entry) {
+        $post = $resolve_route_post($entry);
+        $lessons[] = [
+          'title' => $entry['title'],
+          'type' => $entry['type'],
+          'url' => $post ? get_permalink($post) : '',
         ];
         $module_total++;
         $level_lesson_total++;
-        if ($activity_post) {
+        if ($post) {
+          $unit_published++;
           $module_published++;
           $level_lesson_published++;
         }
       }
-      $items[] = [
-        'order' => $j + 1,
-        'title' => $entry['title'],
-        'url' => $post ? get_permalink($post) : '',
-        'type' => $entry['type'],
-        'associated' => $associated,
-        'excerpt' => '',
+      $units[] = [
+        'title' => $unit['title'],
+        'number' => $index + 1,
+        'lessons' => $lessons,
+        'total' => count($lessons),
+        'published' => $unit_published,
       ];
-      $module_total++;
-      $level_lesson_total++;
-      if ($is_available) {
-        $module_published++;
-        $level_lesson_published++;
-      }
     }
     $level_modules[] = [
       'label' => $module['label'],
-      'number' => $i + 1,
-      'items' => $items,
-      'published' => $module_published,
+      'number' => $module['number'],
+      'units' => $units,
       'total' => $module_total,
+      'published' => $module_published,
     ];
   }
 } else {
@@ -265,66 +258,53 @@ unset($level_module);
         <?php foreach ($level_modules as $level_module) : ?>
           <section class="starter-module">
             <header class="starter-module-heading">
-              <div>
-                <p class="starter-module-kicker">Module <?php echo esc_html($level_module['number'] ?? ''); ?></p>
+              <div class="sn-module-heading-copy">
+                <p class="starter-module-kicker">Module <?php echo esc_html($level_module['number'] ?? ''); ?> · <?php single_term_title(); ?></p>
                 <h3><?php echo esc_html($level_module['label']); ?></h3>
+                <?php if (isset($level_module['units'])) : ?>
+                  <p class="sn-module-meta"><?php echo esc_html(count($level_module['units'])); ?> units · <?php echo esc_html($level_module['total']); ?> lessons</p>
+                  <div class="sn-module-progress" role="progressbar" aria-label="Published lessons" aria-valuemin="0" aria-valuemax="<?php echo esc_attr($level_module['total']); ?>" aria-valuenow="<?php echo esc_attr($level_module['published']); ?>"><span style="width:<?php echo esc_attr($level_module['total'] ? round(100 * $level_module['published'] / $level_module['total'], 2) : 0); ?>%"></span></div>
+                <?php endif; ?>
               </div>
               <?php if (isset($level_module['total'])) : ?>
                 <span class="starter-module-progress"><?php echo esc_html($level_module['published']); ?> of <?php echo esc_html($level_module['total']); ?> available</span>
               <?php endif; ?>
             </header>
-
-            <div class="starter-lesson-list">
-              <?php foreach ($level_module['items'] as $level_lesson) : ?>
-                <?php $lesson_available = !empty($level_lesson['url']); ?>
-                <div class="starter-lesson-entry<?php echo $lesson_available ? ' is-available' : ' is-pending'; ?>">
-                  <?php if ($lesson_available) : ?>
-                    <a class="starter-lesson-row" href="<?php echo esc_url($level_lesson['url']); ?>">
-                  <?php else : ?>
-                    <div class="starter-lesson-row">
-                  <?php endif; ?>
-                      <span class="starter-lesson-order"><?php echo esc_html($level_lesson['order']); ?></span>
-                      <span class="starter-lesson-copy">
-                        <strong><?php echo esc_html($level_lesson['title']); ?></strong>
-                        <?php if (!empty($level_lesson['type'])) : ?>
-                          <span><?php echo esc_html($level_lesson['type']); ?></span>
-                        <?php elseif (!empty($level_lesson['excerpt'])) : ?>
-                          <span><?php echo esc_html($level_lesson['excerpt']); ?></span>
-                        <?php endif; ?>
-                      </span>
-                      <span class="starter-lesson-state">
-                        <?php if ($lesson_available) : ?>
-                          <span class="starter-state-dot" aria-hidden="true"></span>Available <span aria-hidden="true">→</span>
-                        <?php else : ?>
-                          Coming soon
-                        <?php endif; ?>
-                      </span>
-                  <?php if ($lesson_available) : ?></a><?php else : ?></div><?php endif; ?>
-
-                  <?php if (!empty($level_lesson['associated'])) : ?>
-                    <div class="starter-route-sublessons" aria-label="Lessons in this route">
-                      <p class="starter-route-subheading">In this route</p>
-                      <?php foreach ($level_lesson['associated'] as $activity) : ?>
-                        <?php $activity_available = !empty($activity['url']); ?>
-                        <?php if ($activity_available) : ?>
-                          <a class="starter-route-sublesson is-available" href="<?php echo esc_url($activity['url']); ?>">
-                        <?php else : ?>
-                          <div class="starter-route-sublesson is-pending">
-                        <?php endif; ?>
-                            <span class="starter-route-sublesson-copy">
-                              <strong><?php echo esc_html($activity['title']); ?></strong>
-                              <span><?php echo esc_html($activity['type']); ?></span>
-                            </span>
-                            <span class="starter-route-sublesson-status">
-                              <?php if ($activity_available) : ?>Available <span aria-hidden="true">→</span><?php else : ?>Coming soon<?php endif; ?>
-                            </span>
-                        <?php if ($activity_available) : ?></a><?php else : ?></div><?php endif; ?>
+            <?php if (isset($level_module['units'])) : ?>
+              <div class="sn-unit-list">
+                <?php foreach ($level_module['units'] as $unit) : ?>
+                  <details class="sn-unit" open>
+                    <summary class="sn-unit-summary">
+                      <span class="sn-unit-number"><?php echo esc_html(str_pad((string)$unit['number'], 2, '0', STR_PAD_LEFT)); ?></span>
+                      <span class="sn-unit-info"><strong><?php echo esc_html($unit['title']); ?></strong><span><?php echo esc_html($unit['total']); ?> lessons · <?php echo esc_html($unit['published']); ?> available</span></span>
+                      <span class="sn-unit-chevron" aria-hidden="true"></span>
+                    </summary>
+                    <div class="sn-unit-lessons">
+                      <?php foreach ($unit['lessons'] as $lesson) : ?>
+                        <?php $available = !empty($lesson['url']); ?>
+                        <?php if ($available) : ?><a class="sn-unit-lesson is-available" href="<?php echo esc_url($lesson['url']); ?>">
+                        <?php else : ?><div class="sn-unit-lesson is-pending"><?php endif; ?>
+                          <span class="sn-lesson-icon" aria-hidden="true"><?php echo $available ? '&#9635;' : '&#9675;'; ?></span>
+                          <span class="sn-lesson-info"><strong><?php echo esc_html($lesson['title']); ?></strong><small><?php echo esc_html($lesson['type']); ?></small></span>
+                          <span class="sn-lesson-status"><?php echo $available ? 'Available' : 'Coming soon'; ?></span>
+                          <?php if ($available) : ?><span class="sn-lesson-arrow" aria-hidden="true">&#8599;</span><?php endif; ?>
+                        <?php if ($available) : ?></a><?php else : ?></div><?php endif; ?>
                       <?php endforeach; ?>
                     </div>
-                  <?php endif; ?>
-                </div>
-              <?php endforeach; ?>
-            </div>
+                  </details>
+                <?php endforeach; ?>
+              </div>
+            <?php else : ?>
+              <div class="starter-lesson-list">
+                <?php foreach ($level_module['items'] as $level_lesson) : ?>
+                  <a class="starter-lesson-row" href="<?php echo esc_url($level_lesson['url']); ?>">
+                    <span class="starter-lesson-order"><?php echo esc_html($level_lesson['order']); ?></span>
+                    <span class="starter-lesson-copy"><strong><?php echo esc_html($level_lesson['title']); ?></strong></span>
+                    <span class="starter-lesson-arrow" aria-hidden="true">&#8594;</span>
+                  </a>
+                <?php endforeach; ?>
+              </div>
+            <?php endif; ?>
           </section>
         <?php endforeach; ?>
       </div>
