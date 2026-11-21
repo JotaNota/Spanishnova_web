@@ -27,3 +27,29 @@ if (!function_exists('spanishnova_get_card_excerpt')) {
         return $excerpt;
     }
 }
+
+/**
+ * Redirect legacy Explore type filters to canonical CPT archives.
+ * Keep topic filters and leave /explore/ as the cross-type search.
+ */
+add_action('template_redirect', function () {
+    if (!is_page('explore') || !isset($_GET['type']) || is_admin()) {
+        return;
+    }
+    $type = sanitize_key(wp_unslash($_GET['type']));
+    if (!in_array($type, ['vocabulary', 'readings', 'conversations'], true)) {
+        return;
+    }
+    $url = get_post_type_archive_link($type);
+    if (!$url) {
+        return;
+    }
+    if (isset($_GET['topic'])) {
+        $topic = sanitize_title(wp_unslash($_GET['topic']));
+        if ($topic) {
+            $url = add_query_arg('topic', $topic, $url);
+        }
+    }
+    wp_safe_redirect($url, 301);
+    exit;
+});
