@@ -621,3 +621,5 @@
 .starter-level-page .is-available .sn-lesson-status{color:#346d50;font-weight:650}
 .starter-level-page .sn-lesson-arrow{font-size:18px;color:#898681}
 @media(max-width:650px){.starter-level-page .starter-module-heading{padding:18px;flex-direction:column;gap:8px}.starter-level-page .sn-unit-list{padding:10px;gap:8px}.starter-level-page .sn-unit-lesson{gap:8px;padding:12px}.starter-level-page .sn-lesson-status{font-size:10px}.starter-level-page .sn-lesson-arrow{display:none}}
+
+.starter-level-page .sn-lesson-icon svg{display:block;width:18px;height:18px}
