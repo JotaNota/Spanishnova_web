@@ -35,6 +35,40 @@ foreach ($level_slugs as $level_slug => $level_label) {
   ];
 }
 
+$level_slug = $is_level_term ? $current_term->slug : '';
+$curricula = [];
+if (in_array($level_slug, ['starter', 'beginner'], true)) {
+  require_once get_template_directory() . '/inc/level-route-curriculum.php';
+  $curricula = spanishnova_level_curriculum();
+}
+if (isset($curricula[$level_slug])) {
+  $published_posts = get_posts([
+    'post_type' => ['grammar', 'vocabulary', 'readings', 'conversations', 'practice', 'resources'],
+    'post_status' => 'publish',
+    'numberposts' => -1,
+  ]);
+  $posts_by_slug = [];
+  foreach ($published_posts as $p) {
+    $posts_by_slug[get_post_type($p) . ':' . $p->post_name] = $p;
+  }
+  foreach ($curricula[$level_slug] as $i => $module) {
+    $items = [];
+    foreach ($module['items'] as $j => $entry) {
+      $key = strtolower($entry['type']) . ':' . $entry['slug'];
+      $p = $entry['slug'] !== '' ? ($posts_by_slug[$key] ?? null) : null;
+      $items[] = [
+        'order' => $j + 1,
+        'title' => $entry['title'],
+        'url' => $p ? get_permalink($p) : '',
+        'type' => $entry['type'],
+        'associated' => $entry['associated'],
+        'excerpt' => '',
+      ];
+      $level_lesson_total++;
+    }
+    $level_modules[] = ['label' => $module['label'], 'number' => $i + 1, 'items' => $items];
+  }
+} else {
 $level_query = new WP_Query([
   'post_type' => 'grammar',
   'post_status' => 'publish',
@@ -111,6 +145,8 @@ foreach ($level_modules as &$level_module) {
   });
 }
 unset($level_module);
+}
+
 
 ?>
 
@@ -123,7 +159,7 @@ unset($level_module);
         <?php echo wp_kses_post(term_description()); ?>
       </div>
     <?php else : ?>
-      <p class="level-route-description">Follow the grammar roadmap module by module.</p>
+      <p class="level-route-description">Follow the learning route module by module.</p>
     <?php endif; ?>
 
     <?php if (!empty($level_links)) : ?>
@@ -158,22 +194,37 @@ unset($level_module);
         <?php foreach ($level_modules as $level_module) : ?>
           <section class="starter-module">
             <header class="starter-module-heading">
-              <p class="starter-module-kicker">Module</p>
+              <p class="starter-module-kicker">Module <?php echo esc_html($level_module['number'] ?? ''); ?></p>
               <h3><?php echo esc_html($level_module['label']); ?></h3>
             </header>
 
             <div class="starter-lesson-list">
               <?php foreach ($level_module['items'] as $level_lesson) : ?>
-                <a class="starter-lesson-row" href="<?php echo esc_url($level_lesson['url']); ?>">
-                  <span class="starter-lesson-order"><?php echo esc_html($level_lesson['order']); ?></span>
-                  <span class="starter-lesson-copy">
-                    <strong><?php echo esc_html($level_lesson['title']); ?></strong>
-                    <?php if ($level_lesson['excerpt'] !== '') : ?>
-                      <span><?php echo esc_html($level_lesson['excerpt']); ?></span>
-                    <?php endif; ?>
-                  </span>
-                  <span class="starter-lesson-arrow" aria-hidden="true">&rarr;</span>
-                </a>
+                <div class="starter-lesson-entry">
+                  <?php if (!empty($level_lesson['url'])) : ?>
+                    <a class="starter-lesson-row" href="<?php echo esc_url($level_lesson['url']); ?>">
+                  <?php else : ?>
+                    <div class="starter-lesson-row">
+                  <?php endif; ?>
+                    <span class="starter-lesson-order"><?php echo esc_html($level_lesson['order']); ?></span>
+                    <span class="starter-lesson-copy">
+                      <strong><?php echo esc_html($level_lesson['title']); ?></strong>
+                      <?php if (!empty($level_lesson['type'])) : ?>
+                        <span><?php echo esc_html($level_lesson['type']); ?></span>
+                      <?php elseif ($level_lesson['excerpt'] !== '') : ?>
+                        <span><?php echo esc_html($level_lesson['excerpt']); ?></span>
+                      <?php endif; ?>
+                    </span>
+                    <?php if (!empty($level_lesson['url'])) : ?><span class="starter-lesson-arrow" aria-hidden="true">&rarr;</span><?php endif; ?>
+                  <?php if (!empty($level_lesson['url'])) : ?></a><?php else : ?></div><?php endif; ?>
+                  <?php if (!empty($level_lesson['associated'])) : ?>
+                    <ul class="starter-lesson-associated" style="margin: 0 0 12px 50px; padding: 0 0 0 20px;">
+                      <?php foreach ($level_lesson['associated'] as $activity) : ?>
+                        <li><?php echo esc_html($activity['title']); ?> <span>[<?php echo esc_html($activity['type']); ?>]</span></li>
+                      <?php endforeach; ?>
+                    </ul>
+                  <?php endif; ?>
+                </div>
               <?php endforeach; ?>
             </div>
           </section>
