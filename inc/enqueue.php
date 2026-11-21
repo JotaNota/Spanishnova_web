@@ -24,7 +24,7 @@ function spanishnova_enqueue_assets() {
     }
 
     if (is_tax('level_tax')) {
-        wp_enqueue_style('spanishnova-level-route', get_template_directory_uri() . '/assets/css/level-route.css', ['spanishnova-archives'], '0.1.0');
+        wp_enqueue_style('spanishnova-level-route', get_template_directory_uri() . '/assets/css/level-route.css', ['spanishnova-archives'], filemtime(get_template_directory() . '/assets/css/level-route.css'));
     }
 
     if (is_page(['classes', 'donations', 'donate', 'contact'])) {
