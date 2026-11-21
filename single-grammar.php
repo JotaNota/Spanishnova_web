@@ -63,6 +63,34 @@
     <div class="sn-post-content">
       <?php the_content(); ?>
     </div>
+
+    <?php
+      // Chronological navigation within Grammar; no lesson sequence metadata exists yet.
+      $next_lesson = get_next_post();
+      $next_url = $next_lesson ? get_permalink($next_lesson) : $grammar_url;
+    ?>
+    <section class="sn-lesson-end" aria-label="Lesson completion and navigation">
+      <div class="sn-lesson-complete">
+        <span class="sn-lesson-check" aria-hidden="true">✓</span>
+        <div>
+          <h2>Lesson complete</h2>
+          <p>You've reached the end of this lesson.</p>
+        </div>
+      </div>
+
+      <div class="sn-lesson-actions">
+        <a class="sn-end-button sn-end-primary" href="<?php echo esc_url($next_url); ?>">
+          <?php echo esc_html($next_lesson ? 'Next lesson →' : 'More lessons →'); ?>
+        </a>
+        <?php if (comments_open()) : ?>
+          <a class="sn-end-button" href="#respond">Leave a comment</a>
+        <?php endif; ?>
+        <button class="sn-end-button sn-lesson-contact-button" type="button">Contact us</button>
+      </div>
+    </section>
+    <?php if (comments_open() || get_comments_number()) : ?>
+      <?php comments_template(); ?>
+    <?php endif; ?>
   <?php endwhile; ?>
 </main>
 
