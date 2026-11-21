@@ -93,6 +93,14 @@
 #sn-classes-layout .snc-period-tabs .snc-tabs-bar>label{display:flex!important;position:static!important;flex:unset!important;grid-row:1!important;width:auto!important;min-width:0!important;align-items:center!important;justify-content:center!important;float:none!important;margin:0!important;padding:10px 8px!important}
 #sn-classes-layout .snc-period-tabs .snc-tabs-bar>label[for=snc-tab-monthly]{grid-column:1!important}
 #sn-classes-layout .snc-period-tabs .snc-tabs-bar>label[for=snc-tab-quarterly]{grid-column:2!important}
+
+/* Billing tabs: single table row survives WordPress paragraph formatting and theme flex overrides. */
+#sn-classes-layout .snc-period-tabs table.snc-tabs-table{display:table!important;width:100%!important;max-width:100%!important;min-width:0!important;table-layout:fixed!important;border-collapse:separate!important;border-spacing:5px!important;background:#fff5ec!important;border:0!important;border-radius:11px!important;margin:0 0 14px!important;padding:0!important}
+#sn-classes-layout .snc-period-tabs .snc-tabs-table tbody{display:table-row-group!important}
+#sn-classes-layout .snc-period-tabs .snc-tabs-table tr{display:table-row!important}
+#sn-classes-layout .snc-period-tabs .snc-tabs-table td{display:table-cell!important;width:50%!important;min-width:0!important;padding:0!important;margin:0!important;vertical-align:middle!important;border:0!important;background:transparent!important}
+#sn-classes-layout .snc-period-tabs .snc-tabs-table td label{display:flex!important;justify-content:center!important;align-items:center!important;min-height:42px;width:100%!important;margin:0!important;padding:9px 8px!important;border-radius:8px!important;font-size:14px!important;font-weight:750!important;color:#a44e26!important;cursor:pointer!important;text-align:center!important;float:none!important;white-space:normal!important}
+#sn-classes-layout #snc-tab-monthly:checked~.snc-tabs-table label[for="snc-tab-monthly"],#sn-classes-layout #snc-tab-quarterly:checked~.snc-tabs-table label[for="snc-tab-quarterly"]{background:#fff!important;color:#1f1b18!important;box-shadow:0 1px 5px rgba(120,63,27,.13)!important}
 </style>
 <div id="sn-classes-layout">
   <div class="snc-hero">
@@ -138,7 +146,7 @@
     <div class="snc-period-tabs">
       <input type="radio" name="snc-billing-period" id="snc-tab-monthly" checked>
       <input type="radio" name="snc-billing-period" id="snc-tab-quarterly">
-      <div class="snc-tabs-bar" role="group" aria-label="Billing period"><label for="snc-tab-monthly">Monthly plans</label><label for="snc-tab-quarterly">Quarterly plans</label></div>
+      <table class="snc-tabs-table" role="presentation" aria-label="Billing period"><tbody><tr><td><label for="snc-tab-monthly">Monthly plans</label></td><td><label for="snc-tab-quarterly">Quarterly plans</label></td></tr></tbody></table>
       <div class="snc-plan-panel snc-panel-monthly">
         <div class="snc-pricing">
           <article class="snc-price-card">
