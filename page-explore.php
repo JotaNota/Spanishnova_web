@@ -9,7 +9,10 @@ $type_labels = [
   'readings' => 'Readings',
   'conversations' => 'Conversations',
 ];
-$selected_type = isset($_GET['type']) ? sanitize_key(wp_unslash($_GET['type'])) : '';
+$archive_type = is_post_type_archive(['vocabulary', 'readings', 'conversations']) ? get_query_var('post_type') : '';
+$selected_type = is_string($archive_type) && in_array($archive_type, $allowed_types, true)
+  ? $archive_type
+  : (isset($_GET['type']) ? sanitize_key(wp_unslash($_GET['type'])) : '');
 $selected_topic = isset($_GET['topic']) ? sanitize_title(wp_unslash($_GET['topic'])) : '';
 if (!in_array($selected_type, $allowed_types, true)) {
   $selected_type = '';
