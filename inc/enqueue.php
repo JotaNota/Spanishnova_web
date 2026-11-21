@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) { exit; }
 function spanishnova_enqueue_assets() {
     wp_enqueue_style('spanishnova-main', get_template_directory_uri() . '/assets/css/main.css', [], '0.1.0');
     wp_enqueue_style('spanishnova-header', get_template_directory_uri() . '/assets/css/header.css', ['spanishnova-main'], '0.1.0');
-    wp_enqueue_style('spanishnova-footer', get_template_directory_uri() . '/assets/css/footer.css', ['spanishnova-main'], '0.1.0');
+    wp_enqueue_style('spanishnova-footer', get_template_directory_uri() . '/assets/css/footer.css', ['spanishnova-main'], filemtime(get_template_directory() . '/assets/css/footer.css'));
 
     if (is_front_page() || is_home()) {
         wp_enqueue_style('spanishnova-home', get_template_directory_uri() . '/assets/css/home.css', ['spanishnova-main'], '0.1.0');
@@ -33,6 +33,6 @@ function spanishnova_enqueue_assets() {
         wp_enqueue_style('spanishnova-level-route', get_template_directory_uri() . '/assets/css/level-route.css', ['spanishnova-archives'], '0.1.0');
     }
 
-    wp_enqueue_script('spanishnova-main', get_template_directory_uri() . '/assets/js/main.js', [], '0.1.0', true);
+    wp_enqueue_script('spanishnova-main', get_template_directory_uri() . '/assets/js/main.js', [], filemtime(get_template_directory() . '/assets/js/main.js'), true);
 }
 add_action('wp_enqueue_scripts', 'spanishnova_enqueue_assets');
