@@ -14,6 +14,7 @@ $level_slugs = [
 $level_links = [];
 $level_modules = [];
 $level_lesson_total = 0;
+$level_lesson_published = 0;
 
 foreach ($level_slugs as $level_slug => $level_label) {
   $level_term = get_term_by('slug', $level_slug, 'level_tax');
@@ -48,25 +49,87 @@ if (isset($curricula[$level_slug])) {
     'numberposts' => -1,
   ]);
   $posts_by_slug = [];
-  foreach ($published_posts as $p) {
-    $posts_by_slug[get_post_type($p) . ':' . $p->post_name] = $p;
+  $posts_by_title = [];
+  foreach ($published_posts as $published_post) {
+    $published_type = get_post_type($published_post);
+    $posts_by_slug[$published_type . ':' . $published_post->post_name] = $published_post;
+    $title_key = $published_type . ':' . sanitize_title(get_the_title($published_post));
+    if (!isset($posts_by_title[$title_key])) {
+      $posts_by_title[$title_key] = [$published_post];
+    } else {
+      $posts_by_title[$title_key][] = $published_post;
+    }
   }
+
+  // The curriculum uses "Conversation"; its registered CPT is "conversations".
+  $resolve_route_post = static function ($entry) use ($posts_by_slug, $posts_by_title) {
+    $type_map = [
+      'grammar' => 'grammar',
+      'vocabulary' => 'vocabulary',
+      'practice' => 'practice',
+      'reading' => 'readings',
+      'readings' => 'readings',
+      'conversation' => 'conversations',
+      'conversations' => 'conversations',
+      'resources' => 'resources',
+    ];
+    $post_type = $type_map[strtolower(trim($entry['type'] ?? ''))] ?? '';
+    if (!$post_type) {
+      return null;
+    }
+    $slug = trim((string) ($entry['slug'] ?? ''));
+    if ($slug !== '') {
+      return $posts_by_slug[$post_type . ':' . $slug] ?? null;
+    }
+    // When no slug is supplied, only an unambiguous exact title match counts.
+    $matches = $posts_by_title[$post_type . ':' . sanitize_title($entry['title'])] ?? [];
+    return count($matches) === 1 ? $matches[0] : null;
+  };
+
   foreach ($curricula[$level_slug] as $i => $module) {
     $items = [];
+    $module_published = 0;
+    $module_total = 0;
     foreach ($module['items'] as $j => $entry) {
-      $key = strtolower($entry['type']) . ':' . $entry['slug'];
-      $p = $entry['slug'] !== '' ? ($posts_by_slug[$key] ?? null) : null;
+      $post = $resolve_route_post($entry);
+      $is_available = (bool) $post;
+      $associated = [];
+      foreach ($entry['associated'] as $activity) {
+        $activity_post = $resolve_route_post($activity);
+        $associated[] = [
+          'title' => $activity['title'],
+          'type' => $activity['type'],
+          'url' => $activity_post ? get_permalink($activity_post) : '',
+        ];
+        $module_total++;
+        $level_lesson_total++;
+        if ($activity_post) {
+          $module_published++;
+          $level_lesson_published++;
+        }
+      }
       $items[] = [
         'order' => $j + 1,
         'title' => $entry['title'],
-        'url' => $p ? get_permalink($p) : '',
+        'url' => $post ? get_permalink($post) : '',
         'type' => $entry['type'],
-        'associated' => $entry['associated'],
+        'associated' => $associated,
         'excerpt' => '',
       ];
+      $module_total++;
       $level_lesson_total++;
+      if ($is_available) {
+        $module_published++;
+        $level_lesson_published++;
+      }
     }
-    $level_modules[] = ['label' => $module['label'], 'number' => $i + 1, 'items' => $items];
+    $level_modules[] = [
+      'label' => $module['label'],
+      'number' => $i + 1,
+      'items' => $items,
+      'published' => $module_published,
+      'total' => $module_total,
+    ];
   }
 } else {
 $level_query = new WP_Query([
@@ -185,7 +248,7 @@ unset($level_module);
         <h2 id="level-modules-title">Modules and lessons</h2>
       </div>
       <?php if ($level_lesson_total > 0) : ?>
-        <span class="level-route-count"><?php echo esc_html($level_lesson_total); ?> lessons</span>
+        <span class="level-route-count"><?php echo esc_html($level_lesson_published); ?> of <?php echo esc_html($level_lesson_total); ?> available</span>
       <?php endif; ?>
     </div>
 
@@ -194,35 +257,62 @@ unset($level_module);
         <?php foreach ($level_modules as $level_module) : ?>
           <section class="starter-module">
             <header class="starter-module-heading">
-              <p class="starter-module-kicker">Module <?php echo esc_html($level_module['number'] ?? ''); ?></p>
-              <h3><?php echo esc_html($level_module['label']); ?></h3>
+              <div>
+                <p class="starter-module-kicker">Module <?php echo esc_html($level_module['number'] ?? ''); ?></p>
+                <h3><?php echo esc_html($level_module['label']); ?></h3>
+              </div>
+              <?php if (isset($level_module['total'])) : ?>
+                <span class="starter-module-progress"><?php echo esc_html($level_module['published']); ?> of <?php echo esc_html($level_module['total']); ?> available</span>
+              <?php endif; ?>
             </header>
 
             <div class="starter-lesson-list">
               <?php foreach ($level_module['items'] as $level_lesson) : ?>
-                <div class="starter-lesson-entry">
-                  <?php if (!empty($level_lesson['url'])) : ?>
+                <?php $lesson_available = !empty($level_lesson['url']); ?>
+                <div class="starter-lesson-entry<?php echo $lesson_available ? ' is-available' : ' is-pending'; ?>">
+                  <?php if ($lesson_available) : ?>
                     <a class="starter-lesson-row" href="<?php echo esc_url($level_lesson['url']); ?>">
                   <?php else : ?>
                     <div class="starter-lesson-row">
                   <?php endif; ?>
-                    <span class="starter-lesson-order"><?php echo esc_html($level_lesson['order']); ?></span>
-                    <span class="starter-lesson-copy">
-                      <strong><?php echo esc_html($level_lesson['title']); ?></strong>
-                      <?php if (!empty($level_lesson['type'])) : ?>
-                        <span><?php echo esc_html($level_lesson['type']); ?></span>
-                      <?php elseif ($level_lesson['excerpt'] !== '') : ?>
-                        <span><?php echo esc_html($level_lesson['excerpt']); ?></span>
-                      <?php endif; ?>
-                    </span>
-                    <?php if (!empty($level_lesson['url'])) : ?><span class="starter-lesson-arrow" aria-hidden="true">&rarr;</span><?php endif; ?>
-                  <?php if (!empty($level_lesson['url'])) : ?></a><?php else : ?></div><?php endif; ?>
+                      <span class="starter-lesson-order"><?php echo esc_html($level_lesson['order']); ?></span>
+                      <span class="starter-lesson-copy">
+                        <strong><?php echo esc_html($level_lesson['title']); ?></strong>
+                        <?php if (!empty($level_lesson['type'])) : ?>
+                          <span><?php echo esc_html($level_lesson['type']); ?></span>
+                        <?php elseif (!empty($level_lesson['excerpt'])) : ?>
+                          <span><?php echo esc_html($level_lesson['excerpt']); ?></span>
+                        <?php endif; ?>
+                      </span>
+                      <span class="starter-lesson-state">
+                        <?php if ($lesson_available) : ?>
+                          <span class="starter-state-dot" aria-hidden="true"></span>Available <span aria-hidden="true">→</span>
+                        <?php else : ?>
+                          Coming soon
+                        <?php endif; ?>
+                      </span>
+                  <?php if ($lesson_available) : ?></a><?php else : ?></div><?php endif; ?>
+
                   <?php if (!empty($level_lesson['associated'])) : ?>
-                    <ul class="starter-lesson-associated" style="margin: 0 0 12px 50px; padding: 0 0 0 20px;">
+                    <div class="starter-route-sublessons" aria-label="Lessons in this route">
+                      <p class="starter-route-subheading">In this route</p>
                       <?php foreach ($level_lesson['associated'] as $activity) : ?>
-                        <li><?php echo esc_html($activity['title']); ?> <span>[<?php echo esc_html($activity['type']); ?>]</span></li>
+                        <?php $activity_available = !empty($activity['url']); ?>
+                        <?php if ($activity_available) : ?>
+                          <a class="starter-route-sublesson is-available" href="<?php echo esc_url($activity['url']); ?>">
+                        <?php else : ?>
+                          <div class="starter-route-sublesson is-pending">
+                        <?php endif; ?>
+                            <span class="starter-route-sublesson-copy">
+                              <strong><?php echo esc_html($activity['title']); ?></strong>
+                              <span><?php echo esc_html($activity['type']); ?></span>
+                            </span>
+                            <span class="starter-route-sublesson-status">
+                              <?php if ($activity_available) : ?>Available <span aria-hidden="true">→</span><?php else : ?>Coming soon<?php endif; ?>
+                            </span>
+                        <?php if ($activity_available) : ?></a><?php else : ?></div><?php endif; ?>
                       <?php endforeach; ?>
-                    </ul>
+                    </div>
                   <?php endif; ?>
                 </div>
               <?php endforeach; ?>
