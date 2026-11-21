@@ -131,6 +131,7 @@
     if (!container || container.contains(heading)) return;
     var profiles = [];
     var active = null;
+    var unsupportedLine = false;
     container.querySelectorAll('h3,h4,p,li').forEach(function (node) {
       if (node.closest('li') && node.tagName !== 'LI') return;
       var strings = linesFrom(node);
@@ -143,9 +144,10 @@
       strings.forEach(function (line) {
         var match = line.match(/^(.+?)\s+[—–]\s+(.+)$/);
         if (match) active.pairs.push([match[1].trim(), match[2].trim()]);
+        else unsupportedLine = true;
       });
     });
-    if (profiles.length < 2 || profiles.some(function (p) { return p.pairs.length < 2; })) return;
+    if (unsupportedLine || profiles.length < 2 || profiles.some(function (p) { return p.pairs.length < 2; })) return;
     var cards = document.createElement('div');
     cards.className = 'sn-read-practice-cards';
     profiles.forEach(function (profile, index) {
