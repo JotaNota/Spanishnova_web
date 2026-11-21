@@ -5,9 +5,9 @@ function spanishnova_level_curriculum() {
   $text = <<<'CURRICULUM'
 # A1 Starter
 ## First sentences
-Basic nouns|Vocabulary|sustantivos-basicos
+Basic nouns|Practice
   Articles|Grammar
-Basic verbs|Vocabulary
+Basic verbs|Practice
 Adjectives|Grammar
   Physical descriptions|Vocabulary
 SER|Grammar|ser-presente
