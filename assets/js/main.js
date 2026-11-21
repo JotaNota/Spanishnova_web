@@ -31,3 +31,32 @@ document.addEventListener('click', function (event) {
     }
   });
 });
+
+(function () {
+  const contact = document.querySelector('[data-sn-contact]');
+  if (!contact) return;
+  const toggle = contact.querySelector('.sn-contact-toggle');
+  const options = contact.querySelector('.sn-contact-options');
+  if (!toggle || !options) return;
+
+  function setOpen(open) {
+    options.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close contact options' : 'Open contact options');
+  }
+
+  toggle.addEventListener('click', function () {
+    setOpen(options.hidden);
+  });
+
+  document.addEventListener('click', function (event) {
+    if (!contact.contains(event.target)) setOpen(false);
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && !options.hidden) {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+})();
