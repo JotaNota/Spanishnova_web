@@ -1,102 +1,69 @@
 <!-- SpanishNova Classes. Paste everything into ONE WordPress Custom HTML block. -->
 <!-- Class duration: 50 minutes. All prices USD. Promotion: four classes once per month. -->
 <style>
-#sn-classes-layout{max-width:1100px;margin:0 auto;color:#1f1b18;font:400 15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+#sn-classes-layout{--snc-orange:#f26b2f;--snc-border:#e2d3c1;--snc-paper:#fff8f1;color:#1f1b18;max-width:1100px;margin:0 auto;font:400 15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
 #sn-classes-layout *{box-sizing:border-box}
-#sn-classes-layout h2,#sn-classes-layout h3,#sn-classes-layout h4{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#1f1b18;letter-spacing:-.025em;line-height:1.2;margin:0;padding:0;border:0}
-#sn-classes-layout p{font-size:14px;line-height:1.6;max-width:none;color:#5e554e;margin:0 0 12px}
+#sn-classes-layout h2,#sn-classes-layout h3,#sn-classes-layout h4{font-family:Inter,system-ui,sans-serif;color:#1f1b18;line-height:1.2;margin:0;padding:0;border:0;letter-spacing:-.02em}
+#sn-classes-layout p{font-size:14px;color:#5e554e;line-height:1.6;margin:0 0 12px;max-width:none}
 #sn-classes-layout a{text-decoration:none}
-#sn-classes-layout .snc-hero{display:flex;flex-direction:column;align-items:flex-start;gap:9px;padding:clamp(26px,4vw,43px);background:linear-gradient(120deg,#fff4e8,#fff9f4);border:1px solid #e2d3c1;border-radius:18px;margin-bottom:26px}
+#sn-classes-layout .snc-hero{display:flex;flex-direction:column;align-items:flex-start;gap:9px;padding:clamp(26px,4vw,43px);border:1px solid var(--snc-border);border-radius:18px;background:linear-gradient(120deg,#fff4e8,#fff9f4);margin:0 0 26px}
 #sn-classes-layout .snc-eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:#b55427}
-#sn-classes-layout .snc-hero h2{font-size:clamp(27px,3.8vw,42px);max-width:670px;font-weight:800}
-#sn-classes-layout .snc-hero p{font-size:16px;max-width:64ch;margin:0 0 4px}
-#sn-classes-layout .snc-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:9px}
-#sn-classes-layout .snc-button,#sn-classes-layout a.snc-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 17px;border:1px solid #f26b2f;border-radius:9px;background:#f26b2f;color:white;font:700 13px/1.35 Inter,system-ui,sans-serif;box-shadow:none;text-decoration:none}
-#sn-classes-layout .snc-button:hover,#sn-classes-layout a.snc-button:hover{color:white;background:#d95924}
-#sn-classes-layout .snc-button--secondary,#sn-classes-layout a.snc-button--secondary{color:#a8481e;background:#fff;border-color:#e2d3c1}
-#sn-classes-layout .snc-button--secondary:hover,#sn-classes-layout a.snc-button--secondary:hover{color:#a8481e;background:#fff1e5}
+#sn-classes-layout .snc-hero h2{font-size:clamp(27px,3.8vw,42px);font-weight:800}
+#sn-classes-layout .snc-hero p{font-size:16px;max-width:64ch}
+#sn-classes-layout .snc-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+#sn-classes-layout a.snc-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 17px;border:1px solid var(--snc-orange);border-radius:9px;background:var(--snc-orange);color:#fff!important;font:700 13px/1.35 Inter,system-ui,sans-serif;text-decoration:none;box-shadow:none}
+#sn-classes-layout a.snc-button:hover{background:#d95721}
+#sn-classes-layout a.snc-button--secondary{color:#a8481e!important;background:#fff;border-color:var(--snc-border)}
+#sn-classes-layout a.snc-button--secondary:hover{background:#fff1e5}
 #sn-classes-layout .snc-section{margin:26px 0 0}
 #sn-classes-layout .snc-section-head{margin:0 0 15px}
-#sn-classes-layout .snc-section-head h3{font-size:23px;font-weight:800;margin-bottom:5px}
+#sn-classes-layout .snc-section-head h3{font-size:23px;font-weight:800;margin:0 0 5px}
 #sn-classes-layout .snc-section-head p{margin:0}
 #sn-classes-layout .snc-grid{display:grid;gap:12px}
 #sn-classes-layout .snc-grid--three{grid-template-columns:repeat(3,minmax(0,1fr))}
 #sn-classes-layout .snc-grid--four{grid-template-columns:repeat(4,minmax(0,1fr))}
-#sn-classes-layout .snc-card{border:1px solid #e2d3c1;border-radius:13px;padding:19px;background:#fff;min-width:0;margin:0;box-shadow:0 3px 9px rgba(50,26,15,.025)}
+#sn-classes-layout .snc-card{min-width:0;padding:19px;background:#fff;border:1px solid var(--snc-border);border-radius:13px;margin:0}
 #sn-classes-layout .snc-card h4{font-size:16px;font-weight:750;margin:0 0 8px}
 #sn-classes-layout .snc-card p{font-size:13px;margin:0}
-#sn-classes-layout .snc-step{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:#fff0e6;color:#bd592a;font-weight:800;font-size:13px;margin-bottom:11px}
-#sn-classes-layout .snc-skill-icon{display:inline-flex;align-items:center;justify-content:center;width:37px;height:37px;border-radius:9px;background:#fff0e6;color:#ca5c28;font-size:18px;font-weight:750;margin-bottom:10px}
+#sn-classes-layout .snc-step,#sn-classes-layout .snc-skill-icon{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;background:#fff0e6;color:#bd592a;font-weight:800;margin:0 0 10px}
 #sn-classes-layout .snc-bullet-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
-#sn-classes-layout .snc-feature{padding:13px 16px;border:1px solid #e2d3c1;border-radius:11px;background:#fff;display:flex;gap:9px;align-items:flex-start;font-size:13px;color:#574f49}
+#sn-classes-layout .snc-feature{display:flex;gap:9px;padding:13px 16px;border:1px solid var(--snc-border);border-radius:11px;font-size:13px;background:#fff}
 #sn-classes-layout .snc-feature:before{content:"✓";color:#cf5a25;font-weight:900}
-#sn-classes-layout .snc-pricing{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-#sn-classes-layout .snc-period-tabs{border:1px solid #e2d3c1;border-radius:15px;background:#fff;padding:14px}
+#sn-classes-layout .snc-period-tabs{width:100%;border:1px solid var(--snc-border);border-radius:15px;padding:14px;background:#fff}
 #sn-classes-layout .snc-period-tabs>input[type=radio]{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
-#sn-classes-layout .snc-tabs-bar{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0 0 14px;background:#f7f5f2;padding:5px;border-radius:10px}
-#sn-classes-layout .snc-tabs-bar label{text-align:center;display:block;cursor:pointer;padding:10px 12px;border-radius:8px;font-size:14px;font-weight:750;color:#6b635b}
-#sn-classes-layout #snc-tab-monthly:checked~.snc-tabs-bar label[for=snc-tab-monthly],#sn-classes-layout #snc-tab-quarterly:checked~.snc-tabs-bar label[for=snc-tab-quarterly]{background:#fff;color:#1f1b18;box-shadow:0 1px 5px rgba(0,0,0,.08)}
-#sn-classes-layout #snc-tab-monthly:focus-visible~.snc-tabs-bar label[for=snc-tab-monthly],#sn-classes-layout #snc-tab-quarterly:focus-visible~.snc-tabs-bar label[for=snc-tab-quarterly]{outline:2px solid #f26b2f;outline-offset:2px}
-#sn-classes-layout .snc-plan-panel{display:none}
+#sn-classes-layout .snc-tabs-bar{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:6px!important;width:100%;margin:0 0 14px!important;padding:5px!important;background:#fff5ec;border-radius:10px}
+#sn-classes-layout .snc-tabs-bar>label{display:flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;width:100%!important;min-height:42px;margin:0!important;padding:10px 8px!important;float:none!important;cursor:pointer;border-radius:8px;color:#a44e26;text-align:center;font-size:14px;font-weight:750;white-space:normal}
+#sn-classes-layout #snc-tab-monthly:checked~.snc-tabs-bar>label[for=snc-tab-monthly],#sn-classes-layout #snc-tab-quarterly:checked~.snc-tabs-bar>label[for=snc-tab-quarterly]{background:#fff;color:#1f1b18;box-shadow:0 1px 5px rgba(120,63,27,.13)}
+#sn-classes-layout #snc-tab-monthly:focus-visible~.snc-tabs-bar>label[for=snc-tab-monthly],#sn-classes-layout #snc-tab-quarterly:focus-visible~.snc-tabs-bar>label[for=snc-tab-quarterly]{outline:2px solid var(--snc-orange);outline-offset:2px}
+#sn-classes-layout .snc-plan-panel{display:none;height:260px}
 #sn-classes-layout #snc-tab-monthly:checked~.snc-panel-monthly,#sn-classes-layout #snc-tab-quarterly:checked~.snc-panel-quarterly{display:block}
-#sn-classes-layout .snc-plan-facts{padding-top:10px;margin-top:auto;width:100%;border-top:1px solid #eee2d8}
-#sn-classes-layout .snc-plan-facts span{display:block;font-size:13px;color:#655d56;line-height:1.8}
-#sn-classes-layout .snc-promotion{display:flex;align-items:center;justify-content:space-between;gap:18px;border:1px solid #e2d3c1;border-radius:14px;background:#fff8f1;padding:23px;margin-top:16px}
+#sn-classes-layout .snc-pricing{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;width:100%;height:100%}
+#sn-classes-layout .snc-price-card{display:flex!important;flex-direction:column!important;align-items:stretch!important;min-width:0;width:100%;height:100%;margin:0!important;padding:19px!important;background:#fff!important;border:1px solid var(--snc-border)!important;border-radius:12px!important;gap:0!important;box-shadow:none}
+#sn-classes-layout .snc-plan-label{font-size:10px;letter-spacing:.055em;text-transform:uppercase;color:#b55225;font-weight:800}
+#sn-classes-layout .snc-price-card h4{font-size:16px;font-weight:800;margin:8px 0!important;min-height:37px}
+#sn-classes-layout .snc-price-summary{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 9px;margin:5px 0 0}
+#sn-classes-layout .snc-price{font-size:27px;font-weight:850;letter-spacing:-.035em;line-height:1.15;white-space:nowrap}
+#sn-classes-layout .snc-price-period{font-size:12px;color:#70665c;white-space:nowrap}
+#sn-classes-layout .snc-plan-facts{display:flex;flex-direction:column;gap:3px;margin:12px 0 0;padding:10px 0 0;border-top:1px solid #eee2d8}
+#sn-classes-layout .snc-plan-facts span{font-size:12px;color:#655d56;line-height:1.45}
+#sn-classes-layout .snc-plan-facts strong{font-weight:800;color:#a64b23}
+#sn-classes-layout .snc-plan-message{margin-top:auto;padding:10px 12px;border-radius:10px;background:#fff1e6;font-size:12px;font-weight:700;color:#a64b23;line-height:1.35}
+#sn-classes-layout .snc-pricing-cta{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-top:14px}
+#sn-classes-layout .snc-pricing-cta span{font-size:12px;color:#655d56}
+#sn-classes-layout .snc-promotion{display:flex;align-items:center;justify-content:space-between;gap:18px;border:1px solid var(--snc-border);border-radius:14px;background:var(--snc-paper);padding:23px;margin-top:16px}
 #sn-classes-layout .snc-promotion h4{font-size:19px;font-weight:800;margin:4px 0 7px}
-#sn-classes-layout .snc-promo-price{font-size:28px;font-weight:850;line-height:1.2;letter-spacing:-.035em;white-space:nowrap}
-#sn-classes-layout .snc-promotion .snc-button{white-space:nowrap}
-
-#sn-classes-layout .snc-price-card{padding:21px;border:1px solid #e2d3c1;background:#fff;border-radius:14px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-width:0}
-#sn-classes-layout .snc-price-card--highlight{background:#fff8f1;border-color:#f1b18f}
-#sn-classes-layout .snc-plan-label{font-size:11px;letter-spacing:.05em;font-weight:800;color:#b25228;text-transform:uppercase}
-#sn-classes-layout .snc-price-card h4{font-size:18px;font-weight:800}
-#sn-classes-layout .snc-price{font-size:29px;line-height:1.2;font-weight:850;letter-spacing:-.04em;color:#1f1b18}
-#sn-classes-layout .snc-price-note{font-size:12px;color:#6b635b}
-#sn-classes-layout .snc-price-card .snc-button{margin-top:auto;width:100%}
-#sn-classes-layout .snc-price-card p{font-size:13px;min-height:0}
-#sn-classes-layout .snc-note{margin-top:13px;padding:13px 15px;border-radius:10px;background:#fff8f1;color:#6b635b;font-size:13px;border:1px solid #e2d3c1}
-#sn-classes-layout .snc-levels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));overflow:hidden;border-radius:12px;border:1px solid #e2d3c1}
-#sn-classes-layout .snc-level{padding:15px 11px;background:#fff9f4;border-right:1px solid #e2d3c1}
-#sn-classes-layout .snc-level:last-child{border-right:0}
-#sn-classes-layout .snc-level strong{font-size:17px;display:block}
+#sn-classes-layout .snc-promo-price{font-size:28px;font-weight:850;white-space:nowrap}
+#sn-classes-layout .snc-levels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid var(--snc-border);border-radius:12px;overflow:hidden}
+#sn-classes-layout .snc-level{padding:15px 11px;background:#fff9f4;border-right:1px solid var(--snc-border)}
+#sn-classes-layout .snc-level:last-child{border:0}
+#sn-classes-layout .snc-level strong{display:block;font-size:17px}
 #sn-classes-layout .snc-level span{font-size:12px;color:#6b635b}
-#sn-classes-layout .snc-final{margin-top:26px;padding:23px 27px;border-radius:15px;background:#211c19;color:white;display:flex;gap:20px;align-items:center;justify-content:space-between}
-#sn-classes-layout .snc-final h3{color:white;font-size:20px;font-weight:800;margin-bottom:6px}
+#sn-classes-layout .snc-final{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:26px;padding:23px 27px;border-radius:15px;background:#211c19;color:#fff}
+#sn-classes-layout .snc-final h3{font-size:20px;color:#fff;font-weight:800;margin:0 0 6px}
 #sn-classes-layout .snc-final p{color:#e9dfd7;margin:0}
-#sn-classes-layout .snc-final .snc-button{white-space:nowrap}
-@media(max-width:850px){#sn-classes-layout .snc-grid--four{grid-template-columns:repeat(2,minmax(0,1fr))}#sn-classes-layout .snc-pricing{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:620px){#sn-classes-layout .snc-grid--three,#sn-classes-layout .snc-grid--four,#sn-classes-layout .snc-pricing,#sn-classes-layout .snc-bullet-grid{grid-template-columns:1fr}#sn-classes-layout .snc-levels{grid-template-columns:repeat(3,minmax(0,1fr))}#sn-classes-layout .snc-final{flex-direction:column;align-items:flex-start}#sn-classes-layout .snc-hero{padding:24px}#sn-classes-layout .snc-promotion{flex-direction:column;align-items:flex-start}#sn-classes-layout .snc-promotion .snc-button{width:100%}}
-
-/* Pricing tabs: force side-by-side layout even with WordPress label styles. */
-#sn-classes-layout .snc-tabs-bar{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:stretch;justify-content:stretch;width:100%;background:#fff5ec}
-#sn-classes-layout .snc-tabs-bar label{display:flex!important;align-items:center;justify-content:center;flex:1 1 50%;width:50%;min-width:0;float:none!important;margin:0!important;text-align:center;white-space:nowrap;color:#9b4b25}
-#sn-classes-layout #snc-tab-monthly:checked~.snc-tabs-bar label[for=snc-tab-monthly],#sn-classes-layout #snc-tab-quarterly:checked~.snc-tabs-bar label[for=snc-tab-quarterly]{background:#fff;color:#1f1b18;box-shadow:0 1px 4px rgba(120,63,27,.12)}
-/* Both panels reserve the same height and keep a three-column card grid. */
-#sn-classes-layout .snc-period-tabs .snc-plan-panel{min-height:300px}
-#sn-classes-layout .snc-period-tabs .snc-pricing{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;min-height:300px}
-#sn-classes-layout .snc-period-tabs .snc-price-card{height:100%;min-height:300px;background:#fff;border:1px solid #e2d3c1}
-#sn-classes-layout .snc-period-tabs .snc-price-card--highlight{background:#fff;border-color:#e2d3c1}
-@media(max-width:720px){#sn-classes-layout .snc-period-tabs .snc-pricing{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:620px){#sn-classes-layout .snc-period-tabs .snc-pricing{grid-template-columns:1fr;min-height:0}#sn-classes-layout .snc-period-tabs .snc-plan-panel{min-height:0}#sn-classes-layout .snc-period-tabs .snc-price-card{min-height:0}}
-
-/* Pricing layout: overrides theme's generic paragraph/label/card rules. */
-#sn-classes-layout .snc-period-tabs{width:100%;min-width:0;display:block;padding:18px;border-radius:15px}
-#sn-classes-layout .snc-period-tabs .snc-tabs-bar{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;grid-auto-flow:column!important;width:100%!important;gap:6px!important;align-items:stretch!important;margin:0 0 16px!important;padding:6px!important;border-radius:11px;background:#fff5ec}
-#sn-classes-layout .snc-tabs-bar .snc-tab-cell{display:block!important;width:100%!important;min-width:0;margin:0!important;padding:0!important}
-#sn-classes-layout .snc-tabs-bar .snc-tab-cell label{display:flex!important;width:100%!important;min-width:0!important;min-height:42px;align-items:center!important;justify-content:center!important;margin:0!important;padding:10px 8px!important;border:0!important;border-radius:8px!important;background:transparent;color:#9b4b25;cursor:pointer;white-space:normal}
-#sn-classes-layout #snc-tab-monthly:checked~.snc-tabs-bar label[for=snc-tab-monthly],#sn-classes-layout #snc-tab-quarterly:checked~.snc-tabs-bar label[for=snc-tab-quarterly]{background:#fff!important;color:#1f1b18!important;box-shadow:0 1px 5px rgba(120,63,27,.12)}
-#sn-classes-layout .snc-period-tabs .snc-plan-panel{width:100%;min-width:0;min-height:276px}
-#sn-classes-layout .snc-period-tabs .snc-pricing{width:100%!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;min-height:276px}
-#sn-classes-layout .snc-period-tabs .snc-price-card{box-sizing:border-box!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;width:100%!important;min-width:0!important;height:276px!important;min-height:276px!important;margin:0!important;padding:18px!important;border:1px solid #e2d3c1!important;border-radius:12px!important;background:#fff!important;gap:7px!important}
-#sn-classes-layout .snc-period-tabs .snc-price-card h4{margin:0!important;padding:0!important;font-size:16px}
-#sn-classes-layout .snc-period-tabs .snc-price-card .snc-price{margin:0!important;padding:0!important;font-size:26px}
-#sn-classes-layout .snc-period-tabs .snc-price-card .snc-price-note{margin:0!important}
-#sn-classes-layout .snc-period-tabs .snc-price-card .snc-plan-facts{margin:5px 0 0!important;padding:9px 0 0!important;width:100%!important;border-top:1px solid #eee2d8!important}
-#sn-classes-layout .snc-period-tabs .snc-price-card .snc-plan-facts span{line-height:1.55}
-#sn-classes-layout .snc-period-tabs .snc-price-card a.snc-button{box-sizing:border-box!important;flex:0 0 auto!important;display:flex!important;width:100%!important;max-width:100%!important;min-width:0!important;min-height:40px!important;margin:auto 0 0!important;padding:9px 8px!important;border-radius:9px!important;text-align:center!important;white-space:normal!important}
-@media(max-width:720px){#sn-classes-layout .snc-period-tabs .snc-pricing{grid-template-columns:repeat(2,minmax(0,1fr))!important;min-height:0}#sn-classes-layout .snc-period-tabs .snc-plan-panel{min-height:0}}
-@media(max-width:480px){#sn-classes-layout .snc-period-tabs .snc-pricing{grid-template-columns:1fr!important}#sn-classes-layout .snc-period-tabs .snc-price-card{height:auto!important;min-height:250px!important}}
-
+@media(max-width:850px){#sn-classes-layout .snc-grid--four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){#sn-classes-layout .snc-pricing{gap:8px!important}#sn-classes-layout .snc-price-card{padding:12px!important}#sn-classes-layout .snc-price{font-size:23px}}
+@media(max-width:620px){#sn-classes-layout .snc-grid--three,#sn-classes-layout .snc-grid--four,#sn-classes-layout .snc-bullet-grid{grid-template-columns:1fr}#sn-classes-layout .snc-pricing{grid-template-columns:1fr!important}#sn-classes-layout .snc-plan-panel{height:auto;min-height:260px}#sn-classes-layout .snc-price-card{min-height:230px;padding:18px!important}#sn-classes-layout .snc-promotion,#sn-classes-layout .snc-final{flex-direction:column;align-items:flex-start}#sn-classes-layout .snc-levels{grid-template-columns:repeat(3,minmax(0,1fr))}#sn-classes-layout .snc-pricing-cta{justify-content:stretch;flex-wrap:wrap}#sn-classes-layout .snc-pricing-cta .snc-button{width:100%}}
 </style>
 <div id="sn-classes-layout">
   <div class="snc-hero">
@@ -137,76 +104,64 @@
   <div class="snc-section" id="snc-prices">
     <div class="snc-section-head">
       <h3>Plans and pricing</h3>
-      <p>Private Spanish classes. Each class lasts 50 minutes. All prices are in USD.</p>
+      <p>Private Spanish classes · 50 minutes per class · Prices in USD.</p>
     </div>
     <div class="snc-period-tabs">
       <input type="radio" name="snc-billing-period" id="snc-tab-monthly" checked>
       <input type="radio" name="snc-billing-period" id="snc-tab-quarterly">
-      <div class="snc-tabs-bar" role="group" aria-label="Choose billing period">
-        <div class="snc-tab-cell"><label for="snc-tab-monthly">Monthly plans</label></div>
-        <div class="snc-tab-cell"><label for="snc-tab-quarterly">Quarterly plans</label></div>
+      <div class="snc-tabs-bar" style="display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px!important">
+        <label for="snc-tab-monthly" style="display:flex!important;width:100%!important;justify-content:center!important;align-items:center!important">Monthly plans</label>
+        <label for="snc-tab-quarterly" style="display:flex!important;width:100%!important;justify-content:center!important;align-items:center!important">Quarterly plans</label>
       </div>
       <div class="snc-plan-panel snc-panel-monthly">
         <div class="snc-pricing">
-          <div class="snc-price-card">
+          <article class="snc-price-card">
             <span class="snc-plan-label">Private · 50 min</span>
             <h4>Single class</h4>
-            <div class="snc-price">USD 15</div>
-            <span class="snc-price-note">One class</span>
-            <div class="snc-plan-facts"><span>1 class</span><span>USD 15 per class</span></div>
-            <a class="snc-button" href="/contact/">Ask about classes →</a>
-          </div>
-          <div class="snc-price-card">
+            <div class="snc-price-summary"><strong class="snc-price">USD 15</strong><span class="snc-price-period">/ class</span></div>
+            <div class="snc-plan-facts"><span><strong>USD 15</strong> per class · <strong>1</strong> class</span></div>
+            <div class="snc-plan-message">Class duration: 50 minutes</div>
+          </article>
+          <article class="snc-price-card">
             <span class="snc-plan-label">Private · 50 min</span>
             <h4>2 classes per week</h4>
-            <div class="snc-price">USD 100</div>
-            <span class="snc-price-note">Monthly · 4 weeks</span>
-            <div class="snc-plan-facts"><span>8 classes per month</span><span>USD 12.50 per class</span></div>
-            <a class="snc-button" href="/contact/">Ask about classes →</a>
-          </div>
-          <div class="snc-price-card">
+            <div class="snc-price-summary"><strong class="snc-price">USD 100</strong><span class="snc-price-period">/ 4 weeks</span></div>
+            <div class="snc-plan-facts"><span><strong>USD 12.50</strong> per class · <strong>8</strong> classes</span></div>
+            <div class="snc-plan-message">Class duration: 50 minutes</div>
+          </article>
+          <article class="snc-price-card">
             <span class="snc-plan-label">Private · 50 min</span>
             <h4>4 classes per week</h4>
-            <div class="snc-price">USD 180</div>
-            <span class="snc-price-note">Monthly · 4 weeks</span>
-            <div class="snc-plan-facts"><span>16 classes per month</span><span>USD 11.25 per class</span></div>
-            <a class="snc-button" href="/contact/">Ask about classes →</a>
-          </div>
+            <div class="snc-price-summary"><strong class="snc-price">USD 180</strong><span class="snc-price-period">/ 4 weeks</span></div>
+            <div class="snc-plan-facts"><span><strong>USD 11.25</strong> per class · <strong>16</strong> classes</span></div>
+            <div class="snc-plan-message">Class duration: 50 minutes</div>
+          </article>
         </div>
       </div>
       <div class="snc-plan-panel snc-panel-quarterly">
         <div class="snc-pricing">
-          <div class="snc-price-card">
+          <article class="snc-price-card">
             <span class="snc-plan-label">Private · 50 min</span>
             <h4>2 classes per week</h4>
-            <div class="snc-price">USD 280</div>
-            <span class="snc-price-note">Quarterly · 12 weeks</span>
-            <div class="snc-plan-facts"><span>24 classes in 3 months</span><span>USD 11.67 per class</span></div>
-            <a class="snc-button" href="/contact/">Ask about classes →</a>
-          </div>
-          
-          <div class="snc-price-card snc-price-card--highlight">
+            <div class="snc-price-summary"><strong class="snc-price">USD 280</strong><span class="snc-price-period">/ 12 weeks</span></div>
+            <div class="snc-plan-facts"><span><strong>USD 11.67</strong> per class · <strong>24</strong> classes</span></div>
+            <div class="snc-plan-message">Class duration: 50 minutes</div>
+          </article>
+          <article class="snc-price-card">
             <span class="snc-plan-label">Private · 50 min</span>
             <h4>4 classes per week</h4>
-            <div class="snc-price">USD 500</div>
-            <span class="snc-price-note">Quarterly · 12 weeks</span>
-            <div class="snc-plan-facts"><span>48 classes in 3 months</span><span>USD 10.42 per class</span></div>
-            <a class="snc-button" href="/contact/">Ask about classes →</a>
-          </div>
+            <div class="snc-price-summary"><strong class="snc-price">USD 500</strong><span class="snc-price-period">/ 12 weeks</span></div>
+            <div class="snc-plan-facts"><span><strong>USD 10.42</strong> per class · <strong>48</strong> classes</span></div>
+            <div class="snc-plan-message">Class duration: 50 minutes</div>
+          </article>
         </div>
       </div>
     </div>
+    <div class="snc-pricing-cta"><span>Interested in a plan?</span><a class="snc-button" href="/contact/">Ask about classes →</a></div>
     <div class="snc-promotion">
-      <div>
-        <span class="snc-plan-label">Promotion · Private · 50 min</span>
-        <h4>4 × 2 promotion</h4>
-        <p>4 classes per month · 1 class per week · USD 7.50 per class.</p>
-        <p>Available once per month.</p>
-      </div>
-      <div>
-        <div class="snc-promo-price">USD 30</div>
-        <a class="snc-button" href="/contact/">Ask about promotion →</a>
-      </div>
+      <div><span class="snc-plan-label">Promotion · Private · 50 min</span><h4>4 × 2 promotion</h4>
+        <p>4 classes per month · 1 class per week · USD 7.50 per class.</p><p>Available once per month.</p></div>
+      <div><div class="snc-promo-price">USD 30</div><a class="snc-button" href="/contact/">Ask about promotion →</a></div>
     </div>
   </div>
 
