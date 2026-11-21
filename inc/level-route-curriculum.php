@@ -8,7 +8,7 @@ function spanishnova_level_curriculum() {
 Basic nouns|Practice
   Nouns and definite articles|Practice
   Nouns and indefinite articles|Practice
-Basic verbs|Practice
+  Basic verbs|Practice
 Adjectives|Grammar
   Physical descriptions|Vocabulary
 SER|Grammar|ser-presente
