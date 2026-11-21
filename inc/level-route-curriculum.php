@@ -7,6 +7,7 @@ function spanishnova_level_curriculum() {
 ## First sentences
 Basic nouns|Vocabulary|sustantivos-basicos
   Articles|Grammar
+Basic verbs|Vocabulary
 Adjectives|Grammar
   Physical descriptions|Vocabulary
 SER|Grammar|ser-presente
