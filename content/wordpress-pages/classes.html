@@ -1,43 +1,131 @@
-<!-- SpanishNova | Classes | Paste into a WordPress Custom HTML block. Page title is rendered by the theme. -->
-<section class="sn-info-card sn-info-card--lead">
-  <h2>Practice Spanish with a teacher</h2>
-  <p>Use what you learn in SpanishNova during a class focused on speaking, listening and communication. Tell us what you want to practice and we can discuss the next steps.</p>
-  <div class="wp-block-buttons">
-    <div class="wp-block-button">
-      <a class="wp-block-button__link" href="mailto:info@spanishnova.com?subject=SpanishNova%20classes">Ask about classes →</a>
+<!-- SpanishNova Classes. Paste everything into ONE WordPress Custom HTML block. -->
+<!-- IMPORTANT: Pricing and booking information are placeholders. Replace before publishing. -->
+<style>
+#sn-classes-layout{max-width:1100px;margin:0 auto;color:#1f1b18;font:400 15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+#sn-classes-layout *{box-sizing:border-box}
+#sn-classes-layout h2,#sn-classes-layout h3,#sn-classes-layout h4{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#1f1b18;letter-spacing:-.025em;line-height:1.2;margin:0;padding:0;border:0}
+#sn-classes-layout p{font-size:14px;line-height:1.6;max-width:none;color:#5e554e;margin:0 0 12px}
+#sn-classes-layout a{text-decoration:none}
+#sn-classes-layout .snc-hero{display:flex;flex-direction:column;align-items:flex-start;gap:9px;padding:clamp(26px,4vw,43px);background:linear-gradient(120deg,#fff4e8,#fff9f4);border:1px solid #e2d3c1;border-radius:18px;margin-bottom:26px}
+#sn-classes-layout .snc-eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:#b55427}
+#sn-classes-layout .snc-hero h2{font-size:clamp(27px,3.8vw,42px);max-width:670px;font-weight:800}
+#sn-classes-layout .snc-hero p{font-size:16px;max-width:64ch;margin:0 0 4px}
+#sn-classes-layout .snc-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:9px}
+#sn-classes-layout .snc-button,#sn-classes-layout a.snc-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 17px;border:1px solid #f26b2f;border-radius:9px;background:#f26b2f;color:white;font:700 13px/1.35 Inter,system-ui,sans-serif;box-shadow:none;text-decoration:none}
+#sn-classes-layout .snc-button:hover,#sn-classes-layout a.snc-button:hover{color:white;background:#d95924}
+#sn-classes-layout .snc-button--secondary,#sn-classes-layout a.snc-button--secondary{color:#a8481e;background:#fff;border-color:#e2d3c1}
+#sn-classes-layout .snc-button--secondary:hover,#sn-classes-layout a.snc-button--secondary:hover{color:#a8481e;background:#fff1e5}
+#sn-classes-layout .snc-section{margin:26px 0 0}
+#sn-classes-layout .snc-section-head{margin:0 0 15px}
+#sn-classes-layout .snc-section-head h3{font-size:23px;font-weight:800;margin-bottom:5px}
+#sn-classes-layout .snc-section-head p{margin:0}
+#sn-classes-layout .snc-grid{display:grid;gap:12px}
+#sn-classes-layout .snc-grid--three{grid-template-columns:repeat(3,minmax(0,1fr))}
+#sn-classes-layout .snc-grid--four{grid-template-columns:repeat(4,minmax(0,1fr))}
+#sn-classes-layout .snc-card{border:1px solid #e2d3c1;border-radius:13px;padding:19px;background:#fff;min-width:0;margin:0;box-shadow:0 3px 9px rgba(50,26,15,.025)}
+#sn-classes-layout .snc-card h4{font-size:16px;font-weight:750;margin:0 0 8px}
+#sn-classes-layout .snc-card p{font-size:13px;margin:0}
+#sn-classes-layout .snc-step{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:#fff0e6;color:#bd592a;font-weight:800;font-size:13px;margin-bottom:11px}
+#sn-classes-layout .snc-skill-icon{display:inline-flex;align-items:center;justify-content:center;width:37px;height:37px;border-radius:9px;background:#fff0e6;color:#ca5c28;font-size:18px;font-weight:750;margin-bottom:10px}
+#sn-classes-layout .snc-bullet-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+#sn-classes-layout .snc-feature{padding:13px 16px;border:1px solid #e2d3c1;border-radius:11px;background:#fff;display:flex;gap:9px;align-items:flex-start;font-size:13px;color:#574f49}
+#sn-classes-layout .snc-feature:before{content:"✓";color:#cf5a25;font-weight:900}
+#sn-classes-layout .snc-pricing{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#sn-classes-layout .snc-price-card{padding:21px;border:1px solid #e2d3c1;background:#fff;border-radius:14px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-width:0}
+#sn-classes-layout .snc-price-card--highlight{background:#fff8f1;border-color:#f1b18f}
+#sn-classes-layout .snc-plan-label{font-size:11px;letter-spacing:.05em;font-weight:800;color:#b25228;text-transform:uppercase}
+#sn-classes-layout .snc-price-card h4{font-size:18px;font-weight:800}
+#sn-classes-layout .snc-price{font-size:29px;line-height:1.2;font-weight:850;letter-spacing:-.04em;color:#1f1b18}
+#sn-classes-layout .snc-price-note{font-size:12px;color:#6b635b}
+#sn-classes-layout .snc-price-card .snc-button{margin-top:auto;width:100%}
+#sn-classes-layout .snc-price-card p{font-size:13px;min-height:40px}
+#sn-classes-layout .snc-note{margin-top:13px;padding:13px 15px;border-radius:10px;background:#fff8f1;color:#6b635b;font-size:13px;border:1px solid #e2d3c1}
+#sn-classes-layout .snc-levels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));overflow:hidden;border-radius:12px;border:1px solid #e2d3c1}
+#sn-classes-layout .snc-level{padding:15px 11px;background:#fff9f4;border-right:1px solid #e2d3c1}
+#sn-classes-layout .snc-level:last-child{border-right:0}
+#sn-classes-layout .snc-level strong{font-size:17px;display:block}
+#sn-classes-layout .snc-level span{font-size:12px;color:#6b635b}
+#sn-classes-layout .snc-final{margin-top:26px;padding:23px 27px;border-radius:15px;background:#211c19;color:white;display:flex;gap:20px;align-items:center;justify-content:space-between}
+#sn-classes-layout .snc-final h3{color:white;font-size:20px;font-weight:800;margin-bottom:6px}
+#sn-classes-layout .snc-final p{color:#e9dfd7;margin:0}
+#sn-classes-layout .snc-final .snc-button{white-space:nowrap}
+@media(max-width:850px){#sn-classes-layout .snc-grid--four{grid-template-columns:repeat(2,minmax(0,1fr))}#sn-classes-layout .snc-pricing{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){#sn-classes-layout .snc-grid--three,#sn-classes-layout .snc-grid--four,#sn-classes-layout .snc-pricing,#sn-classes-layout .snc-bullet-grid{grid-template-columns:1fr}#sn-classes-layout .snc-levels{grid-template-columns:repeat(3,minmax(0,1fr))}#sn-classes-layout .snc-final{flex-direction:column;align-items:flex-start}#sn-classes-layout .snc-hero{padding:24px}}
+</style>
+<div id="sn-classes-layout">
+  <div class="snc-hero">
+    <span class="snc-eyebrow">Spanish classes</span>
+    <h2>Speak Spanish with a teacher</h2>
+    <p>Practice conversation and work on the Spanish you need. Classes can focus on your level, interests and learning goals.</p>
+    <div class="snc-actions">
+      <a class="snc-button" href="#snc-prices">View class options →</a>
+      <a class="snc-button snc-button--secondary" href="/contact/">Ask about availability</a>
     </div>
   </div>
-</section>
 
-<section class="sn-info-card">
-  <h2>How to get started</h2>
-  <ol>
-    <li><strong>Tell us your level.</strong> If you are unsure, describe what you can do in Spanish.</li>
-    <li><strong>Share your goals.</strong> Tell us whether you want to work on conversation, grammar, vocabulary or another area.</li>
-    <li><strong>Ask about availability.</strong> Contact SpanishNova to discuss class options.</li>
-  </ol>
-</section>
-
-<section class="sn-info-card">
-  <h2>What can you practice?</h2>
-  <ul>
-    <li>Speaking and everyday conversations.</li>
-    <li>Listening and comprehension.</li>
-    <li>Vocabulary for situations you want to discuss.</li>
-    <li>Grammar applied to communication.</li>
-  </ul>
-</section>
-
-<section class="sn-info-card">
-  <h2>Learning resources</h2>
-  <p>You can explore the lessons on SpanishNova before or after a class.</p>
-  <p><a href="/grammar/">Grammar lessons</a> · <a href="/vocabulary/">Vocabulary</a> · <a href="/readings/">Readings</a></p>
-</section>
-
-<section class="sn-info-card">
-  <h2>Questions about classes?</h2>
-  <p>Write to <a href="mailto:info@spanishnova.com">info@spanishnova.com</a> and include your level, goals and availability.</p>
-  <div class="wp-block-buttons">
-    <div class="wp-block-button"><a class="wp-block-button__link" href="/contact/">Contact SpanishNova →</a></div>
+  <div class="snc-section">
+    <div class="snc-section-head"><h3>How to get started</h3><p>Three steps to discuss your classes.</p></div>
+    <div class="snc-grid snc-grid--three">
+      <div class="snc-card"><span class="snc-step">1</span><h4>Tell us your level</h4><p>Describe what you can already do in Spanish.</p></div>
+      <div class="snc-card"><span class="snc-step">2</span><h4>Share your goals</h4><p>Tell us what you want to learn and practice.</p></div>
+      <div class="snc-card"><span class="snc-step">3</span><h4>Discuss scheduling</h4><p>Send your timezone and availability to discuss class options.</p></div>
+    </div>
   </div>
-</section>
+
+  <div class="snc-section">
+    <div class="snc-section-head"><h3>What can you practice?</h3><p>Work on the skills you need for communication.</p></div>
+    <div class="snc-grid snc-grid--four">
+      <div class="snc-card"><span class="snc-skill-icon">◌</span><h4>Speaking</h4><p>Conversation and expression.</p></div>
+      <div class="snc-card"><span class="snc-skill-icon">♫</span><h4>Listening</h4><p>Understanding spoken Spanish.</p></div>
+      <div class="snc-card"><span class="snc-skill-icon">✎</span><h4>Writing</h4><p>Building sentences and texts.</p></div>
+      <div class="snc-card"><span class="snc-skill-icon">▤</span><h4>Reading</h4><p>Reading and comprehension.</p></div>
+    </div>
+    <div class="snc-bullet-grid">
+      <div class="snc-feature">Practice with feedback during lessons.</div>
+      <div class="snc-feature">Vocabulary for situations you want to discuss.</div>
+      <div class="snc-feature">Grammar applied to communication.</div>
+      <div class="snc-feature">Access SpanishNova learning resources.</div>
+    </div>
+  </div>
+
+  <div class="snc-section" id="snc-prices">
+    <div class="snc-section-head"><h3>Classes and prices</h3><p>Review the options below and contact SpanishNova about availability.</p></div>
+    <!-- These three cards are editable examples. Replace names, durations, prices and terms with confirmed offerings. -->
+    <div class="snc-pricing">
+      <div class="snc-price-card">
+        <span class="snc-plan-label">Individual</span><h4>Single class</h4>
+        <p>One lesson with a Spanish teacher.</p>
+        <div class="snc-price">USD —</div><span class="snc-price-note">Price to confirm</span>
+        <a class="snc-button" href="/contact/">Ask about this option →</a>
+      </div>
+      <div class="snc-price-card snc-price-card--highlight">
+        <span class="snc-plan-label">Individual</span><h4>4-class package</h4>
+        <p>An option for regular practice.</p>
+        <div class="snc-price">USD —</div><span class="snc-price-note">Price to confirm</span>
+        <a class="snc-button" href="/contact/">Ask about this option →</a>
+      </div>
+      <div class="snc-price-card">
+        <span class="snc-plan-label">Individual</span><h4>8-class package</h4>
+        <p>An option for continued practice.</p>
+        <div class="snc-price">USD —</div><span class="snc-price-note">Price to confirm</span>
+        <a class="snc-button" href="/contact/">Ask about this option →</a>
+      </div>
+    </div>
+    <p class="snc-note"><strong>Before publishing:</strong> confirm whether these packages are offered and replace the prices and any scheduling terms. They are placeholders, not published rates.</p>
+  </div>
+
+  <div class="snc-section">
+    <div class="snc-section-head"><h3>Your Spanish level</h3><p>Share your current level or ask for help identifying it.</p></div>
+    <div class="snc-levels">
+      <div class="snc-level"><strong>A1</strong><span>Starter</span></div>
+      <div class="snc-level"><strong>A2</strong><span>Beginner</span></div>
+      <div class="snc-level"><strong>B1</strong><span>Intermediate</span></div>
+      <div class="snc-level"><strong>B2</strong><span>Upper-intermediate</span></div>
+      <div class="snc-level"><strong>C1</strong><span>Advanced</span></div>
+    </div>
+  </div>
+  <div class="snc-final">
+    <div><h3>Questions about Spanish classes?</h3><p>Share your level, goals, timezone and availability.</p></div>
+    <a class="snc-button" href="/contact/">Contact SpanishNova →</a>
+  </div>
+</div>
