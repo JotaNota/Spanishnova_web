@@ -16,8 +16,9 @@ Status: editorial working draft (2026-11-21). This document records the current 
 ## A1 · Starter
 
 ### Module 1: First sentences
-- Lesson 1: Basic nouns [Practice]
-  - Articles [Grammar]
+- Lesson 1: Basic nouns [Practice] — grouping lesson
+  - Nouns and definite articles [Practice]
+  - Nouns and indefinite articles [Practice]
 - Lesson 2: Basic verbs [Practice]
 - Lesson 3: Adjectives [Grammar]
   - Physical descriptions [Vocabulary]
