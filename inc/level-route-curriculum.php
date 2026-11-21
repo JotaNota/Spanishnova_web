@@ -6,7 +6,8 @@ function spanishnova_level_curriculum() {
 # A1 Starter
 ## First sentences
 Basic nouns|Practice
-  Articles|Grammar
+  Nouns and definite articles|Practice
+  Nouns and indefinite articles|Practice
 Basic verbs|Practice
 Adjectives|Grammar
   Physical descriptions|Vocabulary
