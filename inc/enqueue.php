@@ -27,6 +27,24 @@ function spanishnova_enqueue_assets() {
         wp_enqueue_style('spanishnova-level-route', get_template_directory_uri() . '/assets/css/level-route.css', ['spanishnova-archives'], '0.1.0');
     }
 
+    if (is_page(['classes', 'donations', 'donate', 'contact'])) {
+        $info_css = get_template_directory() . '/assets/css/info-pages.css';
+        $info_js = get_template_directory() . '/assets/js/info-pages.js';
+        wp_enqueue_style(
+            'spanishnova-info-pages',
+            get_template_directory_uri() . '/assets/css/info-pages.css',
+            ['spanishnova-main'],
+            file_exists($info_css) ? filemtime($info_css) : '0.1.0'
+        );
+        wp_enqueue_script(
+            'spanishnova-info-pages',
+            get_template_directory_uri() . '/assets/js/info-pages.js',
+            [],
+            file_exists($info_js) ? filemtime($info_js) : '0.1.0',
+            true
+        );
+    }
+
     wp_enqueue_script('spanishnova-main', get_template_directory_uri() . '/assets/js/main.js', [], '0.1.0', true);
 }
 add_action('wp_enqueue_scripts', 'spanishnova_enqueue_assets');
