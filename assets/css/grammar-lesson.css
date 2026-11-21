@@ -201,7 +201,7 @@
   font: 700 11px/1.4 Inter, system-ui, sans-serif;
   letter-spacing: .06em;
 }
-.sn-grammar-page .sn-reading-profile-name {
+.sn-grammar-page .sn-post-content .sn-reading-profile-name {
   display: block;
   margin: 0;
   color: #1f1b18;
