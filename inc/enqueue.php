@@ -16,7 +16,7 @@ function spanishnova_enqueue_assets() {
 
     if (is_singular('grammar')) {
         wp_enqueue_style('spanishnova-grammar-lesson', get_template_directory_uri() . '/assets/css/grammar-lesson.css', ['spanishnova-singles'], filemtime(get_template_directory() . '/assets/css/grammar-lesson.css'));
-        wp_enqueue_script('spanishnova-grammar-lesson', get_template_directory_uri() . '/assets/js/grammar-lesson.js', [], '0.1.0', true);
+        wp_enqueue_script('spanishnova-grammar-lesson', get_template_directory_uri() . '/assets/js/grammar-lesson.js', [], filemtime(get_template_directory() . '/assets/js/grammar-lesson.js'), true);
     }
 
     // Load practice lesson components only for posts using their scoped wrapper.
