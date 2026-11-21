@@ -1,5 +1,5 @@
 <!-- SpanishNova Classes. Paste everything into ONE WordPress Custom HTML block. -->
-<!-- IMPORTANT: Pricing and booking information are placeholders. Replace before publishing. -->
+<!-- Class duration: 50 minutes. All prices USD. Promotion: four classes once per month. -->
 <style>
 #sn-classes-layout{max-width:1100px;margin:0 auto;color:#1f1b18;font:400 15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
 #sn-classes-layout *{box-sizing:border-box}
@@ -31,6 +31,21 @@
 #sn-classes-layout .snc-feature{padding:13px 16px;border:1px solid #e2d3c1;border-radius:11px;background:#fff;display:flex;gap:9px;align-items:flex-start;font-size:13px;color:#574f49}
 #sn-classes-layout .snc-feature:before{content:"✓";color:#cf5a25;font-weight:900}
 #sn-classes-layout .snc-pricing{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#sn-classes-layout .snc-period-tabs{border:1px solid #e2d3c1;border-radius:15px;background:#fff;padding:14px}
+#sn-classes-layout .snc-period-tabs>input[type=radio]{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+#sn-classes-layout .snc-tabs-bar{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0 0 14px;background:#f7f5f2;padding:5px;border-radius:10px}
+#sn-classes-layout .snc-tabs-bar label{text-align:center;display:block;cursor:pointer;padding:10px 12px;border-radius:8px;font-size:14px;font-weight:750;color:#6b635b}
+#sn-classes-layout #snc-tab-monthly:checked~.snc-tabs-bar label[for=snc-tab-monthly],#sn-classes-layout #snc-tab-quarterly:checked~.snc-tabs-bar label[for=snc-tab-quarterly]{background:#fff;color:#1f1b18;box-shadow:0 1px 5px rgba(0,0,0,.08)}
+#sn-classes-layout #snc-tab-monthly:focus-visible~.snc-tabs-bar label[for=snc-tab-monthly],#sn-classes-layout #snc-tab-quarterly:focus-visible~.snc-tabs-bar label[for=snc-tab-quarterly]{outline:2px solid #f26b2f;outline-offset:2px}
+#sn-classes-layout .snc-plan-panel{display:none}
+#sn-classes-layout #snc-tab-monthly:checked~.snc-panel-monthly,#sn-classes-layout #snc-tab-quarterly:checked~.snc-panel-quarterly{display:block}
+#sn-classes-layout .snc-plan-facts{padding-top:10px;margin-top:auto;width:100%;border-top:1px solid #eee2d8}
+#sn-classes-layout .snc-plan-facts span{display:block;font-size:13px;color:#655d56;line-height:1.8}
+#sn-classes-layout .snc-promotion{display:flex;align-items:center;justify-content:space-between;gap:18px;border:1px solid #e2d3c1;border-radius:14px;background:#fff8f1;padding:23px;margin-top:16px}
+#sn-classes-layout .snc-promotion h4{font-size:19px;font-weight:800;margin:4px 0 7px}
+#sn-classes-layout .snc-promo-price{font-size:28px;font-weight:850;line-height:1.2;letter-spacing:-.035em;white-space:nowrap}
+#sn-classes-layout .snc-promotion .snc-button{white-space:nowrap}
+
 #sn-classes-layout .snc-price-card{padding:21px;border:1px solid #e2d3c1;background:#fff;border-radius:14px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-width:0}
 #sn-classes-layout .snc-price-card--highlight{background:#fff8f1;border-color:#f1b18f}
 #sn-classes-layout .snc-plan-label{font-size:11px;letter-spacing:.05em;font-weight:800;color:#b25228;text-transform:uppercase}
@@ -38,7 +53,7 @@
 #sn-classes-layout .snc-price{font-size:29px;line-height:1.2;font-weight:850;letter-spacing:-.04em;color:#1f1b18}
 #sn-classes-layout .snc-price-note{font-size:12px;color:#6b635b}
 #sn-classes-layout .snc-price-card .snc-button{margin-top:auto;width:100%}
-#sn-classes-layout .snc-price-card p{font-size:13px;min-height:40px}
+#sn-classes-layout .snc-price-card p{font-size:13px;min-height:0}
 #sn-classes-layout .snc-note{margin-top:13px;padding:13px 15px;border-radius:10px;background:#fff8f1;color:#6b635b;font-size:13px;border:1px solid #e2d3c1}
 #sn-classes-layout .snc-levels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));overflow:hidden;border-radius:12px;border:1px solid #e2d3c1}
 #sn-classes-layout .snc-level{padding:15px 11px;background:#fff9f4;border-right:1px solid #e2d3c1}
@@ -50,7 +65,7 @@
 #sn-classes-layout .snc-final p{color:#e9dfd7;margin:0}
 #sn-classes-layout .snc-final .snc-button{white-space:nowrap}
 @media(max-width:850px){#sn-classes-layout .snc-grid--four{grid-template-columns:repeat(2,minmax(0,1fr))}#sn-classes-layout .snc-pricing{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:620px){#sn-classes-layout .snc-grid--three,#sn-classes-layout .snc-grid--four,#sn-classes-layout .snc-pricing,#sn-classes-layout .snc-bullet-grid{grid-template-columns:1fr}#sn-classes-layout .snc-levels{grid-template-columns:repeat(3,minmax(0,1fr))}#sn-classes-layout .snc-final{flex-direction:column;align-items:flex-start}#sn-classes-layout .snc-hero{padding:24px}}
+@media(max-width:620px){#sn-classes-layout .snc-grid--three,#sn-classes-layout .snc-grid--four,#sn-classes-layout .snc-pricing,#sn-classes-layout .snc-bullet-grid{grid-template-columns:1fr}#sn-classes-layout .snc-levels{grid-template-columns:repeat(3,minmax(0,1fr))}#sn-classes-layout .snc-final{flex-direction:column;align-items:flex-start}#sn-classes-layout .snc-hero{padding:24px}#sn-classes-layout .snc-promotion{flex-direction:column;align-items:flex-start}#sn-classes-layout .snc-promotion .snc-button{width:100%}}
 </style>
 <div id="sn-classes-layout">
   <div class="snc-hero">
@@ -89,29 +104,70 @@
   </div>
 
   <div class="snc-section" id="snc-prices">
-    <div class="snc-section-head"><h3>Classes and prices</h3><p>Review the options below and contact SpanishNova about availability.</p></div>
-    <!-- These three cards are editable examples. Replace names, durations, prices and terms with confirmed offerings. -->
-    <div class="snc-pricing">
-      <div class="snc-price-card">
-        <span class="snc-plan-label">Individual</span><h4>Single class</h4>
-        <p>One lesson with a Spanish teacher.</p>
-        <div class="snc-price">USD —</div><span class="snc-price-note">Price to confirm</span>
-        <a class="snc-button" href="/contact/">Ask about this option →</a>
+    <div class="snc-section-head">
+      <h3>Plans and pricing</h3>
+      <p>Private Spanish classes. Each class lasts 50 minutes. All prices are in USD.</p>
+    </div>
+    <div class="snc-period-tabs">
+      <input type="radio" name="snc-billing-period" id="snc-tab-monthly" checked>
+      <input type="radio" name="snc-billing-period" id="snc-tab-quarterly">
+      <div class="snc-tabs-bar" role="group" aria-label="Choose billing period">
+        <label for="snc-tab-monthly">Monthly plans</label>
+        <label for="snc-tab-quarterly">Quarterly plans</label>
       </div>
-      <div class="snc-price-card snc-price-card--highlight">
-        <span class="snc-plan-label">Individual</span><h4>4-class package</h4>
-        <p>An option for regular practice.</p>
-        <div class="snc-price">USD —</div><span class="snc-price-note">Price to confirm</span>
-        <a class="snc-button" href="/contact/">Ask about this option →</a>
+      <div class="snc-plan-panel snc-panel-monthly">
+        <div class="snc-pricing">
+          <div class="snc-price-card">
+            <span class="snc-plan-label">Private · 50 min</span>
+            <h4>Single class</h4>
+            <div class="snc-price">USD 15</div>
+            <span class="snc-price-note">One class</span>
+            <div class="snc-plan-facts"><span>1 class</span><span>USD 15 per class</span></div>
+            <a class="snc-button" href="/contact/">Ask about classes →</a>
+          </div>
+          <div class="snc-price-card">
+            <span class="snc-plan-label">Private · 50 min</span>
+            <h4>2 classes per week</h4>
+            <div class="snc-price">USD 100</div>
+            <span class="snc-price-note">Monthly · 4 weeks</span>
+            <div class="snc-plan-facts"><span>8 classes per month</span><span>USD 12.50 per class</span></div>
+            <a class="snc-button" href="/contact/">Ask about classes →</a>
+          </div>
+          <div class="snc-price-card snc-price-card--highlight">
+            <span class="snc-plan-label">Private · 50 min</span>
+            <h4>4 classes per week</h4>
+            <div class="snc-price">USD 170</div>
+            <span class="snc-price-note">Monthly · 4 weeks</span>
+            <div class="snc-plan-facts"><span>16 classes per month</span><span>USD 10.63 per class</span></div>
+            <a class="snc-button" href="/contact/">Ask about classes →</a>
+          </div>
+        </div>
       </div>
-      <div class="snc-price-card">
-        <span class="snc-plan-label">Individual</span><h4>8-class package</h4>
-        <p>An option for continued practice.</p>
-        <div class="snc-price">USD —</div><span class="snc-price-note">Price to confirm</span>
-        <a class="snc-button" href="/contact/">Ask about this option →</a>
+      <div class="snc-plan-panel snc-panel-quarterly">
+        <div class="snc-pricing">
+          <div class="snc-price-card snc-price-card--highlight">
+            <span class="snc-plan-label">Private · 50 min</span>
+            <h4>4 classes per week</h4>
+            <div class="snc-price">USD 500</div>
+            <span class="snc-price-note">Quarterly · 12 weeks</span>
+            <div class="snc-plan-facts"><span>48 classes in 3 months</span><span>USD 10.42 per class</span></div>
+            <a class="snc-button" href="/contact/">Ask about classes →</a>
+          </div>
+        </div>
       </div>
     </div>
-    <p class="snc-note"><strong>Before publishing:</strong> confirm whether these packages are offered and replace the prices and any scheduling terms. They are placeholders, not published rates.</p>
+    <div class="snc-promotion">
+      <div>
+        <span class="snc-plan-label">Promotion · Private · 50 min</span>
+        <h4>4 × 2 promotion</h4>
+        <p>4 classes per month · 1 class per week · USD 7.50 per class.</p>
+        <p>Available once per month.</p>
+      </div>
+      <div>
+        <div class="snc-promo-price">USD 30</div>
+        <a class="snc-button" href="/contact/">Ask about promotion →</a>
+      </div>
+    </div>
   </div>
 
   <div class="snc-section">
