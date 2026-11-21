@@ -78,6 +78,25 @@
 #sn-classes-layout .snc-period-tabs .snc-price-card--highlight{background:#fff;border-color:#e2d3c1}
 @media(max-width:720px){#sn-classes-layout .snc-period-tabs .snc-pricing{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){#sn-classes-layout .snc-period-tabs .snc-pricing{grid-template-columns:1fr;min-height:0}#sn-classes-layout .snc-period-tabs .snc-plan-panel{min-height:0}#sn-classes-layout .snc-period-tabs .snc-price-card{min-height:0}}
+
+/* Pricing layout: overrides theme's generic paragraph/label/card rules. */
+#sn-classes-layout .snc-period-tabs{width:100%;min-width:0;display:block;padding:18px;border-radius:15px}
+#sn-classes-layout .snc-period-tabs .snc-tabs-bar{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;grid-auto-flow:column!important;width:100%!important;gap:6px!important;align-items:stretch!important;margin:0 0 16px!important;padding:6px!important;border-radius:11px;background:#fff5ec}
+#sn-classes-layout .snc-tabs-bar .snc-tab-cell{display:block!important;width:100%!important;min-width:0;margin:0!important;padding:0!important}
+#sn-classes-layout .snc-tabs-bar .snc-tab-cell label{display:flex!important;width:100%!important;min-width:0!important;min-height:42px;align-items:center!important;justify-content:center!important;margin:0!important;padding:10px 8px!important;border:0!important;border-radius:8px!important;background:transparent;color:#9b4b25;cursor:pointer;white-space:normal}
+#sn-classes-layout #snc-tab-monthly:checked~.snc-tabs-bar label[for=snc-tab-monthly],#sn-classes-layout #snc-tab-quarterly:checked~.snc-tabs-bar label[for=snc-tab-quarterly]{background:#fff!important;color:#1f1b18!important;box-shadow:0 1px 5px rgba(120,63,27,.12)}
+#sn-classes-layout .snc-period-tabs .snc-plan-panel{width:100%;min-width:0;min-height:276px}
+#sn-classes-layout .snc-period-tabs .snc-pricing{width:100%!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;min-height:276px}
+#sn-classes-layout .snc-period-tabs .snc-price-card{box-sizing:border-box!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;width:100%!important;min-width:0!important;height:276px!important;min-height:276px!important;margin:0!important;padding:18px!important;border:1px solid #e2d3c1!important;border-radius:12px!important;background:#fff!important;gap:7px!important}
+#sn-classes-layout .snc-period-tabs .snc-price-card h4{margin:0!important;padding:0!important;font-size:16px}
+#sn-classes-layout .snc-period-tabs .snc-price-card .snc-price{margin:0!important;padding:0!important;font-size:26px}
+#sn-classes-layout .snc-period-tabs .snc-price-card .snc-price-note{margin:0!important}
+#sn-classes-layout .snc-period-tabs .snc-price-card .snc-plan-facts{margin:5px 0 0!important;padding:9px 0 0!important;width:100%!important;border-top:1px solid #eee2d8!important}
+#sn-classes-layout .snc-period-tabs .snc-price-card .snc-plan-facts span{line-height:1.55}
+#sn-classes-layout .snc-period-tabs .snc-price-card a.snc-button{box-sizing:border-box!important;flex:0 0 auto!important;display:flex!important;width:100%!important;max-width:100%!important;min-width:0!important;min-height:40px!important;margin:auto 0 0!important;padding:9px 8px!important;border-radius:9px!important;text-align:center!important;white-space:normal!important}
+@media(max-width:720px){#sn-classes-layout .snc-period-tabs .snc-pricing{grid-template-columns:repeat(2,minmax(0,1fr))!important;min-height:0}#sn-classes-layout .snc-period-tabs .snc-plan-panel{min-height:0}}
+@media(max-width:480px){#sn-classes-layout .snc-period-tabs .snc-pricing{grid-template-columns:1fr!important}#sn-classes-layout .snc-period-tabs .snc-price-card{height:auto!important;min-height:250px!important}}
+
 </style>
 <div id="sn-classes-layout">
   <div class="snc-hero">
@@ -124,8 +143,8 @@
       <input type="radio" name="snc-billing-period" id="snc-tab-monthly" checked>
       <input type="radio" name="snc-billing-period" id="snc-tab-quarterly">
       <div class="snc-tabs-bar" role="group" aria-label="Choose billing period">
-        <label for="snc-tab-monthly">Monthly plans</label>
-        <label for="snc-tab-quarterly">Quarterly plans</label>
+        <div class="snc-tab-cell"><label for="snc-tab-monthly">Monthly plans</label></div>
+        <div class="snc-tab-cell"><label for="snc-tab-quarterly">Quarterly plans</label></div>
       </div>
       <div class="snc-plan-panel snc-panel-monthly">
         <div class="snc-pricing">
