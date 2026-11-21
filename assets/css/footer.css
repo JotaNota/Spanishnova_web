@@ -44,8 +44,9 @@
 }
 .sn-contact-options {
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   align-items: stretch;
+  min-width: 178px;
 }
 .sn-contact-options:not([hidden]) { display: flex; }
 .sn-contact-options[hidden] { display: none; }
@@ -53,17 +54,31 @@
   display: flex;
   gap: 10px;
   align-items: center;
-  min-height: 44px;
-  padding: 10px 16px;
+  min-height: 54px;
+  padding: 13px 20px;
   border: 1px solid #e2d3c1;
   border-radius: 12px;
   background: #fff;
   color: #1f1b18;
+  font-size: 15px;
   font-weight: 600;
+  text-align: left;
+  font-family: inherit;
+  cursor: pointer;
   text-decoration: none;
   box-shadow: 0 4px 18px rgba(0,0,0,.12);
 }
 .sn-contact-link:hover, .sn-contact-link:focus-visible { border-color: #f26b2f; }
+.sn-contact-link[href*="wa.me"] {
+  background: #25d366;
+  border-color: #25d366;
+  color: #fff;
+}
+.sn-contact-link[href*="wa.me"]:hover,
+.sn-contact-link[href*="wa.me"]:focus-visible {
+  background: #1da851;
+  border-color: #1da851;
+}
 .sn-contact-toggle {
   display: grid;
   place-items: center;
@@ -91,7 +106,8 @@
 
 /* Inline contact form */
 .sn-contact-panel {
-  width: min(340px, calc(100vw - 32px));
+  box-sizing: border-box;
+  width: min(390px, calc(100vw - 32px));
   max-height: min(680px, calc(100dvh - 110px));
   overflow-y: auto;
   padding: 20px;
