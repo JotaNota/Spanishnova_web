@@ -81,8 +81,15 @@ if (isset($curricula[$level_slug])) {
     if ($slug !== '') {
       return $posts_by_slug[$post_type . ':' . $slug] ?? null;
     }
-    // When no slug is supplied, only an unambiguous exact title match counts.
-    $matches = $posts_by_title[$post_type . ':' . sanitize_title($entry['title'])] ?? [];
+    // For curriculum entries without an explicit slug, use the WordPress
+    // slug generated from the displayed lesson title (e.g. Basic verbs -> basic-verbs).
+    // An exact title match remains a fallback. Never link to an unrelated post.
+    $generated_slug = sanitize_title($entry['title']);
+    $slug_post = $posts_by_slug[$post_type . ':' . $generated_slug] ?? null;
+    if ($slug_post) {
+      return $slug_post;
+    }
+    $matches = $posts_by_title[$post_type . ':' . $generated_slug] ?? [];
     return count($matches) === 1 ? $matches[0] : null;
   };
 
