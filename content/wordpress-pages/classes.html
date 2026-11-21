@@ -87,6 +87,12 @@
 #sn-classes-layout .snc-period-tabs .snc-billing-label{display:block;margin:4px 0 5px;color:#6b635b;font:700 10px/1.3 Inter,system-ui,sans-serif;letter-spacing:.045em;text-transform:uppercase}
 #sn-classes-layout .snc-period-tabs .snc-price-card h4{min-height:0!important;margin:8px 0 10px!important}
 #sn-classes-layout .snc-period-tabs .snc-recovery-badge{display:none!important}
+
+/* WordPress wpautop-safe tabs: labels are adjacent in one HTML line. */
+#sn-classes-layout .snc-period-tabs .snc-tabs-bar{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-auto-flow:column!important;gap:6px!important;align-items:stretch!important;width:100%!important}
+#sn-classes-layout .snc-period-tabs .snc-tabs-bar>label{display:flex!important;position:static!important;flex:unset!important;grid-row:1!important;width:auto!important;min-width:0!important;align-items:center!important;justify-content:center!important;float:none!important;margin:0!important;padding:10px 8px!important}
+#sn-classes-layout .snc-period-tabs .snc-tabs-bar>label[for=snc-tab-monthly]{grid-column:1!important}
+#sn-classes-layout .snc-period-tabs .snc-tabs-bar>label[for=snc-tab-quarterly]{grid-column:2!important}
 </style>
 <div id="sn-classes-layout">
   <div class="snc-hero">
@@ -132,10 +138,7 @@
     <div class="snc-period-tabs">
       <input type="radio" name="snc-billing-period" id="snc-tab-monthly" checked>
       <input type="radio" name="snc-billing-period" id="snc-tab-quarterly">
-      <div class="snc-tabs-bar" role="group" aria-label="Billing period">
-        <label for="snc-tab-monthly">Monthly plans</label>
-        <label for="snc-tab-quarterly">Quarterly plans</label>
-      </div>
+      <div class="snc-tabs-bar" role="group" aria-label="Billing period"><label for="snc-tab-monthly">Monthly plans</label><label for="snc-tab-quarterly">Quarterly plans</label></div>
       <div class="snc-plan-panel snc-panel-monthly">
         <div class="snc-pricing">
           <article class="snc-price-card">
