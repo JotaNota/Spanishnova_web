@@ -64,6 +64,25 @@
 @media(max-width:850px){#sn-classes-layout .snc-grid--four{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:720px){#sn-classes-layout .snc-pricing{gap:8px!important}#sn-classes-layout .snc-price-card{padding:12px!important}#sn-classes-layout .snc-price{font-size:23px}}
 @media(max-width:620px){#sn-classes-layout .snc-grid--three,#sn-classes-layout .snc-grid--four,#sn-classes-layout .snc-bullet-grid{grid-template-columns:1fr}#sn-classes-layout .snc-pricing{grid-template-columns:1fr!important}#sn-classes-layout .snc-plan-panel{height:auto;min-height:260px}#sn-classes-layout .snc-price-card{min-height:230px;padding:18px!important}#sn-classes-layout .snc-promotion,#sn-classes-layout .snc-final{flex-direction:column;align-items:flex-start}#sn-classes-layout .snc-levels{grid-template-columns:repeat(3,minmax(0,1fr))}#sn-classes-layout .snc-pricing-cta{justify-content:stretch;flex-wrap:wrap}#sn-classes-layout .snc-pricing-cta .snc-button{width:100%}}
+
+/* Pricing cards follow the supplied reference: price + USD/period + bold per-class details. */
+#sn-classes-layout .snc-period-tabs .snc-tabs-bar{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px!important;width:100%!important}
+#sn-classes-layout .snc-period-tabs .snc-tabs-bar>label{display:flex!important;justify-content:center!important;align-items:center!important;width:100%!important;margin:0!important;float:none!important;min-width:0!important;padding:9px 12px!important}
+#sn-classes-layout .snc-period-tabs .snc-plan-panel{height:244px!important;min-height:244px!important}
+#sn-classes-layout .snc-period-tabs .snc-pricing{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;width:100%!important;height:100%!important}
+#sn-classes-layout .snc-period-tabs .snc-price-card{height:244px!important;min-height:244px!important;padding:20px!important;border:1px solid #e2d3c1!important;border-radius:13px!important;background:#fff!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;box-shadow:none!important}
+#sn-classes-layout .snc-period-tabs .snc-price-card .snc-plan-label{display:block;font-size:11px!important;color:#b84f20!important;font-weight:800!important;letter-spacing:.045em}
+#sn-classes-layout .snc-period-tabs .snc-price-card h4{margin:8px 0 14px!important;min-height:37px!important;font-size:17px!important;font-weight:800!important;line-height:1.2!important}
+#sn-classes-layout .snc-period-tabs .snc-price-summary{display:flex!important;align-items:baseline!important;flex-direction:row!important;flex-wrap:wrap!important;gap:4px 7px!important;margin:0 0 7px!important}
+#sn-classes-layout .snc-period-tabs .snc-price-summary .snc-price{font-size:29px!important;line-height:1.1!important;font-weight:850!important;color:#151b48!important}
+#sn-classes-layout .snc-period-tabs .snc-price-summary .snc-price-period{font-size:12px!important;color:#626c99!important;white-space:nowrap}
+#sn-classes-layout .snc-period-tabs .snc-class-breakdown{margin:0!important;padding:0!important;font-size:12px!important;line-height:1.55!important;color:#42528e!important}
+#sn-classes-layout .snc-period-tabs .snc-class-breakdown strong{font-weight:800!important;color:#273e90!important}
+#sn-classes-layout .snc-period-tabs .snc-recovery-badge{display:flex;align-items:center;gap:8px;margin-top:auto;padding:9px 11px;border-radius:100px;background:#f4eae2;color:#b54c22;font-weight:700;font-size:11px;line-height:1.25}
+#sn-classes-layout .snc-period-tabs .snc-recovery-icon{flex:0 0 18px;width:18px;height:18px;border:1.5px solid #f26b2f;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;color:#f26b2f}
+@media(max-width:720px){#sn-classes-layout .snc-period-tabs .snc-price-card{padding:13px!important}}
+@media(max-width:620px){#sn-classes-layout .snc-period-tabs .snc-pricing{grid-template-columns:1fr!important;height:auto!important}#sn-classes-layout .snc-period-tabs .snc-plan-panel{height:auto!important;min-height:0!important}#sn-classes-layout .snc-period-tabs .snc-price-card{height:220px!important;min-height:220px!important;padding:18px!important}}
+
 </style>
 <div id="sn-classes-layout">
   <div class="snc-hero">
@@ -104,50 +123,60 @@
   <div class="snc-section" id="snc-prices">
     <div class="snc-section-head">
       <h3>Plans and pricing</h3>
-      <p>Private Spanish classes · 50 minutes per class · Prices in USD.</p>
+      <p>Private Spanish classes. Each class lasts 50 minutes. All prices are in USD.</p>
     </div>
     <div class="snc-period-tabs">
       <input type="radio" name="snc-billing-period" id="snc-tab-monthly" checked>
       <input type="radio" name="snc-billing-period" id="snc-tab-quarterly">
-      <div class="snc-tabs-bar" style="display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px!important">
-        <label for="snc-tab-monthly" style="display:flex!important;width:100%!important;justify-content:center!important;align-items:center!important">Monthly plans</label>
-        <label for="snc-tab-quarterly" style="display:flex!important;width:100%!important;justify-content:center!important;align-items:center!important">Quarterly plans</label>
+      <div class="snc-tabs-bar" role="group" aria-label="Billing period">
+        <label for="snc-tab-monthly">Monthly plans</label>
+        <label for="snc-tab-quarterly">Quarterly plans</label>
       </div>
       <div class="snc-plan-panel snc-panel-monthly">
         <div class="snc-pricing">
           <article class="snc-price-card">
-            <span class="snc-plan-label">Private</span>
+            <span class="snc-plan-label">PARTICULAR</span>
             <h4>Single class</h4>
-            <div class="snc-price-summary"><strong class="snc-price">USD 15</strong><span class="snc-price-period">/ class</span></div>
-            <div class="snc-plan-facts"><span><strong>USD 15</strong> per class · <strong>1</strong> class</span></div>
+            
+            <div class="snc-price-summary"><strong class="snc-price">$15</strong><span class="snc-price-period">USD / class</span></div>
+            <p class="snc-class-breakdown"><strong>$15.00 por clase</strong> · <strong>1 class</strong></p>
+            
           </article>
           <article class="snc-price-card">
-            <span class="snc-plan-label">Private</span>
+            <span class="snc-plan-label">PARTICULAR</span>
             <h4>2 classes per week</h4>
-            <div class="snc-price-summary"><strong class="snc-price">USD 100</strong><span class="snc-price-period">/ month</span></div>
-            <div class="snc-plan-facts"><span><strong>USD 12.50</strong> per class · <strong>8</strong> classes</span></div>
+            
+            <div class="snc-price-summary"><strong class="snc-price">$100</strong><span class="snc-price-period">USD / 4 weeks</span></div>
+            <p class="snc-class-breakdown"><strong>$12.50 por clase</strong> · <strong>8 classes</strong></p>
+            
           </article>
           <article class="snc-price-card">
-            <span class="snc-plan-label">Private</span>
+            <span class="snc-plan-label">PARTICULAR</span>
             <h4>4 classes per week</h4>
-            <div class="snc-price-summary"><strong class="snc-price">USD 180</strong><span class="snc-price-period">/ month</span></div>
-            <div class="snc-plan-facts"><span><strong>USD 11.25</strong> per class · <strong>16</strong> classes</span></div>
+            
+            <div class="snc-price-summary"><strong class="snc-price">$180</strong><span class="snc-price-period">USD / 4 weeks</span></div>
+            <p class="snc-class-breakdown"><strong>$11.25 por clase</strong> · <strong>16 classes</strong></p>
+            <div class="snc-recovery-badge"><span class="snc-recovery-icon" aria-hidden="true">↻</span> Incluye 2 recuperaciones por período</div>
           </article>
         </div>
       </div>
       <div class="snc-plan-panel snc-panel-quarterly">
         <div class="snc-pricing">
           <article class="snc-price-card">
-            <span class="snc-plan-label">Private</span>
+            <span class="snc-plan-label">PARTICULAR</span>
             <h4>2 classes per week</h4>
-            <div class="snc-price-summary"><strong class="snc-price">USD 280</strong><span class="snc-price-period">/ 3 months</span></div>
-            <div class="snc-plan-facts"><span><strong>USD 11.67</strong> per class · <strong>24</strong> classes</span></div>
+            
+            <div class="snc-price-summary"><strong class="snc-price">$280</strong><span class="snc-price-period">USD / 12 weeks</span></div>
+            <p class="snc-class-breakdown"><strong>$11.67 por clase</strong> · <strong>24 classes</strong></p>
+            
           </article>
           <article class="snc-price-card">
-            <span class="snc-plan-label">Private</span>
+            <span class="snc-plan-label">PARTICULAR</span>
             <h4>4 classes per week</h4>
-            <div class="snc-price-summary"><strong class="snc-price">USD 500</strong><span class="snc-price-period">/ 3 months</span></div>
-            <div class="snc-plan-facts"><span><strong>USD 10.42</strong> per class · <strong>48</strong> classes</span></div>
+            
+            <div class="snc-price-summary"><strong class="snc-price">$500</strong><span class="snc-price-period">USD / 12 weeks</span></div>
+            <p class="snc-class-breakdown"><strong>$10.42 por clase</strong> · <strong>48 classes</strong></p>
+            
           </article>
         </div>
       </div>
