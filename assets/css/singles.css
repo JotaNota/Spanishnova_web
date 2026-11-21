@@ -375,3 +375,60 @@ body.single-conversations {
     overflow-x: auto;
   }
 }
+
+/* Grammar lesson ending */
+.sn-lesson-end { margin: 42px 0 30px; }
+.sn-lesson-complete {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 24px;
+  border: 1px solid #e2d3c1;
+  border-radius: 12px;
+  background: #fff8f1;
+}
+.sn-lesson-check {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ffdec2;
+  color: #c95717;
+  font-size: 25px;
+  font-weight: 700;
+}
+.sn-lesson-complete h2 {
+  margin: 0 0 6px;
+  padding: 0;
+  border: 0;
+  color: #1f1b18;
+  font-size: 22px;
+}
+.sn-lesson-complete p { margin: 0; color: #6b635b; font-size: 14px; }
+.sn-lesson-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.sn-end-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 10px 20px;
+  border: 1px solid #c9bdb3;
+  border-radius: 9px;
+  background: #fff;
+  color: #1f1b18;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sn-end-button:hover { border-color: #f26b2f; }
+.sn-end-button:focus-visible { outline: 2px solid #f26b2f; outline-offset: 3px; }
+.sn-end-primary { background: #f26b2f; border-color: #f26b2f; color: #fff; }
+.sn-end-primary:hover { background: #df5920; color: #fff; }
+@media (max-width: 600px) {
+  .sn-lesson-actions { flex-direction: column; }
+  .sn-end-button { width: 100%; box-sizing: border-box; }
+}
