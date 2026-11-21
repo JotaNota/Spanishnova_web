@@ -66,6 +66,18 @@
 #sn-classes-layout .snc-final .snc-button{white-space:nowrap}
 @media(max-width:850px){#sn-classes-layout .snc-grid--four{grid-template-columns:repeat(2,minmax(0,1fr))}#sn-classes-layout .snc-pricing{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){#sn-classes-layout .snc-grid--three,#sn-classes-layout .snc-grid--four,#sn-classes-layout .snc-pricing,#sn-classes-layout .snc-bullet-grid{grid-template-columns:1fr}#sn-classes-layout .snc-levels{grid-template-columns:repeat(3,minmax(0,1fr))}#sn-classes-layout .snc-final{flex-direction:column;align-items:flex-start}#sn-classes-layout .snc-hero{padding:24px}#sn-classes-layout .snc-promotion{flex-direction:column;align-items:flex-start}#sn-classes-layout .snc-promotion .snc-button{width:100%}}
+
+/* Pricing tabs: force side-by-side layout even with WordPress label styles. */
+#sn-classes-layout .snc-tabs-bar{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:stretch;justify-content:stretch;width:100%;background:#fff5ec}
+#sn-classes-layout .snc-tabs-bar label{display:flex!important;align-items:center;justify-content:center;flex:1 1 50%;width:50%;min-width:0;float:none!important;margin:0!important;text-align:center;white-space:nowrap;color:#9b4b25}
+#sn-classes-layout #snc-tab-monthly:checked~.snc-tabs-bar label[for=snc-tab-monthly],#sn-classes-layout #snc-tab-quarterly:checked~.snc-tabs-bar label[for=snc-tab-quarterly]{background:#fff;color:#1f1b18;box-shadow:0 1px 4px rgba(120,63,27,.12)}
+/* Both panels reserve the same height and keep a three-column card grid. */
+#sn-classes-layout .snc-period-tabs .snc-plan-panel{min-height:300px}
+#sn-classes-layout .snc-period-tabs .snc-pricing{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;min-height:300px}
+#sn-classes-layout .snc-period-tabs .snc-price-card{height:100%;min-height:300px;background:#fff;border:1px solid #e2d3c1}
+#sn-classes-layout .snc-period-tabs .snc-price-card--highlight{background:#fff;border-color:#e2d3c1}
+@media(max-width:720px){#sn-classes-layout .snc-period-tabs .snc-pricing{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){#sn-classes-layout .snc-period-tabs .snc-pricing{grid-template-columns:1fr;min-height:0}#sn-classes-layout .snc-period-tabs .snc-plan-panel{min-height:0}#sn-classes-layout .snc-period-tabs .snc-price-card{min-height:0}}
 </style>
 <div id="sn-classes-layout">
   <div class="snc-hero">
@@ -133,18 +145,27 @@
             <div class="snc-plan-facts"><span>8 classes per month</span><span>USD 12.50 per class</span></div>
             <a class="snc-button" href="/contact/">Ask about classes →</a>
           </div>
-          <div class="snc-price-card snc-price-card--highlight">
+          <div class="snc-price-card">
             <span class="snc-plan-label">Private · 50 min</span>
             <h4>4 classes per week</h4>
-            <div class="snc-price">USD 170</div>
+            <div class="snc-price">USD 180</div>
             <span class="snc-price-note">Monthly · 4 weeks</span>
-            <div class="snc-plan-facts"><span>16 classes per month</span><span>USD 10.63 per class</span></div>
+            <div class="snc-plan-facts"><span>16 classes per month</span><span>USD 11.25 per class</span></div>
             <a class="snc-button" href="/contact/">Ask about classes →</a>
           </div>
         </div>
       </div>
       <div class="snc-plan-panel snc-panel-quarterly">
         <div class="snc-pricing">
+          <div class="snc-price-card">
+            <span class="snc-plan-label">Private · 50 min</span>
+            <h4>2 classes per week</h4>
+            <div class="snc-price">USD 280</div>
+            <span class="snc-price-note">Quarterly · 12 weeks</span>
+            <div class="snc-plan-facts"><span>24 classes in 3 months</span><span>USD 11.67 per class</span></div>
+            <a class="snc-button" href="/contact/">Ask about classes →</a>
+          </div>
+          
           <div class="snc-price-card snc-price-card--highlight">
             <span class="snc-plan-label">Private · 50 min</span>
             <h4>4 classes per week</h4>
