@@ -1,43 +1,38 @@
-<!-- SpanishNova Contact. Paste the whole fragment into ONE WordPress Custom HTML block. -->
+<!-- SpanishNova Contact. Paste this fragment into ONE WordPress Custom HTML block. -->
 <style>
 #sn-contact-layout{max-width:1040px;margin:0 auto;color:#1f1b18;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:16px}
 #sn-contact-layout *{box-sizing:border-box}
-#sn-contact-layout .sn-contact-hero{padding:clamp(24px,4vw,42px);border:1px solid #e2d3c1;border-radius:18px;background:#fff8f1;margin:0 0 16px}
-#sn-contact-layout .sn-contact-eyebrow{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#b94f21;font-weight:800;margin:0 0 9px}
-#sn-contact-layout h2,#sn-contact-layout h3{padding:0;margin:0 0 12px;border:0;background:none;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#1f1b18;letter-spacing:-.025em;line-height:1.25}
-#sn-contact-layout h2{font-size:clamp(25px,3.4vw,34px);font-weight:800}
-#sn-contact-layout h3{font-size:19px;font-weight:800}
+#sn-contact-layout .sn-contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#sn-contact-layout .sn-contact-card{background:#fff;padding:clamp(22px,3.2vw,34px);border:1px solid #e2d3c1;border-radius:16px;margin:0;min-width:0}
+#sn-contact-layout .sn-contact-card--message{background:#fff8f1}
+#sn-contact-layout .sn-contact-eyebrow{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#b94f21;font-weight:800;margin:0 0 10px}
+#sn-contact-layout h2,#sn-contact-layout h3{padding:0;margin:0 0 13px;border:0;background:none;color:#1f1b18;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:-.025em;line-height:1.25}
+#sn-contact-layout h2{font-size:clamp(24px,3vw,32px);font-weight:800}
+#sn-contact-layout h3{font-size:20px;font-weight:800}
+#sn-contact-layout h4{font:750 15px/1.4 Inter,system-ui,sans-serif;margin:22px 0 10px;color:#1f1b18}
 #sn-contact-layout p{max-width:none;font-size:15px;line-height:1.65;color:#514a44;margin:0 0 13px}
 #sn-contact-layout p:last-child{margin-bottom:0}
-#sn-contact-layout .sn-contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-#sn-contact-layout .sn-contact-card{background:#fff;padding:clamp(20px,3vw,30px);border:1px solid #e2d3c1;border-radius:16px;margin:0;box-shadow:0 3px 12px rgba(62,41,20,.035)}
-#sn-contact-layout .sn-contact-card--message{background:#fff4e9;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
-#sn-contact-layout .sn-contact-features{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:12px}
+#sn-contact-layout .sn-contact-address{display:block;overflow-wrap:anywhere;padding:13px 16px;background:#fff;border:1px solid #e2d3c1;border-radius:9px;color:#a44720;font-weight:750;font-size:15px;margin-top:19px}
+#sn-contact-layout .sn-contact-note{font-size:12px;color:#655d56;margin-top:10px}
+#sn-contact-layout .sn-contact-features{list-style:none;padding:0;margin:13px 0 0;display:grid;gap:12px}
 #sn-contact-layout .sn-contact-features li{margin:0;padding:0;display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#514a44;line-height:1.45}
 #sn-contact-layout .sn-contact-features li:before{content:"✓";height:22px;flex:0 0 22px;display:inline-flex;align-items:center;justify-content:center;background:#fff1e5;border-radius:50%;color:#b74e1c;font-weight:800}
-#sn-contact-layout .sn-contact-button,#sn-contact-layout a.sn-contact-button{display:inline-flex;align-items:center;justify-content:center;border:1px solid #f26b2f;background:#f26b2f;color:white;border-radius:9px;padding:13px 18px;font:700 14px/1.4 Inter,system-ui,sans-serif;text-decoration:none;margin:10px 0 0;box-shadow:none}
-#sn-contact-layout a.sn-contact-button:hover{background:#d95721;color:white;border-color:#d95721}
-#sn-contact-layout a.sn-contact-button:focus-visible{outline:3px solid #1f1b18;outline-offset:3px}
-#sn-contact-layout .sn-contact-email{font-weight:700;color:#a44720;text-decoration:underline;text-underline-offset:3px}
-#sn-contact-layout .sn-contact-foot{margin-top:16px;border:1px solid #e2d3c1;border-radius:16px;background:#fff;padding:20px 25px;display:flex;justify-content:space-between;align-items:center;gap:18px}
-#sn-contact-layout .sn-contact-foot h3{margin-bottom:4px}
-#sn-contact-layout .sn-contact-foot p{font-size:13px}
-#sn-contact-layout .sn-contact-foot a{font-weight:700;color:#b94f21;text-decoration:none;white-space:nowrap;font-size:14px}
-@media(max-width:720px){#sn-contact-layout .sn-contact-grid{grid-template-columns:1fr}#sn-contact-layout .sn-contact-foot{flex-direction:column;align-items:flex-start}#sn-contact-layout .sn-contact-hero,#sn-contact-layout .sn-contact-card{padding:22px}}
+#sn-contact-layout .sn-contact-classes{margin-top:18px;font-size:14px}
+#sn-contact-layout a.sn-contact-classes-link{color:#b94f21;font-weight:750;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:720px){#sn-contact-layout .sn-contact-grid{grid-template-columns:1fr}#sn-contact-layout .sn-contact-card{padding:23px}}
 </style>
 <div id="sn-contact-layout">
-  <div class="sn-contact-hero">
-    <p class="sn-contact-eyebrow">Contact SpanishNova</p>
-    <h2>Have a question?</h2>
-    <p>Ask about Spanish classes, lessons, learning resources or the website. You can reach SpanishNova by email.</p>
-  </div>
   <div class="sn-contact-grid">
-    <div class="sn-contact-card sn-contact-card--message">
-      <h3>Send a message</h3>
-      <p>Email us at <a class="sn-contact-email" href="mailto:info@spanishnova.com">info@spanishnova.com</a>.</p>
-      <a class="sn-contact-button" href="mailto:info@spanishnova.com?subject=Question%20for%20SpanishNova">Send an email →</a>
-    </div>
-    <div class="sn-contact-card">
+    <section class="sn-contact-card sn-contact-card--message">
+      <p class="sn-contact-eyebrow">Contact SpanishNova</p>
+      <h2>Have a question?</h2>
+      <p>Ask about Spanish classes, lessons, learning resources or the website.</p>
+      <h4>Send a message</h4>
+      <p>Write to us at:</p>
+      <span class="sn-contact-address">info@spanishnova.com</span>
+      <p class="sn-contact-note">Copy this address into your email service to contact SpanishNova.</p>
+    </section>
+    <section class="sn-contact-card">
       <h3>What can you ask about?</h3>
       <ul class="sn-contact-features">
         <li>Spanish classes and conversation practice.</li>
@@ -45,27 +40,13 @@
         <li>Using SpanishNova resources in your studies or classes.</li>
         <li>Errors, suggestions or questions about the website.</li>
       </ul>
-    </div>
-    <div class="sn-contact-card">
-      <h3>Questions about classes?</h3>
-      <p>To help us answer your inquiry, include:</p>
+      <h4>Questions about classes?</h4>
+      <p>When you write, include:</p>
       <ul class="sn-contact-features">
-        <li>Your name and current Spanish level.</li>
-        <li>What you want to practice.</li>
+        <li>Your current Spanish level and what you want to practice.</li>
         <li>Your timezone and availability.</li>
       </ul>
-    </div>
-    <div class="sn-contact-card">
-      <h3>Learning resources</h3>
-      <p>Explore the lessons and topics available on SpanishNova.</p>
-      <p><a class="sn-contact-email" href="/grammar/">Grammar</a> · <a class="sn-contact-email" href="/vocabulary/">Vocabulary</a> · <a class="sn-contact-email" href="/readings/">Readings</a></p>
-    </div>
-  </div>
-  <div class="sn-contact-foot">
-    <div>
-      <h3>Looking for Spanish classes?</h3>
-      <p>Visit the classes page for information about learning with SpanishNova.</p>
-    </div>
-    <a href="/classes/">Explore classes →</a>
+      <p class="sn-contact-classes"><a class="sn-contact-classes-link" href="/classes/">Information about classes →</a></p>
+    </section>
   </div>
 </div>
