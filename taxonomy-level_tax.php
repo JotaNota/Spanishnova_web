@@ -284,7 +284,13 @@ unset($level_module);
                         <?php $available = !empty($lesson['url']); ?>
                         <?php if ($available) : ?><a class="sn-unit-lesson is-available" href="<?php echo esc_url($lesson['url']); ?>">
                         <?php else : ?><div class="sn-unit-lesson is-pending"><?php endif; ?>
-                          <span class="sn-lesson-icon" aria-hidden="true"><?php echo $available ? '&#9635;' : '&#9675;'; ?></span>
+                          <span class="sn-lesson-icon" aria-hidden="true">
+                            <?php if ($available) : ?>
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg>
+                            <?php else : ?>
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+                            <?php endif; ?>
+                          </span>
                           <span class="sn-lesson-info"><strong><?php echo esc_html($lesson['title']); ?></strong><small><?php echo esc_html($lesson['type']); ?></small></span>
                           <span class="sn-lesson-status"><?php echo $available ? 'Available' : 'Coming soon'; ?></span>
                           <?php if ($available) : ?><span class="sn-lesson-arrow" aria-hidden="true">&#8599;</span><?php endif; ?>
