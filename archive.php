@@ -1,3 +1,10 @@
+<?php
+// Vocabulary, Readings and Conversations share the Explore navigator.
+if (is_post_type_archive(['vocabulary', 'readings', 'conversations'])) {
+  include get_template_directory() . '/page-explore.php';
+  return;
+}
+?>
 <?php get_header(); ?>
 <main>
   <section class="panel">
