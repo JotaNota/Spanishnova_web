@@ -1,33 +1,57 @@
-<!-- SpanishNova | Donations | Paste into a WordPress Custom HTML block. Page title is rendered by the theme. -->
-<section class="sn-info-card sn-info-card--lead">
-  <h2>Why support SpanishNova?</h2>
-  <p>SpanishNova was created to help learners practice Spanish through clear explanations, useful resources and content connected to real communication.</p>
-  <p>Your support helps keep materials free and accessible for students and teachers. It also helps create more readings, conversations, vocabulary lessons, exercises and low-cost courses.</p>
-</section>
-
-<section class="sn-info-card">
-  <h2>What does your contribution support?</h2>
-  <ul>
-    <li>More readings, conversations and podcast-style lessons.</li>
-    <li>More vocabulary and grammar resources.</li>
-    <li>More exercises for learners at different levels.</li>
-    <li>Site maintenance and future improvements.</li>
-    <li>Affordable courses with videos and structured lessons.</li>
-  </ul>
-</section>
-
-<section class="sn-info-card">
-  <h2>How to donate</h2>
-  <p>You can support SpanishNova through Buy Me a Coffee.</p>
-  <!-- Replace the href below with your actual SpanishNova Buy Me a Coffee profile URL before publishing. -->
-  <div class="wp-block-buttons">
-    <div class="wp-block-button">
-      <a class="wp-block-button__link" href="REPLACE_WITH_SPANISHNOVA_BUY_ME_A_COFFEE_URL" target="_blank" rel="noopener noreferrer">Support SpanishNova on Buy Me a Coffee →</a>
+<!-- SpanishNova Donations. Paste this whole fragment into ONE WordPress Custom HTML block. -->
+<style>
+/* Self-contained page styles: no dependence on local theme sync. */
+#sn-donate-layout{max-width:1040px;margin:0 auto;color:#1f1b18;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.6}
+#sn-donate-layout *{box-sizing:border-box}
+#sn-donate-layout .sn-donate-intro{padding:clamp(24px,4vw,42px);border:1px solid #e2d3c1;border-radius:18px;background:#fff8f1;margin:0 0 16px}
+#sn-donate-layout .sn-donate-eyebrow{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#b94f21;font-weight:800;margin:0 0 9px}
+#sn-donate-layout h2,#sn-donate-layout h3,#sn-donate-layout .sn-donate-intro h2{padding:0;margin:0 0 12px;border:0;background:none;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:-.025em;color:#1f1b18;line-height:1.25}
+#sn-donate-layout h2{font-size:clamp(25px,3.4vw,34px);font-weight:800}
+#sn-donate-layout h3{font-size:19px;font-weight:800}
+#sn-donate-layout p{max-width:none;margin:0 0 12px;color:#514a44;font-size:15px;line-height:1.65}
+#sn-donate-layout p:last-child{margin-bottom:0}
+#sn-donate-layout .sn-donate-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:stretch}
+#sn-donate-layout .sn-donate-card{padding:clamp(20px,3vw,30px);background:#fff;border:1px solid #e2d3c1;border-radius:16px;margin:0;box-shadow:0 3px 12px rgba(62,41,20,.035)}
+#sn-donate-layout .sn-donate-card--action{background:#fff4e9;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+#sn-donate-layout .sn-donate-features{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px}
+#sn-donate-layout .sn-donate-features li{display:flex;align-items:flex-start;gap:10px;padding:0;margin:0;color:#514a44;font-size:14px;line-height:1.45}
+#sn-donate-layout .sn-donate-features li:before{content:"✓";display:inline-flex;flex:0 0 22px;justify-content:center;align-items:center;height:22px;color:#b74e1c;background:#fff1e5;border-radius:50%;font-weight:800}
+#sn-donate-layout .sn-donate-button,#sn-donate-layout a.sn-donate-button{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;margin-top:10px;background:#f26b2f;color:#fff;border:1px solid #f26b2f;border-radius:9px;font:700 14px/1.4 Inter,system-ui,sans-serif;text-decoration:none;box-shadow:none}
+#sn-donate-layout a.sn-donate-button:hover{background:#d95721;color:#fff;border-color:#d95721}
+#sn-donate-layout a.sn-donate-button:focus-visible{outline:3px solid #1f1b18;outline-offset:3px}
+#sn-donate-layout .sn-donate-thanks{display:flex;align-items:center;gap:16px;padding:20px 24px;margin-top:16px;border:1px solid #e2d3c1;background:#fff;border-radius:16px}
+#sn-donate-layout .sn-donate-thanks h3{margin-bottom:4px}
+#sn-donate-layout .sn-donate-thanks p{font-size:13px}
+@media(max-width:720px){#sn-donate-layout .sn-donate-grid{grid-template-columns:1fr}#sn-donate-layout .sn-donate-thanks{align-items:flex-start}#sn-donate-layout .sn-donate-intro,#sn-donate-layout .sn-donate-card{padding:22px}}
+</style>
+<div id="sn-donate-layout">
+  <div class="sn-donate-intro">
+    <p class="sn-donate-eyebrow">Support SpanishNova</p>
+    <h2>Help keep Spanish learning accessible</h2>
+    <p>SpanishNova creates resources for people learning and teaching Spanish. Your contribution helps us publish lessons and maintain the website.</p>
+  </div>
+  <div class="sn-donate-grid">
+    <div class="sn-donate-card">
+      <h3>What does your contribution support?</h3>
+      <ul class="sn-donate-features">
+        <li>Readings, conversations and podcast-style lessons.</li>
+        <li>Vocabulary and grammar resources.</li>
+        <li>Exercises for different levels.</li>
+        <li>Site maintenance and improvements.</li>
+        <li>Development of courses with videos and structured lessons.</li>
+      </ul>
+    </div>
+    <div class="sn-donate-card sn-donate-card--action">
+      <h3>Make a contribution</h3>
+      <p>You can support SpanishNova through Buy Me a Coffee.</p>
+      <!-- Replace the URL below with your verified donation URL before publishing. -->
+      <a class="sn-donate-button" href="REPLACE_WITH_SPANISHNOVA_BUY_ME_A_COFFEE_URL" target="_blank" rel="noopener noreferrer">Support SpanishNova →</a>
     </div>
   </div>
-</section>
-
-<section class="sn-info-card">
-  <h2>Thank you</h2>
-  <p>Every contribution helps SpanishNova keep growing and creating resources for Spanish learners and teachers.</p>
-</section>
+  <div class="sn-donate-thanks">
+    <div>
+      <h3>Thank you</h3>
+      <p>Every contribution helps us continue creating resources for Spanish learners and teachers.</p>
+    </div>
+  </div>
+</div>
