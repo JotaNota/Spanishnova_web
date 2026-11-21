@@ -186,6 +186,7 @@ if ($level_query->have_posts()) {
 
     $level_modules[$module]['items'][] = $lesson;
     $level_lesson_total++;
+    $level_lesson_published++;
   }
   wp_reset_postdata();
 }
