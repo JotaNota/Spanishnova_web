@@ -585,3 +585,39 @@
 .starter-level-page .starter-route-sublesson-status{flex:0 0 auto;color:#898681;font-size:11px;white-space:nowrap}
 .starter-level-page .starter-route-sublesson.is-available .starter-route-sublesson-status{color:#346d50}
 @media(max-width:650px){.starter-level-page .starter-module-heading{align-items:flex-start;flex-wrap:wrap;padding:15px}.starter-level-page .starter-lesson-row{padding:12px;grid-template-columns:30px minmax(0,1fr);gap:9px}.starter-level-page .starter-lesson-state{grid-column:2}.starter-level-page .starter-route-sublessons{margin:0 12px 12px 26px;padding-left:10px}.starter-level-page .starter-route-sublesson{align-items:flex-start}.starter-level-page .starter-route-sublesson-status{font-size:10px}}
+
+/* Module > collapsible unit > published or pending lessons (A1 and A2). */
+.starter-level-page .starter-module{border-radius:18px;box-shadow:none}
+.starter-level-page .starter-module-heading{background:#fff8f1;padding:22px 24px;align-items:flex-start}
+.starter-level-page .sn-module-heading-copy{flex:1;min-width:0}
+.starter-level-page .starter-module-heading h3{font-size:22px;line-height:1.25;font-weight:800;letter-spacing:-.02em}
+.starter-level-page .starter-module-kicker{color:#ac562b;font-size:11px}
+.starter-level-page .sn-module-meta{margin:9px 0 8px;color:#625c56;font-size:12px}
+.starter-level-page .sn-module-progress{width:100%;height:5px;border-radius:30px;background:#e8dccf;overflow:hidden}
+.starter-level-page .sn-module-progress span{display:block;height:100%;background:#e66b34;border-radius:30px}
+.starter-level-page .sn-unit-list{display:grid;gap:10px;padding:14px}
+.starter-level-page .sn-unit{border:1px solid #e2d3c1;border-radius:12px;background:#fff;overflow:hidden}
+.starter-level-page .sn-unit-summary{display:flex;align-items:center;gap:12px;padding:14px;cursor:pointer;list-style:none;background:#faf9f7}
+.starter-level-page .sn-unit-summary::-webkit-details-marker{display:none}
+.starter-level-page .sn-unit-summary:focus-visible{outline:3px solid #e66b34;outline-offset:-3px}
+.starter-level-page .sn-unit-number{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border-radius:8px;background:#f0e9e1;color:#201b18;font-size:14px;font-weight:700}
+.starter-level-page .sn-unit-info{display:grid;gap:3px;min-width:0;flex:1}
+.starter-level-page .sn-unit-info strong{color:#201b18;font-size:15px;line-height:1.3}
+.starter-level-page .sn-unit-info>span{color:#77716b;font-size:12px}
+.starter-level-page .sn-unit-chevron{width:9px;height:9px;flex:0 0 9px;border-right:2px solid #77716b;border-bottom:2px solid #77716b;transform:rotate(45deg);transition:transform .15s}
+.starter-level-page .sn-unit[open]>.sn-unit-summary .sn-unit-chevron{transform:rotate(225deg)}
+.starter-level-page .sn-unit-lessons{border-top:1px solid #e2d3c1}
+.starter-level-page .sn-unit-lesson{display:flex;align-items:center;gap:12px;padding:14px;color:#201b18;text-decoration:none;min-height:62px}
+.starter-level-page .sn-unit-lesson+.sn-unit-lesson{border-top:1px solid #eee5dd}
+.starter-level-page .sn-unit-lesson.is-pending{background:#f7f7f6;color:#898681}
+.starter-level-page a.sn-unit-lesson:hover{background:#fff7f0;color:#201b18}
+.starter-level-page a.sn-unit-lesson:focus-visible{outline:3px solid #e66b34;outline-offset:-3px}
+.starter-level-page .sn-lesson-icon{width:18px;flex:0 0 18px;color:#8a8177;font-size:20px;line-height:1}
+.starter-level-page .sn-lesson-info{display:grid;gap:3px;min-width:0;flex:1}
+.starter-level-page .sn-lesson-info strong{font-size:14px;line-height:1.3;font-weight:650;color:inherit}
+.starter-level-page .sn-lesson-info small{font-size:12px;color:#77716b}
+.starter-level-page .sn-unit-lesson.is-pending .sn-lesson-info small{color:#96928c}
+.starter-level-page .sn-lesson-status{font-size:11px;color:#8c8882;white-space:nowrap}
+.starter-level-page .is-available .sn-lesson-status{color:#346d50;font-weight:650}
+.starter-level-page .sn-lesson-arrow{font-size:18px;color:#898681}
+@media(max-width:650px){.starter-level-page .starter-module-heading{padding:18px;flex-direction:column;gap:8px}.starter-level-page .sn-unit-list{padding:10px;gap:8px}.starter-level-page .sn-unit-lesson{gap:8px;padding:12px}.starter-level-page .sn-lesson-status{font-size:10px}.starter-level-page .sn-lesson-arrow{display:none}}
