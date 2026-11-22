@@ -18,7 +18,7 @@ Create structured Spanish grammar lesson content-data and render generated revie
 5. Run `python scripts/render_content.py --type grammar --slug [slug]`.
 6. Confirm the render generated:
    - `docs/content-system/generated/markdown/grammar/[slug].md`
-   - `docs/content-system/generated/html/grammar/[slug].html`
+   - the HTML path determined by `lesson_type` (see `docs/content-system/generated/html/README.md`)
 7. Review `git status --short`.
 
 HTML output path for new grammar lessons is selected by `lesson_type`: `verb-usage` → `generated/html/grammar/verbs/`, `tense` → `generated/html/grammar/tenses/`, `particle-set` → `generated/html/grammar/particles/`. The render script continues to write Markdown under `generated/markdown/grammar/`. Other existing lesson types keep the current `generated/html/grammar/` path. The `generated/html/README.md` defines storage conventions. These folders hold lesson content, not visual models.
