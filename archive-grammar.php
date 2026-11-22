@@ -123,36 +123,49 @@ if (count($tax_query) > 1) {
 }
 $grammar_query = new WP_Query($query_args);
 
-// Order published lessons by level, then alphabetically within each level.
-// Unassigned levels go after Advanced. Keep all existing search/topic/level filters.
-$sn_level_rank = static function ($post_id) {
-  $rank = 4;
-  $assigned_levels = wp_get_post_terms($post_id, 'level_tax');
-  if (is_wp_error($assigned_levels)) return $rank;
-
-  foreach ($assigned_levels as $term) {
-    $label = strtolower($term->slug . ' ' . $term->name);
-    if (preg_match('/\\bstarter\\b|\\ba1\\b/', $label)) {
-      $rank = min($rank, 0);
-    } elseif (preg_match('/\\bbeginner\\b|\\ba2\\b/', $label)) {
-      $rank = min($rank, 1);
-    } elseif (preg_match('/\\bintermediate\\b|\\bb1\\b|\\bb2\\b/', $label)) {
-      $rank = min($rank, 2);
-    } elseif (preg_match('/\\badvanced\\b|\\bc1\\b|\\bc2\\b/', $label)) {
-      $rank = min($rank, 3);
+// Follow the editorial order of Grammar lesson rows in the Level Roadmap CSV.
+// The row sequence already encodes module, unit, lesson and level progression.
+$sn_route_order = [];
+$sn_route_file = get_template_directory() . '/docs/content-system/content-plan/route-inventory.csv';
+if (is_readable($sn_route_file)) {
+  $sn_route_handle = fopen($sn_route_file, 'r');
+  if ($sn_route_handle !== false) {
+    $sn_route_header = fgetcsv($sn_route_handle);
+    if (is_array($sn_route_header)) {
+      $sn_route_header = array_map(static function ($column) {
+        return trim((string) $column, " \\t\\n\\r\\0\\x0B\\xEF\\xBB\\xBF");
+      }, $sn_route_header);
+      $sn_route_columns = array_flip($sn_route_header);
+      if (isset($sn_route_columns['Tipo'], $sn_route_columns['CPT'], $sn_route_columns['Slug'])) {
+        while (($sn_route_row = fgetcsv($sn_route_handle)) !== false) {
+          $sn_route_type = trim((string) ($sn_route_row[$sn_route_columns['Tipo']] ?? ''));
+          $sn_route_cpt = trim((string) ($sn_route_row[$sn_route_columns['CPT']] ?? ''));
+          $sn_route_slug = trim((string) ($sn_route_row[$sn_route_columns['Slug']] ?? ''));
+          if ($sn_route_type !== 'Lección' || strcasecmp($sn_route_cpt, 'grammar') !== 0 || $sn_route_slug === '') {
+            continue;
+          }
+          $sn_route_slug = sanitize_title($sn_route_slug);
+          if (!isset($sn_route_order[$sn_route_slug])) {
+            $sn_route_order[$sn_route_slug] = count($sn_route_order);
+          }
+        }
+      }
     }
+    fclose($sn_route_handle);
   }
-  return $rank;
-};
+}
 
 $sn_sorted_posts = $grammar_query->posts;
-$sn_ranks = [];
-foreach ($sn_sorted_posts as $post) {
-  $sn_ranks[$post->ID] = $sn_level_rank($post->ID);
+// Stable fallback: retain the query's preexisting order for posts absent from CSV.
+$sn_original_positions = [];
+foreach ($sn_sorted_posts as $sn_index => $sn_post) {
+  $sn_original_positions[$sn_post->ID] = $sn_index;
 }
-usort($sn_sorted_posts, static function ($a, $b) use ($sn_ranks) {
-  $level_order = $sn_ranks[$a->ID] <=> $sn_ranks[$b->ID];
-  return $level_order ?: (strcasecmp($a->post_title, $b->post_title) ?: ($a->ID <=> $b->ID));
+usort($sn_sorted_posts, static function ($a, $b) use ($sn_route_order, $sn_original_positions) {
+  $a_route = $sn_route_order[$a->post_name] ?? PHP_INT_MAX;
+  $b_route = $sn_route_order[$b->post_name] ?? PHP_INT_MAX;
+  return ($a_route <=> $b_route)
+    ?: ($sn_original_positions[$a->ID] <=> $sn_original_positions[$b->ID]);
 });
 
 $grammar_query->found_posts = count($sn_sorted_posts);
