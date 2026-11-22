@@ -5,6 +5,7 @@ import json
 
 from spanishnova_upload.config import HTML_ROOT, ROOT
 from spanishnova_upload.uploader import find_html
+from spanishnova_upload.roadmap import load_roadmap
 
 
 DATA_ROOT = ROOT / "docs/content-system/generated/json"
@@ -104,7 +105,8 @@ def main():
     snapshot_html_path = SNAPSHOT_ROOT / args.type / f"{args.slug}.html"
     snapshot_json_path = SNAPSHOT_ROOT / args.type / f"{args.slug}.json"
     current_json_path = DATA_ROOT / args.type / f"{args.slug}.json"
-    generated_html_path = find_html({"cpt": args.type, "base_slug": args.slug, "lesson_type": next((row.get("lesson_type", "") for row in __import__("spanishnova_upload.roadmap", fromlist=["load_roadmap"]).load_roadmap().values() if row.get("base_slug") == args.slug), "")})
+    roadmap_row = load_roadmap().get(args.slug, {"cpt": args.type, "base_slug": args.slug})
+    generated_html_path = find_html(roadmap_row)
 
     if not snapshot_html_path.exists():
         raise SystemExit(f"Missing snapshot HTML: {snapshot_html_path}")
