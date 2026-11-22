@@ -43,9 +43,28 @@ foreach ($lesson_ids as $post_id) {
   }
   $choices = array_values(array_unique($choices));
 
+  // Stable level order for the Grammar catalog (without changing published posts).
+  $level_rank = 4; // Unassigned or unrecognized levels go last.
+  $assigned_levels = wp_get_post_terms($post_id, 'level_tax');
+  if (!is_wp_error($assigned_levels)) {
+    foreach ($assigned_levels as $level_term) {
+      $level_label = strtolower($level_term->slug . ' ' . $level_term->name);
+      if (preg_match('/\\bstarter\\b|\\ba1\\b/', $level_label)) {
+        $level_rank = min($level_rank, 0);
+      } elseif (preg_match('/\\bbeginner\\b|\\ba2\\b/', $level_label)) {
+        $level_rank = min($level_rank, 1);
+      } elseif (preg_match('/\\bintermediate\\b|\\bb1\\b|\\bb2\\b/', $level_label)) {
+        $level_rank = min($level_rank, 2);
+      } elseif (preg_match('/\\badvanced\\b|\\bc1\\b|\\bc2\\b/', $level_label)) {
+        $level_rank = min($level_rank, 3);
+      }
+    }
+  }
+
   $body = get_post_field('post_content', $post_id);
   $lessons[] = [
     'id' => (int) $post_id,
+    'level_rank' => $level_rank,
     'title' => get_the_title($post_id),
     'description' => wp_trim_words(spanishnova_get_card_excerpt($post_id), 27),
     'url' => get_permalink($post_id),
@@ -53,6 +72,11 @@ foreach ($lesson_ids as $post_id) {
     'keywords' => implode(' ', array_unique($term_names)) . ' ' . wp_trim_words(wp_strip_all_tags(strip_shortcodes($body)), 200, ''),
   ];
 }
+// Preserve alphabetical ordering within each level.
+usort($lessons, static function ($a, $b) {
+  $by_level = $a['level_rank'] <=> $b['level_rank'];
+  return $by_level ?: strcasecmp($a['title'], $b['title']);
+});
 $data = [
   'terms' => array_values($term_index),
   'lessons' => $lessons,
