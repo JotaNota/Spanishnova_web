@@ -267,6 +267,25 @@
   --explore-type-accent: #4f7d68;
 }
 
+/* Practice uses the shared catalog card with its own accent. */
+.explore-result--practice {
+  --explore-type-accent: #8b5cf6;
+}
+
+.sn-practice-archive .activity-list {
+  min-width: 0;
+}
+
+.sn-practice-archive .explore-result {
+  min-width: 0;
+}
+
+.sn-practice-archive .explore-result-title,
+.sn-practice-archive .explore-result-description {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .explore-result:hover,
 .explore-result:focus-visible {
   background: #ffffff;
