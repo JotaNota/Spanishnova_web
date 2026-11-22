@@ -54,6 +54,16 @@ function spanishnova_enqueue_assets() {
                     filemtime($lesson_css)
                 );
             }
+            $practice_js = get_template_directory() . '/assets/js/practice.js';
+            if (is_file($practice_js)) {
+                wp_enqueue_script(
+                    'spanishnova-practice-interactions',
+                    get_template_directory_uri() . '/assets/js/practice.js',
+                    [],
+                    filemtime($practice_js),
+                    true
+                );
+            }
         }
     }
 
