@@ -41,6 +41,15 @@ def render_content(content_type, slug):
 
     markdown_dir = GENERATED_MARKDOWN / content_type
     html_dir = GENERATED_HTML / content_type
+    if content_type == "grammar":
+        grammar_folders = {
+            "verb-usage": "verbs",
+            "tense": "tenses",
+            "particle-set": "particles",
+        }
+        folder = grammar_folders.get(row.get("lesson_type", "").strip())
+        if folder:
+            html_dir = html_dir / folder
     markdown_dir.mkdir(parents=True, exist_ok=True)
     html_dir.mkdir(parents=True, exist_ok=True)
 
