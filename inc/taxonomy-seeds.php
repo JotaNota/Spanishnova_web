@@ -99,6 +99,7 @@ function spanishnova_seed_taxonomy_terms() {
         ['name' => 'Entertainment', 'slug' => 'entertainment'],
         ['name' => 'Education', 'slug' => 'education'],
         ['name' => 'Society', 'slug' => 'society'],
+        ['name' => 'Science & Nature', 'slug' => 'science-nature'],
     ]);
 
     $route_terms = [
