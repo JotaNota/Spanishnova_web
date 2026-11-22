@@ -33,12 +33,14 @@ docs/content-system/
 ├── schemas/grammar-content-data.schema.json
 ├── generated/
 │   ├── json/grammar/[slug].json       ← fuente editable
-│   ├── html/grammar/[slug].html       ← HTML generado para WordPress
+│   ├── html/grammar/verbs/[slug].html ← HTML nuevo de verb-usage
 │   └── markdown/grammar/[slug].md     ← versión para revisión
 └── grammar-lesson-types/
     ├── grammar-verbs.md               ← documentación del formato
     └── grammar-verbs.html             ← modelo visual SER
 ```
+
+Para otras lecciones Grammar, consultar `generated/html/README.md` y el `lesson_type` del roadmap. Los HTML existentes en la raíz de `generated/html/grammar/` siguen siendo compatibles.
 
 No editar el HTML generado como fuente de verdad si la lección se produce mediante `scripts/render_content.py`: cambiar el JSON y regenerar.
 
