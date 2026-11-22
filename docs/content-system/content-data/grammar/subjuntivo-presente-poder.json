@@ -1,0 +1,395 @@
+{
+  "intro": "Use the present subjunctive of poder — pueda, puedas, podamos, puedan — after expressions that create a second clause: need, doubt, permission, purpose, or possibility.",
+  "overview": {
+    "body": "Poder means can or to be able to. In the present subjunctive, it often appears after que or para que because the action depends on another idea: someone needs it, doubts it, allows it, or wants it to be possible.",
+    "use_note": "poder in the present subjunctive"
+  },
+  "examples": [
+    {
+      "spanish": "Necesito que puedas venir temprano.",
+      "english": "I need you to be able to come early."
+    },
+    {
+      "spanish": "Te llamo para que podamos hablar.",
+      "english": "I am calling you so that we can talk."
+    }
+  ],
+  "forms": [
+    {
+      "label": "yo / él / ella / usted pueda",
+      "meaning": "I / he / she / you formal can"
+    },
+    {
+      "label": "tú puedas",
+      "meaning": "you can"
+    },
+    {
+      "label": "nosotros / nosotras podamos",
+      "meaning": "we can"
+    },
+    {
+      "label": "ellos / ellas / ustedes puedan",
+      "meaning": "they / you all can"
+    }
+  ],
+  "structure": [
+    {
+      "pattern": "necesitar + que + poder",
+      "example": "Necesito que puedas leer este mensaje.",
+      "translation": "I need you to be able to read this message."
+    },
+    {
+      "pattern": "dudar + que + poder",
+      "example": "Dudo que él pueda llegar a tiempo.",
+      "translation": "I doubt he can arrive on time."
+    },
+    {
+      "pattern": "para que + poder",
+      "example": "Te envío la dirección para que puedas encontrar la casa.",
+      "translation": "I am sending you the address so you can find the house."
+    },
+    {
+      "pattern": "permitir/dejar + que + poder",
+      "example": "La profesora deja que podamos usar el diccionario.",
+      "translation": "The teacher lets us use the dictionary."
+    }
+  ],
+  "uses": [
+    {
+      "heading": "Need or request",
+      "body": "Use the subjunctive when one person needs, asks, or wants another person to be able to do something.",
+      "examples": [
+        {
+          "spanish": "Quiero que puedas descansar esta noche.",
+          "english": "I want you to be able to rest tonight."
+        },
+        {
+          "spanish": "Necesitamos que ustedes puedan entrar al sistema.",
+          "english": "We need you all to be able to enter the system."
+        }
+      ]
+    },
+    {
+      "heading": "Doubt or uncertainty",
+      "body": "Use the subjunctive when the ability is not presented as a fact.",
+      "examples": [
+        {
+          "spanish": "No creo que ella pueda venir hoy.",
+          "english": "I do not think she can come today."
+        },
+        {
+          "spanish": "Dudo que podamos terminar antes de las seis.",
+          "english": "I doubt we can finish before six."
+        }
+      ]
+    },
+    {
+      "heading": "Purpose",
+      "body": "Use para que when the second action explains the purpose of the first action.",
+      "examples": [
+        {
+          "spanish": "Hablo despacio para que puedas entender.",
+          "english": "I speak slowly so you can understand."
+        },
+        {
+          "spanish": "Abrimos la ventana para que puedan respirar mejor.",
+          "english": "We open the window so they can breathe better."
+        }
+      ]
+    }
+  ],
+  "sentences": {
+    "affirmative": [
+      {
+        "spanish": "Espero que puedas venir mañana.",
+        "english": "I hope you can come tomorrow."
+      },
+      {
+        "spanish": "Busco una silla para que mi abuela pueda sentarse.",
+        "english": "I am looking for a chair so my grandmother can sit down."
+      },
+      {
+        "spanish": "Necesitamos que todos puedan participar.",
+        "english": "We need everyone to be able to participate."
+      },
+      {
+        "spanish": "Te explico otra vez para que podamos continuar.",
+        "english": "I will explain it again so we can continue."
+      }
+    ],
+    "negative": [
+      {
+        "spanish": "No creo que pueda salir esta noche.",
+        "english": "I do not think I can go out tonight."
+      },
+      {
+        "spanish": "No es posible que ellos puedan pagar ahora.",
+        "english": "It is not possible that they can pay now."
+      },
+      {
+        "spanish": "No quiero que puedas ver la respuesta todavía.",
+        "english": "I do not want you to be able to see the answer yet."
+      },
+      {
+        "spanish": "No parece que podamos resolverlo hoy.",
+        "english": "It does not seem that we can solve it today."
+      }
+    ],
+    "questions": [
+      {
+        "spanish": "¿Quieres que pueda ayudarte?",
+        "english": "Do you want me to be able to help you?"
+      },
+      {
+        "spanish": "¿Hay algo que podamos hacer?",
+        "english": "Is there something we can do?"
+      },
+      {
+        "spanish": "¿Dudas que ella pueda aprenderlo?",
+        "english": "Do you doubt that she can learn it?"
+      },
+      {
+        "spanish": "¿Me mandas el enlace para que pueda entrar?",
+        "english": "Can you send me the link so I can enter?"
+      }
+    ]
+  },
+  "exercises": {
+    "select": [
+      {
+        "prompt": "Necesito que tú _____ llegar antes de las nueve.",
+        "options": [
+          "puedes",
+          "puedas",
+          "podamos"
+        ],
+        "answer": "Necesito que tú puedas llegar antes de las nueve."
+      },
+      {
+        "prompt": "No creo que ella _____ terminar hoy.",
+        "options": [
+          "pueda",
+          "puede",
+          "puedan"
+        ],
+        "answer": "No creo que ella pueda terminar hoy."
+      },
+      {
+        "prompt": "Te llamo para que nosotros _____ organizar el viaje.",
+        "options": [
+          "podemos",
+          "pueda",
+          "podamos"
+        ],
+        "answer": "Te llamo para que nosotros podamos organizar el viaje."
+      },
+      {
+        "prompt": "Es importante que ustedes _____ escuchar bien.",
+        "options": [
+          "puedan",
+          "pueden",
+          "puedas"
+        ],
+        "answer": "Es importante que ustedes puedan escuchar bien."
+      },
+      {
+        "prompt": "Quiero que mi hermano _____ estudiar tranquilo.",
+        "options": [
+          "puede",
+          "pueda",
+          "puedas"
+        ],
+        "answer": "Quiero que mi hermano pueda estudiar tranquilo."
+      },
+      {
+        "prompt": "Dudo que tú _____ abrir esa puerta.",
+        "options": [
+          "puedas",
+          "puedes",
+          "podamos"
+        ],
+        "answer": "Dudo que tú puedas abrir esa puerta."
+      },
+      {
+        "prompt": "Buscamos una mesa para que todos _____ comer juntos.",
+        "options": [
+          "puedan",
+          "pueda",
+          "podemos"
+        ],
+        "answer": "Buscamos una mesa para que todos puedan comer juntos."
+      },
+      {
+        "prompt": "No parece que nosotros _____ salir temprano.",
+        "options": [
+          "podamos",
+          "podemos",
+          "puedan"
+        ],
+        "answer": "No parece que nosotros podamos salir temprano."
+      },
+      {
+        "prompt": "Ojalá que yo _____ descansar este fin de semana.",
+        "options": [
+          "puedo",
+          "pueda",
+          "puedas"
+        ],
+        "answer": "Ojalá que yo pueda descansar este fin de semana."
+      },
+      {
+        "prompt": "La profesora explica despacio para que la clase _____.",
+        "options": [
+          "pueda entender",
+          "puede entender",
+          "puedas entender"
+        ],
+        "answer": "La profesora explica despacio para que la clase pueda entender."
+      }
+    ],
+    "complete": [
+      {
+        "prompt": "Completa con poder en subjuntivo: Quiero que tú ___ practicar más.",
+        "answer": "Quiero que tú puedas practicar más."
+      },
+      {
+        "prompt": "Completa con poder en subjuntivo: No creo que él ___ manejar de noche.",
+        "answer": "No creo que él pueda manejar de noche."
+      },
+      {
+        "prompt": "Completa con poder en subjuntivo: Te doy mi número para que me ___ llamar.",
+        "answer": "Te doy mi número para que me puedas llamar."
+      },
+      {
+        "prompt": "Completa con poder en subjuntivo: Necesitamos que ustedes ___ confirmar hoy.",
+        "answer": "Necesitamos que ustedes puedan confirmar hoy."
+      },
+      {
+        "prompt": "Completa con poder en subjuntivo: Es mejor que nosotros ___ hablar primero.",
+        "answer": "Es mejor que nosotros podamos hablar primero."
+      },
+      {
+        "prompt": "Completa con poder en subjuntivo: Dudo que María ___ venir a la reunión.",
+        "answer": "Dudo que María pueda venir a la reunión."
+      },
+      {
+        "prompt": "Completa con poder en subjuntivo: Busco una app para que los estudiantes ___ practicar.",
+        "answer": "Busco una app para que los estudiantes puedan practicar."
+      },
+      {
+        "prompt": "Completa con poder en subjuntivo: Ojalá que yo ___ dormir bien.",
+        "answer": "Ojalá que yo pueda dormir bien."
+      },
+      {
+        "prompt": "Completa con poder en subjuntivo: Te explico el problema para que ___ ayudarme.",
+        "answer": "Te explico el problema para que puedas ayudarme."
+      },
+      {
+        "prompt": "Completa con poder en subjuntivo: No es seguro que nosotros ___ viajar mañana.",
+        "answer": "No es seguro que nosotros podamos viajar mañana."
+      }
+    ],
+    "translate": [
+      {
+        "prompt": "I need you to be able to help me.",
+        "answer": "Necesito que puedas ayudarme."
+      },
+      {
+        "prompt": "I do not think she can come today.",
+        "answer": "No creo que ella pueda venir hoy."
+      },
+      {
+        "prompt": "We are looking for a place so we can talk.",
+        "answer": "Buscamos un lugar para que podamos hablar."
+      },
+      {
+        "prompt": "It is important that they can understand the instructions.",
+        "answer": "Es importante que puedan entender las instrucciones."
+      },
+      {
+        "prompt": "I hope I can sleep tonight.",
+        "answer": "Espero que pueda dormir esta noche."
+      },
+      {
+        "prompt": "I will send you the address so you can arrive.",
+        "answer": "Te mando la dirección para que puedas llegar."
+      },
+      {
+        "prompt": "I doubt we can finish now.",
+        "answer": "Dudo que podamos terminar ahora."
+      },
+      {
+        "prompt": "Do you want me to be able to read it?",
+        "answer": "¿Quieres que pueda leerlo?"
+      },
+      {
+        "prompt": "The teacher speaks slowly so the students can write.",
+        "answer": "La profesora habla despacio para que los estudiantes puedan escribir."
+      },
+      {
+        "prompt": "There is nothing we can do today.",
+        "answer": "No hay nada que podamos hacer hoy."
+      }
+    ]
+  },
+  "answers": {
+    "select": [
+      "Necesito que tú puedas llegar antes de las nueve.",
+      "No creo que ella pueda terminar hoy.",
+      "Te llamo para que nosotros podamos organizar el viaje.",
+      "Es importante que ustedes puedan escuchar bien.",
+      "Quiero que mi hermano pueda estudiar tranquilo.",
+      "Dudo que tú puedas abrir esa puerta.",
+      "Buscamos una mesa para que todos puedan comer juntos.",
+      "No parece que nosotros podamos salir temprano.",
+      "Ojalá que yo pueda descansar este fin de semana.",
+      "La profesora explica despacio para que la clase pueda entender."
+    ],
+    "complete": [
+      "Quiero que tú puedas practicar más.",
+      "No creo que él pueda manejar de noche.",
+      "Te doy mi número para que me puedas llamar.",
+      "Necesitamos que ustedes puedan confirmar hoy.",
+      "Es mejor que nosotros podamos hablar primero.",
+      "Dudo que María pueda venir a la reunión.",
+      "Busco una app para que los estudiantes puedan practicar.",
+      "Ojalá que yo pueda dormir bien.",
+      "Te explico el problema para que puedas ayudarme.",
+      "No es seguro que nosotros podamos viajar mañana."
+    ],
+    "translate": [
+      "Necesito que puedas ayudarme.",
+      "No creo que ella pueda venir hoy.",
+      "Buscamos un lugar para que podamos hablar.",
+      "Es importante que puedan entender las instrucciones.",
+      "Espero que pueda dormir esta noche.",
+      "Te mando la dirección para que puedas llegar.",
+      "Dudo que podamos terminar ahora.",
+      "¿Quieres que pueda leerlo?",
+      "La profesora habla despacio para que los estudiantes puedan escribir.",
+      "No hay nada que podamos hacer hoy."
+    ]
+  },
+  "wrap_up": [
+    {
+      "use": "Need or request",
+      "example": "Necesito que puedas venir.",
+      "translation": "I need you to be able to come."
+    },
+    {
+      "use": "Doubt",
+      "example": "No creo que ella pueda salir.",
+      "translation": "I do not think she can go out."
+    },
+    {
+      "use": "Purpose",
+      "example": "Te llamo para que podamos hablar.",
+      "translation": "I am calling you so we can talk."
+    },
+    {
+      "use": "Form choice",
+      "example": "Ellos necesitan que podamos ayudar.",
+      "translation": "They need us to be able to help."
+    }
+  ]
+}
