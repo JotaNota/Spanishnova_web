@@ -26,17 +26,17 @@ function spanishnova_enqueue_assets() {
         wp_enqueue_script('spanishnova-vocabulary-lesson', get_template_directory_uri() . '/assets/js/vocabulary-lesson.js', [], filemtime($vocabulary_js), true);
     }
 
-    // Load practice lesson components only for posts using their scoped wrapper.
-    if (is_singular('practice')) {
-        $practice_post = get_queried_object();
-        if ($practice_post instanceof WP_Post && strpos($practice_post->post_content, 'sn-practice-lesson') !== false) {
-            $practice_css = get_template_directory() . '/assets/css/practice.css';
-            if (is_file($practice_css)) {
+    // Shared card and exercise components for opted-in grammar and practice lessons.
+    if (is_singular(['grammar', 'practice'])) {
+        $lesson_post = get_queried_object();
+        if ($lesson_post instanceof WP_Post && strpos($lesson_post->post_content, 'sn-practice-lesson') !== false) {
+            $lesson_css = get_template_directory() . '/assets/css/practice.css';
+            if (is_file($lesson_css)) {
                 wp_enqueue_style(
-                    'spanishnova-practice-lesson',
+                    'spanishnova-lesson-components',
                     get_template_directory_uri() . '/assets/css/practice.css',
                     ['spanishnova-main'],
-                    filemtime($practice_css)
+                    filemtime($lesson_css)
                 );
             }
         }
