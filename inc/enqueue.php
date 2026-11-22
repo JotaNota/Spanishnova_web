@@ -19,6 +19,18 @@ function spanishnova_enqueue_assets() {
         wp_enqueue_script('spanishnova-grammar-lesson', get_template_directory_uri() . '/assets/js/grammar-lesson.js', [], filemtime(get_template_directory() . '/assets/js/grammar-lesson.js'), true);
     }
 
+    // Verb-specific grammar components from main.
+    if (is_singular('grammar')) {
+        $verb_css = get_template_directory() . '/assets/css/grammar-verbs.css';
+        $verb_js = get_template_directory() . '/assets/js/grammar-verbs.js';
+        if (is_file($verb_css)) {
+            wp_enqueue_style('spanishnova-grammar-verbs', get_template_directory_uri() . '/assets/css/grammar-verbs.css', ['spanishnova-singles'], filemtime($verb_css));
+        }
+        if (is_file($verb_js)) {
+            wp_enqueue_script('spanishnova-grammar-verbs', get_template_directory_uri() . '/assets/js/grammar-verbs.js', [], filemtime($verb_js), true);
+        }
+    }
+
     if (is_singular('vocabulary')) {
         $vocabulary_css = get_template_directory() . '/assets/css/vocabulary-lesson.css';
         $vocabulary_js = get_template_directory() . '/assets/js/vocabulary-lesson.js';
@@ -39,6 +51,14 @@ function spanishnova_enqueue_assets() {
                     filemtime($lesson_css)
                 );
             }
+        }
+    }
+
+    // Donations-specific styles retained alongside the shared info-page assets.
+    if (is_page('donations')) {
+        $donations_css = get_template_directory() . '/assets/css/donations.css';
+        if (is_file($donations_css)) {
+            wp_enqueue_style('spanishnova-donations', get_template_directory_uri() . '/assets/css/donations.css', ['spanishnova-main'], filemtime($donations_css));
         }
     }
 
