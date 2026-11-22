@@ -5,7 +5,8 @@ import json
 import urllib.parse
 from datetime import datetime, timezone
 
-from spanishnova_upload.config import HTML_ROOT, ROOT, load_env
+from spanishnova_upload.config import HTML_ROOT, ROOT
+from spanishnova_upload.uploader import find_html, load_env
 from spanishnova_upload.roadmap import read_roadmap_rows
 from spanishnova_upload.wordpress import wp_request
 from spanishnova_render.grammar import render_html as render_grammar_html
@@ -166,7 +167,7 @@ def main():
     for row in rows:
         slug = row.get("base_slug", "").strip()
         post = posts_by_id.get(row.get("wp_post_id", "").strip()) or posts_by_slug.get(slug)
-        html_path = HTML_ROOT / args.type / f"{slug}.html"
+        html_path = find_html(row)
         json_path = DATA_ROOT / args.type / f"{slug}.json"
         labels = row_status(row, post, html_path, json_path)
         for label in labels:
