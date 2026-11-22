@@ -21,3 +21,15 @@
 .sn-practice-lesson .sv-exercise summary{cursor:pointer;color:var(--sv-accent);font-weight:700}
 .sn-practice-lesson .sv-exercise details[open] summary{border-bottom:1px solid #d1e1de;padding-bottom:7px;margin-bottom:7px}
 @media(max-width:680px){.sn-practice-lesson .sv-practice{grid-template-columns:1fr}.sn-practice-lesson .sv-table{font-size:14px}.sn-practice-lesson .sv-table th,.sn-practice-lesson .sv-table td{padding:8px}}
+
+/* Image observation and Yes/No choice cards for practice lessons. */
+.sn-practice-lesson .sv-observation-image{margin:18px 0 22px}
+.sn-practice-lesson .sv-observation-image img{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--sv-line)}
+.sn-practice-lesson .sv-observation-image figcaption{font-size:14px;color:var(--sv-muted);margin-top:8px}
+.sn-practice-lesson .sv-choice-options{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.sn-practice-lesson .sv-choice-button{appearance:none;background:#fff;border:1px solid var(--sv-line);border-radius:7px;color:var(--sv-ink);cursor:pointer;font:inherit;font-weight:600;min-width:75px;padding:9px 14px}
+.sn-practice-lesson .sv-choice-button:hover,.sn-practice-lesson .sv-choice-button:focus-visible{border-color:var(--sv-accent)}
+.sn-practice-lesson .sv-choice-button[aria-pressed="true"]{background:var(--sv-pale);border-color:var(--sv-accent)}
+.sn-practice-lesson .sv-choice-feedback{font-size:14px;font-weight:600;margin:6px 0 0}
+.sn-practice-lesson .sv-choice-feedback[data-result="correct"]{color:var(--sv-accent)}
+.sn-practice-lesson .sv-choice-feedback[data-result="incorrect"]{color:#a33f26}
