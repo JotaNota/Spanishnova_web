@@ -4,6 +4,7 @@ import difflib
 import json
 
 from spanishnova_upload.config import HTML_ROOT, ROOT
+from spanishnova_upload.uploader import find_html
 
 
 DATA_ROOT = ROOT / "docs/content-system/generated/json"
@@ -103,7 +104,7 @@ def main():
     snapshot_html_path = SNAPSHOT_ROOT / args.type / f"{args.slug}.html"
     snapshot_json_path = SNAPSHOT_ROOT / args.type / f"{args.slug}.json"
     current_json_path = DATA_ROOT / args.type / f"{args.slug}.json"
-    generated_html_path = HTML_ROOT / args.type / f"{args.slug}.html"
+    generated_html_path = find_html({"cpt": args.type, "base_slug": args.slug, "lesson_type": next((row.get("lesson_type", "") for row in __import__("spanishnova_upload.roadmap", fromlist=["load_roadmap"]).load_roadmap().values() if row.get("base_slug") == args.slug), "")})
 
     if not snapshot_html_path.exists():
         raise SystemExit(f"Missing snapshot HTML: {snapshot_html_path}")
