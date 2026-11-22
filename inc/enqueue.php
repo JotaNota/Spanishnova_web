@@ -31,12 +31,14 @@ function spanishnova_enqueue_assets() {
         $practice_post = get_queried_object();
         if ($practice_post instanceof WP_Post && strpos($practice_post->post_content, 'sn-practice-lesson') !== false) {
             $practice_css = get_template_directory() . '/assets/css/practice.css';
-            wp_enqueue_style(
-                'spanishnova-practice-lesson',
-                get_template_directory_uri() . '/assets/css/practice.css',
-                ['spanishnova-main'],
-                filemtime($practice_css)
-            );
+            if (is_file($practice_css)) {
+                wp_enqueue_style(
+                    'spanishnova-practice-lesson',
+                    get_template_directory_uri() . '/assets/css/practice.css',
+                    ['spanishnova-main'],
+                    filemtime($practice_css)
+                );
+            }
         }
     }
 
