@@ -33,3 +33,23 @@
 .sn-practice-lesson .sv-choice-feedback{font-size:14px;font-weight:600;margin:6px 0 0}
 .sn-practice-lesson .sv-choice-feedback[data-result="correct"]{color:var(--sv-accent)}
 .sn-practice-lesson .sv-choice-feedback[data-result="incorrect"]{color:#a33f26}
+
+/* Profile speaking drill: only this lesson. */
+.sn-practice-lesson.sv-profile-drill{font-family:inherit;line-height:1.6;color:#1f2937}
+.sn-practice-lesson.sv-profile-drill h2,
+.sn-practice-lesson.sv-profile-drill h3{font-family:inherit;letter-spacing:-.02em;color:#1f2937}
+.sn-practice-lesson.sv-profile-drill .sv-intro{font-size:17px;line-height:1.65;margin:0 0 10px}
+.sn-practice-lesson.sv-profile-drill > p:not(.sv-intro){font-size:14px;color:#667085;margin:0 0 28px}
+.sn-practice-lesson.sv-profile-drill .sv-section{padding-top:28px;margin-bottom:42px}
+.sn-practice-lesson.sv-profile-drill .sv-section > h2{font-size:clamp(24px,3vw,29px);font-weight:750;margin:0 0 18px}
+.sn-practice-lesson.sv-profile-drill .sv-section > h3{font-size:17px;font-weight:700;margin:28px 0 14px}
+.sn-practice-lesson.sv-profile-drill .sv-examples{border:0;border-left:3px solid #f26b2f;border-radius:0;background:#faf8f5;padding:18px 22px;max-width:100%}
+.sn-practice-lesson.sv-profile-drill .sv-entry{padding:0}
+.sn-practice-lesson.sv-profile-drill .sv-entry h3{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#667085;margin:0 0 12px}
+.sn-practice-lesson.sv-profile-drill .sv-profile-lines{display:grid;gap:5px;min-width:0}
+.sn-practice-lesson.sv-profile-drill .sv-profile-line{margin:0;padding:0;font-size:16px;line-height:1.6;font-weight:400;overflow-wrap:break-word}
+.sn-practice-lesson.sv-profile-drill .sv-practice{gap:12px}
+.sn-practice-lesson.sv-profile-drill .sv-exercise{background:#fff;border-color:#e2e5e9;border-radius:10px;padding:16px;min-width:0}
+.sn-practice-lesson.sv-profile-drill .sv-exercise p{margin:0 0 12px;line-height:1.5}
+.sn-practice-lesson.sv-profile-drill .sv-exercise details{margin:0;border-radius:7px}
+@media(max-width:680px){.sn-practice-lesson.sv-profile-drill .sv-examples{padding:16px}.sn-practice-lesson.sv-profile-drill .sv-section{padding-top:22px;margin-bottom:32px}}
