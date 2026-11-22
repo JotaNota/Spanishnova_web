@@ -1,17 +1,17 @@
 {
   "intro": "Possessive adjectives show who owns something. In Spanish, mi, tu, su, and nuestro go before the noun they describe.",
   "overview": {
-    "body": "Possessive adjectives agree with the thing possessed.",
-    "use_note": "possessive adjectives before nouns"
+    "body": "Possessive adjectives agree with the thing possessed. Their form depends on the noun that follows, not on the owner's gender.",
+    "use_note": "Agreement with the noun"
   },
   "examples": [
     {
-      "spanish": "Mi libro está en la mesa.",
-      "english": "My book is on the table."
+      "spanish": "Mi libro está aquí.",
+      "english": "My book is here."
     },
     {
-      "spanish": "Mis libros están en la mesa.",
-      "english": "My books are on the table."
+      "spanish": "Mis libros están aquí.",
+      "english": "My books are here."
     }
   ],
   "forms": [
@@ -21,11 +21,11 @@
     },
     {
       "label": "tu / tus",
-      "meaning": "your"
+      "meaning": "your (informal singular)"
     },
     {
       "label": "su / sus",
-      "meaning": "his, her, your formal, their"
+      "meaning": "his, her, your formal, their, your plural"
     },
     {
       "label": "nuestro / nuestra / nuestros / nuestras",
@@ -33,58 +33,128 @@
     }
   ],
   "notes": [
-    "Mi, tu, and su only change between singular and plural.",
-    "Nuestro changes for masculine, feminine, singular, and plural nouns."
+    "Mi, tu, and su change between singular and plural according to the noun: mi libro / mis libros; tu amigo / tus amigos; su pregunta / sus preguntas.",
+    "Nuestro changes for masculine, feminine, singular, and plural nouns: nuestro libro, nuestra casa, nuestros libros, nuestras casas.",
+    "Tu (without an accent) is possessive; tú (with an accent) is the subject pronoun.",
+    "Su / sus can refer to different owners. Context helps identify whose noun it is."
   ],
   "uses": [
     {
-      "heading": "Possessive Adjectives Before Nouns",
-      "body": "Possessive adjectives go before the noun.",
+      "heading": "Possessive adjectives before the noun",
+      "body": "Place mi, tu, su, and nuestro before the noun. The singular and plural forms describe how many things are possessed.",
       "examples": [
         {
-          "spanish": "Mi teléfono está aquí.",
-          "english": "My phone is here."
+          "spanish": "Tu teléfono está en la mesa.",
+          "english": "Your phone is on the table."
         },
+        {
+          "spanish": "Sus amigos viven en Chile.",
+          "english": "His, her, your formal, or their friends live in Chile."
+        }
+      ]
+    },
+    {
+      "heading": "Our: gender and number",
+      "body": "Nuestro agrees with the noun in both gender and number.",
+      "examples": [
         {
           "spanish": "Nuestra clase empieza ahora.",
           "english": "Our class starts now."
+        },
+        {
+          "spanish": "Nuestros profesores trabajan aquí.",
+          "english": "Our teachers work here."
         }
       ]
     }
   ],
   "forms_table": {
-    "headers": ["Pronombre", "Adjetivo posesivo", "Singular", "Plural"],
+    "headers": [
+      "Pronombre",
+      "Adjetivo posesivo",
+      "Singular",
+      "Plural"
+    ],
     "rows": [
-      ["Yo", "mi / mis", "mi libro", "mis libros"],
-      ["Tú", "tu / tus", "tu casa", "tus casas"],
-      ["Él / Ella / Usted", "su / sus", "su teléfono", "sus teléfonos"],
-      ["Nosotros / Nosotras", "nuestro / nuestra / nuestros / nuestras", "nuestro libro / nuestra casa", "nuestros libros / nuestras casas"],
-      ["Ellos / Ellas / Ustedes", "su / sus", "su profesor", "sus profesores"]
+      [
+        "Yo",
+        "mi / mis",
+        "mi libro",
+        "mis libros"
+      ],
+      [
+        "Tú",
+        "tu / tus",
+        "tu amigo",
+        "tus amigos"
+      ],
+      [
+        "Él / Ella / Usted",
+        "su / sus",
+        "su pregunta",
+        "sus preguntas"
+      ],
+      [
+        "Nosotros / Nosotras",
+        "nuestro / nuestra / nuestros / nuestras",
+        "nuestro libro / nuestra casa",
+        "nuestros libros / nuestras casas"
+      ],
+      [
+        "Ellos / Ellas / Ustedes",
+        "su / sus",
+        "su profesor",
+        "sus profesores"
+      ]
     ]
   },
   "sentences": {
     "affirmative": [
       {
-        "spanish": "Mi libro está en la mesa.",
-        "english": "My book is on the table."
+        "spanish": "Mi libro está aquí.",
+        "english": "My book is here."
       },
       {
-        "spanish": "Tus amigos son amables.",
-        "english": "Your friends are kind."
+        "spanish": "Mis libros están aquí.",
+        "english": "My books are here."
       },
       {
-        "spanish": "Su teléfono está aquí.",
-        "english": "His, her, your formal, or their phone is here."
+        "spanish": "Tu amigo es simpático.",
+        "english": "Your friend is nice."
       },
       {
-        "spanish": "Nuestras clases son útiles.",
-        "english": "Our classes are useful."
+        "spanish": "Tus amigos son simpáticos.",
+        "english": "Your friends are nice."
+      },
+      {
+        "spanish": "Su pregunta es buena.",
+        "english": "His, her, your formal, or their question is good."
+      },
+      {
+        "spanish": "Sus preguntas son buenas.",
+        "english": "His, her, your formal, or their questions are good."
+      },
+      {
+        "spanish": "Nuestra casa es grande.",
+        "english": "Our house is big."
+      },
+      {
+        "spanish": "Nuestras casas son grandes.",
+        "english": "Our houses are big."
       }
     ],
     "negative": [
       {
         "spanish": "Mi teléfono no funciona.",
         "english": "My phone does not work."
+      },
+      {
+        "spanish": "Mis llaves no están aquí.",
+        "english": "My keys are not here."
+      },
+      {
+        "spanish": "Tu mochila no es azul.",
+        "english": "Your backpack is not blue."
       },
       {
         "spanish": "Tus respuestas no son correctas.",
@@ -95,8 +165,16 @@
         "english": "His, her, your formal, or their office is not open."
       },
       {
-        "spanish": "Nuestros libros no están aquí.",
-        "english": "Our books are not here."
+        "spanish": "Sus hijos no están en casa.",
+        "english": "His, her, your formal, or their children are not at home."
+      },
+      {
+        "spanish": "Nuestro profesor no está aquí.",
+        "english": "Our teacher is not here."
+      },
+      {
+        "spanish": "Nuestros libros no están en la mesa.",
+        "english": "Our books are not on the table."
       }
     ],
     "questions": [
@@ -105,125 +183,281 @@
         "english": "Is it your backpack?"
       },
       {
-        "spanish": "¿Son sus hijos?",
-        "english": "Are they his, her, your formal, or their children?"
+        "spanish": "¿Son tus amigos?",
+        "english": "Are they your friends?"
+      },
+      {
+        "spanish": "¿Su pregunta es importante?",
+        "english": "Is his, her, your formal, or their question important?"
+      },
+      {
+        "spanish": "¿Sus preguntas son buenas?",
+        "english": "Are his, her, your formal, or their questions good?"
       },
       {
         "spanish": "¿Nuestra clase empieza ahora?",
         "english": "Does our class start now?"
       },
       {
+        "spanish": "¿Nuestros libros están aquí?",
+        "english": "Are our books here?"
+      },
+      {
         "spanish": "¿Dónde están mis llaves?",
         "english": "Where are my keys?"
+      },
+      {
+        "spanish": "¿Dónde está su oficina?",
+        "english": "Where is his, her, your formal, or their office?"
       }
     ]
   },
   "exercises": {
     "select": [
       {
-        "prompt": "_____ libro está en la mesa.",
-        "options": ["Mi", "Mis", "Nuestra"],
-        "answer": "Mi libro está en la mesa."
+        "prompt": "_____ libro está aquí.",
+        "options": [
+          "Mi",
+          "Mis",
+          "Nuestra"
+        ],
+        "answer": "Mi libro está aquí."
       },
       {
-        "prompt": "_____ libros están en la mesa.",
-        "options": ["Mi", "Mis", "Nuestro"],
-        "answer": "Mis libros están en la mesa."
+        "prompt": "_____ libros están aquí.",
+        "options": [
+          "Mi",
+          "Mis",
+          "Nuestro"
+        ],
+        "answer": "Mis libros están aquí."
       },
       {
-        "prompt": "_____ casa es grande.",
-        "options": ["Nuestros", "Nuestra", "Nuestras"],
-        "answer": "Nuestra casa es grande."
+        "prompt": "_____ amigo es simpático.",
+        "options": [
+          "Tu",
+          "Tus",
+          "Nuestros"
+        ],
+        "answer": "Tu amigo es simpático."
+      },
+      {
+        "prompt": "_____ amigos son simpáticos.",
+        "options": [
+          "Tu",
+          "Tus",
+          "Nuestra"
+        ],
+        "answer": "Tus amigos son simpáticos."
+      },
+      {
+        "prompt": "_____ pregunta es buena.",
+        "options": [
+          "Su",
+          "Sus",
+          "Nuestras"
+        ],
+        "answer": "Su pregunta es buena."
       },
       {
         "prompt": "_____ preguntas son buenas.",
-        "options": ["Su", "Sus", "Mi"],
+        "options": [
+          "Su",
+          "Sus",
+          "Mi"
+        ],
         "answer": "Sus preguntas son buenas."
+      },
+      {
+        "prompt": "_____ casa es grande.",
+        "options": [
+          "Nuestro",
+          "Nuestra",
+          "Nuestras"
+        ],
+        "answer": "Nuestra casa es grande."
+      },
+      {
+        "prompt": "_____ libros no están en la mesa.",
+        "options": [
+          "Nuestro",
+          "Nuestra",
+          "Nuestros"
+        ],
+        "answer": "Nuestros libros no están en la mesa."
+      },
+      {
+        "prompt": "_____ mochila no es azul.",
+        "options": [
+          "Tu",
+          "Tus",
+          "Sus"
+        ],
+        "answer": "Tu mochila no es azul."
+      },
+      {
+        "prompt": "_____ llaves no están aquí.",
+        "options": [
+          "Mi",
+          "Mis",
+          "Nuestra"
+        ],
+        "answer": "Mis llaves no están aquí."
       }
     ],
     "complete": [
       {
-        "prompt": "___ teléfono está aquí.",
-        "answer": "Mi teléfono está aquí."
+        "prompt": "Mi hermano tiene dos perros. ___ perros son grandes.",
+        "answer": "Sus perros son grandes."
       },
       {
-        "prompt": "___ libros son nuevos.",
-        "answer": "Tus libros son nuevos."
+        "prompt": "Tenemos una casa. ___ casa es pequeña.",
+        "answer": "Nuestra casa es pequeña."
       },
       {
-        "prompt": "___ profesor es amable.",
-        "answer": "Nuestro profesor es amable."
+        "prompt": "Ana, ¿dónde están ___ llaves?",
+        "answer": "Ana, ¿dónde están tus llaves?"
       },
       {
-        "prompt": "___ clases son útiles.",
-        "answer": "Nuestras clases son útiles."
+        "prompt": "Yo tengo un libro. ___ libro es interesante.",
+        "answer": "Mi libro es interesante."
+      },
+      {
+        "prompt": "Ellos tienen tres hijas. ___ hijas estudian español.",
+        "answer": "Sus hijas estudian español."
+      },
+      {
+        "prompt": "Somos profesores. ___ estudiantes son amables.",
+        "answer": "Nuestros estudiantes son amables."
+      },
+      {
+        "prompt": "Tú tienes una mochila. ___ mochila es roja.",
+        "answer": "Tu mochila es roja."
+      },
+      {
+        "prompt": "Tengo dos hermanas. ___ hermanas viven en Madrid.",
+        "answer": "Mis hermanas viven en Madrid."
+      },
+      {
+        "prompt": "Nosotras tenemos varias clases. ___ clases empiezan temprano.",
+        "answer": "Nuestras clases empiezan temprano."
+      },
+      {
+        "prompt": "¿Usted tiene una oficina? ¿Dónde está ___ oficina?",
+        "answer": "¿Usted tiene una oficina? ¿Dónde está su oficina?"
       }
     ],
     "translate": [
       {
-        "prompt": "My book is on the table.",
-        "answer": "Mi libro está en la mesa."
+        "prompt": "My book is here.",
+        "answer": "Mi libro está aquí."
       },
       {
-        "prompt": "My books are on the table.",
-        "answer": "Mis libros están en la mesa."
+        "prompt": "My books are here.",
+        "answer": "Mis libros están aquí."
       },
       {
-        "prompt": "Your house is big.",
-        "answer": "Tu casa es grande."
+        "prompt": "Your friend is nice.",
+        "answer": "Tu amigo es simpático."
       },
       {
-        "prompt": "Our classes are useful.",
-        "answer": "Nuestras clases son útiles."
+        "prompt": "Your friends are nice.",
+        "answer": "Tus amigos son simpáticos."
+      },
+      {
+        "prompt": "His question is good.",
+        "answer": "Su pregunta es buena."
+      },
+      {
+        "prompt": "Their questions are good.",
+        "answer": "Sus preguntas son buenas."
+      },
+      {
+        "prompt": "Our house is big.",
+        "answer": "Nuestra casa es grande."
+      },
+      {
+        "prompt": "Our books are not on the table.",
+        "answer": "Nuestros libros no están en la mesa."
+      },
+      {
+        "prompt": "Your backpack is not blue.",
+        "answer": "Tu mochila no es azul."
+      },
+      {
+        "prompt": "Where are my keys?",
+        "answer": "¿Dónde están mis llaves?"
       }
     ]
   },
   "answers": {
     "select": [
-      "Mi libro está en la mesa.",
-      "Mis libros están en la mesa.",
+      "Mi libro está aquí.",
+      "Mis libros están aquí.",
+      "Tu amigo es simpático.",
+      "Tus amigos son simpáticos.",
+      "Su pregunta es buena.",
+      "Sus preguntas son buenas.",
       "Nuestra casa es grande.",
-      "Sus preguntas son buenas."
+      "Nuestros libros no están en la mesa.",
+      "Tu mochila no es azul.",
+      "Mis llaves no están aquí."
     ],
     "complete": [
-      "Mi teléfono está aquí.",
-      "Tus libros son nuevos.",
-      "Nuestro profesor es amable.",
-      "Nuestras clases son útiles."
+      "Sus perros son grandes.",
+      "Nuestra casa es pequeña.",
+      "Ana, ¿dónde están tus llaves?",
+      "Mi libro es interesante.",
+      "Sus hijas estudian español.",
+      "Nuestros estudiantes son amables.",
+      "Tu mochila es roja.",
+      "Mis hermanas viven en Madrid.",
+      "Nuestras clases empiezan temprano.",
+      "¿Usted tiene una oficina? ¿Dónde está su oficina?"
     ],
     "translate": [
-      "Mi libro está en la mesa.",
-      "Mis libros están en la mesa.",
-      "Tu casa es grande.",
-      "Nuestras clases son útiles."
+      "Mi libro está aquí.",
+      "Mis libros están aquí.",
+      "Tu amigo es simpático.",
+      "Tus amigos son simpáticos.",
+      "Su pregunta es buena.",
+      "Sus preguntas son buenas.",
+      "Nuestra casa es grande.",
+      "Nuestros libros no están en la mesa.",
+      "Tu mochila no es azul.",
+      "¿Dónde están mis llaves?"
     ]
   },
-  "wrap_up_headers": ["Pronombre", "Example", "Translation"],
+  "wrap_up_headers": [
+    "Pronombre",
+    "Singular",
+    "Plural"
+  ],
   "wrap_up": [
     {
       "use": "Yo",
-      "example": "mi libro / mis libros",
-      "translation": "my book / my books"
+      "example": "mi libro",
+      "translation": "mis libros"
     },
     {
       "use": "Tú",
-      "example": "tu casa / tus casas",
-      "translation": "your house / your houses"
+      "example": "tu amigo",
+      "translation": "tus amigos"
     },
     {
       "use": "Él / Ella / Usted",
-      "example": "su teléfono / sus teléfonos",
-      "translation": "his, her, or your formal phone / phones"
+      "example": "su pregunta",
+      "translation": "sus preguntas"
     },
     {
       "use": "Nosotros / Nosotras",
-      "example": "nuestro libro / nuestra casa / nuestros libros / nuestras casas",
-      "translation": "our book / our house / our books / our houses"
+      "example": "nuestro libro / nuestra casa",
+      "translation": "nuestros libros / nuestras casas"
     },
     {
       "use": "Ellos / Ellas / Ustedes",
-      "example": "su profesor / sus profesores",
-      "translation": "their or your plural teacher / teachers"
+      "example": "su profesor",
+      "translation": "sus profesores"
     }
   ]
 }
