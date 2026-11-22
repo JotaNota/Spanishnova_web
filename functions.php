@@ -4,8 +4,10 @@ if (!defined('ABSPATH')) { exit; }
 require_once get_template_directory() . '/inc/setup.php';
 require_once get_template_directory() . '/inc/enqueue.php';
 require_once get_template_directory() . '/inc/cpt.php';
+require_once get_template_directory() . '/inc/lesson-meta.php';
 require_once get_template_directory() . '/inc/taxonomies.php';
 require_once get_template_directory() . '/inc/taxonomy-seeds.php';
+require_once get_template_directory() . '/inc/topic-catalog.php';
 require_once get_template_directory() . '/inc/grammar-meta.php';
 require_once get_template_directory() . '/inc/grammar-editor-template.php';
 
@@ -53,3 +55,23 @@ add_action('template_redirect', function () {
     wp_safe_redirect($url, 301);
     exit;
 });
+
+/** Filter selected topic within the vocabulary, readings and conversations archives. */
+function spanishnova_filter_topic_archive($query) {
+    if (is_admin() || !$query->is_main_query() || !$query->is_post_type_archive()) return;
+    $post_type = $query->get('post_type');
+    if (!in_array($post_type, ['vocabulary', 'readings', 'conversations'], true)) return;
+    $raw_topic = $_GET['sn_topic'] ?? ($_GET['topic'] ?? null);
+    if (!is_string($raw_topic)) return;
+    $slug = sanitize_title(wp_unslash($raw_topic));
+    if (!$slug || !term_exists($slug, 'topic_tax')) return;
+    $filters = (array) $query->get('tax_query');
+    $filters[] = [
+        'taxonomy' => 'topic_tax',
+        'field' => 'slug',
+        'terms' => $slug,
+        'include_children' => true,
+    ];
+    $query->set('tax_query', $filters);
+}
+add_action('pre_get_posts', 'spanishnova_filter_topic_archive');
