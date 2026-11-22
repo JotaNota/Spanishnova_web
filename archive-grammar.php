@@ -1,115 +1,398 @@
-<?php
-/** Grammar navigator: use every assigned grammar_tax term. */
-if (!defined('ABSPATH')) { exit; }
+<?php get_header(); ?>
 
-$grammar_archive_url = get_post_type_archive_link('grammar') ?: home_url('/grammar/');
-$terms = get_terms(['taxonomy' => 'grammar_tax', 'hide_empty' => false]);
-$terms = is_wp_error($terms) ? [] : $terms;
-$term_index = [];
-foreach ($terms as $term) {
-  $term_index[(int) $term->term_id] = [
-    'id' => (int) $term->term_id,
-    'parent' => (int) $term->parent,
-    'name' => $term->name,
-    'slug' => $term->slug,
-  ];
+<?php
+$search = isset($_GET['sn_search']) ? sanitize_text_field(wp_unslash($_GET['sn_search'])) : '';
+$category_slug = isset($_GET['sn_category']) ? sanitize_title(wp_unslash($_GET['sn_category'])) : '';
+$subtopic_slug = isset($_GET['sn_subtopic']) ? sanitize_title(wp_unslash($_GET['sn_subtopic'])) : '';
+$level_slug = isset($_GET['sn_level']) ? sanitize_title(wp_unslash($_GET['sn_level'])) : '';
+$paged = isset($_GET['sn_page']) ? max(1, absint($_GET['sn_page'])) : 1;
+
+// Only offer grammar terms that have at least one published Grammar post
+// (including posts assigned to descendants).
+function spanishnova_grammar_term_has_lessons($term_id) {
+  $matches = new WP_Query([
+    'post_type' => 'grammar',
+    'post_status' => 'publish',
+    'posts_per_page' => 1,
+    'fields' => 'ids',
+    'no_found_rows' => true,
+    'tax_query' => [[
+      'taxonomy' => 'grammar_tax',
+      'field' => 'term_id',
+      'terms' => (int) $term_id,
+      'include_children' => true,
+    ]],
+  ]);
+  return $matches->have_posts();
 }
 
-$lessons = [];
-$lesson_ids = get_posts([
+$all_categories = get_terms([
+  'taxonomy' => 'grammar_tax',
+  'parent' => 0,
+  'hide_empty' => false,
+]);
+if (is_wp_error($all_categories)) {
+  $all_categories = [];
+}
+$categories = [];
+$category_tree = [];
+foreach ($all_categories as $category) {
+  if (!spanishnova_grammar_term_has_lessons($category->term_id)) continue;
+  $categories[] = $category;
+  $descendants = get_terms([
+    'taxonomy' => 'grammar_tax',
+    'child_of' => $category->term_id,
+    'hide_empty' => false,
+  ]);
+  if (is_wp_error($descendants)) $descendants = [];
+  $visible_descendants = array_values(array_filter($descendants, function ($term) {
+    return spanishnova_grammar_term_has_lessons($term->term_id);
+  }));
+  $category_tree[$category->slug] = [
+    'label' => $category->name,
+    'children' => array_map(function ($term) {
+      return ['slug' => $term->slug, 'label' => $term->name];
+    }, $visible_descendants),
+  ];
+}
+$levels = get_terms([
+  'taxonomy' => 'level_tax',
+  'hide_empty' => false,
+]);
+if (is_wp_error($levels)) {
+  $levels = [];
+}
+
+$selected_category = $category_slug ? get_term_by('slug', $category_slug, 'grammar_tax') : null;
+if ($selected_category && (int) $selected_category->parent !== 0) {
+  $selected_category = null;
+}
+if (!$selected_category) {
+  $category_slug = '';
+}
+$selected_subtopic = $subtopic_slug ? get_term_by('slug', $subtopic_slug, 'grammar_tax') : null;
+if ($selected_subtopic && $selected_category) {
+  $ancestor_ids = get_ancestors($selected_subtopic->term_id, 'grammar_tax', 'taxonomy');
+  if (!in_array((int) $selected_category->term_id, array_map('intval', $ancestor_ids), true)) {
+    $selected_subtopic = null;
+  }
+} else {
+  $selected_subtopic = null;
+}
+if (!$selected_subtopic) {
+  $subtopic_slug = '';
+}
+$subtopics = [];
+if ($selected_category && isset($category_tree[$selected_category->slug])) {
+  $subtopics = $category_tree[$selected_category->slug]['children'];
+}
+$valid_level = $level_slug ? get_term_by('slug', $level_slug, 'level_tax') : null;
+if (!$valid_level) {
+  $level_slug = '';
+}
+
+$query_args = [
   'post_type' => 'grammar',
   'post_status' => 'publish',
   'posts_per_page' => -1,
-  'fields' => 'ids',
+  'ignore_sticky_posts' => true,
   'orderby' => 'title',
   'order' => 'ASC',
-  'suppress_filters' => false,
-]);
-
-foreach ($lesson_ids as $post_id) {
-  $assigned = wp_get_post_terms($post_id, 'grammar_tax');
-  $assigned = is_wp_error($assigned) ? [] : $assigned;
-  $choices = [];
-  $term_names = [];
-  foreach ($assigned as $term) {
-    if (!isset($term_index[$term->term_id])) { continue; }
-    $choices[] = (int) $term->term_id;
-    $term_names[] = $term->name;
-    foreach (get_ancestors($term->term_id, 'grammar_tax', 'taxonomy') as $ancestor_id) {
-      if (isset($term_index[$ancestor_id])) {
-        $term_names[] = $term_index[$ancestor_id]['name'];
-      }
-    }
-  }
-  $choices = array_values(array_unique($choices));
-
-  // Stable level order for the Grammar catalog (without changing published posts).
-  $level_rank = 4; // Unassigned or unrecognized levels go last.
-  $assigned_levels = wp_get_post_terms($post_id, 'level_tax');
-  if (!is_wp_error($assigned_levels)) {
-    foreach ($assigned_levels as $level_term) {
-      $level_label = strtolower($level_term->slug . ' ' . $level_term->name);
-      if (preg_match('/\\bstarter\\b|\\ba1\\b/', $level_label)) {
-        $level_rank = min($level_rank, 0);
-      } elseif (preg_match('/\\bbeginner\\b|\\ba2\\b/', $level_label)) {
-        $level_rank = min($level_rank, 1);
-      } elseif (preg_match('/\\bintermediate\\b|\\bb1\\b|\\bb2\\b/', $level_label)) {
-        $level_rank = min($level_rank, 2);
-      } elseif (preg_match('/\\badvanced\\b|\\bc1\\b|\\bc2\\b/', $level_label)) {
-        $level_rank = min($level_rank, 3);
-      }
-    }
-  }
-
-  $body = get_post_field('post_content', $post_id);
-  $lessons[] = [
-    'id' => (int) $post_id,
-    'level_rank' => $level_rank,
-    'title' => get_the_title($post_id),
-    'description' => wp_trim_words(spanishnova_get_card_excerpt($post_id), 27),
-    'url' => get_permalink($post_id),
-    'terms' => $choices,
-    'keywords' => implode(' ', array_unique($term_names)) . ' ' . wp_trim_words(wp_strip_all_tags(strip_shortcodes($body)), 200, ''),
+];
+if ($search !== '') {
+  $query_args['s'] = $search;
+}
+$tax_query = ['relation' => 'AND'];
+if ($selected_category) {
+  $tax_query[] = [
+    'taxonomy' => 'grammar_tax',
+    'field' => 'term_id',
+    'terms' => $selected_subtopic ? $selected_subtopic->term_id : $selected_category->term_id,
+    'include_children' => true,
   ];
 }
-// Preserve alphabetical ordering within each level.
-usort($lessons, static function ($a, $b) {
-  $by_level = $a['level_rank'] <=> $b['level_rank'];
-  return $by_level ?: strcasecmp($a['title'], $b['title']);
-});
-$data = [
-  'terms' => array_values($term_index),
-  'lessons' => $lessons,
-  'total' => count($lessons),
-];
+if ($valid_level) {
+  $tax_query[] = [
+    'taxonomy' => 'level_tax',
+    'field' => 'term_id',
+    'terms' => $valid_level->term_id,
+  ];
+}
+if (count($tax_query) > 1) {
+  $query_args['tax_query'] = $tax_query;
+}
+$grammar_query = new WP_Query($query_args);
 
-wp_enqueue_script(
-  'spanishnova-grammar-navigator',
-  get_template_directory_uri() . '/assets/js/grammar-navigator.js',
-  [],
-  filemtime(get_template_directory() . '/assets/js/grammar-navigator.js'),
-  true
-);
-get_header();
+// Order published lessons by level, then alphabetically within each level.
+// Unassigned levels go after Advanced. Keep all existing search/topic/level filters.
+$sn_level_rank = static function ($post_id) {
+  $rank = 4;
+  $assigned_levels = wp_get_post_terms($post_id, 'level_tax');
+  if (is_wp_error($assigned_levels)) return $rank;
+
+  foreach ($assigned_levels as $term) {
+    $label = strtolower($term->slug . ' ' . $term->name);
+    if (preg_match('/\\bstarter\\b|\\ba1\\b/', $label)) {
+      $rank = min($rank, 0);
+    } elseif (preg_match('/\\bbeginner\\b|\\ba2\\b/', $label)) {
+      $rank = min($rank, 1);
+    } elseif (preg_match('/\\bintermediate\\b|\\bb1\\b|\\bb2\\b/', $label)) {
+      $rank = min($rank, 2);
+    } elseif (preg_match('/\\badvanced\\b|\\bc1\\b|\\bc2\\b/', $label)) {
+      $rank = min($rank, 3);
+    }
+  }
+  return $rank;
+};
+
+$sn_sorted_posts = $grammar_query->posts;
+$sn_ranks = [];
+foreach ($sn_sorted_posts as $post) {
+  $sn_ranks[$post->ID] = $sn_level_rank($post->ID);
+}
+usort($sn_sorted_posts, static function ($a, $b) use ($sn_ranks) {
+  $level_order = $sn_ranks[$a->ID] <=> $sn_ranks[$b->ID];
+  return $level_order ?: (strcasecmp($a->post_title, $b->post_title) ?: ($a->ID <=> $b->ID));
+});
+
+$grammar_query->found_posts = count($sn_sorted_posts);
+$grammar_query->max_num_pages = (int) ceil($grammar_query->found_posts / 12);
+$grammar_query->posts = array_slice($sn_sorted_posts, ($paged - 1) * 12, 12);
+$grammar_query->post_count = count($grammar_query->posts);
+$grammar_query->current_post = -1;
+$base_url = get_post_type_archive_link('grammar') ?: home_url('/grammar/');
+$active_args = [];
+if ($search !== '') $active_args['sn_search'] = $search;
+if ($category_slug !== '') $active_args['sn_category'] = $category_slug;
+if ($subtopic_slug !== '') $active_args['sn_subtopic'] = $subtopic_slug;
+if ($level_slug !== '') $active_args['sn_level'] = $level_slug;
 ?>
-<main class="sn-grammar-library" id="sn-grammar-navigator">
+
+<main>
   <section class="panel grammar-archive-panel grammar-explore-panel">
-    <header class="sn-grammar-intro">
-      <h1>Grammar</h1>
-      <p>Find a lesson or explore grammar by topic.</p>
-    </header>
-    <div class="sn-grammar-search-wrap">
-      <label class="screen-reader-text" for="sn-grammar-search">Search grammar lessons and topics</label>
-      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
-      <input id="sn-grammar-search" type="search" placeholder="Try 'present regu', 'indirect object', 'subjunctive'…" autocomplete="off">
-      <button id="sn-grammar-clear" type="button" aria-label="Clear search" hidden>×</button>
+    <h1>Grammar</h1>
+    <p class="grammar-catalog-intro">Find grammar lessons by keyword, topic or level.</p>
+
+    <form id="grammar-catalog-filters" class="grammar-catalog-filters" action="<?php echo esc_url($base_url); ?>" method="get" role="search">
+      <div class="grammar-filter-field grammar-search-field">
+        <label for="grammar-search">Search lessons</label>
+        <input id="grammar-search" type="search" name="sn_search" value="<?php echo esc_attr($search); ?>" placeholder="Search grammar lessons..." autocomplete="off">
+      </div>
+      <div class="grammar-filter-field">
+        <label for="grammar-category">Topic</label>
+        <select id="grammar-category" name="sn_category">
+          <option value="">All topics</option>
+          <?php foreach ($categories as $category) : ?>
+            <option value="<?php echo esc_attr($category->slug); ?>" <?php selected($category_slug, $category->slug); ?>><?php echo esc_html($category->name); ?></option>
+          <?php endforeach; ?>
+        </select>
+      </div>
+      <div class="grammar-filter-field">
+        <label for="grammar-level">Level</label>
+        <select id="grammar-level" name="sn_level">
+          <option value="">All levels</option>
+          <?php foreach ($levels as $level) : ?>
+            <option value="<?php echo esc_attr($level->slug); ?>" <?php selected($level_slug, $level->slug); ?>><?php echo esc_html($level->name); ?></option>
+          <?php endforeach; ?>
+        </select>
+      </div>
+      <div class="grammar-filter-field grammar-subtopic-field" <?php echo $selected_category ? '' : 'hidden'; ?>>
+        <label for="grammar-subtopic">Subtopic</label>
+        <select id="grammar-subtopic" name="sn_subtopic" data-current="<?php echo esc_attr($subtopic_slug); ?>">
+          <option value="">All <?php echo $selected_category ? esc_html($selected_category->name) : 'subtopics'; ?></option>
+          <?php foreach ($subtopics as $subtopic) : ?>
+            <option value="<?php echo esc_attr($subtopic['slug']); ?>" <?php selected($subtopic_slug, $subtopic['slug']); ?>><?php echo esc_html($subtopic['label']); ?></option>
+          <?php endforeach; ?>
+        </select>
+      </div>
+      <div class="grammar-filter-actions">
+        <button type="button" id="grammar-reset" class="grammar-reset-button">Reset</button>
+        <button type="submit" class="grammar-fallback-submit">Apply filters</button>
+      </div>
+    </form>
+
+    <div id="grammar-catalog-results" aria-live="polite" aria-busy="false">
+      <div class="grammar-results-heading">
+        <h2>Grammar lessons</h2>
+        <p><?php echo esc_html($grammar_query->found_posts); ?> results</p>
+      </div>
+
+      <?php if ($grammar_query->have_posts()) : ?>
+        <div class="activity-list grammar-term-lessons">
+          <?php while ($grammar_query->have_posts()) : $grammar_query->the_post(); ?>
+            <?php
+            $level_terms = get_the_terms(get_the_ID(), 'level_tax');
+            $level_label = ($level_terms && !is_wp_error($level_terms))
+              ? implode(', ', wp_list_pluck($level_terms, 'name'))
+              : '';
+            $grammar_terms = get_the_terms(get_the_ID(), 'grammar_tax');
+            $grammar_topic = '';
+            if ($grammar_terms && !is_wp_error($grammar_terms)) {
+              usort($grammar_terms, function ($a, $b) {
+                return (int) $b->parent <=> (int) $a->parent;
+              });
+              $grammar_topic = $grammar_terms[0]->name;
+            }
+            ?>
+            <a class="activity-row sn-catalog-card sn-catalog-grammar" href="<?php the_permalink(); ?>">
+              <div class="sn-grammar-card-content">
+                <div class="sn-catalog-card-meta">
+                  <span>Grammar</span>
+                  <?php if ($level_label !== '') : ?>
+                    <span aria-hidden="true">·</span>
+                    <span><?php echo esc_html($level_label); ?></span>
+                  <?php endif; ?>
+                </div>
+                <h3><?php the_title(); ?></h3>
+                <?php if ($grammar_topic) : ?>
+                  <p><?php echo esc_html($grammar_topic); ?></p>
+                <?php endif; ?>
+              </div>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          <?php endwhile; ?>
+        </div>
+        <?php wp_reset_postdata(); ?>
+      <?php else : ?>
+        <p class="empty-state">No grammar lessons match these filters.</p>
+      <?php endif; ?>
+
+      <?php if ($grammar_query->max_num_pages > 1) :
+        $total_pages = (int) $grammar_query->max_num_pages;
+        $current_page = min($paged, $total_pages);
+        $previous_url = add_query_arg(array_merge($active_args, ['sn_page' => $current_page - 1]), $base_url);
+        $next_url = add_query_arg(array_merge($active_args, ['sn_page' => $current_page + 1]), $base_url);
+      ?>
+        <nav class="grammar-catalog-pagination" aria-label="Grammar pagination">
+          <?php if ($current_page > 1) : ?>
+            <a class="grammar-page-control" rel="prev" href="<?php echo esc_url($previous_url); ?>">← Previous</a>
+          <?php else : ?>
+            <span class="grammar-page-control is-disabled" aria-disabled="true">← Previous</span>
+          <?php endif; ?>
+          <span class="grammar-page-count" aria-live="polite"><?php echo esc_html($current_page . ' / ' . $total_pages); ?></span>
+          <?php if ($current_page < $total_pages) : ?>
+            <a class="grammar-page-control" rel="next" href="<?php echo esc_url($next_url); ?>">Next →</a>
+          <?php else : ?>
+            <span class="grammar-page-control is-disabled" aria-disabled="true">Next →</span>
+          <?php endif; ?>
+        </nav>
+      <?php endif; ?>
     </div>
-    <p class="sn-grammar-catalog-total"><?php echo esc_html(count($lessons)); ?> published grammar lessons</p>
-    <nav id="sn-grammar-sections" class="sn-grammar-nav" aria-label="Grammar sections"></nav>
-    <nav id="sn-grammar-breadcrumbs" class="sn-grammar-breadcrumbs" aria-label="Grammar navigation"></nav>
-    <div id="sn-grammar-content" aria-live="polite"></div>
-    <noscript><p>Enable JavaScript to browse grammar lessons. <a href="<?php echo esc_url($grammar_archive_url); ?>">Grammar archive</a></p></noscript>
-    <script type="application/json" id="sn-grammar-data"><?php echo wp_json_encode($data, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT); ?></script>
   </section>
 </main>
+
+<script>
+(function () {
+  var form = document.getElementById('grammar-catalog-filters');
+  var results = document.getElementById('grammar-catalog-results');
+  if (!form || !results || !window.fetch || !window.DOMParser) return;
+  form.classList.add('js-ready');
+
+  var search = document.getElementById('grammar-search');
+  var category = document.getElementById('grammar-category');
+  var subtopic = document.getElementById('grammar-subtopic');
+  var subtopicField = form.querySelector('.grammar-subtopic-field');
+  var level = document.getElementById('grammar-level');
+  var reset = document.getElementById('grammar-reset');
+  var timer;
+  var requestId = 0;
+  var categoryTree = <?php echo wp_json_encode($category_tree); ?>;
+
+  function updateSubtopics(value) {
+    var entry = categoryTree[value];
+    var current = subtopic.value;
+    subtopic.replaceChildren();
+    var all = document.createElement('option');
+    all.value = '';
+    all.textContent = entry ? 'All ' + entry.label : 'All subtopics';
+    subtopic.appendChild(all);
+    if (entry && entry.children.length) {
+      entry.children.forEach(function (child) {
+        var option = document.createElement('option');
+        option.value = child.slug;
+        option.textContent = child.label;
+        subtopic.appendChild(option);
+      });
+      subtopic.value = current;
+      if (subtopic.selectedIndex === -1) subtopic.value = '';
+      subtopicField.hidden = false;
+    } else {
+      subtopic.value = '';
+      subtopicField.hidden = true;
+    }
+  }
+
+  function buildUrl(page) {
+    var url = new URL(form.action, window.location.href);
+    var params = url.searchParams;
+    if (search.value.trim()) params.set('sn_search', search.value.trim());
+    if (category.value) params.set('sn_category', category.value);
+    if (category.value && subtopic.value) params.set('sn_subtopic', subtopic.value);
+    if (level.value) params.set('sn_level', level.value);
+    if (page > 1) params.set('sn_page', String(page));
+    return url;
+  }
+
+  function load(url) {
+    var id = ++requestId;
+    results.setAttribute('aria-busy', 'true');
+    fetch(url.toString(), {credentials:'same-origin'})
+      .then(function (response) {
+        if (!response.ok) throw new Error('Catalog request failed');
+        return response.text();
+      })
+      .then(function (html) {
+        if (id !== requestId) return;
+        var documentCopy = new DOMParser().parseFromString(html, 'text/html');
+        var next = documentCopy.getElementById('grammar-catalog-results');
+        if (!next) throw new Error('Catalog results missing');
+        results.innerHTML = next.innerHTML;
+        window.history.replaceState(null, '', url.toString());
+        results.setAttribute('aria-busy', 'false');
+      })
+      .catch(function () {
+        if (id !== requestId) return;
+        results.setAttribute('aria-busy', 'false');
+        results.innerHTML = '<p class="empty-state">Could not load lessons. Please try again.</p>';
+      });
+  }
+
+  function refresh() { load(buildUrl(1)); }
+  search.addEventListener('input', function () {
+    clearTimeout(timer);
+    timer = setTimeout(refresh, 250);
+  });
+  category.addEventListener('change', function () {
+    subtopic.value = '';
+    updateSubtopics(category.value);
+    refresh();
+  });
+  subtopic.addEventListener('change', refresh);
+  level.addEventListener('change', refresh);
+  reset.addEventListener('click', function () {
+    clearTimeout(timer);
+    form.reset();
+    search.value = '';
+    category.value = '';
+    subtopic.value = '';
+    level.value = '';
+    updateSubtopics('');
+    refresh();
+  });
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    clearTimeout(timer);
+    refresh();
+  });
+  results.addEventListener('click', function (event) {
+    var link = event.target.closest('.grammar-catalog-pagination a');
+    if (!link) return;
+    event.preventDefault();
+    clearTimeout(timer);
+    var url = new URL(link.href, window.location.href);
+    var page = Number(url.searchParams.get('sn_page') || 1);
+    load(buildUrl(page));
+  });
+})();
+</script>
 <?php get_footer(); ?>
