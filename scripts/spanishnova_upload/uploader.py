@@ -205,14 +205,23 @@ def audit_grammar(env):
     html_slugs = set()
     duplicate_html_slugs = set()
     if html_dir.exists():
+        html_paths_by_slug = {}
         for path in html_dir.rglob("*.html"):
             slug = path.stem.strip()
             if not slug:
                 suspicious.append(f"Generated HTML with empty slug: {path.name}")
                 continue
-            if slug in html_slugs:
-                duplicate_html_slugs.add(slug)
             html_slugs.add(slug)
+            html_paths_by_slug.setdefault(slug, []).append(path)
+        for slug, paths in html_paths_by_slug.items():
+            if len(paths) < 2:
+                continue
+            # A legacy root HTML and its replacement in a format folder
+            # can coexist while other tools are being migrated.
+            legacy_path = html_dir / f"{slug}.html"
+            if len(paths) == 2 and legacy_path in paths:
+                continue
+            duplicate_html_slugs.add(slug)
     else:
         suspicious.append(f"Generated HTML folder missing: {html_dir.relative_to(ROOT)}")
 
