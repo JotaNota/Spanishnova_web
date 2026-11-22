@@ -205,7 +205,7 @@ def audit_grammar(env):
     html_slugs = set()
     duplicate_html_slugs = set()
     if html_dir.exists():
-        for path in html_dir.glob("*.html"):
+        for path in html_dir.rglob("*.html"):
             slug = path.stem.strip()
             if not slug:
                 suspicious.append(f"Generated HTML with empty slug: {path.name}")
