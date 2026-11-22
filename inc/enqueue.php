@@ -19,15 +19,18 @@ function spanishnova_enqueue_assets() {
         wp_enqueue_script('spanishnova-grammar-lesson', get_template_directory_uri() . '/assets/js/grammar-lesson.js', [], filemtime(get_template_directory() . '/assets/js/grammar-lesson.js'), true);
     }
 
-    // Verb-specific grammar components from main.
+    // Verb lesson model: load its assets only when the lesson uses the model.
     if (is_singular('grammar')) {
-        $verb_css = get_template_directory() . '/assets/css/grammar-verbs.css';
-        $verb_js = get_template_directory() . '/assets/js/grammar-verbs.js';
-        if (is_file($verb_css)) {
-            wp_enqueue_style('spanishnova-grammar-verbs', get_template_directory_uri() . '/assets/css/grammar-verbs.css', ['spanishnova-singles'], filemtime($verb_css));
-        }
-        if (is_file($verb_js)) {
-            wp_enqueue_script('spanishnova-grammar-verbs', get_template_directory_uri() . '/assets/js/grammar-verbs.js', [], filemtime($verb_js), true);
+        $grammar_post = get_queried_object();
+        if ($grammar_post instanceof WP_Post && strpos($grammar_post->post_content, 'sn-grammar-verb-lesson') !== false) {
+            $verb_css = get_template_directory() . '/assets/css/grammar-lesson-types/grammar-verbs.css';
+            $verb_js = get_template_directory() . '/assets/js/grammar-lesson-types/grammar-verbs.js';
+            if (is_file($verb_css)) {
+                wp_enqueue_style('spanishnova-grammar-verbs', get_template_directory_uri() . '/assets/css/grammar-lesson-types/grammar-verbs.css', ['spanishnova-grammar-lesson'], filemtime($verb_css));
+            }
+            if (is_file($verb_js)) {
+                wp_enqueue_script('spanishnova-grammar-verbs', get_template_directory_uri() . '/assets/js/grammar-lesson-types/grammar-verbs.js', ['spanishnova-grammar-lesson'], filemtime($verb_js), true);
+            }
         }
     }
 
