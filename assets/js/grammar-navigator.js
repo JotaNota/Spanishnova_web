@@ -168,7 +168,7 @@
     const searchWords=tokenize(query);
     const matches=searchIndex.map(e=>({...e,score:relevance(e,searchWords)}))
       .filter(e=>e.score>=0)
-      .sort((a,b)=>b.score-a.score||a.lesson.title.localeCompare(b.lesson.title));
+      .sort((a,b)=>(a.lesson.level_rank ?? 4)-(b.lesson.level_rank ?? 4)||a.lesson.title.localeCompare(b.lesson.title));
     content.append(heading('Results',total(matches.length,'match')));
     if(!matches.length){content.append(node('p','sn-grammar-no-results','No matches. Try another keyword.'));return;}
     const list=node('div','sn-grammar-lesson-list');
