@@ -14,7 +14,19 @@ from .wordpress import get_term_id, wp_request
 def find_html(row):
     cpt = row.get("cpt", "").strip()
     slug = row.get("base_slug", "").strip()
-    return HTML_ROOT / cpt / f"{slug}.html"
+    base = HTML_ROOT / cpt
+    if cpt == "grammar":
+        grammar_folders = {
+            "verb-usage": "verbs",
+            "tense": "tenses",
+            "particle-set": "particles",
+        }
+        folder = grammar_folders.get(row.get("lesson_type", "").strip())
+        if folder:
+            structured = base / folder / f"{slug}.html"
+            if structured.exists():
+                return structured
+    return base / f"{slug}.html"
 
 
 def split_terms(value):
