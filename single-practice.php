@@ -39,7 +39,8 @@
       <?php endforeach; ?>
     </div>
 
-    <h1 class="sn-post-title"><?php the_title(); ?></h1>
+    <?php $is_profile_drill = strpos((string) get_the_content(null, false), 'sv-profile-drill') !== false; ?>
+    <h1 class="sn-post-title"><?php echo $is_profile_drill ? esc_html('Practice: Where is he from? Where is he?') : esc_html(get_the_title()); ?></h1>
 
     <div class="sn-post-content">
       <?php the_content(); ?>
