@@ -21,6 +21,8 @@ Create structured Spanish grammar lesson content-data and render generated revie
    - `docs/content-system/generated/html/grammar/[slug].html`
 7. Review `git status --short`.
 
+HTML output path for new grammar lessons is selected by `lesson_type`: `verb-usage` → `generated/html/grammar/verbs/`, `tense` → `generated/html/grammar/tenses/`, `particle-set` → `generated/html/grammar/particles/`. The render script continues to write Markdown under `generated/markdown/grammar/`. Other existing lesson types keep the current `generated/html/grammar/` path. The `generated/html/README.md` defines storage conventions. These folders hold lesson content, not visual models.
+
 The editable source of a grammar lesson is the content-data JSON. Markdown and HTML are generated outputs.
 
 ## Content Data
