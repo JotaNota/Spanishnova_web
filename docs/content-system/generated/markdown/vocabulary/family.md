@@ -1,61 +1,142 @@
 # Family Vocabulary in Spanish
 
-Learn Spanish family vocabulary for talking about relatives, relationships, and family life.
+Aprende vocabulario sobre **la familia** y sus relaciones. Objetivo: identificar a los familiares usando **ser**, **mi**, **tu** y **su**.
 
-## Vocabulary
+## Vocabulario
 
-### Immediate Family
+### Familia cercana — Immediate family
 
-- **la madre** -> mother
-- **el padre** -> father
-- **los padres** -> parents
-- **la hermana** -> sister
-- **el hermano** -> brother
-- **los hijos** -> children
+- **La madre / la mamá** – Mother / Mom
+- **El padre / el papá** – Father / Dad
+- **Los padres** – Parents
+- **El hijo / la hija** – Son / Daughter
+- **El hermano / la hermana** – Brother / Sister
+- **El esposo / la esposa** – Husband / Wife
+- **El novio / la novia** – Boyfriend / Girlfriend
+- **La pareja** – Partner
 
-### Extended Family
+### Otros familiares — Extended family
 
-- **la abuela** -> grandmother
-- **el abuelo** -> grandfather
-- **la t?a** -> aunt
-- **el t?o** -> uncle
-- **la prima** -> female cousin
-- **el primo** -> male cousin
+- **El abuelo / la abuela** – Grandfather / Grandmother
+- **El nieto / la nieta** – Grandson / Granddaughter
+- **El tío / la tía** – Uncle / Aunt
+- **El primo / la prima** – Cousin
+- **El sobrino / la sobrina** – Nephew / Niece
 
-## Common Phrases
+### Familia política — In-laws
 
-- **Tengo dos hermanos.** -> I have two siblings.
-- **Mi abuela vive cerca.** -> My grandmother lives nearby.
-- **Somos una familia grande.** -> We are a big family.
-- **Voy a visitar a mis padres.** -> I am going to visit my parents.
+- **El suegro / la suegra** – Father-in-law / Mother-in-law
+- **El cuñado / la cuñada** – Brother-in-law / Sister-in-law
+- **El yerno** – Son-in-law
+- **La nuera** – Daughter-in-law
 
-## Fun Phrase
+### Palabras para hablar de la familia — Family words
 
-**En mi familia todos hablan al mismo tiempo.** -> In my family everyone talks at the same time.
+- **La familia** – Family
+- **El familiar** – Relative / family member
+- **El pariente / la pariente** – Relative
+- **Los hermanos** – Siblings / brothers
+- **Los abuelos** – Grandparents
 
-## Exercises
+## Frases comunes
 
-### Translate
+- **Ella es mi tía.** – She is my aunt.
+- **Él es su hermano.** – He is his/her brother.
+- **Adriana es la novia de Juan.** – Adriana is Juan's girlfriend.
+- **Pedro es mi padre.** – Pedro is my father.
+- **Ana es tu hermana.** – Ana is your sister.
+- **Ellos son mis padres.** – They are my parents.
+- **María es la madre de Luis.** – María is Luis's mother.
+- **Carlos es el esposo de Laura.** – Carlos is Laura's husband.
+- **Sofía es su hija.** – Sofía is his/her daughter.
+- **Miguel y José son primos.** – Miguel and José are cousins.
+- **Esta es mi familia.** – This is my family.
+- **Luis es el abuelo de Ana.** – Luis is Ana's grandfather.
 
-1. I have two siblings.
+## Frase divertida
 
-   Tengo dos hermanos.
+**¡Toda mi familia está aquí!** – My whole family is here!
 
-2. My grandmother lives nearby.
+## Ejercicios
 
-   Mi abuela vive cerca.
+### Traducir
 
-### Complete
+1. She is my aunt.
 
-1. Somos _____ una familia grande.
+   Ella es mi tía.
 
-   Somos una familia grande.
+2. He is her brother.
 
-2. Tengo _____ dos hermanos.
+   Él es su hermano.
 
-   Tengo dos hermanos.
+3. Adriana is Juan's girlfriend.
 
-## Questions
+   Adriana es la novia de Juan.
 
-1. ?Tienes hermanos?
-2. ?Tu familia vive cerca o lejos?
+4. Pedro is my father.
+
+   Pedro es mi padre.
+
+5. Ana is your sister.
+
+   Ana es tu hermana.
+
+6. They are my parents.
+
+   Ellos son mis padres.
+
+7. María is Luis's mother.
+
+   María es la madre de Luis.
+
+8. Carlos is Laura's husband.
+
+   Carlos es el esposo de Laura.
+
+9. Sofía is his daughter.
+
+   Sofía es su hija.
+
+10. Miguel and José are cousins.
+
+   Miguel y José son primos.
+
+### Vocabulario por categoría
+
+Clasifica las palabras según su relación familiar.
+
+- **Familia cercana:** madre, padre, hermana, hijo.
+- **Familia extendida:** tío, prima, abuelo, sobrina.
+- **Familia política:** suegra, cuñado, yerno, nuera.
+
+## Escenas
+
+### En una reunión familiar
+
+- Ana: ¿Quién es ella?
+- Luis: Ella es mi tía.
+- Ana: ¿Y él?
+- Luis: Él es mi abuelo.
+
+### Conocer a la pareja
+
+- Julia: ¿Quién es Adriana?
+- Pedro: Adriana es la novia de Juan.
+- Julia: ¿Juan es tu hermano?
+- Pedro: Sí, Juan es mi hermano.
+
+### Una foto de familia
+
+- Marta: ¿Ellos son tus padres?
+- Sofía: Sí, ellos son mis padres.
+- Marta: ¿Y esa niña?
+- Sofía: Es mi hermana.
+
+## Preguntas – Questions
+
+1. ¿Quién es tu madre?
+2. ¿Tienes hermanos?
+3. ¿Cómo se llama tu padre?
+4. ¿Quiénes son tus abuelos?
+5. ¿Tienes primos?
+6. ¿Quién es la pareja de tu hermano o hermana?
