@@ -73,6 +73,7 @@ Recommended labels:
 | BL-011 | TBD | Run WordPress theme QA checklist | qa | High | Backlog | qa-verifier | Before launch readiness. |
 | BL-012 | TBD | Align WordPress taxonomies with content model | theme/content | High | In progress | content-architect | Code updated; wp-admin validation pending. |
 | BL-013 | TBD | Clean up content pilot production docs | docs/content | Medium | Done | project-coordinator | Lightweight templates, pilot queue, log, and agent instructions aligned on `feature/content-pilot`. |
+| BL-014 | [#33](https://github.com/JotaNota/Spanishnova_web/issues/33) | Implement Grammar lesson visual | ux-ui | High | Ready | unassigned | Weekly goal: implement the agreed two-column lesson layout and optional resource sidebar. |
 
 ## Maintenance
 
