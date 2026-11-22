@@ -138,6 +138,7 @@ $sn_render_taxonomy_menu = function ($post_type, $taxonomy, $nested = false) use
       <a href="<?php echo $sn_home_link('/classes/'); ?>">Classes</a>
       <a class="donate" href="<?php echo $sn_home_link('/donations/'); ?>">Donate</a>
       <a href="<?php echo $sn_home_link('/contact/'); ?>">Contact</a>
+    </div>
   </div>
 </header>
 
