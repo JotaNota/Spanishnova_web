@@ -110,10 +110,18 @@ if ($practice_level !== '') $practice_args['sn_level'] = $practice_level;
           $terms = get_the_terms(get_the_ID(), 'grammar_tax');
           $topic_label = $terms && !is_wp_error($terms) ? implode(', ', wp_list_pluck($terms, 'name')) : '';
           ?>
-          <a class="activity-row practice-catalog-card explore-result explore-result--practice" href="<?php the_permalink(); ?>">
+          <a class="activity-row practice-catalog-card explore-result explore-result--practice<?php echo has_post_thumbnail() ? ' has-thumbnail' : ''; ?>" href="<?php the_permalink(); ?>">
+            <?php if (has_post_thumbnail()) : ?>
+              <div class="practice-card-thumbnail">
+                <?php echo get_the_post_thumbnail(get_the_ID(), 'thumbnail', ['loading' => 'lazy', 'alt' => '']); ?>
+              </div>
+            <?php endif; ?>
             <div class="practice-catalog-content">
               <div class="sn-catalog-card-meta">
                 <span>Practice</span>
+                <?php if (has_post_thumbnail()) : ?>
+                  <span class="practice-card-visual">Visual</span>
+                <?php endif; ?>
                 <?php if ($level_label !== '') : ?>
                   <span aria-hidden="true">·</span>
                   <span class="practice-card-level"><?php echo esc_html($level_label); ?></span>
