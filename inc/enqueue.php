@@ -7,7 +7,7 @@ function spanishnova_enqueue_assets() {
     wp_enqueue_style('spanishnova-footer', get_template_directory_uri() . '/assets/css/footer.css', ['spanishnova-main'], '0.1.0');
 
     if (is_front_page() || is_home()) {
-        wp_enqueue_style('spanishnova-home', get_template_directory_uri() . '/assets/css/home.css', ['spanishnova-main'], '0.1.0');
+        wp_enqueue_style('spanishnova-home', get_template_directory_uri() . '/assets/css/home.css', ['spanishnova-main'], filemtime(get_template_directory() . '/assets/css/home.css'));
     }
 
     if (is_singular(['post', 'grammar', 'vocabulary', 'readings', 'conversations'])) {
