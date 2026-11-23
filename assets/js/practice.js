@@ -1,5 +1,11 @@
 /* Shared practice interactions. No inline lesson scripts. */
 (function () {
+  // Profile drill answers should always begin collapsed.
+  document.querySelectorAll('.sn-practice-lesson.sv-profile-drill .sv-exercise details').forEach(function (details) {
+    details.open = false;
+    details.removeAttribute('open');
+  });
+
   document.querySelectorAll('.sn-practice-lesson .sv-choice-card').forEach(function (card) {
     var expected = card.getAttribute('data-correct');
     var feedback = card.querySelector('.sv-choice-feedback');
