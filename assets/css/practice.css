@@ -179,3 +179,8 @@
   .sn-practice-page:has(.sv-profile-drill) .sn-post-title { font-size: 26px; }
   .sn-practice-page .sn-post-content .sn-practice-lesson.sv-profile-drill .sv-practice { grid-template-columns: 1fr; }
 }
+
+/* Keep speaking drill answers hidden until their native details is opened. */
+.sn-practice-page .sn-post-content .sn-practice-lesson.sv-profile-drill .sv-exercise details:not([open]) > :not(summary) {
+  display: none !important;
+}
