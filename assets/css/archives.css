@@ -776,3 +776,37 @@
     justify-self: end;
   }
 }
+
+/* Practice cards use the featured image when one is assigned in WordPress. */
+.practice-catalog-list .practice-catalog-card.has-thumbnail {
+  grid-template-columns: 104px minmax(0, 1fr) auto;
+}
+.practice-card-thumbnail {
+  width: 104px;
+  height: 82px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f5eee7;
+}
+.practice-card-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.practice-catalog-list .practice-card-visual {
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #fff0e6;
+  color: #b55326;
+}
+@media (max-width: 520px) {
+  .practice-catalog-list .practice-catalog-card.has-thumbnail {
+    grid-template-columns: 76px minmax(0, 1fr) auto;
+    gap: 9px;
+  }
+  .practice-card-thumbnail {
+    width: 76px;
+    height: 76px;
+  }
+}
