@@ -1,7 +1,7 @@
 pk_route_item,source_pk,Nivel,Módulo,Nombre del módulo,Unidad,Tipo,Lección,CPT,Slug,Estado
 route-001,,A1 · Starter,1,First sentences,Basic vocabulary,Unidad,,,,Agrupador
-route-002,,A1 · Starter,1,First sentences,,Lección,Nouns and definite articles,grammar,nouns-definite-articles,Existe (por vincular)
-route-003,,A1 · Starter,1,First sentences,,Lección,Nouns and indefinite articles,grammar,nouns-indefinite-articles,Existe (por vincular)
+route-002,,A1 · Starter,1,First sentences,,Lección,Nouns and definite articles,Grammar,nouns-definite-articles,Existe (por vincular)
+route-003,,A1 · Starter,1,First sentences,,Lección,Nouns and indefinite articles,Grammar,nouns-indefinite-articles,Existe (por vincular)
 route-004,,A1 · Starter,1,First sentences,,Lección,Adjectives - Physical descriptions,Grammar,adjectives-descriptions,Por verificar
 route-005,,A1 · Starter,1,First sentences,SER,Unidad,,,,Agrupador
 route-006,2,A1 · Starter,1,First sentences,,Lección,SER,Grammar,ser-presente,Existe (por vincular)
@@ -36,26 +36,25 @@ route-036,,A1 · Starter,4,Needs and preferences,GUSTAR,Unidad,,,,Agrupador
 route-037,,A1 · Starter,4,Needs and preferences,,Lección,GUSTAR,Grammar,gustar-presente,Por verificar
 route-038,,A1 · Starter,4,Needs and preferences,Ordering food,Unidad,,,,Agrupador
 route-039,,A1 · Starter,4,Needs and preferences,,Lección,Ordering food,Conversation,,Por verificar
-route-040,,A1 · Starter,5,Abilities,PODER,Unidad,,,,Agrupador
-route-041,,A1 · Starter,5,Abilities,,Lección,PODER,Grammar,,Por verificar
-route-042,,A1 · Starter,5,Abilities,HACER,Unidad,,,,Agrupador
-route-043,9,A1 · Starter,5,Abilities,,Lección,HACER,Grammar,hacer-presente,Por verificar
+route-096,,A1 · Starter,5,Abilities,"Poder, hacer, saber",Unidad,,,,Agrupador
+route-041,,A1 · Starter,5,Abilities,,Lección,PODER,Grammar,poder-presente,Por verificar
+route-043,9,A1 · Starter,5,Abilities,,Lección,HACER,Grammar,hacer-presente,Existe (por vincular)
+route-097,,A1 · Starter,5,Abilities,,Lección,Saber,Grammar,saber-presente,Por verificar
 route-044,,A1 · Starter,5,Abilities,Using common verbs,Unidad,,,,Agrupador
-route-045,,A1 · Starter,5,Abilities,,Lección,Using common verbs,Practice,,Por verificar
 route-046,,A1 · Starter,6,Places and movement,Places in the city,Unidad,,,,Agrupador
 route-047,,A1 · Starter,6,Places and movement,,Lección,Places in the city,Vocabulary,ciudad-city,Existe (por vincular)
 route-048,,A1 · Starter,6,Places and movement,IR,Unidad,,,,Agrupador
 route-049,11,A1 · Starter,6,Places and movement,,Lección,IR,Grammar,ir-presente,Por verificar
+route-053,10,A1 · Starter,6,Places and movement,,Lección,IR A + infinitive,Grammar,ir-a-infinitivo,Por verificar
 route-050,,A1 · Starter,6,Places and movement,Adverbs of place,Unidad,,,,Agrupador
 route-051,26,A1 · Starter,6,Places and movement,,Lección,Adverbs of place,Grammar,adverbios-lugar,Por verificar
-route-052,,A1 · Starter,6,Places and movement,IR A + infinitive,Unidad,,,,Agrupador
-route-053,10,A1 · Starter,6,Places and movement,,Lección,IR A + infinitive,Grammar,ir-a-infinitivo,Por verificar
 route-054,,A1 · Starter,6,Places and movement,Where are you going?,Unidad,,,,Agrupador
 route-055,,A1 · Starter,6,Places and movement,,Lección,Where are you going?,Conversation,,Por verificar
 route-056,,A1 · Starter,7,Questions and communication,Question words,Unidad,,,,Agrupador
-route-057,,A1 · Starter,7,Questions and communication,,Lección,Question words,Grammar,pronombres-interrogativos,Por verificar
+route-098,,A1 · Starter,7,Questions and communication,,Lección,"Question words - pronombres interrogativos: qué, quién, cuándo, dónde",Grammar,pronombres-interrogativos,Por verificar
 route-058,,A1 · Starter,7,Questions and communication,Time and dates,Unidad,,,,Agrupador
-route-059,,A1 · Starter,7,Questions and communication,,Lección,Time and dates,Vocabulary,,Por verificar
+route-099,,A1 · Starter,7,Questions and communication,,Lección,que hora es - partes del día,Practice,hora-time,Por verificar
+route-100,,A1 · Starter,7,Questions and communication,,Lección,meses days of the week (con fechas especiales para recordar mejor),Vocabulary,,Por verificar
 route-060,,A1 · Starter,7,Questions and communication,Small talk,Unidad,,,,Agrupador
 route-061,,A1 · Starter,7,Questions and communication,,Lección,Small talk,Conversation,,Por verificar
 route-062,,A2 · Beginner,1,Present tense,Regular present tense,Unidad,,,,Agrupador
