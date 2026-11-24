@@ -2,7 +2,7 @@
 // Route hierarchy and explicit slugs are maintained in route-inventory.csv.
 if (!defined('ABSPATH')) { exit; }
 function spanishnova_level_curriculum() {
-  $file = get_template_directory() . '/docs/content-system/content-plan/route-inventory.csv';
+  $file = get_template_directory() . '/docs/content-system/route-plan/route-inventory.csv';
   $routes = ['starter' => [], 'beginner' => []];
   if (!is_readable($file)) return $routes;
   $handle = fopen($file, 'r');
