@@ -28,14 +28,14 @@ route-028,5,A1 · Starter,3,Possession and descriptions,,Lección,Hay - No hay,G
 route-029,,A1 · Starter,3,Possession and descriptions,,Lección,Describe a room,Practice,hay-habitacion,Por verificar
 route-030,,A1 · Starter,4,Needs and preferences,TENER QUE / DEBER,Unidad,,,,Agrupador
 route-031,8,A1 · Starter,4,Needs and preferences,,Lección,TENER QUE / DEBER,Grammar,tener-que-deber,Existe (por vincular)
-route-032,,A1 · Starter,4,Needs and preferences,,Lección,Daily obligations,Practice,,Por verificar
+route-032,,A1 · Starter,4,Needs and preferences,,Lección,Daily obligations,Practice,daily-obligations,Por verificar
 route-033,,A1 · Starter,4,Needs and preferences,QUERER / NECESITAR / PREFERIR,Unidad,,,,Agrupador
 route-034,13,A1 · Starter,4,Needs and preferences,,Lección,QUERER / NECESITAR,Grammar,querer-preferir-necesitar,Existe (por vincular)
 route-035,,A1 · Starter,4,Needs and preferences,,Lección,Food and drinks,Vocabulary,food-drinks-comida-bebida,Por verificar
 route-036,,A1 · Starter,4,Needs and preferences,GUSTAR,Unidad,,,,Agrupador
 route-037,,A1 · Starter,4,Needs and preferences,,Lección,GUSTAR,Grammar,gustar-presente,Por verificar
 route-038,,A1 · Starter,4,Needs and preferences,Ordering food,Unidad,,,,Agrupador
-route-039,,A1 · Starter,4,Needs and preferences,,Lección,Ordering food,Conversation,,Por verificar
+route-039,,A1 · Starter,4,Needs and preferences,,Lección,Ordering food,Conversation,ordering-food,Por verificar
 route-096,,A1 · Starter,5,Abilities,"Poder, hacer, saber",Unidad,,,,Agrupador
 route-041,,A1 · Starter,5,Abilities,,Lección,PODER,Grammar,poder-presente,Por verificar
 route-043,9,A1 · Starter,5,Abilities,,Lección,HACER,Grammar,hacer-presente,Existe (por vincular)
@@ -49,14 +49,14 @@ route-053,10,A1 · Starter,6,Places and movement,,Lección,IR A + infinitive,Gra
 route-050,,A1 · Starter,6,Places and movement,Adverbs of place,Unidad,,,,Agrupador
 route-051,26,A1 · Starter,6,Places and movement,,Lección,Adverbs of place,Grammar,adverbios-lugar,Por verificar
 route-054,,A1 · Starter,6,Places and movement,Where are you going?,Unidad,,,,Agrupador
-route-055,,A1 · Starter,6,Places and movement,,Lección,Where are you going?,Conversation,,Por verificar
+route-055,,A1 · Starter,6,Places and movement,,Lección,Where are you going?,Conversation,where-are-you-going,Por verificar
 route-056,,A1 · Starter,7,Questions and communication,Question words,Unidad,,,,Agrupador
 route-098,,A1 · Starter,7,Questions and communication,,Lección,"Question words - pronombres interrogativos: qué, quién, cuándo, dónde",Grammar,pronombres-interrogativos,Por verificar
 route-058,,A1 · Starter,7,Questions and communication,Time and dates,Unidad,,,,Agrupador
 route-099,,A1 · Starter,7,Questions and communication,,Lección,que hora es - partes del día,Practice,hora-time,Por verificar
-route-100,,A1 · Starter,7,Questions and communication,,Lección,meses days of the week (con fechas especiales para recordar mejor),Vocabulary,,Por verificar
+route-100,,A1 · Starter,7,Questions and communication,,Lección,meses days of the week (con fechas especiales para recordar mejor),Vocabulary,meses-dias,Por verificar
 route-060,,A1 · Starter,7,Questions and communication,Small talk,Unidad,,,,Agrupador
-route-061,,A1 · Starter,7,Questions and communication,,Lección,Small talk,Conversation,,Por verificar
+route-061,,A1 · Starter,7,Questions and communication,,Lección,Small talk,Conversation,small-talk,Por verificar
 route-062,,A2 · Beginner,1,Present tense,Present tense,Unidad,,,,Agrupador
 route-063,,A2 · Beginner,1,Present tense,,Lección,Regular present tense,Grammar,presente-indicativo-regulares,Por verificar
 route-066,23,A2 · Beginner,1,Present tense,,Lección,Irregular present tense,Grammar,presente-indicativo-irregulares,Por verificar
@@ -67,41 +67,41 @@ route-071,,A2 · Beginner,2,Routines and reflexive verbs,Reflexive verbs - rutin
 route-072,,A2 · Beginner,2,Routines and reflexive verbs,,Lección,Regular reflexive verbs for daily routines,Grammar,reflexivos-regulares-obvios,Por verificar
 route-075,29,A2 · Beginner,2,Routines and reflexive verbs,,Lección,Irregular reflexive verbs for daily routines,Grammar,reflexivos-irregulares,
 route-074,,A2 · Beginner,2,Routines and reflexive verbs,Describing routines,Unidad,,,,Agrupador
-route-077,,A2 · Beginner,2,Routines and reflexive verbs,,Lección,Describing routines,Practice,,Por verificar
-route-079,,A2 · Beginner,2,Routines and reflexive verbs,,Lección,My weekly schedule,Conversation,,Por verificar
-route-081,,A2 · Beginner,2,Routines and reflexive verbs,,Lección,Talk about your day,Conversation,,Por verificar
+route-077,,A2 · Beginner,2,Routines and reflexive verbs,,Lección,Describing routines,Practice,describing-routines,Por verificar
+route-079,,A2 · Beginner,2,Routines and reflexive verbs,,Lección,My weekly schedule,Conversation,my-weekly-schedule,Por verificar
+route-081,,A2 · Beginner,2,Routines and reflexive verbs,,Lección,Talk about your day,Conversation,talk-about-your-day,Por verificar
 route-101,,A2 · Beginner,7,Real conditions and decisions,Real conditional: present + present,Unidad,,,,Agrupador
 route-102,,A2 · Beginner,7,Real conditions and decisions,,Lección,"Real conditional: si + present, present",Grammar,condicional-real-presente,Por verificar
-route-103,,A2 · Beginner,7,Real conditions and decisions,,Lección,Daily decisions and consequences,Practice,,Por verificar
-route-104,,A2 · Beginner,7,Real conditions and decisions,,Lección,If you need help...,Conversation,,Por verificar
-route-105,,A2 · Beginner,7,Real conditions and decisions,,Lección,Solve an everyday situation,Practice,,Por verificar
+route-103,,A2 · Beginner,7,Real conditions and decisions,,Lección,Daily decisions and consequences,Practice,daily-decisions-consequences,Por verificar
+route-104,,A2 · Beginner,7,Real conditions and decisions,,Lección,If you need help...,Conversation,if-you-need-help,Por verificar
+route-105,,A2 · Beginner,7,Real conditions and decisions,,Lección,Solve an everyday situation,Practice,solve-everyday-situation-conditions,Por verificar
 route-082,,A2 · Beginner,3,Likes and reactions,Likes and dislikes,Unidad,,,,Agrupador
 route-083,15,A2 · Beginner,3,Likes and reactions,,Lección,ENCANTAR / INTERESAR,Grammar,me-encanta-me-interesa,Por verificar
-route-085,,A2 · Beginner,3,Likes and reactions,,Lección,MOLESTAR / IMPORTAR,Grammar,,Por verificar
-route-087,,A2 · Beginner,3,Likes and reactions,,Lección,Likes and dislikes,Practice,,Por verificar
-route-089,,A2 · Beginner,3,Likes and reactions,,Lección,Discuss your interests,Conversation,,Por verificar
+route-085,,A2 · Beginner,3,Likes and reactions,,Lección,MOLESTAR / IMPORTAR,Grammar,molestar-importar,Por verificar
+route-087,,A2 · Beginner,3,Likes and reactions,,Lección,Likes and dislikes,Practice,likes-and-dislikes,Por verificar
+route-089,,A2 · Beginner,3,Likes and reactions,,Lección,Discuss your interests,Conversation,discuss-your-interests,Por verificar
 route-090,,A2 · Beginner,4,Everyday situations,Shopping and services,Unidad,,,,Agrupador
-route-091,,A2 · Beginner,4,Everyday situations,,Lección,Shopping and services,Vocabulary,,Por verificar
+route-091,,A2 · Beginner,4,Everyday situations,,Lección,Shopping and services,Vocabulary,shopping-and-services,Por verificar
 route-092,,A2 · Beginner,4,Everyday situations,Asking for help,Unidad,,,,Agrupador
-route-093,,A2 · Beginner,4,Everyday situations,,Lección,Asking for help,Conversation,,Por verificar
+route-093,,A2 · Beginner,4,Everyday situations,,Lección,Asking for help,Conversation,asking-for-help,Por verificar
 route-094,,A2 · Beginner,4,Everyday situations,Solve an everyday situation,Unidad,,,,Agrupador
-route-095,,A2 · Beginner,4,Everyday situations,,Lección,Solve an everyday situation,Practice,,Por verificar
+route-095,,A2 · Beginner,4,Everyday situations,,Lección,Solve an everyday situation,Practice,solve-everyday-situation,Por verificar
 route-106,,A2 · Beginner,5,Past experiences,Talking about the past,Unidad,,,,Agrupador
 route-107,,A2 · Beginner,5,Past experiences,,Lección,Past progressive: estaba + gerundio,Grammar,pasado-progresivo,Por verificar
-route-108,,A2 · Beginner,5,Past experiences,,Lección,¿Qué estabas haciendo?,Practice,,Por verificar
+route-108,,A2 · Beginner,5,Past experiences,,Lección,¿Qué estabas haciendo?,Practice,que-estabas-haciendo,Por verificar
 route-109,,A2 · Beginner,5,Past experiences,,Lección,Pretérito - simple past regulars,Grammar,preterito-indefinido-regulares,Por verificar
 route-110,,A2 · Beginner,5,Past experiences,,Lección,Pretérito - simple past irregulars I,Grammar,preterito-indefinido-irregulares,Por verificar
-route-111,,A2 · Beginner,5,Past experiences,,Lección,Holidays,Vocabulary,,Por verificar
-route-112,,A2 · Beginner,5,Past experiences,,Lección,Talk about your holidays,Conversation,,Por verificar
+route-111,,A2 · Beginner,5,Past experiences,,Lección,Holidays,Vocabulary,holidays,Por verificar
+route-112,,A2 · Beginner,5,Past experiences,,Lección,Talk about your holidays,Conversation,talk-about-your-holidays,Por verificar
 route-113,,A2 · Beginner,5,Past experiences,Telling past events,Unidad,,,,Agrupador
-route-114,,A2 · Beginner,5,Past experiences,,Lección,"Sequence events: primero, después, al final",Practice,,Por verificar
-route-115,,A2 · Beginner,5,Past experiences,,Lección,Last week,Podcast,,Por verificar
-route-116,,A2 · Beginner,5,Past experiences,,Lección,Tell a past experience,Conversation,,Por verificar
-route-117,,A2 · Beginner,5,Past experiences,,Lección,A memorable day,Conversation,,Por verificar
+route-114,,A2 · Beginner,5,Past experiences,,Lección,"Sequence events: primero, después, al final",Practice,sequence-events,Por verificar
+route-115,,A2 · Beginner,5,Past experiences,,Lección,Last week,Podcast,last-week,Por verificar
+route-116,,A2 · Beginner,5,Past experiences,,Lección,Tell a past experience,Conversation,tell-a-past-experience,Por verificar
+route-117,,A2 · Beginner,5,Past experiences,,Lección,A memorable day,Conversation,a-memorable-day,Por verificar
 route-118,,A2 · Beginner,6,Objects and comparisons,"Comparing people, places and products",Unidad,,,,Agrupador
 route-119,,A2 · Beginner,6,Objects and comparisons,,Lección,"Direct object pronouns: lo, la, los, las",Grammar,pronombres-objeto-directo,Por verificar
-route-120,,A2 · Beginner,6,Objects and comparisons,,Lección,Choosing and describing products,Practice,,Por verificar
+route-120,,A2 · Beginner,6,Objects and comparisons,,Lección,Choosing and describing products,Practice,choosing-describing-products,Por verificar
 route-121,,A2 · Beginner,6,Objects and comparisons,,Lección,"Comparatives: más que, menos que, tan como",Grammar,comparativos,Por verificar
-route-122,,A2 · Beginner,6,Objects and comparisons,,Lección,"Compare people, places and products",Conversation,,Por verificar
-route-123,,A2 · Beginner,6,Objects and comparisons,,Lección,"Body, symptoms and health services",Vocabulary,,Por verificar
-route-124,,A2 · Beginner,6,Objects and comparisons,,Lección,At the pharmacy,Conversation,,Por verificar
+route-122,,A2 · Beginner,6,Objects and comparisons,,Lección,"Compare people, places and products",Conversation,compare-people-places-products,Por verificar
+route-123,,A2 · Beginner,6,Objects and comparisons,,Lección,"Body, symptoms and health services",Vocabulary,body-symptoms-health-services,Por verificar
+route-124,,A2 · Beginner,6,Objects and comparisons,,Lección,At the pharmacy,Conversation,at-the-pharmacy,Por verificar
